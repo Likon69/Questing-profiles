@@ -19,7 +19,7 @@
   <MinFreeBagSlots>2</MinFreeBagSlots>
 
   <Blackspots>
-      <Blackspot X="-695.89056" Y="-4345.7085" Z="44.542934" Radius="10" />
+      <!-- <Blackspot X="-695.89056" Y="-4345.7085" Z="44.542934" Radius="10" />
       <Blackspot X="-738.0474" Y="-4286.9097" Z="40.9987" Radius="10" />
       <Blackspot X="-616.7305" Y="-4502.7" Z="52.214825" Radius="2" />
       <Blackspot X="-697.0004" Y="-4358.2285" Z="54.39948" Radius="10"/>
@@ -28,7 +28,7 @@
       <Blackspot X="-540.78235" Y="-4342.5938" Z="49.378113" Radius="10" />
       <Blackspot X="-383.74078" Y="-4195.472" Z="53.74209" Radius="10" />
       <Blackspot X="-442.89423" Y="-4226.196" Z="49.32675" Radius="3" />
-      <Blackspot X="-420.0388" Y="-4263.758" Z="42.490154" Radius="5" />
+      <Blackspot X="-420.0388" Y="-4263.758" Z="42.490154" Radius="5" /> -->
 
 
   </Blackspots>
