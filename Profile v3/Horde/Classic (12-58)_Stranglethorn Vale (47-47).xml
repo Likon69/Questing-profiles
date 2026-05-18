@@ -1,0 +1,71 @@
+<HBProfile>
+	<Name>Classic (12-58)\Stranglethorn Vale (47-47)</Name>
+	<MinLevel>47</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="608" Name="The Bloodsail Buccaneers">
+		<Objective Type="CollectItem" ItemId="4098" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Half-Buried Bottle" Id="2560" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14616.5" Y="-88.21" Z="0.59" />
+				<Hotspot X="-14592.1" Y="-83.68" Z="0.38" />
+				<Hotspot X="-14555.0" Y="-86.49" Z="0.38" />
+				<Hotspot X="-14532.6" Y="-100.2" Z="-0.2" />
+				<Hotspot X="-14516.9" Y="126.2" Z="0.02" />
+				<Hotspot X="-14503.6" Y="-316.24" Z="0.92" />
+				<Hotspot X="-14483.6" Y="104.44" Z="1.57" />
+				<Hotspot X="-14473.4" Y="64.72" Z="-0.97" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="608" GiverName="Fleet Master Seahorn" GiverId="2487" />
+		<TurnIn QuestName="Back to Booty Bay" QuestId="1118" TurnInName="Crank Fizzlebub" TurnInId="2498" />
+		<TurnIn QuestName="Deliver to MacKinley" QuestId="2874" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" />
+		<Objective QuestName="The Bloodsail Buccaneers" QuestId="608" Type="CollectItem" ItemId="4098" CollectCount="1" />
+		<While Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))" >
+			<CustomBehavior File="UseItemOn" QuestId="608" MobId="2550" ItemId="4098" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-14921.0" Y="123.1" Z="7.5177" />
+		</While>
+		<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" />
+		<TurnIn QuestName="Message in a Bottle" QuestId="594" TurnInName="Princess Poobah" TurnInId="2634" />
+		<PickUp QuestName="Message in a Bottle" QuestId="630" GiverName="Princess Poobah" GiverId="2634" />
+		<Objective QuestName="Message in a Bottle" QuestId="630" Type="CollectItem" ItemId="4103" CollectCount="1" />
+		<TurnIn QuestName="Message in a Bottle" QuestId="630" TurnInName="Princess Poobah" TurnInId="2634" />
+		<Objective QuestName="Cortello's Riddle" QuestId="624" Type="CollectItem" ItemId="4056" CollectCount="1" />
+		<Objective QuestName="Cortello's Riddle" QuestId="624" Type="CollectItem" ItemId="4056" CollectCount="1" />
+		<Objective QuestName="Cortello's Riddle" QuestId="624" Type="CollectItem" ItemId="4056" CollectCount="1" />
+		<While Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))" >
+			<CustomBehavior File="UseItemOn" QuestId="608" MobId="2550" ItemId="4056" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-14921.0" Y="123.1" Z="7.5177" />
+		</While>
+		<PickUp QuestName="Cortello's Riddle" QuestId="624" GiverName="Princess Poobah" GiverId="2634" />
+		<Objective QuestName="Caught!" QuestId="4449" Type="CollectItem" ItemId="4306" CollectCount="15" />
+		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="608" TurnInName="Fleet Master Seahorn" TurnInId="2487" />
+		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Searing Gorge (47-48)" />
+	</QuestOrder>
+</HBProfile>

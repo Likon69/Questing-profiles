@@ -1,0 +1,140 @@
+<HBProfile>
+	<Name>Scepter of the Shifting Sands</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<!-- Vendor-Tron 1000 (7244) — no spawn data -->
+		<!-- Innkeeper Vizzie (7251) — no spawn data -->
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="What Tomorrow Brings" QuestId="8286" GiverName="Baristolth of the Shifting Sands" GiverId="15180" />
+		<TurnIn QuestName="What Tomorrow Brings" QuestId="8286" TurnInName="Baristolth of the Shifting Sands" TurnInId="15180" />
+		<PickUp QuestName="Only One May Rise" QuestId="8288" GiverName="Baristolth of the Shifting Sands" GiverId="15180" />
+		<Objective QuestName="Only One May Rise" QuestId="8288" Type="CollectItem" ItemId="20383" CollectCount="1" />
+		<TurnIn QuestName="Only One May Rise" QuestId="8288" TurnInName="Baristolth of the Shifting Sands" TurnInId="15180" />
+		<PickUp QuestName="The Path of the Righteous" QuestId="8301" GiverName="Baristolth of the Shifting Sands" GiverId="15180" />
+		<Objective QuestName="The Path of the Righteous" QuestId="8301" Type="CollectItem" ItemId="20384" CollectCount="200" />
+		<TurnIn QuestName="The Path of the Righteous" QuestId="8301" TurnInName="Baristolth of the Shifting Sands" TurnInId="15180" />
+		<PickUp QuestName="The Hand of the Righteous" QuestId="8302" GiverName="Baristolth of the Shifting Sands" GiverId="15180" />
+		<Objective QuestName="The Hand of the Righteous" QuestId="8302" Type="CollectItem" ItemId="20384" CollectCount="200" />
+		<TurnIn QuestName="The Hand of the Righteous" QuestId="8302" TurnInName="Baristolth of the Shifting Sands" TurnInId="15180" />
+		<PickUp QuestName="Anachronos" QuestId="8303" GiverName="Baristolth of the Shifting Sands" GiverId="15180" />
+		<TurnIn QuestName="Anachronos" QuestId="8303" TurnInName="Anachronos" TurnInId="15192" />
+		<PickUp QuestName="Long Forgotten Memories" QuestId="8305" GiverName="Anachronos" GiverId="15192" />
+		<!-- Quest 8305 (Long Forgotten Memories) — TurnIn Object not in 3.3.5a -->
+		<PickUp QuestName="A Pawn on the Eternal Board" QuestId="8519" GiverName="Anachronos" GiverId="15192" />
+		<TurnIn QuestName="A Pawn on the Eternal Board" QuestId="8519" TurnInName="Anachronos" TurnInId="15192" />
+		<PickUp QuestName="The Charge of the Dragonflights" QuestId="8555" GiverName="Anachronos" GiverId="15192" />
+		<TurnIn QuestName="The Charge of the Dragonflights" QuestId="8555" TurnInName="Anachronos" TurnInId="15192" />
+		<Objective QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" Type="CollectItem" ItemId="9061" CollectCount="20" />
+		<Objective QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" Type="CollectItem" ItemId="8150" CollectCount="20" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12360" CollectCount="20" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="18562" CollectCount="10" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12800" CollectCount="10" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12361" CollectCount="10" />
+		<Objective QuestName="The Charge of the Dragonflights" QuestId="8555" Type="CollectItem" ItemId="20949" CollectCount="1" />
+		<PickUp QuestName="Azuregos's Magical Ledger" QuestId="8575" GiverName="Spirit of Azuregos" GiverId="15481" />
+		<TurnIn QuestName="Azuregos's Magical Ledger" QuestId="8575" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<PickUp QuestName="Translating the Ledger" QuestId="8576" GiverName="Narain Soothfancy" GiverId="11811" />
+		<TurnIn QuestName="Translating the Ledger" QuestId="8576" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<PickUp QuestName="Stewvul, Ex-B.F.F." QuestId="8577" GiverName="Narain Soothfancy" GiverId="11811" />
+		<PickUp QuestName="Never Ask Me About My Business" QuestId="8584" GiverName="Narain Soothfancy" GiverId="11811" />
+		<PickUp QuestName="Draconic for Dummies" QuestId="8597" GiverName="Narain Soothfancy" GiverId="11811" />
+		<PickUp QuestName="Love Song for Narain" QuestId="8599" GiverName="Meridith the Mermaiden" GiverId="15526" />
+		<TurnIn QuestName="Love Song for Narain" QuestId="8599" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<!-- Quest 8597 (Draconic for Dummies) — TurnIn Object not in 3.3.5a -->
+		<PickUp QuestName="rAnS0m" QuestId="8598" GiverName="Meridith the Mermaiden" GiverId="15526" />
+		<TurnIn QuestName="rAnS0m" QuestId="8598" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<PickUp QuestName="Decoy!" QuestId="8606" GiverName="Narain Soothfancy" GiverId="11811" />
+		<TurnIn QuestName="Never Ask Me About My Business" QuestId="8584" TurnInName="Dirge Quikcleave" TurnInId="8125" />
+		<PickUp QuestName="The Isle of Dread!" QuestId="8585" GiverName="Dirge Quikcleave" GiverId="8125" />
+		<While Condition="((HasQuest(8606)) &amp;&amp; (!IsQuestCompleted(8606)))" >
+			<CustomBehavior File="UseItemOn" QuestId="8606" MobId="15554" ItemId="21042" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+		</While>
+		<While Condition="((HasQuest(8606)) &amp;&amp; (!IsQuestCompleted(8606)))" >
+			<CustomBehavior File="UseItemOn" QuestId="8606" MobId="15554" ItemId="21039" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+		</While>
+		<While Condition="((HasQuest(8606)) &amp;&amp; (!IsQuestCompleted(8606)))" >
+			<CustomBehavior File="UseItemOn" QuestId="8606" MobId="15554" ItemId="21041" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+		</While>
+		<Objective QuestName="Decoy!" QuestId="8606" Type="KillMob" MobId="15554" KillCount="1" />
+		<Objective QuestName="The Isle of Dread!" QuestId="8585" Type="CollectItem" ItemId="21027" CollectCount="1" />
+		<Objective QuestName="The Isle of Dread!" QuestId="8585" Type="CollectItem" ItemId="21024" CollectCount="20" />
+		<TurnIn QuestName="The Isle of Dread!" QuestId="8585" TurnInName="Dirge Quikcleave" TurnInId="8125" />
+		<PickUp QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" GiverName="Dirge Quikcleave" GiverId="8125" />
+		<TurnIn QuestName="Decoy!" QuestId="8606" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<PickUp QuestName="The Only Prescription" QuestId="8620" GiverName="Narain Soothfancy" GiverId="11811" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="1" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="2" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="3" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="8" />
+		<!-- Quest 8577 (Stewvul, Ex-B.F.F.) — TurnIn Object not in 3.3.5a -->
+		<PickUp QuestName="Scrying Goggles? No Problem!" QuestId="8578" GiverName="Narain Soothfancy" GiverId="11811" />
+		<Objective QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" Type="CollectItem" ItemId="8150" CollectCount="20" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="6" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="5" />
+		<Objective QuestName="Scrying Goggles? No Problem!" QuestId="8578" Type="CollectItem" ItemId="20951" CollectCount="1" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="7" />
+		<PickUp QuestName="Eranikus, Tyrant of the Dream" QuestId="8733" GiverName="Malfurion Stormrage" GiverId="15362" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21103" CollectCount="4" />
+		<TurnIn QuestName="Eranikus, Tyrant of the Dream" QuestId="8733" TurnInName="Forest Wisp" TurnInId="15624" />
+		<PickUp QuestName="Tyrande and Remulos" QuestId="8734" GiverName="Forest Wisp" GiverId="15624" />
+		<TurnIn QuestName="Tyrande and Remulos" QuestId="8734" TurnInName="Keeper Remulos" TurnInId="11832" />
+		<PickUp QuestName="The Nightmare's Corruption" QuestId="8735" GiverName="Keeper Remulos" GiverId="11832" />
+		<Objective QuestName="The Nightmare's Corruption" QuestId="8735" Type="CollectItem" ItemId="21147" CollectCount="1" />
+		<Objective QuestName="The Nightmare's Corruption" QuestId="8735" Type="CollectItem" ItemId="21148" CollectCount="1" />
+		<Objective QuestName="The Nightmare's Corruption" QuestId="8735" Type="CollectItem" ItemId="21149" CollectCount="1" />
+		<Objective QuestName="The Nightmare's Corruption" QuestId="8735" Type="CollectItem" ItemId="21146" CollectCount="1" />
+		<TurnIn QuestName="The Nightmare's Corruption" QuestId="8735" TurnInName="Keeper Remulos" TurnInId="11832" />
+		<PickUp QuestName="The Nightmare Manifests" QuestId="8736" GiverName="Keeper Remulos" GiverId="11832" />
+		<TurnIn QuestName="The Nightmare Manifests" QuestId="8736" TurnInName="Keeper Remulos" TurnInId="11832" />
+		<PickUp QuestName="The Champion Returns" QuestId="8741" GiverName="Keeper Remulos" GiverId="11832" />
+		<Objective QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" Type="CollectItem" ItemId="9061" CollectCount="20" />
+		<TurnIn QuestName="Dirge's Kickin' Chimaerok Chops" QuestId="8586" TurnInName="Dirge Quikcleave" TurnInId="8125" />
+		<PickUp QuestName="Return to Narain" QuestId="8587" GiverName="Dirge Quikcleave" GiverId="8125" />
+		<Objective QuestName="The Only Prescription" QuestId="8620" Type="CollectItem" ItemId="21111" CollectCount="1" />
+		<TurnIn QuestName="Scrying Goggles? No Problem!" QuestId="8578" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<TurnIn QuestName="Return to Narain" QuestId="8587" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<TurnIn QuestName="The Only Prescription" QuestId="8620" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<TurnIn QuestName="The Champion Returns" QuestId="8741" TurnInName="Anachronos" TurnInId="15192" />
+		<PickUp QuestName="Nefarius's Corruption" QuestId="8730" GiverName="Vaelastrasz the Corrupt" GiverId="13020" />
+		<Objective QuestName="Nefarius's Corruption" QuestId="8730" Type="CollectItem" ItemId="21138" CollectCount="1" />
+		<TurnIn QuestName="Nefarius's Corruption" QuestId="8730" TurnInName="Anachronos" TurnInId="15192" />
+		<PickUp QuestName="The Good News and The Bad News" QuestId="8728" GiverName="Narain Soothfancy" GiverId="11811" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12360" CollectCount="20" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="18562" CollectCount="10" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12800" CollectCount="10" />
+		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12361" CollectCount="10" />
+		<TurnIn QuestName="The Good News and The Bad News" QuestId="8728" TurnInName="Narain Soothfancy" TurnInId="11811" />
+		<PickUp QuestName="The Wrath of Neptulon" QuestId="8729" GiverName="Narain Soothfancy" GiverId="11811" />
+		<Objective QuestName="The Wrath of Neptulon" QuestId="8729" Type="CollectItem" ItemId="21137" CollectCount="1" />
+		<TurnIn QuestName="The Wrath of Neptulon" QuestId="8729" TurnInName="Anachronos" TurnInId="15192" />
+		<PickUp QuestName="The Might of Kalimdor" QuestId="8742" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="Bang a Gong!" QuestId="8743" GiverName="Anachronos" GiverId="15192" />
+		<!-- Quest 8743 (Bang a Gong!) — TurnIn Object not in 3.3.5a -->
+		<PickUp QuestName="Treasure of the Timeless One" QuestId="8745" GiverName="Jonathan the Revelator" GiverId="15693" />
+	</QuestOrder>
+</HBProfile>

@@ -1,0 +1,75 @@
+<HBProfile>
+	<Name>Class Quests\Rogue Class Quests</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="The Shattered Salute" QuestId="2460" GiverName="Shenthul" GiverId="3401" />
+			<TurnIn QuestName="The Shattered Salute" QuestId="2460" TurnInName="Shenthul" TurnInId="3401" />
+			<PickUp QuestName="Deep Cover" QuestId="2458" GiverName="Shenthul" GiverId="3401" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<TurnIn QuestName="Deep Cover" QuestId="2458" TurnInName="Taskmaster Fizzule" TurnInId="7233" />
+			<PickUp QuestName="Mission: Possible But Not Probable" QuestId="2478" GiverName="Taskmaster Fizzule" GiverId="7233" />
+			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8072" CollectCount="1" />
+			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8073" CollectCount="1" />
+			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8074" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="Mission: Possible But Not Probable" QuestId="2478" TurnInName="Shenthul" TurnInId="3401" />
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="Hinott's Assistance" QuestId="2479" GiverName="Shenthul" GiverId="3401" />
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2479" TurnInName="Serge Hinott" TurnInId="2391" />
+			<PickUp QuestName="Hinott's Assistance" QuestId="2480" GiverName="Serge Hinott" GiverId="2391" />
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2480" TurnInName="Serge Hinott" TurnInId="2391" />
+			<PickUp QuestName="A Simple Request" QuestId="8233" GiverName="Ormok" GiverId="3328" />
+		</If>
+
+		<TurnIn QuestName="A Simple Request" QuestId="8233" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="Sealed Azure Bag" QuestId="8234" GiverName="Lord Jorach Ravenholdt" GiverId="6768" />
+			<Objective QuestName="Sealed Azure Bag" QuestId="8234" Type="CollectItem" ItemId="19775" CollectCount="1" />
+			<PickUp QuestName="Meeting with the Master" QuestId="3503" GiverName="Sanath Lim-yo" GiverId="8395" />
+		</If>
+
+		<TurnIn QuestName="Sealed Azure Bag" QuestId="8234" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="Encoded Fragments" QuestId="8235" GiverName="Archmage Xylem" GiverId="8379" />
+			<PickUp QuestName="Return Trip" QuestId="3421" GiverName="Nyrill" GiverId="8399" />
+			<Objective QuestName="Encoded Fragments" QuestId="8235" Type="CollectItem" ItemId="20023" CollectCount="10" />
+		</If>
+
+		<TurnIn QuestName="Encoded Fragments" QuestId="8235" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="The Azure Key" QuestId="8236" GiverName="Archmage Xylem" GiverId="8379" />
+			<Objective QuestName="The Azure Key" QuestId="8236" Type="CollectItem" ItemId="20022" CollectCount="1" />
+			<TurnIn QuestName="The Azure Key" QuestId="8236" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+		</If>
+
+	</QuestOrder>
+</HBProfile>

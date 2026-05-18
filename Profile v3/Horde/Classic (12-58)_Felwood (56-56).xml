@@ -1,0 +1,50 @@
+<HBProfile>
+	<Name>Classic (12-58)\Felwood (56-56)</Name>
+	<MinLevel>56</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<!-- Nata Dawnstrider (11344) — no spawn data -->
+		<Vendor Name="Innkeeper Biribi" Entry="14981" Type="Food" X="-8390.29" Y="285.503" Z="120.969" />
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<TurnIn QuestName="Wild Guardians" QuestId="4521" TurnInName="Trull Failbane" TurnInId="10306" />
+		<TurnIn QuestName="Forces of Jaedenar" QuestId="5155" TurnInName="Greta Mosshoof" TurnInId="10922" />
+		<PickUp QuestName="Collection of the Corrupt Water" QuestId="5157" GiverName="Greta Mosshoof" GiverId="10922" />
+		<TurnIn QuestName="Verifying the Corruption" QuestId="5156" TurnInName="Taronn Redfeather" TurnInId="10921" />
+		<TurnIn QuestName="Cleansing Felwood" QuestId="4102" TurnInName="Maybess Riverbreeze" TurnInId="9529" />
+		<Objective QuestName="Salve via Hunting" QuestId="5887" Type="CollectItem" ItemId="11511" CollectCount="1" />
+		<Objective QuestName="Well of Corruption" QuestId="4505" Type="CollectItem" ItemId="12567" CollectCount="1" />
+		<Objective QuestName="Salve via Hunting" QuestId="5887" Type="CollectItem" ItemId="11515" CollectCount="6" />
+		<Objective QuestName="Collection of the Corrupt Water" QuestId="5157" Type="CollectItem" ItemId="12907" CollectCount="1" />
+		<TurnIn QuestName="Well of Corruption" QuestId="4505" TurnInName="Winna Hazzard" TurnInId="9996" />
+		<TurnIn QuestName="Collection of the Corrupt Water" QuestId="5157" TurnInName="Greta Mosshoof" TurnInId="10922" />
+		<PickUp QuestName="Seeking Spiritual Aid" QuestId="5158" GiverName="Greta Mosshoof" GiverId="10922" />
+		<PickUp QuestName="Salve via Hunting" QuestId="5887" GiverName="Maybess Riverbreeze" GiverId="9529" />
+		<TurnIn QuestName="Seeking Spiritual Aid" QuestId="5158" TurnInName="Islen Waterseer" TurnInId="5901" />
+		<TurnIn QuestName="The Strength of Corruption" QuestId="4120" TurnInName="Talo Thornhoof" TurnInId="7776" />
+		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Western Plaguelands (56-58)" />
+	</QuestOrder>
+</HBProfile>

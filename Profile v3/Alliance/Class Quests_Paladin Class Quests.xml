@@ -1,0 +1,191 @@
+<HBProfile>
+	<Name>Class Quests\Paladin Class Quests</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="7642" Name="Collection of Goods">
+		<Objective Type="CollectItem" ItemId="13180" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Supply Crate" Id="176224" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3466.64" Y="-3298.56" Z="132.74" />
+				<Hotspot X="3476.95" Y="-3363.85" Z="136.24" />
+				<Hotspot X="3477.72" Y="-3397.27" Z="138.64" />
+				<Hotspot X="3486.79" Y="-3331.54" Z="131.38" />
+				<Hotspot X="3508.78" Y="-3372.3" Z="135.38" />
+				<Hotspot X="3521.19" Y="-3409.08" Z="134.25" />
+				<Hotspot X="3543.4" Y="-3432.62" Z="136.64" />
+				<Hotspot X="3546.42" Y="-3307.08" Z="130.52" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Human)">
+			<PickUp QuestName="Tome of Divinity" QuestId="2998" GiverName="Brother Wilhelm" GiverId="927" />
+			<TurnIn QuestName="Tome of Divinity" QuestId="2998" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1641" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1641" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1642" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1642" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1643" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1643" TurnInName="Stephanie Turner" TurnInId="6174" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1644" GiverName="Stephanie Turner" GiverId="6174" />
+			<Objective QuestName="The Tome of Divinity" QuestId="1644" Type="CollectItem" ItemId="2589" CollectCount="10" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1644" TurnInName="Stephanie Turner" TurnInId="6174" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1780" GiverName="Stephanie Turner" GiverId="6174" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1780" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1781" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1781" TurnInName="Gazin Tenorm" TurnInId="6173" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1786" GiverName="Gazin Tenorm" GiverId="6173" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1786" TurnInName="Henze Faulk" TurnInId="6172" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1787" GiverName="Henze Faulk" GiverId="6172" />
+			<Objective QuestName="The Tome of Divinity" QuestId="1787" Type="CollectItem" ItemId="6846" CollectCount="1" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1787" TurnInName="Gazin Tenorm" TurnInId="6173" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1788" GiverName="Gazin Tenorm" GiverId="6173" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1788" TurnInName="Duthorian Rall" TurnInId="6171" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<PickUp QuestName="Tome of Divinity" QuestId="2997" GiverName="Brandur Ironhammer" GiverId="5149" />
+			<TurnIn QuestName="Tome of Divinity" QuestId="2997" TurnInName="Tiza Battleforge" TurnInId="6179" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1645" GiverName="Tiza Battleforge" GiverId="6179" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1646" GiverName="Tiza Battleforge" GiverId="6179" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1646" TurnInName="Tiza Battleforge" TurnInId="6179" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1647" GiverName="Tiza Battleforge" GiverId="6179" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1647" TurnInName="John Turner" TurnInId="6175" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1648" GiverName="John Turner" GiverId="6175" />
+			<Objective QuestName="The Tome of Divinity" QuestId="1648" Type="CollectItem" ItemId="2589" CollectCount="10" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1648" TurnInName="John Turner" TurnInId="6175" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1778" GiverName="John Turner" GiverId="6175" />
+		</If>
+
+		<TurnIn QuestName="The Tome of Divinity" QuestId="1778" TurnInName="Tiza Battleforge" TurnInId="6179" />
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<PickUp QuestName="The Tome of Divinity" QuestId="1779" GiverName="Tiza Battleforge" GiverId="6179" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1779" TurnInName="Muiredon Battleforge" TurnInId="6178" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1783" GiverName="Muiredon Battleforge" GiverId="6178" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1783" TurnInName="Narm Faulk" TurnInId="6177" />
+			<PickUp QuestName="The Tome of Divinity" QuestId="1784" GiverName="Narm Faulk" GiverId="6177" />
+			<Objective QuestName="The Tome of Divinity" QuestId="1784" Type="CollectItem" ItemId="6847" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="The Tome of Divinity" QuestId="1784" TurnInName="Muiredon Battleforge" TurnInId="6178" />
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<PickUp QuestName="The Tome of Divinity" QuestId="1785" GiverName="Muiredon Battleforge" GiverId="6178" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1785" TurnInName="Tiza Battleforge" TurnInId="6179" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<PickUp QuestName="The Tome of Valor" QuestId="1794" GiverName="Duthorian Rall" GiverId="6171" />
+			<PickUp QuestName="The Tome of Valor" QuestId="1793" GiverName="Duthorian Rall" GiverId="6171" />
+			<PickUp QuestName="The Tome of Valor" QuestId="1649" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Tome of Valor" QuestId="1649" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Tome of Valor" QuestId="1650" GiverName="Duthorian Rall" GiverId="6171" />
+		</If>
+
+		<TurnIn QuestName="The Tome of Valor" QuestId="1650" TurnInName="Daphne Stilwell" TurnInId="6182" />
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<PickUp QuestName="The Tome of Valor" QuestId="1651" GiverName="Daphne Stilwell" GiverId="6182" />
+			<Objective QuestName="The Tome of Valor" QuestId="1651" Type="KillMob" MobId="6180" KillCount="1" />
+			<TurnIn QuestName="The Tome of Valor" QuestId="1651" TurnInName="Daphne Stilwell" TurnInId="6182" />
+			<PickUp QuestName="The Tome of Valor" QuestId="1652" GiverName="Daphne Stilwell" GiverId="6182" />
+			<TurnIn QuestName="The Tome of Valor" QuestId="1652" TurnInName="Duthorian Rall" TurnInId="6171" />
+			<PickUp QuestName="The Test of Righteousness" QuestId="1653" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="The Test of Righteousness" QuestId="1653" TurnInName="Jordan Stilwell" TurnInId="6181" />
+			<PickUp QuestName="The Test of Righteousness" QuestId="1654" GiverName="Jordan Stilwell" GiverId="6181" />
+			<Objective QuestName="The Test of Righteousness" QuestId="1654" Type="CollectItem" ItemId="6994" CollectCount="1" />
+			<Objective QuestName="The Test of Righteousness" QuestId="1654" Type="CollectItem" ItemId="6895" CollectCount="1" />
+			<PickUp QuestName="Bailor's Ore Shipment" QuestId="1655" GiverName="Bailor Stonehand" GiverId="6241" />
+			<Objective QuestName="Bailor's Ore Shipment" QuestId="1655" Type="CollectItem" ItemId="6992" CollectCount="1" />
+			<TurnIn QuestName="Bailor's Ore Shipment" QuestId="1655" TurnInName="Bailor Stonehand" TurnInId="6241" />
+			<Objective QuestName="The Test of Righteousness" QuestId="1654" Type="CollectItem" ItemId="6992" CollectCount="1" />
+			<PickUp QuestName="Seeking the Kor Gem" QuestId="1442" GiverName="Thundris Windweaver" GiverId="3649" />
+			<Objective QuestName="Seeking the Kor Gem" QuestId="1442" Type="CollectItem" ItemId="6995" CollectCount="1" />
+			<Objective QuestName="The Test of Righteousness" QuestId="1654" Type="CollectItem" ItemId="7083" CollectCount="1" />
+			<TurnIn QuestName="The Test of Righteousness" QuestId="1654" TurnInName="Jordan Stilwell" TurnInId="6181" />
+			<PickUp QuestName="The Test of Righteousness" QuestId="1806" GiverName="Jordan Stilwell" GiverId="6181" />
+			<TurnIn QuestName="The Test of Righteousness" QuestId="1806" TurnInName="Jordan Stilwell" TurnInId="6181" />
+			<PickUp QuestName="The Tome of Nobility" QuestId="1661" GiverName="Duthorian Rall" GiverId="6171" />
+			<!-- Quest 1661 (The Tome of Nobility) — TurnIn NPC not found -->
+			<PickUp QuestName="Chillwind Point" QuestId="8415" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<TurnIn QuestName="Chillwind Point" QuestId="8415" TurnInName="Lord Grayson Shadowbreaker" TurnInId="10838" />
+			<PickUp QuestName="Dispelling Evil" QuestId="8414" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<Objective QuestName="Dispelling Evil" QuestId="8414" Type="CollectItem" ItemId="12840" CollectCount="20" />
+			<TurnIn QuestName="Dispelling Evil" QuestId="8414" TurnInName="High Priest Thel'danis" TurnInId="1854" />
+			<PickUp QuestName="Inert Scourgestones" QuestId="8416" GiverName="High Priest Thel'danis" GiverId="1854" />
+			<TurnIn QuestName="Inert Scourgestones" QuestId="8416" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" />
+			<PickUp QuestName="Forging the Mightstone" QuestId="8418" GiverName="Commander Ashlam Valorfist" GiverId="10838" />
+			<Objective QuestName="Forging the Mightstone" QuestId="8418" Type="CollectItem" ItemId="20606" CollectCount="2" />
+			<Objective QuestName="Forging the Mightstone" QuestId="8418" Type="CollectItem" ItemId="20607" CollectCount="2" />
+			<Objective QuestName="Forging the Mightstone" QuestId="8418" Type="CollectItem" ItemId="20608" CollectCount="2" />
+			<TurnIn QuestName="Forging the Mightstone" QuestId="8418" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" />
+			<PickUp QuestName="Lord Grayson Shadowbreaker" QuestId="7638" GiverName="Duthorian Rall" GiverId="6171" />
+			<TurnIn QuestName="Lord Grayson Shadowbreaker" QuestId="7638" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="Emphasis on Sacrifice" QuestId="7637" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<TurnIn QuestName="Emphasis on Sacrifice" QuestId="7637" TurnInName="High Priest Rohan" TurnInId="11406" />
+			<PickUp QuestName="To Show Due Judgment" QuestId="7639" GiverName="High Priest Rohan" GiverId="11406" />
+			<TurnIn QuestName="To Show Due Judgment" QuestId="7639" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="Exorcising Terrordale" QuestId="7640" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<While Condition="((HasQuest(7640)) &amp;&amp; (!IsQuestCompleted(7640)))" >
+				<CustomBehavior File="UseItemOn" QuestId="7640" MobId="14564" ItemId="18752" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+			</While>
+			<Objective QuestName="Exorcising Terrordale" QuestId="7640" Type="KillMob" MobId="14564" KillCount="25" />
+			<TurnIn QuestName="xorcising Terrordale" QuestId="7640" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="The Work of Grimand Elmore" QuestId="7641" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<TurnIn QuestName="The Work of Grimand Elmore" QuestId="7641" TurnInName="Grimand Elmore" TurnInId="1416" />
+			<PickUp QuestName="Collection of Goods" QuestId="7642" GiverName="Grimand Elmore" GiverId="1416" />
+			<Objective QuestName="Collection of Goods" QuestId="7642" Type="CollectItem" ItemId="8836" CollectCount="10" />
+			<Objective QuestName="Collection of Goods" QuestId="7642" Type="CollectItem" ItemId="14047" CollectCount="40" />
+			<Objective QuestName="Collection of Goods" QuestId="7642" Type="CollectItem" ItemId="12360" CollectCount="6" />
+			<Objective QuestName="Collection of Goods" QuestId="7642" Type="CollectItem" ItemId="13180" CollectCount="5" />
+			<TurnIn QuestName="Collection of Goods" QuestId="7642" TurnInName="Grimand Elmore" TurnInId="1416" />
+			<PickUp QuestName="Grimand's Finest Work" QuestId="7648" GiverName="Grimand Elmore" GiverId="1416" />
+			<TurnIn QuestName="Grimand's Finest Work" QuestId="7648" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="Ancient Equine Spirit" QuestId="7643" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<PickUp QuestName="Manna-Enriched Horse Feed" QuestId="7645" GiverName="Merideth Carlson" GiverId="2357" />
+			<TurnIn QuestName="Manna-Enriched Horse Feed" QuestId="7645" TurnInName="Merideth Carlson" TurnInId="2357" />
+			<Objective QuestName="Ancient Equine Spirit" QuestId="7643" Type="CollectItem" ItemId="18775" CollectCount="1" />
+			<TurnIn QuestName="Ancient Equine Spirit" QuestId="7643" TurnInName="Ancient Equine Spirit" TurnInId="14566" />
+			<PickUp QuestName="Blessed Arcanite Barding" QuestId="7644" GiverName="Ancient Equine Spirit" GiverId="14566" />
+			<TurnIn QuestName="Blessed Arcanite Barding" QuestId="7644" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="The Divination Scryer" QuestId="7646" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<Objective QuestName="The Divination Scryer" QuestId="7646" Type="CollectItem" ItemId="12800" CollectCount="1" />
+			<Objective QuestName="The Divination Scryer" QuestId="7646" Type="CollectItem" ItemId="18335" CollectCount="1" />
+			<TurnIn QuestName="The Divination Scryer" QuestId="7646" TurnInName="Lord Grayson Shadowbreaker" TurnInId="928" />
+			<PickUp QuestName="Judgment and Redemption" QuestId="7647" GiverName="Lord Grayson Shadowbreaker" GiverId="928" />
+			<Objective QuestName="Judgment and Redemption" QuestId="7647" Type="CollectItem" ItemId="18746" CollectCount="1" />
+			<Objective QuestName="Judgment and Redemption" QuestId="7647" Type="CollectItem" ItemId="18792" CollectCount="1" />
+			<Objective QuestName="Judgment and Redemption" QuestId="7647" Type="CollectItem" ItemId="18749" CollectCount="1" />
+			<TurnIn QuestName="Judgment and Redemption" QuestId="7647" TurnInName="Darkreaver's Fallen Charger" TurnInId="14568" />
+		</If>
+
+	</QuestOrder>
+</HBProfile>

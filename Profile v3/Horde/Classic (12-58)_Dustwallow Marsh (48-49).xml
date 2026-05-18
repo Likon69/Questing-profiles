@@ -1,0 +1,63 @@
+<HBProfile>
+	<Name>Classic (12-58)\Dustwallow Marsh (48-49)</Name>
+	<MinLevel>48</MinLevel>
+	<MaxLevel>49</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Speed Barge Bartender" Entry="4516" Type="Food" X="2107.68" Y="1609.01" Z="80.7722" />
+		<Vendor Name="Grub" Entry="11557" Type="Repair" X="7025.63" Y="-2135.69" Z="586.408" />
+		<Vendor Name="Krog" Entry="11898" Type="Repair" X="1651.43" Y="-5492.02" Z="101.95" />
+		<Vendor Name="Innkeeper Janene" Entry="15177" Type="Food" X="-6758.55" Y="775.594" Z="89.1046" />
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="4450" Name="Ledger from Tanaris">
+		<Objective Type="CollectItem" ItemId="11724" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Damaged Crate" Id="174728" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3990.0" Y="-3814.18" Z="34.45" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1173" Name="Challenge Overlord Mok'Morokk">
+		<Objective Type="KillMob" MobId="4500" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-3132.84" Y="-2880.27" Z="34.7842" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="The Brood of Onyxia" QuestId="1172" GiverName="Draz'Zilb" GiverId="4501" />
+		<TurnIn QuestName="Cortello's Riddle" QuestId="625" TurnInName="Object_2555" TurnInType="Object" TurnInId="2555" />
+		<PickUp QuestName="Cortello's Riddle" QuestId="626" GiverName="Draz'Zilb" GiverId="4501" />
+		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11724" CollectCount="1" />
+		<TurnIn QuestName="The Brood of Onyxia" QuestId="1172" TurnInName="Draz'Zilb" TurnInId="4501" />
+		<PickUp QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" GiverName="Overlord Mok'Morokk" GiverId="4500" />
+		<Objective QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" Type="KillMob" MobId="4500" KillCount="1" />
+		<TurnIn QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" TurnInName="Draz'Zilb" TurnInId="4501" />
+		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Feralas (49-49)" />
+	</QuestOrder>
+</HBProfile>

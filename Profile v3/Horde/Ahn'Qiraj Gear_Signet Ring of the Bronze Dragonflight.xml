@@ -1,0 +1,61 @@
+<HBProfile>
+	<Name>Ahn'Qiraj Gear\Signet Ring of the Bronze Dragonflight</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<!-- Vendor-Tron 1000 (7244) — no spawn data -->
+		<!-- Innkeeper Vizzie (7251) — no spawn data -->
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="The Path of the Invoker" QuestId="8757" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8747" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8752" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8758" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8748" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8753" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8759" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8749" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8754" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8760" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8750" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8755" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Grand Invoker" QuestId="8761" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Protector of Kalimdor" QuestId="8751" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Qiraji Conqueror" QuestId="8756" GiverName="Anachronos" GiverId="15192" />
+		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20861" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20862" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20863" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Protector No More" QuestId="8764" Type="CollectItem" ItemId="20858" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Protector No More" QuestId="8764" Type="CollectItem" ItemId="20859" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Protector No More" QuestId="8764" Type="CollectItem" ItemId="20860" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20864" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20865" CollectCount="15" />
+		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20858" CollectCount="15" />
+		<PickUp QuestName="The Changing of Paths - Invoker No More" QuestId="8765" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Changing of Paths - Protector No More" QuestId="8764" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" GiverName="Anachronos" GiverId="15192" />
+	</QuestOrder>
+</HBProfile>

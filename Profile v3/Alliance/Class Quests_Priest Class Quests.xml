@@ -1,0 +1,61 @@
+<HBProfile>
+	<Name>Class Quests\Priest Class Quests</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<PickUp QuestName="Desperate Prayer" QuestId="5635" GiverName="Maxan Anvol" GiverId="1226" />
+			<!-- Quest 5635 (Desperate Prayer) — TurnIn NPC not found -->
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Human)">
+			<PickUp QuestName="Desperate Prayer" QuestId="5637" GiverName="Priestess Josetta" GiverId="377" />
+			<!-- Quest 5637 (Desperate Prayer) — TurnIn NPC not found -->
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.NightElf)">
+			<PickUp QuestName="Returning Home" QuestId="5629" GiverName="Laurna Morninglight" GiverId="3600" />
+			<!-- Quest 5629 (Returning Home) — TurnIn NPC not found -->
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
+			<PickUp QuestName="A Lack of Fear" QuestId="5641" GiverName="High Priestess Laurena" GiverId="376" />
+			<!-- Quest 5641 (A Lack of Fear) — TurnIn NPC not found -->
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Human)">
+			<PickUp QuestName="Arcane Feedback" QuestId="5676" GiverName="High Priest Rohan" GiverId="11406" />
+			<!-- Quest 5676 (Arcane Feedback) — TurnIn NPC not found -->
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.NightElf)">
+			<PickUp QuestName="Elune's Grace" QuestId="5673" GiverName="High Priestess Laurena" GiverId="376" />
+			<!-- Quest 5673 (Elune's Grace) — TurnIn NPC not found -->
+		</If>
+
+	</QuestOrder>
+</HBProfile>

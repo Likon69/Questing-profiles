@@ -1,0 +1,47 @@
+<HBProfile>
+	<Name>Felwood (55-56)</Name>
+	<MinLevel>55</MinLevel>
+	<MaxLevel>56</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<!-- Nata Dawnstrider (11344) — no spawn data -->
+		<Vendor Name="Innkeeper Biribi" Entry="14981" Type="Food" X="-8390.29" Y="285.503" Z="120.969" />
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<TurnIn QuestName="Cleansed Water Returns to Felwood" QuestId="5159" TurnInName="Greta Mosshoof" TurnInId="10922" />
+		<PickUp QuestName="Dousing the Flames of Protection" QuestId="5165" GiverName="Greta Mosshoof" GiverId="10922" />
+		<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" />
+		<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" />
+		<TurnIn QuestName="Purified!" QuestId="4442" TurnInName="Eridan Bluewind" TurnInId="9116" />
+		<Objective QuestName="A Strange Red Key" QuestId="5202" Type="CollectItem" ItemId="13140" CollectCount="1" />
+		<While Condition="((HasQuest(5165)) &amp;&amp; (!IsQuestCompleted(5165)))" >
+			<CustomBehavior File="UseItemOn" QuestId="5165" MobId="176158" ItemId="13140" NumOfTimes="1" MobType="GameObject" Range="5" CollectionDistance="1000" />
+		</While>
+		<PickUp QuestName="A Strange Red Key" QuestId="5202" GiverName="Eridan Bluewind" GiverId="9116" />
+		<TurnIn QuestName="A Strange Red Key" QuestId="5202" TurnInName="Captured Arko'narin" TurnInId="11016" />
+		<Objective QuestName="Toxic Horrors" QuestId="5086" Type="CollectItem" ItemId="12822" CollectCount="3" />
+		<CustomBehavior File="LoadProfile" ProfileName="Winterspring (56-56)" />
+	</QuestOrder>
+</HBProfile>

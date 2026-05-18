@@ -1,0 +1,143 @@
+<HBProfile>
+	<Name>Class Quests\Shaman Class Quests</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
+		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
+		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Tauren)">
+			<PickUp QuestName="Call of Earth" QuestId="1519" GiverName="Seer Ravenfeather" GiverId="5888" />
+			<Objective QuestName="Call of Earth" QuestId="1519" Type="CollectItem" ItemId="6634" CollectCount="2" />
+			<TurnIn QuestName="Call of Earth" QuestId="1519" TurnInName="Seer Ravenfeather" TurnInId="5888" />
+			<PickUp QuestName="Call of Earth" QuestId="1520" GiverName="Seer Ravenfeather" GiverId="5888" />
+			<TurnIn QuestName="Call of Earth" QuestId="1520" TurnInName="Seer Ravenfeather" TurnInId="5891" />
+			<PickUp QuestName="Call of Earth" QuestId="1521" GiverName="Seer Ravenfeather" GiverId="5888" />
+			<TurnIn QuestName="Call of Earth" QuestId="1521" TurnInName="Seer Ravenfeather" TurnInId="5888" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
+			<PickUp QuestName="Call of Earth" QuestId="1516" GiverName="Canaga Earthcaller" GiverId="5887" />
+			<Objective QuestName="Call of Earth" QuestId="1516" Type="CollectItem" ItemId="6640" CollectCount="2" />
+			<TurnIn QuestName="Call of Earth" QuestId="1516" TurnInName="Canaga Earthcaller" TurnInId="5887" />
+			<PickUp QuestName="Call of Earth" QuestId="1517" GiverName="Canaga Earthcaller" GiverId="5887" />
+		</If>
+
+		<TurnIn QuestName="Call of Earth" QuestId="1517" TurnInName="Minor Manifestation of Earth" TurnInId="5891" />
+		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
+			<PickUp QuestName="Call of Earth" QuestId="1518" GiverName="Minor Manifestation of Earth" GiverId="5891" />
+			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Fire" QuestId="2983" GiverName="Swart" GiverId="3173" />
+		</If>
+
+		<TurnIn QuestName="Call of Fire" QuestId="2983" TurnInName="Kranal Fiss" TurnInId="5907" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Fire" QuestId="1524" GiverName="Kranal Fiss" GiverId="5907" />
+		</If>
+
+		<TurnIn QuestName="Call of Fire" QuestId="1524" TurnInName="Telf Joolam" TurnInId="5900" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Fire" QuestId="1525" GiverName="Telf Joolam" GiverId="5900" />
+			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="5026" CollectCount="1" />
+			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="6652" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="Call of Fire" QuestId="1525" TurnInName="Telf Joolam" TurnInId="5900" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Fire" QuestId="1526" GiverName="Telf Joolam" GiverId="5900" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Call of Fire" QuestId="1526" Type="CollectItem" ItemId="6655" CollectCount="1" />
+			<TurnIn QuestName="Call of Fire" QuestId="1526" TurnInName="Object_61934" TurnInType="Object" TurnInId="61934" />
+			<PickUp QuestName="Call of Fire" QuestId="1527" GiverName="Telf Joolam" GiverId="5900" />
+			<TurnIn QuestName="Call of Fire" QuestId="1527" TurnInName="Kranal Fiss" TurnInId="5907" />
+			<PickUp QuestName="Call of Water" QuestId="1528" GiverName="Searn Firewarder" GiverId="5892" />
+			<TurnIn QuestName="Call of Water" QuestId="1528" TurnInName="Islen Waterseer" TurnInId="5901" />
+			<PickUp QuestName="Call of Water" QuestId="1530" GiverName="Islen Waterseer" GiverId="5901" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="1530" TurnInName="Brine" TurnInId="5899" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="1535" GiverName="Brine" GiverId="5899" />
+			<Objective QuestName="Call of Water" QuestId="1535" Type="CollectItem" ItemId="7769" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="1536" GiverName="Brine" GiverId="5899" />
+			<Objective QuestName="Call of Water" QuestId="1536" Type="CollectItem" ItemId="7771" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="1534" GiverName="Brine" GiverId="5899" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Call of Water" QuestId="1534" Type="CollectItem" ItemId="7770" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="220" GiverName="Brine" GiverId="5899" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="220" TurnInName="Islen Waterseer" TurnInId="5901" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="63" GiverName="Islen Waterseer" GiverId="5901" />
+			<!-- Quest 63 (Call of Water) — TurnIn Object not in 3.3.5a -->
+			<PickUp QuestName="Call of Water" QuestId="100" GiverName="Islen Waterseer" GiverId="5901" />
+			<TurnIn QuestName="Call of Water" QuestId="100" TurnInName="Minor Manifestation of Water" TurnInId="5895" />
+			<PickUp QuestName="Call of Water" QuestId="96" GiverName="Minor Manifestation of Water" GiverId="5895" />
+			<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" />
+			<PickUp QuestName="Call of Air" QuestId="1531" GiverName="Searn Firewarder" GiverId="5892" />
+			<TurnIn QuestName="Call of Air" QuestId="1531" TurnInName="Prate Cloudseer" TurnInId="5905" />
+			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7069" CollectCount="1" />
+			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7068" CollectCount="1" />
+			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7067" CollectCount="1" />
+			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7070" CollectCount="1" />
+			<PickUp QuestName="Elemental Mastery" QuestId="8410" GiverName="Beram Skychaser" GiverId="3032" />
+			<TurnIn QuestName="Elemental Mastery" QuestId="8410" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+			<PickUp QuestName="Spirit Totem" QuestId="8412" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<Objective QuestName="Spirit Totem" QuestId="8412" Type="CollectItem" ItemId="20610" CollectCount="8" />
+			<Objective QuestName="Spirit Totem" QuestId="8412" Type="CollectItem" ItemId="20611" CollectCount="8" />
+			<TurnIn QuestName="Spirit Totem" QuestId="8412" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+			<PickUp QuestName="Da Voodoo" QuestId="8413" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20606" CollectCount="2" />
+			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20607" CollectCount="2" />
+			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20608" CollectCount="2" />
+			<TurnIn QuestName="a Voodoo" QuestId="8413" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+		</If>
+
+	</QuestOrder>
+</HBProfile>

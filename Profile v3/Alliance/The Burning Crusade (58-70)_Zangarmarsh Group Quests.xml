@@ -1,0 +1,119 @@
+<HBProfile>
+	<Name>The Burning Crusade (58-70)\Zangarmarsh Group Quests</Name>
+	<MinLevel>58</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Kyaran Thyrwel" Entry="18942" Type="Repair" X="-584.367" Y="4104.07" Z="91.5878" />
+		<!-- Innkeeper Biribi (18941) — no spawn data -->
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="9730" Name="Leader of the Darkcrest">
+		<Objective Type="KillMob" MobId="18046" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-366.556" Y="6202.51" Z="26.3777" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9817" Name="Leader of the Bloodscale">
+		<Objective Type="KillMob" MobId="18044" KillCount="1">
+			<Hotspots>
+				<Hotspot X="564.113" Y="6199.74" Z="26.8482" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9894" Name="Safeguarding the Watchers">
+		<Objective Type="KillMob" MobId="18282" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-1211.8" Y="5843.24" Z="5.5916" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9895" Name="The Dying Balance">
+		<Objective Type="KillMob" MobId="18281" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-566.173" Y="5350.9" Z="17.5357" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="Me.Level &lt; 58">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 58 - Rajah Haghazed</Name>
+					<Factions>74</Factions>
+					<Hotspots>
+						<Hotspot X="-366.56" Y="6202.51" Z="26.38" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
+			<GrindTo Level="58" />
+		</If>
+		<PickUp QuestName="Leader of the Darkcrest" QuestId="9730" />
+		<PickUp QuestName="Leader of the Bloodscale" QuestId="9817" />
+		<Objective QuestName="Leader of the Darkcrest" QuestId="9730" Type="KillMob" MobId="18046" KillCount="1" />
+		<Objective QuestName="Leader of the Bloodscale" QuestId="9817" Type="KillMob" MobId="18044" KillCount="1" />
+		<TurnIn QuestName="Leader of the Darkcrest" QuestId="9730" TurnInName="Warden Hamoot" TurnInId="17858" />
+		<PickUp QuestName="Wanted: Chieftain Mummaki" QuestId="10116" GiverName="Warden Hamoot" GiverId="17858" />
+		<Objective QuestName="Wanted: Chieftain Mummaki" QuestId="10116" Type="CollectItem" ItemId="27943" CollectCount="1" />
+		<TurnIn QuestName="Wanted: Chieftain Mummaki" QuestId="10116" TurnInName="Ikuti" TurnInId="18008" />
+		<If Condition="Me.Level &lt; 60">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 60 - Chieftain Mummaki</Name>
+					<Factions>51</Factions>
+					<TargetMinLevel>64</TargetMinLevel>
+					<TargetMaxLevel>64</TargetMaxLevel>
+					<Hotspots>
+						<Hotspot X="1038.90" Y="8279.63" Z="57.74" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
+			<GrindTo Level="60" />
+		</If>
+		<PickUp QuestName="Safeguarding the Watchers" QuestId="9894" GiverName="Windcaller Blackhoof" GiverId="18070" />
+		<Objective QuestName="Safeguarding the Watchers" QuestId="9894" Type="KillMob" MobId="18282" KillCount="1" />
+		<TurnIn QuestName="Safeguarding the Watchers" QuestId="9894" TurnInName="Windcaller Blackhoof" TurnInId="18070" />
+		<PickUp QuestName="The Dying Balance" QuestId="9895" GiverName="Lethyn Moonfire" GiverId="17834" />
+		<Objective QuestName="The Dying Balance" QuestId="9895" Type="KillMob" MobId="18281" KillCount="1" />
+		<TurnIn QuestName="The Dying Balance" QuestId="9895" TurnInName="Lethyn Moonfire" TurnInId="17834" />
+		<If Condition="Me.Level &lt; 63">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 63 - Boglash</Name>
+					<Factions>14</Factions>
+					<TargetMinLevel>61</TargetMinLevel>
+					<TargetMaxLevel>61</TargetMaxLevel>
+					<Hotspots>
+						<Hotspot X="-566.17" Y="5350.90" Z="17.54" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
+			<GrindTo Level="63" />
+		</If>
+		<PickUp QuestName="Fhwoor Smash!" QuestId="9729" GiverName="Fhwoor" GiverId="17877" />
+		<TurnIn QuestName="Fhwoor Smash!" QuestId="9729" TurnInName="Gzhun'tt" TurnInId="17856" />
+	</QuestOrder>
+</HBProfile>

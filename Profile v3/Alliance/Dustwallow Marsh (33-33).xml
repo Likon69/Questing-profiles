@@ -1,0 +1,49 @@
+<HBProfile>
+	<Name>Dustwallow Marsh (33-33)</Name>
+	<MinLevel>33</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<Vendor Name="Speed Barge Bartender" Entry="4516" Type="Food" X="2107.68" Y="1609.01" Z="80.7722" />
+		<Vendor Name="Grub" Entry="11557" Type="Repair" X="7025.63" Y="-2135.69" Z="586.408" />
+		<Vendor Name="Krog" Entry="11898" Type="Repair" X="1651.43" Y="-5492.02" Z="101.95" />
+		<Vendor Name="Innkeeper Janene" Entry="15177" Type="Food" X="-6758.55" Y="775.594" Z="89.1046" />
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="Traitors Among Us" QuestId="11126" GiverName="Calia Hastings" GiverId="23566" />
+		<TurnIn QuestName="Traitors Among Us" QuestId="11126" TurnInName="Calia Hastings" TurnInId="23566" />
+		<TurnIn QuestName="James Hyal" QuestId="1302" TurnInName="Clerk Lendry" TurnInId="5083" />
+		<PickUp QuestName="Inspecting the Ruins" QuestId="11123" GiverName="Captain Garran Vimes" GiverId="4944" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1264" TurnInName="Commander Samaul" TurnInId="4964" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1265" GiverName="Commander Samaul" GiverId="4964" />
+		<PickUp QuestName="The Orc Report" QuestId="1219" GiverName="Commander Samaul" GiverId="4964" />
+		<PickUp QuestName="Hungry!" QuestId="1177" GiverName="Mudcrush Durtfeet" GiverId="4503" />
+		<TurnIn QuestName="Inspecting the Ruins" QuestId="11123" TurnInName="Inspector Tarem" TurnInId="23567" />
+		<PickUp QuestName="Suspicious Hoofprints" QuestId="1284" GiverName="Inspector Tarem" GiverId="23567" />
+		<PickUp QuestName="Lieutenant Paval Reethe" QuestId="1252" GiverName="Inspector Tarem" GiverId="23567" />
+		<PickUp QuestName="The Black Shield" QuestId="1253" GiverName="Inspector Tarem" GiverId="23567" />
+		<CustomBehavior File="LoadProfile" ProfileName="Thousand Needles (33-34)" />
+	</QuestOrder>
+</HBProfile>

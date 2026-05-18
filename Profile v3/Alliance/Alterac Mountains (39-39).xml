@@ -1,0 +1,74 @@
+<HBProfile>
+	<Name>Alterac Mountains (39-39)</Name>
+	<MinLevel>39</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="551" Name="The Ensorcelled Parchment">
+		<Objective Type="CollectItem" ItemId="3706" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Worn Wooden Chest" Id="1765" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1226.3" Y="-313.66" Z="43.62" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<PickUp QuestName="Crushridge Bounty" QuestId="500" GiverName="Marshal Redpath" GiverId="2263" />
+		<TurnIn QuestName="Further Mysteries" QuestId="525" TurnInName="Magistrate Henry Maleb" TurnInId="2276" />
+		<PickUp QuestName="Dark Council" QuestId="537" GiverName="Magistrate Henry Maleb" GiverId="2276" />
+		<PickUp QuestName="Noble Deaths" QuestId="512" GiverName="Magistrate Henry Maleb" GiverId="2276" />
+		<TurnIn QuestName="Magical Analysis" QuestId="602" TurnInName="Archmage Ansirem Runeweaver" TurnInId="2543" />
+		<PickUp QuestName="Ansirem's Key" QuestId="603" GiverName="Archmage Ansirem Runeweaver" GiverId="2543" />
+		<Objective QuestName="Dark Council" QuestId="537" Type="CollectItem" ItemId="3672" CollectCount="1" />
+		<Objective QuestName="The Ensorcelled Parchment" QuestId="551" Type="CollectItem" ItemId="3706" CollectCount="1" />
+		<PickUp QuestName="The Ensorcelled Parchment" QuestId="551" GiverName="Archmage Ansirem Runeweaver" GiverId="2543" />
+		<Objective QuestName="Noble Deaths" QuestId="512" Type="CollectItem" ItemId="3505" CollectCount="7" />
+		<Objective QuestName="Crushridge Bounty" QuestId="500" Type="CollectItem" ItemId="2843" CollectCount="9" />
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<Objective QuestName="Cyclonian" QuestId="1712" Type="CollectItem" ItemId="6851" CollectCount="1" />
+			<TurnIn QuestName="Cyclonian" QuestId="1712" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+			<PickUp QuestName="The Summoning" QuestId="1713" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<Objective QuestName="The Summoning" QuestId="1713" Type="CollectItem" ItemId="6894" CollectCount="1" />
+			<TurnIn QuestName="The Summoning" QuestId="1713" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+			<PickUp QuestName="Whirlwind Weapon" QuestId="1792" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+		</If>
+
+		<TurnIn QuestName="To The Hinterlands" QuestId="1449" TurnInName="Falstad Wildhammer" TurnInId="5635" />
+		<PickUp QuestName="Gryphon Master Talonaxe" QuestId="1450" GiverName="Falstad Wildhammer" GiverId="5635" />
+		<TurnIn QuestName="Gryphon Master Talonaxe" QuestId="1450" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" />
+		<PickUp QuestName="Rhapsody Shindigger" QuestId="1451" GiverName="Gryphon Master Talonaxe" GiverId="5636" />
+		<TurnIn QuestName="Rhapsody Shindigger" QuestId="1451" TurnInName="Rhapsody Shindigger" TurnInId="5634" />
+		<PickUp QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" GiverName="Rhapsody Shindigger" GiverId="5634" />
+		<TurnIn QuestName="Crushridge Bounty" QuestId="500" TurnInName="Marshal Redpath" TurnInId="2263" />
+		<TurnIn QuestName="Dark Council" QuestId="537" TurnInName="Magistrate Henry Maleb" TurnInId="2276" />
+		<TurnIn QuestName="Noble Deaths" QuestId="512" TurnInName="Magistrate Henry Maleb" TurnInId="2276" />
+		<TurnIn QuestName="The Ensorcelled Parchment" QuestId="551" TurnInName="Loremaster Dibbs" TurnInId="2277" />
+		<PickUp QuestName="Stormpike's Deciphering" QuestId="554" GiverName="Loremaster Dibbs" GiverId="2277" />
+		<CustomBehavior File="LoadProfile" ProfileName="Arathi Highlands (39-41)" />
+	</QuestOrder>
+</HBProfile>

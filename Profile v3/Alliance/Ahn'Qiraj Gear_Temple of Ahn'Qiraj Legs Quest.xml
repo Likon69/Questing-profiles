@@ -1,0 +1,250 @@
+<HBProfile>
+	<Name>Ahn'Qiraj Gear\Temple of Ahn'Qiraj Legs Quest</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors />
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<If Condition="Me.Level &lt; 60">
+			<GrindTo Level="60" />
+		</If>
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<PickUp QuestName="Genesis Trousers" QuestId="8668" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<PickUp QuestName="Striker's Leggings" QuestId="8658" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<PickUp QuestName="Enigma Leggings" QuestId="8631" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<PickUp QuestName="Avenger's Legguards" QuestId="8629" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<PickUp QuestName="Trousers of the Oracle" QuestId="8593" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<PickUp QuestName="Deathdealer's Leggings" QuestId="8640" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Stormcaller's Leggings" QuestId="8624" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<PickUp QuestName="Doomcaller's Trousers" QuestId="8663" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<PickUp QuestName="Conqueror's Legguards" QuestId="8560" GiverName="Kandrostrasz" GiverId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<Objective QuestName="Genesis Trousers" QuestId="8668" Type="CollectItem" ItemId="20931" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<Objective QuestName="Striker's Leggings" QuestId="8658" Type="CollectItem" ItemId="20931" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<Objective QuestName="Enigma Leggings" QuestId="8631" Type="CollectItem" ItemId="20927" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<Objective QuestName="Avenger's Legguards" QuestId="8629" Type="CollectItem" ItemId="20931" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<Objective QuestName="Trousers of the Oracle" QuestId="8593" Type="CollectItem" ItemId="20927" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<Objective QuestName="Deathdealer's Leggings" QuestId="8640" Type="CollectItem" ItemId="20927" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Stormcaller's Leggings" QuestId="8624" Type="CollectItem" ItemId="20931" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<Objective QuestName="Doomcaller's Trousers" QuestId="8663" Type="CollectItem" ItemId="20931" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<Objective QuestName="Conqueror's Legguards" QuestId="8560" Type="CollectItem" ItemId="20927" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<Objective QuestName="Genesis Trousers" QuestId="8668" Type="CollectItem" ItemId="20882" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<Objective QuestName="Striker's Leggings" QuestId="8658" Type="CollectItem" ItemId="20874" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<Objective QuestName="Enigma Leggings" QuestId="8631" Type="CollectItem" ItemId="20877" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<Objective QuestName="Avenger's Legguards" QuestId="8629" Type="CollectItem" ItemId="20881" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<Objective QuestName="Trousers of the Oracle" QuestId="8593" Type="CollectItem" ItemId="20879" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<Objective QuestName="Deathdealer's Leggings" QuestId="8640" Type="CollectItem" ItemId="20875" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Stormcaller's Leggings" QuestId="8624" Type="CollectItem" ItemId="20881" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<Objective QuestName="Doomcaller's Trousers" QuestId="8663" Type="CollectItem" ItemId="20878" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<Objective QuestName="Conqueror's Legguards" QuestId="8560" Type="CollectItem" ItemId="20876" CollectCount="2" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<Objective QuestName="Genesis Trousers" QuestId="8668" Type="CollectItem" ItemId="20858" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<Objective QuestName="Striker's Leggings" QuestId="8658" Type="CollectItem" ItemId="20860" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<Objective QuestName="Enigma Leggings" QuestId="8631" Type="CollectItem" ItemId="20860" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<Objective QuestName="Avenger's Legguards" QuestId="8629" Type="CollectItem" ItemId="20865" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<Objective QuestName="Trousers of the Oracle" QuestId="8593" Type="CollectItem" ItemId="20859" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<Objective QuestName="Deathdealer's Leggings" QuestId="8640" Type="CollectItem" ItemId="20858" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Stormcaller's Leggings" QuestId="8624" Type="CollectItem" ItemId="20865" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<Objective QuestName="Doomcaller's Trousers" QuestId="8663" Type="CollectItem" ItemId="20859" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<Objective QuestName="Conqueror's Legguards" QuestId="8560" Type="CollectItem" ItemId="20861" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<Objective QuestName="Genesis Trousers" QuestId="8668" Type="CollectItem" ItemId="20862" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<Objective QuestName="Striker's Leggings" QuestId="8658" Type="CollectItem" ItemId="20864" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<Objective QuestName="Enigma Leggings" QuestId="8631" Type="CollectItem" ItemId="20864" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<Objective QuestName="Avenger's Legguards" QuestId="8629" Type="CollectItem" ItemId="20861" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<Objective QuestName="Trousers of the Oracle" QuestId="8593" Type="CollectItem" ItemId="20863" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<Objective QuestName="Deathdealer's Leggings" QuestId="8640" Type="CollectItem" ItemId="20862" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<Objective QuestName="Stormcaller's Leggings" QuestId="8624" Type="CollectItem" ItemId="20861" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<Objective QuestName="Doomcaller's Trousers" QuestId="8663" Type="CollectItem" ItemId="20863" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<Objective QuestName="Conqueror's Legguards" QuestId="8560" Type="CollectItem" ItemId="20865" CollectCount="5" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Druid)">
+			<TurnIn QuestName="Genesis Trousers" QuestId="8668" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Hunter)">
+			<TurnIn QuestName="Striker's Leggings" QuestId="8658" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Mage)">
+			<TurnIn QuestName="Enigma Leggings" QuestId="8631" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<TurnIn QuestName="Avenger's Legguards" QuestId="8629" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Priest)">
+			<TurnIn QuestName="Trousers of the Oracle" QuestId="8593" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<TurnIn QuestName="Deathdealer's Leggings" QuestId="8640" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<TurnIn QuestName="Stormcaller's Leggings" QuestId="8624" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warlock)">
+			<TurnIn QuestName="Doomcaller's Trousers" QuestId="8663" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<TurnIn QuestName="Conqueror's Legguards" QuestId="8560" TurnInName="Kandrostrasz" TurnInId="15503" />
+		</If>
+
+	</QuestOrder>
+</HBProfile>

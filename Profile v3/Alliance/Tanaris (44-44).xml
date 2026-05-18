@@ -1,0 +1,93 @@
+<HBProfile>
+	<Name>Tanaris (44-44)</Name>
+	<MinLevel>44</MinLevel>
+	<MaxLevel>60</MaxLevel>
+
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>2</MinFreeBagSlots>
+
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<MailBlue>True</MailBlue>
+	<MailPurple>True</MailPurple>
+
+	<Vendors>
+		<!-- Vendor-Tron 1000 (7244) — no spawn data -->
+		<!-- Innkeeper Vizzie (7251) — no spawn data -->
+	</Vendors>
+
+	<AvoidMobs />
+	<Blackspots />
+	<Mailboxes />
+
+	<Quest Id="1187" Name="Razzeric's Tweaking">
+		<Objective Type="CollectItem" ItemId="5862" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Gizmorium Shipping Crate" Id="20727" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4010.62" Y="-3813.58" Z="37.34" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1690" Name="Wastewander Justice">
+		<Objective Type="KillMob" MobId="5618" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-7444.27" Y="-4606.74" Z="10.6268" />
+				<Hotspot X="-6987.99" Y="-4413.14" Z="9.6483" />
+				<Hotspot X="-7378.89" Y="-4712.7" Z="10.989" />
+				<Hotspot X="-7410.04" Y="-4548.58" Z="10.8202" />
+				<Hotspot X="-7275.84" Y="-4542.53" Z="9.0018" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5616" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-7409.34" Y="-4584.32" Z="8.8443" />
+				<Hotspot X="-7218.59" Y="-4645.01" Z="9.2493" />
+				<Hotspot X="-7319.44" Y="-4618.22" Z="8.8608" />
+				<Hotspot X="-7236.4" Y="-4631.24" Z="9.2985" />
+				<Hotspot X="-7411.57" Y="-4616.26" Z="10.9756" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+
+		<Objective QuestName="Rumors for Kravel" QuestId="1117" Type="CollectItem" ItemId="5804" CollectCount="1" />
+		<Objective QuestName="Razzeric's Tweaking" QuestId="1187" Type="CollectItem" ItemId="5862" CollectCount="1" />
+		<TurnIn QuestName="Tran'rek" QuestId="2864" TurnInName="Tran'rek" TurnInId="7876" />
+		<TurnIn QuestName="Rumors for Kravel" QuestId="1117" TurnInName="Kravel Koalbeard" TurnInId="4452" />
+		<PickUp QuestName="Back to Booty Bay" QuestId="1118" GiverName="Kravel Koalbeard" GiverId="4452" />
+		<TurnIn QuestName="News for Fizzle" QuestId="1137" TurnInName="Fizzle Brassbolts" TurnInId="4454" />
+		<PickUp QuestName="Keeping Pace" QuestId="1190" GiverName="Pozzik" GiverId="4630" />
+		<TurnIn QuestName="Razzeric's Tweaking" QuestId="1187" TurnInName="Razzeric" TurnInId="4706" />
+		<PickUp QuestName="Safety First" QuestId="1188" GiverName="Razzeric" GiverId="4706" />
+		<TurnIn QuestName="Keeping Pace" QuestId="1190" TurnInName="Object_20805" TurnInType="Object" TurnInId="20805" />
+		<PickUp QuestName="Rizzle's Schematics" QuestId="1194" GiverName="Zamek" GiverId="4709" />
+		<TurnIn QuestName="Rizzle's Schematics" QuestId="1194" TurnInName="Pozzik" TurnInId="4630" />
+		<TurnIn QuestName="Safety First" QuestId="1188" TurnInName="Shreev" TurnInId="4708" />
+		<PickUp QuestName="Water Pouch Bounty" QuestId="1707" GiverName="Spigot Operator Luglunket" GiverId="7408" />
+		<PickUp QuestName="Wastewander Justice" QuestId="1690" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" />
+		<PickUp QuestName="Gadgetzan Water Survey" QuestId="992" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
+		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6257" CollectCount="3" />
+		<Objective QuestName="Gadgetzan Water Survey" QuestId="992" Type="CollectItem" ItemId="8585" CollectCount="1" />
+		<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" />
+		<PickUp QuestName="Screecher Spirits" QuestId="3520" GiverName="Yeh'kinya" GiverId="8579" />
+		<TurnIn QuestName="Stoley's Debt" QuestId="2872" TurnInName="Stoley" TurnInId="7881" />
+		<Objective QuestName="Water Pouch Bounty" QuestId="1707" Type="CollectItem" ItemId="8483" CollectCount="5" />
+		<Objective QuestName="Wastewander Justice" QuestId="1690" Type="KillMob" MobId="5618" KillCount="10" />
+		<Objective QuestName="Wastewander Justice" QuestId="1690" Type="KillMob" MobId="5616" KillCount="10" />
+		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6257" CollectCount="3" />
+		<TurnIn QuestName="Wastewander Justice" QuestId="1690" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" />
+		<TurnIn QuestName="Water Pouch Bounty" QuestId="1707" TurnInName="Spigot Operator Luglunket" TurnInId="7408" />
+		<CustomBehavior File="LoadProfile" ProfileName="Dustwallow Marsh (44-45)" />
+	</QuestOrder>
+</HBProfile>
