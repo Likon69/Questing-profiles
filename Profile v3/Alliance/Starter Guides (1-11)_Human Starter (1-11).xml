@@ -142,7 +142,7 @@
 		<PickUp QuestName="Eagan Peltskinner" QuestId="5261" GiverName="Deputy Willem" GiverId="823" />
 		<TurnIn QuestName="Eagan Peltskinner" QuestId="5261" TurnInName="Eagan Peltskinner" TurnInId="196" />
 		<PickUp QuestName="Wolves Across the Border" QuestId="33" GiverName="Eagan Peltskinner" GiverId="196" />
-		<Objective QuestName="Wolves Across the Border" QuestId="33" Type="CollectItem" ItemId="750" CollectCount="8" />
+		<Objective QuestName="Wolves Across the Border" QuestId="33" Type="CollectItem" ItemId="50432" CollectCount="8" />
 		<Objective QuestName="Kobold Camp Cleanup" QuestId="7" Type="KillMob" MobId="6" KillCount="8" />
 		<TurnIn QuestName="Wolves Across the Border" QuestId="33" TurnInName="Eagan Peltskinner" TurnInId="196" />
 		<TurnIn QuestName="Kobold Camp Cleanup" QuestId="7" TurnInName="Marshal McBride" TurnInId="197" />
@@ -244,6 +244,9 @@
 		<TurnIn QuestName="Back to Billy" QuestId="84" TurnInName="Billy Maclure" TurnInId="247" />
 		<PickUp QuestName="Goldtooth" QuestId="87" GiverName="Billy Maclure" GiverId="247" />
 		<Objective QuestName="Goldtooth" QuestId="87" Type="CollectItem" ItemId="981" CollectCount="1" />
+		<If Condition="(HasQuest(62))">
+			<RunTo X="-9842.022" Y="129.2825" Z="4.8419213" QuestId="62" />
+		</If>  
 		<Objective QuestName="Gold Dust Exchange" QuestId="47" Type="CollectItem" ItemId="773" CollectCount="10" />
 		<Objective QuestName="Kobold Candles" QuestId="60" Type="CollectItem" ItemId="772" CollectCount="8" />
 		<TurnIn QuestName="Goldtooth" QuestId="87" TurnInName="&quot;Auntie&quot; Bernice Stonefield" TurnInId="246" />
@@ -262,10 +265,14 @@
 		<PickUp QuestName="Find the Lost Guards" QuestId="37" GiverName="Guard Thomas" GiverId="261" />
 		<PickUp QuestName="Protect the Frontier" QuestId="52" GiverName="Guard Thomas" GiverId="261" />
 		<TurnIn QuestName="Find the Lost Guards" QuestId="37" TurnInName="Object_55" TurnInType="Object" TurnInId="55" />
-		<PickUp QuestName="Discover Rolf's Fate" QuestId="45" GiverName="Guard Thomas" GiverId="261" />
+		<If Condition="((!HasQuest(45)) &amp;&amp; (!IsQuestCompleted(45)))">
+			<PickUp QuestName="Discover Rolf's Fate" QuestId="45" GiverType="Object" GiverId="55" X="-9335.764" Y="-986.4834" Z="67.69179" />
+		</If>
 		<PickUp QuestName="A Bundle of Trouble" QuestId="5545" GiverName="Supervisor Raelen" GiverId="10616" />
 		<TurnIn QuestName="Discover Rolf's Fate" QuestId="45" TurnInName="Object_56" TurnInType="Object" TurnInId="56" />
-		<PickUp QuestName="Report to Thomas" QuestId="71" GiverName="Rallic Finn" GiverId="1198" />
+		<If Condition="((!HasQuest(71)) &amp;&amp; (!IsQuestCompleted(71)))">
+      		<PickUp QuestName="Report to Thomas" QuestId="71" GiverType="Object" GiverId="56" X="-9224.19" Y="-1234.33" Z="73.4313" />
+    	</If>
 		<Objective QuestName="A Bundle of Trouble" QuestId="5545" Type="CollectItem" ItemId="13872" CollectCount="8" />
 		<TurnIn QuestName="A Bundle of Trouble" QuestId="5545" TurnInName="Supervisor Raelen" TurnInId="10616" />
 		<Objective QuestName="Protect the Frontier" QuestId="52" Type="KillMob" MobId="822" KillCount="5" />
@@ -276,11 +283,16 @@
 		<PickUp QuestName="Deliver Thomas' Report" QuestId="39" GiverName="Guard Thomas" GiverId="261" />
 		<PickUp QuestName="Report to Gryan Stoutmantle" QuestId="109" GiverName="Guard Thomas" GiverId="261" />
 		<Objective QuestName="Red Linen Goods" QuestId="83" Type="CollectItem" ItemId="1019" CollectCount="6" />
-		<PickUp QuestName="Furlbrow's Deed" QuestId="184" GiverName="Guard Thomas" GiverId="261" />
+		<If Condition="(HasItem(1972))" >
+      		<PickUp QuestName="Furlbrow's Deed" QuestId="184" GiverType="Item" GiverId="1972" />
+    	</If>
 		<TurnIn QuestName="Red Linen Goods" QuestId="83" TurnInName="Sara Timberlain" TurnInId="278" />
 		<TurnIn QuestName="Collecting Kelp" QuestId="112" TurnInName="William Pestle" TurnInId="253" />
 		<PickUp QuestName="The Escape" QuestId="114" GiverName="William Pestle" GiverId="253" />
 		<TurnIn QuestName="Deliver Thomas' Report" QuestId="39" TurnInName="Marshal Dughan" TurnInId="240" />
+		<If Condition="(HasQuest(76))">
+			<RunTo X="-9086.532" Y="-557.8581" Z="60.70144" QuestId="76" />
+		</If>
 		<TurnIn QuestName="The Jasperlode Mine" QuestId="76" TurnInName="Marshal Dughan" TurnInId="240" />
 		<PickUp QuestName="Westbrook Garrison Needs Help!" QuestId="239" GiverName="Marshal Dughan" GiverId="240" />
 		<PickUp QuestName="Elmore's Task" QuestId="1097" GiverName="Smith Argus" GiverId="514" />
