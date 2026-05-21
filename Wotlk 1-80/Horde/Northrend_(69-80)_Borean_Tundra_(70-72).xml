@@ -59,15 +59,6 @@
     </Objective>
   </Quest>
   <Quest Id="11613" Name="Karuk's Oath">
-    <Objective Type="KillMob" MobId="24576" KillCount="1">
-      <Hotspots>
-        <Hotspot X="1904.01" Y="6088.15" Z="-0.6894" />
-        <Hotspot X="1405.62" Y="5972.79" Z="6.1351" />
-        <Hotspot X="1407.45" Y="5973.78" Z="5.9775" />
-        <Hotspot X="1409.29" Y="5973.32" Z="5.5325" />
-        <Hotspot X="1375.37" Y="5810.94" Z="6.0849" />
-      </Hotspots>
-    </Objective>
     <Objective Type="KillMob" MobId="25522" KillCount="6">
       <Hotspots>
         <Hotspot X="1791.1" Y="5964.14" Z="0.2709" />
@@ -566,7 +557,6 @@
     </If>
     <TurnIn QuestName="Seek Out Karuk!" QuestId="11662" TurnInName="Karuk" TurnInId="25435" />
     <PickUp QuestName="Karuk's Oath" QuestId="11613" GiverName="Karuk" GiverId="25435" />
-    <Objective QuestName="Karuk's Oath" QuestId="11613" Type="KillMob" MobId="24576" KillCount="1" />
     <PickUp QuestName="Cruelty of the Kvaldir" QuestId="12471" GiverName="Captured Tuskarr Prisoner" GiverId="25636" />
     <Objective QuestName="Karuk's Oath" QuestId="11613" Type="KillMob" MobId="25522" KillCount="6" />
     <Objective QuestName="Karuk's Oath" QuestId="11613" Type="KillMob" MobId="25521" KillCount="5" />

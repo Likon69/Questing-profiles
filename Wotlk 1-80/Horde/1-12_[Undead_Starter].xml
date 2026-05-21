@@ -37,6 +37,7 @@
 
 	<Vendors>
 	<!-- Deathknell -->
+  <Vendor Name="Archibald Kava" Entry="2113" Type="Repair" X="1859.39" Y="1568.82" Z="94.3135" />
 		<Vendor Name="Joshua Kien" Entry="2115" Type="Food" X="1866.022" Y="1574.447" Z="94.31525" />
 		<Vendor Name="Archibald Kava" Entry="2113" Type="Repair" X="1860.848" Y="1568.365" Z="94.31361" />
 		<!--Deathknell Trainers-->

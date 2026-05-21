@@ -19,8 +19,8 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Vorn Skyseer" Entry="3100" Type="Repair" X="1185.55" Y="-4339.0" Z="24.634" />
-		<Vendor Name="Ahanu" Entry="3102" Type="Food" X="-155.104" Y="-4357.65" Z="66.8764" />
+		<Vendor Name="Moodan Sungrain" Entry="3883" Type="Food" X="-2940.84" Y="-245.957" Z="53.809555" />
+        <Vendor Name="Marjak Keenblade" Entry="3073" Type="Repair" X="-2926.32" Y="-215.715" Z="54.176727" />
 		<!--Camp Narache Trainers-->
 		<Vendor Name="Harutt Thunderhorn" Entry="3059" Type="Train" TrainClass="Warrior" X="-2880.4299" Y="-213.02" Z="54.9039" />
 		<Vendor Name="Lanka Farshot" Entry="3061" Type="Train" TrainClass="Hunter" X="-2865.3999" Y="-225.731" Z="54.9617" />

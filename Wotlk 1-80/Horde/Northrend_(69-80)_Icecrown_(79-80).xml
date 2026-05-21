@@ -2,7 +2,7 @@
   <Name>Horde\Northrend (69-80)\Icecrown (79-80)</Name>
 
   <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
+  <MaxLevel>9999</MaxLevel>
   <MailGrey>False</MailGrey>
   <MailWhite>False</MailWhite>
   <MailGreen>False</MailGreen>
