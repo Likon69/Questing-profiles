@@ -33,6 +33,21 @@
 		<Vendor Name="Priestess Josetta" Entry="377" Type="Train" TrainClass="Priest" X="-9460.75" Y="33.1338" Z="63.9038" />
 		<Vendor Name="Zaldimar Wefhellt" Entry="328" Type="Train" TrainClass="Mage" X="-9471.6699" Y="34.451" Z="63.9038" />
 		<Vendor Name="Maximillian Crowe" Entry="906" Type="Train" TrainClass="Warlock" X="-9472.7998" Y="-5.3266" Z="49.8778" />
+
+		<!--Northshire Abbey Vendors-->
+		<Vendor Name="Godric Rothgar" Entry="1213" Type="Repair" X="-8898.23" Y="-119.838" Z="81.833115" />
+		<Vendor Name="Brother Danil" Entry="152" Type="Food" X="-8901.59" Y="-112.716" Z="81.84822" />
+		<Vendor Name="Brother Danil" Entry="152" Type="Ammo" X="-8901.59" Y="-112.716" Z="81.84822" />
+		<!--Goldshire Vendors-->
+		<Vendor Name="Corina Steele" Entry="54" Type="Repair" X="-9464.87" Y="93.9896" Z="58.344208" />
+		<Vendor Name="Innkeeper Farley" Entry="295" Type="Food" X="-9462.66" Y="16.1915" Z="56.964203" />
+		<Vendor Name="Brog Hamfist" Entry="151" Type="Ammo" X="-9465.29" Y="9.63314" Z="56.96268" />
+		<!--Eastvale Vendors-->
+		<Vendor Name="Rallic Finn" Entry="1198" Type="Repair" X="-9469.28" Y="-1355.24" Z="47.204323" />
+		<Vendor Name="Rallic Finn" Entry="1198" Type="Ammo" X="-9469.28" Y="-1355.24" Z="47.204487" />
+		<!--Stormwind Vendors-->
+		<Vendor Name="Marda Weller" Entry="1287" Type="Repair" X="-8787.69" Y="609.631" Z="96.775215" />
+		<Vendor Name="Ben Trias" Entry="4981" Type="Food" X="-8847.28" Y="569.955" Z="94.68751" />
 	</Vendors>
 
 	<AvoidMobs />
@@ -123,6 +138,19 @@
 		<Objective Type="KillMob" MobId="6090" KillCount="1">
 			<Hotspots>
 				<Hotspot X="-8604.47" Y="389.102" Z="102.924" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3904" Name="Milly's Harvest">
+		<Objective Type="CollectItem" ItemId="11119" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Milly's Harvest" Id="161557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9072.623" Y="-368.15887" Z="73.452484" />
+				<Hotspot X="-9099.245" Y="-338.14514" Z="73.452225" />
+				<Hotspot X="-9070.23" Y="-309.03522" Z="73.45203" />
+				<Hotspot X="-9036.401" Y="-334.3555" Z="73.48444" />
 			</Hotspots>
 		</Objective>
 	</Quest>
