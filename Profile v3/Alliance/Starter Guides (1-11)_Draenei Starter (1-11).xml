@@ -33,6 +33,15 @@
 		<Vendor Name="Guvan" Entry="17482" Type="Train" TrainClass="Priest" X="-4131.6602" Y="-12478.5996" Z="44.6574" />
 		<Vendor Name="Tuluun" Entry="17212" Type="Train" TrainClass="Shaman" X="-4162.3301" Y="-12456.0996" Z="44.3411" />
 		<Vendor Name="Semid" Entry="17481" Type="Train" TrainClass="Mage" X="-4149.6201" Y="-12530.0996" Z="45.1902" />
+
+		<!--Ammen Vale Vendors-->
+		<Vendor Name="Aurok" Entry="16917" Type="Repair" X="-4072.69" Y="-13756" Z="74.775986" />
+		<Vendor Name="Ryosh" Entry="16920" Type="Ammo" X="-4174.88" Y="-13726.3" Z="74.5522" />
+		<Vendor Name="Ryosh" Entry="16920" Type="Food" X="-4174.88" Y="-13726.3" Z="74.55261" />
+		<!--Azure Watch Vendors-->
+		<Vendor Name="Nabek" Entry="17930" Type="Repair" X="-4235.53" Y="-12518.2" Z="46.21227" />
+		<Vendor Name="Caregiver Chellan" Entry="16553" Type="Food" X="-4129.43" Y="-12469" Z="44.08595" />
+		<Vendor Name="Otonambusi" Entry="18810" Type="Ammo" X="-4209.45" Y="-12456.2" Z="45.544754" />
 	</Vendors>
 
 	<AvoidMobs />
