@@ -457,7 +457,7 @@
 		<PickUp QuestName="Deepmoss Spider Eggs" QuestId="1069" GiverName="Mebok Mizzyrix" GiverId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
 		<Objective QuestName="Deepmoss Spider Eggs" QuestId="1069" Type="CollectItem" ItemId="5570" CollectCount="15" />
 		<Objective QuestName="Verog the Dervish" QuestId="851" Type="CollectItem" ItemId="5023" CollectCount="1" />
-		<Objective QuestName="The Stagnant Oasis" QuestId="877" Type="UseObject" ObjectId="3737" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="877" MobId="3737" NumOfTimes="1" WaitTime="10000" CollectionDistance="10" ObjectType="Gameobject" X="-1275.668" Y="-3012.387" Z="72.98994" />
 		<TurnIn QuestName="The Stagnant Oasis" QuestId="877" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		<PickUp QuestName="Altered Beings" QuestId="880" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		<Objective QuestName="Altered Beings" QuestId="880" Type="CollectItem" ItemId="5098" CollectCount="8" />

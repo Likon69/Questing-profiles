@@ -1233,9 +1233,9 @@
 		<Objective QuestName="Steady as a Rock?" QuestId="12014" Type="CollectItem" ItemId="35837" CollectCount="1" />
 		<Objective QuestName="Steady as a Rock?" QuestId="12014" Type="CollectItem" ItemId="35819" CollectCount="1" />
 		<Objective QuestName="Into the Breach" QuestId="11985" Type="KillMob" MobId="26348" KillCount="1" />
-		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188264" UseCount="1" />
-		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188288" UseCount="1" />
-		<Objective QuestName="The Runic Prophecies" QuestId="11993" Type="UseObject" ObjectId="188289" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="11993" QuestObjectiveIndex="1" MobId="188264" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="5010.412" Y="-4733.22" Z="219.6779" />
+		<CustomBehavior File="InteractWith" QuestId="11993" QuestObjectiveIndex="2" MobId="188288" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="5003.965" Y="-4793.892" Z="219.6287" />
+		<CustomBehavior File="InteractWith" QuestId="11993" QuestObjectiveIndex="3" MobId="188289" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="4951.781" Y="-4707.095" Z="219.6062" />
 		<TurnIn QuestName="The Runic Prophecies" QuestId="11993" TurnInName="Torthen Deepdig" TurnInId="26361" X="4556.24" Y="-4247.67" Z="170.603" />
 		<TurnIn QuestName="Steady as a Rock?" QuestId="12014" TurnInName="Brugar Stoneshear" TurnInId="26226" X="4551.79" Y="-4250.05" Z="170.576" />
 		<PickUp QuestName="Check Up on Raegar" QuestId="12128" GiverName="Brugar Stoneshear" GiverId="26226" X="4551.79" Y="-4250.05" Z="170.576" />

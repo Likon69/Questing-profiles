@@ -713,8 +713,8 @@
 		<PickUp QuestName="Disrupt Their Reinforcements" QuestId="10208" GiverName="Forward Commander To'arch" GiverId="19273" X="-19.8447" Y="2136.61" Z="113.944" />
 		<TurnIn QuestName="Apothecary Zelana" QuestId="10449" TurnInName="Apothecary Zelana" TurnInId="21257" X="36.5121" Y="2121.97" Z="127.012" />
 		<PickUp QuestName="Spinebreaker Post" QuestId="10242" GiverName="Apothecary Zelana" GiverId="21257" X="36.5121" Y="2121.97" Z="127.012" />
-		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10208" Type="UseObject" ObjectId="184290" UseCount="1" />
-		<Objective QuestName="Disrupt Their Reinforcements" QuestId="10208" Type="UseObject" ObjectId="184289" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="10208" MobId="184290" ObjectType="Gameobject" Range="8" NumOfTimes="1" WaitTime="5000" CollectionDistance="1000" X="-84.27579" Y="1881.582" Z="74.63772" />
+		<CustomBehavior File="InteractWith" QuestId="10208" MobId="184289" ObjectType="Gameobject" Range="8" NumOfTimes="1" WaitTime="5000" CollectionDistance="1000" X="146.2598" Y="1717.889" Z="38.41195" />
 		<TurnIn QuestName="Disrupt Their Reinforcements" QuestId="10208" TurnInName="Forward Commander To'arch" TurnInId="19273" X="-19.8447" Y="2136.61" Z="113.944" />
 		<PickUp QuestName="Mission: Gateways Murketh and Shaadraz" QuestId="10129" GiverName="Forward Commander To'arch" GiverId="19273" X="-19.8447" Y="2136.61" Z="113.944" />
 		<While Condition="((HasQuest(10129)) &amp;&amp; (!IsQuestCompleted(10129)))">

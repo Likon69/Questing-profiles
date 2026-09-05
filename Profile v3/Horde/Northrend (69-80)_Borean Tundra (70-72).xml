@@ -1185,7 +1185,7 @@
 		<Objective QuestName="Bury Those Cockroaches!" QuestId="11608" Type="KillMob" MobId="25404" KillCount="1" />
 		<Objective QuestName="Bury Those Cockroaches!" QuestId="11608" Type="KillMob" MobId="25405" KillCount="1" />
 		<TurnIn QuestName="Bury Those Cockroaches!" QuestId="11608" TurnInName="Quartermaster Holgoth" TurnInId="25327" X="2769.98" Y="6073" Z="77.6674" />
-		<Objective QuestName="Cutting Off the Source" QuestId="11602" Type="UseObject" ObjectId="187655" UseCount="10" />
+		<CustomBehavior File="InteractWith" QuestId="11602" MobId="187655" ObjectType="Gameobject" Range="6" WaitTime="4000" WaitForNpcs="False" IgnoreMobsInBlackspots="True" NumOfTimes="10" CollectionDistance="500" X="2640.343" Y="6292.878" Z="93.59708" />
 		<TurnIn QuestName="Cutting Off the Source" QuestId="11602" TurnInName="Overlord Razgor" TurnInId="25279" X="2784.95" Y="6081.02" Z="77.7719" />
 		<PickUp QuestName="Wind Master To'bor" QuestId="11634" GiverName="Overlord Razgor" GiverId="25279" X="2784.95" Y="6081.02" Z="77.7719" />
 		<TurnIn QuestName="Nerub'ar Secrets" QuestId="11615" TurnInName="Shadowstalker Barthus" TurnInId="25394" X="2781.9" Y="6080.58" Z="77.7719" />
@@ -1982,7 +1982,7 @@
 		<Objective QuestName="Saragosa's End" QuestId="11957" Type="CollectItem" ItemId="35709" CollectCount="1" />
 		<TurnIn QuestName="Saragosa's End" QuestId="11957" TurnInName="Keristrasza" TurnInId="26206" X="3579.63" Y="6653.48" Z="195.515" />
 		<PickUp QuestName="Mustering the Reds" QuestId="11967" GiverName="Keristrasza" GiverId="26206" X="3579.63" Y="6653.48" Z="195.515" />
-		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
+		<CustomBehavior File="InteractWith" QuestId="11936" ObjectType="Gameobject" MobId="188133" NumOfTimes="5" WaitTime="5000" CollectionDistance="1000" X="3800.385" Y="6941.689" Z="108.1623" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<!-- Q11967 Mustering the Reds: objective nodes transplanted from HonorBuddy drind reference LK\[Fly][A - Quest] LK 68-80 [Kick] - ßeta.xml -->
 		<If Condition="((!HasQuest(11967)) &amp;&amp; (!IsQuestCompleted(11967)))">
@@ -2023,10 +2023,10 @@
 
 		<TurnIn QuestName="Mustering the Reds" QuestId="11967" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<TurnIn QuestName="Keep the Secret Safe" QuestId="11914" TurnInName="Librarian Serrah" TurnInId="26110" X="3576.48" Y="6640.39" Z="195.176" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188100" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188101" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188102" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188103" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188100" NumOfTimes="1" CollectionDistance="40" X="3801.587" Y="6940.144" Z="108.1099" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188101" NumOfTimes="1" CollectionDistance="20" X="3554.335" Y="6938.918" Z="174.2765" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188102" NumOfTimes="1" CollectionDistance="20" X="4105.506" Y="6746.935" Z="172.2622" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188103" NumOfTimes="1" CollectionDistance="20" X="3993.309" Y="7266.834" Z="178.9153" />
 		<TurnIn QuestName="Reading the Meters" QuestId="11900" TurnInName="Archmage Berinand" TurnInId="25314" X="3575.61" Y="6671.72" Z="195.267" />
 		<TurnIn QuestName="To Bor'gorok Outpost, Quickly!" QuestId="12486" TurnInName="Spirit Talker Snarlfang" TurnInId="25339" X="4524.21" Y="5672.38" Z="81.4591" />
 		<PickUp QuestName="The Sky Will Know" QuestId="11624" GiverName="Spirit Talker Snarlfang" GiverId="25339" X="4524.21" Y="5672.38" Z="81.4591" />

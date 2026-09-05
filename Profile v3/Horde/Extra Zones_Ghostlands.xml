@@ -815,11 +815,11 @@
 		<Objective QuestName="Assault on Zeb'Nowa" QuestId="9277" Type="KillMob" MobId="16346" KillCount="10" />
 		<TurnIn QuestName="Assault on Zeb'Nowa" QuestId="9277" TurnInName="Farstrider Solanna" TurnInId="16463" X="7579.23" Y="-7670.07" Z="151.757" />
 		<TurnIn QuestName="Shadowpine Weaponry" QuestId="9214" TurnInName="Captain Helios" TurnInId="16220" X="7614.6" Y="-7671.46" Z="154.08" />
-		<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181250" UseCount="1" />
-		<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181251" UseCount="1" />
-		<Objective QuestName="A Little Dash of Seasoning" QuestId="9275" Type="UseObject" ObjectId="181252" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="9275" QuestObjectiveIndex="1" MobId="181250" NumOfTimes="100" X="6802.667" Y="-7425.663" Z="48.11272" />
+		<CustomBehavior File="InteractWith" QuestId="9275" QuestObjectiveIndex="2" MobId="181251" NumOfTimes="100" X="6613.168" Y="-7347.571" Z="53.76469" />
+		<CustomBehavior File="InteractWith" QuestId="9275" QuestObjectiveIndex="3" MobId="181252" NumOfTimes="100" X="6991.026" Y="-7534.729" Z="48.84222" />
 		<TurnIn QuestName="A Little Dash of Seasoning" QuestId="9275" TurnInName="Apothecary Venustus" TurnInId="16464" X="7572.2" Y="-7679.56" Z="167.829" />
-		<Objective QuestName="Deactivate An'owyn" QuestId="9169" Type="UseObject" ObjectId="181359" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="9169" MobId="181359" IgnoreLoSToTarget="True" Range="10" MinRange="6" X="6833.694" Y="-7203.042" Z="27.77619" />
 		<TurnIn QuestName="Deactivate An'owyn" QuestId="9169" TurnInName="Magister Sylastor" TurnInId="16237" X="7484.22" Y="-7273.52" Z="98.0389" />
 		<TurnIn QuestName="The Twin Ziggurats" QuestId="9176" TurnInName="Magister Kaendris" TurnInId="16239" X="7192.36" Y="-7100.57" Z="57.1446" />
 		<TurnIn QuestName="Underlight Ore Samples" QuestId="9207" TurnInName="Magister Quallestis" TurnInId="16291" X="7199.96" Y="-7096.74" Z="57.147" />

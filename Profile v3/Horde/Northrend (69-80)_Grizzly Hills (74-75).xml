@@ -1156,9 +1156,9 @@
 
 		<PickUp QuestName="Destroy the Sapling" QuestId="12241" GiverName="Windseer Grayhorn" GiverId="27262" X="3316.83" Y="-2291.84" Z="110.191" />
 		<PickUp QuestName="Vordrassil's Seeds" QuestId="12242" GiverName="Windseer Grayhorn" GiverId="27262" X="3316.83" Y="-2291.84" Z="110.191" />
-		<Objective QuestName="The Runic Prophecies" QuestId="12058" Type="UseObject" ObjectId="188264" UseCount="1" />
-		<Objective QuestName="The Runic Prophecies" QuestId="12058" Type="UseObject" ObjectId="188288" UseCount="1" />
-		<Objective QuestName="The Runic Prophecies" QuestId="12058" Type="UseObject" ObjectId="188289" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="12058" QuestObjectiveIndex="1" MobId="188264" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="5010.412" Y="-4733.22" Z="219.6779" />
+		<CustomBehavior File="InteractWith" QuestId="12058" QuestObjectiveIndex="2" MobId="188288" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="5003.965" Y="-4793.892" Z="219.6287" />
+		<CustomBehavior File="InteractWith" QuestId="12058" QuestObjectiveIndex="3" MobId="188289" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" X="4951.781" Y="-4707.095" Z="219.6062" />
 		<TurnIn QuestName="The Runic Prophecies" QuestId="12058" TurnInName="Sage Paluna" TurnInId="26584" X="3845.22" Y="-4533.42" Z="209.638" />
 		<Objective QuestName="Pounding the Iron" QuestId="12073" Type="KillMob" MobId="26270" KillCount="10" />
 		<TurnIn QuestName="Pounding the Iron" QuestId="12073" TurnInName="Scout Vor'takh" TurnInId="26666" X="3848.19" Y="-4531.66" Z="209.344" />

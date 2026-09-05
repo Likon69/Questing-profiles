@@ -712,7 +712,7 @@
 		<Objective QuestName="It's Watching You!" QuestId="9951" Type="KillMob" MobId="18438" KillCount="1" />
 		<TurnIn QuestName="It's Watching You!" QuestId="9951" TurnInName="Warden Treelos" TurnInId="18424" X="-1803.51" Y="4646.98" Z="19.7333" />
 		<Objective QuestName="Strange Energy" QuestId="9968" Type="CollectItem" ItemId="24279" CollectCount="4" />
-		<Objective QuestName="Clues in the Thicket" QuestId="9971" Type="UseObject" ObjectId="183789" UseCount="1" />
+		<CustomBehavior File="InteractWith" NonCompeteDistance="0" QuestId="9971" ObjectType="GameObject" MobId="183789" X="-1784.914" Y="4647.372" Z="14.98205" />
 		<TurnIn QuestName="Clues in the Thicket" QuestId="9971" TurnInName="Earthbinder Tavgren" TurnInId="18446" X="-1947.2" Y="4689.5" Z="-2.1071" />
 		<Objective QuestName="Strange Energy" QuestId="9968" Type="CollectItem" ItemId="25672" CollectCount="4" />
 		<TurnIn QuestName="Strange Energy" QuestId="9968" TurnInName="Earthbinder Tavgren" TurnInId="18446" X="-1947.2" Y="4689.5" Z="-2.1071" />
@@ -1052,7 +1052,7 @@
 		<TurnIn QuestName="The Dread Relic" QuestId="10877" TurnInName="Oakun" TurnInId="22456" X="-3755.23" Y="5405.95" Z="-3.3149" />
 		<Objective QuestName="The Fallen Exarch" QuestId="10915" Type="KillMob" MobId="22452" KillCount="1" />
 		<TurnIn QuestName="The Fallen Exarch" QuestId="10915" TurnInName="Commander Ra'vaj" TurnInId="22446" X="-3740.01" Y="5409.07" Z="-3.2495" />
-		<Objective QuestName="Veil Lithic: Preemptive Strike" QuestId="10861" Type="UseObject" ObjectId="185211" UseCount="3" />
+		<CustomBehavior File="InteractWith" QuestId="10861" ObjectType="GameObject" MobId="185211" NumOfTimes="1" CollectionDistance="500" X="-3639.392" Y="5791.665" Z="0.4478073" />
 		<TurnIn QuestName="Veil Lithic: Preemptive Strike" QuestId="10861" TurnInName="Kirrik the Awakened" TurnInId="22272" X="-2855.43" Y="5053.92" Z="-19.3265" />
 		<TurnIn QuestName="Helping the Lost Find Their Way" QuestId="10031" TurnInName="Soolaveen" TurnInId="18675" X="-2783.1" Y="5082.39" Z="-8.1838" />
 		<TurnIn QuestName="Ezekiel" QuestId="10228" TurnInName="Ezekiel" TurnInId="19715" X="-1786.58" Y="5493.6" Z="-12.4282" />

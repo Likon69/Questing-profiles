@@ -658,7 +658,7 @@
 		<PickUp QuestName="Spare Parts" QuestId="9305" GiverName="Technician Zhanaa" GiverId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<PickUp QuestName="Inoculation" QuestId="9303" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		<Objective QuestName="Spare Parts" QuestId="9305" Type="CollectItem" ItemId="22978" CollectCount="4" />
-		<Objective QuestName="Healing the Lake" QuestId="9294" Type="UseObject" ObjectId="181433" UseCount="1" />
+		<CustomBehavior File="InteractWith" NonCompeteDistance="0" QuestId="9294" MobId="181433" Range="20" CollectionDistance="1000" X="-4388.744" Y="-13644.09" Z="38.52658" />
 		<TurnIn QuestName="Healing the Lake" QuestId="9294" TurnInName="Botanist Taerix" TurnInId="16514" X="-4057.03" Y="-13721.6" Z="72.9162" />
 		<TurnIn QuestName="Spare Parts" QuestId="9305" TurnInName="Technician Zhanaa" TurnInId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<!-- Q9303 Inoculation: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\[A - Quest] 1-58 [Kick]\[A - Quest] 1-12 [Kick]\[A - Quest] Draenei 1-5 [Kick].xml -->

@@ -1512,9 +1512,9 @@
 		<TurnIn QuestName="Forging an Alliance" QuestId="12924" TurnInName="Njormeld" TurnInId="30127" X="7199.22" Y="-2653.99" Z="813.64" />
 		<TurnIn QuestName="Xarantaur, the Witness" QuestId="13426" TurnInName="Xarantaur" TurnInId="30381" X="7759.75" Y="-2836.43" Z="1216.85" />
 		<PickUp QuestName="The Witness and the Hero" QuestId="13034" GiverName="Xarantaur" GiverId="30381" X="7759.75" Y="-2836.43" Z="1216.85" />
-		<Objective QuestName="The Witness and the Hero" QuestId="13034" Type="UseObject" ObjectId="192493" UseCount="1" />
-		<Objective QuestName="The Witness and the Hero" QuestId="13034" Type="UseObject" ObjectId="192494" UseCount="1" />
-		<Objective QuestName="The Witness and the Hero" QuestId="13034" Type="UseObject" ObjectId="192495" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="13034" QuestObjectiveIndex="1" MobId="192493" NonCompeteDistance="0" PreInteractMountStrategy="Dismount" MovementBy="NavigatorPreferred" X="7802.605" Y="-2838.38" Z="1218.986" />
+		<CustomBehavior File="InteractWith" QuestId="13034" QuestObjectiveIndex="2" MobId="192494" NonCompeteDistance="0" PreInteractMountStrategy="Dismount" MovementBy="NavigatorPreferred" X="7811.303" Y="-2909.514" Z="1241.627" />
+		<CustomBehavior File="InteractWith" QuestId="13034" QuestObjectiveIndex="3" MobId="192495" NonCompeteDistance="0" PreInteractMountStrategy="Dismount" MovementBy="NavigatorPreferred" X="7803.781" Y="-2948.448" Z="1257.125" />
 		<TurnIn QuestName="The Witness and the Hero" QuestId="13034" TurnInName="Xarantaur" TurnInId="30381" X="7759.75" Y="-2836.43" Z="1216.85" />
 		<PickUp QuestName="Memories of Stormhoof" QuestId="13037" GiverName="Xarantaur" GiverId="30381" X="7759.75" Y="-2836.43" Z="1216.85" />
 		<PickUp QuestName="Distortions in Time" QuestId="13038" GiverName="Chieftain Swiftspear" GiverId="30395" X="8348.89" Y="-2509.48" Z="1147.37" />

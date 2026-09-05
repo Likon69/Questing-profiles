@@ -1438,10 +1438,10 @@
 		<Objective QuestName="The Leaders at Jin'Alai" QuestId="12622" Type="CollectItem" ItemId="38637" CollectCount="1" />
 		<Objective QuestName="The Leaders at Jin'Alai" QuestId="12622" Type="CollectItem" ItemId="38639" CollectCount="1" />
 		<Objective QuestName="The Leaders at Jin'Alai" QuestId="12622" Type="CollectItem" ItemId="38638" CollectCount="1" />
-		<Objective QuestName="Breaking Through Jin'Alai" QuestId="12627" Type="UseObject" ObjectId="190618" UseCount="1" />
-		<Objective QuestName="Breaking Through Jin'Alai" QuestId="12627" Type="UseObject" ObjectId="190630" UseCount="1" />
-		<Objective QuestName="Breaking Through Jin'Alai" QuestId="12627" Type="UseObject" ObjectId="190619" UseCount="1" />
-		<Objective QuestName="Breaking Through Jin'Alai" QuestId="12627" Type="UseObject" ObjectId="190620" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="12627" QuestObjectiveIndex="1" NonCompeteDistance="0" MobId="190618" PreInteractMountStrategy="Dismount" X="5495.723" Y="-3454.681" Z="350.3273" />
+		<CustomBehavior File="InteractWith" QuestId="12627" QuestObjectiveIndex="2" NonCompeteDistance="0" MobId="190630" PreInteractMountStrategy="Dismount" X="5525.986" Y="-3384.384" Z="350.3283" />
+		<CustomBehavior File="InteractWith" QuestId="12627" QuestObjectiveIndex="3" NonCompeteDistance="0" MobId="190619" PreInteractMountStrategy="Dismount" X="5617.951" Y="-3475.298" Z="350.5785" />
+		<CustomBehavior File="InteractWith" QuestId="12627" QuestObjectiveIndex="4" NonCompeteDistance="0" MobId="190620" PreInteractMountStrategy="Dismount" X="5581.722" Y="-3531.194" Z="350.3268" />
 		<TurnIn QuestName="Breaking Through Jin'Alai" QuestId="12627" TurnInName="Witch Doctor Khufu" TurnInId="28479" X="5736.14" Y="-3571.37" Z="386.995" />
 		<PickUp QuestName="To Speak With Har'koa" QuestId="12628" GiverName="Witch Doctor Khufu" GiverId="28479" X="5736.14" Y="-3571.37" Z="386.995" />
 		<PickUp QuestName="Relics of the Snow Leopard Goddess" QuestId="12635" GiverName="Chronicler To'kini" GiverId="28527" X="5740.27" Y="-3595.09" Z="387.024" />

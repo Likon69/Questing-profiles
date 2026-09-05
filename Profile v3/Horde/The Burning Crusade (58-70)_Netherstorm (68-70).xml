@@ -1292,10 +1292,10 @@
 		<Objective QuestName="Consortium Crystal Collection" QuestId="10265" Type="CollectItem" ItemId="28829" CollectCount="1" />
 		<Objective QuestName="The Archmage's Staff" QuestId="10173" Type="CollectItem" ItemId="28292" CollectCount="1" />
 		<Objective QuestName="That Little Extra Kick" QuestId="10199" Type="CollectItem" ItemId="28417" CollectCount="5" />
-		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183805" UseCount="1" />
-		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183806" UseCount="1" />
-		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183807" UseCount="1" />
-		<Objective QuestName="Invaluable Asset Zapping" QuestId="10203" Type="UseObject" ObjectId="183808" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="10203" QuestObjectiveIndex="1" MobId="183805" NonCompeteDistance="0" ProactiveCombatStrategy="ClearMobsTargetingUs" MovementBy="NavigatorPreferred" X="2716.466" Y="3197.078" Z="147.5956" />
+		<CustomBehavior File="InteractWith" QuestId="10203" QuestObjectiveIndex="2" MobId="183806" NonCompeteDistance="0" ProactiveCombatStrategy="ClearMobsTargetingUs" MovementBy="NavigatorPreferred" X="2790.831" Y="3176.995" Z="145.6805" />
+		<CustomBehavior File="InteractWith" QuestId="10203" QuestObjectiveIndex="3" MobId="183807" NonCompeteDistance="0" ProactiveCombatStrategy="ClearMobsTargetingUs" MovementBy="NavigatorPreferred" X="2746.809" Y="3235.568" Z="147.5975" />
+		<CustomBehavior File="InteractWith" QuestId="10203" QuestObjectiveIndex="4" MobId="183808" NonCompeteDistance="0" ProactiveCombatStrategy="ClearMobsTargetingUs" MovementBy="NavigatorPreferred" X="2770.758" Y="3116.678" Z="154.0617" />
 		<TurnIn QuestName="Invaluable Asset Zapping" QuestId="10203" TurnInName="Lead Sapper Blastfizzle" TurnInId="19634" X="2923.39" Y="3577.39" Z="129.389" />
 		<PickUp QuestName="Dr. Boom!" QuestId="10221" GiverName="Lead Sapper Blastfizzle" GiverId="19634" X="2923.39" Y="3577.39" Z="129.389" />
 		<TurnIn QuestName="Consortium Crystal Collection" QuestId="10265" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.96" Y="3674.86" Z="142.527" />

@@ -1028,7 +1028,7 @@
 		<PickUp QuestName="In Wine, Truth" QuestId="11603" GiverName="James Deacon" GiverId="25245" X="2282.29" Y="5210.83" Z="12.5771" />
 		<TurnIn QuestName="Weapons for Farshire" QuestId="11963" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<PickUp QuestName="Call to Arms!" QuestId="11965" GiverName="Gerald Green" GiverId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
-		<Objective QuestName="Call to Arms!" QuestId="11965" Type="UseObject" ObjectId="188163" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="11965" MobId="188163" ObjectType="Gameobject" Range="15" CollectionDistance="50" X="2616.326" Y="5268.398" Z="48.34133" />
 		<TurnIn QuestName="Call to Arms!" QuestId="11965" TurnInName="Gerald Green" TurnInId="26083" X="2483.26" Y="5215.05" Z="30.2763" />
 		<PickUp QuestName="A Mission Statement" QuestId="11864" GiverName="Arch Druid Lathorius" GiverId="25809" X="3194.39" Y="5282.06" Z="48.1915" />
 		<PickUp QuestName="Ears of Our Enemies" QuestId="11866" GiverName="Arch Druid Lathorius" GiverId="25809" X="3194.39" Y="5282.06" Z="48.1915" />
@@ -1481,7 +1481,7 @@
 		<Objective QuestName="Saragosa's End" QuestId="11957" Type="CollectItem" ItemId="35709" CollectCount="1" />
 		<TurnIn QuestName="Saragosa's End" QuestId="11957" TurnInName="Keristrasza" TurnInId="26206" X="3579.63" Y="6653.48" Z="195.515" />
 		<PickUp QuestName="Mustering the Reds" QuestId="11967" GiverName="Keristrasza" GiverId="26206" X="3579.63" Y="6653.48" Z="195.515" />
-		<Objective QuestName="Hatching a Plan" QuestId="11936" Type="UseObject" ObjectId="188133" UseCount="5" />
+		<CustomBehavior File="InteractWith" QuestId="11936" ObjectType="Gameobject" MobId="188133" NumOfTimes="5" WaitTime="5000" CollectionDistance="1000" X="3800.385" Y="6941.689" Z="108.1623" />
 		<TurnIn QuestName="Hatching a Plan" QuestId="11936" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<!-- Q11967 Mustering the Reds: objective nodes transplanted from HonorBuddy drind reference LK\[Fly][A - Quest] LK 68-80 [Kick] - ßeta.xml -->
 		<If Condition="((!HasQuest(11967)) &amp;&amp; (!IsQuestCompleted(11967)))">
@@ -1522,10 +1522,10 @@
 
 		<TurnIn QuestName="Mustering the Reds" QuestId="11967" TurnInName="Raelorasz" TurnInId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<TurnIn QuestName="Keep the Secret Safe" QuestId="11914" TurnInName="Librarian Serrah" TurnInId="26110" X="3576.48" Y="6640.39" Z="195.176" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188100" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188101" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188102" UseCount="1" />
-		<Objective QuestName="Reading the Meters" QuestId="11900" Type="UseObject" ObjectId="188103" UseCount="1" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188100" NumOfTimes="1" CollectionDistance="40" X="3801.587" Y="6940.144" Z="108.1099" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188101" NumOfTimes="1" CollectionDistance="20" X="3554.335" Y="6938.918" Z="174.2765" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188102" NumOfTimes="1" CollectionDistance="20" X="4105.506" Y="6746.935" Z="172.2622" />
+		<CustomBehavior File="InteractWith" QuestId="11900" ObjectType="Gameobject" MobId="188103" NumOfTimes="1" CollectionDistance="20" X="3993.309" Y="7266.834" Z="178.9153" />
 		<TurnIn QuestName="Reading the Meters" QuestId="11900" TurnInName="Archmage Berinand" TurnInId="25314" X="3575.61" Y="6671.72" Z="195.267" />
 		<TurnIn QuestName="Distress Call" QuestId="11707" TurnInName="Fizzcrank Fullthrottle" TurnInId="25590" X="4178.77" Y="5286.27" Z="39.6921" />
 		<PickUp QuestName="The Mechagnomes" QuestId="11708" GiverName="Fizzcrank Fullthrottle" GiverId="25590" X="4178.77" Y="5286.27" Z="39.6921" />
