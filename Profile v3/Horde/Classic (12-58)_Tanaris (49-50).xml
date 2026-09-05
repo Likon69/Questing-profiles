@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Tanaris (49-50)</Name>
-	<MinLevel>49</MinLevel>
-	<MaxLevel>50</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -21,12 +18,82 @@
 	<Vendors>
 		<!-- Vendor-Tron 1000 (7244) — no spawn data -->
 		<!-- Innkeeper Vizzie (7251) — no spawn data -->
+		<Vendor Name="Innkeeper Abeqwa" Entry="11116" Type="Food" X="-5477.85" Y="-2460.43" Z="89.3671" />
+		<Vendor Name="Turhaw" Entry="4875" Type="Food" X="-5467.54" Y="-2432.64" Z="89.7824" />
+		<Vendor Name="Starn" Entry="9551" Type="Repair" X="-5453.35" Y="-2408.38" Z="89.3594" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="3362" Name="Thistleshrub Valley">
+		<Objective Type="KillMob" MobId="5490" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-9097.28" Y="-2155.38" Z="12.4" />
+				<Hotspot X="-8918.79" Y="-2152.61" Z="10.97" />
+				<Hotspot X="-8954.01" Y="-2244.2" Z="9.38" />
+				<Hotspot X="-8929.32" Y="-2264.71" Z="9" />
+				<Hotspot X="-8889.62" Y="-2373.09" Z="13.38" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5485" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-8884.75" Y="-2181.8" Z="9.37" />
+				<Hotspot X="-8950.98" Y="-2182.56" Z="8.96" />
+				<Hotspot X="-8927.21" Y="-2267.43" Z="9" />
+				<Hotspot X="-8947.19" Y="-2309.73" Z="11.27" />
+				<Hotspot X="-8918.85" Y="-2343.8" Z="10.55" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4504" Name="Super Sticky">
+		<Objective Type="CollectItem" ItemId="11834" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Tar Beast" Id="6517" />
+				<Mob Name="Tar Lurker" Id="6518" />
+				<Mob Name="Tar Lord" Id="6519" />
+				<Mob Name="Tar Creeper" Id="6527" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6560.2" Y="-1864.85" Z="-273.8" />
+				<Hotspot X="-6514.67" Y="-1844.68" Z="-275.05" />
+				<Hotspot X="-6549.13" Y="-1814.89" Z="-273.67" />
+				<Hotspot X="-6789.57" Y="-1754.97" Z="-269.4" />
+				<Hotspot X="-6734.76" Y="-1734.43" Z="-274.97" />
+				<Hotspot X="-6778.48" Y="-1685.76" Z="-273.13" />
+				<Hotspot X="-6547.52" Y="-1722.29" Z="-273.96" />
+				<Hotspot X="-6714.53" Y="-1683.38" Z="-272.24" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5863" Name="The Dunemaul Compound">
+		<Objective Type="KillMob" MobId="12046" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-8534.26" Y="-3082.25" Z="8.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5474" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-8513.7" Y="-3022.47" Z="9.75" />
+				<Hotspot X="-8477.67" Y="-3086.27" Z="10.25" />
+				<Hotspot X="-8481.16" Y="-3072.51" Z="10.5" />
+				<Hotspot X="-8543.9" Y="-2992.99" Z="10" />
+				<Hotspot X="-8475.4" Y="-2856.09" Z="8.75" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5472" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-8490.94" Y="-3029.45" Z="9" />
+				<Hotspot X="-8917.38" Y="-3549.92" Z="11.11" />
+				<Hotspot X="-8484.69" Y="-3053.96" Z="10.55" />
+				<Hotspot X="-8544.89" Y="-2971.02" Z="9.38" />
+				<Hotspot X="-8887.55" Y="-3388.78" Z="15.28" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="2741" Name="The Super Egg-O-Matic">
 		<Objective Type="CollectItem" ItemId="8564" CollectCount="1">
 			<CollectFrom>
@@ -54,72 +121,159 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="5863" Name="The Dunemaul Compound">
-		<Objective Type="KillMob" MobId="12046" KillCount="1">
+	<Quest Id="379" Name="Slake That Thirst">
+		<Objective Type="CollectItem" ItemId="8483" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Wastewander Rogue" Id="5615" />
+				<Mob Name="Wastewander Thief" Id="5616" />
+				<Mob Name="Wastewander Shadow Mage" Id="5617" />
+				<Mob Name="Wastewander Bandit" Id="5618" />
+				<Mob Name="Wastewander Assassin" Id="5623" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-8534.26" Y="-3082.25" Z="8.7831" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="5474" KillCount="10">
-			<Hotspots>
-				<Hotspot X="-8513.7" Y="-3022.47" Z="9.7518" />
-				<Hotspot X="-8477.67" Y="-3086.27" Z="10.2518" />
-				<Hotspot X="-8481.16" Y="-3072.51" Z="10.5018" />
-				<Hotspot X="-8543.9" Y="-2992.99" Z="10.0018" />
-				<Hotspot X="-8475.4" Y="-2856.09" Z="8.7497" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="5472" KillCount="10">
-			<Hotspots>
-				<Hotspot X="-8490.94" Y="-3029.45" Z="9.0018" />
-				<Hotspot X="-8917.38" Y="-3549.92" Z="11.1132" />
-				<Hotspot X="-8484.69" Y="-3053.96" Z="10.5458" />
-				<Hotspot X="-8544.89" Y="-2971.02" Z="9.3768" />
-				<Hotspot X="-8887.55" Y="-3388.78" Z="15.2814" />
+				<Hotspot X="-6952.23" Y="-4290.61" Z="9.42" />
+				<Hotspot X="-6997.66" Y="-4330.9" Z="10.48" />
+				<Hotspot X="-7541.94" Y="-4280.88" Z="9.73" />
+				<Hotspot X="-7581.16" Y="-4265.8" Z="9.7" />
+				<Hotspot X="-6941.48" Y="-4363" Z="10.88" />
+				<Hotspot X="-7001.02" Y="-4400.14" Z="9.5" />
+				<Hotspot X="-7381.1" Y="-4403.88" Z="10.16" />
+				<Hotspot X="-6919.84" Y="-4396.74" Z="11.47" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="3362" Name="Thistleshrub Valley">
-		<Objective Type="KillMob" MobId="5490" KillCount="8">
+	<Quest Id="2605" Name="The Thirsty Goblin">
+		<Objective Type="CollectItem" ItemId="8428" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Thistleshrub Dew Collector" Id="5481" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-9097.28" Y="-2155.38" Z="12.3975" />
-				<Hotspot X="-8918.79" Y="-2152.61" Z="10.9722" />
-				<Hotspot X="-8954.01" Y="-2244.2" Z="9.3769" />
-				<Hotspot X="-8929.32" Y="-2264.71" Z="9.0017" />
-				<Hotspot X="-8889.62" Y="-2373.09" Z="13.3753" />
+				<Hotspot X="-8841.53" Y="-2359.97" Z="17.58" />
+				<Hotspot X="-8846.15" Y="-2312.2" Z="9.04" />
+				<Hotspot X="-8769.98" Y="-2164.1" Z="11.04" />
+				<Hotspot X="-8968.53" Y="-2340.14" Z="11.76" />
+				<Hotspot X="-8834.89" Y="-2164.3" Z="10.75" />
+				<Hotspot X="-8953.94" Y="-2280.2" Z="9.13" />
+				<Hotspot X="-8923.98" Y="-2244.71" Z="9" />
+				<Hotspot X="-8980.37" Y="-2217.61" Z="9.51" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="5485" KillCount="8">
+	</Quest>
+	<Quest Id="82" Name="Noxious Lair Investigation">
+		<Objective Type="CollectItem" ItemId="8587" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Centipaar Wasp" Id="5455" />
+				<Mob Name="Centipaar Stinger" Id="5456" />
+				<Mob Name="Centipaar Swarmer" Id="5457" />
+				<Mob Name="Centipaar Worker" Id="5458" />
+				<Mob Name="Centipaar Tunneler" Id="5459" />
+				<Mob Name="Centipaar Sandreaver" Id="5460" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-8884.75" Y="-2181.8" Z="9.3737" />
-				<Hotspot X="-8950.98" Y="-2182.56" Z="8.9615" />
-				<Hotspot X="-8927.21" Y="-2267.43" Z="9.0017" />
-				<Hotspot X="-8947.19" Y="-2309.73" Z="11.2722" />
-				<Hotspot X="-8918.85" Y="-2343.8" Z="10.5468" />
+				<Hotspot X="-7733.27" Y="-2751.94" Z="8.92" />
+				<Hotspot X="-7692.2" Y="-2690.49" Z="11.89" />
+				<Hotspot X="-7650.67" Y="-2649.99" Z="9.73" />
+				<Hotspot X="-7786.83" Y="-2720.76" Z="11.57" />
+				<Hotspot X="-7738.86" Y="-2669.9" Z="9.55" />
+				<Hotspot X="-7692.24" Y="-2612.43" Z="-34.26" />
+				<Hotspot X="-7844.91" Y="-2700.53" Z="9.2" />
+				<Hotspot X="-7658.21" Y="-2590.84" Z="12.49" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3444" Name="The Stone Circle">
+		<Objective Type="CollectItem" ItemId="10556" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Marvon's Chest" Id="149036" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-991.67" Y="-3710.49" Z="4.46" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3161" Name="Gahz'ridian">
+		<Objective Type="CollectItem" ItemId="8443" CollectCount="30">
+			<CollectFrom>
+				<GameObject Name="Gahz'ridian" Id="140971" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7920.91" Y="-3558.69" Z="47.25" />
+				<Hotspot X="-8120.04" Y="-4227.18" Z="10.93" />
+				<Hotspot X="-8508.76" Y="-3503.38" Z="9.87" />
+				<Hotspot X="-8598.09" Y="-3642.14" Z="14.75" />
+				<Hotspot X="-8689.43" Y="-3720.01" Z="27.95" />
+				<Hotspot X="-8824.28" Y="-3759.51" Z="23.5" />
+				<Hotspot X="-8833.11" Y="-3462.91" Z="12.14" />
+				<Hotspot X="-8568.79" Y="-3130.03" Z="9.21" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2641" Name="Sprinkle's Secret Ingredient">
+		<Objective Type="CollectItem" ItemId="8526" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Violet Tragan" Id="141853" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-74.29" Y="-3153.6" Z="100.48" />
+				<Hotspot X="-71.56" Y="-3106.58" Z="103.02" />
+				<Hotspot X="-49.44" Y="-3140.39" Z="100.7" />
+				<Hotspot X="-46.25" Y="-3174.9" Z="100" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10" Name="The Scrimshank Redemption">
+		<Objective Type="CollectItem" ItemId="8593" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Scrimshank's Surveying Gear" Id="144053" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9148.63" Y="-4079.77" Z="-45.48" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Tanaris (49-50) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(3362))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Thistleshrub Valley" QuestId="3362" GiverName="Tran'rek" GiverId="7876" />
-		<PickUp QuestName="Super Sticky" QuestId="4504" GiverName="Tran'rek" GiverId="7876" />
-		<PickUp QuestName="The Dunemaul Compound" QuestId="5863" GiverName="Andi Lynn" GiverId="11758" />
+		<PickUp QuestName="Thistleshrub Valley" QuestId="3362" GiverName="Tran'rek" GiverId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		<PickUp QuestName="Super Sticky" QuestId="4504" GiverName="Tran'rek" GiverId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		<Objective QuestName="Super Sticky" QuestId="4504" Type="CollectItem" ItemId="11834" CollectCount="12" />
+		<PickUp QuestName="The Dunemaul Compound" QuestId="5863" GiverName="Andi Lynn" GiverId="11758" X="-7135.48" Y="-3863.11" Z="9.5147" />
 		<Objective QuestName="The Super Egg-O-Matic" QuestId="2741" Type="CollectItem" ItemId="8564" CollectCount="1" />
-		<Objective QuestName="Screecher Spirits" QuestId="3520" Type="CollectItem" ItemId="10699" CollectCount="1" />
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11727" CollectCount="1" />
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11723" CollectCount="1" />
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11725" CollectCount="20" />
-		<TurnIn QuestName="Into the Field" QuestId="243" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" />
-		<PickUp QuestName="Slake That Thirst" QuestId="379" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" />
-		<PickUp QuestName="The Super Egg-O-Matic" QuestId="2741" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" />
-		<PickUp QuestName="The Thirsty Goblin" QuestId="2605" GiverName="Marin Noggenfogger" GiverId="7564" />
-		<TurnIn QuestName="Ledger from Tanaris" QuestId="4450" TurnInName="Krinkle Goodsteel" TurnInId="5411" />
-		<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
-		<TurnIn QuestName="The Sunken Temple" QuestId="3380" TurnInName="Marvon Rivetseeker" TurnInId="7771" />
-		<PickUp QuestName="The Stone Circle" QuestId="3444" GiverName="Marvon Rivetseeker" GiverId="7771" />
-		<PickUp QuestName="Gahz'ridian" QuestId="3161" GiverName="Marvon Rivetseeker" GiverId="7771" />
+		<TurnIn QuestName="Into the Field" QuestId="243" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
+		<PickUp QuestName="Slake That Thirst" QuestId="379" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
+		<PickUp QuestName="The Super Egg-O-Matic" QuestId="2741" GiverName="Egg-O-Matic" GiverId="142071" GiverType="Object" X="-7115.47" Y="-3833.45" Z="9.4458" />
+		<PickUp QuestName="The Thirsty Goblin" QuestId="2605" GiverName="Marin Noggenfogger" GiverId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<TurnIn QuestName="Ledger from Tanaris" QuestId="4450" TurnInName="Krinkle Goodsteel" TurnInId="5411" X="-7200.43" Y="-3769.82" Z="8.7594" />
+		<PickUp QuestName="Noxious Lair Investigation" QuestId="82" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<TurnIn QuestName="The Sunken Temple" QuestId="3380" TurnInName="Marvon Rivetseeker" TurnInId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
+		<PickUp QuestName="The Stone Circle" QuestId="3444" GiverName="Marvon Rivetseeker" GiverId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
+		<Objective QuestName="The Stone Circle" QuestId="3444" Type="CollectItem" ItemId="10556" CollectCount="1" />
+		<PickUp QuestName="Gahz'ridian" QuestId="3161" GiverName="Marvon Rivetseeker" GiverId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
 		<Objective QuestName="Noxious Lair Investigation" QuestId="82" Type="CollectItem" ItemId="8587" CollectCount="5" />
 		<Objective QuestName="The Dunemaul Compound" QuestId="5863" Type="KillMob" MobId="12046" KillCount="1" />
 		<Objective QuestName="The Dunemaul Compound" QuestId="5863" Type="KillMob" MobId="5474" KillCount="10" />
@@ -128,30 +282,29 @@
 		<Objective QuestName="The Thirsty Goblin" QuestId="2605" Type="CollectItem" ItemId="8428" CollectCount="1" />
 		<Objective QuestName="Thistleshrub Valley" QuestId="3362" Type="KillMob" MobId="5490" KillCount="8" />
 		<Objective QuestName="Thistleshrub Valley" QuestId="3362" Type="KillMob" MobId="5485" KillCount="8" />
-		<PickUp QuestName="Tooga's Quest" QuestId="1560" GiverName="Marvon Rivetseeker" GiverId="7771" />
-		<TurnIn QuestName="Tooga's Quest" QuestId="1560" TurnInName="Torta" TurnInId="6015" />
-		<PickUp QuestName="Yuka Screwspigot" QuestId="4324" GiverName="Yorba Screwspigot" GiverId="9706" />
-		<TurnIn QuestName="Screecher Spirits" QuestId="3520" TurnInName="Yeh'kinya" TurnInId="8579" />
+		<PickUp QuestName="Tooga's Quest" QuestId="1560" GiverName="Tooga" GiverId="5955" X="-9285.7" Y="-2412.92" Z="8.9982" />
+		<TurnIn QuestName="Tooga's Quest" QuestId="1560" TurnInName="Torta" TurnInId="6015" X="-7056.02" Y="-4812.75" Z="0.7901" />
+		<PickUp QuestName="Yuka Screwspigot" QuestId="4324" GiverName="Yorba Screwspigot" GiverId="9706" X="-6979.65" Y="-4844.17" Z="8.1178" />
+		<TurnIn QuestName="Screecher Spirits" QuestId="3520" TurnInName="Yeh'kinya" TurnInId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
 		<Objective QuestName="Slake That Thirst" QuestId="379" Type="CollectItem" ItemId="8483" CollectCount="5" />
-		<TurnIn QuestName="The Thirsty Goblin" QuestId="2605" TurnInName="Marin Noggenfogger" TurnInId="7564" />
-		<PickUp QuestName="In Good Taste" QuestId="2606" GiverName="Marin Noggenfogger" GiverId="7564" />
-		<TurnIn QuestName="Slake That Thirst" QuestId="379" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" />
-		<TurnIn QuestName="In Good Taste" QuestId="2606" TurnInName="Sprinkle" TurnInId="7583" />
-		<PickUp QuestName="Sprinkle's Secret Ingredient" QuestId="2641" GiverName="Sprinkle" GiverId="7583" />
-		<TurnIn QuestName="Noxious Lair Investigation" QuestId="82" TurnInName="Alchemist Pestlezugg" TurnInId="5594" />
-		<PickUp QuestName="The Scrimshank Redemption" QuestId="10" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
-		<TurnIn QuestName="Thistleshrub Valley" QuestId="3362" TurnInName="Tran'rek" TurnInId="7876" />
-		<TurnIn QuestName="The Dunemaul Compound" QuestId="5863" TurnInName="Andi Lynn" TurnInId="11758" />
-		<TurnIn QuestName="Gahz'ridian" QuestId="3161" TurnInName="Marvon Rivetseeker" TurnInId="7771" />
+		<TurnIn QuestName="The Thirsty Goblin" QuestId="2605" TurnInName="Marin Noggenfogger" TurnInId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<PickUp QuestName="In Good Taste" QuestId="2606" GiverName="Marin Noggenfogger" GiverId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<TurnIn QuestName="Slake That Thirst" QuestId="379" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
+		<TurnIn QuestName="In Good Taste" QuestId="2606" TurnInName="Sprinkle" TurnInId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
+		<PickUp QuestName="Sprinkle's Secret Ingredient" QuestId="2641" GiverName="Sprinkle" GiverId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
+		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
+		<TurnIn QuestName="Noxious Lair Investigation" QuestId="82" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
+		<PickUp QuestName="The Scrimshank Redemption" QuestId="10" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<TurnIn QuestName="Thistleshrub Valley" QuestId="3362" TurnInName="Tran'rek" TurnInId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		<TurnIn QuestName="The Dunemaul Compound" QuestId="5863" TurnInName="Andi Lynn" TurnInId="11758" X="-7135.48" Y="-3863.11" Z="9.5147" />
+		<TurnIn QuestName="Gahz'ridian" QuestId="3161" TurnInName="Marvon Rivetseeker" TurnInId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
 		<Objective QuestName="The Scrimshank Redemption" QuestId="10" Type="CollectItem" ItemId="8593" CollectCount="1" />
-		<TurnIn QuestName="The Scrimshank Redemption" QuestId="10" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" />
-		<PickUp QuestName="Insect Part Analysis" QuestId="110" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
-		<TurnIn QuestName="Insect Part Analysis" QuestId="110" TurnInName="Alchemist Pestlezugg" TurnInId="5594" />
-		<PickUp QuestName="Insect Part Analysis" QuestId="113" GiverName="Alchemist Pestlezugg" GiverId="5594" />
-		<TurnIn QuestName="Insect Part Analysis" QuestId="113" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" />
-		<PickUp QuestName="Rise of the Silithid" QuestId="32" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
-		<Objective QuestName="Seeping Corruption" QuestId="3568" Type="CollectItem" ItemId="10695" CollectCount="1" />
-		<Objective QuestName="The Atal'ai Exile" QuestId="1429" Type="CollectItem" ItemId="6193" CollectCount="1" />
+		<TurnIn QuestName="The Scrimshank Redemption" QuestId="10" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<PickUp QuestName="Insect Part Analysis" QuestId="110" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<TurnIn QuestName="Insect Part Analysis" QuestId="110" TurnInName="Alchemist Pestlezugg" TurnInId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
+		<PickUp QuestName="Insect Part Analysis" QuestId="113" GiverName="Alchemist Pestlezugg" GiverId="5594" X="-7115.3" Y="-3729.93" Z="8.8567" />
+		<TurnIn QuestName="Insect Part Analysis" QuestId="113" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<PickUp QuestName="Rise of the Silithid" QuestId="32" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Azshara (50-50)" />
 	</QuestOrder>
 </HBProfile>

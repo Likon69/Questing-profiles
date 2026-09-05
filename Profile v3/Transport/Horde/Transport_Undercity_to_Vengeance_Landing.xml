@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Undercity to Vengeance Landing
     Transport: Zeppelin to Howling Fjord (ID: 181689)
     Faction: Horde
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Undercity_to_Vengeance_Landing</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="2058.89" Y="384.75" Z="97.03" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="181689"
-        WaitAtX="2058.89" WaitAtY="384.75" WaitAtZ="97.03"
-        TransportStartX="2059.44" TransportStartY="393.2" TransportStartZ="115.0"
-        StandOnX="2065.1" StandOnY="388.07" StandOnZ="97.1"
-        TransportEndX="1989.26" TransportEndY="-6079.51" TransportEndZ="90.07"
-        GetOffX="2000.56" GetOffY="-6086.11" GetOffZ="69.32" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="2000.56" Y="-6086.11" Z="69.32" />
-  </QuestOrder>
-  
+	<Name>Transport_Undercity_to_Vengeance_Landing</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="2060.931" Y="361.9963" Z="82.5015" />
+		<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="2060.931" WaitAtY="361.9963" WaitAtZ="82.5015" TransportStartX="2056.5" TransportStartY="381.6" TransportStartZ="100.4" StandOnX="2058.682" StandOnY="371.8202" StandOnZ="82.5283" TransportEndX="1989.4" TransportEndY="-6082.8" TransportEndZ="85.6" GetOffX="1975.661" GetOffY="-6097.837" GetOffZ="67.1533" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

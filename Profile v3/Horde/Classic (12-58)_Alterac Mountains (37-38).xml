@@ -1,29 +1,90 @@
 <HBProfile>
 	<Name>Classic (12-58)\Alterac Mountains (37-38)</Name>
-	<MinLevel>37</MinLevel>
-	<MaxLevel>38</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Jekyll Flandring" Entry="13219" Type="Repair" X="393.567" Y="-976.087" Z="110.218" />
+		<Vendor Name="Jason Lemieux" Entry="3544" Type="Food" X="-28.3207" Y="-900.884" Z="56.056" />
+		<Vendor Name="Innkeeper Shay" Entry="2388" Type="Food" X="-5.9687" Y="-942.282" Z="57.1621" />
+		<Vendor Name="Ott" Entry="3539" Type="Repair" X="-158.525" Y="-867.18" Z="56.9813" />
+		<Vendor Name="Gillian Moore" Entry="5820" Type="Repair" X="1505.25" Y="198.394" Z="-62.0594" />
+		<Vendor Name="Eleanor Rusk" Entry="4555" Type="Food" X="1564.76" Y="209.601" Z="-43.019" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="544" Name="Prison Break In">
+		<Objective Type="CollectItem" ItemId="3688" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kegan Darkmar" Id="2414" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-52.78" Y="285.75" Z="66.04" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3689" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ricter" Id="2411" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-73.23" Y="218.84" Z="53.4" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3690" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Alina" Id="2412" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-112.74" Y="213.86" Z="55.43" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3691" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dermot" Id="2413" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-104.76" Y="225.97" Z="55.16" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="556" Name="Stone Tokens">
+		<Objective Type="CollectItem" ItemId="3714" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Dalaran Shield Guard" Id="2271" />
+				<Mob Name="Dalaran Theurgist" Id="2272" />
+				<Mob Name="Dalaran Summoner" Id="2358" />
+				<Mob Name="Warden Belamoore" Id="2415" />
+				<Mob Name="Dalaran Worker" Id="2628" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-133.92" Y="196.94" Z="56.07" />
+				<Hotspot X="-66.18" Y="203.58" Z="53.33" />
+				<Hotspot X="-35.38" Y="210.94" Z="51.56" />
+				<Hotspot X="364.87" Y="165.85" Z="42.6" />
+				<Hotspot X="97.07" Y="243.77" Z="43.35" />
+				<Hotspot X="160.56" Y="223.59" Z="42.72" />
+				<Hotspot X="309.41" Y="186.12" Z="42.88" />
+				<Hotspot X="-70.23" Y="272.11" Z="58.19" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="1183" Name="Goblin Sponsorship">
 		<Objective Type="CollectItem" ItemId="5852" CollectCount="1">
 			<CollectFrom>
@@ -37,24 +98,38 @@
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Alterac Mountains (37-38) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(544))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Prison Break In" QuestId="544" GiverName="Magus Wordeen Voidglare" GiverId="2410" />
-		<PickUp QuestName="Stone Tokens" QuestId="556" GiverName="Keeper Bel'varil" GiverId="2437" />
-		<Objective QuestName="Frostmaw" QuestId="1136" Type="CollectItem" ItemId="5810" CollectCount="1" />
+		<PickUp QuestName="Prison Break In" QuestId="544" GiverName="Magus Wordeen Voidglare" GiverId="2410" X="-44.7427" Y="-904.614" Z="57.3454" />
+		<PickUp QuestName="Stone Tokens" QuestId="556" GiverName="Keeper Bel'varil" GiverId="2437" X="-46.5685" Y="-901.259" Z="57.344" />
+		<Objective QuestName="Frostmaw" QuestId="1136" Type="CollectItem" ItemId="5811" CollectCount="1" />
 		<Objective QuestName="Frostmaw" QuestId="1136" Type="CollectItem" ItemId="5811" CollectCount="1" />
 		<Objective QuestName="Prison Break In" QuestId="544" Type="CollectItem" ItemId="3689" CollectCount="1" />
 		<Objective QuestName="Prison Break In" QuestId="544" Type="CollectItem" ItemId="3690" CollectCount="1" />
 		<Objective QuestName="Prison Break In" QuestId="544" Type="CollectItem" ItemId="3691" CollectCount="1" />
 		<Objective QuestName="Prison Break In" QuestId="544" Type="CollectItem" ItemId="3688" CollectCount="1" />
 		<Objective QuestName="Stone Tokens" QuestId="556" Type="CollectItem" ItemId="3714" CollectCount="10" />
-		<TurnIn QuestName="Helcular's Revenge" QuestId="553" TurnInName="Object_1767" TurnInType="Object" TurnInId="1767" />
-		<TurnIn QuestName="Prison Break In" QuestId="544" TurnInName="Magus Wordeen Voidglare" TurnInId="2410" />
-		<TurnIn QuestName="Stone Tokens" QuestId="556" TurnInName="Keeper Bel'varil" TurnInId="2437" />
-		<TurnIn QuestName="To Steal From Thieves" QuestId="1164" TurnInName="Genavie Callow" TurnInId="4486" />
-		<Objective QuestName="The Swarm Grows" QuestId="1146" Type="CollectItem" ItemId="5850" CollectCount="1" />
-		<Objective QuestName="Goblin Sponsorship" QuestId="1183" Type="CollectItem" ItemId="5852" CollectCount="1" />
-		<Objective QuestName="Parts for Kravel" QuestId="1112" Type="CollectItem" ItemId="5800" CollectCount="1" />
-		<Objective QuestName="Frostmaw" QuestId="1136" Type="CollectItem" ItemId="5838" CollectCount="1" />
+		<TurnIn QuestName="Helcular's Revenge" QuestId="553" TurnInName="Helcular's Grave" TurnInType="Object" TurnInId="1767" X="-738.663" Y="-621.415" Z="18.6241" />
+		<TurnIn QuestName="Prison Break In" QuestId="544" TurnInName="Magus Wordeen Voidglare" TurnInId="2410" X="-44.7427" Y="-904.614" Z="57.3454" />
+		<TurnIn QuestName="Stone Tokens" QuestId="556" TurnInName="Keeper Bel'varil" TurnInId="2437" X="-46.5685" Y="-901.259" Z="57.344" />
+		<TurnIn QuestName="To Steal From Thieves" QuestId="1164" TurnInName="Genavie Callow" TurnInId="4486" X="1561.39" Y="260.797" Z="-43.0193" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Thousand Needles (38-38)" />
 	</QuestOrder>
 </HBProfile>

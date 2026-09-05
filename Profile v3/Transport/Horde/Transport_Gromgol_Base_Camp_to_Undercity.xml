@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Grom'gol Base Camp to Undercity
     Transport: The Purple Princess (ID: 195276)
     Faction: Horde
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Grom'gol_Base_Camp_to_Undercity</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="-12433.8" Y="204.32" Z="11.9" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="195276"
-        WaitAtX="-12433.8" WaitAtY="204.32" WaitAtZ="11.9"
-        TransportStartX="-12441.14" TransportStartY="197.26" TransportStartZ="31.51"
-        StandOnX="-12437.92" StandOnY="204.98" StandOnZ="12.03"
-        TransportEndX="2047.52" TransportEndY="236.13" TransportEndZ="115.0"
-        GetOffX="2057.04" GetOffY="237.56" GetOffZ="97.03" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="2057.04" Y="237.56" Z="97.03" />
-  </QuestOrder>
-  
+	<Name>Transport_Grom'gol_Base_Camp_to_Undercity</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="-12417.8" Y="208.3" Z="31.3" />
+		<CustomBehavior File="UseTransport" TransportId="176495" DestName="The Purple Princess" WaitAtX="-12417.8" WaitAtY="208.3" WaitAtZ="31.3" TransportStartX="-12406.9" TransportStartY="211.8" TransportStartZ="49.7" StandOnX="-12406.9" StandOnY="211.8" StandOnZ="31.3" TransportEndX="2062.6" TransportEndY="235.3" TransportEndZ="117.7" GetOffX="2054.6" GetOffY="241.7" GetOffZ="99.9" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

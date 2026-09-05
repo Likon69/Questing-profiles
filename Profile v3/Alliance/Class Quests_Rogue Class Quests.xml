@@ -1,65 +1,166 @@
 <HBProfile>
 	<Name>Class Quests\Rogue Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Hegnar Rumbleshot" Entry="1243" Type="Repair" X="-6015.51" Y="-201.511" Z="407.437" />
+		<Vendor Name="Grundel Harkin" Entry="1104" Type="Repair" X="-6104.5" Y="384.03" Z="395.626" />
+		<Vendor Name="Rybrad Coldbank" Entry="945" Type="Repair" X="-6101.1" Y="390.569" Z="395.626" />
+		<Vendor Name="Innkeeper Belm" Entry="1247" Type="Food" X="-5601.6" Y="-531.203" Z="399.737" />
+		<Vendor Name="Keeg Gibn" Entry="1697" Type="Food" X="-5387.62" Y="302.251" Z="394.054" />
+		<Vendor Name="Elly Langston" Entry="1328" Type="Food" X="-8624.84" Y="394.134" Z="102.925" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="2359" Name="Klaven's Tower">
+		<Objective Type="CollectItem" ItemId="7908" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Duskwood Chest" Id="123214" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11125" Y="552.15" Z="70.43" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8234" Name="Sealed Azure Bag">
+		<Objective Type="CollectItem" ItemId="19775" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Timbermaw Shaman" Id="6188" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4247.27" Y="-5221.55" Z="119.12" />
+				<Hotspot X="4428.21" Y="-5496.61" Z="103.02" />
+				<Hotspot X="4605.99" Y="-5377.61" Z="120.42" />
+				<Hotspot X="4481.75" Y="-5499.27" Z="112.21" />
+				<Hotspot X="4664.15" Y="-5355.9" Z="112.05" />
+				<Hotspot X="4451.56" Y="-5526.56" Z="108.84" />
+				<Hotspot X="4419.66" Y="-5563.11" Z="109.86" />
+				<Hotspot X="4692.23" Y="-5388.36" Z="112.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8235" Name="Encoded Fragments">
+		<Objective Type="CollectItem" ItemId="20023" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Young Wavethrasher" Id="6347" />
+				<Mob Name="Wavethrasher" Id="6348" />
+				<Mob Name="Great Wavethrasher" Id="6349" />
+				<Mob Name="Coralshell Lurker" Id="6352" />
+				<Mob Name="Coralshell Tortoise" Id="6369" />
+				<Mob Name="Thunderhead Hippogryph" Id="6375" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3850.82" Y="-5053.9" Z="131.99" />
+				<Hotspot X="3846.49" Y="-5093.77" Z="134.39" />
+				<Hotspot X="3892.09" Y="-5115.43" Z="129.18" />
+				<Hotspot X="4575.93" Y="-6174.96" Z="99.07" />
+				<Hotspot X="4673.3" Y="-6162.28" Z="103.97" />
+				<Hotspot X="4513.44" Y="-6232.3" Z="101.41" />
+				<Hotspot X="4753.1" Y="-6122.72" Z="95.52" />
+				<Hotspot X="4592.73" Y="-6218.72" Z="101.27" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8236" Name="The Azure Key">
+		<Objective Type="CollectItem" ItemId="20022" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Morphaz" Id="5719" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-667.59" Y="103.11" Z="-90.83" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Class Quests_Rogue Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(2360))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Mathias and the Defias" QuestId="2360" GiverName="Master Mathias Shaw" GiverId="332" />
-			<TurnIn QuestName="Mathias and the Defias" QuestId="2360" TurnInName="Agent Kearnen" TurnInId="7024" />
-			<PickUp QuestName="Klaven's Tower" QuestId="2359" GiverName="Agent Kearnen" GiverId="7024" />
+			<PickUp QuestName="Mathias and the Defias" QuestId="2360" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
+			<TurnIn QuestName="Mathias and the Defias" QuestId="2360" TurnInName="Agent Kearnen" TurnInId="7024" X="-11035.2" Y="619.354" Z="35.4196" />
+			<PickUp QuestName="Klaven's Tower" QuestId="2359" GiverName="Agent Kearnen" GiverId="7024" X="-11035.2" Y="619.354" Z="35.4196" />
 			<Objective QuestName="Klaven's Tower" QuestId="2359" Type="CollectItem" ItemId="7923" CollectCount="1" />
 			<Objective QuestName="Klaven's Tower" QuestId="2359" Type="CollectItem" ItemId="7908" CollectCount="1" />
-			<TurnIn QuestName="Klaven's Tower" QuestId="2359" TurnInName="Master Mathias Shaw" TurnInId="332" />
-			<PickUp QuestName="The Touch of Zanzil" QuestId="2607" GiverName="Master Mathias Shaw" GiverId="332" />
-			<TurnIn QuestName="The Touch of Zanzil" QuestId="2607" TurnInName="Doc Mixilpixil" TurnInId="7207" />
-			<PickUp QuestName="The Touch of Zanzil" QuestId="2608" GiverName="Doc Mixilpixil" GiverId="7207" />
-			<TurnIn QuestName="The Touch of Zanzil" QuestId="2608" TurnInName="Doc Mixilpixil" TurnInId="7207" />
-			<PickUp QuestName="A Simple Request" QuestId="8233" GiverName="Lord Tony Romano" GiverId="13283" />
+			<TurnIn QuestName="Klaven's Tower" QuestId="2359" TurnInName="Master Mathias Shaw" TurnInId="332" X="-8815.27" Y="362.3" Z="109.604" />
+			<PickUp QuestName="The Touch of Zanzil" QuestId="2607" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
+			<TurnIn QuestName="The Touch of Zanzil" QuestId="2607" TurnInName="Doc Mixilpixil" TurnInId="7207" X="-8805.56" Y="331.968" Z="95.0986" />
+			<PickUp QuestName="The Touch of Zanzil" QuestId="2608" GiverName="Doc Mixilpixil" GiverId="7207" X="-8805.56" Y="331.968" Z="95.0986" />
+			<TurnIn QuestName="The Touch of Zanzil" QuestId="2608" TurnInName="Doc Mixilpixil" TurnInId="7207" X="-8805.56" Y="331.968" Z="95.0986" />
+			<PickUp QuestName="A Simple Request" QuestId="8233" GiverName="Lord Tony Romano" GiverId="13283" X="-8790.2" Y="328.033" Z="103.17" />
 		</If>
 
-		<TurnIn QuestName="A Simple Request" QuestId="8233" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+		<TurnIn QuestName="A Simple Request" QuestId="8233" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Sealed Azure Bag" QuestId="8234" GiverName="Lord Jorach Ravenholdt" GiverId="6768" />
+			<PickUp QuestName="Sealed Azure Bag" QuestId="8234" GiverName="Lord Jorach Ravenholdt" GiverId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 			<Objective QuestName="Sealed Azure Bag" QuestId="8234" Type="CollectItem" ItemId="19775" CollectCount="1" />
-			<PickUp QuestName="Meeting with the Master" QuestId="3503" GiverName="Sanath Lim-yo" GiverId="8395" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+					<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<PickUp QuestName="Meeting with the Master" QuestId="3503" GiverName="Sanath Lim-yo" GiverId="8395" X="3648.01" Y="-4702.71" Z="121.058" />
 		</If>
 
-		<TurnIn QuestName="Sealed Azure Bag" QuestId="8234" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<TurnIn QuestName="Sealed Azure Bag" QuestId="8234" TurnInName="Archmage Xylem" TurnInId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Encoded Fragments" QuestId="8235" GiverName="Archmage Xylem" GiverId="8379" />
-			<PickUp QuestName="Return Trip" QuestId="3421" GiverName="Nyrill" GiverId="8399" />
+			<PickUp QuestName="Encoded Fragments" QuestId="8235" GiverName="Archmage Xylem" GiverId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
+			<PickUp QuestName="Return Trip" QuestId="3421" GiverName="Nyrill" GiverId="8399" X="3777.06" Y="-4619.17" Z="227.405" />
 			<Objective QuestName="Encoded Fragments" QuestId="8235" Type="CollectItem" ItemId="20023" CollectCount="10" />
 		</If>
 
-		<TurnIn QuestName="Encoded Fragments" QuestId="8235" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<TurnIn QuestName="Encoded Fragments" QuestId="8235" TurnInName="Archmage Xylem" TurnInId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="The Azure Key" QuestId="8236" GiverName="Archmage Xylem" GiverId="8379" />
+			<PickUp QuestName="The Azure Key" QuestId="8236" GiverName="Archmage Xylem" GiverId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 			<Objective QuestName="The Azure Key" QuestId="8236" Type="CollectItem" ItemId="20022" CollectCount="1" />
-			<TurnIn QuestName="The Azure Key" QuestId="8236" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+					<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<TurnIn QuestName="The Azure Key" QuestId="8236" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 		</If>
 
 	</QuestOrder>

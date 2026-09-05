@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Dustwallow Marsh (48-49)</Name>
-	<MinLevel>48</MinLevel>
-	<MaxLevel>49</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,45 +16,81 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Speed Barge Bartender" Entry="4516" Type="Food" X="2107.68" Y="1609.01" Z="80.7722" />
-		<Vendor Name="Grub" Entry="11557" Type="Repair" X="7025.63" Y="-2135.69" Z="586.408" />
-		<Vendor Name="Krog" Entry="11898" Type="Repair" X="1651.43" Y="-5492.02" Z="101.95" />
-		<Vendor Name="Innkeeper Janene" Entry="15177" Type="Food" X="-6758.55" Y="775.594" Z="89.1046" />
+		<Vendor Name="Mu'uta" Entry="9555" Type="Repair" X="-933.85" Y="-3477.47" Z="51.3872" />
+		<Vendor Name="Uttnar" Entry="4954" Type="Food" X="-948.304" Y="-3537.25" Z="71.5343" />
+		<Vendor Name="Innkeeper Adegwa" Entry="9501" Type="Food" X="-912.374" Y="-3524.92" Z="72.7679" />
+		<Vendor Name="Rutherford Twing" Entry="15126" Type="Repair" X="-845.512" Y="-3507.93" Z="73.6511" />
+		<Vendor Name="Smith Slagtree" Entry="14737" Type="Repair" X="-589.954" Y="-4548.46" Z="9.1615" />
+		<Vendor Name="Lard" Entry="14731" Type="Food" X="-622.033" Y="-4583.4" Z="11.7704" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1172" Name="The Brood of Onyxia">
+		<Objective Type="UseObject" ObjectId="20359" UseCount="5">
+			<Hotspots>
+				<Hotspot X="-4609.82" Y="-3519.94" Z="34" />
+				<Hotspot X="-4693.06" Y="-3514.95" Z="38.53" />
+				<Hotspot X="-4571.9" Y="-3786.92" Z="35.23" />
+				<Hotspot X="-4671.61" Y="-3949.89" Z="40.17" />
+				<Hotspot X="-4971.27" Y="-3719.16" Z="39.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="4450" Name="Ledger from Tanaris">
 		<Objective Type="CollectItem" ItemId="11724" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Damaged Crate" Id="174728" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-3990.0" Y="-3814.18" Z="34.45" />
+				<Hotspot X="-3990" Y="-3814.18" Z="34.45" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="1173" Name="Challenge Overlord Mok'Morokk">
 		<Objective Type="KillMob" MobId="4500" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-3132.84" Y="-2880.27" Z="34.7842" />
+				<Hotspot X="-3132.84" Y="-2880.27" Z="34.78" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Dustwallow Marsh (48-49) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1172))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Brood of Onyxia" QuestId="1172" GiverName="Draz'Zilb" GiverId="4501" />
-		<TurnIn QuestName="Cortello's Riddle" QuestId="625" TurnInName="Object_2555" TurnInType="Object" TurnInId="2555" />
-		<PickUp QuestName="Cortello's Riddle" QuestId="626" GiverName="Draz'Zilb" GiverId="4501" />
+		<PickUp QuestName="The Brood of Onyxia" QuestId="1172" GiverName="Draz'Zilb" GiverId="4501" X="-3191.32" Y="-2925.55" Z="33.4429" />
+		<TurnIn QuestName="Cortello's Riddle" QuestId="625" TurnInName="Musty Scroll" TurnInType="Object" TurnInId="2555" X="-4348.37" Y="-2607.68" Z="38.2624" />
+		<PickUp QuestName="Cortello's Riddle" QuestId="626" GiverName="Musty Scroll" GiverId="2555" GiverType="Object" X="-4348.37" Y="-2607.68" Z="38.2624" />
 		<Objective QuestName="Ledger from Tanaris" QuestId="4450" Type="CollectItem" ItemId="11724" CollectCount="1" />
-		<TurnIn QuestName="The Brood of Onyxia" QuestId="1172" TurnInName="Draz'Zilb" TurnInId="4501" />
-		<PickUp QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" GiverName="Overlord Mok'Morokk" GiverId="4500" />
-		<Objective QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" Type="KillMob" MobId="4500" KillCount="1" />
-		<TurnIn QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" TurnInName="Draz'Zilb" TurnInId="4501" />
+		<Objective QuestName="The Brood of Onyxia" QuestId="1172" Type="UseObject" ObjectId="20359" UseCount="5" />
+		<TurnIn QuestName="The Brood of Onyxia" QuestId="1172" TurnInName="Draz'Zilb" TurnInId="4501" X="-3191.32" Y="-2925.55" Z="33.4429" />
+		<PickUp QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" GiverName="Overlord Mok'Morokk" GiverId="4500" X="-3132.84" Y="-2880.27" Z="34.7842" />
+		<TurnIn QuestName="Challenge Overlord Mok'Morokk" QuestId="1173" TurnInName="Draz'Zilb" TurnInId="4501" X="-3191.32" Y="-2925.55" Z="33.4429" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Feralas (49-49)" />
 	</QuestOrder>
 </HBProfile>

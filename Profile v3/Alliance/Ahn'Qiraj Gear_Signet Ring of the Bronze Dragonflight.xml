@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Ahn'Qiraj Gear\Signet Ring of the Bronze Dragonflight</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -24,27 +21,249 @@
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="8765" Name="The Changing of Paths - Invoker No More">
+		<Objective Type="CollectItem" ItemId="20861" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20862" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20863" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8764" Name="The Changing of Paths - Protector No More">
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20859" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8766" Name="The Changing of Paths - Conqueror No More">
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20865" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-8281.73" Y="1337.64" Z="-81.38" />
+				<Hotspot X="-8627.82" Y="1332.44" Z="-69.83" />
+				<Hotspot X="-8255.96" Y="1349.65" Z="-84.42" />
+				<Hotspot X="-8525.51" Y="1387.38" Z="-58.07" />
+				<Hotspot X="-8619.08" Y="1413.54" Z="-68" />
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Ahn'Qiraj Gear_Signet Ring of the Bronze Dragonflight from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8757))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Path of the Invoker" QuestId="8757" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Protector" QuestId="8747" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Conqueror" QuestId="8752" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Invoker" QuestId="8758" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Protector" QuestId="8748" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Conqueror" QuestId="8753" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Invoker" QuestId="8759" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Protector" QuestId="8749" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Conqueror" QuestId="8754" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Invoker" QuestId="8760" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Protector" QuestId="8750" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Path of the Conqueror" QuestId="8755" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Grand Invoker" QuestId="8761" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Protector of Kalimdor" QuestId="8751" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Qiraji Conqueror" QuestId="8756" GiverName="Anachronos" GiverId="15192" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(8757))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="The Path of the Invoker" QuestId="8757" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8747" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8752" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8758" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8748" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8753" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8759" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8749" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8754" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Invoker" QuestId="8760" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Protector" QuestId="8750" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Path of the Conqueror" QuestId="8755" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Grand Invoker" QuestId="8761" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Protector of Kalimdor" QuestId="8751" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Qiraji Conqueror" QuestId="8756" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
 		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20861" CollectCount="15" />
 		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20862" CollectCount="15" />
 		<Objective QuestName="The Changing of Paths - Invoker No More" QuestId="8765" Type="CollectItem" ItemId="20863" CollectCount="15" />
@@ -54,8 +273,8 @@
 		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20864" CollectCount="15" />
 		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20865" CollectCount="15" />
 		<Objective QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" Type="CollectItem" ItemId="20858" CollectCount="15" />
-		<PickUp QuestName="The Changing of Paths - Invoker No More" QuestId="8765" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Changing of Paths - Protector No More" QuestId="8764" GiverName="Anachronos" GiverId="15192" />
-		<PickUp QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" GiverName="Anachronos" GiverId="15192" />
+		<PickUp QuestName="The Changing of Paths - Invoker No More" QuestId="8765" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Changing of Paths - Protector No More" QuestId="8764" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
+		<PickUp QuestName="The Changing of Paths - Conqueror No More" QuestId="8766" GiverName="Anachronos" GiverId="15192" X="-8240.33" Y="-4648.71" Z="0.3344" />
 	</QuestOrder>
 </HBProfile>

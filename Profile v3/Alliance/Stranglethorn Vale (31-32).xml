@@ -1,48 +1,54 @@
 <HBProfile>
 	<Name>Stranglethorn Vale (31-32)</Name>
-	<MinLevel>31</MinLevel>
-	<MaxLevel>32</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Dermot Johns" Entry="190" Type="Repair" X="-8897.71" Y="-115.328" Z="81.9982" />
+		<Vendor Name="Godric Rothgar" Entry="1213" Type="Repair" X="-8898.23" Y="-119.838" Z="82.016" />
+		<Vendor Name="Elly Langston" Entry="1328" Type="Food" X="-8624.84" Y="394.134" Z="102.925" />
+		<Vendor Name="Heinrich Stone" Entry="1324" Type="Repair" X="-8660.31" Y="381.223" Z="104.451" />
+		<Vendor Name="Thomas Miller" Entry="3518" Type="Food" X="-8831.81" Y="543.054" Z="96.8538" />
+		<Vendor Name="Elaine Trias" Entry="483" Type="Food" X="-8845.68" Y="566.492" Z="94.7707" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="185" Name="Tiger Mastery">
 		<Objective Type="KillMob" MobId="681" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11764.4" Y="16.7766" Z="22.4266" />
-				<Hotspot X="-11521.7" Y="-358.08" Z="38.049" />
-				<Hotspot X="-11650.8" Y="46.8981" Z="17.8964" />
-				<Hotspot X="-11642.9" Y="78.5515" Z="15.1527" />
-				<Hotspot X="-11591.5" Y="91.882" Z="16.7514" />
+				<Hotspot X="-11764.4" Y="16.78" Z="22.43" />
+				<Hotspot X="-11521.7" Y="-358.08" Z="38.05" />
+				<Hotspot X="-11650.8" Y="46.9" Z="17.9" />
+				<Hotspot X="-11642.9" Y="78.55" Z="15.15" />
+				<Hotspot X="-11591.5" Y="91.88" Z="16.75" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="190" Name="Panther Mastery">
 		<Objective Type="KillMob" MobId="683" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11748.4" Y="-514.029" Z="18.5639" />
-				<Hotspot X="-11731.0" Y="-482.575" Z="17.1606" />
-				<Hotspot X="-11714.0" Y="-417.881" Z="19.0145" />
-				<Hotspot X="-11721.0" Y="-444.636" Z="18.9891" />
-				<Hotspot X="-11644.6" Y="-373.013" Z="16.2524" />
+				<Hotspot X="-11748.4" Y="-514.03" Z="18.56" />
+				<Hotspot X="-11731" Y="-482.57" Z="17.16" />
+				<Hotspot X="-11714" Y="-417.88" Z="19.01" />
+				<Hotspot X="-11721" Y="-444.64" Z="18.99" />
+				<Hotspot X="-11644.6" Y="-373.01" Z="16.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -59,65 +65,80 @@
 	<Quest Id="1447" Name="The Missing Diplomat">
 		<Objective Type="KillMob" MobId="4961" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-8681.14" Y="432.794" Z="99.2405" />
+				<Hotspot X="-8681.14" Y="432.79" Z="99.24" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="1249" Name="The Missing Diplomat">
 		<Objective Type="KillMob" MobId="4962" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-3808.82" Y="-825.612" Z="10.3019" />
+				<Hotspot X="-3808.82" Y="-825.61" Z="10.3" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="Jungle Secrets" QuestId="215" GiverName="Private Thorsen" GiverId="738" />
-		<PickUp QuestName="Welcome to the Jungle" QuestId="583" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Welcome to the Jungle" QuestId="583" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Tiger Mastery" QuestId="185" GiverName="Ajeck Rouack" GiverId="717" />
-		<PickUp QuestName="Panther Mastery" QuestId="190" GiverName="Sir S. J. Erlgadin" GiverId="718" />
-		<Objective QuestName="Tiger Mastery" QuestId="185" Type="KillMob" MobId="681" KillCount="10" />
-		<Objective QuestName="Panther Mastery" QuestId="190" Type="KillMob" MobId="683" KillCount="10" />
-		<TurnIn QuestName="Tiger Mastery" QuestId="185" TurnInName="Ajeck Rouack" TurnInId="717" />
-		<TurnIn QuestName="Panther Mastery" QuestId="190" TurnInName="Sir S. J. Erlgadin" TurnInId="718" />
-		<TurnIn QuestName="Jungle Secrets" QuestId="215" TurnInName="Lieutenant Doren" TurnInId="469" />
-		<TurnIn QuestName="Worgen in the Woods" QuestId="222" TurnInName="Calor" TurnInId="663" />
-		<PickUp QuestName="Worgen in the Woods" QuestId="223" GiverName="Calor" GiverId="663" />
-		<TurnIn QuestName="Worgen in the Woods" QuestId="223" TurnInName="Jonathan Carevin" TurnInId="661" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1245" TurnInName="Elling Trias" TurnInId="482" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1246" GiverName="Elling Trias" GiverId="482" />
-		<Objective QuestName="The Brassbolts Brothers" QuestId="1179" Type="CollectItem" ItemId="5849" CollectCount="1" />
-		<Objective QuestName="A Noble Brew" QuestId="335" Type="CollectItem" ItemId="2784" CollectCount="1" />
-		<PickUp QuestName="Malin's Request" QuestId="690" GiverName="Archmage Malin" GiverId="2708" />
-		<PickUp QuestName="James Hyal" QuestId="1301" GiverName="Connor Rivers" GiverId="5081" />
-		<TurnIn QuestName="A Noble Brew" QuestId="335" TurnInName="Zardeth of the Black Claw" TurnInId="1435" />
-		<PickUp QuestName="A Noble Brew" QuestId="336" GiverName="Zardeth of the Black Claw" GiverId="1435" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1246" TurnInName="Dashel Stonefist" TurnInId="4961" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1447" GiverName="Dashel Stonefist" GiverId="4961" />
-		<Objective QuestName="The Missing Diplomat" QuestId="1447" Type="KillMob" MobId="4961" KillCount="1" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" />
-		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<PickUp QuestName="The Islander" QuestId="1718" GiverName="Wu Shen" GiverId="5479" />
+		<!-- Travel to Stranglethorn Vale (31-32) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(215))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-996.8669" Y="-3826.07" Z="5.5362" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-996.8669" WaitAtY="-3826.07" WaitAtZ="5.5362" TransportStartX="-1005.6" TransportStartY="-3841.6" TransportStartZ="0" StandOnX="-997.3311" StandOnY="-3836.707" StandOnZ="6.0309" TransportEndX="-14277.7" TransportEndY="582.9" TransportEndZ="0" GetOffX="-14280.88" GetOffY="566.6268" GetOffZ="6.9795" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1247" TurnInName="Elling Trias" TurnInId="482" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1248" GiverName="Elling Trias" GiverId="482" />
-		<TurnIn QuestName="A Noble Brew" QuestId="336" TurnInName="Lord Baurles K. Wishock" TurnInId="1439" />
-		<TurnIn QuestName="An Old History Book" QuestId="337" TurnInName="Milton Sheaf" TurnInId="1440" />
-		<PickUp QuestName="Southshore" QuestId="538" GiverName="Milton Sheaf" GiverId="1440" />
-		<TurnIn QuestName="James Hyal" QuestId="1301" TurnInName="Vincent Hyal" TurnInId="5082" />
-		<PickUp QuestName="James Hyal" QuestId="1302" GiverName="Vincent Hyal" GiverId="5082" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1248" TurnInName="Mikhail" TurnInId="4963" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1249" GiverName="Mikhail" GiverId="4963" />
-		<Objective QuestName="The Missing Diplomat" QuestId="1249" Type="KillMob" MobId="4962" KillCount="1" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1250" GiverName="Tapoke &quot;Slim&quot; Jahn" GiverId="4962" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1250" TurnInName="Mikhail" TurnInId="4963" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1264" GiverName="Mikhail" GiverId="4963" />
+		<PickUp QuestName="Jungle Secrets" QuestId="215" GiverName="Private Thorsen" GiverId="738" X="-11313.9" Y="-202.766" Z="75.576" />
+		<PickUp QuestName="Welcome to the Jungle" QuestId="583" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Welcome to the Jungle" QuestId="583" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Tiger Mastery" QuestId="185" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Panther Mastery" QuestId="190" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<Objective QuestName="Tiger Mastery" QuestId="185" Type="KillMob" MobId="681" KillCount="10" />
+		<Objective QuestName="Panther Mastery" QuestId="190" Type="KillMob" MobId="683" KillCount="10" />
+		<TurnIn QuestName="Tiger Mastery" QuestId="185" TurnInName="Ajeck Rouack" TurnInId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<TurnIn QuestName="Panther Mastery" QuestId="190" TurnInName="Sir S. J. Erlgadin" TurnInId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<TurnIn QuestName="Jungle Secrets" QuestId="215" TurnInName="Lieutenant Doren" TurnInId="469" X="-11296.9" Y="-206.689" Z="75.8833" />
+		<TurnIn QuestName="Worgen in the Woods" QuestId="222" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<PickUp QuestName="Worgen in the Woods" QuestId="223" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<TurnIn QuestName="Worgen in the Woods" QuestId="223" TurnInName="Jonathan Carevin" TurnInId="661" X="-10599.1" Y="-1200.37" Z="28.4932" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1245" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1246" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<Objective QuestName="A Noble Brew" QuestId="335" Type="CollectItem" ItemId="2784" CollectCount="1" />
+		<PickUp QuestName="Malin's Request" QuestId="690" GiverName="Archmage Malin" GiverId="2708" X="-9009" Y="846.395" Z="105.842" />
+		<PickUp QuestName="James Hyal" QuestId="1301" GiverName="Connor Rivers" GiverId="5081" X="-9102.33" Y="834.774" Z="105.201" />
+		<TurnIn QuestName="A Noble Brew" QuestId="335" TurnInName="Zardeth of the Black Claw" TurnInId="1435" X="-8984" Y="1025.49" Z="101.587" />
+		<PickUp QuestName="A Noble Brew" QuestId="336" GiverName="Zardeth of the Black Claw" GiverId="1435" X="-8984" Y="1025.49" Z="101.587" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1246" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1447" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1447" TurnInName="Dashel Stonefist" TurnInId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1247" GiverName="Dashel Stonefist" GiverId="4961" X="-8681.14" Y="432.794" Z="99.2405" />
+		<If Condition="(Me.Class == WoWClass.Warrior)">
+			<PickUp QuestName="The Islander" QuestId="1718" GiverName="Wu Shen" GiverId="5479" X="-8689.32" Y="323.237" Z="109.521" />
+		</If>
+
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1247" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1248" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<TurnIn QuestName="A Noble Brew" QuestId="336" TurnInName="Lord Baurles K. Wishock" TurnInId="1439" X="-8562.78" Y="369.692" Z="108.569" />
+		<TurnIn QuestName="An Old History Book" QuestId="337" TurnInName="Milton Sheaf" TurnInId="1440" X="-8346" Y="383.928" Z="122.274" />
+		<PickUp QuestName="Southshore" QuestId="538" GiverName="Milton Sheaf" GiverId="1440" X="-8346" Y="383.928" Z="122.274" />
+		<TurnIn QuestName="James Hyal" QuestId="1301" TurnInName="Vincent Hyal" TurnInId="5082" X="-3849.96" Y="-736.444" Z="8.6635" />
+		<PickUp QuestName="James Hyal" QuestId="1302" GiverName="Vincent Hyal" GiverId="5082" X="-3849.96" Y="-736.444" Z="8.6635" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1248" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1249" GiverName="Mikhail" GiverId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1249" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1250" GiverName="Tapoke &quot;Slim&quot; Jahn" GiverId="4962" X="-3808.82" Y="-825.612" Z="10.3019" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1250" TurnInName="Mikhail" TurnInId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1264" GiverName="Mikhail" GiverId="4963" X="-3822.89" Y="-827.898" Z="10.2984" />
 		<CustomBehavior File="LoadProfile" ProfileName="Hillsbrad Foothills (32-33)" />
 	</QuestOrder>
 </HBProfile>

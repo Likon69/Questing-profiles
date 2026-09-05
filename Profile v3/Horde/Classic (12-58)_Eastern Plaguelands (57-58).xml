@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Eastern Plaguelands (57-58)</Name>
-	<MinLevel>57</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,71 +16,100 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Quartermaster Miranda Breechlock" Entry="11097" Type="Repair" X="350.42" Y="-2090.4" Z="113.868" />
 		<!-- Innkeeper Freeland (14746) — no spawn data -->
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
-	<Quest Id="5543" Name="Blood Tinged Skies">
-		<Objective Type="KillMob" MobId="8600" KillCount="30">
-			<Hotspots>
-				<Hotspot X="1851.85" Y="-2766.02" Z="89.6741" />
-				<Hotspot X="1781.38" Y="-2939.41" Z="73.4536" />
-				<Hotspot X="1640.12" Y="-4970.62" Z="83.6006" />
-				<Hotspot X="1511.35" Y="-3156.7" Z="111.378" />
-				<Hotspot X="1607.83" Y="-4683.33" Z="84.1828" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="5542" Name="Demon Dogs">
 		<Objective Type="KillMob" MobId="8596" KillCount="20">
 			<Hotspots>
-				<Hotspot X="1563.8" Y="-3929.91" Z="174.954" />
-				<Hotspot X="2490.42" Y="-2528.57" Z="101.029" />
-				<Hotspot X="1736.15" Y="-2765.63" Z="64.4961" />
-				<Hotspot X="1859.9" Y="-2741.14" Z="94.2524" />
-				<Hotspot X="2214.78" Y="-3406.16" Z="171.099" />
+				<Hotspot X="1563.8" Y="-3929.91" Z="174.95" />
+				<Hotspot X="2490.42" Y="-2528.57" Z="101.03" />
+				<Hotspot X="1736.15" Y="-2765.63" Z="64.5" />
+				<Hotspot X="1859.9" Y="-2741.14" Z="94.25" />
+				<Hotspot X="2214.78" Y="-3406.16" Z="171.1" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="8597" KillCount="5">
 			<Hotspots>
-				<Hotspot X="2281.1" Y="-4738.01" Z="95.8788" />
-				<Hotspot X="1943.99" Y="-5289.06" Z="92.3617" />
-				<Hotspot X="2231.86" Y="-4443.39" Z="118.847" />
-				<Hotspot X="2222.34" Y="-4938.0" Z="77.5105" />
-				<Hotspot X="2312.26" Y="-4288.92" Z="78.2225" />
+				<Hotspot X="2281.1" Y="-4738.01" Z="95.88" />
+				<Hotspot X="1943.99" Y="-5289.06" Z="92.36" />
+				<Hotspot X="2231.86" Y="-4443.39" Z="118.85" />
+				<Hotspot X="2222.34" Y="-4938" Z="77.51" />
+				<Hotspot X="2312.26" Y="-4288.92" Z="78.22" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="8598" KillCount="5">
 			<Hotspots>
-				<Hotspot X="2947.36" Y="-4713.27" Z="99.3967" />
-				<Hotspot X="2812.68" Y="-4154.12" Z="91.7327" />
-				<Hotspot X="3036.12" Y="-4515.49" Z="106.127" />
-				<Hotspot X="2948.31" Y="-4606.65" Z="77.0554" />
-				<Hotspot X="2724.95" Y="-4609.68" Z="90.6552" />
+				<Hotspot X="2947.36" Y="-4713.27" Z="99.4" />
+				<Hotspot X="2812.68" Y="-4154.12" Z="91.73" />
+				<Hotspot X="3036.12" Y="-4515.49" Z="106.13" />
+				<Hotspot X="2948.31" Y="-4606.65" Z="77.06" />
+				<Hotspot X="2724.95" Y="-4609.68" Z="90.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5543" Name="Blood Tinged Skies">
+		<Objective Type="KillMob" MobId="8600" KillCount="30">
+			<Hotspots>
+				<Hotspot X="1851.85" Y="-2766.02" Z="89.67" />
+				<Hotspot X="1781.38" Y="-2939.41" Z="73.45" />
+				<Hotspot X="1640.12" Y="-4970.62" Z="83.6" />
+				<Hotspot X="1511.35" Y="-3156.7" Z="111.38" />
+				<Hotspot X="1607.83" Y="-4683.33" Z="84.18" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5544" Name="Carrion Grubbage">
+		<Objective Type="CollectItem" ItemId="13853" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Carrion Grub" Id="8603" />
+				<Mob Name="Carrion Devourer" Id="8605" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2710.85" Y="-2448.35" Z="65.64" />
+				<Hotspot X="2606.8" Y="-2485.3" Z="74.36" />
+				<Hotspot X="2613.32" Y="-2411.26" Z="55.76" />
+				<Hotspot X="2302.69" Y="-2572.1" Z="74.03" />
+				<Hotspot X="2118.96" Y="-2853.83" Z="85.62" />
+				<Hotspot X="2092.2" Y="-2932.47" Z="88.53" />
+				<Hotspot X="2014.2" Y="-2988.19" Z="79.13" />
+				<Hotspot X="1869.71" Y="-2830.05" Z="85.02" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="6042" Name="Un-Life's Little Annoyances">
 		<Objective Type="KillMob" MobId="8601" KillCount="20">
 			<Hotspots>
-				<Hotspot X="1936.93" Y="-5211.9" Z="85.289" />
-				<Hotspot X="1978.12" Y="-5312.89" Z="92.8527" />
-				<Hotspot X="2259.36" Y="-5050.98" Z="71.2762" />
-				<Hotspot X="2198.07" Y="-4864.76" Z="86.2701" />
-				<Hotspot X="2216.16" Y="-5033.64" Z="54.799" />
+				<Hotspot X="1936.93" Y="-5211.9" Z="85.29" />
+				<Hotspot X="1978.12" Y="-5312.89" Z="92.85" />
+				<Hotspot X="2259.36" Y="-5050.98" Z="71.28" />
+				<Hotspot X="2198.07" Y="-4864.76" Z="86.27" />
+				<Hotspot X="2216.16" Y="-5033.64" Z="54.8" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="8602" KillCount="10">
 			<Hotspots>
-				<Hotspot X="2928.23" Y="-5120.59" Z="119.508" />
+				<Hotspot X="2928.23" Y="-5120.59" Z="119.51" />
 				<Hotspot X="2861.16" Y="-2929.17" Z="100.38" />
-				<Hotspot X="2696.25" Y="-4346.65" Z="138.243" />
-				<Hotspot X="2841.46" Y="-3046.97" Z="103.367" />
+				<Hotspot X="2696.25" Y="-4346.65" Z="138.24" />
+				<Hotspot X="2841.46" Y="-3046.97" Z="103.37" />
 				<Hotspot X="2840.42" Y="-3024.28" Z="104.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6021" Name="Zaeldarr the Outcast">
+		<Objective Type="CollectItem" ItemId="15785" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Zaeldarr the Outcast" Id="12250" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1609.43" Y="-3248.63" Z="68.05" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -104,6 +130,38 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="6164" Name="Augustus' Receipt Book">
+		<Objective Type="CollectItem" ItemId="15884" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Augustus' Receipt Book" Id="177789" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2997.61" Y="-2860.27" Z="107.63" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9124" Name="Cryptstalker Armor Doesn't Make Itself...">
+		<Objective Type="CollectItem" ItemId="22525" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Crypt Stalker" Id="8555" />
+				<Mob Name="Crypt Walker" Id="8556" />
+				<Mob Name="Crypt Horror" Id="8557" />
+				<Mob Name="Crypt Slayer" Id="8558" />
+				<Mob Name="Crypt Crawler" Id="10412" />
+				<Mob Name="Crypt Beast" Id="10413" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2700.68" Y="-5410.57" Z="159.31" />
+				<Hotspot X="2760.79" Y="-5420.71" Z="157.94" />
+				<Hotspot X="2778.26" Y="-4808.61" Z="80.11" />
+				<Hotspot X="2562.62" Y="-3810.43" Z="185.14" />
+				<Hotspot X="2410.23" Y="-3699.16" Z="178.93" />
+				<Hotspot X="2541.46" Y="-3704.11" Z="179.7" />
+				<Hotspot X="3183.35" Y="-3324.72" Z="163.55" />
+				<Hotspot X="3234.84" Y="-3095.61" Z="161.42" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="5845" Name="Of Lost Honor">
 		<Objective Type="CollectItem" ItemId="14625" CollectCount="1">
 			<CollectFrom>
@@ -114,93 +172,204 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="9136" Name="Savage Flora">
+		<Objective Type="CollectItem" ItemId="22529" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Cursed Sycamore" Id="5881" />
+				<Mob Name="Bloodpetal Lasher" Id="6509" />
+				<Mob Name="Bloodpetal Flayer" Id="6510" />
+				<Mob Name="Bloodpetal Thresher" Id="6511" />
+				<Mob Name="Bloodpetal Trapper" Id="6512" />
+				<Mob Name="Irontree Wanderer" Id="7138" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6017.84" Y="-1223.8" Z="376.05" />
+				<Hotspot X="6191.48" Y="-1378.7" Z="379.82" />
+				<Hotspot X="6228.56" Y="-1410.84" Z="373.01" />
+				<Hotspot X="6169.26" Y="-1327.93" Z="378.19" />
+				<Hotspot X="6002.56" Y="-1145.2" Z="384.46" />
+				<Hotspot X="6285.6" Y="-1418.8" Z="370.49" />
+				<Hotspot X="6206.94" Y="-1335.38" Z="374.45" />
+				<Hotspot X="6177.76" Y="-1290.55" Z="375.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9126" Name="Bonescythe Digs">
+		<Objective Type="CollectItem" ItemId="22526" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Skeletal Flayer" Id="1783" />
+				<Mob Name="Skeletal Sorcerer" Id="1784" />
+				<Mob Name="Skeletal Terror" Id="1785" />
+				<Mob Name="Skeletal Executioner" Id="1787" />
+				<Mob Name="Skeletal Warlord" Id="1788" />
+				<Mob Name="Skeletal Acolyte" Id="1789" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2946.25" Y="-3945.32" Z="107.52" />
+				<Hotspot X="2798.68" Y="-3840.47" Z="102.22" />
+				<Hotspot X="2865.69" Y="-3838.36" Z="108.3" />
+				<Hotspot X="3156.03" Y="-3948.38" Z="116.24" />
+				<Hotspot X="3102.82" Y="-3914.5" Z="125.48" />
+				<Hotspot X="3193.95" Y="-3922.19" Z="134.22" />
+				<Hotspot X="2848.92" Y="-3708.38" Z="108.92" />
+				<Hotspot X="2821.93" Y="-3676.3" Z="106.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9131" Name="Binding the Dreadnaught">
+		<Objective Type="CollectItem" ItemId="22528" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Dark Iron Steamsmith" Id="5840" />
+				<Mob Name="Dark Iron Slaver" Id="5844" />
+				<Mob Name="Dark Iron Taskmaster" Id="5846" />
+				<Mob Name="Blackrock Soldier" Id="7025" />
+				<Mob Name="Blackrock Sorcerer" Id="7026" />
+				<Mob Name="Blackrock Slayer" Id="7027" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6477.31" Y="-1361.73" Z="212.15" />
+				<Hotspot X="-6456.94" Y="-1289.57" Z="180.93" />
+				<Hotspot X="-6447.02" Y="-1242.4" Z="180.71" />
+				<Hotspot X="-6527.81" Y="-1347.81" Z="208.83" />
+				<Hotspot X="-6520.12" Y="-1288.72" Z="200.49" />
+				<Hotspot X="-6564.34" Y="-1301.95" Z="208.79" />
+				<Hotspot X="-6535.32" Y="-1251.29" Z="180.98" />
+				<Hotspot X="-6591.06" Y="-1272.18" Z="208.74" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Eastern Plaguelands (57-58) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(5542))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1931.48" Y="5460.49" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1931.48" Y="5460.49" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Demon Dogs" QuestId="5542" GiverName="Tirion Fordring" GiverId="1855" />
-		<PickUp QuestName="Blood Tinged Skies" QuestId="5543" GiverName="Tirion Fordring" GiverId="1855" />
-		<PickUp QuestName="Carrion Grubbage" QuestId="5544" GiverName="Tirion Fordring" GiverId="1855" />
-		<PickUp QuestName="To Kill With Purpose" QuestId="6022" GiverName="Nathanos Blightcaller" GiverId="11878" />
-		<PickUp QuestName="Un-Life's Little Annoyances" QuestId="6042" GiverName="Nathanos Blightcaller" GiverId="11878" />
-		<TurnIn QuestName="Sister Pamela" QuestId="5601" TurnInName="Pamela Redpath" TurnInId="10926" />
-		<PickUp QuestName="Pamela's Doll" QuestId="5149" GiverName="Pamela Redpath" GiverId="10926" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12886" CollectCount="1" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12887" CollectCount="1" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12888" CollectCount="1" />
+		<PickUp QuestName="Demon Dogs" QuestId="5542" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Blood Tinged Skies" QuestId="5543" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Carrion Grubbage" QuestId="5544" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="To Kill With Purpose" QuestId="6022" GiverName="Nathanos Blightcaller" GiverId="11878" X="1870.97" Y="-3212.71" Z="125.243" />
+		<PickUp QuestName="Un-Life's Little Annoyances" QuestId="6042" GiverName="Nathanos Blightcaller" GiverId="11878" X="1870.97" Y="-3212.71" Z="125.243" />
+		<TurnIn QuestName="Sister Pamela" QuestId="5601" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Pamela's Doll" QuestId="5149" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
-		<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" />
-		<PickUp QuestName="Auntie Marlene" QuestId="5152" GiverName="Pamela Redpath" GiverId="10926" />
-		<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Auntie Marlene" QuestId="5152" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		<Objective QuestName="Blood Tinged Skies" QuestId="5543" Type="KillMob" MobId="8600" KillCount="30" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8596" KillCount="20" />
 		<Objective QuestName="Carrion Grubbage" QuestId="5544" Type="CollectItem" ItemId="13853" CollectCount="15" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8597" KillCount="5" />
-		<PickUp QuestName="Zaeldarr the Outcast" QuestId="6021" GiverName="Caretaker Alen" GiverId="11038" />
-		<PickUp QuestName="The Restless Souls" QuestId="5281" GiverName="Caretaker Alen" GiverId="11038" />
-		<TurnIn QuestName="Duke Nicholas Zverenhoff" QuestId="6030" TurnInName="Duke Nicholas Zverenhoff" TurnInId="11039" />
-		<Objective QuestName="They Call Me \" QuestId="9141" Type="CollectItem" ItemId="12844" CollectCount="1" />
-		<TurnIn QuestName="Uncle Carlin" QuestId="5241" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<PickUp QuestName="Defenders of Darrowshire" QuestId="5211" GiverName="Carlin Redpath" GiverId="11063" />
-		<PickUp QuestName="That's Asking A Lot" QuestId="6026" GiverName="Smokey LaRue" GiverId="11033" />
-		<TurnIn QuestName="That's Asking A Lot" QuestId="6026" TurnInName="Smokey LaRue" TurnInId="11033" />
-		<PickUp QuestName="They Call Me &quot;The Rooster&quot;" QuestId="9141" GiverName="Dispatch Commander Metz" GiverId="16212" />
-		<TurnIn QuestName="They Call Me &quot;The Rooster&quot;" QuestId="9141" TurnInName="Dispatch Commander Metz" TurnInId="16212" />
-		<Objective QuestName="To Kill With Purpose" QuestId="6022" Type="CollectItem" ItemId="15447" CollectCount="7" />
+		<PickUp QuestName="Zaeldarr the Outcast" QuestId="6021" GiverName="Caretaker Alen" GiverId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<PickUp QuestName="The Restless Souls" QuestId="5281" GiverName="Caretaker Alen" GiverId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<TurnIn QuestName="Duke Nicholas Zverenhoff" QuestId="6030" TurnInName="Duke Nicholas Zverenhoff" TurnInId="11039" X="2255.89" Y="-5337.72" Z="86.2628" />
+		<Objective QuestName="They Call Me &quot;The Rooster&quot;" QuestId="9141" Type="CollectItem" ItemId="12844" CollectCount="1" />
+		<TurnIn QuestName="Uncle Carlin" QuestId="5241" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<PickUp QuestName="Defenders of Darrowshire" QuestId="5211" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<PickUp QuestName="That's Asking A Lot" QuestId="6026" GiverName="Smokey LaRue" GiverId="11033" X="2303.41" Y="-5305.53" Z="82.0796" />
+		<!-- REVIEW Q6026 That's Asking A Lot: collect 12359 Thorium Bar x2 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(6026)) &amp;&amp; (IsQuestCompleted(6026)))">
+			<TurnIn QuestName="That's Asking A Lot" QuestId="6026" TurnInName="Smokey LaRue" TurnInId="11033" X="2303.41" Y="-5305.53" Z="82.0796" />
+		</If>
+
+		<If Condition="((HasQuest(6026)) &amp;&amp; (!IsQuestCompleted(6026)))">
+			<AbandonQuest QuestId="6026" />
+		</If>
+
+		<PickUp QuestName="They Call Me &quot;The Rooster&quot;" QuestId="9141" GiverName="Dispatch Commander Metz" GiverId="16212" X="2314.55" Y="-5322.86" Z="82.0478" />
+		<TurnIn QuestName="They Call Me &quot;The Rooster&quot;" QuestId="9141" TurnInName="Dispatch Commander Metz" TurnInId="16212" X="2314.55" Y="-5322.86" Z="82.0478" />
+		<Objective QuestName="To Kill With Purpose" QuestId="6022" Type="CollectItem" ItemId="15448" CollectCount="1" />
 		<Objective QuestName="To Kill With Purpose" QuestId="6022" Type="CollectItem" ItemId="15448" CollectCount="1" />
 		<Objective QuestName="Un-Life's Little Annoyances" QuestId="6042" Type="KillMob" MobId="8601" KillCount="20" />
 		<Objective QuestName="Un-Life's Little Annoyances" QuestId="6042" Type="KillMob" MobId="8602" KillCount="10" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8598" KillCount="5" />
 		<Objective QuestName="A Plague Upon Thee" QuestId="5901" Type="CollectItem" ItemId="15043" CollectCount="100" />
-		<TurnIn QuestName="The Restless Souls" QuestId="5281" TurnInName="Egan" TurnInId="11140" />
-		<PickUp QuestName="Augustus' Receipt Book" QuestId="6164" GiverName="Augustus the Touched" GiverId="12384" />
+		<TurnIn QuestName="The Restless Souls" QuestId="5281" TurnInName="Egan" TurnInId="11140" X="2929.07" Y="-2744.69" Z="109.697" />
+		<PickUp QuestName="Augustus' Receipt Book" QuestId="6164" GiverName="Augustus the Touched" GiverId="12384" X="2935.74" Y="-2744.64" Z="109.691" />
 		<Objective QuestName="Augustus' Receipt Book" QuestId="6164" Type="CollectItem" ItemId="15884" CollectCount="1" />
-		<TurnIn QuestName="Augustus' Receipt Book" QuestId="6164" TurnInName="Augustus the Touched" TurnInId="12384" />
+		<TurnIn QuestName="Augustus' Receipt Book" QuestId="6164" TurnInName="Augustus the Touched" TurnInId="12384" X="2935.74" Y="-2744.64" Z="109.691" />
 		<Objective QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" Type="CollectItem" ItemId="22525" CollectCount="30" />
-		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" />
-		<TurnIn QuestName="Redemption" QuestId="5742" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<PickUp QuestName="Of Forgotten Memories" QuestId="5781" GiverName="Tirion Fordring" GiverId="1855" />
-		<TurnIn QuestName="To Kill With Purpose" QuestId="6022" TurnInName="Nathanos Blightcaller" TurnInId="11878" />
-		<TurnIn QuestName="Un-Life's Little Annoyances" QuestId="6042" TurnInName="Nathanos Blightcaller" TurnInId="11878" />
+		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Redemption" QuestId="5742" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Of Forgotten Memories" QuestId="5781" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="To Kill With Purpose" QuestId="6022" TurnInName="Nathanos Blightcaller" TurnInId="11878" X="1870.97" Y="-3212.71" Z="125.243" />
+		<TurnIn QuestName="Un-Life's Little Annoyances" QuestId="6042" TurnInName="Nathanos Blightcaller" TurnInId="11878" X="1870.97" Y="-3212.71" Z="125.243" />
 		<Objective QuestName="Zaeldarr the Outcast" QuestId="6021" Type="CollectItem" ItemId="15785" CollectCount="1" />
 		<Objective QuestName="Of Forgotten Memories" QuestId="5781" Type="CollectItem" ItemId="14613" CollectCount="1" />
-		<TurnIn QuestName="Of Forgotten Memories" QuestId="5781" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<PickUp QuestName="Of Lost Honor" QuestId="5845" GiverName="Tirion Fordring" GiverId="1855" />
-		<TurnIn QuestName="Zaeldarr the Outcast" QuestId="6021" TurnInName="Caretaker Alen" TurnInId="11038" />
-		<TurnIn QuestName="Defenders of Darrowshire" QuestId="5211" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<PickUp QuestName="Savage Flora" QuestId="9136" GiverName="Rayne" GiverId="16135" />
-		<TurnIn QuestName="Savage Flora" QuestId="9136" TurnInName="Rayne" TurnInId="16135" />
-		<PickUp QuestName="Bonescythe Digs" QuestId="9126" GiverName="Rohan the Assassin" GiverId="16131" />
-		<TurnIn QuestName="Bonescythe Digs" QuestId="9126" TurnInName="Rohan the Assassin" TurnInId="16131" />
-		<PickUp QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" GiverName="Huntsman Leopold" GiverId="16132" />
-		<TurnIn QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" TurnInName="Huntsman Leopold" TurnInId="16132" />
-		<PickUp QuestName="Binding the Dreadnaught" QuestId="9131" GiverName="Korfax, Champion of the Light" GiverId="16112" />
-		<TurnIn QuestName="Binding the Dreadnaught" QuestId="9131" TurnInName="Korfax, Champion of the Light" TurnInId="16112" />
+		<TurnIn QuestName="Of Forgotten Memories" QuestId="5781" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Of Lost Honor" QuestId="5845" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Zaeldarr the Outcast" QuestId="6021" TurnInName="Caretaker Alen" TurnInId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<!-- REVIEW Q5211 Defenders of Darrowshire: kill/event 11064 Darrowshire Spirit x15 (neutral, spawns=0) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5211)) &amp;&amp; (IsQuestCompleted(5211)))">
+			<TurnIn QuestName="Defenders of Darrowshire" QuestId="5211" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		</If>
+
+		<If Condition="((HasQuest(5211)) &amp;&amp; (!IsQuestCompleted(5211)))">
+			<AbandonQuest QuestId="5211" />
+		</If>
+
+		<PickUp QuestName="Savage Flora" QuestId="9136" GiverName="Rayne" GiverId="16135" X="2277.14" Y="-5328.59" Z="88.8296" />
+		<Objective QuestName="Savage Flora" QuestId="9136" Type="CollectItem" ItemId="22529" CollectCount="30" />
+		<TurnIn QuestName="Savage Flora" QuestId="9136" TurnInName="Rayne" TurnInId="16135" X="2277.14" Y="-5328.59" Z="88.8296" />
+		<PickUp QuestName="Bonescythe Digs" QuestId="9126" GiverName="Rohan the Assassin" GiverId="16131" X="2289.73" Y="-5337.32" Z="90.9632" />
+		<Objective QuestName="Bonescythe Digs" QuestId="9126" Type="CollectItem" ItemId="22526" CollectCount="30" />
+		<TurnIn QuestName="Bonescythe Digs" QuestId="9126" TurnInName="Rohan the Assassin" TurnInId="16131" X="2289.73" Y="-5337.32" Z="90.9632" />
+		<PickUp QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" GiverName="Huntsman Leopold" GiverId="16132" X="2288.55" Y="-5340.35" Z="90.9632" />
+		<TurnIn QuestName="Cryptstalker Armor Doesn't Make Itself..." QuestId="9124" TurnInName="Huntsman Leopold" TurnInId="16132" X="2288.55" Y="-5340.35" Z="90.9632" />
+		<PickUp QuestName="Binding the Dreadnaught" QuestId="9131" GiverName="Korfax, Champion of the Light" GiverId="16112" X="2300.91" Y="-5351.64" Z="91.6577" />
+		<Objective QuestName="Binding the Dreadnaught" QuestId="9131" Type="CollectItem" ItemId="22528" CollectCount="30" />
+		<TurnIn QuestName="Binding the Dreadnaught" QuestId="9131" TurnInName="Korfax, Champion of the Light" TurnInId="16112" X="2300.91" Y="-5351.64" Z="91.6577" />
 		<Objective QuestName="Of Lost Honor" QuestId="5845" Type="CollectItem" ItemId="14625" CollectCount="1" />
-		<TurnIn QuestName="Of Lost Honor" QuestId="5845" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<PickUp QuestName="Of Love and Family" QuestId="5846" GiverName="Tirion Fordring" GiverId="1855" />
-		<TurnIn QuestName="Of Love and Family" QuestId="5846" TurnInName="Artist Renfray" TurnInId="11936" />
-		<TurnIn QuestName="Better Late Than Never" QuestId="5023" TurnInName="Royal Overseer Bauhaus" TurnInId="10781" />
-		<PickUp QuestName="The Jeremiah Blues" QuestId="5049" GiverName="Royal Overseer Bauhaus" GiverId="10781" />
-		<TurnIn QuestName="The Jeremiah Blues" QuestId="5049" TurnInName="Jeremiah Payson" TurnInId="8403" />
-		<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Jeremiah Payson" GiverId="8403" />
-		<PickUp QuestName="Camp Mojache" QuestId="7492" GiverName="Harbinger Balthazad" GiverId="10879" />
-		<PickUp QuestName="The New Frontier" QuestId="1004" GiverName="Harbinger Balthazad" GiverId="10879" />
+		<TurnIn QuestName="Of Lost Honor" QuestId="5845" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Of Love and Family" QuestId="5846" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Of Love and Family" QuestId="5846" TurnInName="Artist Renfray" TurnInId="11936" X="1206.14" Y="-2411.52" Z="61.2246" />
+		<TurnIn QuestName="Better Late Than Never" QuestId="5023" TurnInName="Royal Overseer Bauhaus" TurnInId="10781" X="1601.69" Y="203.622" Z="-55.2596" />
+		<PickUp QuestName="The Jeremiah Blues" QuestId="5049" GiverName="Royal Overseer Bauhaus" GiverId="10781" X="1601.69" Y="203.622" Z="-55.2596" />
+		<TurnIn QuestName="The Jeremiah Blues" QuestId="5049" TurnInName="Jeremiah Payson" TurnInId="8403" X="1595.27" Y="224.662" Z="-62.0162" />
+		<PickUp QuestName="Good Luck Charm" QuestId="5050" GiverName="Jeremiah Payson" GiverId="8403" X="1595.27" Y="224.662" Z="-62.0162" />
+		<PickUp QuestName="Camp Mojache" QuestId="7492" GiverName="Harbinger Balthazad" GiverId="10879" X="1570.35" Y="214.672" Z="-59.2606" />
+		<PickUp QuestName="The New Frontier" QuestId="1004" GiverName="Harbinger Balthazad" GiverId="10879" X="1570.35" Y="214.672" Z="-59.2606" />
 		<If Condition="Me.Level &lt; 58">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 58 - Mercutio Filthgorger</Name>
-					<Factions>16</Factions>
+					<Name>Grind to Level 58 - Frenzied Plaguehound</Name>
+					<Factions>14</Factions>
+					<TargetMinLevel>57</TargetMinLevel>
+					<TargetMaxLevel>58</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="60.85" Y="48.81" Z="0.00" />
+						<Hotspot X="3123.57" Y="-2967.36" Z="123.14" />
+						<Hotspot X="2888.09" Y="-3069.75" Z="105.63" />
+						<Hotspot X="2851.24" Y="-3105.83" Z="104.8" />
+						<Hotspot X="3163.14" Y="-2970.81" Z="126.1" />
+						<Hotspot X="3213.52" Y="-2958.26" Z="126.24" />
+						<Hotspot X="2915" Y="-3111.76" Z="111.34" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="58" />
 		</If>
+
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Silithus (58-59)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Ahn'Qiraj Gear\Ruins of Ahn'Qiraj Ring Quest</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,53 +17,848 @@
 
 	<Vendors>
 		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
-		<Vendor Name="Matta" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Vargus" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="8700" Name="Band of Unending Life">
+		<Objective Type="CollectItem" ItemId="20873" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Obsidian Eradicator" Id="15262" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<Mob Name="Hive'Zara Sandstalker" Id="15323" />
+				<Mob Name="Qiraji Gladiator" Id="15324" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20865" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20884" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20861" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8704" Name="Signet of the Unseen Path">
+		<Objective Type="CollectItem" ItemId="20888" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20859" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20869" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Qiraji Lasher" Id="15249" />
+				<Mob Name="Anubisath Defender" Id="15277" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20863" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8699" Name="Band of Vaulted Secrets">
+		<Objective Type="CollectItem" ItemId="20866" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<Mob Name="Hive'Zara Sandstalker" Id="15323" />
+				<Mob Name="Qiraji Gladiator" Id="15324" />
+				<Mob Name="Hive'Zara Wasp" Id="15325" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20859" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20884" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20863" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8703" Name="Ring of Eternal Justice">
+		<Objective Type="CollectItem" ItemId="20872" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Qiraji Mindslayer" Id="15246" />
+				<Mob Name="Anubisath Sentinel" Id="15264" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20884" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8697" Name="Ring of Infinite Wisdom">
+		<Objective Type="CollectItem" ItemId="20888" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20871" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Qiraji Champion" Id="15252" />
+				<Mob Name="Obsidian Eradicator" Id="15262" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8701" Name="Band of Veiled Shadows">
+		<Objective Type="CollectItem" ItemId="20888" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20867" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<Mob Name="Hive'Zara Sandstalker" Id="15323" />
+				<Mob Name="Qiraji Gladiator" Id="15324" />
+				<Mob Name="Hive'Zara Wasp" Id="15325" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20862" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8698" Name="Ring of the Gathering Storm">
+		<Objective Type="CollectItem" ItemId="20872" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Qiraji Mindslayer" Id="15246" />
+				<Mob Name="Anubisath Sentinel" Id="15264" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20884" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8702" Name="Ring of Unspoken Names">
+		<Objective Type="CollectItem" ItemId="20888" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20870" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<Mob Name="Hive'Zara Sandstalker" Id="15323" />
+				<Mob Name="Qiraji Gladiator" Id="15324" />
+				<Mob Name="Hive'Zara Wasp" Id="15325" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20862" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8556" Name="Signet of Unyielding Strength">
+		<Objective Type="CollectItem" ItemId="20868" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Obsidian Eradicator" Id="15262" />
+				<Mob Name="Hive'Zara Drone" Id="15318" />
+				<Mob Name="Hive'Zara Collector" Id="15319" />
+				<Mob Name="Hive'Zara Soldier" Id="15320" />
+				<Mob Name="Hive'Zara Sandstalker" Id="15323" />
+				<Mob Name="Qiraji Gladiator" Id="15324" />
+				<GameObject Name="Scarab Coffer" Id="180691" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8524.65" Y="1510.68" Z="33.31" />
+				<Hotspot X="-8713.44" Y="1543.34" Z="32.2" />
+				<Hotspot X="-8772.14" Y="2003.6" Z="21.91" />
+				<Hotspot X="-9090.66" Y="1500.96" Z="24.43" />
+				<Hotspot X="-8938.36" Y="1860.11" Z="3.23" />
+				<Hotspot X="-9006.97" Y="1988.6" Z="32.24" />
+				<Hotspot X="-9344.26" Y="1191.31" Z="22.02" />
+				<Hotspot X="-9121.05" Y="2180.52" Z="24.86" />
+				<Hotspot X="-9541.15" Y="1585.01" Z="26.56" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20865" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20884" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ossirian the Unscarred" Id="15339" />
+				<Mob Name="Moam" Id="15340" />
+				<Mob Name="General Rajaxx" Id="15341" />
+				<Mob Name="Kurinnaxx" Id="15348" />
+				<Mob Name="Ayamiss the Hunter" Id="15369" />
+				<Mob Name="Buru the Gorger" Id="15370" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8822.2" Y="1625.82" Z="19.81" />
+				<Hotspot X="-9235.98" Y="1234.07" Z="-63.66" />
+				<Hotspot X="-9129.73" Y="1602.5" Z="26.54" />
+				<Hotspot X="-8845.52" Y="2260.14" Z="21.47" />
+				<Hotspot X="-9502.8" Y="2042.65" Z="105.31" />
+				<Hotspot X="-9719.61" Y="1514.75" Z="27.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20861" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7902.71" Y="1410.92" Z="-66.09" />
+				<Hotspot X="-8015.13" Y="1258.72" Z="-79.73" />
+				<Hotspot X="-7931.88" Y="1494.76" Z="-63.7" />
+				<Hotspot X="-8043.79" Y="1645.19" Z="-59.28" />
+				<Hotspot X="-8268.81" Y="1343.43" Z="-82.9" />
+				<Hotspot X="-8294.74" Y="1332.27" Z="-79.85" />
+				<Hotspot X="-8164.9" Y="1624.76" Z="-40.04" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Ahn'Qiraj Gear_Ruins of Ahn'Qiraj Ring Quest from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8700))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(8700))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
 
 		<If Condition="Me.Level &lt; 60">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 60 - Hive'Ashi Stinger</Name>
+					<Factions>310,311</Factions>
+					<TargetMinLevel>57</TargetMinLevel>
+					<TargetMaxLevel>59</TargetMaxLevel>
+					<Hotspots>
+						<Hotspot X="-6881.25" Y="677.08" Z="8" />
+						<Hotspot X="-6914.02" Y="731.15" Z="12.94" />
+						<Hotspot X="-6910.02" Y="788.63" Z="7.48" />
+						<Hotspot X="-6956.67" Y="761.59" Z="11.87" />
+						<Hotspot X="-7002.27" Y="652.25" Z="6.03" />
+						<Hotspot X="-6685.46" Y="805.1" Z="14.53" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
 			<GrindTo Level="60" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<PickUp QuestName="Band of Unending Life" QuestId="8700" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Band of Unending Life" QuestId="8700" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<PickUp QuestName="Signet of the Unseen Path" QuestId="8704" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Signet of the Unseen Path" QuestId="8704" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage)">
-			<PickUp QuestName="Band of Vaulted Secrets" QuestId="8699" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Band of Vaulted Secrets" QuestId="8699" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin)">
-			<PickUp QuestName="Ring of Eternal Justice" QuestId="8703" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Ring of Eternal Justice" QuestId="8703" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest)">
-			<PickUp QuestName="Ring of Infinite Wisdom" QuestId="8697" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Ring of Infinite Wisdom" QuestId="8697" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Band of Veiled Shadows" QuestId="8701" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Band of Veiled Shadows" QuestId="8701" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Ring of the Gathering Storm" QuestId="8698" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Ring of the Gathering Storm" QuestId="8698" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<PickUp QuestName="Ring of Unspoken Names" QuestId="8702" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Ring of Unspoken Names" QuestId="8702" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<PickUp QuestName="Signet of Unyielding Strength" QuestId="8556" GiverName="Windcaller Yessendra" GiverId="15498" />
+			<PickUp QuestName="Signet of Unyielding Strength" QuestId="8556" GiverName="Windcaller Yessendra" GiverId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
@@ -201,10 +993,6 @@
 			<Objective QuestName="Band of Veiled Shadows" QuestId="8701" Type="CollectItem" ItemId="20862" CollectCount="5" />
 		</If>
 
-		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<Objective QuestName="Ring of the Gathering Storm" QuestId="8698" Type="CollectItem" ItemId="20861" CollectCount="5" />
-		</If>
-
 		<If Condition="(Me.Class == WoWClass.Warlock)">
 			<Objective QuestName="Ring of Unspoken Names" QuestId="8702" Type="CollectItem" ItemId="20862" CollectCount="5" />
 		</If>
@@ -214,39 +1002,40 @@
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<TurnIn QuestName="Band of Unending Life" QuestId="8700" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Band of Unending Life" QuestId="8700" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<TurnIn QuestName="Signet of the Unseen Path" QuestId="8704" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Signet of the Unseen Path" QuestId="8704" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage)">
-			<TurnIn QuestName="Band of Vaulted Secrets" QuestId="8699" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Band of Vaulted Secrets" QuestId="8699" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin)">
-			<TurnIn QuestName="Ring of Eternal Justice" QuestId="8703" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Ring of Eternal Justice" QuestId="8703" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest)">
-			<TurnIn QuestName="Ring of Infinite Wisdom" QuestId="8697" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Ring of Infinite Wisdom" QuestId="8697" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<TurnIn QuestName="Band of Veiled Shadows" QuestId="8701" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Band of Veiled Shadows" QuestId="8701" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<TurnIn QuestName="Ring of the Gathering Storm" QuestId="8698" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<Objective QuestName="Ring of the Gathering Storm" QuestId="8698" Type="CollectItem" ItemId="20864" CollectCount="5" />
+			<TurnIn QuestName="Ring of the Gathering Storm" QuestId="8698" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<TurnIn QuestName="Ring of Unspoken Names" QuestId="8702" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Ring of Unspoken Names" QuestId="8702" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<TurnIn QuestName="Signet of Unyielding Strength" QuestId="8556" TurnInName="Windcaller Yessendra" TurnInId="15498" />
+			<TurnIn QuestName="Signet of Unyielding Strength" QuestId="8556" TurnInName="Windcaller Yessendra" TurnInId="15498" X="-6844.78" Y="724.479" Z="42.6144" />
 		</If>
 
 	</QuestOrder>

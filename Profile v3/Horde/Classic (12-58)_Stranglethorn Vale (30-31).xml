@@ -1,102 +1,390 @@
 <HBProfile>
 	<Name>Classic (12-58)\Stranglethorn Vale (30-31)</Name>
-	<MinLevel>30</MinLevel>
-	<MaxLevel>31</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Krakk" Entry="1381" Type="Repair" X="-12357.7" Y="142.379" Z="4.5604" />
+		<Vendor Name="Vharr" Entry="1146" Type="Repair" X="-12357.8" Y="155.552" Z="4.3285" />
+		<Vendor Name="Nargatt" Entry="7485" Type="Food" X="-12414" Y="166.158" Z="3.4752" />
+		<Vendor Name="Hragran" Entry="1147" Type="Repair" X="-12410.2" Y="203.675" Z="2.4344" />
+		<Vendor Name="Innkeeper Thulbek" Entry="5814" Type="Food" X="-12434.4" Y="211.559" Z="2.4485" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="194" Name="Raptor Mastery">
+		<Objective Type="KillMob" MobId="685" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-11777.8" Y="447.7" Z="48.81" />
+				<Hotspot X="-11920.4" Y="462.84" Z="43.14" />
+				<Hotspot X="-11826.2" Y="473.33" Z="47.76" />
+				<Hotspot X="-11850.5" Y="526.61" Z="46.12" />
+				<Hotspot X="-11841.5" Y="579.89" Z="42.39" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="185" Name="Tiger Mastery">
 		<Objective Type="KillMob" MobId="681" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11764.4" Y="16.7766" Z="22.4266" />
-				<Hotspot X="-11521.7" Y="-358.08" Z="38.049" />
-				<Hotspot X="-11650.8" Y="46.8981" Z="17.8964" />
-				<Hotspot X="-11642.9" Y="78.5515" Z="15.1527" />
-				<Hotspot X="-11591.5" Y="91.882" Z="16.7514" />
+				<Hotspot X="-11764.4" Y="16.78" Z="22.43" />
+				<Hotspot X="-11521.7" Y="-358.08" Z="38.05" />
+				<Hotspot X="-11650.8" Y="46.9" Z="17.9" />
+				<Hotspot X="-11642.9" Y="78.55" Z="15.15" />
+				<Hotspot X="-11591.5" Y="91.88" Z="16.75" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="190" Name="Panther Mastery">
 		<Objective Type="KillMob" MobId="683" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11748.4" Y="-514.029" Z="18.5639" />
-				<Hotspot X="-11731.0" Y="-482.575" Z="17.1606" />
-				<Hotspot X="-11714.0" Y="-417.881" Z="19.0145" />
-				<Hotspot X="-11721.0" Y="-444.636" Z="18.9891" />
-				<Hotspot X="-11644.6" Y="-373.013" Z="16.2524" />
+				<Hotspot X="-11748.4" Y="-514.03" Z="18.56" />
+				<Hotspot X="-11731" Y="-482.57" Z="17.16" />
+				<Hotspot X="-11714" Y="-417.88" Z="19.01" />
+				<Hotspot X="-11721" Y="-444.64" Z="18.99" />
+				<Hotspot X="-11644.6" Y="-373.01" Z="16.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="186" Name="Tiger Mastery">
 		<Objective Type="KillMob" MobId="682" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11787.1" Y="-680.766" Z="40.5718" />
-				<Hotspot X="-11750.9" Y="-587.018" Z="36.6516" />
-				<Hotspot X="-11817.3" Y="-786.911" Z="35.0214" />
-				<Hotspot X="-11853.2" Y="-750.76" Z="38.195" />
-				<Hotspot X="-11820.5" Y="-719.82" Z="40.0043" />
+				<Hotspot X="-11787.1" Y="-680.77" Z="40.57" />
+				<Hotspot X="-11750.9" Y="-587.02" Z="36.65" />
+				<Hotspot X="-11817.3" Y="-786.91" Z="35.02" />
+				<Hotspot X="-11853.2" Y="-750.76" Z="38.2" />
+				<Hotspot X="-11820.5" Y="-719.82" Z="40" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="187" Name="Tiger Mastery">
+		<Objective Type="KillMob" MobId="1085" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-11916.1" Y="49.67" Z="17.05" />
+				<Hotspot X="-11852.9" Y="182.86" Z="16.2" />
+				<Hotspot X="-11962.9" Y="-62.43" Z="9.84" />
+				<Hotspot X="-11947.7" Y="81.28" Z="15.73" />
+				<Hotspot X="-11996.9" Y="-27.8" Z="15.93" />
+				<Hotspot X="-11875.9" Y="224.41" Z="15.99" />
+				<Hotspot X="-11995.4" Y="53.35" Z="7.18" />
+				<Hotspot X="-11969.33" Y="148.54" Z="16.14" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="191" Name="Panther Mastery">
 		<Objective Type="KillMob" MobId="736" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11747.0" Y="341.463" Z="40.5989" />
-				<Hotspot X="-11692.0" Y="409.343" Z="44.5187" />
-				<Hotspot X="-11554.5" Y="344.974" Z="44.5138" />
-				<Hotspot X="-11622.6" Y="276.726" Z="42.7238" />
-				<Hotspot X="-11789.9" Y="383.486" Z="43.5087" />
+				<Hotspot X="-11747" Y="341.46" Z="40.6" />
+				<Hotspot X="-11692" Y="409.34" Z="44.52" />
+				<Hotspot X="-11554.5" Y="344.97" Z="44.51" />
+				<Hotspot X="-11622.6" Y="276.73" Z="42.72" />
+				<Hotspot X="-11789.9" Y="383.49" Z="43.51" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="194" Name="Raptor Mastery">
-		<Objective Type="KillMob" MobId="685" KillCount="10">
+	<Quest Id="195" Name="Raptor Mastery">
+		<Objective Type="KillMob" MobId="686" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11777.8" Y="447.701" Z="48.8132" />
-				<Hotspot X="-11920.4" Y="462.843" Z="43.1403" />
-				<Hotspot X="-11826.2" Y="473.326" Z="47.7552" />
-				<Hotspot X="-11850.5" Y="526.607" Z="46.1151" />
-				<Hotspot X="-11841.5" Y="579.888" Z="42.3934" />
+				<Hotspot X="-12001.1" Y="-217.77" Z="18.8" />
+				<Hotspot X="-11981.3" Y="-289.58" Z="27.12" />
+				<Hotspot X="-12040.6" Y="-219.18" Z="17.98" />
+				<Hotspot X="-12082.5" Y="-187.01" Z="28.44" />
+				<Hotspot X="-12048.7" Y="180.72" Z="18.03" />
+				<Hotspot X="-12079.9" Y="146.83" Z="17.6" />
+				<Hotspot X="-12099" Y="-265.93" Z="17.53" />
+				<Hotspot X="-12167.6" Y="164.11" Z="17.72" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="339" Name="Chapter I">
+		<Objective Type="CollectItem" ItemId="2725" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2728" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2730" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2732" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="340" Name="Chapter II">
+		<Objective Type="CollectItem" ItemId="2734" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2735" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2738" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2740" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="341" Name="Chapter III">
+		<Objective Type="CollectItem" ItemId="2742" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2744" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2745" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2748" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="342" Name="Chapter IV">
+		<Objective Type="CollectItem" ItemId="2749" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2750" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2751" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Stranglethorn Vale (30-31) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(583))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1354" Y="-4642.6" Z="53.6" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1354" Y="-4642.6" Z="53.6" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Welcome to the Jungle" QuestId="583" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Welcome to the Jungle" QuestId="583" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Raptor Mastery" QuestId="194" GiverName="Hemet Nesingwary" GiverId="715" />
-		<PickUp QuestName="Tiger Mastery" QuestId="185" GiverName="Ajeck Rouack" GiverId="717" />
-		<PickUp QuestName="Panther Mastery" QuestId="190" GiverName="Sir S. J. Erlgadin" GiverId="718" />
+		<PickUp QuestName="Welcome to the Jungle" QuestId="583" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Welcome to the Jungle" QuestId="583" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Raptor Mastery" QuestId="194" GiverName="Hemet Nesingwary Jr." GiverId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Tiger Mastery" QuestId="185" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Panther Mastery" QuestId="190" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
 		<Objective QuestName="Tiger Mastery" QuestId="185" Type="KillMob" MobId="681" KillCount="10" />
-		<TurnIn QuestName="Tiger Mastery" QuestId="185" TurnInName="Ajeck Rouack" TurnInId="717" />
-		<PickUp QuestName="Tiger Mastery" QuestId="186" GiverName="Ajeck Rouack" GiverId="717" />
+		<TurnIn QuestName="Tiger Mastery" QuestId="185" TurnInName="Ajeck Rouack" TurnInId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Tiger Mastery" QuestId="186" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
 		<Objective QuestName="Panther Mastery" QuestId="190" Type="KillMob" MobId="683" KillCount="10" />
 		<Objective QuestName="Tiger Mastery" QuestId="186" Type="KillMob" MobId="682" KillCount="10" />
-		<TurnIn QuestName="Tiger Mastery" QuestId="186" TurnInName="Ajeck Rouack" TurnInId="717" />
-		<PickUp QuestName="Tiger Mastery" QuestId="187" GiverName="Ajeck Rouack" GiverId="717" />
-		<TurnIn QuestName="Panther Mastery" QuestId="190" TurnInName="Sir S. J. Erlgadin" TurnInId="718" />
-		<PickUp QuestName="Panther Mastery" QuestId="191" GiverName="Sir S. J. Erlgadin" GiverId="718" />
+		<TurnIn QuestName="Tiger Mastery" QuestId="186" TurnInName="Ajeck Rouack" TurnInId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Tiger Mastery" QuestId="187" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<Objective QuestName="Tiger Mastery" QuestId="187" Type="KillMob" MobId="1085" KillCount="10" />
+		<TurnIn QuestName="Panther Mastery" QuestId="190" TurnInName="Sir S. J. Erlgadin" TurnInId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<PickUp QuestName="Panther Mastery" QuestId="191" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
 		<If Condition="Me.Level &lt; 31">
 			<SetGrindArea>
 				<GrindArea>
@@ -111,21 +399,46 @@
 			</SetGrindArea>
 			<GrindTo Level="31" />
 		</If>
+
 		<Objective QuestName="Panther Mastery" QuestId="191" Type="KillMob" MobId="736" KillCount="10" />
 		<Objective QuestName="Raptor Mastery" QuestId="194" Type="KillMob" MobId="685" KillCount="10" />
-		<TurnIn QuestName="Panther Mastery" QuestId="191" TurnInName="Sir S. J. Erlgadin" TurnInId="718" />
-		<TurnIn QuestName="Raptor Mastery" QuestId="194" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Raptor Mastery" QuestId="195" GiverName="Hemet Nesingwary" GiverId="715" />
-		<PickUp QuestName="The Green Hills of Stranglethorn" QuestId="338" GiverName="Barnil Stonepot" GiverId="716" />
-		<PickUp QuestName="Chapter I" QuestId="339" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter I" QuestId="339" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter II" QuestId="340" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter II" QuestId="340" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter III" QuestId="341" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter III" QuestId="341" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter IV" QuestId="342" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter IV" QuestId="342" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<TurnIn QuestName="The Green Hills of Stranglethorn" QuestId="338" TurnInName="Barnil Stonepot" TurnInId="716" />
+		<TurnIn QuestName="Panther Mastery" QuestId="191" TurnInName="Sir S. J. Erlgadin" TurnInId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<TurnIn QuestName="Raptor Mastery" QuestId="194" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Raptor Mastery" QuestId="195" GiverName="Hemet Nesingwary Jr." GiverId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<Objective QuestName="Raptor Mastery" QuestId="195" Type="KillMob" MobId="686" KillCount="10" />
+		<PickUp QuestName="The Green Hills of Stranglethorn" QuestId="338" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter I" QuestId="339" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2725" CollectCount="1" />
+		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2728" CollectCount="1" />
+		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2730" CollectCount="1" />
+		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2732" CollectCount="1" />
+		<TurnIn QuestName="Chapter I" QuestId="339" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter II" QuestId="340" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<Objective QuestName="Chapter II" QuestId="340" Type="CollectItem" ItemId="2734" CollectCount="1" />
+		<Objective QuestName="Chapter II" QuestId="340" Type="CollectItem" ItemId="2735" CollectCount="1" />
+		<Objective QuestName="Chapter II" QuestId="340" Type="CollectItem" ItemId="2738" CollectCount="1" />
+		<Objective QuestName="Chapter II" QuestId="340" Type="CollectItem" ItemId="2740" CollectCount="1" />
+		<TurnIn QuestName="Chapter II" QuestId="340" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter III" QuestId="341" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<Objective QuestName="Chapter III" QuestId="341" Type="CollectItem" ItemId="2742" CollectCount="1" />
+		<Objective QuestName="Chapter III" QuestId="341" Type="CollectItem" ItemId="2744" CollectCount="1" />
+		<Objective QuestName="Chapter III" QuestId="341" Type="CollectItem" ItemId="2745" CollectCount="1" />
+		<Objective QuestName="Chapter III" QuestId="341" Type="CollectItem" ItemId="2748" CollectCount="1" />
+		<TurnIn QuestName="Chapter III" QuestId="341" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter IV" QuestId="342" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2749" CollectCount="1" />
+		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2750" CollectCount="1" />
+		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2751" CollectCount="1" />
+		<TurnIn QuestName="Chapter IV" QuestId="342" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<!-- REVIEW Q338 The Green Hills of Stranglethorn: collect 2756 Green Hills of Stranglethorn - Chapter I x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(338)) &amp;&amp; (IsQuestCompleted(338)))">
+			<TurnIn QuestName="The Green Hills of Stranglethorn" QuestId="338" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		</If>
+
+		<If Condition="((HasQuest(338)) &amp;&amp; (!IsQuestCompleted(338)))">
+			<AbandonQuest QuestId="338" />
+		</If>
+
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Thousand Needles (31-32)" />
 	</QuestOrder>
 </HBProfile>

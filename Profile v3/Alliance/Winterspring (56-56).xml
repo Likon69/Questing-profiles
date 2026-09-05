@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Winterspring (56-56)</Name>
-	<MinLevel>56</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -21,12 +18,27 @@
 	<Vendors>
 		<!-- Evie Whirlbrew (10188) — no spawn data -->
 		<!-- Innkeeper Vizzie (10187) — no spawn data -->
+		<Vendor Name="Lyranne Feathersong" Entry="2303" Type="Food" X="7147.01" Y="-4005.61" Z="745.713" />
+		<Vendor Name="Mylini Frostmoon" Entry="15315" Type="Repair" X="6145.19" Y="-1946.77" Z="574.663" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="5087" Name="Winterfall Runners">
+		<Objective Type="CollectItem" ItemId="12829" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Winterfall Runner" Id="10916" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6912.84" Y="-1821.66" Z="570.91" />
+				<Hotspot X="6891.56" Y="-4090.03" Z="691.27" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="5245" Name="Troubled Spirits of Kel'Theril">
 		<Objective Type="CollectItem" ItemId="12897" CollectCount="1">
 			<CollectFrom>
@@ -61,45 +73,119 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="3783" Name="Are We There, Yeti?">
+		<Objective Type="CollectItem" ItemId="12366" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Rogue Ice Thistle" Id="7457" />
+				<Mob Name="Ice Thistle Yeti" Id="7458" />
+				<Mob Name="Ice Thistle Matriarch" Id="7459" />
+				<Mob Name="Ice Thistle Patriarch" Id="7460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6925.61" Y="-4490.06" Z="715.84" />
+				<Hotspot X="6984.35" Y="-4642.79" Z="749.22" />
+				<Hotspot X="6648.13" Y="-4864.07" Z="714.95" />
+				<Hotspot X="7051.56" Y="-4663.97" Z="748.79" />
+				<Hotspot X="6958.24" Y="-4419.61" Z="735.11" />
+				<Hotspot X="7046.56" Y="-4712.98" Z="728.4" />
+				<Hotspot X="6616.86" Y="-4916.78" Z="704.89" />
+				<Hotspot X="6658.38" Y="-4953.3" Z="716.71" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4864" Name="Enraged Wildkin">
+		<Objective Type="CollectItem" ItemId="12524" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Crazed Owlbeast" Id="7452" />
+				<Mob Name="Moontouched Owlbeast" Id="7453" />
+				<Mob Name="Berserk Owlbeast" Id="7454" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7423.26" Y="-4813.14" Z="675.06" />
+				<Hotspot X="7514.79" Y="-4786.47" Z="685.63" />
+				<Hotspot X="7485.99" Y="-4818.99" Z="686.34" />
+				<Hotspot X="7350.76" Y="-4881.77" Z="730.47" />
+				<Hotspot X="7450.4" Y="-4862.34" Z="689.15" />
+				<Hotspot X="7694.29" Y="-4708.62" Z="787.02" />
+				<Hotspot X="7551.88" Y="-4818.26" Z="707.25" />
+				<Hotspot X="7506.89" Y="-4857.16" Z="689.43" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12525" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Jaron's Supplies" Id="175628" />
+				<GameObject Name="Jaron's Supplies" Id="175629" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5658.85" Y="-4676.15" Z="775.73" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Winterspring (56-56) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(5087))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Toxic Horrors" QuestId="5086" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Winterfall Runners" QuestId="5087" GiverName="Donova Snowden" GiverId="9298" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(5087))">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="Toxic Horrors" QuestId="5086" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Winterfall Runners" QuestId="5087" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<Objective QuestName="Winterfall Runners" QuestId="5087" Type="CollectItem" ItemId="12829" CollectCount="1" />
-		<TurnIn QuestName="Starfall" QuestId="5250" TurnInName="Wynd Nightchaser" TurnInId="11079" />
-		<PickUp QuestName="The Ruins of Kel'Theril" QuestId="5244" GiverName="Wynd Nightchaser" GiverId="11079" />
-		<TurnIn QuestName="The Ruins of Kel'Theril" QuestId="5244" TurnInName="Jaron Stoneshaper" TurnInId="10301" />
-		<PickUp QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" GiverName="Jaron Stoneshaper" GiverId="10301" />
-		<PickUp QuestName="Enraged Wildkin" QuestId="4861" GiverName="Jaron Stoneshaper" GiverId="10301" />
+		<TurnIn QuestName="Starfall" QuestId="5250" TurnInName="Wynd Nightchaser" TurnInId="11079" X="7094.94" Y="-4006.68" Z="744.901" />
+		<PickUp QuestName="The Ruins of Kel'Theril" QuestId="5244" GiverName="Wynd Nightchaser" GiverId="11079" X="7094.94" Y="-4006.68" Z="744.901" />
+		<TurnIn QuestName="The Ruins of Kel'Theril" QuestId="5244" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<PickUp QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" GiverName="Jaron Stoneshaper" GiverId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<PickUp QuestName="Enraged Wildkin" QuestId="4861" GiverName="Jaron Stoneshaper" GiverId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
 		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12897" CollectCount="1" />
 		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12899" CollectCount="1" />
 		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12898" CollectCount="1" />
 		<Objective QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" Type="CollectItem" ItemId="12896" CollectCount="1" />
-		<PickUp QuestName="Are We There, Yeti?" QuestId="3783" GiverName="Umi Rumplesnicker" GiverId="10305" />
-		<Objective QuestName="Felnok Steelspring" QuestId="4808" Type="CollectItem" ItemId="12438" CollectCount="1" />
-		<TurnIn QuestName="Felnok Steelspring" QuestId="4808" TurnInName="Felnok Steelspring" TurnInId="10468" />
+		<PickUp QuestName="Are We There, Yeti?" QuestId="3783" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<TurnIn QuestName="Felnok Steelspring" QuestId="4808" TurnInName="Felnok Steelspring" TurnInId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
 		<Objective QuestName="Are We There, Yeti?" QuestId="3783" Type="CollectItem" ItemId="12366" CollectCount="10" />
 		<!-- Quest 4861 (Enraged Wildkin) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Enraged Wildkin" QuestId="4863" GiverName="Felnok Steelspring" GiverId="10468" />
+		<PickUp QuestName="Enraged Wildkin" QuestId="4863" GiverName="Damaged Crate" GiverId="175587" GiverType="Object" X="5703.49" Y="-4504.99" Z="762.929" />
 		<!-- Quest 4863 (Enraged Wildkin) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Enraged Wildkin" QuestId="4864" GiverName="Felnok Steelspring" GiverId="10468" />
+		<PickUp QuestName="Enraged Wildkin" QuestId="4864" GiverName="Jaron's Wagon" GiverId="175586" GiverType="Object" X="5661.34" Y="-4679.21" Z="775.067" />
 		<Objective QuestName="Enraged Wildkin" QuestId="4864" Type="CollectItem" ItemId="12525" CollectCount="1" />
-		<TurnIn QuestName="Find Ranshalla" QuestId="979" TurnInName="Ranshalla" TurnInId="10300" />
-		<PickUp QuestName="Guardians of the Altar" QuestId="4901" GiverName="Ranshalla" GiverId="10300" />
+		<TurnIn QuestName="Find Ranshalla" QuestId="979" TurnInName="Ranshalla" TurnInId="10300" X="5717.89" Y="-4794.96" Z="778.147" />
+		<PickUp QuestName="Guardians of the Altar" QuestId="4901" GiverName="Ranshalla" GiverId="10300" X="5717.89" Y="-4794.96" Z="778.147" />
 		<Objective QuestName="Enraged Wildkin" QuestId="4864" Type="CollectItem" ItemId="12524" CollectCount="1" />
-		<PickUp QuestName="The Everlook Report" QuestId="6028" GiverName="Gregor Greystone" GiverId="10431" />
-		<PickUp QuestName="Duke Nicholas Zverenhoff" QuestId="6030" GiverName="Gregor Greystone" GiverId="10431" />
-		<PickUp QuestName="Sister Pamela" QuestId="5601" GiverName="Jessica Redpath" GiverId="11629" />
-		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" />
-		<TurnIn QuestName="Enraged Wildkin" QuestId="4864" TurnInName="Jaron Stoneshaper" TurnInId="10301" />
-		<TurnIn QuestName="Strange Sources" QuestId="4842" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Winterfall Runners" QuestId="5087" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Dousing the Flames of Protection" QuestId="5165" TurnInName="Greta Mosshoof" TurnInId="10922" />
-		<TurnIn QuestName="Guardians of the Altar" QuestId="4901" TurnInName="Erelas Ambersky" TurnInId="7916" />
-		<PickUp QuestName="Wildkin of Elune" QuestId="4902" GiverName="Erelas Ambersky" GiverId="7916" />
-		<TurnIn QuestName="Wildkin of Elune" QuestId="4902" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" />
+		<PickUp QuestName="The Everlook Report" QuestId="6028" GiverName="Gregor Greystone" GiverId="10431" X="6688.56" Y="-4672.37" Z="721.742" />
+		<PickUp QuestName="Duke Nicholas Zverenhoff" QuestId="6030" GiverName="Gregor Greystone" GiverId="10431" X="6688.56" Y="-4672.37" Z="721.742" />
+		<PickUp QuestName="Sister Pamela" QuestId="5601" GiverName="Jessica Redpath" GiverId="11629" X="6688.23" Y="-4667.66" Z="721.734" />
+		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<TurnIn QuestName="Enraged Wildkin" QuestId="4864" TurnInName="Jaron Stoneshaper" TurnInId="10301" X="7093.02" Y="-4018.56" Z="744.888" />
+		<TurnIn QuestName="Strange Sources" QuestId="4842" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Winterfall Runners" QuestId="5087" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Dousing the Flames of Protection" QuestId="5165" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<TurnIn QuestName="Guardians of the Altar" QuestId="4901" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<PickUp QuestName="Wildkin of Elune" QuestId="4902" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<TurnIn QuestName="Wildkin of Elune" QuestId="4902" TurnInName="Arch Druid Fandral Staghelm" TurnInId="3516" X="10173" Y="2569.92" Z="1366.96" />
 		<CustomBehavior File="LoadProfile" ProfileName="Western Plaguelands (56-57)" />
 	</QuestOrder>
 </HBProfile>

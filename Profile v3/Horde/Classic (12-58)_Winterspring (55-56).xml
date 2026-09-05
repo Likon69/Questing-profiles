@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Winterspring (55-56)</Name>
-	<MinLevel>55</MinLevel>
-	<MaxLevel>56</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -24,35 +21,37 @@
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="8464" Name="Winterfall Activity">
 		<Objective Type="KillMob" MobId="7438" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6743.74" Y="-4949.02" Z="770.322" />
-				<Hotspot X="6667.84" Y="-5122.11" Z="779.651" />
-				<Hotspot X="6693.75" Y="-5047.92" Z="781.343" />
-				<Hotspot X="6773.63" Y="-4939.62" Z="764.797" />
-				<Hotspot X="6641.84" Y="-5094.33" Z="788.351" />
+				<Hotspot X="6743.74" Y="-4949.02" Z="770.32" />
+				<Hotspot X="6667.84" Y="-5122.11" Z="779.65" />
+				<Hotspot X="6693.75" Y="-5047.92" Z="781.34" />
+				<Hotspot X="6773.63" Y="-4939.62" Z="764.8" />
+				<Hotspot X="6641.84" Y="-5094.33" Z="788.35" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7439" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6649.67" Y="-5109.21" Z="783.095" />
-				<Hotspot X="6865.62" Y="-5101.04" Z="692.819" />
-				<Hotspot X="6731.89" Y="-5134.97" Z="733.104" />
-				<Hotspot X="6785.71" Y="-5161.02" Z="732.786" />
-				<Hotspot X="6718.93" Y="-5252.01" Z="778.708" />
+				<Hotspot X="6649.67" Y="-5109.21" Z="783.1" />
+				<Hotspot X="6865.62" Y="-5101.04" Z="692.82" />
+				<Hotspot X="6731.89" Y="-5134.97" Z="733.1" />
+				<Hotspot X="6785.71" Y="-5161.02" Z="732.79" />
+				<Hotspot X="6718.93" Y="-5252.01" Z="778.71" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7440" KillCount="8">
 			<Hotspots>
 				<Hotspot X="6906.65" Y="-5144.72" Z="695.65" />
-				<Hotspot X="6514.72" Y="-3269.61" Z="574.519" />
-				<Hotspot X="6878.17" Y="-4999.09" Z="694.566" />
-				<Hotspot X="6813.83" Y="-2470.48" Z="557.479" />
-				<Hotspot X="6847.1" Y="-2490.14" Z="561.889" />
+				<Hotspot X="6514.72" Y="-3269.61" Z="574.52" />
+				<Hotspot X="6878.17" Y="-4999.09" Z="694.57" />
+				<Hotspot X="6813.83" Y="-2470.48" Z="557.48" />
+				<Hotspot X="6847.1" Y="-2490.14" Z="561.89" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -60,47 +59,104 @@
 		<Objective Type="KillMob" MobId="7440" KillCount="8">
 			<Hotspots>
 				<Hotspot X="6906.65" Y="-5144.72" Z="695.65" />
-				<Hotspot X="6514.72" Y="-3269.61" Z="574.519" />
-				<Hotspot X="6878.17" Y="-4999.09" Z="694.566" />
-				<Hotspot X="6813.83" Y="-2470.48" Z="557.479" />
-				<Hotspot X="6847.1" Y="-2490.14" Z="561.889" />
+				<Hotspot X="6514.72" Y="-3269.61" Z="574.52" />
+				<Hotspot X="6878.17" Y="-4999.09" Z="694.57" />
+				<Hotspot X="6813.83" Y="-2470.48" Z="557.48" />
+				<Hotspot X="6847.1" Y="-2490.14" Z="561.89" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7441" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6418.35" Y="-3115.4" Z="580.961" />
-				<Hotspot X="6451.47" Y="-3161.82" Z="572.104" />
-				<Hotspot X="6453.58" Y="-3176.64" Z="572.206" />
-				<Hotspot X="6513.78" Y="-3138.88" Z="572.996" />
-				<Hotspot X="6496.59" Y="-3138.79" Z="571.354" />
+				<Hotspot X="6418.35" Y="-3115.4" Z="580.96" />
+				<Hotspot X="6451.47" Y="-3161.82" Z="572.1" />
+				<Hotspot X="6453.58" Y="-3176.64" Z="572.21" />
+				<Hotspot X="6513.78" Y="-3138.88" Z="573" />
+				<Hotspot X="6496.59" Y="-3138.79" Z="571.35" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7442" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6413.54" Y="-3295.41" Z="592.913" />
-				<Hotspot X="6447.59" Y="-3328.85" Z="590.462" />
-				<Hotspot X="6496.07" Y="-3338.02" Z="588.009" />
-				<Hotspot X="6882.35" Y="-2513.31" Z="581.347" />
-				<Hotspot X="6875.04" Y="-2548.72" Z="589.002" />
+				<Hotspot X="6413.54" Y="-3295.41" Z="592.91" />
+				<Hotspot X="6447.59" Y="-3328.85" Z="590.46" />
+				<Hotspot X="6496.07" Y="-3338.02" Z="588.01" />
+				<Hotspot X="6882.35" Y="-2513.31" Z="581.35" />
+				<Hotspot X="6875.04" Y="-2548.72" Z="589" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3783" Name="Are We There, Yeti?">
+		<Objective Type="CollectItem" ItemId="12366" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Rogue Ice Thistle" Id="7457" />
+				<Mob Name="Ice Thistle Yeti" Id="7458" />
+				<Mob Name="Ice Thistle Matriarch" Id="7459" />
+				<Mob Name="Ice Thistle Patriarch" Id="7460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6925.61" Y="-4490.06" Z="715.84" />
+				<Hotspot X="6984.35" Y="-4642.79" Z="749.22" />
+				<Hotspot X="6648.13" Y="-4864.07" Z="714.95" />
+				<Hotspot X="7051.56" Y="-4663.97" Z="748.79" />
+				<Hotspot X="6958.24" Y="-4419.61" Z="735.11" />
+				<Hotspot X="7046.56" Y="-4712.98" Z="728.4" />
+				<Hotspot X="6616.86" Y="-4916.78" Z="704.89" />
+				<Hotspot X="6658.38" Y="-4953.3" Z="716.71" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4809" Name="Chillwind Horns">
+		<Objective Type="CollectItem" ItemId="12444" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Fledgling Chillwind" Id="7447" />
+				<Mob Name="Chillwind Chimaera" Id="7448" />
+				<Mob Name="Chillwind Ravager" Id="7449" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6559.62" Y="-4661.44" Z="695.58" />
+				<Hotspot X="6547.24" Y="-4552.93" Z="708.49" />
+				<Hotspot X="6474.88" Y="-4494.19" Z="726.52" />
+				<Hotspot X="6563.46" Y="-4410.48" Z="705.45" />
+				<Hotspot X="6640.05" Y="-4373.21" Z="707.87" />
+				<Hotspot X="6365.43" Y="-4818.65" Z="731.95" />
+				<Hotspot X="6362.5" Y="-4557.77" Z="747.85" />
+				<Hotspot X="6424.27" Y="-4434.93" Z="729.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="977" Name="Are We There, Yeti?">
+		<Objective Type="CollectItem" ItemId="12367" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Ice Thistle Matriarch" Id="7459" />
+				<Mob Name="Ice Thistle Patriarch" Id="7460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6616.86" Y="-4916.78" Z="704.89" />
+				<Hotspot X="6591.75" Y="-5061.57" Z="739" />
+				<Hotspot X="6471.11" Y="-4994.14" Z="732.8" />
+				<Hotspot X="6553.07" Y="-5050.06" Z="722.44" />
+				<Hotspot X="6406.12" Y="-5062.72" Z="749.77" />
+				<Hotspot X="6589.16" Y="-5167.14" Z="765.91" />
+				<Hotspot X="6578.14" Y="-5205.76" Z="765.66" />
+				<Hotspot X="6342.02" Y="-5119.59" Z="781.35" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="4521" Name="Wild Guardians">
 		<Objective Type="KillMob" MobId="7451" KillCount="15">
 			<Hotspots>
-				<Hotspot X="6976.34" Y="-4709.22" Z="716.001" />
-				<Hotspot X="7122.82" Y="-4661.99" Z="638.525" />
-				<Hotspot X="7197.48" Y="-4218.32" Z="708.487" />
-				<Hotspot X="6791.44" Y="-4555.81" Z="727.993" />
-				<Hotspot X="7209.75" Y="-4540.12" Z="600.083" />
+				<Hotspot X="6976.34" Y="-4709.22" Z="716" />
+				<Hotspot X="7122.82" Y="-4661.99" Z="638.52" />
+				<Hotspot X="7197.48" Y="-4218.32" Z="708.49" />
+				<Hotspot X="6791.44" Y="-4555.81" Z="727.99" />
+				<Hotspot X="7209.75" Y="-4540.12" Z="600.08" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7450" KillCount="15">
 			<Hotspots>
-				<Hotspot X="6336.91" Y="-3735.25" Z="725.655" />
-				<Hotspot X="6339.7" Y="-3556.75" Z="721.211" />
-				<Hotspot X="6509.06" Y="-3475.4" Z="630.242" />
-				<Hotspot X="6749.81" Y="-4215.74" Z="706.659" />
+				<Hotspot X="6336.91" Y="-3735.25" Z="725.65" />
+				<Hotspot X="6339.7" Y="-3556.75" Z="721.21" />
+				<Hotspot X="6509.06" Y="-3475.4" Z="630.24" />
+				<Hotspot X="6749.81" Y="-4215.74" Z="706.66" />
 				<Hotspot X="6508.49" Y="-3680.8" Z="720.98" />
 			</Hotspots>
 		</Objective>
@@ -108,38 +164,69 @@
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Winterspring (55-56) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8464))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Speak to Salfa" QuestId="8465" TurnInName="Salfa" TurnInId="11556" />
-		<PickUp QuestName="Winterfall Activity" QuestId="8464" GiverName="Salfa" GiverId="11556" />
-		<TurnIn QuestName="The New Springs" QuestId="980" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Strange Sources" QuestId="4842" GiverName="Donova Snowden" GiverId="9298" />
-		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3908" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Threat of the Winterfall" QuestId="5082" GiverName="Donova Snowden" GiverId="9298" />
-		<PickUp QuestName="Are We There, Yeti?" QuestId="3783" GiverName="Umi Rumplesnicker" GiverId="10305" />
-		<PickUp QuestName="The Everlook Report" QuestId="6029" GiverName="Gregor Greystone" GiverId="10431" />
-		<TurnIn QuestName="Felnok Steelspring" QuestId="4808" TurnInName="Felnok Steelspring" TurnInId="10468" />
-		<PickUp QuestName="Chillwind Horns" QuestId="4809" GiverName="Felnok Steelspring" GiverId="10468" />
+		<TurnIn QuestName="Speak to Salfa" QuestId="8465" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
+		<PickUp QuestName="Winterfall Activity" QuestId="8464" GiverName="Salfa" GiverId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
+		<TurnIn QuestName="The New Springs" QuestId="980" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Strange Sources" QuestId="4842" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3908" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Threat of the Winterfall" QuestId="5082" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Are We There, Yeti?" QuestId="3783" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<PickUp QuestName="The Everlook Report" QuestId="6029" GiverName="Gregor Greystone" GiverId="10431" X="6688.56" Y="-4672.37" Z="721.742" />
+		<TurnIn QuestName="Felnok Steelspring" QuestId="4808" TurnInName="Felnok Steelspring" TurnInId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
+		<PickUp QuestName="Chillwind Horns" QuestId="4809" GiverName="Felnok Steelspring" GiverId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
 		<Objective QuestName="Are We There, Yeti?" QuestId="3783" Type="CollectItem" ItemId="12366" CollectCount="10" />
-		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" />
-		<PickUp QuestName="Are We There, Yeti?" QuestId="977" GiverName="Umi Rumplesnicker" GiverId="10305" />
+		<TurnIn QuestName="Are We There, Yeti?" QuestId="3783" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<PickUp QuestName="Are We There, Yeti?" QuestId="977" GiverName="Umi Rumplesnicker" GiverId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
 		<Objective QuestName="Are We There, Yeti?" QuestId="977" Type="CollectItem" ItemId="12367" CollectCount="2" />
 		<Objective QuestName="Winterfall Activity" QuestId="8464" Type="KillMob" MobId="7438" KillCount="8" />
 		<Objective QuestName="Winterfall Activity" QuestId="8464" Type="KillMob" MobId="7439" KillCount="8" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7440" KillCount="8" />
 		<Objective QuestName="Winterfall Activity" QuestId="8464" Type="KillMob" MobId="7440" KillCount="8" />
 		<Objective QuestName="Chillwind Horns" QuestId="4809" Type="CollectItem" ItemId="12444" CollectCount="8" />
-		<TurnIn QuestName="Are We There, Yeti?" QuestId="977" TurnInName="Umi Rumplesnicker" TurnInId="10305" />
-		<TurnIn QuestName="Chillwind Horns" QuestId="4809" TurnInName="Felnok Steelspring" TurnInId="10468" />
+		<TurnIn QuestName="Are We There, Yeti?" QuestId="977" TurnInName="Umi Rumplesnicker" TurnInId="10305" X="6752.67" Y="-4639.33" Z="721.837" />
+		<TurnIn QuestName="Chillwind Horns" QuestId="4809" TurnInName="Felnok Steelspring" TurnInId="10468" X="6705.58" Y="-4692.07" Z="721.272" />
 		<Objective QuestName="Wild Guardians" QuestId="4521" Type="KillMob" MobId="7451" KillCount="15" />
 		<Objective QuestName="Wild Guardians" QuestId="4521" Type="KillMob" MobId="7450" KillCount="15" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7441" KillCount="8" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7442" KillCount="8" />
-		<Objective QuestName="Winterfall Firewater" QuestId="5083" Type="CollectItem" ItemId="12771" CollectCount="1" />
-		<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Felnok Steelspring" GiverId="10468" />
-		<TurnIn QuestName="Strange Sources" QuestId="4842" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Winterfall Activity" QuestId="8464" TurnInName="Salfa" TurnInId="11556" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+			<CustomBehavior File="CollectThings" CollectItemId="12771" CollectItemCount="1" HuntingGroundRadius="120" MobId="7438" MobId2="7439" MobId3="7440" MobId4="7441" MobId5="7442" MobId6="10916" X="6747.72" Y="-2685.25" Z="543.371">
+				<Hotspot X="6747.72" Y="-2685.25" Z="543.37" />
+				<Hotspot X="6765.27" Y="-2615.89" Z="551.71" />
+				<Hotspot X="6790.35" Y="-2495.8" Z="549.81" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+			<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Empty Firewater Flask" GiverId="12771" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Strange Sources" QuestId="4842" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Winterfall Activity" QuestId="8464" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Felwood (56-56)" />
 	</QuestOrder>
 </HBProfile>

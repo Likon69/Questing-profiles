@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Ashenvale (22-24)</Name>
-	<MinLevel>22</MinLevel>
-	<MaxLevel>24</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,108 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Mahren Skyseer" Entry="11557" Type="Repair" X="7025.63" Y="-2135.69" Z="586.408" />
-		<Vendor Name="Innkeeper Shimitha" Entry="11558" Type="Food" X="7005.4" Y="-2123.12" Z="587.959" />
+		<Vendor Name="Tiyani" Entry="4195" Type="Food" X="4986.99" Y="80.0395" Z="52.8232" />
+		<Vendor Name="Aeolynn" Entry="3952" Type="Repair" X="2769.5" Y="-288.052" Z="111.192" />
+		<Vendor Name="Tandaan Lightmane" Entry="3953" Type="Repair" X="2754.85" Y="-292.216" Z="111.192" />
+		<Vendor Name="Innkeeper Kimlya" Entry="6738" Type="Food" X="2781.16" Y="-432.997" Z="116.665" />
+		<Vendor Name="Maliynn" Entry="3961" Type="Food" X="2751.84" Y="-412.033" Z="111.542" />
+		<Vendor Name="Xai'ander" Entry="11137" Type="Repair" X="2672.31" Y="-363.604" Z="110.811" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="970" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5366" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Strand Cultist" Id="3725" />
+				<Mob Name="Dark Strand Enforcer" Id="3727" />
+				<Mob Name="Dark Strand Adept" Id="3728" />
+				<Mob Name="Dark Strand Excavator" Id="3730" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3463.95" Y="-60.2" Z="5.18" />
+				<Hotspot X="3476.97" Y="-115.84" Z="4.25" />
+				<Hotspot X="3512.42" Y="-104.19" Z="2.27" />
+				<Hotspot X="3544.77" Y="-125.87" Z="2.47" />
+				<Hotspot X="3532.41" Y="-165.54" Z="3.2" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1010" Name="Bathran's Hair">
+		<Objective Type="CollectItem" ItemId="5437" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Plant Bundle" Id="17282" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3692.97" Y="-55.56" Z="-1.3" />
+				<Hotspot X="3763.18" Y="-68.08" Z="-0.76" />
+				<Hotspot X="3729.87" Y="-157.55" Z="6.13" />
+				<Hotspot X="3797.38" Y="-67.86" Z="4.67" />
+				<Hotspot X="3769.16" Y="-149.36" Z="2.34" />
+				<Hotspot X="3801.19" Y="-165.12" Z="1" />
+				<Hotspot X="3866.55" Y="-83.86" Z="6.67" />
+				<Hotspot X="3837.68" Y="-155.8" Z="0.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="973" Name="The Tower of Althalaxx">
+		<Objective Type="CollectItem" ItemId="5533" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ilkrud Magthrull" Id="3664" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2340.17" Y="242.21" Z="154.55" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1008" Name="The Zoram Strand">
+		<Objective Type="CollectItem" ItemId="5490" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Wrathtail Myrmidon" Id="3711" />
+				<Mob Name="Wrathtail Razortail" Id="3712" />
+				<Mob Name="Wrathtail Wave Rider" Id="3713" />
+				<Mob Name="Wrathtail Sea Witch" Id="3715" />
+				<Mob Name="Wrathtail Sorceress" Id="3717" />
+				<Mob Name="Wrathtail Priestess" Id="3944" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3485.27" Y="912.12" Z="5.39" />
+				<Hotspot X="3654.37" Y="818.56" Z="5.9" />
+				<Hotspot X="3548.44" Y="921.14" Z="2.82" />
+				<Hotspot X="3714.14" Y="822.71" Z="5.82" />
+				<Hotspot X="3534.84" Y="972.81" Z="1.85" />
+				<Hotspot X="3448.34" Y="1017.37" Z="2.59" />
+				<Hotspot X="3680.18" Y="880.98" Z="1" />
+				<Hotspot X="3587.5" Y="954.17" Z="2.11" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1054" Name="Culling the Threat">
+		<Objective Type="CollectItem" ItemId="5544" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dal Bloodclaw" Id="3987" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3337.85" Y="-476.5" Z="154.49" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1033" Name="Elune's Tear">
+		<Objective Type="CollectItem" ItemId="5493" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Elune's Tear" Id="19015" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2882.08" Y="-962.78" Z="198.11" />
+				<Hotspot X="2906.64" Y="-975.46" Z="200.79" />
+				<Hotspot X="2876.21" Y="-989.69" Z="197.15" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="1034" Name="The Ruins of Stardust">
 		<Objective Type="CollectItem" ItemId="5494" CollectCount="5">
 			<CollectFrom>
@@ -44,6 +135,26 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1023" Name="Raene's Cleansing">
+		<Objective Type="CollectItem" ItemId="5463" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Saltspittle Puddlejumper" Id="3737" />
+				<Mob Name="Saltspittle Warrior" Id="3739" />
+				<Mob Name="Saltspittle Muckdweller" Id="3740" />
+				<Mob Name="Saltspittle Oracle" Id="3742" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3041.41" Y="441.82" Z="5.81" />
+				<Hotspot X="3089.11" Y="441.87" Z="5.92" />
+				<Hotspot X="3003.09" Y="480.52" Z="6.81" />
+				<Hotspot X="3050.32" Y="497.11" Z="0.19" />
+				<Hotspot X="2962.49" Y="531.9" Z="4.96" />
+				<Hotspot X="3010.68" Y="518.88" Z="-2.11" />
+				<Hotspot X="3112.82" Y="501.24" Z="4.94" />
+				<Hotspot X="2999.64" Y="589.26" Z="10.73" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="1007" Name="The Ancient Statuette">
 		<Objective Type="CollectItem" ItemId="5424" CollectCount="1">
 			<CollectFrom>
@@ -54,67 +165,118 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1009" Name="Ruuzel">
+		<Objective Type="CollectItem" ItemId="5445" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ruuzel" Id="3943" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4157.59" Y="1272.73" Z="3.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Ashenvale (22-24) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(970))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" />
-		<PickUp QuestName="The Tower of Althalaxx" QuestId="970" GiverName="Delgren the Purifier" GiverId="3663" />
-		<PickUp QuestName="Bathran's Hair" QuestId="1010" GiverName="Orendil Broadleaf" GiverId="3847" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(970))">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="967" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<PickUp QuestName="The Tower of Althalaxx" QuestId="970" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<PickUp QuestName="Bathran's Hair" QuestId="1010" GiverName="Orendil Broadleaf" GiverId="3847" X="3189.6" Y="175.47" Z="4.6855" />
 		<Objective QuestName="The Tower of Althalaxx" QuestId="970" Type="CollectItem" ItemId="5366" CollectCount="1" />
 		<Objective QuestName="Bathran's Hair" QuestId="1010" Type="CollectItem" ItemId="5437" CollectCount="5" />
-		<TurnIn QuestName="Bathran's Hair" QuestId="1010" TurnInName="Orendil Broadleaf" TurnInId="3847" />
-		<PickUp QuestName="Orendil's Cure" QuestId="1020" GiverName="Orendil Broadleaf" GiverId="3847" />
-		<TurnIn QuestName="The Tower of Althalaxx" QuestId="970" TurnInName="Delgren the Purifier" TurnInId="3663" />
-		<PickUp QuestName="The Tower of Althalaxx" QuestId="973" GiverName="Delgren the Purifier" GiverId="3663" />
-		<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" />
-		<PickUp QuestName="The Zoram Strand" QuestId="1008" GiverName="Shindrell Swiftfire" GiverId="3845" />
-		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" />
-		<PickUp QuestName="Raene's Cleansing" QuestId="991" GiverName="Raene Wolfrunner" GiverId="3691" />
-		<PickUp QuestName="Culling the Threat" QuestId="1054" GiverName="Raene Wolfrunner" GiverId="3691" />
-		<TurnIn QuestName="Orendil's Cure" QuestId="1020" TurnInName="Pelturas Whitemoon" TurnInId="3894" />
-		<PickUp QuestName="Elune's Tear" QuestId="1033" GiverName="Pelturas Whitemoon" GiverId="3894" />
+		<TurnIn QuestName="Bathran's Hair" QuestId="1010" TurnInName="Orendil Broadleaf" TurnInId="3847" X="3189.6" Y="175.47" Z="4.6855" />
+		<PickUp QuestName="Orendil's Cure" QuestId="1020" GiverName="Orendil Broadleaf" GiverId="3847" X="3189.6" Y="175.47" Z="4.6855" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="970" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<PickUp QuestName="The Tower of Althalaxx" QuestId="973" GiverName="Delgren the Purifier" GiverId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<TurnIn QuestName="Therylune's Escape" QuestId="945" TurnInName="Therysil" TurnInId="3585" X="2677.34" Y="394.207" Z="69.8261" />
+		<PickUp QuestName="The Zoram Strand" QuestId="1008" GiverName="Shindrell Swiftfire" GiverId="3845" X="2795.75" Y="-299.374" Z="107.183" />
+		<TurnIn QuestName="Onward to Ashenvale" QuestId="10752" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<PickUp QuestName="Raene's Cleansing" QuestId="991" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<PickUp QuestName="Culling the Threat" QuestId="1054" GiverName="Raene Wolfrunner" GiverId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="Orendil's Cure" QuestId="1020" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.233" />
+		<PickUp QuestName="Elune's Tear" QuestId="1033" GiverName="Pelturas Whitemoon" GiverId="3894" X="2682.14" Y="-454.808" Z="109.233" />
 		<Objective QuestName="Elune's Tear" QuestId="1033" Type="CollectItem" ItemId="5493" CollectCount="1" />
 		<Objective QuestName="Culling the Threat" QuestId="1054" Type="CollectItem" ItemId="5544" CollectCount="1" />
-		<TurnIn QuestName="Culling the Threat" QuestId="1054" TurnInName="Raene Wolfrunner" TurnInId="3691" />
-		<TurnIn QuestName="Elune's Tear" QuestId="1033" TurnInName="Pelturas Whitemoon" TurnInId="3894" />
-		<PickUp QuestName="The Ruins of Stardust" QuestId="1034" GiverName="Pelturas Whitemoon" GiverId="3894" />
+		<TurnIn QuestName="Culling the Threat" QuestId="1054" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="Elune's Tear" QuestId="1033" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.233" />
+		<PickUp QuestName="The Ruins of Stardust" QuestId="1034" GiverName="Pelturas Whitemoon" GiverId="3894" X="2682.14" Y="-454.808" Z="109.233" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Water" QuestId="9504" Type="CollectItem" ItemId="23750" CollectCount="1" />
 		</If>
 
 		<Objective QuestName="The Ruins of Stardust" QuestId="1034" Type="CollectItem" ItemId="5494" CollectCount="5" />
 		<Objective QuestName="The Tower of Althalaxx" QuestId="973" Type="CollectItem" ItemId="5533" CollectCount="1" />
-		<TurnIn QuestName="The Tower of Althalaxx" QuestId="973" TurnInName="Delgren the Purifier" TurnInId="3663" />
-		<TurnIn QuestName="Raene's Cleansing" QuestId="991" TurnInName="Delgren the Purifier" TurnInId="3891" />
-		<PickUp QuestName="Raene's Cleansing" QuestId="1023" GiverName="Delgren the Purifier" GiverId="3663" />
+		<TurnIn QuestName="The Tower of Althalaxx" QuestId="973" TurnInName="Delgren the Purifier" TurnInId="3663" X="3185.46" Y="189.38" Z="4.7517" />
+		<TurnIn QuestName="Raene's Cleansing" QuestId="991" TurnInName="Teronis' Corpse" TurnInId="3891" X="3045.78" Y="528.706" Z="4.9482" />
+		<PickUp QuestName="Raene's Cleansing" QuestId="1023" GiverName="Teronis' Corpse" GiverId="3891" X="3045.78" Y="528.706" Z="4.9482" />
 		<Objective QuestName="Raene's Cleansing" QuestId="1023" Type="CollectItem" ItemId="5463" CollectCount="1" />
-		<PickUp QuestName="The Ancient Statuette" QuestId="1007" GiverName="Talen" GiverId="3846" />
+		<PickUp QuestName="The Ancient Statuette" QuestId="1007" GiverName="Talen" GiverId="3846" X="3470.04" Y="847.092" Z="5.4588" />
 		<Objective QuestName="The Ancient Statuette" QuestId="1007" Type="CollectItem" ItemId="5424" CollectCount="1" />
-		<TurnIn QuestName="The Ancient Statuette" QuestId="1007" TurnInName="Talen" TurnInId="3846" />
-		<PickUp QuestName="Ruuzel" QuestId="1009" GiverName="Talen" GiverId="3846" />
+		<TurnIn QuestName="The Ancient Statuette" QuestId="1007" TurnInName="Talen" TurnInId="3846" X="3470.04" Y="847.092" Z="5.4588" />
+		<PickUp QuestName="Ruuzel" QuestId="1009" GiverName="Talen" GiverId="3846" X="3470.04" Y="847.092" Z="5.4588" />
 		<Objective QuestName="Ruuzel" QuestId="1009" Type="CollectItem" ItemId="5445" CollectCount="1" />
-		<TurnIn QuestName="Ruuzel" QuestId="1009" TurnInName="Talen" TurnInId="3846" />
+		<TurnIn QuestName="Ruuzel" QuestId="1009" TurnInName="Talen" TurnInId="3846" X="3470.04" Y="847.092" Z="5.4588" />
 		<Objective QuestName="The Zoram Strand" QuestId="1008" Type="CollectItem" ItemId="5490" CollectCount="20" />
-		<TurnIn QuestName="Raene's Cleansing" QuestId="1023" TurnInName="Raene Wolfrunner" TurnInId="3691" />
-		<TurnIn QuestName="The Ruins of Stardust" QuestId="1034" TurnInName="Pelturas Whitemoon" TurnInId="3894" />
-		<TurnIn QuestName="The Zoram Strand" QuestId="1008" TurnInName="Shindrell Swiftfire" TurnInId="3845" />
-		<TurnIn QuestName="WANTED: Murkdeep!" QuestId="4740" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" />
-		<TurnIn QuestName="The Absent Minded Prospector" QuestId="731" TurnInName="Archaeologist Hollee" TurnInId="2913" />
-		<PickUp QuestName="The Absent Minded Prospector" QuestId="741" GiverName="Archaeologist Hollee" GiverId="2913" />
-		<TurnIn QuestName="Escape Through Force" QuestId="994" TurnInName="Terenthis" TurnInId="3693" />
-		<TurnIn QuestName="The Absent Minded Prospector" QuestId="741" TurnInName="Chief Archaeologist Greywhisker" TurnInId="2912" />
-		<PickUp QuestName="The Absent Minded Prospector" QuestId="942" GiverName="Chief Archaeologist Greywhisker" GiverId="2912" />
+		<TurnIn QuestName="Raene's Cleansing" QuestId="1023" TurnInName="Raene Wolfrunner" TurnInId="3691" X="2767.16" Y="-411.611" Z="111.466" />
+		<TurnIn QuestName="The Ruins of Stardust" QuestId="1034" TurnInName="Pelturas Whitemoon" TurnInId="3894" X="2682.14" Y="-454.808" Z="109.233" />
+		<TurnIn QuestName="The Zoram Strand" QuestId="1008" TurnInName="Shindrell Swiftfire" TurnInId="3845" X="2795.75" Y="-299.374" Z="107.183" />
+		<TurnIn QuestName="WANTED: Murkdeep!" QuestId="4740" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="731" TurnInName="Archaeologist Hollee" TurnInId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		<PickUp QuestName="The Absent Minded Prospector" QuestId="741" GiverName="Archaeologist Hollee" GiverId="2913" X="6506.35" Y="489.304" Z="6.8245" />
+		<TurnIn QuestName="Escape Through Force" QuestId="994" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		<TurnIn QuestName="The Absent Minded Prospector" QuestId="741" TurnInName="Chief Archaeologist Greywhisker" TurnInId="2912" X="9641.92" Y="2607.69" Z="1337.38" />
+		<PickUp QuestName="The Absent Minded Prospector" QuestId="942" GiverName="Chief Archaeologist Greywhisker" GiverId="2912" X="9641.92" Y="2607.69" Z="1337.38" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<TurnIn QuestName="Call of Water" QuestId="9504" TurnInName="Aqueous" TurnInId="17275" />
-			<PickUp QuestName="Call of Water" QuestId="9508" GiverName="Aqueous" GiverId="17275" />
+			<If Condition="Me.MapId != 530">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="8555" Y="1012.55" Z="6.06" />
+					<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+					<RunTo X="6550.8" Y="924.9" Z="6.2" />
+					<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="6550.8" WaitAtY="924.9" WaitAtZ="6.2" TransportStartX="6550.4" TransportStartY="938.2" TransportStartZ="0" TransportEndX="-4265" TransportEndY="-11317.2" TransportEndZ="0" GetOffX="-4260.246" GetOffY="-11331.36" GetOffZ="5.4902" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<TurnIn QuestName="Call of Water" QuestId="9504" TurnInName="Aqueous" TurnInId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
+			<If Condition="(Me.Race == WoWRace.Draenei)">
+				<PickUp QuestName="Call of Water" QuestId="9508" GiverName="Aqueous" GiverId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
+			</If>
 			<Objective QuestName="Call of Water" QuestId="9508" Type="CollectItem" ItemId="23997" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="9508" TurnInName="Aqueous" TurnInId="17275" />
+		<TurnIn QuestName="Call of Water" QuestId="9508" TurnInName="Aqueous" TurnInId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="9509" GiverName="Aqueous" GiverId="17275" />
-			<TurnIn QuestName="Call of Water" QuestId="9509" TurnInName="Farseer Nobundo" TurnInId="17204" />
+			<If Condition="(Me.Race == WoWRace.Draenei)">
+				<PickUp QuestName="Call of Water" QuestId="9509" GiverName="Aqueous" GiverId="17275" X="-1110.26" Y="-11128.9" Z="-78.3828" />
+			</If>
+			<TurnIn QuestName="Call of Water" QuestId="9509" TurnInName="Farseer Nobundo" TurnInId="17204" X="-3804.5" Y="-11396.9" Z="-104.253" />
 		</If>
 
 		<CustomBehavior File="LoadProfile" ProfileName="Wetlands (24-25)" />

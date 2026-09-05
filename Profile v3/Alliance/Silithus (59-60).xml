@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Silithus (59-60)</Name>
-	<MinLevel>59</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,21 +17,55 @@
 
 	<Vendors>
 		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
-		<Vendor Name="Matta" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Vargus" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="8280" Name="Securing the Supply Lines">
 		<Objective Type="KillMob" MobId="11740" KillCount="15">
 			<Hotspots>
-				<Hotspot X="-6327.39" Y="1265.9" Z="6.5949" />
-				<Hotspot X="-6382.82" Y="1326.36" Z="3.3263" />
-				<Hotspot X="-6369.03" Y="467.862" Z="-0.5208" />
-				<Hotspot X="-6247.77" Y="552.957" Z="11.3063" />
-				<Hotspot X="-6847.24" Y="44.191" Z="0.6501" />
+				<Hotspot X="-6327.39" Y="1265.9" Z="6.59" />
+				<Hotspot X="-6382.82" Y="1326.36" Z="3.33" />
+				<Hotspot X="-6369.03" Y="467.86" Z="-0.52" />
+				<Hotspot X="-6247.77" Y="552.96" Z="11.31" />
+				<Hotspot X="-6847.24" Y="44.19" Z="0.65" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8277" Name="Deadly Desert Venom">
+		<Objective Type="CollectItem" ItemId="20376" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Sand Skitterer" Id="11738" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6661.99" Y="759.31" Z="12.5" />
+				<Hotspot X="-6662.02" Y="653.45" Z="5.83" />
+				<Hotspot X="-6930.12" Y="978.2" Z="7.35" />
+				<Hotspot X="-6617.75" Y="678.64" Z="5.77" />
+				<Hotspot X="-6696.56" Y="516.6" Z="0.42" />
+				<Hotspot X="-6553.32" Y="674.14" Z="3.37" />
+				<Hotspot X="-6591.96" Y="573.57" Z="1.93" />
+				<Hotspot X="-6531.25" Y="719.26" Z="3.27" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20373" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Stonelash Scorpid" Id="11735" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6671.3" Y="667.67" Z="4.77" />
+				<Hotspot X="-6644.8" Y="709.39" Z="6.49" />
+				<Hotspot X="-6729.7" Y="559.57" Z="2.94" />
+				<Hotspot X="-6660.85" Y="584.76" Z="6.9" />
+				<Hotspot X="-6819.28" Y="990.91" Z="2.37" />
+				<Hotspot X="-6586.79" Y="692.39" Z="3.11" />
+				<Hotspot X="-6846.44" Y="1042.26" Z="0.22" />
+				<Hotspot X="-6914.1" Y="1040.37" Z="1.82" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -53,50 +84,190 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="8318" Name="Secret Communication">
+		<Objective Type="CollectItem" ItemId="20404" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+				<Mob Name="Twilight Avenger" Id="11880" />
+				<Mob Name="Twilight Geolord" Id="11881" />
+				<Mob Name="Twilight Stonecaller" Id="11882" />
+				<Mob Name="Twilight Master" Id="11883" />
+				<Mob Name="Twilight Lord Everun" Id="14479" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6986.09" Y="1087.71" Z="4.58" />
+				<Hotspot X="-6954.06" Y="1119.47" Z="3.09" />
+				<Hotspot X="-7012.78" Y="1106.06" Z="6.22" />
+				<Hotspot X="-7003.84" Y="1132.9" Z="7.5" />
+				<Hotspot X="-6906.24" Y="1170.05" Z="2.82" />
+				<Hotspot X="-6967.48" Y="1174.65" Z="12.78" />
+				<Hotspot X="-7048.57" Y="1130.74" Z="5.78" />
+				<Hotspot X="-7006.08" Y="1178.25" Z="12.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="8281" Name="Stepping Up Security">
 		<Objective Type="KillMob" MobId="11741" KillCount="20">
 			<Hotspots>
-				<Hotspot X="-7056.8" Y="1839.1" Z="-0.9701" />
-				<Hotspot X="-6983.4" Y="1550.22" Z="2.311" />
-				<Hotspot X="-7483.33" Y="1383.33" Z="5.2249" />
-				<Hotspot X="-7168.41" Y="1326.74" Z="3.2032" />
-				<Hotspot X="-6973.82" Y="1352.36" Z="0.3958" />
+				<Hotspot X="-7056.8" Y="1839.1" Z="-0.97" />
+				<Hotspot X="-6983.4" Y="1550.22" Z="2.31" />
+				<Hotspot X="-7483.33" Y="1383.33" Z="5.22" />
+				<Hotspot X="-7168.41" Y="1326.74" Z="3.2" />
+				<Hotspot X="-6973.82" Y="1352.36" Z="0.4" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8278" Name="Noggle's Last Hope">
+		<Objective Type="CollectItem" ItemId="20377" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Rock Stalker" Id="11739" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7518.74" Y="845.35" Z="-2.35" />
+				<Hotspot X="-7579.57" Y="782.52" Z="-17.88" />
+				<Hotspot X="-7581.29" Y="883.58" Z="-0.16" />
+				<Hotspot X="-7539.12" Y="1079.49" Z="1.9" />
+				<Hotspot X="-7514.01" Y="1148.85" Z="1.92" />
+				<Hotspot X="-7582.78" Y="1094.71" Z="1.35" />
+				<Hotspot X="-7494.38" Y="1244.9" Z="1.25" />
+				<Hotspot X="-7648.21" Y="965.8" Z="1.24" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20374" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Pincer" Id="11736" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7004.74" Y="1026.38" Z="2.23" />
+				<Hotspot X="-7184.2" Y="903.52" Z="5.36" />
+				<Hotspot X="-7117.97" Y="1017.87" Z="4.21" />
+				<Hotspot X="-7248.83" Y="782.06" Z="4.61" />
+				<Hotspot X="-7259.42" Y="830.02" Z="3.16" />
+				<Hotspot X="-7241.72" Y="589.19" Z="4.08" />
+				<Hotspot X="-7170.65" Y="1027.51" Z="5.47" />
+				<Hotspot X="-7285.66" Y="669.82" Z="1.32" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20375" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Flayer" Id="11737" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7504.84" Y="812.22" Z="-11.6" />
+				<Hotspot X="-7577.76" Y="866.06" Z="-5.81" />
+				<Hotspot X="-7517.02" Y="394.1" Z="-13.05" />
+				<Hotspot X="-7584.37" Y="979.08" Z="2.21" />
+				<Hotspot X="-7512.22" Y="308.09" Z="-0.62" />
+				<Hotspot X="-7620.21" Y="945.79" Z="0.24" />
+				<Hotspot X="-7568.51" Y="368.85" Z="-15.18" />
+				<Hotspot X="-7577.37" Y="1101.23" Z="-0.24" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Silithus (59-60) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8280))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1792.78" Y="5406.54" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1792.78" Y="5406.54" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Taking Back Silithus" QuestId="8275" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<PickUp QuestName="Deadly Desert Venom" QuestId="8277" GiverName="Beetix Ficklespragg" GiverId="15189" />
-		<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" />
-		<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" />
-		<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" />
-		<Objective QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" Type="CollectItem" ItemId="20461" CollectCount="1" />
-		<While Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))" >
-			<CustomBehavior File="UseItemOn" QuestId="8304" MobId="15221" ItemId="20461" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-8029.8" Y="1122.73" Z="3.311" />
-		</While>
-		<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Cloud Skydancer" GiverId="15177" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(8280))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="Taking Back Silithus" QuestId="8275" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Deadly Desert Venom" QuestId="8277" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20461)">
+			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Secret Communication" QuestId="8318" Type="CollectItem" ItemId="20404" CollectCount="10" />
 		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20373" CollectCount="8" />
 		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20376" CollectCount="8" />
 		<Objective QuestName="Securing the Supply Lines" QuestId="8280" Type="KillMob" MobId="11740" KillCount="15" />
-		<TurnIn QuestName="Securing the Supply Lines" QuestId="8280" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<PickUp QuestName="Stepping Up Security" QuestId="8281" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<TurnIn QuestName="Deadly Desert Venom" QuestId="8277" TurnInName="Beetix Ficklespragg" TurnInId="15189" />
-		<PickUp QuestName="Noggle's Last Hope" QuestId="8278" GiverName="Beetix Ficklespragg" GiverId="15189" />
-		<TurnIn QuestName="Secret Communication" QuestId="8318" TurnInName="Bor Wildmane" TurnInId="15306" />
+		<TurnIn QuestName="Securing the Supply Lines" QuestId="8280" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Stepping Up Security" QuestId="8281" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<TurnIn QuestName="Deadly Desert Venom" QuestId="8277" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<PickUp QuestName="Noggle's Last Hope" QuestId="8278" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<TurnIn QuestName="Secret Communication" QuestId="8318" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
 		<Objective QuestName="The Twilight Mystery" QuestId="8284" Type="CollectItem" ItemId="20378" CollectCount="8" />
 		<Objective QuestName="Stepping Up Security" QuestId="8281" Type="KillMob" MobId="11741" KillCount="20" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20374" CollectCount="3" />
-		<TurnIn QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" TurnInName="Rutgar Glyphshaper" TurnInId="15170" />
+		<!-- Q8308 Brann Bronzebeard's Lost Letter: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\Classic\[A - Quest] 1-58 [Kick]\Silithus.xml -->
+		<If Condition="HasQuest(8308)">
+			<CustomBehavior File="Message" Text="Moving to turn in 'Brann Bronzebeard's Lost Letter'" LogColor="Green" />
+		</If>
+
+		<If Condition="HasQuest(8308)">
+			<MoveTo X="-8022.499" Y="1115.789" Z="2.738349" />
+		</If>
+
+		<TurnIn QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" TurnInName="Rutgar Glyphshaper" TurnInId="15170" X="-8013.06" Y="1099.65" Z="4.7188" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20375" CollectCount="3" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20377" CollectCount="3" />
-		<TurnIn QuestName="Stepping Up Security" QuestId="8281" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="Noggle's Last Hope" QuestId="8278" TurnInName="Beetix Ficklespragg" TurnInId="15189" />
-		<TurnIn QuestName="The Twilight Mystery" QuestId="8284" TurnInName="Geologist Larksbane" TurnInId="15183" />
-		<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" />
+		<TurnIn QuestName="Stepping Up Security" QuestId="8281" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<TurnIn QuestName="Noggle's Last Hope" QuestId="8278" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<TurnIn QuestName="The Twilight Mystery" QuestId="8284" TurnInName="Geologist Larksbane" TurnInId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<!-- Q8304 Dearest Natalia: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Reputation\Classic\Cenarion Circle [Kick]\[QO] Cenarion Circle - Silithus A [Kick].xml -->
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<CustomBehavior File="FlyTo" X="-8010.16" Y="1100.567" Z="4.059024" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<CustomBehavior File="ForcedDismount" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+				<CustomBehavior File="InteractWith" QuestId="8304" MobId="15170" NumOfTimes="1" GossipOptions="1, 1, 1, 1, 1, 1, 1, 1" WaitTime="1000" CollectionDistance="50" X="-8010.16" Y="1100.567" Z="4.059024" />
+			</If>
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+				<CustomBehavior File="InteractWith" QuestId="8304" MobId="15171" NumOfTimes="1" GossipOptions="1, 1, 1, 1, 1, 1, 1, 1" WaitTime="1000" CollectionDistance="50" X="-8022.499" Y="1115.789" Z="2.737845" />
+			</If>
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (IsQuestCompleted(8304)))">
+			<CustomBehavior File="FlyTo" X="-6836.007" Y="845.5305" Z="48.99781" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (IsQuestCompleted(8304)))">
+			<CustomBehavior File="ForcedDismount" />
+		</If>
+
+		<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		<CustomBehavior File="LoadProfile" ProfileName="The Burning Crusade (58-70)_Hellfire Peninsula (58-62)" />
 	</QuestOrder>
 </HBProfile>

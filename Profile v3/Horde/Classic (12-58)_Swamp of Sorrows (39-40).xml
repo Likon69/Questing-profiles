@@ -1,27 +1,32 @@
 <HBProfile>
 	<Name>Classic (12-58)\Swamp of Sorrows (39-40)</Name>
-	<MinLevel>39</MinLevel>
-	<MaxLevel>41</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Thralosh" Entry="984" Type="Repair" X="-10406.9" Y="-3256.55" Z="22.211" />
+		<Vendor Name="Grimnal" Entry="980" Type="Repair" X="-10392" Y="-3256.97" Z="22.0191" />
+		<Vendor Name="Gharash" Entry="8176" Type="Repair" X="-10407" Y="-3265.75" Z="22.0295" />
+		<Vendor Name="Innkeeper Karakul" Entry="6930" Type="Food" X="-10487.3" Y="-3258.84" Z="21.1127" />
+		<Vendor Name="Thultash" Entry="982" Type="Food" X="-10451" Y="-3290.11" Z="20.3032" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="1389" Name="Draenethyst Crystals">
@@ -35,33 +40,110 @@
 				<Hotspot X="-10002.2" Y="-3539.66" Z="22.92" />
 				<Hotspot X="-9981.25" Y="-3652.04" Z="21.81" />
 				<Hotspot X="-9970.3" Y="-3712.3" Z="22.85" />
-				<Hotspot X="-9968.0" Y="-3708.24" Z="22.18" />
+				<Hotspot X="-9968" Y="-3708.24" Z="22.18" />
 				<Hotspot X="-9964.19" Y="-3646.9" Z="22.15" />
-				<Hotspot X="-9960.04" Y="-3603.0" Z="22.25" />
+				<Hotspot X="-9960.04" Y="-3603" Z="22.25" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="698" Name="Lack of Surplus">
+		<Objective Type="CollectItem" ItemId="6169" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Sawtooth Crocolisk" Id="1082" />
+				<Mob Name="Sawtooth Snapper" Id="1087" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11080" Y="-4145.16" Z="-0.96" />
+				<Hotspot X="-11100.6" Y="-4071.54" Z="-2.21" />
+				<Hotspot X="-10600.6" Y="-4165.07" Z="18.72" />
+				<Hotspot X="-11109.9" Y="-3972.39" Z="-5.43" />
+				<Hotspot X="-11142.9" Y="-4117.18" Z="-3.33" />
+				<Hotspot X="-11154.45" Y="-4031.59" Z="-16.65" />
+				<Hotspot X="-11152" Y="-3949.32" Z="-16.38" />
+				<Hotspot X="-11149.6" Y="-3887.42" Z="-11.07" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9440" Name="Little Morsels">
+		<Objective Type="KillMob" MobId="17111" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-9968.04" Y="-3722.69" Z="21.97" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="17112" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-9983.18" Y="-3665.7" Z="21.76" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1424" Name="Pool of Tears">
+		<Objective Type="CollectItem" ItemId="6175" CollectCount="5">
+			<CollectFrom>
+				<GameObject Name="Atal'ai Artifact" Id="30854" />
+				<GameObject Name="Atal'ai Artifact" Id="30855" />
+				<GameObject Name="Atal'ai Artifact" Id="30856" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10505.9" Y="-3634.01" Z="19.15" />
+				<Hotspot X="-10429.8" Y="-3654.53" Z="18.61" />
+				<Hotspot X="-10376.8" Y="-3699.82" Z="14.5" />
+				<Hotspot X="-10467" Y="-3723.87" Z="-19.71" />
+				<Hotspot X="-10447.4" Y="-3747.13" Z="-2.2" />
+				<Hotspot X="-10525" Y="-3746.86" Z="-19.73" />
+				<Hotspot X="-10341" Y="-3736.78" Z="14.75" />
+				<Hotspot X="-10505.5" Y="-3780.27" Z="-16.75" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="Nothing But The Truth" QuestId="1372" GiverName="Deathstalker Zraedus" GiverId="5418" />
-		<TurnIn QuestName="Nothing But The Truth" QuestId="1372" TurnInName="Apothecary Faustin" TurnInId="5414" />
-		<Objective QuestName="Dream Dust in the Swamp" QuestId="1116" Type="CollectItem" ItemId="5803" CollectCount="10" />
-		<Objective QuestName="Noboru the Cudgel" QuestId="1392" Type="CollectItem" ItemId="6196" CollectCount="1" />
-		<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Apothecary Faustin" GiverId="5414" />
-		<TurnIn QuestName="Noboru the Cudgel" QuestId="1392" TurnInName="Magtoor" TurnInId="1776" />
-		<PickUp QuestName="Draenethyst Crystals" QuestId="1389" GiverName="Magtoor" GiverId="1776" />
-		<PickUp QuestName="Lack of Surplus" QuestId="698" GiverName="Dar" GiverId="5591" />
-		<PickUp QuestName="Little Morsels" QuestId="9440" GiverName="Cersei Dusksinger" GiverId="17109" />
-		<PickUp QuestName="Pool of Tears" QuestId="1424" GiverName="Fel'zerul" GiverId="1443" />
-		<PickUp QuestName="Neeka Bloodscar" QuestId="1418" GiverName="Helgrum the Swift" GiverId="1442" />
-		<If Condition="!((Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Undead))">
+		<!-- Travel to Classic (12-58)_Swamp of Sorrows (39-40) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1372))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
 		</If>
 
-		<Objective QuestName="Pool of Tears" QuestId="1424" Type="CollectItem" ItemId="6175" CollectCount="10" />
+		<PickUp QuestName="Nothing But The Truth" QuestId="1372" GiverName="Deathstalker Zraedus" GiverId="5418" X="-10358" Y="-1537.57" Z="92.3121" />
+		<TurnIn QuestName="Nothing But The Truth" QuestId="1372" TurnInName="Apothecary Faustin" TurnInId="5414" X="-10351.1" Y="-1527.88" Z="92.7248" />
+		<Objective QuestName="Dream Dust in the Swamp" QuestId="1116" Type="CollectItem" ItemId="5803" CollectCount="10" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6196)">
+			<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Noboru's Cudgel" GiverId="6196" GiverType="Item" />
+		</If>
+
+		<!-- REVIEW Q1392 Noboru the Cudgel: start item 6196 Noboru's Cudgel has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1392)) &amp;&amp; (IsQuestCompleted(1392)))">
+			<TurnIn QuestName="Noboru the Cudgel" QuestId="1392" TurnInName="Magtoor" TurnInId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		</If>
+
+		<If Condition="((HasQuest(1392)) &amp;&amp; (!IsQuestCompleted(1392)))">
+			<AbandonQuest QuestId="1392" />
+		</If>
+
+		<PickUp QuestName="Draenethyst Crystals" QuestId="1389" GiverName="Magtoor" GiverId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		<PickUp QuestName="Lack of Surplus" QuestId="698" GiverName="Dar" GiverId="5591" X="-10495.7" Y="-3248.14" Z="21.1127" />
+		<PickUp QuestName="Little Morsels" QuestId="9440" GiverName="Cersei Dusksinger" GiverId="17109" X="-10461.1" Y="-3319.65" Z="20.9641" />
+		<PickUp QuestName="Pool of Tears" QuestId="1424" GiverName="Fel'zerul" GiverId="1443" X="-10458.5" Y="-3322.33" Z="40.037" />
+		<PickUp QuestName="Neeka Bloodscar" QuestId="1418" GiverName="Helgrum the Swift" GiverId="1442" X="-10465" Y="-3317.89" Z="40.037" />
+		<Objective QuestName="Pool of Tears" QuestId="1424" Type="CollectItem" ItemId="6175" CollectCount="5" />
 		<Objective QuestName="Lack of Surplus" QuestId="698" Type="CollectItem" ItemId="6169" CollectCount="8" />
-		<TurnIn QuestName="Lack of Surplus" QuestId="698" TurnInName="Tok'Kar" TurnInId="5592" />
+		<TurnIn QuestName="Lack of Surplus" QuestId="698" TurnInName="Tok'Kar" TurnInId="5592" X="-10859" Y="-4088.09" Z="22.3127" />
 		<If Condition="Me.Level &lt; 41">
 			<SetGrindArea>
 				<GrindArea>
@@ -76,21 +158,35 @@
 			</SetGrindArea>
 			<GrindTo Level="41" />
 		</If>
-		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))" >
+
+		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))">
 			<CustomBehavior File="UseItemOn" QuestId="9440" MobId="17113" ItemId="23659" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-9960.04" Y="-3610.3" Z="21.7858" />
 		</While>
-		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))" >
+
+		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))">
 			<CustomBehavior File="UseItemOn" QuestId="9440" MobId="17113" ItemId="23659" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-9960.04" Y="-3610.3" Z="21.7858" />
 		</While>
-		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))" >
+
+		<While Condition="((HasQuest(9440)) &amp;&amp; (!IsQuestCompleted(9440)))">
 			<CustomBehavior File="UseItemOn" QuestId="9440" MobId="17113" ItemId="23659" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-9960.04" Y="-3610.3" Z="21.7858" />
 		</While>
+
 		<Objective QuestName="Draenethyst Crystals" QuestId="1389" Type="CollectItem" ItemId="6071" CollectCount="6" />
-		<TurnIn QuestName="Draenethyst Crystals" QuestId="1389" TurnInName="Magtoor" TurnInId="1776" />
-		<TurnIn QuestName="Little Morsels" QuestId="9440" TurnInName="Cersei Dusksinger" TurnInId="17109" />
-		<TurnIn QuestName="Pool of Tears" QuestId="1424" TurnInName="Fel'zerul" TurnInId="1443" />
-		<PickUp QuestName="The Atal'ai Exile" QuestId="1429" GiverName="Fel'zerul" GiverId="1443" />
-		<TurnIn QuestName="Parts of the Swarm" QuestId="1184" TurnInName="Belgrom Rockmaul" TurnInId="4485" />
+		<TurnIn QuestName="Draenethyst Crystals" QuestId="1389" TurnInName="Magtoor" TurnInId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		<Objective QuestName="Little Morsels" QuestId="9440" Type="KillMob" MobId="17111" KillCount="1" />
+		<Objective QuestName="Little Morsels" QuestId="9440" Type="KillMob" MobId="17112" KillCount="1" />
+		<TurnIn QuestName="Little Morsels" QuestId="9440" TurnInName="Cersei Dusksinger" TurnInId="17109" X="-10461.1" Y="-3319.65" Z="20.9641" />
+		<TurnIn QuestName="Pool of Tears" QuestId="1424" TurnInName="Fel'zerul" TurnInId="1443" X="-10458.5" Y="-3322.33" Z="40.037" />
+		<PickUp QuestName="The Atal'ai Exile" QuestId="1429" GiverName="Fel'zerul" GiverId="1443" X="-10458.5" Y="-3322.33" Z="40.037" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Parts of the Swarm" QuestId="1184" TurnInName="Belgrom Rockmaul" TurnInId="4485" X="1953.59" Y="-4735.77" Z="48.7374" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Badlands (41-42)" />
 	</QuestOrder>
 </HBProfile>

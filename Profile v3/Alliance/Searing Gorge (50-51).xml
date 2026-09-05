@@ -1,48 +1,54 @@
 <HBProfile>
 	<Name>Searing Gorge (50-51)</Name>
-	<MinLevel>50</MinLevel>
-	<MaxLevel>51</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Graw Cornerstone" Entry="11703" Type="Repair" X="-7215.12" Y="-1248.97" Z="254.75" />
+		<Vendor Name="Hegnar Rumbleshot" Entry="1243" Type="Repair" X="-6015.51" Y="-201.511" Z="407.437" />
+		<Vendor Name="Frast Dokner" Entry="1698" Type="Repair" X="-5714.37" Y="-1589.52" Z="383.226" />
+		<Vendor Name="Kazan Mogosh" Entry="1237" Type="Food" X="-5671.19" Y="-1577.15" Z="383.329" />
+		<Vendor Name="Innkeeper Belm" Entry="1247" Type="Food" X="-5601.6" Y="-531.203" Z="399.737" />
+		<Vendor Name="Gabrielle Chase" Entry="3298" Type="Food" X="-8354.43" Y="-2734.1" Z="185.179" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
-	<Quest Id="7724" Name="Fiery Menace!">
-		<Objective Type="KillMob" MobId="5858" KillCount="20">
-			<Hotspots>
-				<Hotspot X="-6595.89" Y="-1170.97" Z="273.366" />
-				<Hotspot X="-6707.2" Y="-1015.16" Z="243.576" />
-				<Hotspot X="-6751.83" Y="-980.873" Z="240.564" />
-				<Hotspot X="-6692.21" Y="-1043.04" Z="243.047" />
-				<Hotspot X="-6765.86" Y="-950.991" Z="243.282" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="7723" Name="Curse These Fat Fingers">
 		<Objective Type="KillMob" MobId="5854" KillCount="20">
 			<Hotspots>
-				<Hotspot X="-7014.28" Y="-1138.36" Z="242.304" />
-				<Hotspot X="-6913.02" Y="-1227.42" Z="178.381" />
+				<Hotspot X="-7014.28" Y="-1138.36" Z="242.3" />
+				<Hotspot X="-6913.02" Y="-1227.42" Z="178.38" />
 				<Hotspot X="-6981.74" Y="-1477.09" Z="241.75" />
-				<Hotspot X="-7022.67" Y="-1152.27" Z="242.906" />
-				<Hotspot X="-6675.88" Y="-1458.57" Z="243.511" />
+				<Hotspot X="-7022.67" Y="-1152.27" Z="242.91" />
+				<Hotspot X="-6675.88" Y="-1458.57" Z="243.51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7724" Name="Fiery Menace!">
+		<Objective Type="KillMob" MobId="5858" KillCount="20">
+			<Hotspots>
+				<Hotspot X="-6595.89" Y="-1170.97" Z="273.37" />
+				<Hotspot X="-6707.2" Y="-1015.16" Z="243.58" />
+				<Hotspot X="-6751.83" Y="-980.87" Z="240.56" />
+				<Hotspot X="-6692.21" Y="-1043.04" Z="243.05" />
+				<Hotspot X="-6765.86" Y="-950.99" Z="243.28" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -50,10 +56,67 @@
 		<Objective Type="KillMob" MobId="9318" KillCount="20">
 			<Hotspots>
 				<Hotspot X="-6655.48" Y="-1477.95" Z="167.87" />
-				<Hotspot X="-6599.41" Y="-1463.01" Z="166.355" />
-				<Hotspot X="-6678.41" Y="-1438.05" Z="167.703" />
-				<Hotspot X="-6534.55" Y="-1464.63" Z="147.686" />
-				<Hotspot X="-6485.05" Y="-1446.41" Z="151.352" />
+				<Hotspot X="-6599.41" Y="-1463.01" Z="166.35" />
+				<Hotspot X="-6678.41" Y="-1438.05" Z="167.7" />
+				<Hotspot X="-6534.55" Y="-1464.63" Z="147.69" />
+				<Hotspot X="-6485.05" Y="-1446.41" Z="151.35" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7701" Name="WANTED: Overseer Maltorius">
+		<Objective Type="CollectItem" ItemId="18946" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Overseer Maltorius" Id="14621" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6633.88" Y="-1232.66" Z="209.84" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7728" Name="STOLEN: Smithing Tuyere and Lookout's Spyglass">
+		<Objective Type="CollectItem" ItemId="18960" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Iron Lookout" Id="8566" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6636.48" Y="-1233.76" Z="209.84" />
+				<Hotspot X="-6891.74" Y="-1077.37" Z="245.65" />
+				<Hotspot X="-6920.98" Y="-1049.45" Z="240.12" />
+				<Hotspot X="-6928.61" Y="-1437.12" Z="247.39" />
+				<Hotspot X="-6999.77" Y="-1147.93" Z="249.68" />
+				<Hotspot X="-6938.17" Y="-1480.73" Z="236.39" />
+				<Hotspot X="-7024" Y="-1107.26" Z="240.18" />
+				<Hotspot X="-7034.83" Y="-1277.28" Z="242.27" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18959" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Iron Steamsmith" Id="5840" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6827.47" Y="-1221.97" Z="240.15" />
+				<Hotspot X="-6851.24" Y="-1168.92" Z="240.74" />
+				<Hotspot X="-6868.71" Y="-1281.88" Z="242.89" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7729" Name="JOB OPPORTUNITY: Culling the Competition">
+		<Objective Type="KillMob" MobId="5846" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-6860.7" Y="-1227.1" Z="176.5" />
+				<Hotspot X="-6906.5" Y="-1326.17" Z="178.63" />
+				<Hotspot X="-6872.4" Y="-1322.4" Z="243.14" />
+				<Hotspot X="-6475.93" Y="-1360.2" Z="212.19" />
+				<Hotspot X="-6570.24" Y="-1307.18" Z="208.66" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5844" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-6981.63" Y="-1177.12" Z="225.56" />
+				<Hotspot X="-6983.18" Y="-1174.53" Z="225.55" />
+				<Hotspot X="-6873" Y="-1286.76" Z="243.02" />
+				<Hotspot X="-6478.69" Y="-1363.26" Z="212.11" />
+				<Hotspot X="-6703.07" Y="-1278.2" Z="241.08" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -67,34 +130,115 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="7729" Name="JOB OPPORTUNITY: Culling the Competition">
-		<Objective Type="KillMob" MobId="5846" KillCount="15">
+	<Quest Id="3442" Name="The Flawless Flame">
+		<Objective Type="CollectItem" ItemId="10509" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Blazing Elemental" Id="5850" />
+				<Mob Name="Inferno Elemental" Id="5852" />
+				<Mob Name="Magma Elemental" Id="5855" />
+				<Mob Name="Scald" Id="8281" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-6860.7" Y="-1227.1" Z="176.497" />
-				<Hotspot X="-6906.5" Y="-1326.17" Z="178.632" />
-				<Hotspot X="-6872.4" Y="-1322.4" Z="243.141" />
-				<Hotspot X="-6475.93" Y="-1360.2" Z="212.189" />
-				<Hotspot X="-6570.24" Y="-1307.18" Z="208.655" />
+				<Hotspot X="-6715.62" Y="-1185.73" Z="240.4" />
+				<Hotspot X="-6646.35" Y="-1230.8" Z="248.81" />
+				<Hotspot X="-6674.35" Y="-1270.89" Z="239.57" />
+				<Hotspot X="-6691.89" Y="-1110.44" Z="241.22" />
+				<Hotspot X="-6811.14" Y="-1337.88" Z="167.39" />
+				<Hotspot X="-6752.4" Y="-1013.48" Z="237.93" />
+				<Hotspot X="-6931.85" Y="-1197.47" Z="144.88" />
+				<Hotspot X="-6835.42" Y="-1394.65" Z="169.78" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="5844" KillCount="15">
+		<Objective Type="CollectItem" ItemId="10511" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Tempered War Golem" Id="5853" />
+				<Mob Name="Heavy War Golem" Id="5854" />
+				<Mob Name="Magma Elemental" Id="5855" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-6981.63" Y="-1177.12" Z="225.561" />
-				<Hotspot X="-6983.18" Y="-1174.53" Z="225.548" />
-				<Hotspot X="-6873.0" Y="-1286.76" Z="243.016" />
-				<Hotspot X="-6478.69" Y="-1363.26" Z="212.107" />
-				<Hotspot X="-6703.07" Y="-1278.2" Z="241.081" />
+				<Hotspot X="-6715.62" Y="-1185.73" Z="240.4" />
+				<Hotspot X="-6715.64" Y="-1252.52" Z="242.07" />
+				<Hotspot X="-6674.35" Y="-1270.89" Z="239.57" />
+				<Hotspot X="-6756.99" Y="-1212.31" Z="245.06" />
+				<Hotspot X="-6700.22" Y="-1109.86" Z="242.92" />
+				<Hotspot X="-6771.64" Y="-1153.67" Z="243.4" />
+				<Hotspot X="-6754.87" Y="-1288.1" Z="241.83" />
+				<Hotspot X="-6670.61" Y="-1340.48" Z="173.43" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3443" Name="Forging the Shaft">
+		<Objective Type="CollectItem" ItemId="10551" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dark Iron Geologist" Id="5839" />
+				<Mob Name="Dark Iron Steamsmith" Id="5840" />
+				<Mob Name="Slave Worker" Id="5843" />
+				<Mob Name="Dark Iron Slaver" Id="5844" />
+				<Mob Name="Dark Iron Taskmaster" Id="5846" />
+				<Mob Name="Dark Iron Lookout" Id="8566" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6687.59" Y="-1195.69" Z="183.02" />
+				<Hotspot X="-6656.76" Y="-1159.11" Z="185.49" />
+				<Hotspot X="-6643.02" Y="-1229.65" Z="186.35" />
+				<Hotspot X="-6708.05" Y="-1122.57" Z="185.59" />
+				<Hotspot X="-6724.61" Y="-1261.5" Z="206.24" />
+				<Hotspot X="-6762.52" Y="-1190.7" Z="185.82" />
+				<Hotspot X="-6628.78" Y="-1276.55" Z="208.74" />
+				<Hotspot X="-6584.67" Y="-1253.06" Z="196.37" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3452" Name="The Flame's Casing">
+		<Objective Type="CollectItem" ItemId="10552" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Dark Shaman" Id="5860" />
+				<Mob Name="Twilight Fire Guard" Id="5861" />
+				<Mob Name="Twilight Geomancer" Id="5862" />
+				<Mob Name="Twilight Idolater" Id="8419" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6490.6" Y="-986.65" Z="336.49" />
+				<Hotspot X="-6480.51" Y="-962.81" Z="335.25" />
+				<Hotspot X="-6660.64" Y="-869.75" Z="251.06" />
+				<Hotspot X="-6610.6" Y="-872.69" Z="244.77" />
+				<Hotspot X="-6473.01" Y="-914.23" Z="328.84" />
+				<Hotspot X="-6692.13" Y="-836.98" Z="244.65" />
+				<Hotspot X="-6623.97" Y="-844.38" Z="244.27" />
+				<Hotspot X="-6501.26" Y="-860.88" Z="323.64" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3463" Name="Set Them Ablaze!">
+		<Objective Type="UseObject" ObjectId="149025" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-7002.62" Y="-1118.75" Z="258.79" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="149030" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-7005.99" Y="-1305.4" Z="259.5" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="149031" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-6914.24" Y="-1440.12" Z="257.25" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="149032" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-6910.33" Y="-1066.01" Z="257.72" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="4449" Name="Caught!">
 		<Objective Type="KillMob" MobId="5839" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-6981.44" Y="-1743.3" Z="242.696" />
-				<Hotspot X="-6986.0" Y="-1729.99" Z="241.659" />
-				<Hotspot X="-7012.38" Y="-1731.65" Z="234.099" />
-				<Hotspot X="-6998.33" Y="-1748.73" Z="234.196" />
-				<Hotspot X="-7023.96" Y="-1721.88" Z="241.764" />
+				<Hotspot X="-6981.44" Y="-1743.3" Z="242.7" />
+				<Hotspot X="-6986" Y="-1729.99" Z="241.66" />
+				<Hotspot X="-7012.38" Y="-1731.65" Z="234.1" />
+				<Hotspot X="-6998.33" Y="-1748.73" Z="234.2" />
+				<Hotspot X="-7023.96" Y="-1721.88" Z="241.76" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -136,32 +280,63 @@
 				<Hotspot X="-69.08" Y="-3117.58" Z="100.22" />
 				<Hotspot X="-67.85" Y="-3153.98" Z="97.69" />
 				<Hotspot X="-49.44" Y="-3140.39" Z="100.7" />
-				<Hotspot X="-46.25" Y="-3174.9" Z="100.0" />
+				<Hotspot X="-46.25" Y="-3174.9" Z="100" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Searing Gorge (50-51) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(7723))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Curse These Fat Fingers" QuestId="7723" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="Fiery Menace!" QuestId="7724" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="Incendosaurs? Whateverosaur is More Like It" QuestId="7727" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="WANTED: Overseer Maltorius" QuestId="7701" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" GiverName="Hansel Heavyhands" GiverId="14627" />
-		<PickUp QuestName="What the Flux?" QuestId="7722" GiverName="Master Smith Burninate" GiverId="14624" />
-		<PickUp QuestName="Divine Retribution" QuestId="3441" GiverName="Kalaran Windblade" GiverId="8479" />
-		<TurnIn QuestName="Divine Retribution" QuestId="3441" TurnInName="Kalaran Windblade" TurnInId="8479" />
-		<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" />
+		<PickUp QuestName="Curse These Fat Fingers" QuestId="7723" GiverName="Hansel Heavyhands" GiverId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<PickUp QuestName="Fiery Menace!" QuestId="7724" GiverName="Hansel Heavyhands" GiverId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<PickUp QuestName="Incendosaurs? Whateverosaur is More Like It" QuestId="7727" GiverName="Hansel Heavyhands" GiverId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<PickUp QuestName="WANTED: Overseer Maltorius" QuestId="7701" GiverName="Wanted/Missing/Lost &amp; Found" GiverId="179827" GiverType="Object" X="-6493.8" Y="-1162.98" Z="309.189" />
+		<PickUp QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" GiverName="Wanted/Missing/Lost &amp; Found" GiverId="179827" GiverType="Object" X="-6493.8" Y="-1162.98" Z="309.189" />
+		<PickUp QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" GiverName="Wanted/Missing/Lost &amp; Found" GiverId="179827" GiverType="Object" X="-6493.8" Y="-1162.98" Z="309.189" />
+		<PickUp QuestName="What the Flux?" QuestId="7722" GiverName="Master Smith Burninate" GiverId="14624" X="-6524.04" Y="-1188.72" Z="309.338" />
+		<PickUp QuestName="Divine Retribution" QuestId="3441" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<TurnIn QuestName="Divine Retribution" QuestId="3441" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18960" CollectCount="1" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18959" CollectCount="1" />
-		<Objective QuestName="The Key to Freedom" QuestId="4451" Type="CollectItem" ItemId="11818" CollectCount="1" />
-		<PickUp QuestName="The Key to Freedom" QuestId="4451" GiverName="Kalaran Windblade" GiverId="8479" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+			<CustomBehavior File="CollectThings" CollectItemId="11818" CollectItemCount="1" HuntingGroundRadius="120" MobId="5840" MobId2="5844" MobId3="5846" MobId4="8566" MobId5="15692" X="-6664.575" Y="-1187.865" Z="182.6125">
+				<Hotspot X="-6664.57" Y="-1187.87" Z="182.61" />
+				<Hotspot X="-6689.6" Y="-1159.43" Z="184.91" />
+				<Hotspot X="-6636.48" Y="-1233.76" Z="209.84" />
+				<Hotspot X="-6730.63" Y="-1123.36" Z="185.57" />
+				<Hotspot X="-6749.3" Y="-1229.09" Z="181.93" />
+				<Hotspot X="-6701.82" Y="-1281.58" Z="241.02" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+			<PickUp QuestName="The Key to Freedom" QuestId="4451" GiverName="Grimesilt Outhouse Key" GiverId="11818" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10511" CollectCount="4" />
 		<Objective QuestName="The Flawless Flame" QuestId="3442" Type="CollectItem" ItemId="10509" CollectCount="4" />
-		<TurnIn QuestName="The Flawless Flame" QuestId="3442" TurnInName="Kalaran Windblade" TurnInId="8479" />
-		<PickUp QuestName="Forging the Shaft" QuestId="3443" GiverName="Kalaran Windblade" GiverId="8479" />
+		<TurnIn QuestName="The Flawless Flame" QuestId="3442" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<PickUp QuestName="Forging the Shaft" QuestId="3443" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		<Objective QuestName="Fiery Menace!" QuestId="7724" Type="KillMob" MobId="5858" KillCount="20" />
 		<Objective QuestName="Curse These Fat Fingers" QuestId="7723" Type="KillMob" MobId="5854" KillCount="20" />
 		<Objective QuestName="Incendosaurs? Whateverosaur is More Like It" QuestId="7727" Type="KillMob" MobId="9318" KillCount="20" />
@@ -170,49 +345,59 @@
 		<Objective QuestName="Forging the Shaft" QuestId="3443" Type="CollectItem" ItemId="10551" CollectCount="8" />
 		<Objective QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" Type="KillMob" MobId="5846" KillCount="15" />
 		<Objective QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" Type="KillMob" MobId="5844" KillCount="15" />
-		<TurnIn QuestName="WANTED: Overseer Maltorius" QuestId="7701" TurnInName="Lookout Captain Lolo Longstriker" TurnInId="14634" />
-		<TurnIn QuestName="Curse These Fat Fingers" QuestId="7723" TurnInName="Hansel Heavyhands" TurnInId="14627" />
-		<TurnIn QuestName="Fiery Menace!" QuestId="7724" TurnInName="Hansel Heavyhands" TurnInId="14627" />
-		<TurnIn QuestName="Incendosaurs? Whateverosaur is More Like It" QuestId="7727" TurnInName="Hansel Heavyhands" TurnInId="14627" />
-		<TurnIn QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" TurnInName="Taskmaster Scrange" TurnInId="14626" />
-		<TurnIn QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" TurnInName="Taskmaster Scrange" TurnInId="14626" />
-		<TurnIn QuestName="What the Flux?" QuestId="7722" TurnInName="Master Smith Burninate" TurnInId="14624" />
-		<TurnIn QuestName="Forging the Shaft" QuestId="3443" TurnInName="Kalaran Windblade" TurnInId="8479" />
-		<PickUp QuestName="The Flame's Casing" QuestId="3452" GiverName="Kalaran Windblade" GiverId="8479" />
+		<TurnIn QuestName="WANTED: Overseer Maltorius" QuestId="7701" TurnInName="Lookout Captain Lolo Longstriker" TurnInId="14634" X="-6495.11" Y="-1164.92" Z="309.276" />
+		<TurnIn QuestName="Curse These Fat Fingers" QuestId="7723" TurnInName="Hansel Heavyhands" TurnInId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<TurnIn QuestName="Fiery Menace!" QuestId="7724" TurnInName="Hansel Heavyhands" TurnInId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<TurnIn QuestName="Incendosaurs? Whateverosaur is More Like It" QuestId="7727" TurnInName="Hansel Heavyhands" TurnInId="14627" X="-6513.62" Y="-1183.78" Z="309.338" />
+		<TurnIn QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" TurnInName="Taskmaster Scrange" TurnInId="14626" X="-6509.16" Y="-1192.52" Z="309.338" />
+		<TurnIn QuestName="JOB OPPORTUNITY: Culling the Competition" QuestId="7729" TurnInName="Taskmaster Scrange" TurnInId="14626" X="-6509.16" Y="-1192.52" Z="309.338" />
+		<TurnIn QuestName="What the Flux?" QuestId="7722" TurnInName="Master Smith Burninate" TurnInId="14624" X="-6524.04" Y="-1188.72" Z="309.338" />
+		<TurnIn QuestName="Forging the Shaft" QuestId="3443" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<PickUp QuestName="The Flame's Casing" QuestId="3452" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		<Objective QuestName="The Flame's Casing" QuestId="3452" Type="CollectItem" ItemId="10552" CollectCount="1" />
-		<TurnIn QuestName="The Flame's Casing" QuestId="3452" TurnInName="Kalaran Windblade" TurnInId="8479" />
-		<PickUp QuestName="The Torch of Retribution" QuestId="3453" GiverName="Kalaran Windblade" GiverId="8479" />
-		<TurnIn QuestName="The Torch of Retribution" QuestId="3453" TurnInName="Kalaran Windblade" TurnInId="8479" />
-		<PickUp QuestName="The Torch of Retribution" QuestId="3454" GiverName="Kalaran Windblade" GiverId="8479" />
+		<TurnIn QuestName="The Flame's Casing" QuestId="3452" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<PickUp QuestName="The Torch of Retribution" QuestId="3453" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<TurnIn QuestName="The Torch of Retribution" QuestId="3453" TurnInName="Kalaran Windblade" TurnInId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<PickUp QuestName="The Torch of Retribution" QuestId="3454" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		<!-- Quest 3454 (The Torch of Retribution) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Squire Maltrake" QuestId="3462" GiverName="Kalaran Windblade" GiverId="8479" />
-		<TurnIn QuestName="Squire Maltrake" QuestId="3462" TurnInName="Squire Maltrake" TurnInId="8509" />
-		<PickUp QuestName="Set Them Ablaze!" QuestId="3463" GiverName="Squire Maltrake" GiverId="8509" />
+		<PickUp QuestName="Squire Maltrake" QuestId="3462" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
+		<TurnIn QuestName="Squire Maltrake" QuestId="3462" TurnInName="Squire Maltrake" TurnInId="8509" X="-6680.07" Y="-1196.85" Z="240.329" />
+		<PickUp QuestName="Set Them Ablaze!" QuestId="3463" GiverName="Squire Maltrake" GiverId="8509" X="-6680.07" Y="-1196.85" Z="240.329" />
 		<!-- Quest 4451 (The Key to Freedom) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Caught!" QuestId="4449" GiverName="Squire Maltrake" GiverId="8509" />
+		<PickUp QuestName="Caught!" QuestId="4449" GiverName="Wooden Outhouse" GiverId="173265" GiverType="Object" X="-7024.78" Y="-1786.5" Z="265.828" />
 		<Objective QuestName="Caught!" QuestId="4449" Type="KillMob" MobId="5839" KillCount="8" />
 		<!-- Quest 4449 (Caught!) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Suntara Stones" QuestId="3367" GiverName="Dorius Stonetender" GiverId="8284" />
+		<PickUp QuestName="Suntara Stones" QuestId="3367" GiverName="Dorius Stonetender" GiverId="8284" X="-7007.21" Y="-1749.16" Z="234.182" />
 		<!-- Quest 3367 (Suntara Stones) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Suntara Stones" QuestId="3368" GiverName="Dorius Stonetender" GiverId="8284" />
-		<TurnIn QuestName="Set Them Ablaze!" QuestId="3463" TurnInName="Squire Maltrake" TurnInId="8509" />
-		<PickUp QuestName="Trinkets..." QuestId="3481" GiverName="Squire Maltrake" GiverId="8509" />
+		<PickUp QuestName="Suntara Stones" QuestId="3368" GiverName="Singed Letter" GiverId="175704" GiverType="Object" />
+		<Objective QuestName="Set Them Ablaze!" QuestId="3463" Type="UseObject" ObjectId="149025" UseCount="1" />
+		<Objective QuestName="Set Them Ablaze!" QuestId="3463" Type="UseObject" ObjectId="149030" UseCount="1" />
+		<Objective QuestName="Set Them Ablaze!" QuestId="3463" Type="UseObject" ObjectId="149031" UseCount="1" />
+		<Objective QuestName="Set Them Ablaze!" QuestId="3463" Type="UseObject" ObjectId="149032" UseCount="1" />
+		<TurnIn QuestName="Set Them Ablaze!" QuestId="3463" TurnInName="Squire Maltrake" TurnInId="8509" X="-6680.07" Y="-1196.85" Z="240.329" />
+		<PickUp QuestName="Trinkets..." QuestId="3481" GiverName="Hoard of the Black Dragonflight" GiverId="149502" GiverType="Object" X="-6679.93" Y="-1189.67" Z="240.115" />
 		<!-- Quest 3481 (Trinkets...) — TurnIn Object not in 3.3.5a -->
 		<Objective QuestName="A Taste of Flame" QuestId="4022" Type="CollectItem" ItemId="10575" CollectCount="1" />
-		<Objective QuestName="Report Back to Fizzlebub" QuestId="1122" Type="CollectItem" ItemId="5807" CollectCount="1" />
-		<Objective QuestName="Deliver to MacKinley" QuestId="2874" Type="CollectItem" ItemId="9245" CollectCount="1" />
 		<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
 		<Objective QuestName="The Stone Circle" QuestId="3444" Type="CollectItem" ItemId="10556" CollectCount="1" />
 		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
-		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" />
-		<TurnIn QuestName="Report Back to Fizzlebub" QuestId="1122" TurnInName="Crank Fizzlebub" TurnInId="2498" />
-		<TurnIn QuestName="Deliver to MacKinley" QuestId="2874" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" />
-		<TurnIn QuestName="Sprinkle's Secret Ingredient" QuestId="2641" TurnInName="Sprinkle" TurnInId="7583" />
-		<PickUp QuestName="Delivery for Marin" QuestId="2661" GiverName="Sprinkle" GiverId="7583" />
-		<TurnIn QuestName="Delivery for Marin" QuestId="2661" TurnInName="Marin Noggenfogger" TurnInId="7564" />
-		<PickUp QuestName="Noggenfogger Elixir" QuestId="2662" GiverName="Marin Noggenfogger" GiverId="7564" />
-		<TurnIn QuestName="Noggenfogger Elixir" QuestId="2662" TurnInName="Marin Noggenfogger" TurnInId="7564" />
-		<TurnIn QuestName="The Stone Circle" QuestId="3444" TurnInName="Marvon Rivetseeker" TurnInId="7771" />
+		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" X="-14463.6" Y="489.274" Z="15.205" />
+		<TurnIn QuestName="Report Back to Fizzlebub" QuestId="1122" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<TurnIn QuestName="Deliver to MacKinley" QuestId="2874" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Sprinkle's Secret Ingredient" QuestId="2641" TurnInName="Sprinkle" TurnInId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
+		<PickUp QuestName="Delivery for Marin" QuestId="2661" GiverName="Sprinkle" GiverId="7583" X="-7111.11" Y="-3741.78" Z="8.6093" />
+		<TurnIn QuestName="Delivery for Marin" QuestId="2661" TurnInName="Marin Noggenfogger" TurnInId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<PickUp QuestName="Noggenfogger Elixir" QuestId="2662" GiverName="Marin Noggenfogger" GiverId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<TurnIn QuestName="Noggenfogger Elixir" QuestId="2662" TurnInName="Marin Noggenfogger" TurnInId="7564" X="-7193.42" Y="-3793.48" Z="9.7621" />
+		<TurnIn QuestName="The Stone Circle" QuestId="3444" TurnInName="Marvon Rivetseeker" TurnInId="7771" X="-7987.52" Y="-3855.62" Z="17.8158" />
 		<CustomBehavior File="LoadProfile" ProfileName="Un'Goro Crater (51-52)" />
 	</QuestOrder>
 </HBProfile>

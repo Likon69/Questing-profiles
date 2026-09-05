@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Western Plaguelands (52-52)</Name>
-	<MinLevel>52</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,50 +16,105 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Veron Amberstill" Entry="6929" Type="Repair" X="1633.99" Y="-4439.37" Z="15.7436" />
-		<Vendor Name="Innkeeper Grilka" Entry="6928" Type="Food" X="340.362" Y="-4686.29" Z="16.5411" />
+		<Vendor Name="Innkeeper Grosk" Entry="6928" Type="Food" X="340.362" Y="-4686.29" Z="16.5411" />
+		<Vendor Name="Leonard Porter" Entry="12942" Type="Repair" X="949.885" Y="-1435.65" Z="62.6731" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Truk Wildbeard" Entry="4782" Type="Food" X="380.805" Y="-2128.05" Z="121.09" />
+		<Vendor Name="Harggan" Entry="8161" Type="Repair" X="333.705" Y="-2091.51" Z="131.647" />
+		<Vendor Name="Thanthaldis Snowgleam" Entry="13217" Type="Repair" X="-24.1885" Y="-321.177" Z="131.224" />
+		<Vendor Name="Barkeep Kelly" Entry="2366" Type="Food" X="-849.45" Y="-583.486" Z="11.6872" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="5092" Name="Clear the Way">
 		<Objective Type="KillMob" MobId="1783" KillCount="10">
 			<Hotspots>
-				<Hotspot X="1748.61" Y="-1229.87" Z="59.776" />
-				<Hotspot X="1824.06" Y="-1222.59" Z="59.4233" />
-				<Hotspot X="1036.06" Y="-1702.13" Z="62.9725" />
-				<Hotspot X="1170.24" Y="-1716.64" Z="61.1124" />
-				<Hotspot X="992.87" Y="-1652.63" Z="74.4687" />
+				<Hotspot X="1748.61" Y="-1229.87" Z="59.78" />
+				<Hotspot X="1824.06" Y="-1222.59" Z="59.42" />
+				<Hotspot X="1036.06" Y="-1702.13" Z="62.97" />
+				<Hotspot X="1170.24" Y="-1716.64" Z="61.11" />
+				<Hotspot X="992.87" Y="-1652.63" Z="74.47" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="1791" KillCount="10">
 			<Hotspots>
-				<Hotspot X="1783.24" Y="-1254.47" Z="59.8564" />
-				<Hotspot X="1755.85" Y="-1177.83" Z="59.5505" />
-				<Hotspot X="1792.8" Y="-1163.52" Z="60.0441" />
-				<Hotspot X="1059.46" Y="-1748.46" Z="61.6662" />
-				<Hotspot X="1180.93" Y="-1729.29" Z="60.8177" />
+				<Hotspot X="1783.24" Y="-1254.47" Z="59.86" />
+				<Hotspot X="1755.85" Y="-1177.83" Z="59.55" />
+				<Hotspot X="1792.8" Y="-1163.52" Z="60.04" />
+				<Hotspot X="1059.46" Y="-1748.46" Z="61.67" />
+				<Hotspot X="1180.93" Y="-1729.29" Z="60.82" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="978" Name="Moontouched Wildkin">
+		<Objective Type="CollectItem" ItemId="12383" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Auberdine" Id="12901" />
+				<GameObject Name="Moontouched Feather" Id="175407" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6449.28" Y="-2468.18" Z="562.06" />
+				<Hotspot X="6324.26" Y="-2402.99" Z="553.21" />
+				<Hotspot X="6391.78" Y="-2459.59" Z="546.22" />
+				<Hotspot X="6483.27" Y="-2547.05" Z="579.53" />
+				<Hotspot X="6378.06" Y="-2542.62" Z="538.35" />
+				<Hotspot X="6439.02" Y="-2589.94" Z="563.53" />
+				<Hotspot X="6307.61" Y="-2513.79" Z="543.32" />
+				<Hotspot X="6433.75" Y="-2644.12" Z="553.28" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Western Plaguelands (52-52) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(5092))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="A Call to Arms: The Plaguelands!" QuestId="5090" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" />
-		<PickUp QuestName="Clear the Way" QuestId="5092" GiverName="Commander Ashlam Valorfist" GiverId="10838" />
+		<TurnIn QuestName="A Call to Arms: The Plaguelands!" QuestId="5090" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" X="957.713" Y="-1419.47" Z="66.347" />
+		<PickUp QuestName="Clear the Way" QuestId="5092" GiverName="Commander Ashlam Valorfist" GiverId="10838" X="957.713" Y="-1419.47" Z="66.347" />
 		<Objective QuestName="Clear the Way" QuestId="5092" Type="KillMob" MobId="1783" KillCount="10" />
 		<Objective QuestName="Clear the Way" QuestId="5092" Type="KillMob" MobId="1791" KillCount="10" />
-		<TurnIn QuestName="Clear the Way" QuestId="5092" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" />
-		<PickUp QuestName="The Scourge Cauldrons" QuestId="5215" GiverName="Commander Ashlam Valorfist" GiverId="10838" />
-		<TurnIn QuestName="The Scourge Cauldrons" QuestId="5215" TurnInName="High Priestess MacDonnell" TurnInId="11053" />
-		<TurnIn QuestName="Favored of Elune?" QuestId="3661" TurnInName="Erelas Ambersky" TurnInId="7916" />
-		<PickUp QuestName="Moontouched Wildkin" QuestId="978" GiverName="Erelas Ambersky" GiverId="7916" />
-		<TurnIn QuestName="The Super Snapper FX" QuestId="2944" TurnInName="Daryn Lightwind" TurnInId="7907" />
-		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" />
-		<PickUp QuestName="March of the Silithid" QuestId="4493" GiverName="Gracina Spiritmight" GiverId="7740" />
+		<TurnIn QuestName="Clear the Way" QuestId="5092" TurnInName="Commander Ashlam Valorfist" TurnInId="10838" X="957.713" Y="-1419.47" Z="66.347" />
+		<PickUp QuestName="The Scourge Cauldrons" QuestId="5215" GiverName="Commander Ashlam Valorfist" GiverId="10838" X="957.713" Y="-1419.47" Z="66.347" />
+		<TurnIn QuestName="The Scourge Cauldrons" QuestId="5215" TurnInName="High Priestess MacDonnell" TurnInId="11053" X="944.298" Y="-1431.14" Z="64.0076" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+				<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Favored of Elune?" QuestId="3661" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<PickUp QuestName="Moontouched Wildkin" QuestId="978" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<Objective QuestName="Moontouched Wildkin" QuestId="978" Type="CollectItem" ItemId="12383" CollectCount="10" />
+		<TurnIn QuestName="The Super Snapper FX" QuestId="2944" TurnInName="Daryn Lightwind" TurnInId="7907" X="8701.16" Y="993.116" Z="23.5854" />
+		<TurnIn QuestName="Rise of the Silithid" QuestId="162" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
+		<PickUp QuestName="March of the Silithid" QuestId="4493" GiverName="Gracina Spiritmight" GiverId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
 		<CustomBehavior File="LoadProfile" ProfileName="Felwood (52-53)" />
 	</QuestOrder>
 </HBProfile>

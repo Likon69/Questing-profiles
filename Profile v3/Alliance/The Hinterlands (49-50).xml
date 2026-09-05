@@ -1,27 +1,33 @@
 <HBProfile>
 	<Name>The Hinterlands (49-50)</Name>
-	<MinLevel>49</MinLevel>
-	<MaxLevel>50</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Harggan" Entry="8161" Type="Repair" X="333.705" Y="-2091.51" Z="131.647" />
+		<Vendor Name="Samuel Hawke" Entry="15127" Type="Repair" X="-1218.48" Y="-2521.56" Z="21.9227" />
+		<Vendor Name="Truk Wildbeard" Entry="4782" Type="Food" X="380.805" Y="-2128.05" Z="121.09" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Narj Deepslice" Entry="2814" Type="Food" X="-1275.9" Y="-2506.19" Z="21.9792" />
+		<Vendor Name="Jannos Ironwill" Entry="1471" Type="Repair" X="-1278.57" Y="-2522" Z="21.4577" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="3444" Name="The Stone Circle">
@@ -34,35 +40,74 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="9471" Name="Preying on the Predators">
-		<Objective Type="KillMob" MobId="2923" KillCount="10">
+	<Quest Id="2988" Name="Witherbark Cages">
+		<Objective Type="UseObject" ObjectId="144066" UseCount="1">
 			<Hotspots>
-				<Hotspot X="245.741" Y="-2409.22" Z="129.106" />
-				<Hotspot X="76.3837" Y="-2156.37" Z="103.981" />
-				<Hotspot X="38.9945" Y="-2158.36" Z="111.859" />
-				<Hotspot X="62.7463" Y="-2205.18" Z="105.637" />
-				<Hotspot X="153.571" Y="-2441.92" Z="126.785" />
+				<Hotspot X="-42.83" Y="-2471.28" Z="119.41" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="2924" KillCount="5">
+		<Objective Type="UseObject" ObjectId="144067" UseCount="1">
 			<Hotspots>
-				<Hotspot X="311.847" Y="-2954.5" Z="112.283" />
-				<Hotspot X="337.197" Y="-2963.14" Z="116.99" />
-				<Hotspot X="190.246" Y="-3010.89" Z="123.753" />
-				<Hotspot X="335.966" Y="-2921.4" Z="115.268" />
-				<Hotspot X="282.95" Y="-2886.99" Z="107.503" />
+				<Hotspot X="-43.07" Y="-2465.5" Z="119.38" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="144068" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-4.32" Y="-2806.49" Z="125.21" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2880" Name="Troll Necklace Bounty">
+		<Objective Type="CollectItem" ItemId="9259" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vilebranch Axe Thrower" Id="2639" />
+				<Mob Name="Vilebranch Witch Doctor" Id="2640" />
+				<Mob Name="Vilebranch Headhunter" Id="2641" />
+				<Mob Name="Vilebranch Shadowcaster" Id="2642" />
+				<Mob Name="Vilebranch Berserker" Id="2643" />
+				<Mob Name="Vilebranch Hideskinner" Id="2644" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-211.39" Y="-3244.01" Z="120.81" />
+				<Hotspot X="-269.07" Y="-3249.97" Z="122.21" />
+				<Hotspot X="-121.08" Y="-3376.69" Z="125.21" />
+				<Hotspot X="-317.73" Y="-3319.46" Z="138.43" />
+				<Hotspot X="-251.15" Y="-3356.7" Z="140.57" />
+				<Hotspot X="-156.73" Y="-3435.2" Z="132.08" />
+				<Hotspot X="-316.81" Y="-3405.96" Z="165.36" />
+				<Hotspot X="-185.17" Y="-3519.14" Z="135.5" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="9470" Name="A Gesture of Goodwill">
 		<Objective Type="KillMob" MobId="17235" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-216.613" Y="-2523.13" Z="118.367" />
+				<Hotspot X="-216.61" Y="-2523.13" Z="118.37" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="17236" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-213.84" Y="-2525.19" Z="118.404" />
+				<Hotspot X="-213.84" Y="-2525.19" Z="118.4" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9471" Name="Preying on the Predators">
+		<Objective Type="KillMob" MobId="2923" KillCount="10">
+			<Hotspots>
+				<Hotspot X="245.74" Y="-2409.22" Z="129.11" />
+				<Hotspot X="76.38" Y="-2156.37" Z="103.98" />
+				<Hotspot X="38.99" Y="-2158.36" Z="111.86" />
+				<Hotspot X="62.75" Y="-2205.18" Z="105.64" />
+				<Hotspot X="153.57" Y="-2441.92" Z="126.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2924" KillCount="5">
+			<Hotspots>
+				<Hotspot X="311.85" Y="-2954.5" Z="112.28" />
+				<Hotspot X="337.2" Y="-2963.14" Z="116.99" />
+				<Hotspot X="190.25" Y="-3010.89" Z="123.75" />
+				<Hotspot X="335.97" Y="-2921.4" Z="115.27" />
+				<Hotspot X="282.95" Y="-2886.99" Z="107.5" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -80,6 +125,26 @@
 				<Hotspot X="-400.91" Y="-2957.13" Z="94.3" />
 				<Hotspot X="-399.68" Y="-2958.68" Z="94.38" />
 				<Hotspot X="-398.89" Y="-2957.72" Z="94.68" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2877" Name="Skulk Rock Clean-up">
+		<Objective Type="KillMob" MobId="2655" KillCount="10">
+			<Hotspots>
+				<Hotspot X="419.69" Y="-3756.2" Z="155.12" />
+				<Hotspot X="363.36" Y="-3876.68" Z="105.66" />
+				<Hotspot X="367.49" Y="-3892.53" Z="103.39" />
+				<Hotspot X="337.01" Y="-3713.52" Z="106.6" />
+				<Hotspot X="321.75" Y="-3719.41" Z="106.69" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2656" KillCount="10">
+			<Hotspots>
+				<Hotspot X="374.25" Y="-3752.94" Z="158.71" />
+				<Hotspot X="418.25" Y="-3844.48" Z="142.76" />
+				<Hotspot X="376.69" Y="-3897.29" Z="101.43" />
+				<Hotspot X="356.16" Y="-3854.42" Z="106.73" />
+				<Hotspot X="373.64" Y="-3821.84" Z="163.07" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -111,27 +176,7 @@
 				<Hotspot X="-69.08" Y="-3117.58" Z="100.22" />
 				<Hotspot X="-67.85" Y="-3153.98" Z="97.69" />
 				<Hotspot X="-49.44" Y="-3140.39" Z="100.7" />
-				<Hotspot X="-46.25" Y="-3174.9" Z="100.0" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="2877" Name="Skulk Rock Clean-up">
-		<Objective Type="KillMob" MobId="2655" KillCount="10">
-			<Hotspots>
-				<Hotspot X="419.692" Y="-3756.2" Z="155.12" />
-				<Hotspot X="363.363" Y="-3876.68" Z="105.661" />
-				<Hotspot X="367.486" Y="-3892.53" Z="103.393" />
-				<Hotspot X="337.009" Y="-3713.52" Z="106.598" />
-				<Hotspot X="321.75" Y="-3719.41" Z="106.689" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2656" KillCount="10">
-			<Hotspots>
-				<Hotspot X="374.251" Y="-3752.94" Z="158.711" />
-				<Hotspot X="418.245" Y="-3844.48" Z="142.764" />
-				<Hotspot X="376.69" Y="-3897.29" Z="101.433" />
-				<Hotspot X="356.16" Y="-3854.42" Z="106.73" />
-				<Hotspot X="373.638" Y="-3821.84" Z="163.075" />
+				<Hotspot X="-46.25" Y="-3174.9" Z="100" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -152,51 +197,101 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="3701" Name="The Smoldering Ruins of Thaurissan">
+		<Objective Type="UseObject" ObjectId="153556" UseCount="12">
+			<Hotspots>
+				<Hotspot X="-7715.64" Y="-1846.73" Z="135.94" />
+				<Hotspot X="-7741.42" Y="-1948.2" Z="136.46" />
+				<Hotspot X="-7716.94" Y="-2033.14" Z="133.44" />
+				<Hotspot X="-7793.45" Y="-1804.18" Z="132.18" />
+				<Hotspot X="-7779.31" Y="-1855.2" Z="134.13" />
+				<Hotspot X="-7800.4" Y="-1900.31" Z="135.09" />
+				<Hotspot X="-7725.99" Y="-2125.54" Z="133.44" />
+				<Hotspot X="-7766.91" Y="-2013.52" Z="135.34" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to The Hinterlands (49-50) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(2988))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6257" CollectCount="3" />
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6258" CollectCount="3" />
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6259" CollectCount="3" />
 		<Objective QuestName="The Stone Circle" QuestId="3444" Type="CollectItem" ItemId="10556" CollectCount="1" />
-		<PickUp QuestName="Witherbark Cages" QuestId="2988" GiverName="Gryphon Master Talonaxe" GiverId="5636" />
-		<PickUp QuestName="Troll Necklace Bounty" QuestId="2880" GiverName="Fraggar Thundermantle" GiverId="7884" />
-		<PickUp QuestName="Featherbeard's Endorsement" QuestId="9469" GiverName="Ambassador Rualeth" GiverId="17223" />
-		<PickUp QuestName="A Gesture of Goodwill" QuestId="9470" GiverName="Ambassador Rualeth" GiverId="17223" />
-		<PickUp QuestName="Preying on the Predators" QuestId="9471" GiverName="Ambassador Rualeth" GiverId="17223" />
+		<PickUp QuestName="Witherbark Cages" QuestId="2988" GiverName="Gryphon Master Talonaxe" GiverId="5636" X="325.182" Y="-1950.5" Z="197.708" />
+		<PickUp QuestName="Troll Necklace Bounty" QuestId="2880" GiverName="Fraggar Thundermantle" GiverId="7884" X="322.773" Y="-2146.14" Z="123.311" />
+		<PickUp QuestName="Featherbeard's Endorsement" QuestId="9469" GiverName="Ambassador Rualeth" GiverId="17223" X="254.952" Y="-2156.55" Z="120.151" />
+		<PickUp QuestName="A Gesture of Goodwill" QuestId="9470" GiverName="Ambassador Rualeth" GiverId="17223" X="254.952" Y="-2156.55" Z="120.151" />
+		<PickUp QuestName="Preying on the Predators" QuestId="9471" GiverName="Ambassador Rualeth" GiverId="17223" X="254.952" Y="-2156.55" Z="120.151" />
 		<!-- Quest 9469 (Featherbeard's Endorsement) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="In Pursuit of Featherbeard" QuestId="9476" GiverName="Ambassador Rualeth" GiverId="17223" />
+		<PickUp QuestName="In Pursuit of Featherbeard" QuestId="9476" GiverName="Featherbeard's Journal" GiverId="181649" GiverType="Object" X="48.7021" Y="-2092.3" Z="111.45" />
 		<Objective QuestName="Preying on the Predators" QuestId="9471" Type="KillMob" MobId="2923" KillCount="10" />
-		<TurnIn QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" TurnInName="Rhapsody Shindigger" TurnInId="5634" />
+		<TurnIn QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" TurnInName="Rhapsody Shindigger" TurnInId="5634" X="219.598" Y="-2612.21" Z="160.449" />
 		<Objective QuestName="Preying on the Predators" QuestId="9471" Type="KillMob" MobId="2924" KillCount="5" />
 		<Objective QuestName="Troll Necklace Bounty" QuestId="2880" Type="CollectItem" ItemId="9259" CollectCount="5" />
 		<Objective QuestName="A Gesture of Goodwill" QuestId="9470" Type="KillMob" MobId="17235" KillCount="1" />
 		<Objective QuestName="A Gesture of Goodwill" QuestId="9470" Type="KillMob" MobId="17236" KillCount="1" />
 		<!-- Quest 9476 (In Pursuit of Featherbeard) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Reclaiming the Eggs" QuestId="9475" GiverName="Rhapsody Shindigger" GiverId="5634" />
+		<PickUp QuestName="Reclaiming the Eggs" QuestId="9475" GiverName="Featherbeard's Remains" GiverId="181643" GiverType="Object" X="-369.673" Y="-3005.33" Z="111.792" />
 		<Objective QuestName="Reclaiming the Eggs" QuestId="9475" Type="CollectItem" ItemId="23694" CollectCount="5" />
-		<TurnIn QuestName="A Gesture of Goodwill" QuestId="9470" TurnInName="Ambassador Rualeth" TurnInId="17223" />
-		<TurnIn QuestName="Preying on the Predators" QuestId="9471" TurnInName="Ambassador Rualeth" TurnInId="17223" />
-		<TurnIn QuestName="Reclaiming the Eggs" QuestId="9475" TurnInName="Ambassador Rualeth" TurnInId="17223" />
-		<TurnIn QuestName="Troll Necklace Bounty" QuestId="2880" TurnInName="Fraggar Thundermantle" TurnInId="7884" />
-		<PickUp QuestName="Skulk Rock Clean-up" QuestId="2877" GiverName="Fraggar Thundermantle" GiverId="7884" />
-		<TurnIn QuestName="Witherbark Cages" QuestId="2988" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" />
-		<PickUp QuestName="The Altar of Zul" QuestId="2989" GiverName="Gryphon Master Talonaxe" GiverId="5636" />
+		<TurnIn QuestName="A Gesture of Goodwill" QuestId="9470" TurnInName="Ambassador Rualeth" TurnInId="17223" X="254.952" Y="-2156.55" Z="120.151" />
+		<TurnIn QuestName="Preying on the Predators" QuestId="9471" TurnInName="Ambassador Rualeth" TurnInId="17223" X="254.952" Y="-2156.55" Z="120.151" />
+		<TurnIn QuestName="Reclaiming the Eggs" QuestId="9475" TurnInName="Ambassador Rualeth" TurnInId="17223" X="254.952" Y="-2156.55" Z="120.151" />
+		<TurnIn QuestName="Troll Necklace Bounty" QuestId="2880" TurnInName="Fraggar Thundermantle" TurnInId="7884" X="322.773" Y="-2146.14" Z="123.311" />
+		<PickUp QuestName="Skulk Rock Clean-up" QuestId="2877" GiverName="Fraggar Thundermantle" GiverId="7884" X="322.773" Y="-2146.14" Z="123.311" />
+		<Objective QuestName="Witherbark Cages" QuestId="2988" Type="UseObject" ObjectId="144066" UseCount="1" />
+		<Objective QuestName="Witherbark Cages" QuestId="2988" Type="UseObject" ObjectId="144067" UseCount="1" />
+		<Objective QuestName="Witherbark Cages" QuestId="2988" Type="UseObject" ObjectId="144068" UseCount="1" />
+		<TurnIn QuestName="Witherbark Cages" QuestId="2988" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" X="325.182" Y="-1950.5" Z="197.708" />
+		<PickUp QuestName="The Altar of Zul" QuestId="2989" GiverName="Gryphon Master Talonaxe" GiverId="5636" X="325.182" Y="-1950.5" Z="197.708" />
 		<Objective QuestName="Favored of Elune?" QuestId="3661" Type="CollectItem" ItemId="10819" CollectCount="15" />
 		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2655" KillCount="10" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2656" KillCount="10" />
-		<PickUp QuestName="Find OOX-09/HL!" QuestId="485" GiverName="Gryphon Master Talonaxe" GiverId="5636" />
-		<TurnIn QuestName="Find OOX-09/HL!" QuestId="485" TurnInName="Homing Robot OOX-09/HL" TurnInId="7806" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 8704)">
+			<CustomBehavior File="CollectThings" CollectItemId="8704" CollectItemCount="1" HuntingGroundRadius="120" MobId="2505" MobId2="2639" MobId3="2640" MobId4="2641" MobId5="2642" MobId6="2643" X="-211.391" Y="-3244.01" Z="120.811">
+				<Hotspot X="-211.39" Y="-3244.01" Z="120.81" />
+				<Hotspot X="-269.07" Y="-3249.97" Z="122.21" />
+				<Hotspot X="-121.08" Y="-3376.69" Z="125.21" />
+				<Hotspot X="-317.73" Y="-3319.46" Z="138.43" />
+				<Hotspot X="-251.15" Y="-3356.7" Z="140.57" />
+				<Hotspot X="-156.73" Y="-3435.2" Z="132.08" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 8704)">
+			<PickUp QuestName="Find OOX-09/HL!" QuestId="485" GiverName="OOX-09/HL Distress Beacon" GiverId="8704" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Find OOX-09/HL!" QuestId="485" TurnInName="Homing Robot OOX-09/HL" TurnInId="7806" X="500.159" Y="-3475.07" Z="116.513" />
 		<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
 		<Objective QuestName="The Super Snapper FX" QuestId="2944" Type="CollectItem" ItemId="9330" CollectCount="1" />
-		<TurnIn QuestName="Cortello's Riddle" QuestId="626" TurnInName="Object_2556" TurnInType="Object" TurnInId="2556" />
-		<TurnIn QuestName="Skulk Rock Clean-up" QuestId="2877" TurnInName="Fraggar Thundermantle" TurnInId="7884" />
-		<TurnIn QuestName="The Altar of Zul" QuestId="2989" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" />
-		<PickUp QuestName="The Smoldering Ruins of Thaurissan" QuestId="3702" GiverName="Royal Historian Archesonus" GiverId="8879" />
-		<TurnIn QuestName="The Smoldering Ruins of Thaurissan" QuestId="3702" TurnInName="Royal Historian Archesonus" TurnInId="8879" />
-		<PickUp QuestName="The Smoldering Ruins of Thaurissan" QuestId="3701" GiverName="Royal Historian Archesonus" GiverId="8879" />
+		<TurnIn QuestName="Cortello's Riddle" QuestId="626" TurnInName="Cortello's Treasure" TurnInType="Object" TurnInId="2556" X="264.878" Y="-4685.26" Z="-8.5783" />
+		<TurnIn QuestName="Skulk Rock Clean-up" QuestId="2877" TurnInName="Fraggar Thundermantle" TurnInId="7884" X="322.773" Y="-2146.14" Z="123.311" />
+		<TurnIn QuestName="The Altar of Zul" QuestId="2989" TurnInName="Gryphon Master Talonaxe" TurnInId="5636" X="325.182" Y="-1950.5" Z="197.708" />
+		<PickUp QuestName="The Smoldering Ruins of Thaurissan" QuestId="3702" GiverName="Royal Historian Archesonus" GiverId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
+		<TurnIn QuestName="The Smoldering Ruins of Thaurissan" QuestId="3702" TurnInName="Royal Historian Archesonus" TurnInId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
+		<PickUp QuestName="The Smoldering Ruins of Thaurissan" QuestId="3701" GiverName="Royal Historian Archesonus" GiverId="8879" X="-4861.04" Y="-1016.93" Z="505.798" />
+		<Objective QuestName="The Smoldering Ruins of Thaurissan" QuestId="3701" Type="UseObject" ObjectId="153556" UseCount="12" />
 		<Objective QuestName="Caught!" QuestId="4449" Type="CollectItem" ItemId="4306" CollectCount="15" />
 		<CustomBehavior File="LoadProfile" ProfileName="Searing Gorge (50-51)" />
 	</QuestOrder>

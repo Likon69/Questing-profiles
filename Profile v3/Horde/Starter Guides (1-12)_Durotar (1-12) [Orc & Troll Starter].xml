@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Starter Guides (1-12)\Durotar (1-12) [Orc &amp; Troll Starter]</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>12</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -27,37 +24,66 @@
 		<Vendor Name="Mai'ah" Entry="5884" Type="Train" TrainClass="Mage" X="-625.296" Y="-4210.17" Z="38.134087" />
 		<Vendor Name="Shikrik" Entry="3157" Type="Train" TrainClass="Shaman" X="-623.9393" Y="-4203.878" Z="38.13462" />
 		<Vendor Name="Rwag" Entry="3155" Type="Train" TrainClass="Rogue" X="-590.4197" Y="-4146.493" Z="41.259594" />
-		<Vendor Name="Karranisha" Entry="39214" Type="Train" TrainClass="Hunter" X="-635.4618" Y="-4227.521" Z="38.13442" />
 		<Vendor Name="Frang" Entry="3153" Type="Train" TrainClass="Warrior" X="-640.1024" Y="-4229.821" Z="38.13398" />
-		<Vendor Name="Nartok" Entry="3156" Type="Train" TrainClass="Warlock" X="-590.8021" Y="-4203.484" Z="38.42764" />
+		<Vendor Name="Nartok" Entry="3156" Type="Train" TrainClass="Warlock" X="-606.874" Y="-4111.87" Z="43.028" />
 		<!--Sen'jin Village Trainers-->
-		<Vendor Name="Bomsanchu" Entry="50002" Type="Train" TrainClass="Mage" X="-789.2239" Y="-4943.434" Z="38.28099" />
-		<Vendor Name="Cona" Entry="50011" Type="Train" TrainClass="Shaman" X="-841.7292" Y="-4937.272" Z="20.98561" />
-		<Vendor Name="Munalti" Entry="50015" Type="Train" TrainClass="Rogue" X="-778.5746" Y="-4926.359" Z="22.90205" />
-		<Vendor Name="Jamai" Entry="50004" Type="Train" TrainClass="Hunter" X="-790.0643" Y="-4908.497" Z="19.60824" />
-		<Vendor Name="Yeniss" Entry="50006" Type="Train" TrainClass="Warrior" X="-773.3785" Y="-4947.198" Z="22.881" />
-		<Vendor Name="Gusini" Entry="49998" Type="Train" TrainClass="Warlock" X="-785.9184" Y="-4939.8" Z="38.28124" />
-		<Vendor Name="Parata" Entry="50001" Type="Train" TrainClass="Priest" X="-784.3837" Y="-4944.821" Z="38.28099" />
-		<Vendor Name="Den'chulu" Entry="49997" Type="Train" TrainClass="Druid" X="-844.0104" Y="-4932.819" Z="20.98573" />
+		<Vendor Name="Grimtak" Entry="3881" Type="Food" X="305.722" Y="-4665.87" Z="16.527" />
+		<Vendor Name="Wuark" Entry="3167" Type="Repair" X="358.128" Y="-4706.73" Z="14.4772" />
+		<Vendor Name="Uhgar" Entry="3163" Type="Repair" X="382.365" Y="-4713.01" Z="16.1009" />
+		<Vendor Name="Cutac" Entry="3166" Type="Repair" X="367.885" Y="-4770.91" Z="12.5988" />
+		<Vendor Name="Hai'zan" Entry="3933" Type="Food" X="-786.558" Y="-4903.8" Z="19.6826" />
+		<Vendor Name="Bountiful Barrel" Entry="35342" Type="Food" X="1293.33" Y="-4420.44" Z="26.5897" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<!-- Quest hotspot blocks added to fix missing hotspot errors -->
 	<Quest Id="788" Name="Cutting Teeth">
-		<Objective Type="KillMob" MobId="3098" KillCount="10">
+		<Objective Type="KillMob" MobId="3098" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-349.288" Y="-4184.41" Z="59.1999" />
-				<Hotspot X="-519.185" Y="-4314.91" Z="39.3783" />
-				<Hotspot X="-382.127" Y="-4181.93" Z="56.4121" />
-				<Hotspot X="-415.534" Y="-4188.62" Z="51.1441" />
-				<Hotspot X="-308.834" Y="-4217.85" Z="52.5989" />
+				<Hotspot X="-349.29" Y="-4184.41" Z="59.2" />
+				<Hotspot X="-519.18" Y="-4314.91" Z="39.38" />
+				<Hotspot X="-382.13" Y="-4181.93" Z="56.41" />
+				<Hotspot X="-415.53" Y="-4188.62" Z="51.14" />
+				<Hotspot X="-308.83" Y="-4217.85" Z="52.6" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="792" Name="Vile Familiars">
+		<Objective Type="KillMob" MobId="3101" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-252.91" Y="-4381.57" Z="62.57" />
+				<Hotspot X="-213.2" Y="-4382.11" Z="63.66" />
+				<Hotspot X="-198.09" Y="-4333.76" Z="68.35" />
+				<Hotspot X="-211.55" Y="-4351.95" Z="64.49" />
+				<Hotspot X="-166.44" Y="-4320.16" Z="71.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="789" Name="Sting of the Scorpid">
+		<Objective Type="CollectItem" ItemId="4862" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Scorpid Worker" Id="3124" />
+				<Mob Name="Sarkoth" Id="3281" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-570.46" Y="-4138.01" Z="74.7" />
+				<Hotspot X="-600.24" Y="-4093.29" Z="75.02" />
+				<Hotspot X="-537.58" Y="-4104.69" Z="66.53" />
+				<Hotspot X="-512.27" Y="-4165.4" Z="77.34" />
+				<Hotspot X="-678.63" Y="-4130.08" Z="37.69" />
+				<Hotspot X="-518.96" Y="-4076.93" Z="69.87" />
+				<Hotspot X="-443.88" Y="-4141.73" Z="50.24" />
+				<Hotspot X="-437.57" Y="-4081.31" Z="51.32" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="4402" Name="Galgar's Cactus Apple Surprise">
-		<Objective Type="CollectItem" ItemId="11583" CollectCount="10">
+		<Objective Type="CollectItem" ItemId="11583" CollectCount="6">
 			<CollectFrom>
 				<GameObject Name="Cactus Apple" Id="171938" />
 			</CollectFrom>
@@ -73,39 +99,278 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="792" Name="Vile Familiars">
-		<Objective Type="KillMob" MobId="3101" KillCount="12">
+	<Quest Id="6394" Name="Thazz'ril's Pick">
+		<Objective Type="CollectItem" ItemId="16332" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Thazz'ril's Pick" Id="178087" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-252.915" Y="-4381.57" Z="62.5709" />
-				<Hotspot X="-213.201" Y="-4382.11" Z="63.6607" />
-				<Hotspot X="-198.088" Y="-4333.76" Z="68.3462" />
-				<Hotspot X="-211.553" Y="-4351.95" Z="64.4947" />
-				<Hotspot X="-166.438" Y="-4320.16" Z="71.1002" />
+				<Hotspot X="-87.72" Y="-4274.56" Z="65.9" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="790" Name="Sarkoth">
+		<Objective Type="CollectItem" ItemId="4905" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sarkoth" Id="3281" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-547.34" Y="-4103.85" Z="70.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="794" Name="Burning Blade Medallion">
+		<Objective Type="CollectItem" ItemId="4859" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Yarrog Baneshadow" Id="3183" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-58.18" Y="-4220.64" Z="62.34" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1516" Name="Call of Earth">
+		<Objective Type="CollectItem" ItemId="6640" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Felstalker" Id="3102" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-142.25" Y="-4236.41" Z="58.25" />
+				<Hotspot X="-148.68" Y="-4363.93" Z="66.9" />
+				<Hotspot X="-118.38" Y="-4299.8" Z="64.53" />
+				<Hotspot X="-89.55" Y="-4208.53" Z="51.55" />
+				<Hotspot X="-114.12" Y="-4328.78" Z="66.03" />
+				<Hotspot X="-89.87" Y="-4249.98" Z="51.74" />
+				<Hotspot X="-51.23" Y="-4323.6" Z="69" />
+				<Hotspot X="-28.91" Y="-4249.9" Z="67.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="786" Name="Thwarting Kolkar Aggression">
+		<Objective Type="UseObject" ObjectId="3189" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-1056.98" Y="-4596.39" Z="25.82" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="3190" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-917.84" Y="-4482.29" Z="29.58" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="3192" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-974.43" Y="-4406.92" Z="29.26" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="808" Name="Minshina's Skull">
+		<Objective Type="CollectItem" ItemId="4864" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Imprisoned Darkspear" Id="3237" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1287.29" Y="-5528.7" Z="15.21" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="826" Name="Zalazane">
+		<Objective Type="KillMob" MobId="3207" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-1152.97" Y="-5446.21" Z="8.71" />
+				<Hotspot X="-1118.81" Y="-5485.68" Z="7.91" />
+				<Hotspot X="-1204.26" Y="-5512.3" Z="5.65" />
+				<Hotspot X="-1136.4" Y="-5558.18" Z="9.54" />
+				<Hotspot X="-1268.11" Y="-5480.83" Z="4.72" />
+				<Hotspot X="-1220.26" Y="-5552.95" Z="5.54" />
+				<Hotspot X="-1138.31" Y="-5597.88" Z="7.72" />
+				<Hotspot X="-1317.58" Y="-5520.55" Z="4.23" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3206" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-1110.47" Y="-5447.91" Z="9.72" />
+				<Hotspot X="-1093.29" Y="-5537.48" Z="11.03" />
+				<Hotspot X="-1247.7" Y="-5448.08" Z="5.47" />
+				<Hotspot X="-1094.85" Y="-5579.36" Z="11.18" />
+				<Hotspot X="-1256.86" Y="-5514.49" Z="6.11" />
+				<Hotspot X="-1150.68" Y="-5587.03" Z="12.12" />
+				<Hotspot X="-1285.31" Y="-5508.77" Z="8.47" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4866" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Zalazane" Id="3205" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1286.96" Y="-5534.33" Z="15.2" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="818" Name="A Solvent Spirit">
+		<Objective Type="CollectItem" ItemId="4888" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Pygmy Surf Crawler" Id="3106" />
+				<Mob Name="Surf Crawler" Id="3107" />
+				<Mob Name="Encrusted Surf Crawler" Id="3108" />
+				<Mob Name="Corrupted Surf Crawler" Id="3228" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-943.1" Y="-4986.07" Z="6.46" />
+				<Hotspot X="-992.14" Y="-4951.4" Z="-0.41" />
+				<Hotspot X="-969.56" Y="-5039.14" Z="-4.74" />
+				<Hotspot X="-1015.37" Y="-4902.7" Z="-1.07" />
+				<Hotspot X="-785.42" Y="-5122.69" Z="-2.48" />
+				<Hotspot X="-1077.7" Y="-4866.24" Z="-0.15" />
+				<Hotspot X="-1107.5" Y="-4825.97" Z="-0.16" />
+				<Hotspot X="-657.21" Y="-5185.14" Z="-2.71" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4887" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Makrura Clacker" Id="3103" />
+				<Mob Name="Makrura Shellhide" Id="3104" />
+				<Mob Name="Makrura Snapclaw" Id="3105" />
+				<Mob Name="Makrura Elder" Id="3141" />
+				<Mob Name="Slimeshell Makrura" Id="6020" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-744.02" Y="-5118.75" Z="-0.68" />
+				<Hotspot X="-1012.46" Y="-4994.26" Z="-6.21" />
+				<Hotspot X="-861.49" Y="-5146.85" Z="-6.32" />
+				<Hotspot X="-782.62" Y="-5149.96" Z="-7.59" />
+				<Hotspot X="-714.95" Y="-5151.59" Z="-2.92" />
+				<Hotspot X="-747.65" Y="-5190.88" Z="-9.44" />
+				<Hotspot X="-918.01" Y="-5190.05" Z="-1.41" />
+				<Hotspot X="-1112.06" Y="-4874.9" Z="-11.53" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="817" Name="Practical Prey">
+		<Objective Type="CollectItem" ItemId="4892" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Durotar Tiger" Id="3121" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1012.25" Y="-5144.59" Z="2.5" />
+				<Hotspot X="-1092.71" Y="-5170.71" Z="1.19" />
+				<Hotspot X="-1127.64" Y="-5126.02" Z="3.53" />
+				<Hotspot X="-1177.98" Y="-5114.76" Z="3.25" />
+				<Hotspot X="-1047.05" Y="-5383.41" Z="8.13" />
+				<Hotspot X="-1020.3" Y="-5413.44" Z="3.54" />
+				<Hotspot X="-1319.94" Y="-5180" Z="1.36" />
+				<Hotspot X="-1056.33" Y="-5446.19" Z="8.04" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="806" Name="Dark Storms">
+		<Objective Type="CollectItem" ItemId="4869" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Fizzle Darkstorm" Id="3203" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="868.61" Y="-4189.56" Z="-14.03" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="784" Name="Vanquish the Betrayers">
 		<Objective Type="KillMob" MobId="3128" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-272.464" Y="-5110.77" Z="25.2435" />
-				<Hotspot X="-218.587" Y="-5056.1" Z="21.2766" />
-				<Hotspot X="-266.264" Y="-5126.95" Z="24.3417" />
-				<Hotspot X="-85.9882" Y="-5052.96" Z="16.3209" />
-				<Hotspot X="-47.2603" Y="-5019.83" Z="13.3476" />
+				<Hotspot X="-272.46" Y="-5110.77" Z="25.24" />
+				<Hotspot X="-218.59" Y="-5056.1" Z="21.28" />
+				<Hotspot X="-266.26" Y="-5126.95" Z="24.34" />
+				<Hotspot X="-85.99" Y="-5052.96" Z="16.32" />
+				<Hotspot X="-47.26" Y="-5019.83" Z="13.35" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3129" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-191.896" Y="-5092.67" Z="22.1366" />
-				<Hotspot X="-230.775" Y="-5123.68" Z="42.5604" />
-				<Hotspot X="-253.491" Y="-5052.29" Z="21.317" />
-				<Hotspot X="-242.195" Y="-5114.24" Z="25.2436" />
-				<Hotspot X="17.5113" Y="-4951.48" Z="14.3885" />
+				<Hotspot X="-191.9" Y="-5092.67" Z="22.14" />
+				<Hotspot X="-230.78" Y="-5123.68" Z="42.56" />
+				<Hotspot X="-253.49" Y="-5052.29" Z="21.32" />
+				<Hotspot X="-242.19" Y="-5114.24" Z="25.24" />
+				<Hotspot X="17.51" Y="-4951.48" Z="14.39" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3192" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-245.52" Y="-5119.95" Z="42.6406" />
+				<Hotspot X="-245.52" Y="-5119.95" Z="42.64" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="837" Name="Encroachment">
+		<Objective Type="KillMob" MobId="3111" KillCount="4">
+			<Hotspots>
+				<Hotspot X="110.59" Y="-4572.87" Z="58.22" />
+				<Hotspot X="85.42" Y="-4543.75" Z="58.07" />
+				<Hotspot X="89.86" Y="-4548.56" Z="56.82" />
+				<Hotspot X="78.5" Y="-4623.69" Z="44.11" />
+				<Hotspot X="82.96" Y="-4643.34" Z="37.46" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3112" KillCount="4">
+			<Hotspots>
+				<Hotspot X="52.69" Y="-4613.99" Z="46.73" />
+				<Hotspot X="121.58" Y="-4477.19" Z="37.94" />
+				<Hotspot X="124.53" Y="-4582.72" Z="63.72" />
+				<Hotspot X="77.8" Y="-4562.97" Z="55.32" />
+				<Hotspot X="92.4" Y="-4572.77" Z="56.71" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3113" KillCount="4">
+			<Hotspots>
+				<Hotspot X="424.51" Y="-4228.85" Z="25.15" />
+				<Hotspot X="413.14" Y="-4243.35" Z="27.04" />
+				<Hotspot X="380.85" Y="-4282.82" Z="25.98" />
+				<Hotspot X="406.92" Y="-4288.94" Z="30.33" />
+				<Hotspot X="483.5" Y="-4148.08" Z="24.82" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3114" KillCount="4">
+			<Hotspots>
+				<Hotspot X="380.72" Y="-4248.74" Z="24.65" />
+				<Hotspot X="348.27" Y="-4282.86" Z="23.74" />
+				<Hotspot X="427.36" Y="-4215.38" Z="24.53" />
+				<Hotspot X="385.94" Y="-4221.34" Z="25.63" />
+				<Hotspot X="342.62" Y="-4230.38" Z="23.61" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="815" Name="Break a Few Eggs">
+		<Objective Type="CollectItem" ItemId="4890" CollectCount="3">
+			<CollectFrom>
+				<GameObject Name="Taillasher Eggs" Id="3240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1582.71" Y="-5246.67" Z="5.48" />
+				<Hotspot X="-1352.6" Y="-5123.35" Z="1.76" />
+				<Hotspot X="-1312.84" Y="-5571.7" Z="7.27" />
+				<Hotspot X="-1112.72" Y="-5152.75" Z="0.91" />
+				<Hotspot X="-1096.89" Y="-5395.87" Z="11.18" />
+				<Hotspot X="-1091.36" Y="-5623.13" Z="4.18" />
+				<Hotspot X="-953.29" Y="-5207.47" Z="3.64" />
+				<Hotspot X="-821.38" Y="-5646.5" Z="5.35" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="791" Name="Carry Your Weight">
+		<Objective Type="CollectItem" ItemId="4870" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Kolkar Drudge" Id="3119" />
+				<Mob Name="Kolkar Outrunner" Id="3120" />
+				<Mob Name="Kul Tiras Sailor" Id="3128" />
+				<Mob Name="Kul Tiras Marine" Id="3129" />
+				<Mob Name="Lieutenant Benedict" Id="3192" />
+				<Mob Name="Warlord Kolkanis" Id="5808" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="17.51" Y="-4951.48" Z="14.39" />
+				<Hotspot X="-18.87" Y="-4917.26" Z="16.75" />
+				<Hotspot X="-7.66" Y="-4982.83" Z="13.48" />
+				<Hotspot X="-59.81" Y="-4965.23" Z="20.96" />
+				<Hotspot X="-87.49" Y="-4920.75" Z="18.61" />
+				<Hotspot X="-47.26" Y="-5019.83" Z="13.35" />
+				<Hotspot X="-123.97" Y="-4973.15" Z="19.85" />
+				<Hotspot X="-86.95" Y="-5035.65" Z="16.44" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -129,65 +394,28 @@
 				<Hotspot X="-326.88" Y="-5268.09" Z="-8.12" />
 				<Hotspot X="-301.78" Y="-5263.56" Z="-7.68" />
 				<Hotspot X="-239.48" Y="-5306.62" Z="4.17" />
-				<Hotspot X="-212.0" Y="-5309.14" Z="-8.11" />
+				<Hotspot X="-212" Y="-5309.14" Z="-8.11" />
 				<Hotspot X="-177.2" Y="-5254.17" Z="-4.95" />
 				<Hotspot X="-175.51" Y="-5323.93" Z="-11.41" />
 				<Hotspot X="-170.6" Y="-5208.94" Z="-0.66" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="837" Name="Encroachment">
-		<Objective Type="KillMob" MobId="3111" KillCount="4">
-			<Hotspots>
-				<Hotspot X="110.593" Y="-4572.87" Z="58.2189" />
-				<Hotspot X="85.4167" Y="-4543.75" Z="58.0721" />
-				<Hotspot X="89.8585" Y="-4548.56" Z="56.8221" />
-				<Hotspot X="78.5015" Y="-4623.69" Z="44.1086" />
-				<Hotspot X="82.9627" Y="-4643.34" Z="37.4577" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="3112" KillCount="4">
-			<Hotspots>
-				<Hotspot X="52.693" Y="-4613.99" Z="46.7336" />
-				<Hotspot X="121.581" Y="-4477.19" Z="37.9417" />
-				<Hotspot X="124.53" Y="-4582.72" Z="63.7189" />
-				<Hotspot X="77.7998" Y="-4562.97" Z="55.3221" />
-				<Hotspot X="92.4038" Y="-4572.77" Z="56.7136" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="3113" KillCount="4">
-			<Hotspots>
-				<Hotspot X="424.512" Y="-4228.85" Z="25.1545" />
-				<Hotspot X="413.141" Y="-4243.35" Z="27.0356" />
-				<Hotspot X="380.849" Y="-4282.82" Z="25.978" />
-				<Hotspot X="406.918" Y="-4288.94" Z="30.3293" />
-				<Hotspot X="483.502" Y="-4148.08" Z="24.8225" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="3114" KillCount="4">
-			<Hotspots>
-				<Hotspot X="380.718" Y="-4248.74" Z="24.6459" />
-				<Hotspot X="348.268" Y="-4282.86" Z="23.7379" />
-				<Hotspot X="427.358" Y="-4215.38" Z="24.5284" />
-				<Hotspot X="385.936" Y="-4221.34" Z="25.6301" />
-				<Hotspot X="342.624" Y="-4230.38" Z="23.6101" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="815" Name="Break a Few Eggs">
-		<Objective Type="CollectItem" ItemId="4890" CollectCount="3">
+	<Quest Id="1498" Name="Path of Defense">
+		<Objective Type="CollectItem" ItemId="6486" CollectCount="5">
 			<CollectFrom>
-				<GameObject Name="Taillasher Eggs" Id="3240" />
+				<Mob Name="Thunder Lizard" Id="3130" />
+				<Mob Name="Lightning Hide" Id="3131" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-1582.71" Y="-5246.67" Z="5.48" />
-				<Hotspot X="-1352.6" Y="-5123.35" Z="1.76" />
-				<Hotspot X="-1312.84" Y="-5571.7" Z="7.27" />
-				<Hotspot X="-1112.72" Y="-5152.75" Z="0.91" />
-				<Hotspot X="-1096.89" Y="-5395.87" Z="11.18" />
-				<Hotspot X="-1091.36" Y="-5623.13" Z="4.18" />
-				<Hotspot X="-953.29" Y="-5207.47" Z="3.64" />
-				<Hotspot X="-821.38" Y="-5646.5" Z="5.35" />
+				<Hotspot X="714.08" Y="-4030.03" Z="-6.36" />
+				<Hotspot X="760.93" Y="-4031.09" Z="-6.43" />
+				<Hotspot X="810.43" Y="-4046.86" Z="-12.16" />
+				<Hotspot X="753.14" Y="-4106.68" Z="-10.18" />
+				<Hotspot X="803.1" Y="-4096.24" Z="-11.15" />
+				<Hotspot X="870.65" Y="-4037.13" Z="-13.24" />
+				<Hotspot X="924.02" Y="-4030.89" Z="-13.43" />
+				<Hotspot X="950.67" Y="-4099.73" Z="-11.51" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -198,6 +426,73 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="1464.4" Y="-4691.85" Z="6.53" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1504" Name="The Binding">
+		<Objective Type="KillMob" MobId="5676" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-252.92" Y="-4381.57" Z="62.57" />
+				<Hotspot X="-213.2" Y="-4382.11" Z="63.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1525" Name="Call of Fire">
+		<Objective Type="CollectItem" ItemId="5026" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Razormane Water Seeker" Id="3267" />
+				<Mob Name="Razormane Thornweaver" Id="3268" />
+				<Mob Name="Razormane Geomancer" Id="3269" />
+				<Mob Name="Razormane Mystic" Id="3271" />
+				<Mob Name="Razormane Seer" Id="3458" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-37.01" Y="-3396.21" Z="90.64" />
+				<Hotspot X="-80.76" Y="-3370.37" Z="93.26" />
+				<Hotspot X="-222.13" Y="-3317.44" Z="91.79" />
+				<Hotspot X="-22.13" Y="-3351.05" Z="92.68" />
+				<Hotspot X="-180.5" Y="-3298.4" Z="91.82" />
+				<Hotspot X="-115.32" Y="-3200.88" Z="93.61" />
+				<Hotspot X="-47.31" Y="-3169.03" Z="92.04" />
+				<Hotspot X="-94.91" Y="-3139.13" Z="91.97" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6652" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Cultist" Id="3199" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="870.8" Y="-4739.76" Z="32.31" />
+				<Hotspot X="915.81" Y="-4712.58" Z="21.87" />
+				<Hotspot X="928.53" Y="-4738.95" Z="20.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1526" Name="Call of Fire">
+		<Objective Type="CollectItem" ItemId="6655" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Minor Manifestation of Fire" Id="5893" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-246.26" Y="-4009.98" Z="187.29" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="816" Name="Lost But Not Forgotten">
+		<Objective Type="CollectItem" ItemId="4891" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dreadmaw Crocolisk" Id="3110" />
+				<Mob Name="Corrupted Dreadmaw Crocolisk" Id="3231" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="747.13" Y="-3825.58" Z="19.48" />
+				<Hotspot X="810.26" Y="-3828.33" Z="18.28" />
+				<Hotspot X="928.41" Y="-3837.91" Z="17.98" />
+				<Hotspot X="1027.2" Y="-3900.24" Z="18.19" />
+				<Hotspot X="883.76" Y="-3793.98" Z="16.04" />
+				<Hotspot X="786.58" Y="-3790.09" Z="16.65" />
+				<Hotspot X="982.75" Y="-3850.66" Z="16.23" />
+				<Hotspot X="670.63" Y="-3785.22" Z="15.77" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -221,263 +516,103 @@
 	<Quest Id="835" Name="Securing the Lines">
 		<Objective Type="KillMob" MobId="3118" KillCount="8">
 			<Hotspots>
-				<Hotspot X="953.471" Y="-4771.75" Z="23.5511" />
-				<Hotspot X="1096.48" Y="-4676.93" Z="16.547" />
-				<Hotspot X="1137.51" Y="-4689.39" Z="18.0381" />
-				<Hotspot X="1131.94" Y="-4673.4" Z="17.7543" />
-				<Hotspot X="1103.62" Y="-4698.06" Z="17.3793" />
+				<Hotspot X="953.47" Y="-4771.75" Z="23.55" />
+				<Hotspot X="1096.48" Y="-4676.93" Z="16.55" />
+				<Hotspot X="1137.51" Y="-4689.39" Z="18.04" />
+				<Hotspot X="1131.94" Y="-4673.4" Z="17.75" />
+				<Hotspot X="1103.62" Y="-4698.06" Z="17.38" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3117" KillCount="12">
 			<Hotspots>
-				<Hotspot X="1072.86" Y="-4681.6" Z="13.8102" />
-				<Hotspot X="935.446" Y="-4781.74" Z="21.9261" />
-				<Hotspot X="880.661" Y="-4815.5" Z="14.807" />
-				<Hotspot X="1036.55" Y="-4801.56" Z="13.5467" />
-				<Hotspot X="826.808" Y="-4813.78" Z="11.2454" />
+				<Hotspot X="1072.86" Y="-4681.6" Z="13.81" />
+				<Hotspot X="935.45" Y="-4781.74" Z="21.93" />
+				<Hotspot X="880.66" Y="-4815.5" Z="14.81" />
+				<Hotspot X="1036.55" Y="-4801.56" Z="13.55" />
+				<Hotspot X="826.81" Y="-4813.78" Z="11.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-
-
-	<Quest Id="6394" Name="Thazz'ril's Pick">
-		<Objective Type="CollectItem" ItemId="16332" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-88.00977" Y="-4275.6274" Z="65.49696" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<!-- Quest hotspot blocks added to fix missing hotspot errors -->
-
-	<Quest Id="789" Name="Sting of the Scorpid">
-		<Objective Type="CollectItem" ItemId="4862" CollectCount="10">
-			<Hotspots>
-				<Hotspot X="-349.29" Y="-4184.41" Z="59.20" />
-				<Hotspot X="-382.13" Y="-4181.93" Z="56.41" />
-				<Hotspot X="-415.53" Y="-4188.62" Z="51.14" />
-				<Hotspot X="-308.83" Y="-4217.85" Z="52.60" />
-				<Hotspot X="-519.19" Y="-4314.91" Z="39.38" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="790" Name="Sarkoth">
-		<Objective Type="CollectItem" ItemId="4905" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-380.00" Y="-4352.00" Z="55.00" />
-				<Hotspot X="-364.00" Y="-4335.00" Z="57.00" />
-				<Hotspot X="-349.29" Y="-4184.41" Z="59.20" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="791" Name="Carry Your Weight">
-		<Objective Type="CollectItem" ItemId="4870" CollectCount="8">
-			<Hotspots>
-				<Hotspot X="236.47" Y="-4818.39" Z="11.43" />
-				<Hotspot X="257.23" Y="-4855.71" Z="9.97" />
-				<Hotspot X="197.48" Y="-4870.11" Z="12.78" />
-				<Hotspot X="283.91" Y="-4789.44" Z="12.01" />
-				<Hotspot X="315.66" Y="-4822.55" Z="12.54" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="794" Name="Burning Blade Medallion">
-		<Objective Type="CollectItem" ItemId="4859" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="72.53" Y="-4614.87" Z="44.11" />
-				<Hotspot X="82.96" Y="-4643.34" Z="37.46" />
-				<Hotspot X="55.18" Y="-4634.22" Z="43.37" />
-				<Hotspot X="110.59" Y="-4572.87" Z="58.22" />
-				<Hotspot X="85.42" Y="-4543.75" Z="58.07" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="806" Name="Dark Storms">
-		<Objective Type="CollectItem" ItemId="4869" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="236.47" Y="-4818.39" Z="11.43" />
-				<Hotspot X="257.23" Y="-4855.71" Z="9.97" />
-				<Hotspot X="315.66" Y="-4822.55" Z="12.54" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="808" Name="Minshina's Skull">
-		<Objective Type="CollectItem" ItemId="4864" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-1582.71" Y="-5246.67" Z="5.48" />
-				<Hotspot X="-1552.34" Y="-5312.45" Z="3.21" />
-				<Hotspot X="-1524.88" Y="-5289.12" Z="4.07" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="813" Name="Finding the Antidote">
-		<Objective Type="CollectItem" ItemId="4886" CollectCount="4">
-			<Hotspots>
-				<Hotspot X="-1091.36" Y="-5623.13" Z="4.18" />
-				<Hotspot X="-953.29" Y="-5207.47" Z="3.64" />
-				<Hotspot X="-821.38" Y="-5646.50" Z="5.35" />
-				<Hotspot X="-1096.89" Y="-5395.87" Z="11.18" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="816" Name="Lost But Not Forgotten">
-		<Objective Type="CollectItem" ItemId="4891" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-1582.71" Y="-5246.67" Z="5.48" />
-				<Hotspot X="-1352.60" Y="-5123.35" Z="1.76" />
-				<Hotspot X="-1312.84" Y="-5571.70" Z="7.27" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="817" Name="Practical Prey">
-		<Objective Type="CollectItem" ItemId="4892" CollectCount="4">
-			<Hotspots>
-				<Hotspot X="-272.46" Y="-5110.77" Z="25.24" />
-				<Hotspot X="-218.59" Y="-5056.10" Z="21.28" />
-				<Hotspot X="-85.99" Y="-5052.96" Z="16.32" />
-				<Hotspot X="-47.26" Y="-5019.83" Z="13.35" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="818" Name="A Solvent Spirit">
-		<Objective Type="CollectItem" ItemId="4888" CollectCount="8">
-			<Hotspots>
-				<Hotspot X="-1091.36" Y="-5623.13" Z="4.18" />
-				<Hotspot X="-953.29" Y="-5207.47" Z="3.64" />
-				<Hotspot X="-821.38" Y="-5646.50" Z="5.35" />
-				<Hotspot X="-1112.72" Y="-5152.75" Z="0.91" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="4887" CollectCount="4">
-			<Hotspots>
-				<Hotspot X="-1091.36" Y="-5623.13" Z="4.18" />
-				<Hotspot X="-953.29" Y="-5207.47" Z="3.64" />
-				<Hotspot X="-821.38" Y="-5646.50" Z="5.35" />
-				<Hotspot X="-1112.72" Y="-5152.75" Z="0.91" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="826" Name="Zalazane">
-		<Objective Type="CollectItem" ItemId="4866" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-1582.71" Y="-5246.67" Z="5.48" />
-				<Hotspot X="-1552.34" Y="-5312.45" Z="3.21" />
-				<Hotspot X="-1524.88" Y="-5289.12" Z="4.07" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="827" Name="Skull Rock">
-		<Objective Type="CollectItem" ItemId="4871" CollectCount="6">
-			<Hotspots>
-				<Hotspot X="72.53" Y="-4614.87" Z="44.11" />
-				<Hotspot X="82.96" Y="-4643.34" Z="37.46" />
-				<Hotspot X="55.18" Y="-4634.22" Z="43.37" />
-				<Hotspot X="110.59" Y="-4572.87" Z="58.22" />
-				<Hotspot X="85.42" Y="-4543.75" Z="58.07" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1485" Name="Vile Familiars (Troll)">
-		<Objective Type="CollectItem" ItemId="6487" CollectCount="6">
-			<Hotspots>
-				<Hotspot X="-252.92" Y="-4381.57" Z="62.57" />
-				<Hotspot X="-213.20" Y="-4382.11" Z="63.66" />
-				<Hotspot X="-198.09" Y="-4333.76" Z="68.35" />
-				<Hotspot X="-211.55" Y="-4351.95" Z="64.49" />
-				<Hotspot X="-166.44" Y="-4320.16" Z="71.10" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1498" Name="Path of Defense">
-		<Objective Type="CollectItem" ItemId="6486" CollectCount="5">
-			<Hotspots>
-				<Hotspot X="-252.92" Y="-4381.57" Z="62.57" />
-				<Hotspot X="-213.20" Y="-4382.11" Z="63.66" />
-				<Hotspot X="-198.09" Y="-4333.76" Z="68.35" />
-				<Hotspot X="-166.44" Y="-4320.16" Z="71.10" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1504" Name="The Binding">
-		<Objective Type="KillMob" MobId="5676" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-252.92" Y="-4381.57" Z="62.57" />
-				<Hotspot X="-213.20" Y="-4382.11" Z="63.66" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1516" Name="Call of Earth">
-		<Objective Type="CollectItem" ItemId="6640" CollectCount="2">
-			<Hotspots>
-				<Hotspot X="-349.29" Y="-4184.41" Z="59.20" />
-				<Hotspot X="-382.13" Y="-4181.93" Z="56.41" />
-				<Hotspot X="-415.53" Y="-4188.62" Z="51.14" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1525" Name="Call of Fire (1)">
-		<Objective Type="CollectItem" ItemId="5026" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-349.29" Y="-4184.41" Z="59.20" />
-				<Hotspot X="-382.13" Y="-4181.93" Z="56.41" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="CollectItem" ItemId="6652" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-349.29" Y="-4184.41" Z="59.20" />
-				<Hotspot X="-382.13" Y="-4181.93" Z="56.41" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
-	<Quest Id="1526" Name="Call of Fire (2)">
-		<Objective Type="CollectItem" ItemId="6655" CollectCount="1">
-			<Hotspots>
-				<Hotspot X="-272.46" Y="-5110.77" Z="25.24" />
-				<Hotspot X="-218.59" Y="-5056.10" Z="21.28" />
-				<Hotspot X="-191.90" Y="-5092.67" Z="22.14" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-
 	<Quest Id="5726" Name="Hidden Enemies">
 		<Objective Type="CollectItem" ItemId="14544" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Fanatic" Id="3197" />
+				<Mob Name="Burning Blade Apprentice" Id="3198" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="72.53" Y="-4614.87" Z="44.11" />
-				<Hotspot X="82.96" Y="-4643.34" Z="37.46" />
-				<Hotspot X="110.59" Y="-4572.87" Z="58.22" />
-				<Hotspot X="85.42" Y="-4543.75" Z="58.07" />
+				<Hotspot X="866.28" Y="-4197.73" Z="-12.97" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="813" Name="Finding the Antidote">
+		<Objective Type="CollectItem" ItemId="4886" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Venomtail Scorpid" Id="3127" />
+				<Mob Name="Corrupted Scorpid" Id="3226" />
+				<Mob Name="Death Flayer" Id="5823" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1214.16" Y="-4288.04" Z="21.95" />
+				<Hotspot X="1310.66" Y="-4679.15" Z="21.74" />
+				<Hotspot X="1375.84" Y="-4790.47" Z="26.7" />
+				<Hotspot X="1209.35" Y="-4184.02" Z="24.33" />
+				<Hotspot X="1211.74" Y="-4131.34" Z="23.45" />
+				<Hotspot X="1158.69" Y="-4278.33" Z="21.38" />
+				<Hotspot X="1393.98" Y="-4838.57" Z="19.15" />
+				<Hotspot X="1188.64" Y="-4608.47" Z="18.48" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="827" Name="Skull Rock">
+		<Objective Type="CollectItem" ItemId="4871" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Burning Blade Thug" Id="3195" />
+				<Mob Name="Burning Blade Neophyte" Id="3196" />
+				<Mob Name="Burning Blade Fanatic" Id="3197" />
+				<Mob Name="Burning Blade Apprentice" Id="3198" />
+				<Mob Name="Burning Blade Cultist" Id="3199" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="927.84" Y="-4728.77" Z="20.93" />
+				<Hotspot X="849.34" Y="-4769.89" Z="37.56" />
+				<Hotspot X="870.9" Y="-4725.26" Z="31.5" />
+				<Hotspot X="901.92" Y="-4705.98" Z="23.76" />
+				<Hotspot X="814.17" Y="-4750.26" Z="36.46" />
+				<Hotspot X="1433.07" Y="-4770.82" Z="5.96" />
+				<Hotspot X="778.9" Y="-4756.01" Z="37.57" />
+				<Hotspot X="1480.24" Y="-4860.63" Z="11.5" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="Your Place In The World" QuestId="4641" GiverName="Kaltunk" GiverId="10176" />
-		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Vile Familiars" QuestId="1485" GiverName="Ruzan" GiverId="5765" />
+		<!-- Travel to Starter Guides (1-12)_Durotar (1-12) [Orc & Troll Starter] from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(4641))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Your Place In The World" QuestId="4641" TurnInName="Gornek" TurnInId="3143" />
-		<PickUp QuestName="Cutting Teeth" QuestId="788" GiverName="Gornek" GiverId="3143" />
-		<Objective QuestName="Cutting Teeth" QuestId="788" Type="KillMob" MobId="3098" KillCount="10" />
+		<PickUp QuestName="Your Place In The World" QuestId="4641" GiverName="Kaltunk" GiverId="10176" X="-610.073" Y="-4253.52" Z="39.0393" />
+		<TurnIn QuestName="Your Place In The World" QuestId="4641" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
+		<PickUp QuestName="Cutting Teeth" QuestId="788" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
+		<Objective QuestName="Cutting Teeth" QuestId="788" Type="KillMob" MobId="3098" KillCount="8" />
 		<If Condition="Me.Level &lt; 2">
 			<SetGrindArea>
 				<GrindArea>
@@ -492,102 +627,103 @@
 			</SetGrindArea>
 			<GrindTo Level="2" />
 		</If>
+
 		<If Condition="!((Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc))">
-			<PickUp QuestName="Vile Familiars" QuestId="792" GiverName="Zureetha Fargaze" GiverId="3145" />
+			<PickUp QuestName="Vile Familiars" QuestId="792" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
 		</If>
 
-		<TurnIn QuestName="Cutting Teeth" QuestId="788" TurnInName="Gornek" TurnInId="3143" />
+		<TurnIn QuestName="Cutting Teeth" QuestId="788" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Simple Parchment" QuestId="2383" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Simple Parchment" QuestId="2383" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Rune-Inscribed Parchment" QuestId="3089" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Rune-Inscribed Parchment" QuestId="3089" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Encrypted Parchment" QuestId="3088" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Encrypted Parchment" QuestId="3088" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Etched Parchment" QuestId="3087" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Etched Parchment" QuestId="3087" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="Tainted Parchment" QuestId="3090" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Tainted Parchment" QuestId="3090" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Simple Tablet" QuestId="3065" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Simple Tablet" QuestId="3065" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Etched Tablet" QuestId="3082" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Etched Tablet" QuestId="3082" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Encrypted Tablet" QuestId="3083" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Encrypted Tablet" QuestId="3083" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Hallowed Tablet" QuestId="3085" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Hallowed Tablet" QuestId="3085" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Rune-Inscribed Tablet" QuestId="3084" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Rune-Inscribed Tablet" QuestId="3084" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Glyphic Tablet" QuestId="3086" GiverName="Gornek" GiverId="3143" />
+			<PickUp QuestName="Glyphic Tablet" QuestId="3086" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		</If>
 
-		<PickUp QuestName="Sting of the Scorpid" QuestId="789" GiverName="Gornek" GiverId="3143" />
+		<PickUp QuestName="Sting of the Scorpid" QuestId="789" GiverName="Gornek" GiverId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Encrypted Parchment" QuestId="3088" TurnInName="Rwag" TurnInId="3155" />
+			<TurnIn QuestName="Encrypted Parchment" QuestId="3088" TurnInName="Rwag" TurnInId="3155" X="-588.703" Y="-4144.94" Z="41.1033" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Encrypted Tablet" QuestId="3083" TurnInName="Rwag" TurnInId="3155" />
+			<TurnIn QuestName="Encrypted Tablet" QuestId="3083" TurnInName="Rwag" TurnInId="3155" X="-588.703" Y="-4144.94" Z="41.1033" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Tainted Parchment" QuestId="3090" TurnInName="Nartok" TurnInId="3156" />
+			<TurnIn QuestName="Tainted Parchment" QuestId="3090" TurnInName="Nartok" TurnInId="3156" X="-606.874" Y="-4111.87" Z="43.028" />
 		</If>
 
-		<PickUp QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" GiverName="Galgar" GiverId="9796" />
+		<PickUp QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" GiverName="Galgar" GiverId="9796" X="-561.628" Y="-4221.8" Z="41.6737" />
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Hallowed Tablet" QuestId="3085" TurnInName="Ken'jai" TurnInId="3707" />
+			<TurnIn QuestName="Hallowed Tablet" QuestId="3085" TurnInName="Ken'jai" TurnInId="3707" X="-617.395" Y="-4202.4" Z="38.2966" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Simple Parchment" QuestId="2383" TurnInName="Frang" TurnInId="3153" />
+			<TurnIn QuestName="Simple Parchment" QuestId="2383" TurnInName="Frang" TurnInId="3153" X="-639.344" Y="-4230.19" Z="38.5605" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Simple Tablet" QuestId="3065" TurnInName="Frang" TurnInId="3153" />
+			<TurnIn QuestName="Simple Tablet" QuestId="3065" TurnInName="Frang" TurnInId="3153" X="-639.344" Y="-4230.19" Z="38.5605" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Rune-Inscribed Parchment" QuestId="3089" TurnInName="Shikrik" TurnInId="3157" />
+			<TurnIn QuestName="Rune-Inscribed Parchment" QuestId="3089" TurnInName="Shikrik" TurnInId="3157" X="-623.939" Y="-4203.88" Z="38.4285" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Rune-Inscribed Tablet" QuestId="3084" TurnInName="Shikrik" TurnInId="3157" />
+			<TurnIn QuestName="Rune-Inscribed Tablet" QuestId="3084" TurnInName="Shikrik" TurnInId="3157" X="-623.939" Y="-4203.88" Z="38.4285" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Etched Parchment" QuestId="3087" TurnInName="Jen'shan" TurnInId="3154" />
+			<TurnIn QuestName="Etched Parchment" QuestId="3087" TurnInName="Jen'shan" TurnInId="3154" X="-635.462" Y="-4227.52" Z="38.371" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Etched Tablet" QuestId="3082" TurnInName="Jen'shan" TurnInId="3154" />
+			<TurnIn QuestName="Etched Tablet" QuestId="3082" TurnInName="Jen'shan" TurnInId="3154" X="-635.462" Y="-4227.52" Z="38.371" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Glyphic Tablet" QuestId="3086" TurnInName="Mai'ah" TurnInId="5884" />
+			<TurnIn QuestName="Glyphic Tablet" QuestId="3086" TurnInName="Mai'ah" TurnInId="5884" X="-625.296" Y="-4210.17" Z="38.2966" />
 		</If>
 
-		<Objective QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" Type="CollectItem" ItemId="11583" CollectCount="10" />
+		<Objective QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" Type="CollectItem" ItemId="11583" CollectCount="6" />
 		<If Condition="Me.Level &lt; 3">
 			<SetGrindArea>
 				<GrindArea>
@@ -602,23 +738,20 @@
 			</SetGrindArea>
 			<GrindTo Level="3" />
 		</If>
+
+		<PickUp QuestName="Lazy Peons" QuestId="5441" GiverName="Foreman Thazz'ril" GiverId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
+		<TurnIn QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" TurnInName="Galgar" TurnInId="9796" X="-561.628" Y="-4221.8" Z="41.6737" />
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<Objective QuestName="Vile Familiars" QuestId="1485" Type="CollectItem" ItemId="6487" CollectCount="6" />
+			<PickUp QuestName="Vile Familiars" QuestId="1499" GiverName="Ruzan" GiverId="5765" X="-624.024" Y="-4214.41" Z="38.2173" />
+			<TurnIn QuestName="Vile Familiars" QuestId="1499" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
 		</If>
 
-		<PickUp QuestName="Lazy Peons" QuestId="5441" GiverName="Foreman Thazz'ril" GiverId="11378" />
-		<TurnIn QuestName="Galgar's Cactus Apple Surprise" QuestId="4402" TurnInName="Galgar" TurnInId="9796" />
-		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="Vile Familiars" QuestId="1485" TurnInName="Ruzan" TurnInId="5765" />
-			<PickUp QuestName="Vile Familiars" QuestId="1499" GiverName="Ruzan" GiverId="5765" />
-			<TurnIn QuestName="Vile Familiars" QuestId="1499" TurnInName="Zureetha Fargaze" TurnInId="3145" />
-		</If>
-
-		<While Condition="((HasQuest(5441)) &amp;&amp; (!IsQuestCompleted(5441)))" >
+		<While Condition="((HasQuest(5441)) &amp;&amp; (!IsQuestCompleted(5441)))">
 			<CustomBehavior File="UseItemOn" QuestId="5441" MobId="10556" ItemId="16114" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-492.12" Y="-4452.65" Z="50.877" />
 		</While>
-		<TurnIn QuestName="Lazy Peons" QuestId="5441" TurnInName="Foreman Thazz'ril" TurnInId="11378" />
-		<PickUp QuestName="Thazz'ril's Pick" QuestId="6394" GiverName="Foreman Thazz'ril" GiverId="11378" />
+
+		<TurnIn QuestName="Lazy Peons" QuestId="5441" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
+		<PickUp QuestName="Thazz'ril's Pick" QuestId="6394" GiverName="Foreman Thazz'ril" GiverId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
 		<If Condition="Me.Level &lt; 4">
 			<SetGrindArea>
 				<GrindArea>
@@ -633,13 +766,14 @@
 			</SetGrindArea>
 			<GrindTo Level="4" />
 		</If>
-		<PickUp QuestName="Sarkoth" QuestId="790" GiverName="Hana'zua" GiverId="3287" />
+
+		<PickUp QuestName="Sarkoth" QuestId="790" GiverName="Hana'zua" GiverId="3287" X="-397.761" Y="-4108.99" Z="50.2876" />
 		<Objective QuestName="Sarkoth" QuestId="790" Type="CollectItem" ItemId="4905" CollectCount="1" />
-		<Objective QuestName="Sting of the Scorpid" QuestId="789" Type="CollectItem" ItemId="4862" CollectCount="10" />
-		<TurnIn QuestName="Sarkoth" QuestId="790" TurnInName="Hana'zua" TurnInId="3287" />
-		<PickUp QuestName="Sarkoth" QuestId="804" GiverName="Hana'zua" GiverId="3287" />
-		<TurnIn QuestName="Sting of the Scorpid" QuestId="789" TurnInName="Gornek" TurnInId="3143" />
-		<TurnIn QuestName="Sarkoth" QuestId="804" TurnInName="Gornek" TurnInId="3143" />
+		<Objective QuestName="Sting of the Scorpid" QuestId="789" Type="CollectItem" ItemId="4862" CollectCount="8" />
+		<TurnIn QuestName="Sarkoth" QuestId="790" TurnInName="Hana'zua" TurnInId="3287" X="-397.761" Y="-4108.99" Z="50.2876" />
+		<PickUp QuestName="Sarkoth" QuestId="804" GiverName="Hana'zua" GiverId="3287" X="-397.761" Y="-4108.99" Z="50.2876" />
+		<TurnIn QuestName="Sting of the Scorpid" QuestId="789" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
+		<TurnIn QuestName="Sarkoth" QuestId="804" TurnInName="Gornek" TurnInId="3143" X="-600.132" Y="-4186.19" Z="41.2663" />
 		<Objective QuestName="Thazz'ril's Pick" QuestId="6394" Type="CollectItem" ItemId="16332" CollectCount="1" />
 		<If Condition="Me.Level &lt; 5">
 			<SetGrindArea>
@@ -655,18 +789,19 @@
 			</SetGrindArea>
 			<GrindTo Level="5" />
 		</If>
+
 		<If Condition="!((Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc))">
-			<Objective QuestName="Vile Familiars" QuestId="792" Type="KillMob" MobId="3101" KillCount="12" />
+			<Objective QuestName="Vile Familiars" QuestId="792" Type="KillMob" MobId="3101" KillCount="8" />
 		</If>
 
-		<TurnIn QuestName="Thazz'ril's Pick" QuestId="6394" TurnInName="Foreman Thazz'ril" TurnInId="11378" />
+		<TurnIn QuestName="Thazz'ril's Pick" QuestId="6394" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-611.587" Y="-4322.08" Z="40.0927" />
 		<If Condition="!((Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Orc))">
-			<TurnIn QuestName="Vile Familiars" QuestId="792" TurnInName="Zureetha Fargaze" TurnInId="3145" />
+			<TurnIn QuestName="Vile Familiars" QuestId="792" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
 		</If>
 
-		<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" />
+		<PickUp QuestName="Burning Blade Medallion" QuestId="794" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Earth" QuestId="1516" GiverName="Canaga Earthcaller" GiverId="5887" />
+			<PickUp QuestName="Call of Earth" QuestId="1516" GiverName="Canaga Earthcaller" GiverId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 
 		<Objective QuestName="Burning Blade Medallion" QuestId="794" Type="CollectItem" ItemId="4859" CollectCount="1" />
@@ -684,38 +819,39 @@
 			</SetGrindArea>
 			<GrindTo Level="6" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Earth" QuestId="1516" Type="CollectItem" ItemId="6640" CollectCount="2" />
 		</If>
 
-		<TurnIn QuestName="Burning Blade Medallion" QuestId="794" TurnInName="Zureetha Fargaze" TurnInId="3145" />
-		<PickUp QuestName="Report to Sen'jin Village" QuestId="805" GiverName="Zureetha Fargaze" GiverId="3145" />
+		<TurnIn QuestName="Burning Blade Medallion" QuestId="794" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
+		<PickUp QuestName="Report to Sen'jin Village" QuestId="805" GiverName="Zureetha Fargaze" GiverId="3145" X="-629.052" Y="-4228.06" Z="38.2334" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<TurnIn QuestName="Call of Earth" QuestId="1516" TurnInName="Canaga Earthcaller" TurnInId="5887" />
-			<PickUp QuestName="Call of Earth" QuestId="1517" GiverName="Canaga Earthcaller" GiverId="5887" />
+			<TurnIn QuestName="Call of Earth" QuestId="1516" TurnInName="Canaga Earthcaller" TurnInId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
+			<PickUp QuestName="Call of Earth" QuestId="1517" GiverName="Canaga Earthcaller" GiverId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 
-		<TurnIn QuestName="Call of Earth" QuestId="1517" TurnInName="Minor Manifestation of Earth" TurnInId="5891" />
+		<TurnIn QuestName="Call of Earth" QuestId="1517" TurnInName="Minor Manifestation of Earth" TurnInId="5891" X="-877.79" Y="-4290.36" Z="72.7066" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Earth" QuestId="1518" GiverName="Minor Manifestation of Earth" GiverId="5891" />
-			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" />
+			<PickUp QuestName="Call of Earth" QuestId="1518" GiverName="Minor Manifestation of Earth" GiverId="5891" X="-877.79" Y="-4290.36" Z="72.7066" />
+			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 
-		<PickUp QuestName="A Peon's Burden" QuestId="2161" GiverName="Ukor" GiverId="6786" />
-		<PickUp QuestName="Thwarting Kolkar Aggression" QuestId="786" GiverName="Lar Prowltusk" GiverId="3140" />
-		<TurnIn QuestName="Report to Sen'jin Village" QuestId="805" TurnInName="Master Gadrin" TurnInId="3188" />
-		<PickUp QuestName="Minshina's Skull" QuestId="808" GiverName="Master Gadrin" GiverId="3188" />
-		<PickUp QuestName="Zalazane" QuestId="826" GiverName="Master Gadrin" GiverId="3188" />
-		<PickUp QuestName="Report to Orgnil" QuestId="823" GiverName="Master Gadrin" GiverId="3188" />
-		<PickUp QuestName="A Solvent Spirit" QuestId="818" GiverName="Master Vornal" GiverId="3304" />
-		<PickUp QuestName="Practical Prey" QuestId="817" GiverName="Vel'rin Fang" GiverId="3194" />
-		<TurnIn QuestName="Report to Orgnil" QuestId="823" TurnInName="Orgnil Soulscar" TurnInId="3142" />
-		<PickUp QuestName="Dark Storms" QuestId="806" GiverName="Orgnil Soulscar" GiverId="3142" />
-		<PickUp QuestName="Vanquish the Betrayers" QuestId="784" GiverName="Gar'Thok" GiverId="3139" />
-		<PickUp QuestName="Encroachment" QuestId="837" GiverName="Gar'Thok" GiverId="3139" />
-		<TurnIn QuestName="A Peon's Burden" QuestId="2161" TurnInName="Innkeeper Grosk" TurnInId="6928" />
-		<PickUp QuestName="Break a Few Eggs" QuestId="815" GiverName="Cook Torka" GiverId="3191" />
-		<PickUp QuestName="Carry Your Weight" QuestId="791" GiverName="Furl Scornbrow" GiverId="3147" />
+		<PickUp QuestName="A Peon's Burden" QuestId="2161" GiverName="Ukor" GiverId="6786" X="-599.449" Y="-4715.32" Z="35.2296" />
+		<PickUp QuestName="Thwarting Kolkar Aggression" QuestId="786" GiverName="Lar Prowltusk" GiverId="3140" X="-774.774" Y="-4830.36" Z="19.8326" />
+		<TurnIn QuestName="Report to Sen'jin Village" QuestId="805" TurnInName="Master Gadrin" TurnInId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<PickUp QuestName="Minshina's Skull" QuestId="808" GiverName="Master Gadrin" GiverId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<PickUp QuestName="Zalazane" QuestId="826" GiverName="Master Gadrin" GiverId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<PickUp QuestName="Report to Orgnil" QuestId="823" GiverName="Master Gadrin" GiverId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<PickUp QuestName="A Solvent Spirit" QuestId="818" GiverName="Master Vornal" GiverId="3304" X="-813.994" Y="-4920.57" Z="19.4341" />
+		<PickUp QuestName="Practical Prey" QuestId="817" GiverName="Vel'rin Fang" GiverId="3194" X="-797.523" Y="-4921.17" Z="22.9571" />
+		<TurnIn QuestName="Report to Orgnil" QuestId="823" TurnInName="Orgnil Soulscar" TurnInId="3142" X="287.265" Y="-4724.88" Z="13.2142" />
+		<PickUp QuestName="Dark Storms" QuestId="806" GiverName="Orgnil Soulscar" GiverId="3142" X="287.265" Y="-4724.88" Z="13.2142" />
+		<PickUp QuestName="Vanquish the Betrayers" QuestId="784" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<PickUp QuestName="Encroachment" QuestId="837" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<TurnIn QuestName="A Peon's Burden" QuestId="2161" TurnInName="Innkeeper Grosk" TurnInId="6928" X="340.362" Y="-4686.29" Z="16.5411" />
+		<PickUp QuestName="Break a Few Eggs" QuestId="815" GiverName="Cook Torka" GiverId="3191" X="312.099" Y="-4664.95" Z="16.4254" />
+		<PickUp QuestName="Carry Your Weight" QuestId="791" GiverName="Furl Scornbrow" GiverId="3147" X="384.743" Y="-4600.13" Z="76.1716" />
 		<Objective QuestName="A Solvent Spirit" QuestId="818" Type="CollectItem" ItemId="4888" CollectCount="8" />
 		<Objective QuestName="A Solvent Spirit" QuestId="818" Type="CollectItem" ItemId="4887" CollectCount="4" />
 		<If Condition="Me.Level &lt; 7">
@@ -732,17 +868,23 @@
 			</SetGrindArea>
 			<GrindTo Level="7" />
 		</If>
+
 		<Objective QuestName="Carry Your Weight" QuestId="791" Type="CollectItem" ItemId="4870" CollectCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3128" KillCount="10" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3129" KillCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3192" KillCount="1" />
-		<Objective QuestName="The Admiral's Orders" QuestId="830" Type="CollectItem" ItemId="4882" CollectCount="1" />
-		<Objective QuestName="The Admiral's Orders" QuestId="830" Type="CollectItem" ItemId="4881" CollectCount="1" />
-		<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Furl Scornbrow" GiverId="3147" />
-		<TurnIn QuestName="Vanquish the Betrayers" QuestId="784" TurnInName="Gar'Thok" TurnInId="3139" />
-		<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" />
-		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" />
-		<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4881)">
+			<CustomBehavior File="InteractWith" MobId="3239" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-223.825" Y="-5095.61" Z="49.3529" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4881)">
+			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Vanquish the Betrayers" QuestId="784" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		<Objective QuestName="From The Wreckage...." QuestId="825" Type="CollectItem" ItemId="4863" CollectCount="3" />
 		<If Condition="Me.Level &lt; 8">
 			<SetGrindArea>
@@ -758,10 +900,11 @@
 			</SetGrindArea>
 			<GrindTo Level="8" />
 		</If>
+
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3111" KillCount="4" />
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3112" KillCount="4" />
-		<TurnIn QuestName="From The Wreckage...." QuestId="825" TurnInName="Gar'Thok" TurnInId="3139" />
-		<TurnIn QuestName="Carry Your Weight" QuestId="791" TurnInName="Furl Scornbrow" TurnInId="3147" />
+		<TurnIn QuestName="From The Wreckage...." QuestId="825" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<TurnIn QuestName="Carry Your Weight" QuestId="791" TurnInName="Furl Scornbrow" TurnInId="3147" X="384.743" Y="-4600.13" Z="76.1716" />
 		<If Condition="Me.Level &lt; 9">
 			<SetGrindArea>
 				<GrindArea>
@@ -776,16 +919,22 @@
 			</SetGrindArea>
 			<GrindTo Level="9" />
 		</If>
-		<TurnIn QuestName="Thwarting Kolkar Aggression" QuestId="786" TurnInName="Lar Prowltusk" TurnInId="3140" />
-		<TurnIn QuestName="A Solvent Spirit" QuestId="818" TurnInName="Master Vornal" TurnInId="3304" />
+
+		<Objective QuestName="Thwarting Kolkar Aggression" QuestId="786" Type="UseObject" ObjectId="3189" UseCount="1" />
+		<Objective QuestName="Thwarting Kolkar Aggression" QuestId="786" Type="UseObject" ObjectId="3190" UseCount="1" />
+		<Objective QuestName="Thwarting Kolkar Aggression" QuestId="786" Type="UseObject" ObjectId="3192" UseCount="1" />
+		<TurnIn QuestName="Thwarting Kolkar Aggression" QuestId="786" TurnInName="Lar Prowltusk" TurnInId="3140" X="-774.774" Y="-4830.36" Z="19.8326" />
+		<TurnIn QuestName="A Solvent Spirit" QuestId="818" TurnInName="Master Vornal" TurnInId="3304" X="-813.994" Y="-4920.57" Z="19.4341" />
 		<Objective QuestName="Zalazane" QuestId="826" Type="CollectItem" ItemId="4866" CollectCount="1" />
 		<Objective QuestName="Minshina's Skull" QuestId="808" Type="CollectItem" ItemId="4864" CollectCount="1" />
 		<Objective QuestName="Break a Few Eggs" QuestId="815" Type="CollectItem" ItemId="4890" CollectCount="3" />
 		<Objective QuestName="Practical Prey" QuestId="817" Type="CollectItem" ItemId="4892" CollectCount="4" />
-		<TurnIn QuestName="Minshina's Skull" QuestId="808" TurnInName="Master Gadrin" TurnInId="3188" />
-		<TurnIn QuestName="Zalazane" QuestId="826" TurnInName="Master Gadrin" TurnInId="3188" />
-		<TurnIn QuestName="Practical Prey" QuestId="817" TurnInName="Vel'rin Fang" TurnInId="3194" />
-		<TurnIn QuestName="Break a Few Eggs" QuestId="815" TurnInName="Cook Torka" TurnInId="3191" />
+		<TurnIn QuestName="Minshina's Skull" QuestId="808" TurnInName="Master Gadrin" TurnInId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<Objective QuestName="Zalazane" QuestId="826" Type="KillMob" MobId="3207" KillCount="8" />
+		<Objective QuestName="Zalazane" QuestId="826" Type="KillMob" MobId="3206" KillCount="8" />
+		<TurnIn QuestName="Zalazane" QuestId="826" TurnInName="Master Gadrin" TurnInId="3188" X="-825.636" Y="-4920.76" Z="19.7409" />
+		<TurnIn QuestName="Practical Prey" QuestId="817" TurnInName="Vel'rin Fang" TurnInId="3194" X="-797.523" Y="-4921.17" Z="22.9571" />
+		<TurnIn QuestName="Break a Few Eggs" QuestId="815" TurnInName="Cook Torka" TurnInId="3191" X="312.099" Y="-4664.95" Z="16.4254" />
 		<If Condition="Me.Level &lt; 10">
 			<SetGrindArea>
 				<GrindArea>
@@ -800,92 +949,94 @@
 			</SetGrindArea>
 			<GrindTo Level="10" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<PickUp QuestName="Veteran Uzzek" QuestId="1505" GiverName="Tarshaw Jaggedscar" GiverId="3169" />
+			<PickUp QuestName="Veteran Uzzek" QuestId="1505" GiverName="Tarshaw Jaggedscar" GiverId="3169" X="311.352" Y="-4827.79" Z="9.6629" />
 		</If>
 
-		<TurnIn QuestName="Veteran Uzzek" QuestId="1505" TurnInName="Uzzek" TurnInId="5810" />
+		<TurnIn QuestName="Veteran Uzzek" QuestId="1505" TurnInName="Uzzek" TurnInId="5810" X="185.746" Y="-3597.21" Z="27.3383" />
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<PickUp QuestName="Path of Defense" QuestId="1498" GiverName="Uzzek" GiverId="5810" />
+			<PickUp QuestName="Path of Defense" QuestId="1498" GiverName="Uzzek" GiverId="5810" X="185.746" Y="-3597.21" Z="27.3383" />
 			<Objective QuestName="Path of Defense" QuestId="1498" Type="CollectItem" ItemId="6486" CollectCount="5" />
-			<TurnIn QuestName="Path of Defense" QuestId="1498" TurnInName="Uzzek" TurnInId="5810" />
+			<TurnIn QuestName="Path of Defense" QuestId="1498" TurnInName="Uzzek" TurnInId="5810" X="185.746" Y="-3597.21" Z="27.3383" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<PickUp QuestName="Gan'rul's Summons" QuestId="1506" GiverName="Ophek" GiverId="3294" />
+			<PickUp QuestName="Gan'rul's Summons" QuestId="1506" GiverName="Ophek" GiverId="3294" X="352.948" Y="-4837.45" Z="10.8906" />
 		</If>
 
-		<TurnIn QuestName="Gan'rul's Summons" QuestId="1506" TurnInName="Gan'rul Bloodeye" TurnInId="5875" />
+		<TurnIn QuestName="Gan'rul's Summons" QuestId="1506" TurnInName="Gan'rul Bloodeye" TurnInId="5875" X="1850.31" Y="-4357.3" Z="-14.7982" />
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<PickUp QuestName="Creature of the Void" QuestId="1501" GiverName="Gan'rul Bloodeye" GiverId="5875" />
+			<PickUp QuestName="Creature of the Void" QuestId="1501" GiverName="Gan'rul Bloodeye" GiverId="5875" X="1850.31" Y="-4357.3" Z="-14.7982" />
 			<Objective QuestName="Creature of the Void" QuestId="1501" Type="CollectItem" ItemId="6535" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Creature of the Void" QuestId="1501" TurnInName="Gan'rul Bloodeye" TurnInId="5875" />
+		<TurnIn QuestName="Creature of the Void" QuestId="1501" TurnInName="Gan'rul Bloodeye" TurnInId="5875" X="1850.31" Y="-4357.3" Z="-14.7982" />
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<PickUp QuestName="The Binding" QuestId="1504" GiverName="Gan'rul Bloodeye" GiverId="5875" />
-			<While Condition="((HasQuest(1504)) &amp;&amp; (!IsQuestCompleted(1504)))" >
+			<PickUp QuestName="The Binding" QuestId="1504" GiverName="Gan'rul Bloodeye" GiverId="5875" X="1850.31" Y="-4357.3" Z="-14.7982" />
+			<While Condition="((HasQuest(1504)) &amp;&amp; (!IsQuestCompleted(1504)))">
 				<CustomBehavior File="UseItemOn" QuestId="1504" MobId="5676" ItemId="7464" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 			</While>
 			<Objective QuestName="The Binding" QuestId="1504" Type="KillMob" MobId="5676" KillCount="1" />
-			<TurnIn QuestName="The Binding" QuestId="1504" TurnInName="Gan'rul Bloodeye" TurnInId="5875" />
+			<!-- REVIEW Q1504 The Binding: UseItemOn target 5676 Summoned Voidwalker has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(1504)) &amp;&amp; (IsQuestCompleted(1504)))">
+				<TurnIn QuestName="The Binding" QuestId="1504" TurnInName="Gan'rul Bloodeye" TurnInId="5875" X="1850.31" Y="-4357.3" Z="-14.7982" />
+			</If>
+			<If Condition="((HasQuest(1504)) &amp;&amp; (!IsQuestCompleted(1504)))">
+				<AbandonQuest QuestId="1504" />
+			</If>
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="2983" GiverName="Swart" GiverId="3173" />
+			<PickUp QuestName="Call of Fire" QuestId="2983" GiverName="Swart" GiverId="3173" X="307.114" Y="-4839.91" Z="10.6075" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="2983" TurnInName="Kranal Fiss" TurnInId="5907" />
+		<TurnIn QuestName="Call of Fire" QuestId="2983" TurnInName="Kranal Fiss" TurnInId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1524" GiverName="Kranal Fiss" GiverId="5907" />
+			<PickUp QuestName="Call of Fire" QuestId="1524" GiverName="Kranal Fiss" GiverId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="1524" TurnInName="Telf Joolam" TurnInId="5900" />
+		<TurnIn QuestName="Call of Fire" QuestId="1524" TurnInName="Telf Joolam" TurnInId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1525" GiverName="Telf Joolam" GiverId="5900" />
+			<PickUp QuestName="Call of Fire" QuestId="1525" GiverName="Telf Joolam" GiverId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="5026" CollectCount="1" />
 			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="6652" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="1525" TurnInName="Telf Joolam" TurnInId="5900" />
+		<TurnIn QuestName="Call of Fire" QuestId="1525" TurnInName="Telf Joolam" TurnInId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1526" GiverName="Telf Joolam" GiverId="5900" />
+			<PickUp QuestName="Call of Fire" QuestId="1526" GiverName="Telf Joolam" GiverId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Fire" QuestId="1526" Type="CollectItem" ItemId="6655" CollectCount="1" />
-			<TurnIn QuestName="Call of Fire" QuestId="1526" TurnInName="Object_61934" TurnInType="Object" TurnInId="61934" />
-			<PickUp QuestName="Call of Fire" QuestId="1527" GiverName="Telf Joolam" GiverId="5900" />
-			<TurnIn QuestName="Call of Fire" QuestId="1527" TurnInName="Kranal Fiss" TurnInId="5907" />
+			<TurnIn QuestName="Call of Fire" QuestId="1526" TurnInName="Brazier of the Dormant Flame" TurnInType="Object" TurnInId="61934" X="-243.773" Y="-4022.4" Z="187.304" />
+			<PickUp QuestName="Call of Fire" QuestId="1527" GiverName="Brazier of the Dormant Flame" GiverId="61934" GiverType="Object" X="-243.773" Y="-4022.4" Z="187.304" />
+			<TurnIn QuestName="Call of Fire" QuestId="1527" TurnInName="Kranal Fiss" TurnInId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<PickUp QuestName="Taming the Beast" QuestId="6062" GiverName="Thotar" GiverId="3171" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6062" TurnInName="Thotar" TurnInId="3171" />
-			<PickUp QuestName="Taming the Beast" QuestId="6083" GiverName="Thotar" GiverId="3171" />
+			<PickUp QuestName="Taming the Beast" QuestId="6062" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6062" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<PickUp QuestName="Taming the Beast" QuestId="6083" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<TurnIn QuestName="Taming the Beast" QuestId="6083" TurnInName="Thotar" TurnInId="3171" />
-			<PickUp QuestName="Taming the Beast" QuestId="6082" GiverName="Thotar" GiverId="3171" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" />
-			<PickUp QuestName="Training the Beast" QuestId="6081" GiverName="Thotar" GiverId="3171" />
-			<TurnIn QuestName="Training the Beast" QuestId="6081" TurnInName="Ormak Grimshot" TurnInId="3352" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Hex of Weakness" QuestId="5652" GiverName="Tai'jin" GiverId="3706" />
-			<!-- Quest 5652 (Hex of Weakness) — TurnIn NPC not found -->
+			<TurnIn QuestName="Taming the Beast" QuestId="6083" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<PickUp QuestName="Taming the Beast" QuestId="6082" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<PickUp QuestName="Training the Beast" QuestId="6081" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<TurnIn QuestName="Training the Beast" QuestId="6081" TurnInName="Ormak Grimshot" TurnInId="3352" X="2100.58" Y="-4606.96" Z="59.0132" />
 		</If>
 
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3113" KillCount="4" />
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3114" KillCount="4" />
-		<PickUp QuestName="Lost But Not Forgotten" QuestId="816" GiverName="Misha Tor'kren" GiverId="3193" />
-		<TurnIn QuestName="Encroachment" QuestId="837" TurnInName="Gar'Thok" TurnInId="3139" />
-		<PickUp QuestName="Winds in the Desert" QuestId="834" GiverName="Rezlak" GiverId="3293" />
+		<PickUp QuestName="Lost But Not Forgotten" QuestId="816" GiverName="Misha Tor'kren" GiverId="3193" X="742.385" Y="-4241.65" Z="18.762" />
+		<TurnIn QuestName="Encroachment" QuestId="837" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<PickUp QuestName="Winds in the Desert" QuestId="834" GiverName="Rezlak" GiverId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
 		<Objective QuestName="Winds in the Desert" QuestId="834" Type="CollectItem" ItemId="4918" CollectCount="5" />
-		<TurnIn QuestName="Winds in the Desert" QuestId="834" TurnInName="Rezlak" TurnInId="3293" />
-		<PickUp QuestName="Securing the Lines" QuestId="835" GiverName="Rezlak" GiverId="3293" />
+		<TurnIn QuestName="Winds in the Desert" QuestId="834" TurnInName="Rezlak" TurnInId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
+		<PickUp QuestName="Securing the Lines" QuestId="835" GiverName="Rezlak" GiverId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
 		<Objective QuestName="Securing the Lines" QuestId="835" Type="KillMob" MobId="3118" KillCount="8" />
 		<Objective QuestName="Securing the Lines" QuestId="835" Type="KillMob" MobId="3117" KillCount="12" />
 		<If Condition="Me.Level &lt; 11">
@@ -902,21 +1053,30 @@
 			</SetGrindArea>
 			<GrindTo Level="11" />
 		</If>
-		<TurnIn QuestName="Securing the Lines" QuestId="835" TurnInName="Rezlak" TurnInId="3293" />
-		<PickUp QuestName="Need for a Cure" QuestId="812" GiverName="Rhinag" GiverId="3190" />
-		<TurnIn QuestName="The Admiral's Orders" QuestId="831" TurnInName="Vol'jin" TurnInId="10540" />
-		<PickUp QuestName="Hidden Enemies" QuestId="5726" GiverName="Thrall" GiverId="4949" />
-		<PickUp QuestName="Finding the Antidote" QuestId="813" GiverName="Kor'ghan" GiverId="3189" />
+
+		<TurnIn QuestName="Securing the Lines" QuestId="835" TurnInName="Rezlak" TurnInId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
+		<PickUp QuestName="Need for a Cure" QuestId="812" GiverName="Rhinag" GiverId="3190" X="1279.03" Y="-4188.68" Z="28.0245" />
+		<TurnIn QuestName="The Admiral's Orders" QuestId="831" TurnInName="Vol'jin" TurnInId="10540" X="1934.06" Y="-4162.26" Z="41.2219" />
+		<PickUp QuestName="Hidden Enemies" QuestId="5726" GiverName="Thrall" GiverId="4949" X="1920.01" Y="-4123.95" Z="43.6002" />
+		<PickUp QuestName="Finding the Antidote" QuestId="813" GiverName="Kor'ghan" GiverId="3189" X="1772.72" Y="-4343.18" Z="-7.5888" />
 		<Objective QuestName="Finding the Antidote" QuestId="813" Type="CollectItem" ItemId="4886" CollectCount="4" />
-		<TurnIn QuestName="Finding the Antidote" QuestId="813" TurnInName="Kor'ghan" TurnInId="3189" />
-		<TurnIn QuestName="Need for a Cure" QuestId="812" TurnInName="Rhinag" TurnInId="3190" />
+		<TurnIn QuestName="Finding the Antidote" QuestId="813" TurnInName="Kor'ghan" TurnInId="3189" X="1772.72" Y="-4343.18" Z="-7.5888" />
+		<!-- REVIEW Q812 Need for a Cure: collect 4904 Venomtail Antidote x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(812)) &amp;&amp; (IsQuestCompleted(812)))">
+			<TurnIn QuestName="Need for a Cure" QuestId="812" TurnInName="Rhinag" TurnInId="3190" X="1279.03" Y="-4188.68" Z="28.0245" />
+		</If>
+
+		<If Condition="((HasQuest(812)) &amp;&amp; (!IsQuestCompleted(812)))">
+			<AbandonQuest QuestId="812" />
+		</If>
+
 		<Objective QuestName="Lost But Not Forgotten" QuestId="816" Type="CollectItem" ItemId="4891" CollectCount="1" />
-		<TurnIn QuestName="Lost But Not Forgotten" QuestId="816" TurnInName="Misha Tor'kren" TurnInId="3193" />
+		<TurnIn QuestName="Lost But Not Forgotten" QuestId="816" TurnInName="Misha Tor'kren" TurnInId="3193" X="742.385" Y="-4241.65" Z="18.762" />
 		<Objective QuestName="Dark Storms" QuestId="806" Type="CollectItem" ItemId="4869" CollectCount="1" />
-		<TurnIn QuestName="Dark Storms" QuestId="806" TurnInName="Orgnil Soulscar" TurnInId="3142" />
-		<PickUp QuestName="Margoz" QuestId="828" GiverName="Orgnil Soulscar" GiverId="3142" />
-		<TurnIn QuestName="Margoz" QuestId="828" TurnInName="Margoz" TurnInId="3208" />
-		<PickUp QuestName="Skull Rock" QuestId="827" GiverName="Margoz" GiverId="3208" />
+		<TurnIn QuestName="Dark Storms" QuestId="806" TurnInName="Orgnil Soulscar" TurnInId="3142" X="287.265" Y="-4724.88" Z="13.2142" />
+		<PickUp QuestName="Margoz" QuestId="828" GiverName="Orgnil Soulscar" GiverId="3142" X="287.265" Y="-4724.88" Z="13.2142" />
+		<TurnIn QuestName="Margoz" QuestId="828" TurnInName="Margoz" TurnInId="3208" X="1102.09" Y="-4945.36" Z="15.6857" />
+		<PickUp QuestName="Skull Rock" QuestId="827" GiverName="Margoz" GiverId="3208" X="1102.09" Y="-4945.36" Z="15.6857" />
 		<Objective QuestName="Hidden Enemies" QuestId="5726" Type="CollectItem" ItemId="14544" CollectCount="1" />
 		<Objective QuestName="Skull Rock" QuestId="827" Type="CollectItem" ItemId="4871" CollectCount="6" />
 		<If Condition="Me.Level &lt; 12">
@@ -933,14 +1093,15 @@
 			</SetGrindArea>
 			<GrindTo Level="12" />
 		</If>
-		<TurnIn QuestName="Skull Rock" QuestId="827" TurnInName="Margoz" TurnInId="3208" />
-		<PickUp QuestName="Neeru Fireblade" QuestId="829" GiverName="Margoz" GiverId="3208" />
-		<TurnIn QuestName="Neeru Fireblade" QuestId="829" TurnInName="Neeru Fireblade" TurnInId="3216" />
-		<PickUp QuestName="Ak'Zeloth" QuestId="809" GiverName="Neeru Fireblade" GiverId="3216" />
-		<TurnIn QuestName="Hidden Enemies" QuestId="5726" TurnInName="Thrall" TurnInId="4949" />
-		<PickUp QuestName="Hidden Enemies" QuestId="5727" GiverName="Thrall" GiverId="4949" />
-		<TurnIn QuestName="Hidden Enemies" QuestId="5727" TurnInName="Thrall" TurnInId="4949" />
-		<PickUp QuestName="Conscript of the Horde" QuestId="840" GiverName="Takrin Pathseeker" GiverId="3336" />
+
+		<TurnIn QuestName="Skull Rock" QuestId="827" TurnInName="Margoz" TurnInId="3208" X="1102.09" Y="-4945.36" Z="15.6857" />
+		<PickUp QuestName="Neeru Fireblade" QuestId="829" GiverName="Margoz" GiverId="3208" X="1102.09" Y="-4945.36" Z="15.6857" />
+		<TurnIn QuestName="Neeru Fireblade" QuestId="829" TurnInName="Neeru Fireblade" TurnInId="3216" X="1800.66" Y="-4374.51" Z="-17.1206" />
+		<PickUp QuestName="Ak'Zeloth" QuestId="809" GiverName="Neeru Fireblade" GiverId="3216" X="1800.66" Y="-4374.51" Z="-17.1206" />
+		<TurnIn QuestName="Hidden Enemies" QuestId="5726" TurnInName="Thrall" TurnInId="4949" X="1920.01" Y="-4123.95" Z="43.6002" />
+		<PickUp QuestName="Hidden Enemies" QuestId="5727" GiverName="Thrall" GiverId="4949" X="1920.01" Y="-4123.95" Z="43.6002" />
+		<TurnIn QuestName="Hidden Enemies" QuestId="5727" TurnInName="Thrall" TurnInId="4949" X="1920.01" Y="-4123.95" Z="43.6002" />
+		<PickUp QuestName="Conscript of the Horde" QuestId="840" GiverName="Takrin Pathseeker" GiverId="3336" X="271.805" Y="-4650.83" Z="11.7894" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_The Barrens (12-15)" />
 	</QuestOrder>
 </HBProfile>

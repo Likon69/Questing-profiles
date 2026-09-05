@@ -1,55 +1,61 @@
 <HBProfile>
 	<Name>Swamp of Sorrows (38-39)</Name>
-	<MinLevel>38</MinLevel>
-	<MaxLevel>39</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Rallic Finn" Entry="1198" Type="Repair" X="-9469.28" Y="-1355.24" Z="47.4289" />
+		<Vendor Name="Lamar Veisilli" Entry="1671" Type="Food" X="-9244.62" Y="-2028.25" Z="77.1862" />
+		<Vendor Name="Gretchen Vogel" Entry="3086" Type="Food" X="-9215.79" Y="-2066.68" Z="82.855" />
+		<Vendor Name="Henry Chapal" Entry="3088" Type="Repair" X="-9173.33" Y="-2088.29" Z="89.0329" />
+		<Vendor Name="Vernon Hale" Entry="1678" Type="Food" X="-9267.56" Y="-2167.64" Z="62.6756" />
+		<Vendor Name="Morley Eberlein" Entry="959" Type="Repair" X="-9548.45" Y="-709.983" Z="90.5103" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="1396" Name="Encroaching Wildlife">
 		<Objective Type="KillMob" MobId="1084" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-10216.3" Y="-2921.17" Z="17.7429" />
-				<Hotspot X="-10184.5" Y="-3042.27" Z="17.4803" />
-				<Hotspot X="-10177.5" Y="-2895.34" Z="18.3741" />
-				<Hotspot X="-10137.6" Y="-2936.04" Z="17.7491" />
-				<Hotspot X="-10215.7" Y="-2973.4" Z="18.9678" />
+				<Hotspot X="-10216.3" Y="-2921.17" Z="17.74" />
+				<Hotspot X="-10184.5" Y="-3042.27" Z="17.48" />
+				<Hotspot X="-10177.5" Y="-2895.34" Z="18.37" />
+				<Hotspot X="-10137.6" Y="-2936.04" Z="17.75" />
+				<Hotspot X="-10215.7" Y="-2973.4" Z="18.97" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="858" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-10378.5" Y="-2818.65" Z="23.4522" />
-				<Hotspot X="-10137.3" Y="-3318.67" Z="22.5177" />
-				<Hotspot X="-10284.1" Y="-2857.58" Z="26.6775" />
-				<Hotspot X="-10092.8" Y="-3061.25" Z="23.2538" />
-				<Hotspot X="-10064.9" Y="-3214.81" Z="22.9256" />
+				<Hotspot X="-10378.5" Y="-2818.65" Z="23.45" />
+				<Hotspot X="-10137.3" Y="-3318.67" Z="22.52" />
+				<Hotspot X="-10284.1" Y="-2857.58" Z="26.68" />
+				<Hotspot X="-10092.8" Y="-3061.25" Z="23.25" />
+				<Hotspot X="-10064.9" Y="-3214.81" Z="22.93" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="767" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-10196.1" Y="-3082.58" Z="23.0202" />
-				<Hotspot X="-10325.4" Y="-2557.57" Z="25.113" />
-				<Hotspot X="-10164.3" Y="-2988.84" Z="23.1682" />
-				<Hotspot X="-10287.9" Y="-2880.2" Z="26.9498" />
-				<Hotspot X="-10230.6" Y="-3069.05" Z="22.0528" />
+				<Hotspot X="-10196.1" Y="-3082.58" Z="23.02" />
+				<Hotspot X="-10325.4" Y="-2557.57" Z="25.11" />
+				<Hotspot X="-10164.3" Y="-2988.84" Z="23.17" />
+				<Hotspot X="-10287.9" Y="-2880.2" Z="26.95" />
+				<Hotspot X="-10230.6" Y="-3069.05" Z="22.05" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -64,59 +70,91 @@
 				<Hotspot X="-10002.2" Y="-3539.66" Z="22.92" />
 				<Hotspot X="-9981.25" Y="-3652.04" Z="21.81" />
 				<Hotspot X="-9970.3" Y="-3712.3" Z="22.85" />
-				<Hotspot X="-9968.0" Y="-3708.24" Z="22.18" />
+				<Hotspot X="-9968" Y="-3708.24" Z="22.18" />
 				<Hotspot X="-9964.19" Y="-3646.9" Z="22.15" />
-				<Hotspot X="-9960.04" Y="-3603.0" Z="22.25" />
+				<Hotspot X="-9960.04" Y="-3603" Z="22.25" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1421" Name="The Lost Caravan">
+		<Objective Type="CollectItem" ItemId="6170" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Caravan Chest" Id="28024" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9900.72" Y="-3701.58" Z="22.55" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Swamp of Sorrows (38-39) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1448))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="In Search of The Temple" QuestId="1448" GiverName="Brohann Caskbelly" GiverId="5384" />
-		<PickUp QuestName="Morgan Stern" QuestId="1260" GiverName="Angus Stern" GiverId="1141" />
+		<PickUp QuestName="In Search of The Temple" QuestId="1448" GiverName="Brohann Caskbelly" GiverId="5384" X="-8464" Y="516.193" Z="100.639" />
+		<PickUp QuestName="Morgan Stern" QuestId="1260" GiverName="Angus Stern" GiverId="1141" X="-9080.1" Y="823.091" Z="108.503" />
 		<Objective QuestName="Dream Dust in the Swamp" QuestId="1116" Type="CollectItem" ItemId="5803" CollectCount="10" />
-		<PickUp QuestName="Encroaching Wildlife" QuestId="1396" GiverName="Watcher Biggs" GiverId="5476" />
-		<Objective QuestName="Noboru the Cudgel" QuestId="1392" Type="CollectItem" ItemId="6196" CollectCount="1" />
-		<While Condition="((HasQuest(1396)) &amp;&amp; (!IsQuestCompleted(1396)))" >
+		<PickUp QuestName="Encroaching Wildlife" QuestId="1396" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<While Condition="((HasQuest(1396)) &amp;&amp; (!IsQuestCompleted(1396)))">
 			<CustomBehavior File="UseItemOn" QuestId="1396" MobId="1084" ItemId="6196" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-10216.3" Y="-2921.17" Z="17.7429" />
 		</While>
-		<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Watcher Biggs" GiverId="5476" />
-		<TurnIn QuestName="Noboru the Cudgel" QuestId="1392" TurnInName="Magtoor" TurnInId="1776" />
-		<PickUp QuestName="Draenethyst Crystals" QuestId="1389" GiverName="Magtoor" GiverId="1776" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6196)">
+			<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Noboru's Cudgel" GiverId="6196" GiverType="Item" />
+		</If>
+
+		<!-- REVIEW Q1392 Noboru the Cudgel: start item 6196 Noboru's Cudgel has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1392)) &amp;&amp; (IsQuestCompleted(1392)))">
+			<TurnIn QuestName="Noboru the Cudgel" QuestId="1392" TurnInName="Magtoor" TurnInId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		</If>
+
+		<If Condition="((HasQuest(1392)) &amp;&amp; (!IsQuestCompleted(1392)))">
+			<AbandonQuest QuestId="1392" />
+		</If>
+
+		<PickUp QuestName="Draenethyst Crystals" QuestId="1389" GiverName="Magtoor" GiverId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
 		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="1084" KillCount="8" />
 		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="858" KillCount="10" />
 		<Objective QuestName="Encroaching Wildlife" QuestId="1396" Type="KillMob" MobId="767" KillCount="10" />
-		<Objective QuestName="Dream Dust in the Swamp" QuestId="1116" Type="CollectItem" ItemId="5803" CollectCount="10" />
-		<TurnIn QuestName="Encroaching Wildlife" QuestId="1396" TurnInName="Watcher Biggs" TurnInId="5476" />
-		<PickUp QuestName="The Lost Caravan" QuestId="1421" GiverName="Watcher Biggs" GiverId="5476" />
+		<TurnIn QuestName="Encroaching Wildlife" QuestId="1396" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<PickUp QuestName="The Lost Caravan" QuestId="1421" GiverName="Watcher Biggs" GiverId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
 		<Objective QuestName="The Lost Caravan" QuestId="1421" Type="CollectItem" ItemId="6170" CollectCount="1" />
-		<PickUp QuestName="Galen's Escape" QuestId="1393" GiverName="Galen Goodward" GiverId="5391" />
+		<PickUp QuestName="Galen's Escape" QuestId="1393" GiverName="Galen Goodward" GiverId="5391" X="-9898.53" Y="-3724.63" Z="22.4164" />
 		<Objective QuestName="Draenethyst Crystals" QuestId="1389" Type="CollectItem" ItemId="6071" CollectCount="6" />
-		<TurnIn QuestName="Galen's Escape" QuestId="1393" TurnInName="Object_32569" TurnInType="Object" TurnInId="32569" />
-		<TurnIn QuestName="Draenethyst Crystals" QuestId="1389" TurnInName="Magtoor" TurnInId="1776" />
-		<TurnIn QuestName="The Lost Caravan" QuestId="1421" TurnInName="Watcher Biggs" TurnInId="5476" />
-		<TurnIn QuestName="Dream Dust in the Swamp" QuestId="1116" TurnInName="Krazek" TurnInId="773" />
-		<PickUp QuestName="Rumors for Kravel" QuestId="1117" GiverName="Krazek" GiverId="773" />
-		<Objective QuestName="The Karnitol Shipwreck" QuestId="1457" Type="CollectItem" ItemId="6245" CollectCount="1" />
-		<Objective QuestName="Magical Analysis" QuestId="602" Type="CollectItem" ItemId="3960" CollectCount="1" />
-		<If Condition="!((Me.Class == WoWClass.Druid))">
-			<Objective QuestName="Sunken Treasure" QuestId="668" Type="CollectItem" ItemId="5996" CollectCount="2" />
-		</If>
-
-		<TurnIn QuestName="In Search of The Temple" QuestId="1448" TurnInName="Brohann Caskbelly" TurnInId="5384" />
-		<PickUp QuestName="To The Hinterlands" QuestId="1449" GiverName="Brohann Caskbelly" GiverId="5384" />
-		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1457" TurnInName="Roetten Stonehammer" TurnInId="5637" />
-		<PickUp QuestName="Further Mysteries" QuestId="525" GiverName="Prospector Stormpike" GiverId="1356" />
+		<TurnIn QuestName="Galen's Escape" QuestId="1393" TurnInName="Galen's Strongbox" TurnInType="Object" TurnInId="32569" X="-10228.8" Y="-3319.46" Z="22.3632" />
+		<TurnIn QuestName="Draenethyst Crystals" QuestId="1389" TurnInName="Magtoor" TurnInId="1776" X="-10101" Y="-2818.9" Z="22.1149" />
+		<TurnIn QuestName="The Lost Caravan" QuestId="1421" TurnInName="Watcher Biggs" TurnInId="5476" X="-10535.7" Y="-2836.28" Z="21.9401" />
+		<TurnIn QuestName="Dream Dust in the Swamp" QuestId="1116" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="Rumors for Kravel" QuestId="1117" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<TurnIn QuestName="In Search of The Temple" QuestId="1448" TurnInName="Brohann Caskbelly" TurnInId="5384" X="-8464" Y="516.193" Z="100.639" />
+		<PickUp QuestName="To The Hinterlands" QuestId="1449" GiverName="Brohann Caskbelly" GiverId="5384" X="-8464" Y="516.193" Z="100.639" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1457" TurnInName="Roetten Stonehammer" TurnInId="5637" X="-4681.39" Y="-1266.61" Z="503.465" />
+		<PickUp QuestName="Further Mysteries" QuestId="525" GiverName="Prospector Stormpike" GiverId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
 		<If Condition="(Me.Class == WoWClass.Warrior)">
 			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4480" CollectCount="8" />
 			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4479" CollectCount="8" />
 			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4481" CollectCount="8" />
-			<Objective QuestName="The Summoning" QuestId="1713" Type="CollectItem" ItemId="6052" CollectCount="2" />
-			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4481" CollectCount="8" />
-			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4480" CollectCount="8" />
-			<Objective QuestName="Essence of the Exile" QuestId="1714" Type="CollectItem" ItemId="4479" CollectCount="8" />
+			<Objective QuestName="The Summoning" QuestId="1713" Type="CollectItem" ItemId="6894" CollectCount="1" />
 		</If>
 
 		<CustomBehavior File="LoadProfile" ProfileName="Alterac Mountains (39-39)" />

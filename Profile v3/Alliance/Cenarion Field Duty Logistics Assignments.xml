@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Cenarion Field Duty Logistics Assignments</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,26 +17,112 @@
 
 	<Vendors>
 		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
-		<Vendor Name="Matta" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Vargus" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="8829" Name="The Ultimate Deception">
+		<Objective Type="CollectItem" ItemId="12753" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Risen Construct" Id="10488" />
+				<Mob Name="Risen Bonewarder" Id="10491" />
+				<Mob Name="Lady Illucia Barov" Id="10502" />
+				<Mob Name="The Ravenian" Id="10507" />
+				<Mob Name="Lorekeeper Polkelt" Id="10901" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="120.37" Y="190.41" Z="93.83" />
+				<Hotspot X="121.81" Y="142.89" Z="94.05" />
+				<Hotspot X="103.31" Y="-1.68" Z="75.22" />
+				<Hotspot X="150.34" Y="167.73" Z="93.63" />
+				<Hotspot X="243.39" Y="4.01" Z="73.2" />
+				<Hotspot X="274.88" Y="1.33" Z="85.31" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="12735" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Patchwork Horror" Id="10414" />
+				<Mob Name="Bile Spewer" Id="10416" />
+				<Mob Name="Venom Belcher" Id="10417" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3560" Y="-3333.56" Z="129.34" />
+				<Hotspot X="3659.59" Y="-3336.16" Z="123.81" />
+				<Hotspot X="3658.83" Y="-3494.78" Z="136.64" />
+				<Hotspot X="4000.7" Y="-3395.57" Z="117.44" />
+				<Hotspot X="4009.1" Y="-3428.1" Z="119.83" />
+				<Hotspot X="4049.03" Y="-3429.94" Z="118.12" />
+				<Hotspot X="4085.9" Y="-3402.53" Z="116.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Cenarion Field Duty Logistics Assignments from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8507))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Field Duty" QuestId="8507" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="23024" CollectCount="1" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(8507))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="Field Duty" QuestId="8507" GiverName="Windcaller Kaldon" GiverId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
+		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
 		<PickUp QuestName="Field Duty Papers" QuestId="8508" GiverName="Captain Blackanvil" GiverId="15440" />
 		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
-		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" />
-		<PickUp QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Scrying Materials" QuestId="8779" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Arms for the Field" QuestId="8781" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Armor Kits for the Field" QuestId="8780" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Bandages for the Field" QuestId="8496" GiverName="Windcaller Kaldon" GiverId="15540" />
+		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21257)">
+			<PickUp QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" GiverName="Logistics Task Briefing IV" GiverId="21257" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21259)">
+			<PickUp QuestName="Scrying Materials" QuestId="8779" GiverName="Logistics Task Briefing V" GiverId="21259" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21260)">
+			<PickUp QuestName="Arms for the Field" QuestId="8781" GiverName="Logistics Task Briefing VI" GiverId="21260" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21263)">
+			<PickUp QuestName="Armor Kits for the Field" QuestId="8780" GiverName="Logistics Task Briefing VII" GiverId="21263" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20806)">
+			<PickUp QuestName="Bandages for the Field" QuestId="8496" GiverName="Logistics Task Briefing X" GiverId="20806" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" Type="CollectItem" ItemId="8956" CollectCount="6" />
 		<Objective QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" Type="CollectItem" ItemId="9061" CollectCount="5" />
 		<Objective QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" Type="CollectItem" ItemId="15992" CollectCount="10" />
@@ -52,17 +135,75 @@
 		<Objective QuestName="Bandages for the Field" QuestId="8496" Type="CollectItem" ItemId="14530" CollectCount="30" />
 		<Objective QuestName="Bandages for the Field" QuestId="8496" Type="CollectItem" ItemId="8545" CollectCount="30" />
 		<Objective QuestName="Bandages for the Field" QuestId="8496" Type="CollectItem" ItemId="6451" CollectCount="30" />
-		<TurnIn QuestName="Scrying Materials" QuestId="8779" TurnInName="Geologist Larksbane" TurnInId="15183" />
-		<TurnIn QuestName="Bandages for the Field" QuestId="8496" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" TurnInName="Arcanist Nozzlespring" TurnInId="15444" />
-		<TurnIn QuestName="Arms for the Field" QuestId="8781" TurnInName="Janela Stouthammer" TurnInId="15443" />
-		<TurnIn QuestName="Armor Kits for the Field" QuestId="8780" TurnInName="Janela Stouthammer" TurnInId="15443" />
-		<PickUp QuestName="Desert Survival Kits" QuestId="8497" GiverName="Janela Stouthammer" GiverId="15443" />
-		<PickUp QuestName="Boots for the Guard" QuestId="8805" GiverName="Janela Stouthammer" GiverId="15443" />
-		<PickUp QuestName="Grinding Stones for the Guard" QuestId="8541" GiverName="Janela Stouthammer" GiverId="15443" />
-		<PickUp QuestName="Uniform Supplies" QuestId="8782" GiverName="Janela Stouthammer" GiverId="15443" />
-		<PickUp QuestName="Extraordinary Materials" QuestId="8783" GiverName="Janela Stouthammer" GiverId="15443" />
-		<PickUp QuestName="The Ultimate Deception" QuestId="8829" GiverName="Janela Stouthammer" GiverId="15443" />
+		<!-- REVIEW Q8779 Scrying Materials: start item 21259 Logistics Task Briefing V has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8779)) &amp;&amp; (IsQuestCompleted(8779)))">
+			<TurnIn QuestName="Scrying Materials" QuestId="8779" TurnInName="Geologist Larksbane" TurnInId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		</If>
+
+		<If Condition="((HasQuest(8779)) &amp;&amp; (!IsQuestCompleted(8779)))">
+			<AbandonQuest QuestId="8779" />
+		</If>
+
+		<!-- REVIEW Q8496 Bandages for the Field: start item 20806 Logistics Task Briefing X has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8496)) &amp;&amp; (IsQuestCompleted(8496)))">
+			<TurnIn QuestName="Bandages for the Field" QuestId="8496" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8496)) &amp;&amp; (!IsQuestCompleted(8496)))">
+			<AbandonQuest QuestId="8496" />
+		</If>
+
+		<!-- REVIEW Q8778 The Ironforge Brigade Needs Explosives!: start item 21257 Logistics Task Briefing IV has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8778)) &amp;&amp; (IsQuestCompleted(8778)))">
+			<TurnIn QuestName="The Ironforge Brigade Needs Explosives!" QuestId="8778" TurnInName="Arcanist Nozzlespring" TurnInId="15444" X="-7166.91" Y="1404.12" Z="2.9306" />
+		</If>
+
+		<If Condition="((HasQuest(8778)) &amp;&amp; (!IsQuestCompleted(8778)))">
+			<AbandonQuest QuestId="8778" />
+		</If>
+
+		<!-- REVIEW Q8781 Arms for the Field: start item 21260 Logistics Task Briefing VI has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8781)) &amp;&amp; (IsQuestCompleted(8781)))">
+			<TurnIn QuestName="Arms for the Field" QuestId="8781" TurnInName="Janela Stouthammer" TurnInId="15443" X="-7178.58" Y="1392.09" Z="2.8017" />
+		</If>
+
+		<If Condition="((HasQuest(8781)) &amp;&amp; (!IsQuestCompleted(8781)))">
+			<AbandonQuest QuestId="8781" />
+		</If>
+
+		<!-- REVIEW Q8780 Armor Kits for the Field: start item 21263 Logistics Task Briefing VII has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8780)) &amp;&amp; (IsQuestCompleted(8780)))">
+			<TurnIn QuestName="Armor Kits for the Field" QuestId="8780" TurnInName="Janela Stouthammer" TurnInId="15443" X="-7178.58" Y="1392.09" Z="2.8017" />
+		</If>
+
+		<If Condition="((HasQuest(8780)) &amp;&amp; (!IsQuestCompleted(8780)))">
+			<AbandonQuest QuestId="8780" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20807)">
+			<PickUp QuestName="Desert Survival Kits" QuestId="8497" GiverName="Logistics Task Briefing I" GiverId="20807" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21379)">
+			<PickUp QuestName="Boots for the Guard" QuestId="8805" GiverName="Logistics Task Briefing II" GiverId="21379" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20940)">
+			<PickUp QuestName="Grinding Stones for the Guard" QuestId="8541" GiverName="Logistics Task Briefing III" GiverId="20940" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21262)">
+			<PickUp QuestName="Uniform Supplies" QuestId="8782" GiverName="Logistics Task Briefing VIII" GiverId="21262" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21265)">
+			<PickUp QuestName="Extraordinary Materials" QuestId="8783" GiverName="Logistics Task Briefing IX" GiverId="21265" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21514)">
+			<PickUp QuestName="The Ultimate Deception" QuestId="8829" GiverName="Logistics Task Briefing XI" GiverId="21514" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Desert Survival Kits" QuestId="8497" Type="CollectItem" ItemId="7079" CollectCount="4" />
 		<Objective QuestName="Desert Survival Kits" QuestId="8497" Type="CollectItem" ItemId="19440" CollectCount="4" />
 		<Objective QuestName="Desert Survival Kits" QuestId="8497" Type="CollectItem" ItemId="20452" CollectCount="4" />
@@ -73,17 +214,65 @@
 		<Objective QuestName="Uniform Supplies" QuestId="8782" Type="CollectItem" ItemId="14342" CollectCount="1" />
 		<Objective QuestName="Uniform Supplies" QuestId="8782" Type="CollectItem" ItemId="14048" CollectCount="2" />
 		<Objective QuestName="Uniform Supplies" QuestId="8782" Type="CollectItem" ItemId="14227" CollectCount="1" />
-		<Objective QuestName="Extraordinary Materials" QuestId="8783" Type="CollectItem" ItemId="12655" CollectCount="10" />
-		<Objective QuestName="Extraordinary Materials" QuestId="8783" Type="CollectItem" ItemId="12810" CollectCount="10" />
+		<Objective QuestName="Extraordinary Materials" QuestId="8783" Type="CollectItem" ItemId="12655" CollectCount="2" />
+		<Objective QuestName="Extraordinary Materials" QuestId="8783" Type="CollectItem" ItemId="12810" CollectCount="2" />
 		<Objective QuestName="The Ultimate Deception" QuestId="8829" Type="CollectItem" ItemId="12753" CollectCount="1" />
 		<Objective QuestName="The Ultimate Deception" QuestId="8829" Type="CollectItem" ItemId="12735" CollectCount="3" />
 		<Objective QuestName="The Ultimate Deception" QuestId="8829" Type="CollectItem" ItemId="20407" CollectCount="1" />
-		<TurnIn QuestName="Desert Survival Kits" QuestId="8497" TurnInName="Calandrath" TurnInId="15174" />
-		<TurnIn QuestName="Grinding Stones for the Guard" QuestId="8541" TurnInName="Vish Kozus" TurnInId="15182" />
-		<TurnIn QuestName="Boots for the Guard" QuestId="8805" TurnInName="Vish Kozus" TurnInId="15182" />
-		<TurnIn QuestName="Uniform Supplies" QuestId="8782" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="Extraordinary Materials" QuestId="8783" TurnInName="Vargus" TurnInId="15176" />
-		<TurnIn QuestName="The Ultimate Deception" QuestId="8829" TurnInName="Aurel Goldleaf" TurnInId="15282" />
-		<Objective QuestName="Field Duty Papers" QuestId="8508" Type="CollectItem" ItemId="21132" CollectCount="1" />
+		<!-- REVIEW Q8497 Desert Survival Kits: start item 20807 Logistics Task Briefing I has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8497)) &amp;&amp; (IsQuestCompleted(8497)))">
+			<TurnIn QuestName="Desert Survival Kits" QuestId="8497" TurnInName="Calandrath" TurnInId="15174" X="-6868.04" Y="729.914" Z="45.7454" />
+		</If>
+
+		<If Condition="((HasQuest(8497)) &amp;&amp; (!IsQuestCompleted(8497)))">
+			<AbandonQuest QuestId="8497" />
+		</If>
+
+		<!-- REVIEW Q8541 Grinding Stones for the Guard: start item 20940 Logistics Task Briefing III has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8541)) &amp;&amp; (IsQuestCompleted(8541)))">
+			<TurnIn QuestName="Grinding Stones for the Guard" QuestId="8541" TurnInName="Vish Kozus" TurnInId="15182" X="-6740.08" Y="769.562" Z="128.521" />
+		</If>
+
+		<If Condition="((HasQuest(8541)) &amp;&amp; (!IsQuestCompleted(8541)))">
+			<AbandonQuest QuestId="8541" />
+		</If>
+
+		<!-- REVIEW Q8805 Boots for the Guard: start item 21379 Logistics Task Briefing II has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8805)) &amp;&amp; (IsQuestCompleted(8805)))">
+			<TurnIn QuestName="Boots for the Guard" QuestId="8805" TurnInName="Vish Kozus" TurnInId="15182" X="-6740.08" Y="769.562" Z="128.521" />
+		</If>
+
+		<If Condition="((HasQuest(8805)) &amp;&amp; (!IsQuestCompleted(8805)))">
+			<AbandonQuest QuestId="8805" />
+		</If>
+
+		<!-- REVIEW Q8782 Uniform Supplies: start item 21262 Logistics Task Briefing VIII has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8782)) &amp;&amp; (IsQuestCompleted(8782)))">
+			<TurnIn QuestName="Uniform Supplies" QuestId="8782" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8782)) &amp;&amp; (!IsQuestCompleted(8782)))">
+			<AbandonQuest QuestId="8782" />
+		</If>
+
+		<!-- REVIEW Q8783 Extraordinary Materials: start item 21265 Logistics Task Briefing IX has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8783)) &amp;&amp; (IsQuestCompleted(8783)))">
+			<TurnIn QuestName="Extraordinary Materials" QuestId="8783" TurnInName="Vargus" TurnInId="15176" X="-6860.93" Y="753.044" Z="42.5555" />
+		</If>
+
+		<If Condition="((HasQuest(8783)) &amp;&amp; (!IsQuestCompleted(8783)))">
+			<AbandonQuest QuestId="8783" />
+		</If>
+
+		<!-- REVIEW Q8829 The Ultimate Deception: start item 21514 Logistics Task Briefing XI has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8829)) &amp;&amp; (IsQuestCompleted(8829)))">
+			<TurnIn QuestName="The Ultimate Deception" QuestId="8829" TurnInName="Aurel Goldleaf" TurnInId="15282" X="-6844.67" Y="727.634" Z="42.6185" />
+		</If>
+
+		<If Condition="((HasQuest(8829)) &amp;&amp; (!IsQuestCompleted(8829)))">
+			<AbandonQuest QuestId="8829" />
+		</If>
+
+		<Objective QuestName="Field Duty Papers" QuestId="8508" Type="CollectItem" ItemId="23024" CollectCount="1" />
 	</QuestOrder>
 </HBProfile>

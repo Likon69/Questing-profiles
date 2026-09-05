@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Ahn'Qiraj Gear\Temple of Ahn'Qiraj Chest Quest</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -21,85 +18,689 @@
 	<Vendors />
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="8666" Name="Genesis Vest">
+		<Objective Type="CollectItem" ItemId="20865" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20878" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20861" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8656" Name="Striker's Hauberk">
+		<Objective Type="CollectItem" ItemId="20863" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20859" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20879" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8633" Name="Enigma Robes">
+		<Objective Type="CollectItem" ItemId="20874" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20859" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20863" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8627" Name="Avenger's Breastplate">
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20877" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8603" Name="Vestments of the Oracle">
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20876" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20862" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8638" Name="Deathdealer's Vest">
+		<Objective Type="CollectItem" ItemId="20881" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20861" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20865" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8622" Name="Stormcaller's Hauberk">
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20877" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8661" Name="Doomcaller's Robes">
+		<Objective Type="CollectItem" ItemId="20858" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20875" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20862" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8562" Name="Conqueror's Breastplate">
+		<Objective Type="CollectItem" ItemId="20864" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20882" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+				<GameObject Name="Large Scarab Coffer" Id="180690" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+				<Hotspot X="-8561.12" Y="1989.54" Z="-3.09" />
+				<Hotspot X="-8674.74" Y="1594.59" Z="-86.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20860" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Vekniss Soldier" Id="15229" />
+				<Mob Name="Vekniss Warrior" Id="15230" />
+				<Mob Name="Vekniss Guardian" Id="15233" />
+				<Mob Name="Vekniss Stinger" Id="15235" />
+				<Mob Name="Vekniss Wasp" Id="15236" />
+				<Mob Name="Vekniss Hive Crawler" Id="15240" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8585.53" Y="1955.58" Z="-0.69" />
+				<Hotspot X="-8401.42" Y="1932.07" Z="3.38" />
+				<Hotspot X="-8586.84" Y="1985.7" Z="-1.54" />
+				<Hotspot X="-8340.88" Y="1905.75" Z="-2.36" />
+				<Hotspot X="-8387.33" Y="2058.9" Z="44.93" />
+				<Hotspot X="-8328.89" Y="1876.64" Z="-2.25" />
+				<Hotspot X="-8351.6" Y="1807.61" Z="-0.57" />
+				<Hotspot X="-8547.29" Y="2123.59" Z="-1.94" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
 		<If Condition="Me.Level &lt; 60">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 60 - Vekniss Drone</Name>
+					<Factions>310,311</Factions>
+					<TargetMinLevel>60</TargetMinLevel>
+					<TargetMaxLevel>60</TargetMaxLevel>
+					<Hotspots>
+						<Hotspot X="-8718.27" Y="1668.98" Z="-83.25" />
+						<Hotspot X="-8752.73" Y="1622.76" Z="-82.5" />
+						<Hotspot X="-8159.68" Y="1664.08" Z="-36.24" />
+						<Hotspot X="-8162.24" Y="1621.63" Z="-40.38" />
+						<Hotspot X="-8124.92" Y="1648.94" Z="-45.66" />
+						<Hotspot X="-8086.94" Y="1662.35" Z="-50.81" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
 			<GrindTo Level="60" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<PickUp QuestName="Genesis Vest" QuestId="8666" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Genesis Vest" QuestId="8666" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<PickUp QuestName="Striker's Hauberk" QuestId="8656" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Striker's Hauberk" QuestId="8656" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage)">
-			<PickUp QuestName="Enigma Robes" QuestId="8633" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Enigma Robes" QuestId="8633" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin)">
-			<PickUp QuestName="Avenger's Breastplate" QuestId="8627" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Avenger's Breastplate" QuestId="8627" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest)">
-			<PickUp QuestName="Vestments of the Oracle" QuestId="8603" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Vestments of the Oracle" QuestId="8603" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Deathdealer's Vest" QuestId="8638" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Deathdealer's Vest" QuestId="8638" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Stormcaller's Hauberk" QuestId="8622" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Stormcaller's Hauberk" QuestId="8622" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<PickUp QuestName="Doomcaller's Robes" QuestId="8661" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Doomcaller's Robes" QuestId="8661" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<PickUp QuestName="Conqueror's Breastplate" QuestId="8562" GiverName="Vethsera" GiverId="15504" />
+			<PickUp QuestName="Conqueror's Breastplate" QuestId="8562" GiverName="Vethsera" GiverId="15504" X="-8499.58" Y="1933.64" Z="135.709" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<Objective QuestName="Genesis Vest" QuestId="8666" Type="CollectItem" ItemId="20933" CollectCount="2" />
+			<Objective QuestName="Genesis Vest" QuestId="8666" Type="CollectItem" ItemId="20933" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<Objective QuestName="Striker's Hauberk" QuestId="8656" Type="CollectItem" ItemId="20929" CollectCount="2" />
+			<Objective QuestName="Striker's Hauberk" QuestId="8656" Type="CollectItem" ItemId="20929" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage)">
-			<Objective QuestName="Enigma Robes" QuestId="8633" Type="CollectItem" ItemId="20933" CollectCount="2" />
+			<Objective QuestName="Enigma Robes" QuestId="8633" Type="CollectItem" ItemId="20933" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin)">
-			<Objective QuestName="Avenger's Breastplate" QuestId="8627" Type="CollectItem" ItemId="20929" CollectCount="2" />
+			<Objective QuestName="Avenger's Breastplate" QuestId="8627" Type="CollectItem" ItemId="20929" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest)">
-			<Objective QuestName="Vestments of the Oracle" QuestId="8603" Type="CollectItem" ItemId="20933" CollectCount="2" />
+			<Objective QuestName="Vestments of the Oracle" QuestId="8603" Type="CollectItem" ItemId="20933" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<Objective QuestName="Deathdealer's Vest" QuestId="8638" Type="CollectItem" ItemId="20929" CollectCount="2" />
+			<Objective QuestName="Deathdealer's Vest" QuestId="8638" Type="CollectItem" ItemId="20929" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<Objective QuestName="Stormcaller's Hauberk" QuestId="8622" Type="CollectItem" ItemId="20929" CollectCount="2" />
+			<Objective QuestName="Stormcaller's Hauberk" QuestId="8622" Type="CollectItem" ItemId="20929" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock)">
-			<Objective QuestName="Doomcaller's Robes" QuestId="8661" Type="CollectItem" ItemId="20933" CollectCount="2" />
+			<Objective QuestName="Doomcaller's Robes" QuestId="8661" Type="CollectItem" ItemId="20933" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<Objective QuestName="Conqueror's Breastplate" QuestId="8562" Type="CollectItem" ItemId="20929" CollectCount="2" />
+			<Objective QuestName="Conqueror's Breastplate" QuestId="8562" Type="CollectItem" ItemId="20929" CollectCount="1" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
@@ -208,33 +809,6 @@
 
 		<If Condition="(Me.Class == WoWClass.Warrior)">
 			<Objective QuestName="Conqueror's Breastplate" QuestId="8562" Type="CollectItem" ItemId="20864" CollectCount="5" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Druid)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Hunter)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Mage)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Paladin)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Priest)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Rogue)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Shaman)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Warlock)">
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Warrior)">
 		</If>
 
 	</QuestOrder>

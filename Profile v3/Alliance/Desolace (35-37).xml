@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Desolace (35-37)</Name>
-	<MinLevel>35</MinLevel>
-	<MaxLevel>37</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,116 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Kulwia" Entry="4499" Type="Repair" X="-5201.8" Y="-1569.02" Z="-48.1368" />
 		<!-- Innkeeper Kauth (4492) — no spawn data -->
+		<Vendor Name="Maxton Strang" Entry="1322" Type="Repair" X="202.837" Y="1179.19" Z="168.082" />
+		<Vendor Name="Innkeeper Lyshaerya" Entry="11103" Type="Food" X="255.615" Y="1253.76" Z="192.224" />
+		<Vendor Name="Janet Hommers" Entry="8150" Type="Food" X="255.034" Y="1257.52" Z="192.224" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1387" Name="Centaur Bounty">
+		<Objective Type="CollectItem" ItemId="6067" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Kolkar Centaur" Id="4632" />
+				<Mob Name="Kolkar Scout" Id="4633" />
+				<Mob Name="Kolkar Mauler" Id="4634" />
+				<Mob Name="Kolkar Windchaser" Id="4635" />
+				<Mob Name="Kolkar Battle Lord" Id="4636" />
+				<Mob Name="Kolkar Destroyer" Id="4637" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-711.86" Y="1155.1" Z="90.73" />
+				<Hotspot X="-726.51" Y="1083.33" Z="90.35" />
+				<Hotspot X="-758.33" Y="1110.93" Z="89.96" />
+				<Hotspot X="-752.97" Y="1047.71" Z="90.68" />
+				<Hotspot X="-753.15" Y="970.57" Z="91.14" />
+				<Hotspot X="-783.69" Y="1149.99" Z="93.87" />
+				<Hotspot X="-781.92" Y="1081.17" Z="89.42" />
+				<Hotspot X="-799.4" Y="1024.36" Z="89.51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1458" Name="Reagents for Reclaimers Inc.">
+		<Objective Type="CollectItem" ItemId="6246" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatefury Rogue" Id="4670" />
+				<Mob Name="Hatefury Trickster" Id="4671" />
+				<Mob Name="Hatefury Felsworn" Id="4672" />
+				<Mob Name="Hatefury Betrayer" Id="4673" />
+				<Mob Name="Hatefury Shadowstalker" Id="4674" />
+				<Mob Name="Hatefury Hellcaller" Id="4675" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-15.01" Y="1081.08" Z="113.58" />
+				<Hotspot X="2.67" Y="1035.92" Z="120.71" />
+				<Hotspot X="-46.98" Y="1044.72" Z="99.38" />
+				<Hotspot X="55.59" Y="967.22" Z="155.1" />
+				<Hotspot X="11.42" Y="986.22" Z="128.34" />
+				<Hotspot X="132.86" Y="934.18" Z="166.59" />
+				<Hotspot X="181.08" Y="927.43" Z="175.07" />
+				<Hotspot X="75.47" Y="909.98" Z="146.52" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6247" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatefury Rogue" Id="4670" />
+				<Mob Name="Hatefury Trickster" Id="4671" />
+				<Mob Name="Hatefury Felsworn" Id="4672" />
+				<Mob Name="Hatefury Betrayer" Id="4673" />
+				<Mob Name="Hatefury Shadowstalker" Id="4674" />
+				<Mob Name="Hatefury Hellcaller" Id="4675" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-15.01" Y="1081.08" Z="113.58" />
+				<Hotspot X="2.67" Y="1035.92" Z="120.71" />
+				<Hotspot X="-46.98" Y="1044.72" Z="99.38" />
+				<Hotspot X="55.59" Y="967.22" Z="155.1" />
+				<Hotspot X="11.42" Y="986.22" Z="128.34" />
+				<Hotspot X="132.86" Y="934.18" Z="166.59" />
+				<Hotspot X="181.08" Y="927.43" Z="175.07" />
+				<Hotspot X="75.47" Y="909.98" Z="146.52" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1459" Name="Reagents for Reclaimers Inc.">
+		<Objective Type="CollectItem" ItemId="6248" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Scorpashi Snapper" Id="4696" />
+				<Mob Name="Scorpashi Lasher" Id="4697" />
+				<Mob Name="Scorpashi Venomlash" Id="4699" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10.61" Y="1422.84" Z="93.15" />
+				<Hotspot X="-53.99" Y="1417.31" Z="89.4" />
+				<Hotspot X="-83.1" Y="1380.14" Z="89.59" />
+				<Hotspot X="-85.92" Y="1114.08" Z="92.19" />
+				<Hotspot X="-121.22" Y="1214.18" Z="94.78" />
+				<Hotspot X="-150.26" Y="1353.07" Z="89.76" />
+				<Hotspot X="184.29" Y="1609.49" Z="150.77" />
+				<Hotspot X="102.1" Y="1606.33" Z="134.89" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6249" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Aged Kodo" Id="4700" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-578.68" Y="1590.72" Z="89.71" />
+				<Hotspot X="-592.44" Y="1624.4" Z="90.03" />
+				<Hotspot X="-124.92" Y="2214.81" Z="86.12" />
+				<Hotspot X="-1247.52" Y="1821.12" Z="50.5" />
+				<Hotspot X="-1229.63" Y="1897.63" Z="60.15" />
+				<Hotspot X="-1270.44" Y="1867.88" Z="50.27" />
+				<Hotspot X="-1245.73" Y="1962.46" Z="50.27" />
+				<Hotspot X="-1365.87" Y="1884.61" Z="50.27" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="5501" Name="Bone Collector">
 		<Objective Type="CollectItem" ItemId="13703" CollectCount="10">
 			<CollectFrom>
@@ -40,7 +139,105 @@
 				<Hotspot X="-1349.28" Y="2031.71" Z="50.14" />
 				<Hotspot X="-1315.02" Y="1796.78" Z="50.14" />
 				<Hotspot X="-1310.88" Y="2035.5" Z="50.14" />
-				<Hotspot X="-1307.84" Y="1949.76" Z="51.0" />
+				<Hotspot X="-1307.84" Y="1949.76" Z="51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5741" Name="Sceptre of Light">
+		<Objective Type="CollectItem" ItemId="15750" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Seer" Id="13019" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-451.79" Y="1753.09" Z="153.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6161" Name="Claim Rackmore's Treasure!">
+		<Objective Type="CollectItem" ItemId="15881" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Naga" Id="4711" />
+				<Mob Name="Slitherblade Sorceress" Id="4712" />
+				<Mob Name="Slitherblade Warrior" Id="4713" />
+				<Mob Name="Slitherblade Myrmidon" Id="4714" />
+				<Mob Name="Slitherblade Razortail" Id="4715" />
+				<Mob Name="Slitherblade Tidehunter" Id="4716" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-412.54" Y="2619.03" Z="-5.43" />
+				<Hotspot X="-363.64" Y="2649.85" Z="-16.41" />
+				<Hotspot X="-359.1" Y="2616.09" Z="-5.69" />
+				<Hotspot X="-334.84" Y="2572.84" Z="4.89" />
+				<Hotspot X="-316.46" Y="2683.05" Z="-22.33" />
+				<Hotspot X="-276.61" Y="2599.4" Z="-16.16" />
+				<Hotspot X="-241.72" Y="2603.69" Z="-20.78" />
+				<Hotspot X="-232.01" Y="2679.1" Z="-40.18" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="15878" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Drysnap Crawler" Id="11562" />
+				<Mob Name="Drysnap Pincer" Id="11563" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-489.57" Y="2665.26" Z="-20.63" />
+				<Hotspot X="-563.42" Y="2663.3" Z="-22.51" />
+				<Hotspot X="-433.8" Y="2725.97" Z="-22.39" />
+				<Hotspot X="-480.36" Y="2748.83" Z="-29.2" />
+				<Hotspot X="-589.36" Y="2714.89" Z="-25.8" />
+				<Hotspot X="-438.44" Y="2781.25" Z="-29.59" />
+				<Hotspot X="-384.07" Y="2807.31" Z="-24.52" />
+				<Hotspot X="-482.46" Y="2813.65" Z="-31.17" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1384" Name="Raid on the Kolkar">
+		<Objective Type="CollectItem" ItemId="6079" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Kolkar Centaur" Id="4632" />
+				<Mob Name="Kolkar Scout" Id="4633" />
+				<Mob Name="Kolkar Mauler" Id="4634" />
+				<Mob Name="Kolkar Windchaser" Id="4635" />
+				<Mob Name="Kolkar Battle Lord" Id="4636" />
+				<Mob Name="Kolkar Destroyer" Id="4637" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1111.87" Y="1151.47" Z="92.02" />
+				<Hotspot X="-1061.91" Y="1132.8" Z="89.91" />
+				<Hotspot X="-985.14" Y="1145.99" Z="93.37" />
+				<Hotspot X="-1015.26" Y="1117.66" Z="88.34" />
+				<Hotspot X="-1044.93" Y="1080.82" Z="88.47" />
+				<Hotspot X="-916.77" Y="1148.21" Z="92.46" />
+				<Hotspot X="-953.17" Y="1115.58" Z="88.34" />
+				<Hotspot X="-1058.68" Y="1022.64" Z="90.37" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1456" Name="The Karnitol Shipwreck">
+		<Objective Type="CollectItem" ItemId="6245" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Tidehunter" Id="4716" />
+				<Mob Name="Slitherblade Sea Witch" Id="4719" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-50.58" Y="2661.28" Z="-103.42" />
+				<Hotspot X="154.69" Y="2680.73" Z="-67" />
+				<Hotspot X="200.49" Y="2696.92" Z="-67.34" />
+				<Hotspot X="137.02" Y="2739.48" Z="-70.25" />
+				<Hotspot X="141.09" Y="2847.97" Z="-8.34" />
+				<Hotspot X="216.45" Y="2866.78" Z="3.55" />
+				<Hotspot X="-32.69" Y="2873.81" Z="-29.31" />
+				<Hotspot X="114.96" Y="2904.35" Z="-1.07" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1439" Name="Search for Tyranis">
+		<Objective Type="CollectItem" ItemId="6767" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tyranis Malem" Id="5643" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-419.61" Y="1850.15" Z="128.49" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -61,77 +258,129 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1187" Name="Razzeric's Tweaking">
+		<Objective Type="CollectItem" ItemId="5862" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="The Barrens" Id="3314" />
+				<GameObject Name="Gizmorium Shipping Crate" Id="20727" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4010.62" Y="-3813.58" Z="37.34" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Desolace (35-37) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1437))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Vahlarriel's Search" QuestId="1437" GiverName="Vahlarriel Demonslayer" GiverId="5642" />
-		<PickUp QuestName="Centaur Bounty" QuestId="1387" GiverName="Corporal Melkins" GiverId="5752" />
-		<PickUp QuestName="Strange Alliance" QuestId="1382" GiverName="Captain Pentigast" GiverId="5396" />
-		<TurnIn QuestName="Reclaimers' Business in Desolace" QuestId="1453" TurnInName="Kreldig Ungor" TurnInId="5638" />
-		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1454" GiverName="Kreldig Ungor" GiverId="5638" />
-		<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1458" GiverName="Kreldig Ungor" GiverId="5638" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(1437))">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="Vahlarriel's Search" QuestId="1437" GiverName="Vahlarriel Demonslayer" GiverId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		<PickUp QuestName="Centaur Bounty" QuestId="1387" GiverName="Corporal Melkins" GiverId="5752" X="126.208" Y="1232.69" Z="163.26" />
+		<PickUp QuestName="Strange Alliance" QuestId="1382" GiverName="Captain Pentigast" GiverId="5396" X="124.292" Y="1236.19" Z="163.145" />
+		<TurnIn QuestName="Reclaimers' Business in Desolace" QuestId="1453" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1454" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1458" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1458" Type="CollectItem" ItemId="6246" CollectCount="10" />
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1458" Type="CollectItem" ItemId="6247" CollectCount="10" />
-		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1458" TurnInName="Kreldig Ungor" TurnInId="5638" />
-		<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1459" GiverName="Kreldig Ungor" GiverId="5638" />
-		<TurnIn QuestName="Vahlarriel's Search" QuestId="1437" TurnInName="Object_50961" TurnInType="Object" TurnInId="50961" />
-		<PickUp QuestName="Vahlarriel's Search" QuestId="1465" GiverName="Christi Galvanis" GiverId="12960" />
-		<PickUp QuestName="Bone Collector" QuestId="5501" GiverName="Bibbly F'utzbuckle" GiverId="11438" />
-		<PickUp QuestName="Sceptre of Light" QuestId="5741" GiverName="Azore Aldamort" GiverId="11863" />
-		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1454" TurnInName="Object_35251" TurnInType="Object" TurnInId="35251" />
-		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1455" GiverName="Azore Aldamort" GiverId="11863" />
-		<PickUp QuestName="Claim Rackmore's Treasure!" QuestId="6161" GiverName="Azore Aldamort" GiverId="11863" />
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1458" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<PickUp QuestName="Reagents for Reclaimers Inc." QuestId="1459" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1437" TurnInName="Malem Chest" TurnInType="Object" TurnInId="50961" X="-82.7896" Y="1692.18" Z="88.7181" />
+		<PickUp QuestName="Vahlarriel's Search" QuestId="1465" GiverName="Malem Chest" GiverId="50961" GiverType="Object" X="-82.7896" Y="1692.18" Z="88.7181" />
+		<PickUp QuestName="Bone Collector" QuestId="5501" GiverName="Bibbly F'utzbuckle" GiverId="11438" X="-716.667" Y="1431.25" Z="90.3854" />
+		<PickUp QuestName="Sceptre of Light" QuestId="5741" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1454" TurnInName="Karnitol's Chest" TurnInType="Object" TurnInId="35251" X="-460.793" Y="2609.83" Z="2.7569" />
+		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1455" GiverName="Karnitol's Chest" GiverId="35251" GiverType="Object" X="-460.793" Y="2609.83" Z="2.7569" />
+		<PickUp QuestName="Claim Rackmore's Treasure!" QuestId="6161" GiverName="Rackmore's Log" GiverId="177787" GiverType="Object" X="-459.514" Y="2611.73" Z="2.0908" />
 		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15878" CollectCount="1" />
-		<PickUp QuestName="Kodo Roundup" QuestId="5561" GiverName="Smeed Scrabblescrew" GiverId="11596" />
-		<While Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))" >
-			<CustomBehavior File="UseItemOn" QuestId="5561" MobId="11627" ItemId="13892" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" />
+		<PickUp QuestName="Kodo Roundup" QuestId="5561" GiverName="Smeed Scrabblescrew" GiverId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		<!-- Q5561 Kodo Roundup: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\[H - Quest] 1-58 [Kick]\[H - Quest] 12-58 K-EK [Kick].xml -->
+		<If Condition="(!IsQuestCompleted(14314))">
+			<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+				<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+					<CustomBehavior File="UseItemOn" QuestId="5561" MobId1="4702" MobId2="4700" ItemId="13892" WaitTime="6000" Range="5" CollectionDistance="500" X="-1295.744" Y="1840.136" Z="52.33176" />
+				</If>
+			</If>
+		</If>
+
+		<If Condition="(!IsQuestCompleted(14314))">
+			<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+				<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+					<CustomBehavior File="InteractWith" QuestId="5561" MobId1="11627" MobId2="4700" MobId3="4702" CollectionDistance="100" WaitForNpcs="False" X="-1408.956" Y="1504.514" Z="59.06141" />
+				</If>
+			</If>
+		</If>
+
+		<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
 		<Objective QuestName="Bone Collector" QuestId="5501" Type="CollectItem" ItemId="13703" CollectCount="10" />
 		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6249" CollectCount="3" />
 		<Objective QuestName="Centaur Bounty" QuestId="1387" Type="CollectItem" ItemId="6067" CollectCount="15" />
-		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6248" CollectCount="10" />
-		<TurnIn QuestName="Strange Alliance" QuestId="1382" TurnInName="Uthek the Wise" TurnInId="5397" />
-		<PickUp QuestName="Raid on the Kolkar" QuestId="1384" GiverName="Uthek the Wise" GiverId="5397" />
-		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1455" TurnInName="Kreldig Ungor" TurnInId="5638" />
-		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1456" GiverName="Kreldig Ungor" GiverId="5638" />
-		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1459" TurnInName="Kreldig Ungor" TurnInId="5638" />
-		<TurnIn QuestName="Centaur Bounty" QuestId="1387" TurnInName="Corporal Melkins" TurnInId="5752" />
-		<TurnIn QuestName="Vahlarriel's Search" QuestId="1465" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" />
-		<PickUp QuestName="Vahlarriel's Search" QuestId="1438" GiverName="Vahlarriel Demonslayer" GiverId="5642" />
+		<Objective QuestName="Reagents for Reclaimers Inc." QuestId="1459" Type="CollectItem" ItemId="6248" CollectCount="7" />
+		<TurnIn QuestName="Strange Alliance" QuestId="1382" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<PickUp QuestName="Raid on the Kolkar" QuestId="1384" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1455" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1456" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<TurnIn QuestName="Reagents for Reclaimers Inc." QuestId="1459" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<TurnIn QuestName="Centaur Bounty" QuestId="1387" TurnInName="Corporal Melkins" TurnInId="5752" X="126.208" Y="1232.69" Z="163.26" />
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1465" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		<PickUp QuestName="Vahlarriel's Search" QuestId="1438" GiverName="Vahlarriel Demonslayer" GiverId="5642" X="97.8138" Y="1246.16" Z="164.155" />
 		<Objective QuestName="Raid on the Kolkar" QuestId="1384" Type="CollectItem" ItemId="6079" CollectCount="10" />
-		<TurnIn QuestName="Bone Collector" QuestId="5501" TurnInName="Bibbly F'utzbuckle" TurnInId="11438" />
+		<TurnIn QuestName="Bone Collector" QuestId="5501" TurnInName="Bibbly F'utzbuckle" TurnInId="11438" X="-716.667" Y="1431.25" Z="90.3854" />
 		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
-		<TurnIn QuestName="Vahlarriel's Search" QuestId="1438" TurnInName="Dalinda Malem" TurnInId="5644" />
-		<PickUp QuestName="Search for Tyranis" QuestId="1439" GiverName="Dalinda Malem" GiverId="5644" />
+		<TurnIn QuestName="Vahlarriel's Search" QuestId="1438" TurnInName="Dalinda Malem" TurnInId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		<PickUp QuestName="Search for Tyranis" QuestId="1439" GiverName="Dalinda Malem" GiverId="5644" X="-331.142" Y="1766.99" Z="139.6" />
 		<Objective QuestName="Search for Tyranis" QuestId="1439" Type="CollectItem" ItemId="6767" CollectCount="1" />
-		<TurnIn QuestName="Search for Tyranis" QuestId="1439" TurnInName="Dalinda Malem" TurnInId="5644" />
-		<PickUp QuestName="Return to Vahlarriel" QuestId="1440" GiverName="Dalinda Malem" GiverId="5644" />
-		<TurnIn QuestName="Sceptre of Light" QuestId="5741" TurnInName="Azore Aldamort" TurnInId="11863" />
-		<PickUp QuestName="Book of the Ancients" QuestId="6027" GiverName="Azore Aldamort" GiverId="11863" />
+		<TurnIn QuestName="Search for Tyranis" QuestId="1439" TurnInName="Dalinda Malem" TurnInId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		<PickUp QuestName="Return to Vahlarriel" QuestId="1440" GiverName="Dalinda Malem" GiverId="5644" X="-331.142" Y="1766.99" Z="139.6" />
+		<TurnIn QuestName="Sceptre of Light" QuestId="5741" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<PickUp QuestName="Book of the Ancients" QuestId="6027" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15881" CollectCount="1" />
 		<Objective QuestName="Book of the Ancients" QuestId="6027" Type="CollectItem" ItemId="15803" CollectCount="1" />
 		<!-- Quest 6161 (Claim Rackmore's Treasure!) — TurnIn Object not in 3.3.5a -->
 		<Objective QuestName="The Karnitol Shipwreck" QuestId="1456" Type="CollectItem" ItemId="6245" CollectCount="1" />
-		<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" />
-		<TurnIn QuestName="Raid on the Kolkar" QuestId="1384" TurnInName="Uthek the Wise" TurnInId="5397" />
-		<PickUp QuestName="Stealing Supplies" QuestId="1370" GiverName="Uthek the Wise" GiverId="5397" />
+		<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<TurnIn QuestName="Raid on the Kolkar" QuestId="1384" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<PickUp QuestName="Stealing Supplies" QuestId="1370" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
 		<Objective QuestName="Stealing Supplies" QuestId="1370" Type="CollectItem" ItemId="6069" CollectCount="6" />
-		<TurnIn QuestName="Stealing Supplies" QuestId="1370" TurnInName="Uthek the Wise" TurnInId="5397" />
-		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1456" TurnInName="Kreldig Ungor" TurnInId="5638" />
-		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1457" GiverName="Kreldig Ungor" GiverId="5638" />
-		<TurnIn QuestName="Return to Vahlarriel" QuestId="1440" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" />
-		<Objective QuestName="Parts for Kravel" QuestId="1112" Type="CollectItem" ItemId="5800" CollectCount="1" />
-		<TurnIn QuestName="Parts for Kravel" QuestId="1112" TurnInName="Kravel Koalbeard" TurnInId="4452" />
-		<PickUp QuestName="Delivery to the Gnomes" QuestId="1114" GiverName="Kravel Koalbeard" GiverId="4452" />
-		<TurnIn QuestName="Delivery to the Gnomes" QuestId="1114" TurnInName="Fizzle Brassbolts" TurnInId="4454" />
-		<PickUp QuestName="Martek the Exiled" QuestId="1106" GiverName="Fizzle Brassbolts" GiverId="4454" />
-		<PickUp QuestName="The Rumormonger" QuestId="1115" GiverName="Kravel Koalbeard" GiverId="4452" />
-		<TurnIn QuestName="Goblin Sponsorship" QuestId="1183" TurnInName="Pozzik" TurnInId="4630" />
-		<PickUp QuestName="The Eighteenth Pilot" QuestId="1186" GiverName="Pozzik" GiverId="4630" />
-		<TurnIn QuestName="The Eighteenth Pilot" QuestId="1186" TurnInName="Razzeric" TurnInId="4706" />
-		<PickUp QuestName="Razzeric's Tweaking" QuestId="1187" GiverName="Razzeric" GiverId="4706" />
+		<TurnIn QuestName="Stealing Supplies" QuestId="1370" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<TurnIn QuestName="The Karnitol Shipwreck" QuestId="1456" TurnInName="Kreldig Ungor" TurnInId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<PickUp QuestName="The Karnitol Shipwreck" QuestId="1457" GiverName="Kreldig Ungor" GiverId="5638" X="163.489" Y="1257.05" Z="166.782" />
+		<TurnIn QuestName="Return to Vahlarriel" QuestId="1440" TurnInName="Vahlarriel Demonslayer" TurnInId="5642" X="97.8138" Y="1246.16" Z="164.155" />
+		<TurnIn QuestName="Parts for Kravel" QuestId="1112" TurnInName="Kravel Koalbeard" TurnInId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
+		<PickUp QuestName="Delivery to the Gnomes" QuestId="1114" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
+		<TurnIn QuestName="Delivery to the Gnomes" QuestId="1114" TurnInName="Fizzle Brassbolts" TurnInId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
+		<PickUp QuestName="Martek the Exiled" QuestId="1106" GiverName="Fizzle Brassbolts" GiverId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
+		<PickUp QuestName="The Rumormonger" QuestId="1115" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
+		<TurnIn QuestName="Goblin Sponsorship" QuestId="1183" TurnInName="Pozzik" TurnInId="4630" X="-6192.6" Y="-3961.18" Z="-58.6667" />
+		<PickUp QuestName="The Eighteenth Pilot" QuestId="1186" GiverName="Pozzik" GiverId="4630" X="-6192.6" Y="-3961.18" Z="-58.6667" />
+		<TurnIn QuestName="The Eighteenth Pilot" QuestId="1186" TurnInName="Razzeric" TurnInId="4706" X="-6198.75" Y="-3967.77" Z="-58.6667" />
+		<PickUp QuestName="Razzeric's Tweaking" QuestId="1187" GiverName="Razzeric" GiverId="4706" X="-6198.75" Y="-3967.77" Z="-58.6667" />
+		<Objective QuestName="Razzeric's Tweaking" QuestId="1187" Type="CollectItem" ItemId="5862" CollectCount="1" />
 		<CustomBehavior File="LoadProfile" ProfileName="Stranglethorn Vale (37-38)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Hillsbrad Foothills (29-30)</Name>
-	<MinLevel>29</MinLevel>
-	<MaxLevel>30</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,129 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Innkeeper Shaussified" Entry="2398" Type="Food" X="-166.99" Y="-905.178" Z="55.6298" />
-		<Vendor Name="Henry Chapal" Entry="2397" Type="Repair" X="-14.0007" Y="-952.195" Z="56.2737" />
+		<Vendor Name="Ott" Entry="3539" Type="Repair" X="-158.525" Y="-867.18" Z="56.9813" />
+		<Vendor Name="Jason Lemieux" Entry="3544" Type="Food" X="-28.3207" Y="-900.884" Z="56.056" />
+		<Vendor Name="Innkeeper Shay" Entry="2388" Type="Food" X="-5.9687" Y="-942.282" Z="57.1621" />
+		<Vendor Name="Jekyll Flandring" Entry="13219" Type="Repair" X="393.567" Y="-976.087" Z="110.218" />
+		<Vendor Name="Gillian Moore" Entry="5820" Type="Repair" X="1505.25" Y="198.394" Z="-62.0594" />
+		<Vendor Name="Eleanor Rusk" Entry="4555" Type="Food" X="1564.76" Y="209.601" Z="-43.019" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="501" Name="Elixir of Pain">
+		<Objective Type="CollectItem" ItemId="3496" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Starving Mountain Lion" Id="2384" />
+				<Mob Name="Feral Mountain Lion" Id="2385" />
+				<Mob Name="Mountain Lion" Id="2406" />
+				<Mob Name="Hulking Mountain Lion" Id="2407" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-155.24" Y="-708.31" Z="66.72" />
+				<Hotspot X="-218.58" Y="-679.65" Z="61.54" />
+				<Hotspot X="-51.05" Y="-585.43" Z="154.06" />
+				<Hotspot X="96.31" Y="-590.16" Z="141.2" />
+				<Hotspot X="-276.16" Y="-680.14" Z="55.76" />
+				<Hotspot X="-283.39" Y="-620.9" Z="59.2" />
+				<Hotspot X="49.22" Y="-496.21" Z="142.82" />
+				<Hotspot X="-373.69" Y="-634.89" Z="53.16" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="527" Name="Battle of Hillsbrad">
+		<Objective Type="KillMob" MobId="2403" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-441.32" Y="-108.69" Z="55.05" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="232" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-341.6" Y="3.6" Z="60.37" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2266" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-436.85" Y="47.25" Z="54.28" />
+				<Hotspot X="-399.69" Y="116.77" Z="54.13" />
+				<Hotspot X="-431.76" Y="96.81" Z="54.56" />
+				<Hotspot X="-423.23" Y="61.79" Z="54.62" />
+				<Hotspot X="-423.95" Y="51.55" Z="54.31" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2360" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-387.82" Y="93.63" Z="54.74" />
+				<Hotspot X="-412.4" Y="100.56" Z="54.42" />
+				<Hotspot X="-443.76" Y="62.19" Z="54.08" />
+				<Hotspot X="-403.95" Y="91.78" Z="54.6" />
+				<Hotspot X="-396.04" Y="111.25" Z="54.2" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="567" Name="Dangerous!">
+		<Objective Type="KillMob" MobId="2451" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-593.47" Y="-81.47" Z="46.09" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2448" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-504.81" Y="122.34" Z="59.14" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2449" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-448.93" Y="22.69" Z="53.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2450" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-850.69" Y="70.74" Z="3.09" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="552" Name="Helcular's Revenge">
+		<Objective Type="CollectItem" ItemId="3708" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Cave Yeti" Id="2248" />
+				<Mob Name="Ferocious Yeti" Id="2249" />
+				<Mob Name="Mountain Yeti" Id="2250" />
+				<Mob Name="Giant Yeti" Id="2251" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-265.3" Y="-439.45" Z="66.42" />
+				<Hotspot X="287.66" Y="-447.5" Z="154.45" />
+				<Hotspot X="-141.68" Y="-366" Z="52.54" />
+				<Hotspot X="-189.75" Y="-358.19" Z="62.64" />
+				<Hotspot X="-273.64" Y="-398.22" Z="67.2" />
+				<Hotspot X="268.04" Y="-404.4" Z="159.46" />
+				<Hotspot X="-232.49" Y="-369.67" Z="55.59" />
+				<Hotspot X="-322.06" Y="-395.13" Z="63.01" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="553" Name="Helcular's Revenge">
+		<Objective Type="UseObject" ObjectId="1768" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-198.58" Y="-337.76" Z="72.88" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="1769" UseCount="1">
+			<Hotspots>
+				<Hotspot X="-166.44" Y="-342.88" Z="53.49" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="1770" UseCount="1">
+			<Hotspots>
+				<Hotspot X="263.44" Y="-267.69" Z="145.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="509" Name="Elixir of Agony">
 		<Objective Type="CollectItem" ItemId="3502" CollectCount="6">
 			<CollectFrom>
@@ -42,82 +154,48 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="567" Name="Dangerous!">
-		<Objective Type="KillMob" MobId="2451" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-593.469" Y="-81.4747" Z="46.087" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2448" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-504.812" Y="122.342" Z="59.1425" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2449" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-448.933" Y="22.6889" Z="53.7768" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2450" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-850.691" Y="70.7417" Z="3.0855" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="527" Name="Battle of Hillsbrad">
-		<Objective Type="KillMob" MobId="2403" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-441.325" Y="-108.685" Z="55.0466" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="232" KillCount="1">
-			<Hotspots>
-				<Hotspot X="-341.604" Y="3.6031" Z="60.3681" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2266" KillCount="6">
-			<Hotspots>
-				<Hotspot X="-436.847" Y="47.2514" Z="54.2811" />
-				<Hotspot X="-399.687" Y="116.774" Z="54.1285" />
-				<Hotspot X="-431.758" Y="96.8059" Z="54.5566" />
-				<Hotspot X="-423.228" Y="61.7868" Z="54.618" />
-				<Hotspot X="-423.953" Y="51.5544" Z="54.3128" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2360" KillCount="6">
-			<Hotspots>
-				<Hotspot X="-387.818" Y="93.6254" Z="54.7427" />
-				<Hotspot X="-412.399" Y="100.56" Z="54.4173" />
-				<Hotspot X="-443.756" Y="62.1851" Z="54.0847" />
-				<Hotspot X="-403.955" Y="91.7775" Z="54.5954" />
-				<Hotspot X="-396.04" Y="111.247" Z="54.2029" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="!((Me.Class == WoWClass.Shaman))">
-			<PickUp QuestName="Journey to Hillsbrad Foothills" QuestId="493" GiverName="Apothecary Renferrel" GiverId="1937" />
-			<PickUp QuestName="Time To Strike" QuestId="494" GiverName="Deathstalker Lesh" GiverId="2214" />
+		<!-- Travel to Classic (12-58)_Hillsbrad Foothills (29-30) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(493))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Journey to Hillsbrad Foothills" QuestId="493" TurnInName="Apothecary Lydon" TurnInId="2216" />
-		<PickUp QuestName="Elixir of Pain" QuestId="501" GiverName="Apothecary Lydon" GiverId="2216" />
-		<PickUp QuestName="Elixir of Agony" QuestId="509" GiverName="Apothecary Lydon" GiverId="2216" />
-		<TurnIn QuestName="Time To Strike" QuestId="494" TurnInName="High Executor Darthalia" TurnInId="2215" />
-		<PickUp QuestName="Battle of Hillsbrad" QuestId="527" GiverName="High Executor Darthalia" GiverId="2215" />
-		<PickUp QuestName="Dangerous!" QuestId="567" GiverName="High Executor Darthalia" GiverId="2215" />
-		<PickUp QuestName="Helcular's Revenge" QuestId="552" GiverName="Novice Thaivand" GiverId="2429" />
-		<Objective QuestName="Elixir of Agony" QuestId="509" Type="CollectItem" ItemId="3502" CollectCount="6" />
+		<If Condition="!((Me.Class == WoWClass.Shaman))">
+			<PickUp QuestName="Journey to Hillsbrad Foothills" QuestId="493" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
+			<PickUp QuestName="Time To Strike" QuestId="494" GiverName="Deathstalker Lesh" GiverId="2214" X="-611.302" Y="401.456" Z="83.1437" />
+		</If>
+
+		<TurnIn QuestName="Journey to Hillsbrad Foothills" QuestId="493" TurnInName="Apothecary Lydon" TurnInId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
+		<PickUp QuestName="Elixir of Pain" QuestId="501" GiverName="Apothecary Lydon" GiverId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
+		<TurnIn QuestName="Time To Strike" QuestId="494" TurnInName="High Executor Darthalia" TurnInId="2215" X="-36.3284" Y="-927.889" Z="54.5237" />
+		<PickUp QuestName="Battle of Hillsbrad" QuestId="527" GiverName="High Executor Darthalia" GiverId="2215" X="-36.3284" Y="-927.889" Z="54.5237" />
+		<PickUp QuestName="Dangerous!" QuestId="567" GiverName="Dangerous!" GiverId="2008" GiverType="Object" X="-19.4826" Y="-935.304" Z="58.0971" />
+		<PickUp QuestName="Helcular's Revenge" QuestId="552" GiverName="Novice Thaivand" GiverId="2429" X="-19.4786" Y="-977.401" Z="55.9044" />
 		<Objective QuestName="Elixir of Pain" QuestId="501" Type="CollectItem" ItemId="3496" CollectCount="10" />
-		<TurnIn QuestName="Elixir of Pain" QuestId="501" TurnInName="Apothecary Lydon" TurnInId="2216" />
-		<PickUp QuestName="Elixir of Pain" QuestId="502" GiverName="Apothecary Lydon" GiverId="2216" />
-		<TurnIn QuestName="Elixir of Agony" QuestId="509" TurnInName="Apothecary Lydon" TurnInId="2216" />
+		<TurnIn QuestName="Elixir of Pain" QuestId="501" TurnInName="Apothecary Lydon" TurnInId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
+		<PickUp QuestName="Elixir of Pain" QuestId="502" GiverName="Apothecary Lydon" GiverId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
 		<Objective QuestName="Helcular's Revenge" QuestId="552" Type="CollectItem" ItemId="3708" CollectCount="1" />
-		<TurnIn QuestName="Helcular's Revenge" QuestId="552" TurnInName="Novice Thaivand" TurnInId="2429" />
-		<PickUp QuestName="Helcular's Revenge" QuestId="553" GiverName="Novice Thaivand" GiverId="2429" />
+		<TurnIn QuestName="Helcular's Revenge" QuestId="552" TurnInName="Novice Thaivand" TurnInId="2429" X="-19.4786" Y="-977.401" Z="55.9044" />
+		<PickUp QuestName="Helcular's Revenge" QuestId="553" GiverName="Novice Thaivand" GiverId="2429" X="-19.4786" Y="-977.401" Z="55.9044" />
+		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="UseObject" ObjectId="1768" UseCount="1" />
+		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="UseObject" ObjectId="1769" UseCount="1" />
+		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="UseObject" ObjectId="1770" UseCount="1" />
 		<If Condition="Me.Level &lt; 30">
 			<SetGrindArea>
 				<GrindArea>
@@ -132,18 +210,22 @@
 			</SetGrindArea>
 			<GrindTo Level="30" />
 		</If>
+
 		<Objective QuestName="Dangerous!" QuestId="567" Type="KillMob" MobId="2451" KillCount="1" />
 		<Objective QuestName="Battle of Hillsbrad" QuestId="527" Type="KillMob" MobId="2403" KillCount="1" />
-		<TurnIn QuestName="Elixir of Pain" QuestId="502" TurnInName="Stanley" TurnInId="2274" />
+		<TurnIn QuestName="Elixir of Pain" QuestId="502" TurnInName="Stanley" TurnInId="2274" X="-353.534" Y="21.4088" Z="54.6594" />
 		<Objective QuestName="Battle of Hillsbrad" QuestId="527" Type="KillMob" MobId="232" KillCount="1" />
+		<PickUp QuestName="Elixir of Agony" QuestId="509" GiverName="Apothecary Lydon" GiverId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
 		<Objective QuestName="Dangerous!" QuestId="567" Type="KillMob" MobId="2448" KillCount="1" />
+		<Objective QuestName="Elixir of Agony" QuestId="509" Type="CollectItem" ItemId="3502" CollectCount="6" />
 		<Objective QuestName="Dangerous!" QuestId="567" Type="KillMob" MobId="2449" KillCount="1" />
+		<TurnIn QuestName="Elixir of Agony" QuestId="509" TurnInName="Apothecary Lydon" TurnInId="2216" X="-6.6023" Y="-899.436" Z="57.6278" />
 		<Objective QuestName="Battle of Hillsbrad" QuestId="527" Type="KillMob" MobId="2266" KillCount="6" />
 		<Objective QuestName="Battle of Hillsbrad" QuestId="527" Type="KillMob" MobId="2360" KillCount="6" />
 		<Objective QuestName="Dangerous!" QuestId="567" Type="KillMob" MobId="2450" KillCount="1" />
-		<TurnIn QuestName="Battle of Hillsbrad" QuestId="527" TurnInName="High Executor Darthalia" TurnInId="2215" />
-		<TurnIn QuestName="Dangerous!" QuestId="567" TurnInName="High Executor Darthalia" TurnInId="2215" />
-		<PickUp QuestName="Regthar Deathgate" QuestId="1361" GiverName="Krusk" GiverId="2229" />
+		<TurnIn QuestName="Battle of Hillsbrad" QuestId="527" TurnInName="High Executor Darthalia" TurnInId="2215" X="-36.3284" Y="-927.889" Z="54.5237" />
+		<TurnIn QuestName="Dangerous!" QuestId="567" TurnInName="High Executor Darthalia" TurnInId="2215" X="-36.3284" Y="-927.889" Z="54.5237" />
+		<PickUp QuestName="Regthar Deathgate" QuestId="1361" GiverName="Krusk" GiverId="2229" X="-40.6782" Y="-956.998" Z="56.2796" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Arathi Highlands (30-30)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Un'Goro Crater (51-52)</Name>
-	<MinLevel>51</MinLevel>
-	<MaxLevel>52</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,13 +17,55 @@
 
 	<Vendors>
 		<!-- Gaeriyan (9456) — no spawn data -->
-		<Vendor Name="Innkeeper Falfindel Waywarder" Entry="8307" Type="Food" X="-555.578" Y="-2965.65" Z="91.7917" />
+		<Vendor Name="Tarban Hearthgrain" Entry="8307" Type="Food" X="-555.578" Y="-2965.65" Z="91.7917" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="4289" Name="The Apes of Un'Goro">
+		<Objective Type="CollectItem" ItemId="11478" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Gorilla" Id="6514" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6451.92" Y="-1783.8" Z="-273.7" />
+				<Hotspot X="-6364.33" Y="-1891.25" Z="-259.31" />
+				<Hotspot X="-6345.97" Y="-2004.06" Z="-264.88" />
+				<Hotspot X="-6381.47" Y="-1809.51" Z="-265.98" />
+				<Hotspot X="-6318.32" Y="-1921.89" Z="-271.15" />
+				<Hotspot X="-6298.54" Y="-1983.43" Z="-266.74" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11479" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Stomper" Id="6513" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6401.87" Y="-2021.37" Z="-262.98" />
+				<Hotspot X="-6390.52" Y="-1959.96" Z="-259.69" />
+				<Hotspot X="-6402.76" Y="-1791.68" Z="-270.51" />
+				<Hotspot X="-6414.01" Y="-1745.68" Z="-272.59" />
+				<Hotspot X="-6379.64" Y="-1701.56" Z="-273.07" />
+				<Hotspot X="-6328.86" Y="-1895.59" Z="-263.94" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11480" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Un'Goro Thunderer" Id="6516" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6394" Y="-1916.77" Z="-262.73" />
+				<Hotspot X="-6379.98" Y="-1988.22" Z="-263.55" />
+				<Hotspot X="-6374.26" Y="-1853.2" Z="-260.14" />
+				<Hotspot X="-6328.66" Y="-2008.45" Z="-258.52" />
+				<Hotspot X="-6341.64" Y="-1953.45" Z="-273.29" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="4290" Name="The Fare of Lar'korwi">
 		<Objective Type="CollectItem" ItemId="11504" CollectCount="1">
 			<CollectFrom>
@@ -34,6 +73,80 @@
 			</CollectFrom>
 			<Hotspots>
 				<Hotspot X="-7365.4" Y="-2009.94" Z="-270.04" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4141" Name="Muigin and Larion">
+		<Objective Type="CollectItem" ItemId="11316" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Bloodpetal Lasher" Id="6509" />
+				<Mob Name="Bloodpetal Flayer" Id="6510" />
+				<Mob Name="Bloodpetal Thresher" Id="6511" />
+				<Mob Name="Bloodpetal Trapper" Id="6512" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6500.11" Y="-925.21" Z="-273.54" />
+				<Hotspot X="-6514.84" Y="-1183.67" Z="-271.11" />
+				<Hotspot X="-6541.2" Y="-957.75" Z="-272.14" />
+				<Hotspot X="-6325.13" Y="-1391.86" Z="-266.88" />
+				<Hotspot X="-6583.35" Y="-986" Z="-270.39" />
+				<Hotspot X="-6595.12" Y="-1089.74" Z="-271.38" />
+				<Hotspot X="-6573.67" Y="-907.77" Z="-272.14" />
+				<Hotspot X="-6375.55" Y="-1582.74" Z="-271.97" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4284" Name="Crystals of Power">
+		<Objective Type="CollectItem" ItemId="11184" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Blue Power Crystal" Id="164658" />
+				<GameObject Name="Blue Power Crystal" Id="164778" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6323.31" Y="-922.84" Z="-231.76" />
+				<Hotspot X="-6382.26" Y="-1086.21" Z="-272.26" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11185" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Green Power Crystal" Id="164659" />
+				<GameObject Name="Green Power Crystal" Id="164779" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6300.73" Y="-1373.72" Z="-267.31" />
+				<Hotspot X="-6449.88" Y="-1177.48" Z="-273.33" />
+				<Hotspot X="-6423.42" Y="-623.84" Z="-231.14" />
+				<Hotspot X="-6269.98" Y="-1557.91" Z="-229.21" />
+				<Hotspot X="-6695.89" Y="-687.56" Z="-272.15" />
+				<Hotspot X="-6786.19" Y="-750.18" Z="-271.55" />
+				<Hotspot X="-6376.93" Y="-1782.19" Z="-267.04" />
+				<Hotspot X="-6686.33" Y="-445.27" Z="-241.66" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11186" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Red Power Crystal" Id="164660" />
+				<GameObject Name="Red Power Crystal" Id="164780" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6284.52" Y="-1218.43" Z="-266.02" />
+				<Hotspot X="-6338.23" Y="-1199.65" Z="-272.24" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="11188" CollectCount="7">
+			<CollectFrom>
+				<GameObject Name="Yellow Power Crystal" Id="164661" />
+				<GameObject Name="Yellow Power Crystal" Id="164781" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6474.13" Y="-863.78" Z="-274.34" />
+				<Hotspot X="-6182.74" Y="-1618.7" Z="-190.08" />
+				<Hotspot X="-6489.23" Y="-580.31" Z="-269.36" />
+				<Hotspot X="-6424.27" Y="-1541.21" Z="-269.14" />
+				<Hotspot X="-6339.74" Y="-1721.6" Z="-240.36" />
+				<Hotspot X="-6923.18" Y="-1454.5" Z="-274.36" />
+				<Hotspot X="-6487.32" Y="-1915.33" Z="-271.38" />
+				<Hotspot X="-6958.06" Y="-322.73" Z="-219.93" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -57,45 +170,96 @@
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Un'Goro Crater (51-52) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(4289))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Apes of Un'Goro" QuestId="4289" GiverName="Torwa Pathfinder" GiverId="9619" />
-		<PickUp QuestName="The Fare of Lar'korwi" QuestId="4290" GiverName="Torwa Pathfinder" GiverId="9619" />
-		<PickUp QuestName="It's a Secret to Everybody" QuestId="3844" GiverName="Torwa Pathfinder" GiverId="9619" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(4289))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="The Apes of Un'Goro" QuestId="4289" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11478" CollectCount="2" />
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11479" CollectCount="2" />
+		<Objective QuestName="The Apes of Un'Goro" QuestId="4289" Type="CollectItem" ItemId="11480" CollectCount="2" />
+		<PickUp QuestName="The Fare of Lar'korwi" QuestId="4290" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<PickUp QuestName="It's a Secret to Everybody" QuestId="3844" GiverName="A Wrecked Raft" GiverId="161505" GiverType="Object" X="-7658.82" Y="-1798.54" Z="-272.077" />
 		<!-- Quest 3844 (It's a Secret to Everybody) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="It's a Secret to Everybody" QuestId="3845" GiverName="Torwa Pathfinder" GiverId="9619" />
+		<PickUp QuestName="It's a Secret to Everybody" QuestId="3845" GiverName="A Small Pack" GiverId="161504" GiverType="Object" X="-7670.07" Y="-1801.72" Z="-278.489" />
 		<Objective QuestName="The Fare of Lar'korwi" QuestId="4290" Type="CollectItem" ItemId="11504" CollectCount="1" />
-		<PickUp QuestName="Muigin and Larion" QuestId="4141" GiverName="Muigin" GiverId="9119" />
-		<TurnIn QuestName="The Fare of Lar'korwi" QuestId="4290" TurnInName="Torwa Pathfinder" TurnInId="9619" />
-		<PickUp QuestName="The Scent of Lar'korwi" QuestId="4291" GiverName="Torwa Pathfinder" GiverId="9619" />
+		<PickUp QuestName="Muigin and Larion" QuestId="4141" GiverName="Muigin" GiverId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
+		<TurnIn QuestName="The Fare of Lar'korwi" QuestId="4290" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<PickUp QuestName="The Scent of Lar'korwi" QuestId="4291" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		<Objective QuestName="The Scent of Lar'korwi" QuestId="4291" Type="CollectItem" ItemId="11509" CollectCount="2" />
-		<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" />
-		<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" />
+		<TurnIn QuestName="The Scent of Lar'korwi" QuestId="4291" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+		<PickUp QuestName="The Bait for Lar'korwi" QuestId="4292" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11186" CollectCount="7" />
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11188" CollectCount="7" />
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11185" CollectCount="7" />
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11184" CollectCount="7" />
 		<Objective QuestName="Muigin and Larion" QuestId="4141" Type="CollectItem" ItemId="11316" CollectCount="15" />
-		<Objective QuestName="Williden's Journal" QuestId="3884" Type="CollectItem" ItemId="11116" CollectCount="1" />
-		<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="Torwa Pathfinder" GiverId="9619" />
-		<TurnIn QuestName="Muigin and Larion" QuestId="4141" TurnInName="Muigin" TurnInId="9119" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11116)">
+			<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="A Mangled Journal" GiverId="11116" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Muigin and Larion" QuestId="4141" TurnInName="Muigin" TurnInId="9119" X="-6204.39" Y="-1055.46" Z="-197.748" />
 		<Objective QuestName="It's a Secret to Everybody" QuestId="3845" Type="CollectItem" ItemId="11104" CollectCount="1" />
 		<Objective QuestName="It's a Secret to Everybody" QuestId="3845" Type="CollectItem" ItemId="11105" CollectCount="1" />
 		<Objective QuestName="It's a Secret to Everybody" QuestId="3845" Type="CollectItem" ItemId="11106" CollectCount="1" />
-		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" />
-		<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" />
-		<TurnIn QuestName="Williden's Journal" QuestId="3884" TurnInName="Williden Marshal" TurnInId="9270" />
-		<PickUp QuestName="Crystals of Power" QuestId="4284" GiverName="J.D. Collie" GiverId="9117" />
-		<TurnIn QuestName="Crystals of Power" QuestId="4284" TurnInName="J.D. Collie" TurnInId="9117" />
+		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3845" TurnInName="Linken" TurnInId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		<PickUp QuestName="It's a Secret to Everybody" QuestId="3908" GiverName="Linken" GiverId="8737" X="-6166.44" Y="-1118.99" Z="-213.341" />
+		<!-- REVIEW Q3884 Williden's Journal: start item 11116 A Mangled Journal has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(3884)) &amp;&amp; (IsQuestCompleted(3884)))">
+			<TurnIn QuestName="Williden's Journal" QuestId="3884" TurnInName="Williden Marshal" TurnInId="9270" X="-6142.71" Y="-1092.69" Z="-200.187" />
+		</If>
+
+		<If Condition="((HasQuest(3884)) &amp;&amp; (!IsQuestCompleted(3884)))">
+			<AbandonQuest QuestId="3884" />
+		</If>
+
+		<PickUp QuestName="Crystals of Power" QuestId="4284" GiverName="J.D. Collie" GiverId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
+		<TurnIn QuestName="Crystals of Power" QuestId="4284" TurnInName="J.D. Collie" TurnInId="9117" X="-6033.25" Y="-1017.56" Z="-217.055" />
 		<Objective QuestName="Un'Goro Soil" QuestId="3761" Type="CollectItem" ItemId="11018" CollectCount="20" />
 		<Objective QuestName="Chasing A-Me 01" QuestId="4244" Type="CollectItem" ItemId="10561" CollectCount="1" />
-		<Objective QuestName="Rise of the Silithid" QuestId="162" Type="CollectItem" ItemId="8594" CollectCount="1" />
-		<Objective QuestName="The Super Snapper FX" QuestId="2944" Type="CollectItem" ItemId="9328" CollectCount="1" />
 		<Objective QuestName="The Super Snapper FX" QuestId="2944" Type="CollectItem" ItemId="9330" CollectCount="1" />
 		<Objective QuestName="Favored of Elune?" QuestId="3661" Type="CollectItem" ItemId="10819" CollectCount="15" />
-		<Objective QuestName="Suntara Stones" QuestId="3368" Type="CollectItem" ItemId="10443" CollectCount="1" />
-		<TurnIn QuestName="Suntara Stones" QuestId="3368" TurnInName="Curator Thorius" TurnInId="8256" />
-		<PickUp QuestName="A Little Slime Goes a Long Way" QuestId="4512" GiverName="Laris Geardawdle" GiverId="9616" />
-		<PickUp QuestName="A Call to Arms: The Plaguelands!" QuestId="5090" GiverName="Courier Hammerfall" GiverId="10877" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Suntara Stones" QuestId="3368" TurnInName="Curator Thorius" TurnInId="8256" X="-4654.31" Y="-1281.54" Z="503.382" />
+		<PickUp QuestName="A Little Slime Goes a Long Way" QuestId="4512" GiverName="Laris Geardawdle" GiverId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
+		<PickUp QuestName="A Call to Arms: The Plaguelands!" QuestId="5090" GiverName="Courier Hammerfall" GiverId="10877" X="-4998.68" Y="-1155.7" Z="501.654" />
 		<CustomBehavior File="LoadProfile" ProfileName="Western Plaguelands (52-52)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Booty Bay to Ratchet
     Transport: The Maiden's Fancy (ID: 176495)
     Faction: Neutral
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Booty_Bay_to_Ratchet</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="-14284.17" Y="555.64" Z="9.01" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="176495"
-        WaitAtX="-14284.17" WaitAtY="555.64" WaitAtZ="9.01"
-        TransportStartX="-14276.35" TransportStartY="566.09" TransportStartZ="-0.05"
-        StandOnX="-14272.0" StandOnY="570.5" StandOnZ="6.05"
-        TransportEndX="-995.75" TransportEndY="-3827.4" TransportEndZ="-0.05"
-        GetOffX="-1001.0" GetOffY="-3834.5" GetOffZ="5.96" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="-1001.0" Y="-3834.5" Z="5.96" />
-  </QuestOrder>
-  
+	<Name>Transport_Booty_Bay_to_Ratchet</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+		<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

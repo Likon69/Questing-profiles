@@ -1,29 +1,53 @@
 <HBProfile>
 	<Name>Class Quests\Druid Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Kelm Hargunth" Entry="14754" Type="Repair" X="1046.54" Y="-2104.31" Z="123.065" />
+		<Vendor Name="Vrang Wildgore" Entry="3682" Type="Repair" X="787.375" Y="-1815.08" Z="91.75" />
+		<Vendor Name="Burkrum" Entry="6028" Type="Repair" X="2354.76" Y="-2540.69" Z="102.896" />
+		<Vendor Name="Innkeeper Kaylisk" Entry="12196" Type="Food" X="2341.86" Y="-2566.99" Z="102.857" />
+		<Vendor Name="Larhka" Entry="5871" Type="Food" X="-393.28" Y="-2641.5" Z="96.3063" />
+		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3934" Type="Food" X="-407.123" Y="-2645.22" Z="96.3063" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="6128" Name="Gathering the Cure">
+		<Objective Type="CollectItem" ItemId="15852" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Lost Barrens Kodo" Id="3234" />
+				<Mob Name="Barrens Kodo" Id="3236" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1098.96" Y="-2932.29" Z="92.67" />
+				<Hotspot X="-1188.38" Y="-2854.78" Z="93.79" />
+				<Hotspot X="-1098.19" Y="-3068.57" Z="95.39" />
+				<Hotspot X="-1288.38" Y="-2590.38" Z="91.79" />
+				<Hotspot X="-1322.6" Y="-2712.57" Z="94.09" />
+				<Hotspot X="-1408.7" Y="-2641.65" Z="92.04" />
+				<Hotspot X="-1409.1" Y="-2890.9" Z="93.01" />
+				<Hotspot X="-1482.89" Y="-2798.21" Z="92.86" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="28" Name="Trial of the Lake">
 		<Objective Type="CollectItem" ItemId="15877" CollectCount="1">
 			<CollectFrom>
@@ -64,93 +88,141 @@
 				<Hotspot X="-7953.48" Y="-1000.99" Z="-273.1" />
 				<Hotspot X="-7908.92" Y="-795.78" Z="-272.31" />
 				<Hotspot X="-7822.17" Y="-1808.88" Z="-271.98" />
-				<Hotspot X="-7787.23" Y="-1010.0" Z="-266.9" />
+				<Hotspot X="-7787.23" Y="-1010" Z="-266.9" />
 				<Hotspot X="-7786.12" Y="-1116.57" Z="-263.09" />
 				<Hotspot X="-7734.7" Y="-567.25" Z="-265.8" />
 				<Hotspot X="-7702.4" Y="-1440.36" Z="-266.92" />
 				<Hotspot X="-7679.2" Y="-1217.47" Z="-270.96" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="22435" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Gorishi Wasp" Id="6551" />
+				<Mob Name="Gorishi Worker" Id="6552" />
+				<Mob Name="Gorishi Reaver" Id="6553" />
+				<Mob Name="Gorishi Stinger" Id="6554" />
+				<Mob Name="Gorishi Tunneler" Id="6555" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8062.2" Y="-1528.69" Z="-270.55" />
+				<Hotspot X="-7830.16" Y="-1494.52" Z="-263.08" />
+				<Hotspot X="-7999.14" Y="-1492.42" Z="-271.69" />
+				<Hotspot X="-7917.92" Y="-1476.52" Z="-268.67" />
+				<Hotspot X="-7829.48" Y="-1454.76" Z="-266.94" />
+				<Hotspot X="-8053.97" Y="-1470.06" Z="-271.22" />
+				<Hotspot X="-7850.2" Y="-1428" Z="-267.46" />
+				<Hotspot X="-8014.57" Y="-1440.97" Z="-271.16" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="(Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Tauren)">
-			<PickUp QuestName="Mulgore Heeding the Call" QuestId="5926" GiverName="Gennia Runetotem" GiverId="3064" />
+		<!-- Travel to Class Quests_Druid Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(5926))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-1936.32" Y="5445.95" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1936.32" Y="5445.95" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Heeding the Call" QuestId="5926" TurnInName="Turak Runetotem" TurnInId="3033" />
 		<If Condition="(Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Tauren)">
-			<PickUp QuestName="Moonglade" QuestId="5922" GiverName="Turak Runetotem" GiverId="3033" />
-			<TurnIn QuestName="Moonglade" QuestId="5922" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="Great Bear Spirit" QuestId="5930" GiverName="Dendrite Starblaze" GiverId="11802" />
+			<PickUp QuestName="Heeding the Call" QuestId="5926" GiverName="Gennia Runetotem" GiverId="3064" X="-2315.75" Y="-442.634" Z="-5.3551" />
 		</If>
 
-		<TurnIn QuestName="Great Bear Spirit" QuestId="5930" TurnInName="Dendrite Starblaze" TurnInId="11802" />
+		<TurnIn QuestName="Heeding the Call" QuestId="5926" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
 		<If Condition="(Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Tauren)">
-			<PickUp QuestName="Back to Thunder Bluff" QuestId="5932" GiverName="Dendrite Starblaze" GiverId="11802" />
-			<TurnIn QuestName="Back to Thunder Bluff" QuestId="5932" TurnInName="Turak Runetotem" TurnInId="3033" />
-			<PickUp QuestName="Body and Heart" QuestId="6002" GiverName="Turak Runetotem" GiverId="3033" />
+			<PickUp QuestName="Moonglade" QuestId="5922" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<TurnIn QuestName="Moonglade" QuestId="5922" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<PickUp QuestName="Great Bear Spirit" QuestId="5930" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+		</If>
+
+		<TurnIn QuestName="Great Bear Spirit" QuestId="5930" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+		<If Condition="(Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Tauren)">
+			<PickUp QuestName="Back to Thunder Bluff" QuestId="5932" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<TurnIn QuestName="Back to Thunder Bluff" QuestId="5932" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<PickUp QuestName="Body and Heart" QuestId="6002" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Tauren)">
-			<Objective QuestName="Body and Heart" QuestId="6002" Type="KillMob" MobId="12138" KillCount="1" />
-			<TurnIn QuestName="Body and Heart" QuestId="6002" TurnInName="Turak Runetotem" TurnInId="3033" />
+			<TurnIn QuestName="Body and Heart" QuestId="6002" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
 			<Objective QuestName="Gathering the Cure" QuestId="6128" Type="CollectItem" ItemId="2449" CollectCount="5" />
-			<PickUp QuestName="Lessons Anew" QuestId="6126" GiverName="Turak Runetotem" GiverId="3033" />
-			<TurnIn QuestName="Lessons Anew" QuestId="6126" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="The Principal Source" QuestId="6127" GiverName="Dendrite Starblaze" GiverId="11802" />
+			<PickUp QuestName="Lessons Anew" QuestId="6126" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<TurnIn QuestName="Lessons Anew" QuestId="6126" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<PickUp QuestName="The Principal Source" QuestId="6127" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
 			<Objective QuestName="The Principal Source" QuestId="6127" Type="CollectItem" ItemId="15843" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="The Principal Source" QuestId="6127" TurnInName="Tonga Runetotem" TurnInId="3448" />
+		<TurnIn QuestName="The Principal Source" QuestId="6127" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<PickUp QuestName="Gathering the Cure" QuestId="6128" GiverName="Tonga Runetotem" GiverId="3448" />
+			<PickUp QuestName="Gathering the Cure" QuestId="6128" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		</If>
 
 		<Objective QuestName="Gathering the Cure" QuestId="6128" Type="CollectItem" ItemId="15852" CollectCount="5" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<TurnIn QuestName="Gathering the Cure" QuestId="6128" TurnInName="Tonga Runetotem" TurnInId="3448" />
-			<PickUp QuestName="Curing the Sick" QuestId="6129" GiverName="Tonga Runetotem" GiverId="3448" />
-			<While Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))" >
-				<CustomBehavior File="UseItemOn" QuestId="6129" MobId="12297" ItemId="15826" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+			<TurnIn QuestName="Gathering the Cure" QuestId="6128" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
+			<PickUp QuestName="Curing the Sick" QuestId="6129" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
+			<While Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))">
+				<CustomBehavior File="UseItemOn" QuestId="6129" MobId="4166" ItemId="15826" NumOfTimes="1" Range="5" CollectionDistance="1000" X="656.101" Y="-1988.64" Z="93.9044" />
 			</While>
-			<TurnIn QuestName="Curing the Sick" QuestId="6129" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="Power over Poison" QuestId="6130" GiverName="Dendrite Starblaze" GiverId="11802" />
-			<TurnIn QuestName="Power over Poison" QuestId="6130" TurnInName="Turak Runetotem" TurnInId="3033" />
-			<PickUp QuestName="A Lesson to Learn" QuestId="27" GiverName="Turak Runetotem" GiverId="3033" />
-			<TurnIn QuestName="A Lesson to Learn" QuestId="27" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="Trial of the Lake" QuestId="28" GiverName="Dendrite Starblaze" GiverId="11802" />
-			<Objective QuestName="Trial of the Lake" QuestId="28" Type="CollectItem" ItemId="15877" CollectCount="1" />
-			<TurnIn QuestName="Trial of the Lake" QuestId="28" TurnInName="Tajarri" TurnInId="11799" />
-			<PickUp QuestName="Trial of the Sea Lion" QuestId="30" GiverName="Tajarri" GiverId="11799" />
-			<Objective QuestName="Trial of the Sea Lion" QuestId="30" Type="CollectItem" ItemId="15882" CollectCount="1" />
-			<Objective QuestName="Trial of the Sea Lion" QuestId="30" Type="CollectItem" ItemId="15883" CollectCount="1" />
+			<!-- REVIEW Q6129 Curing the Sick: REVIEW: UseItemOn target 12297 Cured Gazelle replaced by 4166 Gazelle (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(6129)) &amp;&amp; (IsQuestCompleted(6129)))">
+				<TurnIn QuestName="Curing the Sick" QuestId="6129" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			</If>
+			<If Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))">
+				<AbandonQuest QuestId="6129" />
+			</If>
+			<PickUp QuestName="Power over Poison" QuestId="6130" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<TurnIn QuestName="Power over Poison" QuestId="6130" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<PickUp QuestName="A Lesson to Learn" QuestId="27" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<TurnIn QuestName="A Lesson to Learn" QuestId="27" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<PickUp QuestName="Trial of the Lake" QuestId="28" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<TurnIn QuestName="Trial of the Lake" QuestId="28" TurnInName="Tajarri" TurnInId="11799" X="7874.23" Y="-2224.18" Z="469.159" />
+			<PickUp QuestName="Trial of the Sea Lion" QuestId="30" GiverName="Tajarri" GiverId="11799" X="7874.23" Y="-2224.18" Z="469.159" />
+			<Objective QuestName="Trial of the Sea Lion" QuestId="30" Type="CollectItem" ItemId="15885" CollectCount="1" />
+			<Objective QuestName="Trial of the Sea Lion" QuestId="30" Type="CollectItem" ItemId="15885" CollectCount="1" />
 			<Objective QuestName="Trial of the Sea Lion" QuestId="30" Type="CollectItem" ItemId="15885" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Trial of the Sea Lion" QuestId="30" TurnInName="Dendrite Starblaze" TurnInId="11802" />
+		<TurnIn QuestName="Trial of the Sea Lion" QuestId="30" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<PickUp QuestName="Aquatic Form" QuestId="31" GiverName="Dendrite Starblaze" GiverId="11802" />
-			<TurnIn QuestName="Aquatic Form" QuestId="31" TurnInName="Turak Runetotem" TurnInId="3033" />
-			<PickUp QuestName="Torwa Pathfinder" QuestId="9063" GiverName="Turak Runetotem" GiverId="3033" />
-			<TurnIn QuestName="Torwa Pathfinder" QuestId="9063" TurnInName="Torwa Pathfinder" TurnInId="9619" />
-			<PickUp QuestName="Bloodpetal Poison" QuestId="9052" GiverName="Torwa Pathfinder" GiverId="9619" />
+			<PickUp QuestName="Aquatic Form" QuestId="31" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<TurnIn QuestName="Aquatic Form" QuestId="31" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<PickUp QuestName="Torwa Pathfinder" QuestId="9063" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<TurnIn QuestName="Torwa Pathfinder" QuestId="9063" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+			<PickUp QuestName="Bloodpetal Poison" QuestId="9052" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 			<Objective QuestName="Bloodpetal Poison" QuestId="9052" Type="CollectItem" ItemId="22435" CollectCount="8" />
 			<Objective QuestName="Bloodpetal Poison" QuestId="9052" Type="CollectItem" ItemId="22434" CollectCount="8" />
-			<TurnIn QuestName="Bloodpetal Poison" QuestId="9052" TurnInName="Torwa Pathfinder" TurnInId="9619" />
-			<PickUp QuestName="Toxic Test" QuestId="9051" GiverName="Torwa Pathfinder" GiverId="9619" />
-			<TurnIn QuestName="Toxic Test" QuestId="9051" TurnInName="Torwa Pathfinder" TurnInId="9619" />
-			<PickUp QuestName="A Better Ingredient" QuestId="9053" GiverName="Torwa Pathfinder" GiverId="9619" />
+			<TurnIn QuestName="Bloodpetal Poison" QuestId="9052" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+			<PickUp QuestName="Toxic Test" QuestId="9051" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+			<TurnIn QuestName="Toxic Test" QuestId="9051" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
+			<PickUp QuestName="A Better Ingredient" QuestId="9053" GiverName="Torwa Pathfinder" GiverId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 			<Objective QuestName="A Better Ingredient" QuestId="9053" Type="CollectItem" ItemId="22444" CollectCount="1" />
-			<TurnIn QuestName="A Better Ingredient" QuestId="9053" TurnInName="Torwa Pathfinder" TurnInId="9619" />
+			<TurnIn QuestName="A Better Ingredient" QuestId="9053" TurnInName="Torwa Pathfinder" TurnInId="9619" X="-7840.34" Y="-2117.32" Z="-254.269" />
 		</If>
 
 	</QuestOrder>

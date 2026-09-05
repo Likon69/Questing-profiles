@@ -1,74 +1,225 @@
 <HBProfile>
 	<Name>Class Quests\Rogue Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Zendo'jian" Entry="3409" Type="Repair" X="2099.23" Y="-4818.85" Z="24.3856" />
+		<Vendor Name="Koru" Entry="3360" Type="Repair" X="2098.59" Y="-4823.44" Z="34.1185" />
+		<Vendor Name="Shoma" Entry="3361" Type="Repair" X="2097.42" Y="-4824.92" Z="24.3311" />
+		<Vendor Name="Shan'ti" Entry="3342" Type="Food" X="1784.44" Y="-4205.35" Z="40.3172" />
+		<Vendor Name="Kor'jus" Entry="3329" Type="Food" X="1766.71" Y="-4367.36" Z="-15.7114" />
+		<Vendor Name="Borstan" Entry="3368" Type="Food" X="1775.1" Y="-4482.91" Z="45.7307" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="2478" Name="Mission: Possible But Not Probable">
+		<Objective Type="KillMob" MobId="7310" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1225.62" Y="-2921.09" Z="93.29" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7307" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1226.81" Y="-2922.7" Z="120.68" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7308" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1231.8" Y="-2923.29" Z="107.05" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8073" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grand Foreman Puzik Gallywix" Id="7288" />
+				<GameObject Name="Gallywix's Lockbox" Id="129127" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1235.16" Y="-2925.27" Z="141.82" />
+				<Hotspot X="1237.13" Y="-2925.65" Z="141.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8074" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grand Foreman Puzik Gallywix" Id="7288" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1235.16" Y="-2925.27" Z="141.82" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8234" Name="Sealed Azure Bag">
+		<Objective Type="CollectItem" ItemId="19775" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Timbermaw Shaman" Id="6188" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4247.27" Y="-5221.55" Z="119.12" />
+				<Hotspot X="4428.21" Y="-5496.61" Z="103.02" />
+				<Hotspot X="4605.99" Y="-5377.61" Z="120.42" />
+				<Hotspot X="4481.75" Y="-5499.27" Z="112.21" />
+				<Hotspot X="4664.15" Y="-5355.9" Z="112.05" />
+				<Hotspot X="4451.56" Y="-5526.56" Z="108.84" />
+				<Hotspot X="4419.66" Y="-5563.11" Z="109.86" />
+				<Hotspot X="4692.23" Y="-5388.36" Z="112.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8235" Name="Encoded Fragments">
+		<Objective Type="CollectItem" ItemId="20023" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Young Wavethrasher" Id="6347" />
+				<Mob Name="Wavethrasher" Id="6348" />
+				<Mob Name="Great Wavethrasher" Id="6349" />
+				<Mob Name="Coralshell Lurker" Id="6352" />
+				<Mob Name="Coralshell Tortoise" Id="6369" />
+				<Mob Name="Thunderhead Hippogryph" Id="6375" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3850.82" Y="-5053.9" Z="131.99" />
+				<Hotspot X="3846.49" Y="-5093.77" Z="134.39" />
+				<Hotspot X="3892.09" Y="-5115.43" Z="129.18" />
+				<Hotspot X="4575.93" Y="-6174.96" Z="99.07" />
+				<Hotspot X="4673.3" Y="-6162.28" Z="103.97" />
+				<Hotspot X="4513.44" Y="-6232.3" Z="101.41" />
+				<Hotspot X="4753.1" Y="-6122.72" Z="95.52" />
+				<Hotspot X="4592.73" Y="-6218.72" Z="101.27" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8236" Name="The Azure Key">
+		<Objective Type="CollectItem" ItemId="20022" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Morphaz" Id="5719" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-667.59" Y="103.11" Z="-90.83" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="The Shattered Salute" QuestId="2460" GiverName="Shenthul" GiverId="3401" />
-			<TurnIn QuestName="The Shattered Salute" QuestId="2460" TurnInName="Shenthul" TurnInId="3401" />
-			<PickUp QuestName="Deep Cover" QuestId="2458" GiverName="Shenthul" GiverId="3401" />
+		<!-- Travel to Class Quests_Rogue Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(2460))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<TurnIn QuestName="Deep Cover" QuestId="2458" TurnInName="Taskmaster Fizzule" TurnInId="7233" />
-			<PickUp QuestName="Mission: Possible But Not Probable" QuestId="2478" GiverName="Taskmaster Fizzule" GiverId="7233" />
+			<PickUp QuestName="The Shattered Salute" QuestId="2460" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<TurnIn QuestName="The Shattered Salute" QuestId="2460" TurnInName="Shenthul" TurnInId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<PickUp QuestName="Deep Cover" QuestId="2458" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Rogue)">
+			<TurnIn QuestName="Deep Cover" QuestId="2458" TurnInName="Taskmaster Fizzule" TurnInId="7233" X="1236.78" Y="-2994.62" Z="91.7917" />
+			<PickUp QuestName="Mission: Possible But Not Probable" QuestId="2478" GiverName="Taskmaster Fizzule" GiverId="7233" X="1236.78" Y="-2994.62" Z="91.7917" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8072" CollectCount="1" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8073" CollectCount="1" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8074" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Mission: Possible But Not Probable" QuestId="2478" TurnInName="Shenthul" TurnInId="3401" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7310" KillCount="2" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7307" KillCount="2" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7308" KillCount="2" />
+		<TurnIn QuestName="Mission: Possible But Not Probable" QuestId="2478" TurnInName="Shenthul" TurnInId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Hinott's Assistance" QuestId="2479" GiverName="Shenthul" GiverId="3401" />
-			<TurnIn QuestName="Hinott's Assistance" QuestId="2479" TurnInName="Serge Hinott" TurnInId="2391" />
-			<PickUp QuestName="Hinott's Assistance" QuestId="2480" GiverName="Serge Hinott" GiverId="2391" />
-			<TurnIn QuestName="Hinott's Assistance" QuestId="2480" TurnInName="Serge Hinott" TurnInId="2391" />
-			<PickUp QuestName="A Simple Request" QuestId="8233" GiverName="Ormok" GiverId="3328" />
+			<PickUp QuestName="Hinott's Assistance" QuestId="2479" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2479" TurnInName="Serge Hinott" TurnInId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
+			<PickUp QuestName="Hinott's Assistance" QuestId="2480" GiverName="Serge Hinott" GiverId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2480" TurnInName="Serge Hinott" TurnInId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+					<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<PickUp QuestName="A Simple Request" QuestId="8233" GiverName="Ormok" GiverId="3328" X="1762.88" Y="-4296.38" Z="7.7578" />
 		</If>
 
-		<TurnIn QuestName="A Simple Request" QuestId="8233" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="A Simple Request" QuestId="8233" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Sealed Azure Bag" QuestId="8234" GiverName="Lord Jorach Ravenholdt" GiverId="6768" />
+			<PickUp QuestName="Sealed Azure Bag" QuestId="8234" GiverName="Lord Jorach Ravenholdt" GiverId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 			<Objective QuestName="Sealed Azure Bag" QuestId="8234" Type="CollectItem" ItemId="19775" CollectCount="1" />
-			<PickUp QuestName="Meeting with the Master" QuestId="3503" GiverName="Sanath Lim-yo" GiverId="8395" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+					<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<PickUp QuestName="Meeting with the Master" QuestId="3503" GiverName="Sanath Lim-yo" GiverId="8395" X="3648.01" Y="-4702.71" Z="121.058" />
 		</If>
 
-		<TurnIn QuestName="Sealed Azure Bag" QuestId="8234" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<TurnIn QuestName="Sealed Azure Bag" QuestId="8234" TurnInName="Archmage Xylem" TurnInId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Encoded Fragments" QuestId="8235" GiverName="Archmage Xylem" GiverId="8379" />
-			<PickUp QuestName="Return Trip" QuestId="3421" GiverName="Nyrill" GiverId="8399" />
+			<PickUp QuestName="Encoded Fragments" QuestId="8235" GiverName="Archmage Xylem" GiverId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
+			<PickUp QuestName="Return Trip" QuestId="3421" GiverName="Nyrill" GiverId="8399" X="3777.06" Y="-4619.17" Z="227.405" />
 			<Objective QuestName="Encoded Fragments" QuestId="8235" Type="CollectItem" ItemId="20023" CollectCount="10" />
 		</If>
 
-		<TurnIn QuestName="Encoded Fragments" QuestId="8235" TurnInName="Archmage Xylem" TurnInId="8379" />
+		<TurnIn QuestName="Encoded Fragments" QuestId="8235" TurnInName="Archmage Xylem" TurnInId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="The Azure Key" QuestId="8236" GiverName="Archmage Xylem" GiverId="8379" />
+			<PickUp QuestName="The Azure Key" QuestId="8236" GiverName="Archmage Xylem" GiverId="8379" X="3982.08" Y="-4760.25" Z="304.8" />
 			<Objective QuestName="The Azure Key" QuestId="8236" Type="CollectItem" ItemId="20022" CollectCount="1" />
-			<TurnIn QuestName="The Azure Key" QuestId="8236" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<TurnIn QuestName="The Azure Key" QuestId="8236" TurnInName="Lord Jorach Ravenholdt" TurnInId="6768" X="27.6115" Y="-1625.33" Z="204.003" />
 		</If>
 
 	</QuestOrder>

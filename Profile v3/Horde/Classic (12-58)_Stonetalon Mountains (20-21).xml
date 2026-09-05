@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Stonetalon Mountains (20-21)</Name>
-	<MinLevel>20</MinLevel>
-	<MaxLevel>21</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,111 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Makaba Flathoof" Entry="7916" Type="Repair" X="8707.46" Y="988.88" Z="14.1964" />
-		<Vendor Name="Innkeeper Jayka" Entry="12740" Type="Food" X="7466.15" Y="-2122.08" Z="492.427" />
+		<Vendor Name="Denni'ka" Entry="3411" Type="Food" X="-188.424" Y="-347.647" Z="8.8737" />
+		<Vendor Name="Innkeeper Jayka" Entry="7731" Type="Food" X="893.652" Y="927.947" Z="106.364" />
+		<Vendor Name="Krond" Entry="5870" Type="Food" X="1016.04" Y="988.352" Z="105.1" />
+		<Vendor Name="Borand" Entry="9549" Type="Repair" X="992.181" Y="1030.96" Z="105.676" />
+		<Vendor Name="Grod" Entry="3093" Type="Repair" X="-1152.76" Y="71.4057" Z="145.878" />
+		<Vendor Name="Tagain" Entry="3092" Type="Repair" X="-1158.5" Y="63.2388" Z="145.878" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1058" Name="Jin'Zil's Forest Magic">
+		<Objective Type="CollectItem" ItemId="5582" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Sap Beast" Id="4020" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1955.66" Y="961.04" Z="178.96" />
+				<Hotspot X="2261.65" Y="1425.38" Z="278.84" />
+				<Hotspot X="2302.04" Y="1383.84" Z="277.75" />
+				<Hotspot X="2262.34" Y="1504.39" Z="288.2" />
+				<Hotspot X="2319.38" Y="1501.97" Z="282.54" />
+				<Hotspot X="2414.55" Y="1379.6" Z="275.72" />
+				<Hotspot X="2288.39" Y="1563.97" Z="293.42" />
+				<Hotspot X="2508.85" Y="1291.15" Z="272.07" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5584" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Twilight Runner" Id="4067" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2339.08" Y="1313.63" Z="284.43" />
+				<Hotspot X="2522.19" Y="1342.57" Z="258.87" />
+				<Hotspot X="2516.98" Y="1619.75" Z="272.89" />
+				<Hotspot X="2603.12" Y="1561.16" Z="266.27" />
+				<Hotspot X="2503.62" Y="1701.12" Z="307.22" />
+				<Hotspot X="2558.79" Y="1667.13" Z="291.19" />
+				<Hotspot X="2593.3" Y="1620.45" Z="275.35" />
+				<Hotspot X="2542.49" Y="1730.35" Z="315.21" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5585" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Antlered Courser" Id="4018" />
+				<Mob Name="Great Courser" Id="4019" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1725.45" Y="782.71" Z="135.1" />
+				<Hotspot X="1771.47" Y="718.27" Z="146.86" />
+				<Hotspot X="1673.38" Y="962.59" Z="129.2" />
+				<Hotspot X="1887.41" Y="946.14" Z="163.04" />
+				<Hotspot X="2025.59" Y="965.96" Z="198.69" />
+				<Hotspot X="2089.07" Y="1079.35" Z="230.97" />
+				<Hotspot X="2147.92" Y="1036.18" Z="241.46" />
+				<Hotspot X="2169.43" Y="1066.81" Z="251.73" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5583" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Fey Dragon" Id="4016" />
+				<Mob Name="Wily Fey Dragon" Id="4017" />
+				<Mob Name="Nal'taszar" Id="4066" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2235.13" Y="1418.77" Z="281.77" />
+				<Hotspot X="2468.68" Y="1303.52" Z="277.25" />
+				<Hotspot X="2486.36" Y="1627.77" Z="282.2" />
+				<Hotspot X="2542.8" Y="1997.04" Z="347.74" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6461" Name="Blood Feeders">
+		<Objective Type="KillMob" MobId="4007" KillCount="7">
+			<Hotspots>
+				<Hotspot X="911.54" Y="315.75" Z="22.08" />
+				<Hotspot X="926.13" Y="683.1" Z="103.17" />
+				<Hotspot X="951.99" Y="182.55" Z="22.3" />
+				<Hotspot X="932.51" Y="79.03" Z="27.32" />
+				<Hotspot X="917.7" Y="162.94" Z="26.58" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="4005" KillCount="10">
+			<Hotspots>
+				<Hotspot X="30.75" Y="-112.83" Z="20.68" />
+				<Hotspot X="59.77" Y="-41.83" Z="24.6" />
+				<Hotspot X="470.63" Y="309.93" Z="50.48" />
+				<Hotspot X="427.01" Y="289.26" Z="50.92" />
+				<Hotspot X="374.31" Y="356.44" Z="44.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6284" Name="Arachnophobia">
+		<Objective Type="CollectItem" ItemId="16192" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Besseleth" Id="11921" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="511.9" Y="708.58" Z="80.12" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="1069" Name="Deepmoss Spider Eggs">
 		<Objective Type="CollectItem" ItemId="5570" CollectCount="15">
 			<CollectFrom>
@@ -40,55 +134,113 @@
 				<Hotspot X="544.57" Y="667.32" Z="78.87" />
 				<Hotspot X="602.86" Y="660.72" Z="79.69" />
 				<Hotspot X="862.68" Y="209.65" Z="27.71" />
-				<Hotspot X="919.0" Y="200.07" Z="27.68" />
+				<Hotspot X="919" Y="200.07" Z="27.68" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="6461" Name="Blood Feeders">
-		<Objective Type="KillMob" MobId="4007" KillCount="7">
+	<Quest Id="1093" Name="Super Reaper 6000">
+		<Objective Type="CollectItem" ItemId="5734" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Venture Co. Operator" Id="3988" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="911.543" Y="315.748" Z="22.0793" />
-				<Hotspot X="926.128" Y="683.096" Z="103.166" />
-				<Hotspot X="951.985" Y="182.553" Z="22.2969" />
-				<Hotspot X="932.51" Y="79.0298" Z="27.3162" />
-				<Hotspot X="917.699" Y="162.945" Z="26.5788" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="4005" KillCount="10">
-			<Hotspots>
-				<Hotspot X="30.7453" Y="-112.831" Z="20.6806" />
-				<Hotspot X="59.7743" Y="-41.8298" Z="24.5964" />
-				<Hotspot X="470.634" Y="309.926" Z="50.4788" />
-				<Hotspot X="427.009" Y="289.262" Z="50.9211" />
-				<Hotspot X="374.306" Y="356.44" Z="44.658" />
+				<Hotspot X="1169.43" Y="185.66" Z="23.79" />
+				<Hotspot X="1232.97" Y="227.82" Z="8.75" />
+				<Hotspot X="1234.82" Y="27.22" Z="-4.95" />
+				<Hotspot X="1210.04" Y="-30.15" Z="-3.13" />
+				<Hotspot X="1097.58" Y="-171.88" Z="5.05" />
+				<Hotspot X="1432.48" Y="-8.48" Z="30.18" />
+				<Hotspot X="1071.44" Y="-331.96" Z="-9.24" />
+				<Hotspot X="1292.58" Y="-254.1" Z="-4.35" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="1062" Name="Goblin Invaders">
 		<Objective Type="KillMob" MobId="3989" KillCount="15">
 			<Hotspots>
-				<Hotspot X="1349.5" Y="80.6684" Z="11.8869" />
-				<Hotspot X="1115.52" Y="119.316" Z="0.0343" />
-				<Hotspot X="1117.85" Y="147.465" Z="1.7217" />
-				<Hotspot X="1146.53" Y="139.357" Z="-2.1084" />
-				<Hotspot X="1045.58" Y="112.173" Z="15.9995" />
+				<Hotspot X="1349.5" Y="80.67" Z="11.89" />
+				<Hotspot X="1115.52" Y="119.32" Z="0.03" />
+				<Hotspot X="1117.85" Y="147.47" Z="1.72" />
+				<Hotspot X="1146.53" Y="139.36" Z="-2.11" />
+				<Hotspot X="1045.58" Y="112.17" Z="16" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6421" Name="Boulderslide Ravine">
+		<Objective Type="CollectItem" ItemId="16581" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Gogger Rock Keeper" Id="11915" />
+				<Mob Name="Gogger Geomancer" Id="11917" />
+				<Mob Name="Gogger Stonepounder" Id="11918" />
+				<GameObject Name="Resonite Crystal" Id="178104" />
+				<GameObject Name="Resonite Crystal" Id="178105" />
+				<GameObject Name="Resonite Crystal" Id="178106" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3.04" Y="447.58" Z="104.09" />
+				<Hotspot X="-20.17" Y="393.06" Z="104.82" />
+				<Hotspot X="-20.89" Y="352.39" Z="105.93" />
+				<Hotspot X="-61.49" Y="367.93" Z="117.01" />
+				<Hotspot X="-38.52" Y="313.76" Z="99.07" />
+				<Hotspot X="-79.39" Y="325.57" Z="106.59" />
+				<Hotspot X="-114.54" Y="378.11" Z="95.33" />
+				<Hotspot X="-53.08" Y="266.84" Z="87.75" />
+				<Hotspot X="3.76" Y="444.85" Z="103.67" />
+				<Hotspot X="-14.58" Y="452.38" Z="104.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1068" Name="Shredding Machines">
+		<Objective Type="KillMob" MobId="4073" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1406.56" Y="113.61" Z="16.26" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="4074" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1222.28" Y="199.11" Z="5.53" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Stonetalon Mountains (20-21) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1058))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Letter to Jin'Zil" QuestId="1060" TurnInName="Witch Doctor Jin'Zil" TurnInId="3995" />
-		<PickUp QuestName="Jin'Zil's Forest Magic" QuestId="1058" GiverName="Witch Doctor Jin'Zil" GiverId="3995" />
-		<PickUp QuestName="Blood Feeders" QuestId="6461" GiverName="Xen'Zilla" GiverId="12816" />
-		<PickUp QuestName="Arachnophobia" QuestId="6284" GiverName="Xen'Zilla" GiverId="12816" />
+		<TurnIn QuestName="Letter to Jin'Zil" QuestId="1060" TurnInName="Witch Doctor Jin'Zil" TurnInId="3995" X="-272.48" Y="-394.084" Z="17.2051" />
+		<PickUp QuestName="Jin'Zil's Forest Magic" QuestId="1058" GiverName="Witch Doctor Jin'Zil" GiverId="3995" X="-272.48" Y="-394.084" Z="17.2051" />
+		<Objective QuestName="Jin'Zil's Forest Magic" QuestId="1058" Type="CollectItem" ItemId="5582" CollectCount="5" />
+		<Objective QuestName="Jin'Zil's Forest Magic" QuestId="1058" Type="CollectItem" ItemId="5584" CollectCount="5" />
+		<Objective QuestName="Jin'Zil's Forest Magic" QuestId="1058" Type="CollectItem" ItemId="5585" CollectCount="30" />
+		<Objective QuestName="Jin'Zil's Forest Magic" QuestId="1058" Type="CollectItem" ItemId="5583" CollectCount="1" />
+		<PickUp QuestName="Blood Feeders" QuestId="6461" GiverName="Xen'Zilla" GiverId="12816" X="-177.568" Y="-233.317" Z="8.8796" />
+		<PickUp QuestName="Arachnophobia" QuestId="6284" GiverName="Wanted Poster: Besseleth" GiverId="177904" GiverType="Object" X="451.498" Y="361.607" Z="51.0175" />
 		<Objective QuestName="Arachnophobia" QuestId="6284" Type="CollectItem" ItemId="16192" CollectCount="1" />
 		<Objective QuestName="Deepmoss Spider Eggs" QuestId="1069" Type="CollectItem" ItemId="5570" CollectCount="15" />
 		<Objective QuestName="Blood Feeders" QuestId="6461" Type="KillMob" MobId="4007" KillCount="7" />
 		<Objective QuestName="Blood Feeders" QuestId="6461" Type="KillMob" MobId="4005" KillCount="10" />
-		<TurnIn QuestName="Ziz Fizziks" QuestId="1483" TurnInName="Ziz Fizziks" TurnInId="4201" />
-		<PickUp QuestName="Super Reaper 6000" QuestId="1093" GiverName="Ziz Fizziks" GiverId="4201" />
+		<TurnIn QuestName="Ziz Fizziks" QuestId="1483" TurnInName="Ziz Fizziks" TurnInId="4201" X="878.289" Y="365.192" Z="23.2634" />
+		<PickUp QuestName="Super Reaper 6000" QuestId="1093" GiverName="Ziz Fizziks" GiverId="4201" X="878.289" Y="365.192" Z="23.2634" />
 		<Objective QuestName="Super Reaper 6000" QuestId="1093" Type="CollectItem" ItemId="5734" CollectCount="1" />
 		<Objective QuestName="Goblin Invaders" QuestId="1062" Type="KillMob" MobId="3989" KillCount="15" />
 		<If Condition="Me.Level &lt; 21">
@@ -105,16 +257,19 @@
 			</SetGrindArea>
 			<GrindTo Level="21" />
 		</If>
-		<TurnIn QuestName="Super Reaper 6000" QuestId="1093" TurnInName="Ziz Fizziks" TurnInId="4201" />
-		<PickUp QuestName="Further Instructions" QuestId="1094" GiverName="Ziz Fizziks" GiverId="4201" />
-		<TurnIn QuestName="Kaya's Alive" QuestId="6401" TurnInName="Tammra Windfield" TurnInId="11864" />
-		<TurnIn QuestName="Arachnophobia" QuestId="6284" TurnInName="Maggran Earthbinder" TurnInId="11860" />
-		<PickUp QuestName="Boulderslide Ravine" QuestId="6421" GiverName="Mor'rogal" GiverId="11861" />
-		<PickUp QuestName="Trouble in the Deeps" QuestId="6562" GiverName="Tsunaman" GiverId="11862" />
+
+		<TurnIn QuestName="Super Reaper 6000" QuestId="1093" TurnInName="Ziz Fizziks" TurnInId="4201" X="878.289" Y="365.192" Z="23.2634" />
+		<PickUp QuestName="Further Instructions" QuestId="1094" GiverName="Ziz Fizziks" GiverId="4201" X="878.289" Y="365.192" Z="23.2634" />
+		<TurnIn QuestName="Kaya's Alive" QuestId="6401" TurnInName="Tammra Windfield" TurnInId="11864" X="1015.68" Y="928.041" Z="103.519" />
+		<TurnIn QuestName="Arachnophobia" QuestId="6284" TurnInName="Maggran Earthbinder" TurnInId="11860" X="925.298" Y="940.918" Z="105.575" />
+		<PickUp QuestName="Boulderslide Ravine" QuestId="6421" GiverName="Mor'rogal" GiverId="11861" X="831.234" Y="939.914" Z="155.071" />
+		<PickUp QuestName="Trouble in the Deeps" QuestId="6562" GiverName="Tsunaman" GiverId="11862" X="824.854" Y="933.05" Z="155.485" />
 		<Objective QuestName="Boulderslide Ravine" QuestId="6421" Type="CollectItem" ItemId="16581" CollectCount="10" />
-		<TurnIn QuestName="Blood Feeders" QuestId="6461" TurnInName="Xen'Zilla" TurnInId="12816" />
-		<TurnIn QuestName="Goblin Invaders" QuestId="1062" TurnInName="Seereth Stonebreak" TurnInId="4049" />
-		<PickUp QuestName="Shredding Machines" QuestId="1068" GiverName="Seereth Stonebreak" GiverId="4049" />
+		<TurnIn QuestName="Blood Feeders" QuestId="6461" TurnInName="Xen'Zilla" TurnInId="12816" X="-177.568" Y="-233.317" Z="8.8796" />
+		<TurnIn QuestName="Goblin Invaders" QuestId="1062" TurnInName="Seereth Stonebreak" TurnInId="4049" X="-270" Y="-951" Z="14.372" />
+		<PickUp QuestName="Shredding Machines" QuestId="1068" GiverName="Seereth Stonebreak" GiverId="4049" X="-270" Y="-951" Z="14.372" />
+		<Objective QuestName="Shredding Machines" QuestId="1068" Type="KillMob" MobId="4073" KillCount="1" />
+		<Objective QuestName="Shredding Machines" QuestId="1068" Type="KillMob" MobId="4074" KillCount="1" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Ashenvale (21-21)" />
 	</QuestOrder>
 </HBProfile>

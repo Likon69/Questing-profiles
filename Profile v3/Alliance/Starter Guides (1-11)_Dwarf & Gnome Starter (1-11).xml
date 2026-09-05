@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Starter Guides (1-11)\Dwarf &amp; Gnome Starter (1-11)</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>11</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -35,7 +32,6 @@
 		<Vendor Name="Maxan Anvol" Entry="1226" Type="Train" TrainClass="Priest" X="-5590.5601" Y="-529.657" Z="399.735" />
 		<Vendor Name="Magis Sparkmantle" Entry="1228" Type="Train" TrainClass="Mage" X="-5586.9399" Y="-537.173" Z="403.624" />
 		<Vendor Name="Gimrizz Shadowcog" Entry="5612" Type="Train" TrainClass="Warlock" X="-5640" Y="-528.801" Z="404.379" />
-
 		<!--Coldridge Valley Vendors-->
 		<Vendor Name="Rybrad Coldbank" Entry="945" Type="Repair" X="-6101.1" Y="390.569" Z="395.54266" />
 		<Vendor Name="Adlin Pridedrift" Entry="829" Type="Food" X="-6225.24" Y="320.372" Z="383.1172" />
@@ -44,51 +40,251 @@
 		<Vendor Name="Thrawn Boltar" Entry="1690" Type="Repair" X="-5568.99" Y="-429.114" Z="397.32614" />
 		<Vendor Name="Innkeeper Belm" Entry="1247" Type="Food" X="-5601.6" Y="-531.203" Z="399.65335" />
 		<Vendor Name="Kreg Bilmn" Entry="1691" Type="Ammo" X="-5597.66" Y="-521.852" Z="399.6554" />
+		<Vendor Name="Hegnar Rumbleshot" Entry="1243" Type="Repair" X="-6015.51" Y="-201.511" Z="407.437" />
+		<Vendor Name="Grawn Thromwyn" Entry="1273" Type="Repair" X="-5590.67" Y="-428.416" Z="397.409" />
+		<Vendor Name="Gamili Frosthide" Entry="1238" Type="Repair" X="-5582.02" Y="-423.1" Z="397.409" />
+		<Vendor Name="Keeg Gibn" Entry="1697" Type="Food" X="-5387.62" Y="302.251" Z="394.054" />
+		<Vendor Name="Bountiful Barrel" Entry="35340" Type="Food" X="-5073.03" Y="-787.526" Z="495.117" />
+		<Vendor Name="Elizabeth Barker Winslow" Entry="34645" Type="Food" X="-5076.66" Y="-808.073" Z="495.833" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="179" Name="Dwarven Outfitters">
+		<Objective Type="CollectItem" ItemId="750" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Ragged Timber Wolf" Id="704" />
+				<Mob Name="Ragged Young Wolf" Id="705" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6303.16" Y="332.25" Z="377.54" />
+				<Hotspot X="-6275.84" Y="282.6" Z="382.59" />
+				<Hotspot X="-6248.73" Y="395.08" Z="384.86" />
+				<Hotspot X="-6311.52" Y="385.94" Z="379.99" />
+				<Hotspot X="-6340.84" Y="335.72" Z="379.83" />
+				<Hotspot X="-6160.52" Y="261.54" Z="390.24" />
+				<Hotspot X="-6311.44" Y="268.2" Z="381.51" />
+				<Hotspot X="-6282.24" Y="435.14" Z="384.28" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="170" Name="A New Threat">
 		<Objective Type="KillMob" MobId="707" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-6322.07" Y="208.885" Z="395.879" />
-				<Hotspot X="-6331.14" Y="268.768" Z="380.622" />
-				<Hotspot X="-6305.15" Y="272.656" Z="380.252" />
-				<Hotspot X="-6324.98" Y="294.269" Z="379.937" />
-				<Hotspot X="-6208.34" Y="605.062" Z="393.214" />
+				<Hotspot X="-6322.07" Y="208.88" Z="395.88" />
+				<Hotspot X="-6331.14" Y="268.77" Z="380.62" />
+				<Hotspot X="-6305.15" Y="272.66" Z="380.25" />
+				<Hotspot X="-6324.98" Y="294.27" Z="379.94" />
+				<Hotspot X="-6208.34" Y="605.06" Z="393.21" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="724" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-6296.63" Y="244.471" Z="390.969" />
-				<Hotspot X="-6245.59" Y="461.45" Z="386.191" />
-				<Hotspot X="-6274.57" Y="462.16" Z="386.168" />
-				<Hotspot X="-6278.65" Y="478.98" Z="386.248" />
-				<Hotspot X="-6287.51" Y="451.789" Z="386.043" />
+				<Hotspot X="-6296.63" Y="244.47" Z="390.97" />
+				<Hotspot X="-6245.59" Y="461.45" Z="386.19" />
+				<Hotspot X="-6274.57" Y="462.16" Z="386.17" />
+				<Hotspot X="-6278.65" Y="478.98" Z="386.25" />
+				<Hotspot X="-6287.51" Y="451.79" Z="386.04" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="183" Name="The Boar Hunter">
-		<Objective Type="KillMob" MobId="708" KillCount="8">
+		<Objective Type="KillMob" MobId="708" KillCount="12">
 			<Hotspots>
-				<Hotspot X="-6230.69" Y="212.32" Z="395.626" />
-				<Hotspot X="-6150.36" Y="264.527" Z="391.214" />
-				<Hotspot X="-6275.36" Y="412.548" Z="383.871" />
-				<Hotspot X="-6164.25" Y="493.212" Z="388.398" />
-				<Hotspot X="-6228.68" Y="451.303" Z="386.738" />
+				<Hotspot X="-6230.69" Y="212.32" Z="395.63" />
+				<Hotspot X="-6150.36" Y="264.53" Z="391.21" />
+				<Hotspot X="-6275.36" Y="412.55" Z="383.87" />
+				<Hotspot X="-6164.25" Y="493.21" Z="388.4" />
+				<Hotspot X="-6228.68" Y="451.3" Z="386.74" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3361" Name="A Refugee's Quandary">
+		<Objective Type="CollectItem" ItemId="16313" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Chest" Id="178084" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6503.89" Y="680.37" Z="387.27" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="16314" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Bucket of Bolts" Id="178085" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6480.01" Y="505.26" Z="385.99" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="10438" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Felix's Box" Id="148499" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6374.81" Y="773.7" Z="386.21" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="182" Name="The Troll Cave">
 		<Objective Type="KillMob" MobId="706" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-6370.09" Y="778.613" Z="387.368" />
-				<Hotspot X="-6373.48" Y="753.763" Z="386.581" />
-				<Hotspot X="-6350.51" Y="767.643" Z="386.396" />
-				<Hotspot X="-6381.01" Y="775.867" Z="386.396" />
-				<Hotspot X="-6386.73" Y="766.395" Z="386.396" />
+				<Hotspot X="-6370.09" Y="778.61" Z="387.37" />
+				<Hotspot X="-6373.48" Y="753.76" Z="386.58" />
+				<Hotspot X="-6350.51" Y="767.64" Z="386.4" />
+				<Hotspot X="-6381.01" Y="775.87" Z="386.4" />
+				<Hotspot X="-6386.73" Y="766.39" Z="386.4" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="218" Name="The Stolen Journal">
+		<Objective Type="CollectItem" ItemId="2004" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grik'nir the Cold" Id="808" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6508.82" Y="300.76" Z="370.35" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="317" Name="Stocking Jetsteam">
+		<Objective Type="CollectItem" ItemId="6952" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Young Black Bear" Id="1128" />
+				<Mob Name="Black Bear" Id="1129" />
+				<Mob Name="Ice Claw Bear" Id="1196" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5516.15" Y="-566.64" Z="402.56" />
+				<Hotspot X="-5551.74" Y="-619.57" Z="408.67" />
+				<Hotspot X="-5576.94" Y="-687.48" Z="407.89" />
+				<Hotspot X="-5643.36" Y="-677.03" Z="403.87" />
+				<Hotspot X="-5293.4" Y="-717.5" Z="388.46" />
+				<Hotspot X="-5510.6" Y="-421.13" Z="405.83" />
+				<Hotspot X="-5446.86" Y="-378.35" Z="399.09" />
+				<Hotspot X="-5565.58" Y="-364.17" Z="409.77" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="313" Name="The Grizzled Den">
+		<Objective Type="CollectItem" ItemId="2671" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Young Wendigo" Id="1134" />
+				<Mob Name="Wendigo" Id="1135" />
+				<Mob Name="Edan the Howler" Id="1137" />
+				<Mob Name="Old Icebeard" Id="1271" />
+				<Mob Name="Vagash" Id="1388" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5499.8" Y="-328.9" Z="356.07" />
+				<Hotspot X="-5506.9" Y="-291.9" Z="354.71" />
+				<Hotspot X="-5416.84" Y="-280.34" Z="359.68" />
+				<Hotspot X="-5584.06" Y="-280.76" Z="367.87" />
+				<Hotspot X="-5474.11" Y="-262.7" Z="354.59" />
+				<Hotspot X="-5664.12" Y="-297.33" Z="369.92" />
+				<Hotspot X="-5371.96" Y="-250.73" Z="361.91" />
+				<Hotspot X="-5629.64" Y="-267.02" Z="368.92" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5541" Name="Ammo for Rumbleshot">
+		<Objective Type="CollectItem" ItemId="13850" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ammo Crate" Id="176785" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5746.87" Y="-371.43" Z="365.88" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="287" Name="Frostmane Hold">
+		<Objective Type="KillMob" MobId="1123" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-5567.64" Y="521.86" Z="381.43" />
+				<Hotspot X="-5566.43" Y="514.22" Z="381.89" />
+				<Hotspot X="-5564.88" Y="648.6" Z="398.52" />
+				<Hotspot X="-5547.14" Y="546.36" Z="391.62" />
+				<Hotspot X="-5547.62" Y="660.98" Z="395.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="412" Name="Operation Recombobulation">
+		<Objective Type="CollectItem" ItemId="3083" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Leper Gnome" Id="1211" />
+				<Mob Name="Gibblewilt" Id="8503" />
+				<Mob Name="Irradiated Infantry" Id="39755" />
+				<Mob Name="Irradiated Mechano-Tank" Id="39819" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5295.03" Y="476.86" Z="384.15" />
+				<Hotspot X="-5110.19" Y="437.79" Z="401.95" />
+				<Hotspot X="-5265.22" Y="501.16" Z="385.95" />
+				<Hotspot X="-5136.57" Y="463.15" Z="394.31" />
+				<Hotspot X="-5064.25" Y="441.73" Z="415.84" />
+				<Hotspot X="-5082.47" Y="465.43" Z="405.46" />
+				<Hotspot X="-5314.62" Y="538.78" Z="384.76" />
+				<Hotspot X="-5348.41" Y="558.34" Z="388.87" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3084" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Leper Gnome" Id="1211" />
+				<Mob Name="Gibblewilt" Id="8503" />
+				<Mob Name="Irradiated Infantry" Id="39755" />
+				<Mob Name="Irradiated Mechano-Tank" Id="39819" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5295.03" Y="476.86" Z="384.15" />
+				<Hotspot X="-5110.19" Y="437.79" Z="401.95" />
+				<Hotspot X="-5265.22" Y="501.16" Z="385.95" />
+				<Hotspot X="-5136.57" Y="463.15" Z="394.31" />
+				<Hotspot X="-5064.25" Y="441.73" Z="415.84" />
+				<Hotspot X="-5082.47" Y="465.43" Z="405.46" />
+				<Hotspot X="-5314.62" Y="538.78" Z="384.76" />
+				<Hotspot X="-5348.41" Y="558.34" Z="388.87" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="312" Name="Tundra MacGrann's Stolen Stash">
+		<Objective Type="CollectItem" ItemId="2667" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="MacGrann's Meat Locker" Id="272" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5647.73" Y="-94.76" Z="418.11" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="319" Name="A Favor for Evershine">
+		<Objective Type="KillMob" MobId="1196" KillCount="6">
+			<Hotspots>
+				<Hotspot X="-5957.03" Y="-480.46" Z="408.54" />
+				<Hotspot X="-4822.03" Y="-356.88" Z="396.21" />
+				<Hotspot X="-4834.81" Y="-228.94" Z="399.1" />
+				<Hotspot X="-4990.84" Y="-58.1" Z="386.76" />
+				<Hotspot X="-4877.07" Y="20.27" Z="388.37" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1127" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-5274.89" Y="-429.97" Z="391.94" />
+				<Hotspot X="-4928.95" Y="-373.65" Z="393.31" />
+				<Hotspot X="-4849.52" Y="-344.18" Z="394.04" />
+				<Hotspot X="-4862.23" Y="-269.91" Z="395.27" />
+				<Hotspot X="-4879.7" Y="-170.71" Z="383.5" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1201" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-5818.51" Y="-587.57" Z="398.42" />
+				<Hotspot X="-5956.08" Y="-527.07" Z="408.04" />
+				<Hotspot X="-5951" Y="-559" Z="406.57" />
+				<Hotspot X="-4893.65" Y="-302.36" Z="393.88" />
+				<Hotspot X="-4870.32" Y="-363.3" Z="391.67" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -109,368 +305,436 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="319" Name="A Favor for Evershine">
-		<Objective Type="KillMob" MobId="1196" KillCount="6">
+	<Quest Id="1688" Name="Surena Caledon">
+		<Objective Type="CollectItem" ItemId="6810" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Surena Caledon" Id="881" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-5957.03" Y="-480.463" Z="408.535" />
-				<Hotspot X="-4822.03" Y="-356.884" Z="396.206" />
-				<Hotspot X="-4834.81" Y="-228.943" Z="399.104" />
-				<Hotspot X="-4990.84" Y="-58.1003" Z="386.758" />
-				<Hotspot X="-4877.07" Y="20.2735" Z="388.366" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="1127" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-5274.89" Y="-429.966" Z="391.942" />
-				<Hotspot X="-4928.95" Y="-373.654" Z="393.312" />
-				<Hotspot X="-4849.52" Y="-344.175" Z="394.044" />
-				<Hotspot X="-4862.23" Y="-269.912" Z="395.272" />
-				<Hotspot X="-4879.7" Y="-170.707" Z="383.501" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="1201" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-5818.51" Y="-587.567" Z="398.42" />
-				<Hotspot X="-5956.08" Y="-527.072" Z="408.04" />
-				<Hotspot X="-5951.0" Y="-559.0" Z="406.571" />
-				<Hotspot X="-4893.65" Y="-302.359" Z="393.881" />
-				<Hotspot X="-4870.32" Y="-363.295" Z="391.672" />
+				<Hotspot X="-9809.18" Y="-929.38" Z="39.87" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="287" Name="Frostmane Hold">
-		<Objective Type="KillMob" MobId="1123" KillCount="5">
+	<Quest Id="314" Name="Protecting the Herd">
+		<Objective Type="CollectItem" ItemId="3627" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Vagash" Id="1388" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-5567.64" Y="521.862" Z="381.425" />
-				<Hotspot X="-5566.43" Y="514.22" Z="381.886" />
-				<Hotspot X="-5564.88" Y="648.602" Z="398.516" />
-				<Hotspot X="-5547.14" Y="546.356" Z="391.621" />
-				<Hotspot X="-5547.62" Y="660.976" Z="395.687" />
+				<Hotspot X="-5389" Y="-1282" Z="445.89" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="433" Name="The Public Servant">
 		<Objective Type="KillMob" MobId="1117" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-5692.81" Y="-1675.11" Z="360.795" />
-				<Hotspot X="-5670.16" Y="-1676.53" Z="360.764" />
-				<Hotspot X="-5626.2" Y="-1665.76" Z="362.718" />
-				<Hotspot X="-5607.03" Y="-1656.15" Z="351.759" />
-				<Hotspot X="-5627.15" Y="-1681.13" Z="362.266" />
+				<Hotspot X="-5692.81" Y="-1675.11" Z="360.8" />
+				<Hotspot X="-5670.16" Y="-1676.53" Z="360.76" />
+				<Hotspot X="-5626.2" Y="-1665.76" Z="362.72" />
+				<Hotspot X="-5607.03" Y="-1656.15" Z="351.76" />
+				<Hotspot X="-5627.15" Y="-1681.13" Z="362.27" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="432" Name="Those Blasted Troggs!">
 		<Objective Type="KillMob" MobId="1115" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-5837.54" Y="-1502.03" Z="358.889" />
-				<Hotspot X="-5800.41" Y="-1506.65" Z="364.198" />
-				<Hotspot X="-5830.94" Y="-1524.58" Z="358.252" />
-				<Hotspot X="-5853.01" Y="-1524.74" Z="358.855" />
-				<Hotspot X="-5751.1" Y="-1628.34" Z="359.028" />
+				<Hotspot X="-5837.54" Y="-1502.03" Z="358.89" />
+				<Hotspot X="-5800.41" Y="-1506.65" Z="364.2" />
+				<Hotspot X="-5830.94" Y="-1524.58" Z="358.25" />
+				<Hotspot X="-5853.01" Y="-1524.74" Z="358.86" />
+				<Hotspot X="-5751.1" Y="-1628.34" Z="359.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="417" Name="A Pilot's Revenge">
+		<Objective Type="CollectItem" ItemId="3183" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mangeclaw" Id="1961" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5116.94" Y="-2054.59" Z="426.96" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1784" Name="The Tome of Divinity">
+		<Objective Type="CollectItem" ItemId="6847" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dark Iron Spy" Id="6123" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5852.61" Y="-1999.41" Z="401.44" />
+				<Hotspot X="-5866.75" Y="-2047.68" Z="402.63" />
+				<Hotspot X="-5909.56" Y="-2021.67" Z="407.52" />
+				<Hotspot X="-5921.7" Y="-1979.57" Z="405.96" />
+				<Hotspot X="-5924.42" Y="-2037.06" Z="408.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="1640" Name="Beat Bartleby">
 		<Objective Type="KillMob" MobId="6090" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-8604.47" Y="389.102" Z="102.924" />
+				<Hotspot X="-8604.47" Y="389.1" Z="102.92" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Starter Guides (1-11)_Dwarf & Gnome Starter (1-11) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(179))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Dwarven Outfitters" QuestId="179" GiverName="Sten Stoutarm" GiverId="658" />
+		<PickUp QuestName="Dwarven Outfitters" QuestId="179" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		<Objective QuestName="Dwarven Outfitters" QuestId="179" Type="CollectItem" ItemId="750" CollectCount="8" />
-		<TurnIn QuestName="Dwarven Outfitters" QuestId="179" TurnInName="Sten Stoutarm" TurnInId="658" />
+		<TurnIn QuestName="Dwarven Outfitters" QuestId="179" TurnInName="Sten Stoutarm" TurnInId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Simple Rune" QuestId="3106" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Simple Rune" QuestId="3106" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Encrypted Rune" QuestId="3109" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Encrypted Rune" QuestId="3109" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Hallowed Rune" QuestId="3110" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Hallowed Rune" QuestId="3110" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Consecrated Rune" QuestId="3107" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Consecrated Rune" QuestId="3107" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Etched Rune" QuestId="3108" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Etched Rune" QuestId="3108" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Glyphic Memorandum" QuestId="3114" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Glyphic Memorandum" QuestId="3114" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Simple Memorandum" QuestId="3112" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Simple Memorandum" QuestId="3112" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Tainted Memorandum" QuestId="3115" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Tainted Memorandum" QuestId="3115" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Encrypted Memorandum" QuestId="3113" GiverName="Sten Stoutarm" GiverId="658" />
+			<PickUp QuestName="Encrypted Memorandum" QuestId="3113" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
 		</If>
 
-		<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="233" GiverName="Sten Stoutarm" GiverId="658" />
-		<PickUp QuestName="A New Threat" QuestId="170" GiverName="Balir Frosthammer" GiverId="713" />
+		<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="233" GiverName="Sten Stoutarm" GiverId="658" X="-6236.74" Y="331.113" Z="382.911" />
+		<PickUp QuestName="A New Threat" QuestId="170" GiverName="Balir Frosthammer" GiverId="713" X="-6216.53" Y="339.002" Z="383.454" />
 		<Objective QuestName="A New Threat" QuestId="170" Type="KillMob" MobId="707" KillCount="6" />
 		<Objective QuestName="A New Threat" QuestId="170" Type="KillMob" MobId="724" KillCount="6" />
-		<TurnIn QuestName="A New Threat" QuestId="170" TurnInName="Balir Frosthammer" TurnInId="713" />
-		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="233" TurnInName="Talin Keeneye" TurnInId="714" />
-		<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="234" GiverName="Talin Keeneye" GiverId="714" />
-		<PickUp QuestName="The Boar Hunter" QuestId="183" GiverName="Talin Keeneye" GiverId="714" />
-		<Objective QuestName="The Boar Hunter" QuestId="183" Type="KillMob" MobId="708" KillCount="8" />
-		<TurnIn QuestName="The Boar Hunter" QuestId="183" TurnInName="Talin Keeneye" TurnInId="714" />
-		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="234" TurnInName="Grelin Whitebeard" TurnInId="786" />
-		<PickUp QuestName="Scalding Mornbrew Delivery" QuestId="3364" GiverName="Nori Pridedrift" GiverId="12738" />
-		<PickUp QuestName="A Refugee's Quandary" QuestId="3361" GiverName="Felix Whindlebolt" GiverId="8416" />
-		<TurnIn QuestName="Scalding Mornbrew Delivery" QuestId="3364" TurnInName="Durnan Furcutter" TurnInId="836" />
-		<PickUp QuestName="Bring Back the Mug" QuestId="3365" GiverName="Durnan Furcutter" GiverId="836" />
+		<TurnIn QuestName="A New Threat" QuestId="170" TurnInName="Balir Frosthammer" TurnInId="713" X="-6216.53" Y="339.002" Z="383.454" />
+		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="233" TurnInName="Talin Keeneye" TurnInId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<PickUp QuestName="Coldridge Valley Mail Delivery" QuestId="234" GiverName="Talin Keeneye" GiverId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<PickUp QuestName="The Boar Hunter" QuestId="183" GiverName="Talin Keeneye" GiverId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<Objective QuestName="The Boar Hunter" QuestId="183" Type="KillMob" MobId="708" KillCount="12" />
+		<TurnIn QuestName="The Boar Hunter" QuestId="183" TurnInName="Talin Keeneye" TurnInId="714" X="-6222.47" Y="688.973" Z="385.002" />
+		<TurnIn QuestName="Coldridge Valley Mail Delivery" QuestId="234" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<PickUp QuestName="Scalding Mornbrew Delivery" QuestId="3364" GiverName="Nori Pridedrift" GiverId="12738" X="-6371.13" Y="571.816" Z="385.827" />
+		<PickUp QuestName="A Refugee's Quandary" QuestId="3361" GiverName="Felix Whindlebolt" GiverId="8416" X="-6098.09" Y="396.074" Z="395.54" />
+		<TurnIn QuestName="Scalding Mornbrew Delivery" QuestId="3364" TurnInName="Durnan Furcutter" TurnInId="836" X="-6056.38" Y="385.213" Z="392.845" />
+		<PickUp QuestName="Bring Back the Mug" QuestId="3365" GiverName="Durnan Furcutter" GiverId="836" X="-6056.38" Y="385.213" Z="392.845" />
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="Simple Rune" QuestId="3106" TurnInName="Thran Khorman" TurnInId="912" />
+			<TurnIn QuestName="Simple Rune" QuestId="3106" TurnInName="Thran Khorman" TurnInId="912" X="-6084.77" Y="382.141" Z="395.626" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="Encrypted Rune" QuestId="3109" TurnInName="Solm Hargrin" TurnInId="916" />
+			<TurnIn QuestName="Encrypted Rune" QuestId="3109" TurnInName="Solm Hargrin" TurnInId="916" X="-6093.75" Y="404.918" Z="395.62" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="Hallowed Rune" QuestId="3110" TurnInName="Branstock Khalder" TurnInId="837" />
+			<TurnIn QuestName="Hallowed Rune" QuestId="3110" TurnInName="Branstock Khalder" TurnInId="837" X="-6056.74" Y="393.548" Z="392.843" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="Consecrated Rune" QuestId="3107" TurnInName="Bromos Grummner" TurnInId="926" />
+			<TurnIn QuestName="Consecrated Rune" QuestId="3107" TurnInName="Bromos Grummner" TurnInId="926" X="-6120.68" Y="382.089" Z="395.626" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="Etched Rune" QuestId="3108" TurnInName="Thorgas Grimson" TurnInId="895" />
+			<TurnIn QuestName="Etched Rune" QuestId="3108" TurnInName="Thorgas Grimson" TurnInId="895" X="-6091.79" Y="365.141" Z="395.623" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Simple Memorandum" QuestId="3112" TurnInName="Thran Khorman" TurnInId="912" />
+			<TurnIn QuestName="Simple Memorandum" QuestId="3112" TurnInName="Thran Khorman" TurnInId="912" X="-6084.77" Y="382.141" Z="395.626" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Encrypted Memorandum" QuestId="3113" TurnInName="Solm Hargrin" TurnInId="916" />
+			<TurnIn QuestName="Encrypted Memorandum" QuestId="3113" TurnInName="Solm Hargrin" TurnInId="916" X="-6093.75" Y="404.918" Z="395.62" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Glyphic Memorandum" QuestId="3114" TurnInName="Marryk Nurribit" TurnInId="944" />
+			<TurnIn QuestName="Glyphic Memorandum" QuestId="3114" TurnInName="Marryk Nurribit" TurnInId="944" X="-6056.09" Y="388.175" Z="392.944" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Tainted Memorandum" QuestId="3115" TurnInName="Alamar Grimm" TurnInId="460" />
-			<PickUp QuestName="Beginnings" QuestId="1599" GiverName="Alamar Grimm" GiverId="460" />
+			<TurnIn QuestName="Tainted Memorandum" QuestId="3115" TurnInName="Alamar Grimm" TurnInId="460" X="-6048.79" Y="391.078" Z="398.958" />
 		</If>
 
-		<TurnIn QuestName="Bring Back the Mug" QuestId="3365" TurnInName="Nori Pridedrift" TurnInId="12738" />
-		<PickUp QuestName="The Troll Cave" QuestId="182" GiverName="Grelin Whitebeard" GiverId="786" />
-		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<Objective QuestName="Beginnings" QuestId="1599" Type="CollectItem" ItemId="6753" CollectCount="3" />
-			<TurnIn QuestName="Beginnings" QuestId="1599" TurnInName="Alamar Grimm" TurnInId="460" />
-		</If>
-
+		<TurnIn QuestName="Bring Back the Mug" QuestId="3365" TurnInName="Nori Pridedrift" TurnInId="12738" X="-6371.13" Y="571.816" Z="385.827" />
+		<PickUp QuestName="The Troll Cave" QuestId="182" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
 		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="10438" CollectCount="1" />
 		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16313" CollectCount="1" />
 		<Objective QuestName="A Refugee's Quandary" QuestId="3361" Type="CollectItem" ItemId="16314" CollectCount="1" />
 		<Objective QuestName="The Troll Cave" QuestId="182" Type="KillMob" MobId="706" KillCount="10" />
-		<TurnIn QuestName="The Troll Cave" QuestId="182" TurnInName="Grelin Whitebeard" TurnInId="786" />
-		<PickUp QuestName="The Stolen Journal" QuestId="218" GiverName="Grelin Whitebeard" GiverId="786" />
+		<TurnIn QuestName="The Troll Cave" QuestId="182" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<PickUp QuestName="The Stolen Journal" QuestId="218" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
 		<Objective QuestName="The Stolen Journal" QuestId="218" Type="CollectItem" ItemId="2004" CollectCount="1" />
-		<TurnIn QuestName="The Stolen Journal" QuestId="218" TurnInName="Grelin Whitebeard" TurnInId="786" />
-		<PickUp QuestName="Senir's Observations" QuestId="282" GiverName="Grelin Whitebeard" GiverId="786" />
-		<TurnIn QuestName="A Refugee's Quandary" QuestId="3361" TurnInName="Felix Whindlebolt" TurnInId="8416" />
-		<TurnIn QuestName="Senir's Observations" QuestId="282" TurnInName="Mountaineer Thalos" TurnInId="1965" />
-		<PickUp QuestName="Senir's Observations" QuestId="420" GiverName="Mountaineer Thalos" GiverId="1965" />
-		<PickUp QuestName="Supplies to Tannok" QuestId="2160" GiverName="Hands Springsprocket" GiverId="6782" />
-		<TurnIn QuestName="Senir's Observations" QuestId="420" TurnInName="Senir Whitebeard" TurnInId="1252" />
-		<PickUp QuestName="Beer Basted Boar Ribs" QuestId="384" GiverName="Ragnar Thunderbrew" GiverId="1267" />
-		<TurnIn QuestName="Supplies to Tannok" QuestId="2160" TurnInName="Tannok Frosthammer" TurnInId="6806" />
+		<TurnIn QuestName="The Stolen Journal" QuestId="218" TurnInName="Grelin Whitebeard" TurnInId="786" X="-6363" Y="567.085" Z="385.851" />
+		<PickUp QuestName="Senir's Observations" QuestId="282" GiverName="Grelin Whitebeard" GiverId="786" X="-6363" Y="567.085" Z="385.851" />
+		<TurnIn QuestName="A Refugee's Quandary" QuestId="3361" TurnInName="Felix Whindlebolt" TurnInId="8416" X="-6098.09" Y="396.074" Z="395.54" />
+		<TurnIn QuestName="Senir's Observations" QuestId="282" TurnInName="Mountaineer Thalos" TurnInId="1965" X="-6235.87" Y="152.989" Z="428.399" />
+		<PickUp QuestName="Senir's Observations" QuestId="420" GiverName="Mountaineer Thalos" GiverId="1965" X="-6235.87" Y="152.989" Z="428.399" />
+		<PickUp QuestName="Supplies to Tannok" QuestId="2160" GiverName="Hands Springsprocket" GiverId="6782" X="-6248.84" Y="135.042" Z="431.673" />
+		<TurnIn QuestName="Senir's Observations" QuestId="420" TurnInName="Senir Whitebeard" TurnInId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
+		<PickUp QuestName="Beer Basted Boar Ribs" QuestId="384" GiverName="Ragnar Thunderbrew" GiverId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
+		<TurnIn QuestName="Supplies to Tannok" QuestId="2160" TurnInName="Tannok Frosthammer" TurnInId="6806" X="-5590.81" Y="-523.344" Z="399.735" />
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Garments of the Light" QuestId="5625" GiverName="Maxan Anvol" GiverId="1226" />
-			<TurnIn QuestName="Garments of the Light" QuestId="5625" TurnInName="Maxan Anvol" TurnInId="1226" />
+			<PickUp QuestName="Garments of the Light" QuestId="5625" GiverName="Maxan Anvol" GiverId="1226" X="-5590.56" Y="-529.657" Z="399.735" />
+			<If Condition="((HasQuest(5625)) &amp;&amp; (!IsQuestCompleted(5625)))">
+				<CustomBehavior File="InteractWith" QuestId="5625" MobId="12427" GossipOptions="1" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-5668.69" Y="-454.09" Z="394.467" />
+			</If>
+			<!-- REVIEW Q5625 Garments of the Light: REVIEW: InteractWith generated for friendly npc 12427 Mountaineer Dolf x1 (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(5625)) &amp;&amp; (IsQuestCompleted(5625)))">
+				<TurnIn QuestName="Garments of the Light" QuestId="5625" TurnInName="Maxan Anvol" TurnInId="1226" X="-5590.56" Y="-529.657" Z="399.735" />
+			</If>
+			<If Condition="((HasQuest(5625)) &amp;&amp; (!IsQuestCompleted(5625)))">
+				<AbandonQuest QuestId="5625" />
+			</If>
 		</If>
 
-		<PickUp QuestName="Tools for Steelgrill" QuestId="400" GiverName="Tharek Blackstone" GiverId="1872" />
-		<PickUp QuestName="Stocking Jetsteam" QuestId="317" GiverName="Pilot Bellowfiz" GiverId="1378" />
-		<PickUp QuestName="The Grizzled Den" QuestId="313" GiverName="Pilot Stonegear" GiverId="1377" />
-		<TurnIn QuestName="Tools for Steelgrill" QuestId="400" TurnInName="Beldin Steelgrill" TurnInId="1376" />
-		<PickUp QuestName="Ammo for Rumbleshot" QuestId="5541" GiverName="Loslor Rudge" GiverId="1694" />
+		<PickUp QuestName="Tools for Steelgrill" QuestId="400" GiverName="Tharek Blackstone" GiverId="1872" X="-5573.78" Y="-464.455" Z="402.145" />
+		<PickUp QuestName="Stocking Jetsteam" QuestId="317" GiverName="Pilot Bellowfiz" GiverId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
+		<PickUp QuestName="The Grizzled Den" QuestId="313" GiverName="Pilot Stonegear" GiverId="1377" X="-5473.19" Y="-641.798" Z="393.3" />
+		<TurnIn QuestName="Tools for Steelgrill" QuestId="400" TurnInName="Beldin Steelgrill" TurnInId="1376" X="-5488.99" Y="-682.33" Z="394.436" />
+		<PickUp QuestName="Ammo for Rumbleshot" QuestId="5541" GiverName="Loslor Rudge" GiverId="1694" X="-5499.7" Y="-664.575" Z="395.395" />
 		<Objective QuestName="Stocking Jetsteam" QuestId="317" Type="CollectItem" ItemId="769" CollectCount="4" />
 		<Objective QuestName="Beer Basted Boar Ribs" QuestId="384" Type="CollectItem" ItemId="2886" CollectCount="6" />
 		<Objective QuestName="Stocking Jetsteam" QuestId="317" Type="CollectItem" ItemId="6952" CollectCount="2" />
 		<Objective QuestName="Ammo for Rumbleshot" QuestId="5541" Type="CollectItem" ItemId="13850" CollectCount="1" />
 		<Objective QuestName="The Grizzled Den" QuestId="313" Type="CollectItem" ItemId="2671" CollectCount="8" />
-		<TurnIn QuestName="Ammo for Rumbleshot" QuestId="5541" TurnInName="Hegnar Rumbleshot" TurnInId="1243" />
-		<PickUp QuestName="Frostmane Hold" QuestId="287" GiverName="Senir Whitebeard" GiverId="1252" />
-		<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" />
-		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" />
-		<PickUp QuestName="Evershine" QuestId="318" GiverName="Pilot Bellowfiz" GiverId="1378" />
-		<TurnIn QuestName="The Grizzled Den" QuestId="313" TurnInName="Pilot Stonegear" TurnInId="1377" />
-		<PickUp QuestName="Operation Recombobulation" QuestId="412" GiverName="Razzle Sprysprocket" GiverId="1269" />
-		<PickUp QuestName="Tundra MacGrann's Stolen Stash" QuestId="312" GiverName="Tundra MacGrann" GiverId="1266" />
+		<TurnIn QuestName="Ammo for Rumbleshot" QuestId="5541" TurnInName="Hegnar Rumbleshot" TurnInId="1243" X="-6015.51" Y="-201.511" Z="407.437" />
+		<PickUp QuestName="Frostmane Hold" QuestId="287" GiverName="Senir Whitebeard" GiverId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
+		<!-- REVIEW Q384 Beer Basted Boar Ribs: collect 2894 Rhapsody Malt x1 (no loot source: spell/vendor/event) (item 60496 missing). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(384)) &amp;&amp; (IsQuestCompleted(384)))">
+			<TurnIn QuestName="Beer Basted Boar Ribs" QuestId="384" TurnInName="Ragnar Thunderbrew" TurnInId="1267" X="-5596.21" Y="-504.132" Z="400.714" />
+		</If>
+
+		<If Condition="((HasQuest(384)) &amp;&amp; (!IsQuestCompleted(384)))">
+			<AbandonQuest QuestId="384" />
+		</If>
+
+		<TurnIn QuestName="Stocking Jetsteam" QuestId="317" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
+		<PickUp QuestName="Evershine" QuestId="318" GiverName="Pilot Bellowfiz" GiverId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
+		<TurnIn QuestName="The Grizzled Den" QuestId="313" TurnInName="Pilot Stonegear" TurnInId="1377" X="-5473.19" Y="-641.798" Z="393.3" />
+		<PickUp QuestName="Operation Recombobulation" QuestId="412" GiverName="Razzle Sprysprocket" GiverId="1269" X="-5497.94" Y="-455.835" Z="395.438" />
+		<PickUp QuestName="Tundra MacGrann's Stolen Stash" QuestId="312" GiverName="Tundra MacGrann" GiverId="1266" X="-5573.01" Y="99.3317" Z="483.91" />
 		<Objective QuestName="Tundra MacGrann's Stolen Stash" QuestId="312" Type="CollectItem" ItemId="2667" CollectCount="1" />
-		<TurnIn QuestName="Tundra MacGrann's Stolen Stash" QuestId="312" TurnInName="Tundra MacGrann" TurnInId="1266" />
-		<TurnIn QuestName="Evershine" QuestId="318" TurnInName="Rejold Barleybrew" TurnInId="1374" />
-		<PickUp QuestName="A Favor for Evershine" QuestId="319" GiverName="Rejold Barleybrew" GiverId="1374" />
-		<PickUp QuestName="The Perfect Stout" QuestId="315" GiverName="Rejold Barleybrew" GiverId="1374" />
-		<PickUp QuestName="Bitter Rivals" QuestId="310" GiverName="Marleth Barleybrew" GiverId="1375" />
+		<TurnIn QuestName="Tundra MacGrann's Stolen Stash" QuestId="312" TurnInName="Tundra MacGrann" TurnInId="1266" X="-5573.01" Y="99.3317" Z="483.91" />
+		<TurnIn QuestName="Evershine" QuestId="318" TurnInName="Rejold Barleybrew" TurnInId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="A Favor for Evershine" QuestId="319" GiverName="Rejold Barleybrew" GiverId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="The Perfect Stout" QuestId="315" GiverName="Rejold Barleybrew" GiverId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="Bitter Rivals" QuestId="310" GiverName="Marleth Barleybrew" GiverId="1375" X="-5372.03" Y="315.428" Z="394.444" />
 		<Objective QuestName="The Perfect Stout" QuestId="315" Type="CollectItem" ItemId="2676" CollectCount="6" />
 		<Objective QuestName="A Favor for Evershine" QuestId="319" Type="KillMob" MobId="1196" KillCount="6" />
 		<Objective QuestName="A Favor for Evershine" QuestId="319" Type="KillMob" MobId="1127" KillCount="8" />
 		<Objective QuestName="A Favor for Evershine" QuestId="319" Type="KillMob" MobId="1201" KillCount="8" />
-		<TurnIn QuestName="A Favor for Evershine" QuestId="319" TurnInName="Rejold Barleybrew" TurnInId="1374" />
-		<PickUp QuestName="Return to Bellowfiz" QuestId="320" GiverName="Rejold Barleybrew" GiverId="1374" />
-		<TurnIn QuestName="The Perfect Stout" QuestId="315" TurnInName="Rejold Barleybrew" TurnInId="1374" />
-		<PickUp QuestName="Shimmer Stout" QuestId="413" GiverName="Rejold Barleybrew" GiverId="1374" />
-		<PickUp QuestName="Distracting Jarven" QuestId="308" GiverName="Jarven Thunderbrew" GiverId="1373" />
-		<TurnIn QuestName="Bitter Rivals" QuestId="310" TurnInName="Object_270" TurnInType="Object" TurnInId="270" />
-		<PickUp QuestName="Return to Marleth" QuestId="311" GiverName="Jarven Thunderbrew" GiverId="1373" />
-		<TurnIn QuestName="Return to Bellowfiz" QuestId="320" TurnInName="Pilot Bellowfiz" TurnInId="1378" />
-		<TurnIn QuestName="Return to Marleth" QuestId="311" TurnInName="Marleth Barleybrew" TurnInId="1375" />
+		<TurnIn QuestName="A Favor for Evershine" QuestId="319" TurnInName="Rejold Barleybrew" TurnInId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="Return to Bellowfiz" QuestId="320" GiverName="Rejold Barleybrew" GiverId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<TurnIn QuestName="The Perfect Stout" QuestId="315" TurnInName="Rejold Barleybrew" TurnInId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="Shimmer Stout" QuestId="413" GiverName="Rejold Barleybrew" GiverId="1374" X="-5378.4" Y="315.291" Z="394.289" />
+		<PickUp QuestName="Distracting Jarven" QuestId="308" GiverName="Jarven Thunderbrew" GiverId="1373" X="-5605.96" Y="-544.451" Z="392.43" />
+		<TurnIn QuestName="Bitter Rivals" QuestId="310" TurnInName="Unguarded Thunder Ale Barrel" TurnInType="Object" TurnInId="270" X="-5607.24" Y="-547.934" Z="392.985" />
+		<PickUp QuestName="Return to Marleth" QuestId="311" GiverName="Unguarded Thunder Ale Barrel" GiverId="270" GiverType="Object" X="-5607.24" Y="-547.934" Z="392.985" />
+		<TurnIn QuestName="Return to Bellowfiz" QuestId="320" TurnInName="Pilot Bellowfiz" TurnInId="1378" X="-5466.53" Y="-632.141" Z="393.939" />
+		<TurnIn QuestName="Return to Marleth" QuestId="311" TurnInName="Marleth Barleybrew" TurnInId="1375" X="-5372.03" Y="315.428" Z="394.444" />
 		<Objective QuestName="Frostmane Hold" QuestId="287" Type="KillMob" MobId="1123" KillCount="5" />
 		<Objective QuestName="Operation Recombobulation" QuestId="412" Type="CollectItem" ItemId="3083" CollectCount="8" />
 		<Objective QuestName="Operation Recombobulation" QuestId="412" Type="CollectItem" ItemId="3084" CollectCount="8" />
-		<TurnIn QuestName="Operation Recombobulation" QuestId="412" TurnInName="Razzle Sprysprocket" TurnInId="1269" />
-		<TurnIn QuestName="Frostmane Hold" QuestId="287" TurnInName="Senir Whitebeard" TurnInId="1252" />
-		<PickUp QuestName="The Reports" QuestId="291" GiverName="Senir Whitebeard" GiverId="1252" />
+		<TurnIn QuestName="Operation Recombobulation" QuestId="412" TurnInName="Razzle Sprysprocket" TurnInId="1269" X="-5497.94" Y="-455.835" Z="395.438" />
+		<TurnIn QuestName="Frostmane Hold" QuestId="287" TurnInName="Senir Whitebeard" TurnInId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
+		<PickUp QuestName="The Reports" QuestId="291" GiverName="Senir Whitebeard" GiverId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" />
+			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" X="-5022.09" Y="-1273.85" Z="507.839" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="The Slaughtered Lamb" QuestId="1715" GiverName="Lago Blackwrench" GiverId="6120" />
+			<PickUp QuestName="The Slaughtered Lamb" QuestId="1715" GiverName="Lago Blackwrench" GiverId="6120" X="-4618.12" Y="-1090.13" Z="501.452" />
 			<PickUp QuestName="Deeprun Rat Roundup" QuestId="6661" GiverName="Monty" GiverId="12997" />
-			<While Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))" >
-				<CustomBehavior File="UseItemOn" QuestId="6661" MobId="13017" ItemId="17117" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5.6017" Y="52.1178" Z="-13.8634" />
+			<While Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))">
+				<CustomBehavior File="UseItemOn" QuestId="6661" MobId="13017" ItemId="17117" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 			</While>
-			<TurnIn QuestName="Deeprun Rat Roundup" QuestId="6661" TurnInName="Monty" TurnInId="12997" />
+			<!-- REVIEW Q6661 Deeprun Rat Roundup: UseItemOn target 13017 Enthralled Deeprun Rat has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(6661)) &amp;&amp; (IsQuestCompleted(6661)))">
+				<TurnIn QuestName="Deeprun Rat Roundup" QuestId="6661" TurnInName="Monty" TurnInId="12997" />
+			</If>
+			<If Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))">
+				<AbandonQuest QuestId="6661" />
+			</If>
 			<PickUp QuestName="Me Brother, Nipsy" QuestId="6662" GiverName="Monty" GiverId="12997" />
-			<TurnIn QuestName="Me Brother, Nipsy" QuestId="6662" TurnInName="Nipsy" TurnInId="13018" />
-			<TurnIn QuestName="The Slaughtered Lamb" QuestId="1715" TurnInName="Gakin the Darkbinder" TurnInId="6122" />
-			<PickUp QuestName="Surena Caledon" QuestId="1688" GiverName="Gakin the Darkbinder" GiverId="6122" />
+			<TurnIn QuestName="Me Brother, Nipsy" QuestId="6662" TurnInName="Nipsy" TurnInId="13018" X="-20.9837" Y="2459.93" Z="-4.297" />
+			<TurnIn QuestName="The Slaughtered Lamb" QuestId="1715" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			<PickUp QuestName="Surena Caledon" QuestId="1688" GiverName="Gakin the Darkbinder" GiverId="6122" X="-8983" Y="1041.52" Z="101.487" />
 			<Objective QuestName="Surena Caledon" QuestId="1688" Type="CollectItem" ItemId="6810" CollectCount="1" />
-			<TurnIn QuestName="Surena Caledon" QuestId="1688" TurnInName="Gakin the Darkbinder" TurnInId="6122" />
-			<PickUp QuestName="The Binding" QuestId="1689" GiverName="Gakin the Darkbinder" GiverId="6122" />
-			<While Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))" >
+			<TurnIn QuestName="Surena Caledon" QuestId="1688" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			<PickUp QuestName="The Binding" QuestId="1689" GiverName="Gakin the Darkbinder" GiverId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			<While Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))">
 				<CustomBehavior File="UseItemOn" QuestId="1689" MobId="5676" ItemId="6928" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 			</While>
 			<Objective QuestName="The Binding" QuestId="1689" Type="KillMob" MobId="5676" KillCount="1" />
-			<TurnIn QuestName="The Binding" QuestId="1689" TurnInName="Gakin the Darkbinder" TurnInId="6122" />
+			<!-- REVIEW Q1689 The Binding: UseItemOn target 5676 Summoned Voidwalker has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(1689)) &amp;&amp; (IsQuestCompleted(1689)))">
+				<TurnIn QuestName="The Binding" QuestId="1689" TurnInName="Gakin the Darkbinder" TurnInId="6122" X="-8983" Y="1041.52" Z="101.487" />
+			</If>
+			<If Condition="((HasQuest(1689)) &amp;&amp; (!IsQuestCompleted(1689)))">
+				<AbandonQuest QuestId="1689" />
+			</If>
 		</If>
 
-		<PickUp QuestName="Protecting the Herd" QuestId="314" GiverName="Rudra Amberstill" GiverId="1265" />
+		<PickUp QuestName="Protecting the Herd" QuestId="314" GiverName="Rudra Amberstill" GiverId="1265" X="-5513.78" Y="-1304.71" Z="404.609" />
 		<Objective QuestName="Protecting the Herd" QuestId="314" Type="CollectItem" ItemId="3627" CollectCount="1" />
-		<TurnIn QuestName="Protecting the Herd" QuestId="314" TurnInName="Rudra Amberstill" TurnInId="1265" />
-		<PickUp QuestName="The Public Servant" QuestId="433" GiverName="Senator Mehr Stonehallow" GiverId="1977" />
-		<PickUp QuestName="Those Blasted Troggs!" QuestId="432" GiverName="Foreman Stonebrow" GiverId="1254" />
+		<TurnIn QuestName="Protecting the Herd" QuestId="314" TurnInName="Rudra Amberstill" TurnInId="1265" X="-5513.78" Y="-1304.71" Z="404.609" />
+		<PickUp QuestName="The Public Servant" QuestId="433" GiverName="Senator Mehr Stonehallow" GiverId="1977" X="-5714.72" Y="-1580" Z="383.288" />
+		<PickUp QuestName="Those Blasted Troggs!" QuestId="432" GiverName="Foreman Stonebrow" GiverId="1254" X="-5726.58" Y="-1600.29" Z="386.084" />
 		<Objective QuestName="The Public Servant" QuestId="433" Type="KillMob" MobId="1117" KillCount="10" />
 		<Objective QuestName="Those Blasted Troggs!" QuestId="432" Type="KillMob" MobId="1115" KillCount="6" />
 		<If Condition="(Me.Class == WoWClass.Paladin)">
 			<Objective QuestName="The Tome of Divinity" QuestId="1648" Type="CollectItem" ItemId="2589" CollectCount="10" />
 		</If>
 
-		<TurnIn QuestName="The Public Servant" QuestId="433" TurnInName="Senator Mehr Stonehallow" TurnInId="1977" />
-		<TurnIn QuestName="Those Blasted Troggs!" QuestId="432" TurnInName="Foreman Stonebrow" TurnInId="1254" />
-		<PickUp QuestName="The Lost Pilot" QuestId="419" GiverName="Pilot Hammerfoot" GiverId="1960" />
-		<TurnIn QuestName="The Lost Pilot" QuestId="419" TurnInName="Object_2059" TurnInType="Object" TurnInId="2059" />
-		<PickUp QuestName="A Pilot's Revenge" QuestId="417" GiverName="Pilot Hammerfoot" GiverId="1960" />
+		<TurnIn QuestName="The Public Servant" QuestId="433" TurnInName="Senator Mehr Stonehallow" TurnInId="1977" X="-5714.72" Y="-1580" Z="383.288" />
+		<TurnIn QuestName="Those Blasted Troggs!" QuestId="432" TurnInName="Foreman Stonebrow" TurnInId="1254" X="-5726.58" Y="-1600.29" Z="386.084" />
+		<PickUp QuestName="The Lost Pilot" QuestId="419" GiverName="Pilot Hammerfoot" GiverId="1960" X="-5163.74" Y="-2329.58" Z="400.675" />
+		<TurnIn QuestName="The Lost Pilot" QuestId="419" TurnInName="A Dwarven Corpse" TurnInType="Object" TurnInId="2059" X="-5064.78" Y="-2121.73" Z="404.416" />
+		<PickUp QuestName="A Pilot's Revenge" QuestId="417" GiverName="A Dwarven Corpse" GiverId="2059" GiverType="Object" X="-5064.78" Y="-2121.73" Z="404.416" />
 		<Objective QuestName="A Pilot's Revenge" QuestId="417" Type="CollectItem" ItemId="3183" CollectCount="1" />
-		<TurnIn QuestName="A Pilot's Revenge" QuestId="417" TurnInName="Pilot Hammerfoot" TurnInId="1960" />
-		<TurnIn QuestName="Shimmer Stout" QuestId="413" TurnInName="Mountaineer Barleybrew" TurnInId="1959" />
-		<PickUp QuestName="Stout to Kadrell" QuestId="414" GiverName="Mountaineer Barleybrew" GiverId="1959" />
-		<TurnIn QuestName="Stout to Kadrell" QuestId="414" TurnInName="Mountaineer Kadrell" TurnInId="1340" />
-		<PickUp QuestName="Mountaineer Stormpike's Task" QuestId="1339" GiverName="Mountaineer Kadrell" GiverId="1340" />
+		<TurnIn QuestName="A Pilot's Revenge" QuestId="417" TurnInName="Pilot Hammerfoot" TurnInId="1960" X="-5163.74" Y="-2329.58" Z="400.675" />
+		<TurnIn QuestName="Shimmer Stout" QuestId="413" TurnInName="Mountaineer Barleybrew" TurnInId="1959" X="-5479.75" Y="-2447.09" Z="400.675" />
+		<PickUp QuestName="Stout to Kadrell" QuestId="414" GiverName="Mountaineer Barleybrew" GiverId="1959" X="-5479.75" Y="-2447.09" Z="400.675" />
+		<TurnIn QuestName="Stout to Kadrell" QuestId="414" TurnInName="Mountaineer Kadrell" TurnInId="1340" X="-5365.12" Y="-2938.79" Z="326.76" />
+		<PickUp QuestName="Mountaineer Stormpike's Task" QuestId="1339" GiverName="Mountaineer Kadrell" GiverId="1340" X="-5365.12" Y="-2938.79" Z="326.76" />
 		<If Condition="(Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Honor Students" QuestId="6387" GiverName="Brock Stoneseeker" GiverId="1681" />
-			<TurnIn QuestName="Honor Students" QuestId="6387" TurnInName="Thorgrum Borrelson" TurnInId="1572" />
-			<PickUp QuestName="Ride to Ironforge" QuestId="6391" GiverName="Thorgrum Borrelson" GiverId="1572" />
+			<PickUp QuestName="Honor Students" QuestId="6387" GiverName="Brock Stoneseeker" GiverId="1681" X="-5366.93" Y="-3014.87" Z="319.565" />
+			<TurnIn QuestName="Honor Students" QuestId="6387" TurnInName="Thorgrum Borrelson" TurnInId="1572" X="-5424.85" Y="-2929.87" Z="347.645" />
+			<PickUp QuestName="Ride to Ironforge" QuestId="6391" GiverName="Thorgrum Borrelson" GiverId="1572" X="-5424.85" Y="-2929.87" Z="347.645" />
 		</If>
 
-		<TurnIn QuestName="Filthy Paws" QuestId="307" TurnInName="Mountaineer Stormpike" TurnInId="1343" />
-		<TurnIn QuestName="Mountaineer Stormpike's Task" QuestId="1339" TurnInName="Mountaineer Stormpike" TurnInId="1343" />
-		<PickUp QuestName="Stormpike's Order" QuestId="1338" GiverName="Mountaineer Stormpike" GiverId="1343" />
-		<TurnIn QuestName="The Reports" QuestId="291" TurnInName="Senator Barin Redstone" TurnInId="1274" />
+		<TurnIn QuestName="Filthy Paws" QuestId="307" TurnInName="Mountaineer Stormpike" TurnInId="1343" X="-4825.92" Y="-2676.82" Z="341.206" />
+		<TurnIn QuestName="Mountaineer Stormpike's Task" QuestId="1339" TurnInName="Mountaineer Stormpike" TurnInId="1343" X="-4825.92" Y="-2676.82" Z="341.206" />
+		<PickUp QuestName="Stormpike's Order" QuestId="1338" GiverName="Mountaineer Stormpike" GiverId="1343" X="-4825.92" Y="-2676.82" Z="341.206" />
+		<TurnIn QuestName="The Reports" QuestId="291" TurnInName="Senator Barin Redstone" TurnInId="1274" X="-4872.56" Y="-1026.28" Z="505.798" />
 		<If Condition="(Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Ride to Ironforge" QuestId="6391" TurnInName="Golnir Bouldertoe" TurnInId="4256" />
-			<PickUp QuestName="Gryth Thurden" QuestId="6388" GiverName="Golnir Bouldertoe" GiverId="4256" />
+			<TurnIn QuestName="Ride to Ironforge" QuestId="6391" TurnInName="Golnir Bouldertoe" TurnInId="4256" X="-4708.06" Y="-1120.93" Z="504.531" />
+			<PickUp QuestName="Gryth Thurden" QuestId="6388" GiverName="Golnir Bouldertoe" GiverId="4256" X="-4708.06" Y="-1120.93" Z="504.531" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Tome of Divinity" QuestId="2999" GiverName="Brandur Ironhammer" GiverId="5149" />
-			<TurnIn QuestName="Tome of Divinity" QuestId="2999" TurnInName="Tiza Battleforge" TurnInId="6179" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1645" GiverName="Tiza Battleforge" GiverId="6179" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1646" GiverName="Tiza Battleforge" GiverId="6179" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1646" TurnInName="Tiza Battleforge" TurnInId="6179" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1647" GiverName="Tiza Battleforge" GiverId="6179" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1647" TurnInName="John Turner" TurnInId="6175" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1648" GiverName="John Turner" GiverId="6175" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1648" TurnInName="John Turner" TurnInId="6175" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1778" GiverName="John Turner" GiverId="6175" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1778" TurnInName="Tiza Battleforge" TurnInId="6179" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1779" GiverName="Tiza Battleforge" GiverId="6179" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1779" TurnInName="Muiredon Battleforge" TurnInId="6178" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1783" GiverName="Muiredon Battleforge" GiverId="6178" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="Tome of Divinity" QuestId="2999" GiverName="Brandur Ironhammer" GiverId="5149" X="-4601.65" Y="-896.468" Z="502.85" />
+			</If>
+			<TurnIn QuestName="Tome of Divinity" QuestId="2999" TurnInName="Tiza Battleforge" TurnInId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1645" GiverName="Tiza Battleforge" GiverId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			</If>
+			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6916)">
+				<If Condition="Me.Level &gt;= 12">
+					<PickUp QuestName="The Tome of Divinity" QuestId="1646" GiverName="Tome of Divinity" GiverId="6916" GiverType="Item" />
+				</If>
+			</If>
+			<!-- REVIEW Q1646 The Tome of Divinity: start item 6916 Tome of Divinity has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(1646)) &amp;&amp; (IsQuestCompleted(1646)))">
+				<TurnIn QuestName="The Tome of Divinity" QuestId="1646" TurnInName="Tiza Battleforge" TurnInId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			</If>
+			<If Condition="((HasQuest(1646)) &amp;&amp; (!IsQuestCompleted(1646)))">
+				<AbandonQuest QuestId="1646" />
+			</If>
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1647" GiverName="Tiza Battleforge" GiverId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			</If>
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1647" TurnInName="John Turner" TurnInId="6175" X="-4895.61" Y="-898.098" Z="501.743" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1648" GiverName="John Turner" GiverId="6175" X="-4895.61" Y="-898.098" Z="501.743" />
+			</If>
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1648" TurnInName="John Turner" TurnInId="6175" X="-4895.61" Y="-898.098" Z="501.743" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1778" GiverName="John Turner" GiverId="6175" X="-4895.61" Y="-898.098" Z="501.743" />
+			</If>
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1778" TurnInName="Tiza Battleforge" TurnInId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1779" GiverName="Tiza Battleforge" GiverId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
+			</If>
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1779" TurnInName="Muiredon Battleforge" TurnInId="6178" X="-4613.03" Y="-899.694" Z="524.778" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1783" GiverName="Muiredon Battleforge" GiverId="6178" X="-4613.03" Y="-899.694" Z="524.778" />
+			</If>
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="Gryth Thurden" QuestId="6388" TurnInName="Gryth Thurden" TurnInId="1573" />
+			<TurnIn QuestName="Gryth Thurden" QuestId="6388" TurnInName="Gryth Thurden" TurnInId="1573" X="-4821.13" Y="-1152.4" Z="502.295" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1783" TurnInName="Narm Faulk" TurnInId="6177" />
-			<PickUp QuestName="The Tome of Divinity" QuestId="1784" GiverName="Narm Faulk" GiverId="6177" />
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1783" TurnInName="Narm Faulk" TurnInId="6177" X="-5784.32" Y="-2055.22" Z="408.232" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1784" GiverName="Narm Faulk" GiverId="6177" X="-5784.32" Y="-2055.22" Z="408.232" />
+			</If>
 			<Objective QuestName="The Tome of Divinity" QuestId="1784" Type="CollectItem" ItemId="6847" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="The Tome of Divinity" QuestId="1784" TurnInName="Muiredon Battleforge" TurnInId="6178" />
+		<TurnIn QuestName="The Tome of Divinity" QuestId="1784" TurnInName="Muiredon Battleforge" TurnInId="6178" X="-4613.03" Y="-899.694" Z="524.778" />
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="The Tome of Divinity" QuestId="1785" GiverName="Muiredon Battleforge" GiverId="6178" />
-			<TurnIn QuestName="The Tome of Divinity" QuestId="1785" TurnInName="Tiza Battleforge" TurnInId="6179" />
+			<If Condition="Me.Level &gt;= 12">
+				<PickUp QuestName="The Tome of Divinity" QuestId="1785" GiverName="Muiredon Battleforge" GiverId="6178" X="-4613.03" Y="-899.694" Z="524.778" />
+			</If>
+			<TurnIn QuestName="The Tome of Divinity" QuestId="1785" TurnInName="Tiza Battleforge" TurnInId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
 		</If>
 
-		<While Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))" >
-			<CustomBehavior File="UseItemOn" QuestId="6661" MobId="13017" ItemId="17117" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5.6017" Y="52.1178" Z="-13.8634" />
+		<While Condition="((HasQuest(6661)) &amp;&amp; (!IsQuestCompleted(6661)))">
+			<CustomBehavior File="UseItemOn" QuestId="6661" MobId="13017" ItemId="17117" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Stormpike's Order" QuestId="1338" TurnInName="Furen Longbeard" TurnInId="5413" />
+
+		<TurnIn QuestName="Stormpike's Order" QuestId="1338" TurnInName="Furen Longbeard" TurnInId="5413" X="-8427" Y="600.092" Z="94.706" />
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="A Warrior's Training" QuestId="1638" GiverName="Ilsa Corbin" GiverId="5480" />
+			<PickUp QuestName="A Warrior's Training" QuestId="1638" GiverName="Ilsa Corbin" GiverId="5480" X="-8688.56" Y="325.764" Z="109.521" />
 		</If>
 
-		<TurnIn QuestName="A Warrior's Training" QuestId="1638" TurnInName="Harry Burlguard" TurnInId="6089" />
+		<TurnIn QuestName="A Warrior's Training" QuestId="1638" TurnInName="Harry Burlguard" TurnInId="6089" X="-8612.75" Y="382.771" Z="103.011" />
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="Bartleby the Drunk" QuestId="1639" GiverName="Harry Burlguard" GiverId="6089" />
-			<TurnIn QuestName="Bartleby the Drunk" QuestId="1639" TurnInName="Bartleby" TurnInId="6090" />
-			<PickUp QuestName="Beat Bartleby" QuestId="1640" GiverName="Bartleby" GiverId="6090" />
-			<Objective QuestName="Beat Bartleby" QuestId="1640" Type="KillMob" MobId="6090" KillCount="1" />
-			<TurnIn QuestName="Beat Bartleby" QuestId="1640" TurnInName="Bartleby" TurnInId="6090" />
-			<PickUp QuestName="Bartleby's Mug" QuestId="1665" GiverName="Bartleby" GiverId="6090" />
-			<TurnIn QuestName="Bartleby's Mug" QuestId="1665" TurnInName="Harry Burlguard" TurnInId="6089" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Human)">
-			<PickUp QuestName="Desperate Prayer" QuestId="5637" GiverName="Priestess Josetta" GiverId="377" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<!-- Quest 5635 (Desperate Prayer) — TurnIn NPC not found -->
+			<PickUp QuestName="Bartleby the Drunk" QuestId="1639" GiverName="Harry Burlguard" GiverId="6089" X="-8612.75" Y="382.771" Z="103.011" />
+			<TurnIn QuestName="Bartleby the Drunk" QuestId="1639" TurnInName="Bartleby" TurnInId="6090" X="-8604.47" Y="389.102" Z="102.924" />
+			<PickUp QuestName="Beat Bartleby" QuestId="1640" GiverName="Bartleby" GiverId="6090" X="-8604.47" Y="389.102" Z="102.924" />
+			<TurnIn QuestName="Beat Bartleby" QuestId="1640" TurnInName="Bartleby" TurnInId="6090" X="-8604.47" Y="389.102" Z="102.924" />
+			<PickUp QuestName="Bartleby's Mug" QuestId="1665" GiverName="Bartleby" GiverId="6090" X="-8604.47" Y="389.102" Z="102.924" />
+			<TurnIn QuestName="Bartleby's Mug" QuestId="1665" TurnInName="Harry Burlguard" TurnInId="6089" X="-8612.75" Y="382.771" Z="103.011" />
 		</If>
 
 		<CustomBehavior File="LoadProfile" ProfileName="Darkshore (11-14)" />

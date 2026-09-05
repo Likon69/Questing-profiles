@@ -1,87 +1,254 @@
 <HBProfile>
 	<Name>Stranglethorn Vale (43-44)</Name>
-	<MinLevel>43</MinLevel>
-	<MaxLevel>44</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Corporal Bluth" Entry="734" Type="Food" X="-11295.8" Y="-201.343" Z="75.7853" />
+		<Vendor Name="Kriggon Talsone" Entry="4305" Type="Food" X="-11504.3" Y="1748.64" Z="2.1364" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1364" Name="Mazen's Behest">
+		<Objective Type="CollectItem" ItemId="6065" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Swampwalker" Id="764" />
+				<Mob Name="Swampwalker Elder" Id="765" />
+				<Mob Name="Tangled Horror" Id="766" />
+				<Mob Name="Mire Lord" Id="1081" />
+				<Mob Name="Molt Thorn" Id="14448" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10100.7" Y="-2348.96" Z="25.41" />
+				<Hotspot X="-10086.5" Y="-2419.34" Z="27" />
+				<Hotspot X="-10146" Y="-2416.25" Z="27.64" />
+				<Hotspot X="-10102.9" Y="-2467.01" Z="27.92" />
+				<Hotspot X="-10180.3" Y="-2454.81" Z="28.02" />
+				<Hotspot X="-10152" Y="-2486.47" Z="24.92" />
+				<Hotspot X="-10117.9" Y="-2519.37" Z="28.14" />
+				<Hotspot X="-10212" Y="-2484.98" Z="27.55" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="205" Name="Troll Witchery">
+		<Objective Type="CollectItem" ItemId="2466" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Skullsplitter Witch Doctor" Id="670" />
+				<Mob Name="Skullsplitter Mystic" Id="780" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-12523.75" Y="-701.78" Z="39.34" />
+				<Hotspot X="-12539.75" Y="-729.19" Z="39.32" />
+				<Hotspot X="-12606.65" Y="-656.75" Z="41.3" />
+				<Hotspot X="-12630.8" Y="-581.9" Z="36.3" />
+				<Hotspot X="-12664.95" Y="-486.49" Z="29.8" />
+				<Hotspot X="-12698.7" Y="-453.24" Z="30.93" />
+				<Hotspot X="-12675.9" Y="-584.14" Z="36.89" />
+				<Hotspot X="-12851.45" Y="-588.17" Z="59.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="628" Name="Excelsior">
+		<Objective Type="CollectItem" ItemId="4105" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Elder Saltwater Crocolisk" Id="2635" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-12252.8" Y="317.27" Z="1.73" />
+				<Hotspot X="-12116.7" Y="349.74" Z="2.26" />
+				<Hotspot X="-11986.6" Y="603.38" Z="1.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="606" Name="Scaring Shaky">
+		<Objective Type="CollectItem" ItemId="3919" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Elder Mistvale Gorilla" Id="1557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14058.4" Y="232.91" Z="13.45" />
+				<Hotspot X="-14007.4" Y="250.06" Z="17.37" />
+				<Hotspot X="-14043.3" Y="185.23" Z="13.1" />
+				<Hotspot X="-14079.9" Y="157.47" Z="14.89" />
+				<Hotspot X="-13949.6" Y="215.25" Z="22.63" />
+				<Hotspot X="-13993" Y="157.25" Z="14.84" />
+				<Hotspot X="-14031.7" Y="96.33" Z="10.59" />
+				<Hotspot X="-13954" Y="121.96" Z="14.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="600" Name="Venture Company Mining">
+		<Objective Type="CollectItem" ItemId="3917" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Venture Co. Strip Miner" Id="674" />
+				<Mob Name="Venture Co. Foreman" Id="675" />
+				<Mob Name="Venture Co. Surveyor" Id="676" />
+				<Mob Name="Venture Co. Tinkerer" Id="677" />
+				<Mob Name="Foreman Cozzle" Id="4723" />
+				<Mob Name="Verifonix" Id="14492" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13134.52" Y="-464.72" Z="50.11" />
+				<Hotspot X="-13073.23" Y="-456.27" Z="47.67" />
+				<Hotspot X="-13014.83" Y="-363.26" Z="30.12" />
+				<Hotspot X="-13024.37" Y="-416.94" Z="44.24" />
+				<Hotspot X="-13054.6" Y="-477.56" Z="51.62" />
+				<Hotspot X="-12983.1" Y="-442.88" Z="51.28" />
+				<Hotspot X="-12941.4" Y="-419.56" Z="28.42" />
+				<Hotspot X="-12938.47" Y="-466.01" Z="45.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="610" Name="&quot;Pretty Boy&quot; Duncan">
+		<Objective Type="CollectItem" ItemId="4027" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="&quot;Pretty Boy&quot; Duncan" Id="2545" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14121.7" Y="473.52" Z="1.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="209" Name="Skullsplitter Tusks">
+		<Objective Type="CollectItem" ItemId="1524" CollectCount="18">
+			<CollectFrom>
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+				<Mob Name="Skullsplitter Hunter" Id="669" />
+				<Mob Name="Skullsplitter Witch Doctor" Id="670" />
+				<Mob Name="Skullsplitter Spiritchaser" Id="672" />
+				<Mob Name="Skullsplitter Axe Thrower" Id="696" />
+				<Mob Name="Skullsplitter Mystic" Id="780" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13106.9" Y="-560.8" Z="100.07" />
+				<Hotspot X="-13076.9" Y="-607.45" Z="54.23" />
+				<Hotspot X="-13035.7" Y="-638.34" Z="53.31" />
+				<Hotspot X="-13069.1" Y="-720.84" Z="83.39" />
+				<Hotspot X="-12953.65" Y="-614.63" Z="53.29" />
+				<Hotspot X="-12984.35" Y="-677.04" Z="53.07" />
+				<Hotspot X="-13004.3" Y="-710.13" Z="55.25" />
+				<Hotspot X="-12943.3" Y="-648.17" Z="53.1" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="196" Name="Raptor Mastery">
 		<Objective Type="KillMob" MobId="687" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-12835.2" Y="134.366" Z="17.995" />
-				<Hotspot X="-13359.8" Y="743.462" Z="4.1367" />
-				<Hotspot X="-13280.5" Y="682.581" Z="3.2884" />
-				<Hotspot X="-13282.4" Y="753.035" Z="2.9505" />
-				<Hotspot X="-13318.5" Y="521.245" Z="4.4735" />
+				<Hotspot X="-12835.2" Y="134.37" Z="18" />
+				<Hotspot X="-13359.8" Y="743.46" Z="4.14" />
+				<Hotspot X="-13280.5" Y="682.58" Z="3.29" />
+				<Hotspot X="-13282.4" Y="753.03" Z="2.95" />
+				<Hotspot X="-13318.5" Y="521.25" Z="4.47" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="193" Name="Panther Mastery">
+		<Objective Type="CollectItem" ItemId="3876" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bhag'thera" Id="728" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-12191" Y="-944.65" Z="32.91" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="197" Name="Raptor Mastery">
+		<Objective Type="CollectItem" ItemId="3877" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Tethis" Id="730" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13076.6" Y="387.18" Z="15.41" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Stranglethorn Vale (43-44) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1363))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<Objective QuestName="Sunken Treasure" QuestId="669" Type="CollectItem" ItemId="4502" CollectCount="1" />
-		<PickUp QuestName="Mazen's Behest" QuestId="1363" GiverName="Mazen Mac'Nadir" GiverId="338" />
-		<TurnIn QuestName="Mazen's Behest" QuestId="1363" TurnInName="Acolyte Dellis" TurnInId="5386" />
-		<PickUp QuestName="Mazen's Behest" QuestId="1364" GiverName="Acolyte Dellis" GiverId="5386" />
-		<PickUp QuestName="Vital Supplies" QuestId="1477" GiverName="High Sorcerer Andromath" GiverId="5694" />
-		<PickUp QuestName="Troll Witchery" QuestId="205" GiverName="Brother Nimetz" GiverId="739" />
-		<TurnIn QuestName="Some Assembly Required" QuestId="577" TurnInName="Drizzlik" TurnInId="2495" />
-		<PickUp QuestName="Excelsior" QuestId="628" GiverName="Drizzlik" GiverId="2495" />
-		<PickUp QuestName="Scaring Shaky" QuestId="606" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" />
-		<PickUp QuestName="Venture Company Mining" QuestId="600" GiverName="Crank Fizzlebub" GiverId="2498" />
-		<TurnIn QuestName="Ansirem's Key" QuestId="603" TurnInName="Catelyn the Blade" TurnInId="2542" />
-		<PickUp QuestName="&quot;Pretty Boy&quot; Duncan" QuestId="610" GiverName="Catelyn the Blade" GiverId="2542" />
-		<PickUp QuestName="Skullsplitter Tusks" QuestId="209" GiverName="Kebok" GiverId="737" />
-		<TurnIn QuestName="Sunken Treasure" QuestId="669" TurnInName="Fleet Master Seahorn" TurnInId="2487" />
-		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="595" GiverName="First Mate Crazz" GiverId="2490" />
+		<PickUp QuestName="Mazen's Behest" QuestId="1363" GiverName="Mazen Mac'Nadir" GiverId="338" X="-8856" Y="822.813" Z="98.4" />
+		<TurnIn QuestName="Mazen's Behest" QuestId="1363" TurnInName="Acolyte Dellis" TurnInId="5386" X="-8851" Y="830.246" Z="104.696" />
+		<PickUp QuestName="Mazen's Behest" QuestId="1364" GiverName="Acolyte Dellis" GiverId="5386" X="-8851" Y="830.246" Z="104.696" />
+		<Objective QuestName="Mazen's Behest" QuestId="1364" Type="CollectItem" ItemId="6065" CollectCount="1" />
+		<PickUp QuestName="Vital Supplies" QuestId="1477" GiverName="High Sorcerer Andromath" GiverId="5694" X="-9011" Y="876.722" Z="148.617" />
+		<PickUp QuestName="Troll Witchery" QuestId="205" GiverName="Brother Nimetz" GiverId="739" X="-11320.2" Y="-193.337" Z="76.2277" />
+		<TurnIn QuestName="Some Assembly Required" QuestId="577" TurnInName="Drizzlik" TurnInId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<PickUp QuestName="Excelsior" QuestId="628" GiverName="Drizzlik" GiverId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<PickUp QuestName="Scaring Shaky" QuestId="606" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<PickUp QuestName="Venture Company Mining" QuestId="600" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<TurnIn QuestName="Ansirem's Key" QuestId="603" TurnInName="Catelyn the Blade" TurnInId="2542" X="-14467" Y="479.833" Z="20.4677" />
+		<PickUp QuestName="&quot;Pretty Boy&quot; Duncan" QuestId="610" GiverName="Catelyn the Blade" GiverId="2542" X="-14467" Y="479.833" Z="20.4677" />
+		<PickUp QuestName="Skullsplitter Tusks" QuestId="209" GiverName="Kebok" GiverId="737" X="-14449.8" Y="497.925" Z="26.3693" />
+		<TurnIn QuestName="Sunken Treasure" QuestId="669" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
+		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="595" GiverName="First Mate Crazz" GiverId="2490" X="-14411.1" Y="427.967" Z="8.9573" />
 		<Objective QuestName="&quot;Pretty Boy&quot; Duncan" QuestId="610" Type="CollectItem" ItemId="4027" CollectCount="1" />
-		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="595" TurnInName="Object_2083" TurnInType="Object" TurnInId="2083" />
-		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="597" GiverName="First Mate Crazz" GiverId="2490" />
-		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="597" TurnInName="First Mate Crazz" TurnInId="2490" />
-		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="599" GiverName="First Mate Crazz" GiverId="2490" />
-		<TurnIn QuestName="&quot;Pretty Boy&quot; Duncan" QuestId="610" TurnInName="Catelyn the Blade" TurnInId="2542" />
-		<PickUp QuestName="The Curse of the Tides" QuestId="611" GiverName="Catelyn the Blade" GiverId="2542" />
-		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="599" TurnInName="Fleet Master Seahorn" TurnInId="2487" />
+		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="595" TurnInName="Bloodsail Correspondence" TurnInType="Object" TurnInId="2083" X="-14126.2" Y="480.146" Z="2.4385" />
+		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="597" GiverName="Bloodsail Correspondence" GiverId="2083" GiverType="Object" X="-14126.2" Y="480.146" Z="2.4385" />
+		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="597" TurnInName="First Mate Crazz" TurnInId="2490" X="-14411.1" Y="427.967" Z="8.9573" />
+		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="599" GiverName="First Mate Crazz" GiverId="2490" X="-14411.1" Y="427.967" Z="8.9573" />
+		<TurnIn QuestName="&quot;Pretty Boy&quot; Duncan" QuestId="610" TurnInName="Catelyn the Blade" TurnInId="2542" X="-14467" Y="479.833" Z="20.4677" />
+		<PickUp QuestName="The Curse of the Tides" QuestId="611" GiverName="Catelyn the Blade" GiverId="2542" X="-14467" Y="479.833" Z="20.4677" />
+		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="599" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
 		<Objective QuestName="Scaring Shaky" QuestId="606" Type="CollectItem" ItemId="3919" CollectCount="5" />
 		<Objective QuestName="Raptor Mastery" QuestId="196" Type="KillMob" MobId="687" KillCount="10" />
 		<Objective QuestName="Venture Company Mining" QuestId="600" Type="CollectItem" ItemId="3917" CollectCount="10" />
 		<Objective QuestName="Troll Witchery" QuestId="205" Type="CollectItem" ItemId="2466" CollectCount="4" />
 		<Objective QuestName="Skullsplitter Tusks" QuestId="209" Type="CollectItem" ItemId="1524" CollectCount="18" />
-		<TurnIn QuestName="Troll Witchery" QuestId="205" TurnInName="Brother Nimetz" TurnInId="739" />
-		<PickUp QuestName="Panther Mastery" QuestId="193" GiverName="Sir S. J. Erlgadin" GiverId="718" />
-		<TurnIn QuestName="Raptor Mastery" QuestId="196" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Raptor Mastery" QuestId="197" GiverName="Hemet Nesingwary" GiverId="715" />
+		<TurnIn QuestName="Troll Witchery" QuestId="205" TurnInName="Brother Nimetz" TurnInId="739" X="-11320.2" Y="-193.337" Z="76.2277" />
+		<PickUp QuestName="Panther Mastery" QuestId="193" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<Objective QuestName="Panther Mastery" QuestId="193" Type="CollectItem" ItemId="3876" CollectCount="1" />
+		<TurnIn QuestName="Raptor Mastery" QuestId="196" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Raptor Mastery" QuestId="197" GiverName="Hemet Nesingwary Jr." GiverId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<Objective QuestName="Raptor Mastery" QuestId="197" Type="CollectItem" ItemId="3877" CollectCount="1" />
 		<Objective QuestName="Excelsior" QuestId="628" Type="CollectItem" ItemId="4105" CollectCount="1" />
 		<Objective QuestName="The Curse of the Tides" QuestId="611" Type="CollectItem" ItemId="4034" CollectCount="1" />
-		<TurnIn QuestName="Venture Company Mining" QuestId="600" TurnInName="Crank Fizzlebub" TurnInId="2498" />
-		<PickUp QuestName="Tran'rek" QuestId="2864" GiverName="Krazek" GiverId="773" />
-		<TurnIn QuestName="Skullsplitter Tusks" QuestId="209" TurnInName="Kebok" TurnInId="737" />
-		<TurnIn QuestName="The Curse of the Tides" QuestId="611" TurnInName="Baron Revilgaz" TurnInId="2496" />
-		<TurnIn QuestName="Excelsior" QuestId="628" TurnInName="Drizzlik" TurnInId="2495" />
-		<TurnIn QuestName="Scaring Shaky" QuestId="606" TurnInName="&quot;Shaky&quot; Phillipe" TurnInId="2502" />
-		<PickUp QuestName="Return to MacKinley" QuestId="607" GiverName="&quot;Shaky&quot; Phillipe" GiverId="2502" />
-		<TurnIn QuestName="Return to MacKinley" QuestId="607" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" />
-		<PickUp QuestName="Stoley's Debt" QuestId="2872" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" />
+		<TurnIn QuestName="Venture Company Mining" QuestId="600" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<PickUp QuestName="Tran'rek" QuestId="2864" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<TurnIn QuestName="Skullsplitter Tusks" QuestId="209" TurnInName="Kebok" TurnInId="737" X="-14449.8" Y="497.925" Z="26.3693" />
+		<TurnIn QuestName="The Curse of the Tides" QuestId="611" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<TurnIn QuestName="Excelsior" QuestId="628" TurnInName="Drizzlik" TurnInId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<TurnIn QuestName="Scaring Shaky" QuestId="606" TurnInName="&quot;Shaky&quot; Phillipe" TurnInId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
+		<PickUp QuestName="Return to MacKinley" QuestId="607" GiverName="&quot;Shaky&quot; Phillipe" GiverId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
+		<TurnIn QuestName="Return to MacKinley" QuestId="607" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<PickUp QuestName="Stoley's Debt" QuestId="2872" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<CustomBehavior File="LoadProfile" ProfileName="Tanaris (44-44)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,59 +1,108 @@
 <HBProfile>
 	<Name>Stranglethorn Vale (34-35)</Name>
-	<MinLevel>34</MinLevel>
-	<MaxLevel>35</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Corporal Bluth" Entry="734" Type="Food" X="-11295.8" Y="-201.343" Z="75.7853" />
+		<Vendor Name="William MacGregor" Entry="1668" Type="Repair" X="-10658.5" Y="996.851" Z="32.9575" />
+		<Vendor Name="Mike Miller" Entry="1670" Type="Food" X="-10653.3" Y="995.395" Z="32.9575" />
+		<Vendor Name="Innkeeper Heather" Entry="8931" Type="Food" X="-10653.4" Y="1166.52" Z="34.4647" />
+		<Vendor Name="Gavin Gnarltree" Entry="225" Type="Repair" X="-10617.3" Y="-1153.9" Z="27.1127" />
+		<Vendor Name="Morg Gnarltree" Entry="226" Type="Repair" X="-10596.6" Y="-1163.85" Z="30.0597" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
-	<Quest Id="191" Name="Panther Mastery">
-		<Objective Type="KillMob" MobId="736" KillCount="10">
+	<Quest Id="605" Name="Singing Blue Shards">
+		<Objective Type="CollectItem" ItemId="3918" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Stone Maw Basilisk" Id="688" />
+				<Mob Name="Crystal Spine Basilisk" Id="689" />
+				<Mob Name="Cold Eye Basilisk" Id="690" />
+				<Mob Name="Thrashtail Basilisk" Id="1550" />
+				<Mob Name="Ironjaw Basilisk" Id="1551" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-11747.0" Y="341.463" Z="40.5989" />
-				<Hotspot X="-11692.0" Y="409.343" Z="44.5187" />
-				<Hotspot X="-11554.5" Y="344.974" Z="44.5138" />
-				<Hotspot X="-11622.6" Y="276.726" Z="42.7238" />
-				<Hotspot X="-11789.9" Y="383.486" Z="43.5087" />
+				<Hotspot X="-13381.9" Y="-272.96" Z="13.98" />
+				<Hotspot X="-13303.65" Y="-207.53" Z="13.87" />
+				<Hotspot X="-13386.7" Y="-359.26" Z="17.55" />
+				<Hotspot X="-13293.75" Y="-273.68" Z="21.85" />
+				<Hotspot X="-13352.3" Y="-389.74" Z="18.42" />
+				<Hotspot X="-13308.1" Y="-368.49" Z="13.36" />
+				<Hotspot X="-13319.9" Y="-417.58" Z="14.75" />
+				<Hotspot X="-12984.6" Y="453.74" Z="20.68" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="186" Name="Tiger Mastery">
-		<Objective Type="KillMob" MobId="682" KillCount="10">
+	<Quest Id="213" Name="Hostile Takeover">
+		<Objective Type="CollectItem" ItemId="4106" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Venture Co. Geologist" Id="1096" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-11787.1" Y="-680.766" Z="40.5718" />
-				<Hotspot X="-11750.9" Y="-587.018" Z="36.6516" />
-				<Hotspot X="-11817.3" Y="-786.911" Z="35.0214" />
-				<Hotspot X="-11853.2" Y="-750.76" Z="38.195" />
-				<Hotspot X="-11820.5" Y="-719.82" Z="40.0043" />
+				<Hotspot X="-12151.2" Y="-503.63" Z="32.61" />
+				<Hotspot X="-12160.55" Y="-563.99" Z="14.8" />
+				<Hotspot X="-12113.9" Y="-481.88" Z="17.17" />
+				<Hotspot X="-12160.53" Y="-647.38" Z="14.9" />
+				<Hotspot X="-12121.8" Y="-559.54" Z="13.43" />
+				<Hotspot X="-12185" Y="-745.7" Z="15.38" />
+				<Hotspot X="-12111.8" Y="-629.76" Z="15.61" />
+				<Hotspot X="-12058.2" Y="-534.06" Z="11.69" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="194" Name="Raptor Mastery">
-		<Objective Type="KillMob" MobId="685" KillCount="10">
+	<Quest Id="1182" Name="Goblin Sponsorship">
+		<Objective Type="CollectItem" ItemId="5852" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Cozzle's Footlocker" Id="20691" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-11777.8" Y="447.701" Z="48.8132" />
-				<Hotspot X="-11920.4" Y="462.843" Z="43.1403" />
-				<Hotspot X="-11826.2" Y="473.326" Z="47.7552" />
-				<Hotspot X="-11850.5" Y="526.607" Z="46.1151" />
-				<Hotspot X="-11841.5" Y="579.888" Z="42.3934" />
+				<Hotspot X="-12033.5" Y="-544.27" Z="14.47" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="575" Name="Supply and Demand">
+		<Objective Type="CollectItem" ItemId="4053" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="River Crocolisk" Id="1150" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11782.9" Y="-324.21" Z="12.37" />
+				<Hotspot X="-11761.1" Y="-401.66" Z="17.02" />
+				<Hotspot X="-11613.7" Y="14.48" Z="14.62" />
+				<Hotspot X="-11690.5" Y="-356.7" Z="13.44" />
+				<Hotspot X="-11650.2" Y="-250.29" Z="5.69" />
+				<Hotspot X="-11615.9" Y="-130.83" Z="16.15" />
+				<Hotspot X="-11656.9" Y="-325.36" Z="15.38" />
+				<Hotspot X="-11578.2" Y="48.91" Z="16.19" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="203" Name="The Second Rebellion">
+		<Objective Type="KillMob" MobId="937" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-11681.4" Y="-712.25" Z="42.47" />
+				<Hotspot X="-11648.4" Y="-719.03" Z="33.18" />
+				<Hotspot X="-11613.1" Y="-777.12" Z="41.36" />
+				<Hotspot X="-11648.1" Y="-669.89" Z="30.31" />
+				<Hotspot X="-11636.8" Y="-629.57" Z="31.48" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -67,24 +116,78 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="203" Name="The Second Rebellion">
-		<Objective Type="KillMob" MobId="937" KillCount="15">
+	<Quest Id="194" Name="Raptor Mastery">
+		<Objective Type="KillMob" MobId="685" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-11681.4" Y="-712.248" Z="42.4725" />
-				<Hotspot X="-11648.4" Y="-719.028" Z="33.1811" />
-				<Hotspot X="-11613.1" Y="-777.116" Z="41.3618" />
-				<Hotspot X="-11648.1" Y="-669.891" Z="30.3135" />
-				<Hotspot X="-11636.8" Y="-629.572" Z="31.4774" />
+				<Hotspot X="-11777.8" Y="447.7" Z="48.81" />
+				<Hotspot X="-11920.4" Y="462.84" Z="43.14" />
+				<Hotspot X="-11826.2" Y="473.33" Z="47.76" />
+				<Hotspot X="-11850.5" Y="526.61" Z="46.12" />
+				<Hotspot X="-11841.5" Y="579.89" Z="42.39" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="1182" Name="Goblin Sponsorship">
-		<Objective Type="CollectItem" ItemId="5852" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="Cozzle's Footlocker" Id="20691" />
-			</CollectFrom>
+	<Quest Id="186" Name="Tiger Mastery">
+		<Objective Type="KillMob" MobId="682" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-12033.5" Y="-544.27" Z="14.47" />
+				<Hotspot X="-11787.1" Y="-680.77" Z="40.57" />
+				<Hotspot X="-11750.9" Y="-587.02" Z="36.65" />
+				<Hotspot X="-11817.3" Y="-786.91" Z="35.02" />
+				<Hotspot X="-11853.2" Y="-750.76" Z="38.2" />
+				<Hotspot X="-11820.5" Y="-719.82" Z="40" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="191" Name="Panther Mastery">
+		<Objective Type="KillMob" MobId="736" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-11747" Y="341.46" Z="40.6" />
+				<Hotspot X="-11692" Y="409.34" Z="44.52" />
+				<Hotspot X="-11554.5" Y="344.97" Z="44.51" />
+				<Hotspot X="-11622.6" Y="276.73" Z="42.72" />
+				<Hotspot X="-11789.9" Y="383.49" Z="43.51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="195" Name="Raptor Mastery">
+		<Objective Type="KillMob" MobId="686" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-12001.1" Y="-217.77" Z="18.8" />
+				<Hotspot X="-11981.3" Y="-289.58" Z="27.12" />
+				<Hotspot X="-12040.6" Y="-219.18" Z="17.98" />
+				<Hotspot X="-12082.5" Y="-187.01" Z="28.44" />
+				<Hotspot X="-12048.7" Y="180.72" Z="18.03" />
+				<Hotspot X="-12079.9" Y="146.83" Z="17.6" />
+				<Hotspot X="-12099" Y="-265.93" Z="17.53" />
+				<Hotspot X="-12167.6" Y="164.11" Z="17.72" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="187" Name="Tiger Mastery">
+		<Objective Type="KillMob" MobId="1085" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-11916.1" Y="49.67" Z="17.05" />
+				<Hotspot X="-11852.9" Y="182.86" Z="16.2" />
+				<Hotspot X="-11962.9" Y="-62.43" Z="9.84" />
+				<Hotspot X="-11947.7" Y="81.28" Z="15.73" />
+				<Hotspot X="-11996.9" Y="-27.8" Z="15.93" />
+				<Hotspot X="-11875.9" Y="224.41" Z="15.99" />
+				<Hotspot X="-11995.4" Y="53.35" Z="7.18" />
+				<Hotspot X="-11969.33" Y="148.54" Z="16.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="192" Name="Panther Mastery">
+		<Objective Type="KillMob" MobId="684" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-12127.5" Y="-743.17" Z="14.03" />
+				<Hotspot X="-12028.2" Y="-847.94" Z="41.6" />
+				<Hotspot X="-12150.1" Y="-793.22" Z="26.74" />
+				<Hotspot X="-12051.4" Y="-884.42" Z="45.03" />
+				<Hotspot X="-12282.8" Y="-720.31" Z="17.01" />
+				<Hotspot X="-12566.7" Y="-248.51" Z="17.36" />
+				<Hotspot X="-12114" Y="-886.15" Z="47.54" />
+				<Hotspot X="-12347.8" Y="-710.99" Z="17.09" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -103,73 +206,115 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1712" Name="Cyclonian">
+		<Objective Type="CollectItem" ItemId="3901" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Bloodscalp Headhunter" Id="671" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11541.38" Y="571.74" Z="50.33" />
+				<Hotspot X="-11531.62" Y="720.03" Z="60.12" />
+				<Hotspot X="-11557.44" Y="638.29" Z="59.16" />
+				<Hotspot X="-11575.03" Y="566.93" Z="50.25" />
+				<Hotspot X="-11564.05" Y="683.41" Z="59.93" />
+				<Hotspot X="-11546.17" Y="765.1" Z="41.54" />
+				<Hotspot X="-11600.83" Y="642.68" Z="57.49" />
+				<Hotspot X="-11587.34" Y="721.58" Z="55.96" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Stranglethorn Vale (34-35) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1181))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-996.8669" Y="-3826.07" Z="5.5362" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-996.8669" WaitAtY="-3826.07" WaitAtZ="5.5362" TransportStartX="-1005.6" TransportStartY="-3841.6" TransportStartZ="0" StandOnX="-997.3311" StandOnY="-3836.707" StandOnZ="6.0309" TransportEndX="-14277.7" TransportEndY="582.9" TransportEndZ="0" GetOffX="-14280.88" GetOffY="566.6268" GetOffZ="6.9795" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Goblin Sponsorship" QuestId="1180" TurnInName="Wharfmaster Lozgil" TurnInId="4631" />
-		<PickUp QuestName="Goblin Sponsorship" QuestId="1181" GiverName="Wharfmaster Lozgil" GiverId="4631" />
-		<PickUp QuestName="Singing Blue Shards" QuestId="605" GiverName="Crank Fizzlebub" GiverId="2498" />
-		<PickUp QuestName="Investigate the Camp" QuestId="201" GiverName="Krazek" GiverId="773" />
-		<PickUp QuestName="Supplies to Private Thorsen" QuestId="198" GiverName="Krazek" GiverId="773" />
-		<PickUp QuestName="The Haunted Isle" QuestId="616" GiverName="Krazek" GiverId="773" />
-		<PickUp QuestName="Hostile Takeover" QuestId="213" GiverName="Kebok" GiverId="737" />
-		<TurnIn QuestName="The Haunted Isle" QuestId="616" TurnInName="Baron Revilgaz" TurnInId="2496" />
-		<PickUp QuestName="The Stone of the Tides" QuestId="578" GiverName="Baron Revilgaz" GiverId="2496" />
-		<TurnIn QuestName="Goblin Sponsorship" QuestId="1181" TurnInName="Baron Revilgaz" TurnInId="2496" />
-		<PickUp QuestName="Goblin Sponsorship" QuestId="1182" GiverName="Baron Revilgaz" GiverId="2496" />
-		<PickUp QuestName="Supply and Demand" QuestId="575" GiverName="Drizzlik" GiverId="2495" />
-		<TurnIn QuestName="Supplies to Private Thorsen" QuestId="198" TurnInName="Private Thorsen" TurnInId="738" />
-		<PickUp QuestName="The Second Rebellion" QuestId="203" GiverName="Sergeant Yohwa" GiverId="733" />
-		<PickUp QuestName="Bad Medicine" QuestId="204" GiverName="Sergeant Yohwa" GiverId="733" />
-		<PickUp QuestName="Krazek's Cookery" QuestId="210" GiverName="Corporal Kaleb" GiverId="770" />
-		<TurnIn QuestName="Hemet Nesingwary" QuestId="5762" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Raptor Mastery" QuestId="194" GiverName="Hemet Nesingwary" GiverId="715" />
-		<PickUp QuestName="Tiger Mastery" QuestId="186" GiverName="Ajeck Rouack" GiverId="717" />
-		<PickUp QuestName="Panther Mastery" QuestId="191" GiverName="Sir S. J. Erlgadin" GiverId="718" />
+		<TurnIn QuestName="Goblin Sponsorship" QuestId="1180" TurnInName="Wharfmaster Lozgil" TurnInId="4631" X="-14298.2" Y="539.636" Z="8.9337" />
+		<PickUp QuestName="Goblin Sponsorship" QuestId="1181" GiverName="Wharfmaster Lozgil" GiverId="4631" X="-14298.2" Y="539.636" Z="8.9337" />
+		<PickUp QuestName="Singing Blue Shards" QuestId="605" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<PickUp QuestName="Investigate the Camp" QuestId="201" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="Supplies to Private Thorsen" QuestId="198" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="The Haunted Isle" QuestId="616" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="Hostile Takeover" QuestId="213" GiverName="Kebok" GiverId="737" X="-14449.8" Y="497.925" Z="26.3693" />
+		<TurnIn QuestName="The Haunted Isle" QuestId="616" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<PickUp QuestName="The Stone of the Tides" QuestId="578" GiverName="Baron Revilgaz" GiverId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<TurnIn QuestName="Goblin Sponsorship" QuestId="1181" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<PickUp QuestName="Goblin Sponsorship" QuestId="1182" GiverName="Baron Revilgaz" GiverId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<PickUp QuestName="Supply and Demand" QuestId="575" GiverName="Drizzlik" GiverId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<TurnIn QuestName="Supplies to Private Thorsen" QuestId="198" TurnInName="Private Thorsen" TurnInId="738" X="-11313.9" Y="-202.766" Z="75.576" />
+		<PickUp QuestName="The Second Rebellion" QuestId="203" GiverName="Sergeant Yohwa" GiverId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
+		<PickUp QuestName="Bad Medicine" QuestId="204" GiverName="Sergeant Yohwa" GiverId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
+		<PickUp QuestName="Krazek's Cookery" QuestId="210" GiverName="Corporal Kaleb" GiverId="770" X="-11309.1" Y="-187.431" Z="75.6492" />
+		<TurnIn QuestName="Hemet Nesingwary Jr." QuestId="5762" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Raptor Mastery" QuestId="194" GiverName="Hemet Nesingwary Jr." GiverId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Tiger Mastery" QuestId="186" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Panther Mastery" QuestId="191" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
 		<Objective QuestName="Panther Mastery" QuestId="191" Type="KillMob" MobId="736" KillCount="10" />
 		<Objective QuestName="Tiger Mastery" QuestId="186" Type="KillMob" MobId="682" KillCount="10" />
 		<Objective QuestName="Raptor Mastery" QuestId="194" Type="KillMob" MobId="685" KillCount="10" />
 		<Objective QuestName="Singing Blue Shards" QuestId="605" Type="CollectItem" ItemId="3918" CollectCount="10" />
-		<TurnIn QuestName="Raptor Mastery" QuestId="194" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<PickUp QuestName="Raptor Mastery" QuestId="195" GiverName="Hemet Nesingwary" GiverId="715" />
-		<TurnIn QuestName="Tiger Mastery" QuestId="186" TurnInName="Ajeck Rouack" TurnInId="717" />
-		<PickUp QuestName="Tiger Mastery" QuestId="187" GiverName="Ajeck Rouack" GiverId="717" />
-		<TurnIn QuestName="Panther Mastery" QuestId="191" TurnInName="Sir S. J. Erlgadin" TurnInId="718" />
-		<PickUp QuestName="Panther Mastery" QuestId="192" GiverName="Sir S. J. Erlgadin" GiverId="718" />
+		<TurnIn QuestName="Raptor Mastery" QuestId="194" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<PickUp QuestName="Raptor Mastery" QuestId="195" GiverName="Hemet Nesingwary Jr." GiverId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<Objective QuestName="Raptor Mastery" QuestId="195" Type="KillMob" MobId="686" KillCount="10" />
+		<TurnIn QuestName="Tiger Mastery" QuestId="186" TurnInName="Ajeck Rouack" TurnInId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<PickUp QuestName="Tiger Mastery" QuestId="187" GiverName="Ajeck Rouack" GiverId="717" X="-11620.5" Y="-51.9023" Z="11.2262" />
+		<Objective QuestName="Tiger Mastery" QuestId="187" Type="KillMob" MobId="1085" KillCount="10" />
+		<TurnIn QuestName="Panther Mastery" QuestId="191" TurnInName="Sir S. J. Erlgadin" TurnInId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<PickUp QuestName="Panther Mastery" QuestId="192" GiverName="Sir S. J. Erlgadin" GiverId="718" X="-11617.4" Y="-48.0135" Z="11.0552" />
+		<Objective QuestName="Panther Mastery" QuestId="192" Type="KillMob" MobId="684" KillCount="10" />
 		<Objective QuestName="Supply and Demand" QuestId="575" Type="CollectItem" ItemId="4053" CollectCount="2" />
 		<Objective QuestName="Bad Medicine" QuestId="204" Type="CollectItem" ItemId="2634" CollectCount="1" />
 		<Objective QuestName="Bad Medicine" QuestId="204" Type="CollectItem" ItemId="2633" CollectCount="7" />
 		<Objective QuestName="The Second Rebellion" QuestId="203" Type="KillMob" MobId="937" KillCount="15" />
-		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5851" CollectCount="1" />
+		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<Objective QuestName="Goblin Sponsorship" QuestId="1182" Type="CollectItem" ItemId="5852" CollectCount="1" />
 		<Objective QuestName="Hostile Takeover" QuestId="213" Type="CollectItem" ItemId="4106" CollectCount="8" />
-		<TurnIn QuestName="Singing Blue Shards" QuestId="605" TurnInName="Crank Fizzlebub" TurnInId="2498" />
-		<TurnIn QuestName="Investigate the Camp" QuestId="201" TurnInName="Krazek" TurnInId="773" />
-		<TurnIn QuestName="Krazek's Cookery" QuestId="210" TurnInName="Krazek" TurnInId="773" />
-		<TurnIn QuestName="Hostile Takeover" QuestId="213" TurnInName="Kebok" TurnInId="737" />
-		<TurnIn QuestName="Goblin Sponsorship" QuestId="1182" TurnInName="Baron Revilgaz" TurnInId="2496" />
-		<PickUp QuestName="Goblin Sponsorship" QuestId="1183" GiverName="Baron Revilgaz" GiverId="2496" />
-		<TurnIn QuestName="The Stone of the Tides" QuestId="578" TurnInName="Baron Revilgaz" TurnInId="2496" />
+		<TurnIn QuestName="Singing Blue Shards" QuestId="605" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<TurnIn QuestName="Investigate the Camp" QuestId="201" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<TurnIn QuestName="Krazek's Cookery" QuestId="210" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<TurnIn QuestName="Hostile Takeover" QuestId="213" TurnInName="Kebok" TurnInId="737" X="-14449.8" Y="497.925" Z="26.3693" />
+		<TurnIn QuestName="Goblin Sponsorship" QuestId="1182" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<PickUp QuestName="Goblin Sponsorship" QuestId="1183" GiverName="Baron Revilgaz" GiverId="2496" X="-14439" Y="483.483" Z="28.9285" />
+		<TurnIn QuestName="The Stone of the Tides" QuestId="578" TurnInName="Baron Revilgaz" TurnInId="2496" X="-14439" Y="483.483" Z="28.9285" />
 		<Objective QuestName="A King's Tribute" QuestId="689" Type="CollectItem" ItemId="4521" CollectCount="5" />
-		<Objective QuestName="Letter to Stormpike" QuestId="514" Type="CollectItem" ItemId="3521" CollectCount="1" />
-		<Objective QuestName="Reassignment" QuestId="563" Type="CollectItem" ItemId="3721" CollectCount="1" />
-		<TurnIn QuestName="Supply and Demand" QuestId="575" TurnInName="Drizzlik" TurnInId="2495" />
-		<TurnIn QuestName="The Second Rebellion" QuestId="203" TurnInName="Sergeant Yohwa" TurnInId="733" />
-		<TurnIn QuestName="Bad Medicine" QuestId="204" TurnInName="Sergeant Yohwa" TurnInId="733" />
+		<TurnIn QuestName="Supply and Demand" QuestId="575" TurnInName="Drizzlik" TurnInId="2495" X="-14469.6" Y="415.382" Z="25.452" />
+		<TurnIn QuestName="The Second Rebellion" QuestId="203" TurnInName="Sergeant Yohwa" TurnInId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
+		<TurnIn QuestName="Bad Medicine" QuestId="204" TurnInName="Sergeant Yohwa" TurnInId="733" X="-11310.4" Y="-205.115" Z="75.3625" />
 		<If Condition="(Me.Class == WoWClass.Warrior)">
 			<Objective QuestName="Cyclonian" QuestId="1712" Type="CollectItem" ItemId="3357" CollectCount="8" />
 		</If>
 
-		<TurnIn QuestName="Reassignment" QuestId="563" TurnInName="Major Samuelson" TurnInId="2439" />
-		<TurnIn QuestName="A King's Tribute" QuestId="689" TurnInName="Grand Mason Marblesten" TurnInId="2790" />
-		<PickUp QuestName="A King's Tribute" QuestId="700" GiverName="Grand Mason Marblesten" GiverId="2790" />
-		<TurnIn QuestName="A King's Tribute" QuestId="700" TurnInName="King Magni Bronzebeard" TurnInId="2784" />
-		<PickUp QuestName="Reclaimers' Business in Desolace" QuestId="1453" GiverName="Roetten Stonehammer" GiverId="5637" />
-		<TurnIn QuestName="Letter to Stormpike" QuestId="514" TurnInName="Prospector Stormpike" TurnInId="1356" />
+		<TurnIn QuestName="Reassignment" QuestId="563" TurnInName="Major Samuelson" TurnInId="2439" X="-8421" Y="404.987" Z="120.886" />
+		<TurnIn QuestName="A King's Tribute" QuestId="689" TurnInName="Grand Mason Marblesten" TurnInId="2790" X="-5033.81" Y="-1022.23" Z="508.876" />
+		<PickUp QuestName="A King's Tribute" QuestId="700" GiverName="Grand Mason Marblesten" GiverId="2790" X="-5033.81" Y="-1022.23" Z="508.876" />
+		<TurnIn QuestName="A King's Tribute" QuestId="700" TurnInName="King Magni Bronzebeard" TurnInId="2784" X="-4865.73" Y="-1022.67" Z="505.798" />
+		<PickUp QuestName="Reclaimers' Business in Desolace" QuestId="1453" GiverName="Roetten Stonehammer" GiverId="5637" X="-4681.39" Y="-1266.61" Z="503.465" />
+		<TurnIn QuestName="Letter to Stormpike" QuestId="514" TurnInName="Prospector Stormpike" TurnInId="1356" X="-4631.19" Y="-1303.73" Z="503.465" />
 		<If Condition="(Me.Class == WoWClass.Warrior)">
-			<TurnIn QuestName="The Windwatcher" QuestId="1791" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
-			<PickUp QuestName="Cyclonian" QuestId="1712" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<TurnIn QuestName="The Windwatcher" QuestId="1791" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
+			<PickUp QuestName="Cyclonian" QuestId="1712" GiverName="Bath'rah the Windwatcher" GiverId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
+			<Objective QuestName="Cyclonian" QuestId="1712" Type="CollectItem" ItemId="3901" CollectCount="30" />
 		</If>
 
 		<CustomBehavior File="LoadProfile" ProfileName="Desolace (35-37)" />

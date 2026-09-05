@@ -1,132 +1,162 @@
 <HBProfile>
 	<Name>Burning Steppes (53-54)</Name>
-	<MinLevel>53</MinLevel>
-	<MaxLevel>54</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Gabrielle Chase" Entry="3298" Type="Food" X="-8354.43" Y="-2734.1" Z="185.179" />
+		<Vendor Name="Felder Stover" Entry="1296" Type="Repair" X="-8366.36" Y="-2762.51" Z="187.616" />
+		<Vendor Name="Graw Cornerstone" Entry="11703" Type="Repair" X="-7215.12" Y="-1248.97" Z="254.75" />
+		<Vendor Name="Henry Chapal" Entry="3088" Type="Repair" X="-9173.33" Y="-2088.29" Z="89.0329" />
+		<Vendor Name="Sherman Femmel" Entry="3089" Type="Food" X="-9201.07" Y="-2151.17" Z="64.4242" />
+		<Vendor Name="Bartender Wental" Entry="5620" Type="Food" X="-9210.83" Y="-2150.71" Z="64.4372" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="3823" Name="Extinguish the Firegut">
 		<Objective Type="KillMob" MobId="7033" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-8122.61" Y="-2502.55" Z="140.039" />
-				<Hotspot X="-8131.44" Y="-2494.45" Z="140.027" />
+				<Hotspot X="-8122.61" Y="-2502.55" Z="140.04" />
+				<Hotspot X="-8131.44" Y="-2494.45" Z="140.03" />
 				<Hotspot X="-8102.46" Y="-2543.7" Z="133.82" />
-				<Hotspot X="-7781.69" Y="-2447.06" Z="143.591" />
-				<Hotspot X="-7952.06" Y="-2533.34" Z="130.588" />
+				<Hotspot X="-7781.69" Y="-2447.06" Z="143.59" />
+				<Hotspot X="-7952.06" Y="-2533.34" Z="130.59" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7035" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-7855.76" Y="-2595.18" Z="211.648" />
-				<Hotspot X="-7948.58" Y="-2746.76" Z="158.321" />
-				<Hotspot X="-7941.2" Y="-2640.26" Z="218.238" />
-				<Hotspot X="-7911.77" Y="-2621.47" Z="177.223" />
-				<Hotspot X="-7917.51" Y="-2714.65" Z="164.614" />
+				<Hotspot X="-7855.76" Y="-2595.18" Z="211.65" />
+				<Hotspot X="-7948.58" Y="-2746.76" Z="158.32" />
+				<Hotspot X="-7941.2" Y="-2640.26" Z="218.24" />
+				<Hotspot X="-7911.77" Y="-2621.47" Z="177.22" />
+				<Hotspot X="-7917.51" Y="-2714.65" Z="164.61" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7034" KillCount="15">
 			<Hotspots>
 				<Hotspot X="-8050.44" Y="-2713.23" Z="152.43" />
-				<Hotspot X="-7711.6" Y="-2515.92" Z="143.971" />
-				<Hotspot X="-7803.35" Y="-2671.4" Z="173.683" />
-				<Hotspot X="-7846.59" Y="-2631.44" Z="120.791" />
-				<Hotspot X="-7721.52" Y="-2586.29" Z="159.832" />
+				<Hotspot X="-7711.6" Y="-2515.92" Z="143.97" />
+				<Hotspot X="-7803.35" Y="-2671.4" Z="173.68" />
+				<Hotspot X="-7846.59" Y="-2631.44" Z="120.79" />
+				<Hotspot X="-7721.52" Y="-2586.29" Z="159.83" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="4182" Name="Dragonkin Menace">
-		<Objective Type="KillMob" MobId="7044" KillCount="1">
+	<Quest Id="4283" Name="FIFTY! YEP!">
+		<Objective Type="CollectItem" ItemId="11467" CollectCount="50">
+			<CollectFrom>
+				<Mob Name="Blackrock Soldier" Id="7025" />
+				<Mob Name="Blackrock Sorcerer" Id="7026" />
+				<Mob Name="Blackrock Slayer" Id="7027" />
+				<Mob Name="Blackrock Warlock" Id="7028" />
+				<Mob Name="Blackrock Battlemaster" Id="7029" />
+				<Mob Name="Blackrock Worg" Id="7055" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-8143.2" Y="-2888.34" Z="135.543" />
-				<Hotspot X="-7587.0" Y="-2753.57" Z="133.237" />
-				<Hotspot X="-7887.52" Y="-2901.16" Z="133.264" />
+				<Hotspot X="-8214.5" Y="-2729.06" Z="133.97" />
+				<Hotspot X="-8115.59" Y="-2805.98" Z="133.87" />
+				<Hotspot X="-8189.02" Y="-2957.34" Z="134.62" />
+				<Hotspot X="-8030.39" Y="-2892.21" Z="134.9" />
+				<Hotspot X="-8221.29" Y="-2263.31" Z="142.98" />
+				<Hotspot X="-7946.29" Y="-2388.53" Z="122.97" />
+				<Hotspot X="-7811.14" Y="-2920.99" Z="132.63" />
+				<Hotspot X="-8091.92" Y="-2113.65" Z="132.38" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="7041" KillCount="4">
+	</Quest>
+	<Quest Id="3824" Name="Gor'tesh the Brute Lord">
+		<Objective Type="CollectItem" ItemId="11080" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Gor'tesh" Id="9176" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-8233.13" Y="-2526.21" Z="138.866" />
-				<Hotspot X="-8213.39" Y="-1953.58" Z="142.58" />
-				<Hotspot X="-7762.67" Y="-2852.92" Z="133.457" />
-				<Hotspot X="-8014.03" Y="-2949.8" Z="131.403" />
-				<Hotspot X="-8080.6" Y="-2984.09" Z="134.251" />
+				<Hotspot X="-8110.83" Y="-1418.6" Z="133.21" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="7040" KillCount="10">
+	</Quest>
+	<Quest Id="3825" Name="Ogre Head On A Stick = Party">
+		<Objective Type="UseObject" ObjectId="160840" UseCount="1">
 			<Hotspots>
-				<Hotspot X="-7544.74" Y="-2809.85" Z="151.904" />
-				<Hotspot X="-8051.72" Y="-2916.74" Z="134.439" />
-				<Hotspot X="-8214.36" Y="-1916.62" Z="142.682" />
-				<Hotspot X="-8091.07" Y="-2917.47" Z="134.283" />
-				<Hotspot X="-8154.19" Y="-2984.48" Z="137.458" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="7047" KillCount="15">
-			<Hotspots>
-				<Hotspot X="-8243.41" Y="-2744.53" Z="136.316" />
-				<Hotspot X="-7956.37" Y="-2919.74" Z="131.58" />
-				<Hotspot X="-8025.25" Y="-2917.08" Z="132.895" />
-				<Hotspot X="-7913.89" Y="-2918.32" Z="132.048" />
-				<Hotspot X="-7887.98" Y="-2887.42" Z="135.936" />
+				<Hotspot X="-7944.63" Y="-2639.22" Z="218.21" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Burning Steppes (53-54) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(3823))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<Objective QuestName="A Taste of Flame" QuestId="4022" Type="CollectItem" ItemId="10575" CollectCount="1" />
-		<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4512" TurnInName="Laris Geardawdle" TurnInId="9616" />
-		<PickUp QuestName="Extinguish the Firegut" QuestId="3823" GiverName="Oralius" GiverId="9177" />
-		<PickUp QuestName="FIFTY! YEP!" QuestId="4283" GiverName="Oralius" GiverId="9177" />
-		<PickUp QuestName="Dragonkin Menace" QuestId="4182" GiverName="Helendis Riverhorn" GiverId="9562" />
+		<TurnIn QuestName="A Little Slime Goes a Long Way" QuestId="4512" TurnInName="Laris Geardawdle" TurnInId="9616" X="-4692.6" Y="-1312.64" Z="503.382" />
+		<PickUp QuestName="Extinguish the Firegut" QuestId="3823" GiverName="Oralius" GiverId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<PickUp QuestName="FIFTY! YEP!" QuestId="4283" GiverName="Oralius" GiverId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
 		<Objective QuestName="Extinguish the Firegut" QuestId="3823" Type="KillMob" MobId="7033" KillCount="7" />
 		<Objective QuestName="Extinguish the Firegut" QuestId="3823" Type="KillMob" MobId="7035" KillCount="7" />
 		<Objective QuestName="Extinguish the Firegut" QuestId="3823" Type="KillMob" MobId="7034" KillCount="15" />
-		<TurnIn QuestName="Extinguish the Firegut" QuestId="3823" TurnInName="Oralius" TurnInId="9177" />
-		<PickUp QuestName="Gor'tesh the Brute Lord" QuestId="3824" GiverName="Oralius" GiverId="9177" />
-		<PickUp QuestName="Broodling Essence" QuestId="4726" GiverName="Tinkee Steamboil" GiverId="10267" />
-		<PickUp QuestName="Tablet of the Seven" QuestId="4296" GiverName="Maxwort Uberglint" GiverId="9536" />
-		<TurnIn QuestName="Yuka Screwspigot" QuestId="4324" TurnInName="Yuka Screwspigot" TurnInId="9544" />
+		<TurnIn QuestName="Extinguish the Firegut" QuestId="3823" TurnInName="Oralius" TurnInId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<PickUp QuestName="Gor'tesh the Brute Lord" QuestId="3824" GiverName="Oralius" GiverId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<PickUp QuestName="Broodling Essence" QuestId="4726" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<PickUp QuestName="Tablet of the Seven" QuestId="4296" GiverName="Maxwort Uberglint" GiverId="9536" X="-7497.99" Y="-2175.15" Z="165.61" />
+		<TurnIn QuestName="Yuka Screwspigot" QuestId="4324" TurnInName="Yuka Screwspigot" TurnInId="9544" X="-7459.77" Y="-2201.64" Z="165.37" />
 		<Objective QuestName="Broodling Essence" QuestId="4726" Type="CollectItem" ItemId="12283" CollectCount="8" />
-		<PickUp QuestName="A Taste of Flame" QuestId="4022" GiverName="Cyrus Therepentous" GiverId="9459" />
-		<Objective QuestName="A Taste of Flame" QuestId="4022" Type="CollectItem" ItemId="10575" CollectCount="1" />
-		<TurnIn QuestName="A Taste of Flame" QuestId="4022" TurnInName="Cyrus Therepentous" TurnInId="9459" />
-		<Objective QuestName="Dragonkin Menace" QuestId="4182" Type="KillMob" MobId="7044" KillCount="1" />
-		<Objective QuestName="Dragonkin Menace" QuestId="4182" Type="KillMob" MobId="7041" KillCount="4" />
-		<Objective QuestName="Dragonkin Menace" QuestId="4182" Type="KillMob" MobId="7040" KillCount="10" />
-		<Objective QuestName="Dragonkin Menace" QuestId="4182" Type="KillMob" MobId="7047" KillCount="15" />
+		<PickUp QuestName="A Taste of Flame" QuestId="4022" GiverName="Cyrus Therepentous" GiverId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
+		<TurnIn QuestName="A Taste of Flame" QuestId="4022" TurnInName="Cyrus Therepentous" TurnInId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
 		<Objective QuestName="Tablet of the Seven" QuestId="4296" Type="CollectItem" ItemId="11470" CollectCount="1" />
 		<Objective QuestName="Gor'tesh the Brute Lord" QuestId="3824" Type="CollectItem" ItemId="11080" CollectCount="1" />
 		<Objective QuestName="FIFTY! YEP!" QuestId="4283" Type="CollectItem" ItemId="11467" CollectCount="50" />
-		<TurnIn QuestName="Gor'tesh the Brute Lord" QuestId="3824" TurnInName="Oralius" TurnInId="9177" />
-		<PickUp QuestName="Ogre Head On A Stick = Party" QuestId="3825" GiverName="Oralius" GiverId="9177" />
-		<TurnIn QuestName="FIFTY! YEP!" QuestId="4283" TurnInName="Oralius" TurnInId="9177" />
+		<TurnIn QuestName="Gor'tesh the Brute Lord" QuestId="3824" TurnInName="Oralius" TurnInId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<PickUp QuestName="Ogre Head On A Stick = Party" QuestId="3825" GiverName="Oralius" GiverId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<TurnIn QuestName="FIFTY! YEP!" QuestId="4283" TurnInName="Oralius" TurnInId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
 		<!-- Quest 4182 (Dragonkin Menace) — TurnIn NPC not found -->
-		<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" />
-		<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" />
-		<TurnIn QuestName="Tablet of the Seven" QuestId="4296" TurnInName="Maxwort Uberglint" TurnInId="9536" />
-		<TurnIn QuestName="Ogre Head On A Stick = Party" QuestId="3825" TurnInName="Oralius" TurnInId="9177" />
-		<TurnIn QuestName="Seeking Spiritual Aid" QuestId="5158" TurnInName="Islen Waterseer" TurnInId="5901" />
-		<PickUp QuestName="Cleansed Water Returns to Felwood" QuestId="5159" GiverName="Islen Waterseer" GiverId="5901" />
+		<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<TurnIn QuestName="Tablet of the Seven" QuestId="4296" TurnInName="Maxwort Uberglint" TurnInId="9536" X="-7497.99" Y="-2175.15" Z="165.61" />
+		<Objective QuestName="Ogre Head On A Stick = Party" QuestId="3825" Type="UseObject" ObjectId="160840" UseCount="1" />
+		<TurnIn QuestName="Ogre Head On A Stick = Party" QuestId="3825" TurnInName="Oralius" TurnInId="9177" X="-8371.9" Y="-2743.43" Z="186.183" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Seeking Spiritual Aid" QuestId="5158" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+		<PickUp QuestName="Cleansed Water Returns to Felwood" QuestId="5159" GiverName="Islen Waterseer" GiverId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 		<CustomBehavior File="LoadProfile" ProfileName="Un'Goro Crater (54-55)" />
 	</QuestOrder>
 </HBProfile>

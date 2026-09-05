@@ -1,115 +1,252 @@
 <HBProfile>
 	<Name>The Burning Crusade (58-70)\Blade's Edge Mountains Group Quests</Name>
-	<MinLevel>58</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Gholah" Entry="19470" Type="Food" X="2404.13" Y="5950.76" Z="152.192" />
+		<Vendor Name="Raiza" Entry="19473" Type="Repair" X="2270.27" Y="5964.86" Z="142.641" />
+		<Vendor Name="Orgatha" Entry="19479" Type="Repair" X="2289.88" Y="6062.31" Z="143.012" />
+		<Vendor Name="Ruka" Entry="21086" Type="Repair" X="2252.67" Y="4760.84" Z="157.631" />
+		<Vendor Name="Matron Varah" Entry="21088" Type="Food" X="2227.13" Y="4717.91" Z="162.075" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="10715" Name="Into the Churning Gulch">
+		<Objective Type="CollectItem" ItemId="31132" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Greater Crust Burster" Id="21380" />
+				<Mob Name="Young Crust Burster" Id="21381" />
+				<Mob Name="Bone Crawler" Id="21849" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2994.74" Y="6091.69" Z="6.94" />
+				<Hotspot X="3040.49" Y="6076.51" Z="1.24" />
+				<Hotspot X="2951.39" Y="6159.31" Z="8.83" />
+				<Hotspot X="2882.88" Y="6182.55" Z="8.84" />
+				<Hotspot X="2803.89" Y="6185.83" Z="2.41" />
+				<Hotspot X="2834.31" Y="6238.33" Z="9.05" />
+				<Hotspot X="2787.67" Y="6216.42" Z="2.97" />
+				<Hotspot X="2850.61" Y="6281.23" Z="12.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10721" Name="A Boaring Time for Grulloc">
+		<Objective Type="CollectItem" ItemId="31349" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Grulloc's Sack" Id="185152" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2680.37" Y="5542.47" Z="-2.88" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="10820" Name="Deceive thy Enemy">
 		<Objective Type="KillMob" MobId="19961" KillCount="4">
 			<Hotspots>
 				<Hotspot X="2962.18" Y="4867.59" Z="277.53" />
-				<Hotspot X="2924.09" Y="4845.89" Z="279.071" />
-				<Hotspot X="2892.13" Y="4779.99" Z="277.635" />
-				<Hotspot X="2929.56" Y="4773.5" Z="283.636" />
-				<Hotspot X="2973.15" Y="4762.98" Z="285.438" />
+				<Hotspot X="2924.09" Y="4845.89" Z="279.07" />
+				<Hotspot X="2892.13" Y="4779.99" Z="277.63" />
+				<Hotspot X="2929.56" Y="4773.5" Z="283.64" />
+				<Hotspot X="2973.15" Y="4762.98" Z="285.44" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="19960" KillCount="4">
 			<Hotspots>
-				<Hotspot X="2961.35" Y="4827.73" Z="277.629" />
-				<Hotspot X="2963.09" Y="4793.36" Z="282.714" />
-				<Hotspot X="2937.23" Y="4783.72" Z="282.839" />
-				<Hotspot X="2880.71" Y="4836.11" Z="278.049" />
-				<Hotspot X="2944.35" Y="4764.96" Z="283.689" />
+				<Hotspot X="2961.35" Y="4827.73" Z="277.63" />
+				<Hotspot X="2963.09" Y="4793.36" Z="282.71" />
+				<Hotspot X="2937.23" Y="4783.72" Z="282.84" />
+				<Hotspot X="2880.71" Y="4836.11" Z="278.05" />
+				<Hotspot X="2944.35" Y="4764.96" Z="283.69" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to The Burning Crusade (58-70)_Blade's Edge Mountains Group Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(10718))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
 		<If Condition="Me.Level &lt; 65">
+			<SetGrindArea>
+				<GrindArea>
+					<Name>Grind to Level 65 - Midsummer Celebrant</Name>
+					<Factions>35,1780</Factions>
+					<TargetMinLevel>40</TargetMinLevel>
+					<TargetMaxLevel>70</TargetMaxLevel>
+					<Hotspots>
+						<Hotspot X="2580.56" Y="6171.09" Z="17.3" />
+						<Hotspot X="2658.47" Y="6144.94" Z="10.98" />
+						<Hotspot X="2548.87" Y="6215.75" Z="14.32" />
+						<Hotspot X="2270.83" Y="6140.39" Z="137.58" />
+						<Hotspot X="2302.74" Y="6164.65" Z="135.62" />
+						<Hotspot X="2596.16" Y="6249.06" Z="11.74" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
 			<GrindTo Level="65" />
 		</If>
-		<PickUp QuestName="The Spirits Have Voices" QuestId="10718" GiverName="Garm Wolfbrother" GiverId="21950" />
-		<TurnIn QuestName="The Spirits Have Voices" QuestId="10718" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="Whispers on the Wind" QuestId="10614" GiverName="Rexxar" GiverId="21984" />
-		<TurnIn QuestName="Whispers on the Wind" QuestId="10614" TurnInName="Leoroxx" TurnInId="22004" />
-		<PickUp QuestName="Reunion" QuestId="10709" GiverName="Leoroxx" GiverId="22004" />
-		<TurnIn QuestName="Reunion" QuestId="10709" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="On Spirit's Wings" QuestId="10714" GiverName="Rexxar" GiverId="21984" />
-		<While Condition="((HasQuest(10714)) &amp;&amp; (!IsQuestCompleted(10714)))" >
+
+		<PickUp QuestName="The Spirits Have Voices" QuestId="10718" GiverName="Garm Wolfbrother" GiverId="21950" X="2272.95" Y="5984.4" Z="142.799" />
+		<TurnIn QuestName="The Spirits Have Voices" QuestId="10718" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<PickUp QuestName="Whispers on the Wind" QuestId="10614" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<TurnIn QuestName="Whispers on the Wind" QuestId="10614" TurnInName="Leoroxx" TurnInId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<PickUp QuestName="Reunion" QuestId="10709" GiverName="Leoroxx" GiverId="22004" X="2207.24" Y="4761.25" Z="158.082" />
+		<TurnIn QuestName="Reunion" QuestId="10709" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<PickUp QuestName="On Spirit's Wings" QuestId="10714" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<While Condition="((HasQuest(10714)) &amp;&amp; (!IsQuestCompleted(10714)))">
 			<CustomBehavior File="UseItemOn" QuestId="10714" MobId="22383" ItemId="31128" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="On Spirit's Wings" QuestId="10714" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="Baron Sablemane" QuestId="10783" GiverName="Rexxar" GiverId="21984" />
-		<TurnIn QuestName="Baron Sablemane" QuestId="10783" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Into the Churning Gulch" QuestId="10715" GiverName="Baron Sablemane" GiverId="22103" />
+
+		<!-- REVIEW Q10714 On Spirit's Wings: UseItemOn target 22383 [DND]Bloodmaul Chatter Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10714)) &amp;&amp; (IsQuestCompleted(10714)))">
+			<TurnIn QuestName="On Spirit's Wings" QuestId="10714" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+
+		<If Condition="((HasQuest(10714)) &amp;&amp; (!IsQuestCompleted(10714)))">
+			<AbandonQuest QuestId="10714" />
+		</If>
+
+		<PickUp QuestName="Baron Sablemane" QuestId="10783" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<TurnIn QuestName="Baron Sablemane" QuestId="10783" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Into the Churning Gulch" QuestId="10715" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
 		<Objective QuestName="Into the Churning Gulch" QuestId="10715" Type="CollectItem" ItemId="31132" CollectCount="7" />
-		<TurnIn QuestName="Into the Churning Gulch" QuestId="10715" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Baron Sablemane's Poison" QuestId="10749" GiverName="Baron Sablemane" GiverId="22103" />
-		<TurnIn QuestName="Baron Sablemane's Poison" QuestId="10749" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="The Smallest Creatures" QuestId="10720" GiverName="Rexxar" GiverId="21984" />
-		<While Condition="((HasQuest(10720)) &amp;&amp; (!IsQuestCompleted(10720)))" >
+		<TurnIn QuestName="Into the Churning Gulch" QuestId="10715" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Baron Sablemane's Poison" QuestId="10749" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<TurnIn QuestName="Baron Sablemane's Poison" QuestId="10749" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<PickUp QuestName="The Smallest Creatures" QuestId="10720" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<While Condition="((HasQuest(10720)) &amp;&amp; (!IsQuestCompleted(10720)))">
 			<CustomBehavior File="UseItemOn" QuestId="10720" MobId="22356" ItemId="31141" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3467.9" Y="5847.08" Z="5.2595" />
 		</While>
-		<TurnIn QuestName="The Smallest Creatures" QuestId="10720" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="A Boaring Time for Grulloc" QuestId="10721" GiverName="Rexxar" GiverId="21984" />
+
+		<!-- REVIEW Q10720 The Smallest Creatures: UseItemOn target 22356 [DND]Green Spot Grog Keg Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10720)) &amp;&amp; (IsQuestCompleted(10720)))">
+			<TurnIn QuestName="The Smallest Creatures" QuestId="10720" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+
+		<If Condition="((HasQuest(10720)) &amp;&amp; (!IsQuestCompleted(10720)))">
+			<AbandonQuest QuestId="10720" />
+		</If>
+
+		<PickUp QuestName="A Boaring Time for Grulloc" QuestId="10721" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
 		<Objective QuestName="A Boaring Time for Grulloc" QuestId="10721" Type="CollectItem" ItemId="31349" CollectCount="1" />
-		<TurnIn QuestName="A Boaring Time for Grulloc" QuestId="10721" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="It's a Trap!" QuestId="10785" GiverName="Baron Sablemane" GiverId="22103" />
-		<TurnIn QuestName="It's a Trap!" QuestId="10785" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="Gorgrom the Dragon-Eater" QuestId="10723" GiverName="Rexxar" GiverId="21984" />
-		<Objective QuestName="Gorgrom the Dragon-Eater" QuestId="10723" Type="CollectItem" ItemId="31754" CollectCount="3" />
-		<While Condition="((HasQuest(10723)) &amp;&amp; (!IsQuestCompleted(10723)))" >
+		<TurnIn QuestName="A Boaring Time for Grulloc" QuestId="10721" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="It's a Trap!" QuestId="10785" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<TurnIn QuestName="It's a Trap!" QuestId="10785" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<PickUp QuestName="Gorgrom the Dragon-Eater" QuestId="10723" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<While Condition="((HasQuest(10723)) &amp;&amp; (!IsQuestCompleted(10723)))">
 			<CustomBehavior File="UseItemOn" QuestId="10723" MobId="22434" ItemId="31754" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10723" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="Prisoner of the Bladespire" QuestId="10724" GiverName="Rexxar" GiverId="21984" />
-		<Objective QuestName="Prisoner of the Bladespire" QuestId="10724" Type="CollectItem" ItemId="31755" CollectCount="1" />
-		<While Condition="((HasQuest(10724)) &amp;&amp; (!IsQuestCompleted(10724)))" >
+
+		<!-- REVIEW Q10723 Gorgrom the Dragon-Eater: UseItemOn target 22434 [DND]Ogre Pike Planted Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10723)) &amp;&amp; (IsQuestCompleted(10723)))">
+			<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10723" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+
+		<If Condition="((HasQuest(10723)) &amp;&amp; (!IsQuestCompleted(10723)))">
+			<AbandonQuest QuestId="10723" />
+		</If>
+
+		<PickUp QuestName="Prisoner of the Bladespire" QuestId="10724" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<While Condition="((HasQuest(10724)) &amp;&amp; (!IsQuestCompleted(10724)))">
 			<CustomBehavior File="UseItemOn" QuestId="10724" MobId="22435" ItemId="31144" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Prisoner of the Bladespire" QuestId="10724" TurnInName="Rexxar" TurnInId="21984" />
-		<PickUp QuestName="Showdown" QuestId="10742" GiverName="Rexxar" GiverId="21984" />
-		<While Condition="((HasQuest(10742)) &amp;&amp; (!IsQuestCompleted(10742)))" >
+
+		<!-- REVIEW Q10724 Prisoner of the Bladespire: UseItemOn target 22435 [DND]Rexxar's Wyvern Freed Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10724)) &amp;&amp; (IsQuestCompleted(10724)))">
+			<TurnIn QuestName="Prisoner of the Bladespire" QuestId="10724" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+
+		<If Condition="((HasQuest(10724)) &amp;&amp; (!IsQuestCompleted(10724)))">
+			<AbandonQuest QuestId="10724" />
+		</If>
+
+		<PickUp QuestName="Showdown" QuestId="10742" GiverName="Rexxar" GiverId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		<While Condition="((HasQuest(10742)) &amp;&amp; (!IsQuestCompleted(10742)))">
 			<CustomBehavior File="UseItemOn" QuestId="10742" MobId="20555" ItemId="31146" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Showdown" QuestId="10742" TurnInName="Rexxar" TurnInId="21984" />
-		<Objective QuestName="Showdown" QuestId="10742" Type="CollectItem" ItemId="31384" CollectCount="1" />
-		<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Rexxar" GiverId="21984" />
-		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" />
-		<PickUp QuestName="Mystery Mask" QuestId="10812" GiverName="O'Mally Zapnabber" GiverId="22020" />
-		<TurnIn QuestName="Mystery Mask" QuestId="10812" TurnInName="Wildlord Antelarion" TurnInId="22127" />
-		<PickUp QuestName="Felsworn Gas Mask" QuestId="10819" GiverName="Wildlord Antelarion" GiverId="22127" />
-		<Objective QuestName="Felsworn Gas Mask" QuestId="10819" Type="CollectItem" ItemId="31366" CollectCount="1" />
+
+		<!-- REVIEW Q10742 Showdown: UseItemOn target 20555 Goc has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10742)) &amp;&amp; (IsQuestCompleted(10742)))">
+			<TurnIn QuestName="Showdown" QuestId="10742" TurnInName="Rexxar" TurnInId="21984" X="2298.11" Y="6034.42" Z="142.586" />
+		</If>
+
+		<If Condition="((HasQuest(10742)) &amp;&amp; (!IsQuestCompleted(10742)))">
+			<AbandonQuest QuestId="10742" />
+		</If>
+
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+			<CustomBehavior File="CollectThings" CollectItemId="31384" CollectItemCount="1" HuntingGroundRadius="120" MobId="21300" X="3113.37" Y="5087.61" Z="267.159">
+				<Hotspot X="3113.37" Y="5087.61" Z="267.16" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		<PickUp QuestName="Mystery Mask" QuestId="10812" GiverName="O'Mally Zapnabber" GiverId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		<TurnIn QuestName="Mystery Mask" QuestId="10812" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		<PickUp QuestName="Felsworn Gas Mask" QuestId="10819" GiverName="Wildlord Antelarion" GiverId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		<!-- Quest 10819 (Felsworn Gas Mask) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Deceive thy Enemy" QuestId="10820" GiverName="Wildlord Antelarion" GiverId="22127" />
+		<PickUp QuestName="Deceive thy Enemy" QuestId="10820" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19961" KillCount="4" />
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19960" KillCount="4" />
 		<!-- Quest 10820 (Deceive thy Enemy) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="You're Fired!" QuestId="10821" GiverName="Wildlord Antelarion" GiverId="22127" />
-		<Objective QuestName="You're Fired!" QuestId="10821" Type="CollectItem" ItemId="31536" CollectCount="5" />
-		<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" />
+		<PickUp QuestName="You're Fired!" QuestId="10821" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		<!-- REVIEW Q10821 You're Fired!: kill/event 19963 Doomcryer x1 (neutral, spawns=0) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10821)) &amp;&amp; (IsQuestCompleted(10821)))">
+			<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		</If>
+
+		<If Condition="((HasQuest(10821)) &amp;&amp; (!IsQuestCompleted(10821)))">
+			<AbandonQuest QuestId="10821" />
+		</If>
+
 	</QuestOrder>
 </HBProfile>

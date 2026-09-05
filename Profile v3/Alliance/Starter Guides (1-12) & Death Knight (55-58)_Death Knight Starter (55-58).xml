@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Starter Guides (1-12) &amp; Death Knight (55-58)\Death Knight Starter (55-58)</Name>
-	<MinLevel>55</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,12 +16,13 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Quartermaster Miranda Breechlock" Entry="11097" Type="Repair" X="350.42" Y="-2090.4" Z="113.868" />
 		<!-- Innkeeper Freeland (14746) — no spawn data -->
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="12619" Name="The Emblazoned Runeblade">
@@ -47,29 +45,51 @@
 	<Quest Id="12848" Name="The Endless Hunger">
 		<Objective Type="KillMob" MobId="29565" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2443.19" Y="-5585.97" Z="415.142" />
+				<Hotspot X="2443.19" Y="-5585.97" Z="415.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12641" Name="Death Comes From On High">
+		<Objective Type="KillMob" MobId="28525" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1814.59" Y="-5988.65" Z="125.5" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28543" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1590.81" Y="-5731.66" Z="143.87" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28542" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1651.21" Y="-5994.67" Z="133.58" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28544" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1385.93" Y="-5702.06" Z="146.31" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12678" Name="If Chaos Drives, Let Suffering Hold The Reins">
+		<Objective Type="KillMob" MobId="28660" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1669.46" Y="-5946.52" Z="126.58" />
+				<Hotspot X="1674.74" Y="-5945.13" Z="126.93" />
+				<Hotspot X="1667.31" Y="-5944.62" Z="126.13" />
+				<Hotspot X="1685.58" Y="-5934.78" Z="124.09" />
+				<Hotspot X="1681.31" Y="-5942.4" Z="125.81" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12733" Name="Death's Challenge">
 		<Objective Type="KillMob" MobId="28392" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2508.49" Y="-5626.18" Z="420.727" />
-				<Hotspot X="2487.9" Y="-5549.49" Z="420.727" />
-				<Hotspot X="2529.05" Y="-5594.43" Z="420.735" />
-				<Hotspot X="2490.95" Y="-5550.02" Z="420.727" />
-				<Hotspot X="2525.41" Y="-5583.9" Z="420.735" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="12678" Name="If Chaos Drives, Let Suffering Hold The Reins">
-		<Objective Type="KillMob" MobId="28660" KillCount="10">
-			<Hotspots>
-				<Hotspot X="1669.46" Y="-5946.52" Z="126.585" />
-				<Hotspot X="1674.74" Y="-5945.13" Z="126.929" />
-				<Hotspot X="1667.31" Y="-5944.62" Z="126.128" />
-				<Hotspot X="1685.58" Y="-5934.78" Z="124.086" />
-				<Hotspot X="1681.31" Y="-5942.4" Z="125.808" />
+				<Hotspot X="2508.49" Y="-5626.18" Z="420.73" />
+				<Hotspot X="2487.9" Y="-5549.49" Z="420.73" />
+				<Hotspot X="2529.05" Y="-5594.43" Z="420.74" />
+				<Hotspot X="2490.95" Y="-5550.02" Z="420.73" />
+				<Hotspot X="2525.41" Y="-5583.9" Z="420.74" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -93,21 +113,11 @@
 	<Quest Id="12701" Name="Massacre At Light's Point">
 		<Objective Type="KillMob" MobId="28834" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2232.49" Y="-6065.38" Z="5.9714" />
-				<Hotspot X="2222.84" Y="-6063.24" Z="6.3001" />
-				<Hotspot X="2208.5" Y="-6069.13" Z="4.8302" />
-				<Hotspot X="2216.07" Y="-6066.78" Z="5.8178" />
-				<Hotspot X="2225.34" Y="-6072.09" Z="5.8443" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="12719" Name="Nowhere To Run And Nowhere To Hide">
-		<Objective Type="CollectItem" ItemId="39362" CollectCount="1">
-			<CollectFrom>
-				<GameObject Name="New Avalon Registry" Id="190947" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="1590.48" Y="-5706.93" Z="124.19" />
+				<Hotspot X="2232.49" Y="-6065.38" Z="5.97" />
+				<Hotspot X="2222.84" Y="-6063.24" Z="6.3" />
+				<Hotspot X="2208.5" Y="-6069.13" Z="4.83" />
+				<Hotspot X="2216.07" Y="-6066.78" Z="5.82" />
+				<Hotspot X="2225.34" Y="-6072.09" Z="5.84" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -128,15 +138,50 @@
 				<Hotspot X="1783.84" Y="-5877.65" Z="109.5" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="39328" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Scarlet Marksman" Id="28610" />
+				<Mob Name="Scarlet Commander" Id="28936" />
+				<Mob Name="Scarlet Preacher" Id="28939" />
+				<Mob Name="Scarlet Crusader" Id="28940" />
+				<Mob Name="Citizen of New Avalon" Id="28941" />
+				<Mob Name="Citizen of New Avalon" Id="28942" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1826.62" Y="-5891.23" Z="113.14" />
+				<Hotspot X="1793.45" Y="-5806.7" Z="113.95" />
+				<Hotspot X="1836.74" Y="-5939.95" Z="114.76" />
+				<Hotspot X="1786.7" Y="-5849.53" Z="114.27" />
+				<Hotspot X="1811.09" Y="-5927.19" Z="115.18" />
+				<Hotspot X="1760.78" Y="-5879.49" Z="118.46" />
+				<Hotspot X="1750.78" Y="-5782.74" Z="116.85" />
+				<Hotspot X="1728.97" Y="-5879.97" Z="121.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12719" Name="Nowhere To Run And Nowhere To Hide">
+		<Objective Type="KillMob" MobId="28945" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1587.17" Y="-5700.16" Z="123.12" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="39362" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="New Avalon Registry" Id="190947" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1590.48" Y="-5706.93" Z="124.19" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="12722" Name="Lambs To The Slaughter">
-		<Objective Type="KillMob" MobId="28942" KillCount="15">
+		<Objective Type="KillMob" MobId="28942" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1395.53" Y="-5828.78" Z="137.271" />
-				<Hotspot X="1621.09" Y="-5730.3" Z="120.442" />
-				<Hotspot X="1615.11" Y="-5716.61" Z="121.097" />
-				<Hotspot X="1753.2" Y="-5775.46" Z="117.169" />
-				<Hotspot X="1752.45" Y="-5771.11" Z="117.169" />
+				<Hotspot X="1395.53" Y="-5828.78" Z="137.27" />
+				<Hotspot X="1621.09" Y="-5730.3" Z="120.44" />
+				<Hotspot X="1615.11" Y="-5716.61" Z="121.1" />
+				<Hotspot X="1753.2" Y="-5775.46" Z="117.17" />
+				<Hotspot X="1752.45" Y="-5771.11" Z="117.17" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -150,17 +195,24 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12746" Name="A Special Surprise">
-		<Objective Type="KillMob" MobId="29070" KillCount="1">
+	<Quest Id="12742" Name="A Special Surprise">
+		<Objective Type="KillMob" MobId="29061" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1328.67" Y="-5773.04" Z="137.848" />
+				<Hotspot X="1320.97" Y="-5740.96" Z="137.56" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12743" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29065" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1318.37" Y="-5763.48" Z="137.891" />
+				<Hotspot X="1318.37" Y="-5763.48" Z="137.89" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12744" Name="A Special Surprise">
+		<Objective Type="KillMob" MobId="29067" KillCount="1">
+			<Hotspots>
+				<Hotspot X="1331.73" Y="-5756.24" Z="137.58" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -171,208 +223,247 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12742" Name="A Special Surprise">
-		<Objective Type="KillMob" MobId="29061" KillCount="1">
+	<Quest Id="12746" Name="A Special Surprise">
+		<Objective Type="KillMob" MobId="29070" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1320.97" Y="-5740.96" Z="137.555" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="12744" Name="A Special Surprise">
-		<Objective Type="KillMob" MobId="29067" KillCount="1">
-			<Hotspots>
-				<Hotspot X="1331.73" Y="-5756.24" Z="137.577" />
+				<Hotspot X="1328.67" Y="-5773.04" Z="137.85" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12739" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29032" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1319.32" Y="-5771.84" Z="137.829" />
+				<Hotspot X="1319.32" Y="-5771.84" Z="137.83" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12747" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29074" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1331.48" Y="-5764.67" Z="137.904" />
+				<Hotspot X="1331.48" Y="-5764.67" Z="137.9" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12748" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29072" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1331.87" Y="-5748.44" Z="137.486" />
+				<Hotspot X="1331.87" Y="-5748.44" Z="137.49" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12749" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29073" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1321.25" Y="-5749.35" Z="137.454" />
+				<Hotspot X="1321.25" Y="-5749.35" Z="137.45" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12750" Name="A Special Surprise">
 		<Objective Type="KillMob" MobId="29071" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1331.3" Y="-5740.97" Z="137.659" />
+				<Hotspot X="1331.3" Y="-5740.97" Z="137.66" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12779" Name="An End To All Things...">
 		<Objective Type="KillMob" MobId="29104" KillCount="10">
 			<Hotspots>
-				<Hotspot X="1513.18" Y="-6021.43" Z="116.689" />
-				<Hotspot X="1538.15" Y="-6020.08" Z="150.026" />
-				<Hotspot X="1486.5" Y="-5755.62" Z="131.476" />
-				<Hotspot X="1501.23" Y="-5847.85" Z="131.522" />
-				<Hotspot X="1508.87" Y="-5962.35" Z="152.222" />
+				<Hotspot X="1513.18" Y="-6021.43" Z="116.69" />
+				<Hotspot X="1538.15" Y="-6020.08" Z="150.03" />
+				<Hotspot X="1486.5" Y="-5755.62" Z="131.48" />
+				<Hotspot X="1501.23" Y="-5847.85" Z="131.52" />
+				<Hotspot X="1508.87" Y="-5962.35" Z="152.22" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="4286" KillCount="150">
+		<Objective Type="KillMob" MobId="4286" KillCount="1">
 			<Hotspots>
-				<Hotspot X="1747.55" Y="-382.132" Z="8.094" />
-				<Hotspot X="1707.79" Y="-338.49" Z="18.6778" />
-				<Hotspot X="1699.02" Y="-372.043" Z="18.148" />
-				<Hotspot X="1668.44" Y="-336.926" Z="18.7611" />
-				<Hotspot X="1670.54" Y="-346.561" Z="18.1066" />
+				<Hotspot X="1747.55" Y="-382.13" Z="8.09" />
+				<Hotspot X="1707.79" Y="-338.49" Z="18.68" />
+				<Hotspot X="1699.02" Y="-372.04" Z="18.15" />
+				<Hotspot X="1668.44" Y="-336.93" Z="18.76" />
+				<Hotspot X="1670.54" Y="-346.56" Z="18.11" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="13166" Name="The Battle For The Ebon Hold">
 		<Objective Type="KillMob" MobId="31099" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2457.06" Y="-5592.09" Z="414.122" />
+				<Hotspot X="2457.06" Y="-5592.09" Z="414.12" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="In Service Of The Lich King" QuestId="12593" GiverName="The Lich King" GiverId="25462" />
-		<TurnIn QuestName="In Service Of The Lich King" QuestId="12593" TurnInName="Instructor Razuvious" TurnInId="28357" />
-		<PickUp QuestName="The Emblazoned Runeblade" QuestId="12619" GiverName="Instructor Razuvious" GiverId="28357" />
-		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38607" CollectCount="1" />
+		<PickUp QuestName="In Service Of The Lich King" QuestId="12593" GiverName="The Lich King" GiverId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
+		<TurnIn QuestName="In Service Of The Lich King" QuestId="12593" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<PickUp QuestName="The Emblazoned Runeblade" QuestId="12619" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38631" CollectCount="1" />
-		<TurnIn QuestName="The Emblazoned Runeblade" QuestId="12619" TurnInName="Instructor Razuvious" TurnInId="28357" />
-		<PickUp QuestName="Runeforging: Preparation For Battle" QuestId="12842" GiverName="Instructor Razuvious" GiverId="28357" />
-		<TurnIn QuestName="Runeforging: Preparation For Battle" QuestId="12842" TurnInName="Instructor Razuvious" TurnInId="28357" />
-		<PickUp QuestName="The Endless Hunger" QuestId="12848" GiverName="Instructor Razuvious" GiverId="28357" />
+		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38631" CollectCount="1" />
+		<TurnIn QuestName="The Emblazoned Runeblade" QuestId="12619" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<PickUp QuestName="Runeforging: Preparation For Battle" QuestId="12842" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<TurnIn QuestName="Runeforging: Preparation For Battle" QuestId="12842" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<PickUp QuestName="The Endless Hunger" QuestId="12848" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<Objective QuestName="The Endless Hunger" QuestId="12848" Type="KillMob" MobId="29565" KillCount="1" />
-		<TurnIn QuestName="The Endless Hunger" QuestId="12848" TurnInName="Instructor Razuvious" TurnInId="28357" />
-		<PickUp QuestName="The Eye Of Acherus" QuestId="12636" GiverName="Instructor Razuvious" GiverId="28357" />
-		<TurnIn QuestName="The Eye Of Acherus" QuestId="12636" TurnInName="The Lich King" TurnInId="25462" />
-		<PickUp QuestName="Death Comes From On High" QuestId="12641" GiverName="The Lich King" GiverId="25462" />
-		<TurnIn QuestName="Death Comes From On High" QuestId="12641" TurnInName="The Lich King" TurnInId="25462" />
-		<PickUp QuestName="The Might Of The Scourge" QuestId="12657" GiverName="The Lich King" GiverId="25462" />
-		<TurnIn QuestName="The Might Of The Scourge" QuestId="12657" TurnInName="Highlord Darion Mograine" TurnInId="28444" />
-		<PickUp QuestName="Report To Scourge Commander Thalanor" QuestId="12850" GiverName="Highlord Darion Mograine" GiverId="28444" />
-		<PickUp QuestName="The Power Of Blood, Frost And Unholy" QuestId="12849" GiverName="Lord Thorval" GiverId="28472" />
-		<TurnIn QuestName="Report To Scourge Commander Thalanor" QuestId="12850" TurnInName="Scourge Commander Thalanor" TurnInId="28510" />
-		<PickUp QuestName="The Scarlet Harvest" QuestId="12670" GiverName="Scourge Commander Thalanor" GiverId="28510" />
-		<TurnIn QuestName="The Scarlet Harvest" QuestId="12670" TurnInName="Prince Valanar" TurnInId="28377" />
-		<PickUp QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" GiverName="Prince Valanar" GiverId="28377" />
-		<PickUp QuestName="Grand Theft Palomino" QuestId="12680" GiverName="Salanar the Horseman" GiverId="28653" />
-		<PickUp QuestName="Death's Challenge" QuestId="12733" GiverName="Olrun the Battlecaller" GiverId="29047" />
-		<Objective QuestName="Death's Challenge" QuestId="12733" Type="KillMob" MobId="28392" KillCount="1" />
-		<TurnIn QuestName="Death's Challenge" QuestId="12733" TurnInName="Olrun the Battlecaller" TurnInId="29047" />
-		<PickUp QuestName="Tonight We Dine In Havenshire" QuestId="12679" GiverName="Orithos the Sky Darkener" GiverId="28647" />
-		<TurnIn QuestName="Grand Theft Palomino" QuestId="12680" TurnInName="Salanar the Horseman" TurnInId="28653" />
-		<PickUp QuestName="Into the Realm of Shadows" QuestId="12687" GiverName="Salanar the Horseman" GiverId="28653" />
-		<Objective QuestName="Into the Realm of Shadows" QuestId="12687" Type="KillMob" MobId="28768" KillCount="1" />
-		<TurnIn QuestName="Into the Realm of Shadows" QuestId="12687" TurnInName="Salanar the Horseman" TurnInId="28653" />
-		<PickUp QuestName="Abandoned Mail" QuestId="12711" GiverName="Salanar the Horseman" GiverId="28653" />
-		<Objective QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" Type="KillMob" MobId="28660" KillCount="10" />
+		<TurnIn QuestName="The Endless Hunger" QuestId="12848" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<PickUp QuestName="The Eye Of Acherus" QuestId="12636" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<TurnIn QuestName="The Eye Of Acherus" QuestId="12636" TurnInName="The Lich King" TurnInId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
+		<PickUp QuestName="Death Comes From On High" QuestId="12641" GiverName="The Lich King" GiverId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
+		<Objective QuestName="Death Comes From On High" QuestId="12641" Type="KillMob" MobId="28525" KillCount="1" />
+		<Objective QuestName="Death Comes From On High" QuestId="12641" Type="KillMob" MobId="28543" KillCount="1" />
+		<Objective QuestName="Death Comes From On High" QuestId="12641" Type="KillMob" MobId="28542" KillCount="1" />
+		<Objective QuestName="Death Comes From On High" QuestId="12641" Type="KillMob" MobId="28544" KillCount="1" />
+		<TurnIn QuestName="Death Comes From On High" QuestId="12641" TurnInName="The Lich King" TurnInId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
+		<PickUp QuestName="The Might Of The Scourge" QuestId="12657" GiverName="The Lich King" GiverId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
+		<TurnIn QuestName="The Might Of The Scourge" QuestId="12657" TurnInName="Highlord Darion Mograine" TurnInId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<PickUp QuestName="Report To Scourge Commander Thalanor" QuestId="12850" GiverName="Highlord Darion Mograine" GiverId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<PickUp QuestName="The Power Of Blood, Frost And Unholy" QuestId="12849" GiverName="Lord Thorval" GiverId="28472" X="2527.73" Y="-5549.21" Z="377.036" />
+		<TurnIn QuestName="Report To Scourge Commander Thalanor" QuestId="12850" TurnInName="Scourge Commander Thalanor" TurnInId="28510" X="2370.16" Y="-5675.43" Z="382.229" />
+		<PickUp QuestName="The Scarlet Harvest" QuestId="12670" GiverName="Scourge Commander Thalanor" GiverId="28510" X="2370.16" Y="-5675.43" Z="382.229" />
+		<TurnIn QuestName="The Scarlet Harvest" QuestId="12670" TurnInName="Prince Valanar" TurnInId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<PickUp QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<PickUp QuestName="Grand Theft Palomino" QuestId="12680" GiverName="Salanar the Horseman" GiverId="28653" X="2351.35" Y="-5700.85" Z="154.045" />
+		<PickUp QuestName="Death's Challenge" QuestId="12733" GiverName="Olrun the Battlecaller" GiverId="29047" X="2377.54" Y="-5791.73" Z="154.61" />
+		<!-- Q12733 Death's Challenge: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\DK Starting revised by Nesox.xml -->
+		<If Condition="HasQuest(12733) &amp;&amp; !IsQuestCompleted(12733)">
+			<CustomBehavior File="InteractWith" MobId="28406" ObjectType="Npc" GossipOptions="1" NotMoving="true" NumOfTimes="1" CollectionDistance="50" X="2351.905" Y="-5698.78" Z="153.9228" />
+		</If>
+
+		<If Condition="HasQuest(12733) &amp;&amp; !IsQuestCompleted(12733)">
+			<CustomBehavior File="WaitTimer" WaitTime="10000" />
+		</If>
+
+		<TurnIn QuestName="Death's Challenge" QuestId="12733" TurnInName="Olrun the Battlecaller" TurnInId="29047" X="2377.54" Y="-5791.73" Z="154.61" />
+		<PickUp QuestName="Tonight We Dine In Havenshire" QuestId="12679" GiverName="Orithos the Sky Darkener" GiverId="28647" X="2322.23" Y="-5748.33" Z="154.042" />
+		<!-- Q12680 Grand Theft Palomino: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\DK Starting revised by Nesox.xml -->
+		<If Condition="HasQuest(12680) &amp;&amp; !IsQuestCompleted(12680)">
+			<RunTo X="2175.955" Y="-5769.175" Z="101.3312" />
+		</If>
+
+		<If Condition="HasQuest(12680) &amp;&amp; !IsQuestCompleted(12680)">
+			<CustomBehavior File="DeathknightStart\WaitForPatrol" AvoidMobId="28683" AvoidDistance="85" X="2175.955" Y="-5769.175" Z="101.3312" />
+		</If>
+
+		<If Condition="HasQuest(12680) &amp;&amp; !IsQuestCompleted(12680)">
+			<CustomBehavior File="Vehicles\VehicleMover" VehicleId="28605" VehicleId2="28606" VehicleId3="28607" UseNavigator="true" MobId="28653" SpellId="52264" Hop="true" X="2347.104" Y="-5695.789" Z="155.9568" />
+		</If>
+
+		<If Condition="HasQuest(12680) &amp;&amp; !IsQuestCompleted(12680)">
+			<CustomBehavior File="Misc\RunLua" Lua="VehicleExit()" />
+		</If>
+
+		<If Condition="HasQuest(12680) &amp;&amp; !IsQuestCompleted(12680)">
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+		</If>
+
+		<TurnIn QuestName="Grand Theft Palomino" QuestId="12680" TurnInName="Salanar the Horseman" TurnInId="28653" X="2351.35" Y="-5700.85" Z="154.045" />
+		<PickUp QuestName="Into the Realm of Shadows" QuestId="12687" GiverName="Salanar the Horseman" GiverId="28653" X="2351.35" Y="-5700.85" Z="154.045" />
+		<TurnIn QuestName="Into the Realm of Shadows" QuestId="12687" TurnInName="Salanar the Horseman" TurnInId="28653" X="2351.35" Y="-5700.85" Z="154.045" />
+		<PickUp QuestName="Abandoned Mail" QuestId="12711" GiverName="Abandoned Mail" GiverId="190917" GiverType="Object" X="2113.91" Y="-5795.67" Z="101.4" />
 		<Objective QuestName="Tonight We Dine In Havenshire" QuestId="12679" Type="CollectItem" ItemId="39160" CollectCount="15" />
-		<TurnIn QuestName="Tonight We Dine In Havenshire" QuestId="12679" TurnInName="Orithos the Sky Darkener" TurnInId="28647" />
-		<TurnIn QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" TurnInName="Prince Valanar" TurnInId="28377" />
-		<PickUp QuestName="Gothik the Harvester" QuestId="12697" GiverName="Prince Valanar" GiverId="28377" />
-		<TurnIn QuestName="Gothik the Harvester" QuestId="12697" TurnInName="Gothik the Harvester" TurnInId="28658" />
-		<PickUp QuestName="The Gift That Keeps On Giving" QuestId="12698" GiverName="Gothik the Harvester" GiverId="28658" />
-		<While Condition="((HasQuest(12698)) &amp;&amp; (!IsQuestCompleted(12698)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12698" MobId="28845" ItemId="39253" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="The Gift That Keeps On Giving" QuestId="12698" TurnInName="Gothik the Harvester" TurnInId="28658" />
-		<PickUp QuestName="An Attack Of Opportunity" QuestId="12700" GiverName="Gothik the Harvester" GiverId="28658" />
-		<TurnIn QuestName="An Attack Of Opportunity" QuestId="12700" TurnInName="Prince Valanar" TurnInId="28377" />
-		<PickUp QuestName="Massacre At Light's Point" QuestId="12701" GiverName="Prince Valanar" GiverId="28377" />
-		<Objective QuestName="Massacre At Light's Point" QuestId="12701" Type="KillMob" MobId="28834" KillCount="1" />
-		<TurnIn QuestName="Massacre At Light's Point" QuestId="12701" TurnInName="Prince Valanar" TurnInId="28377" />
-		<PickUp QuestName="Victory At Death's Breach!" QuestId="12706" GiverName="Prince Valanar" GiverId="28377" />
-		<TurnIn QuestName="Victory At Death's Breach!" QuestId="12706" TurnInName="Highlord Darion Mograine" TurnInId="28444" />
-		<PickUp QuestName="The Will Of The Lich King" QuestId="12714" GiverName="Highlord Darion Mograine" GiverId="28444" />
-		<TurnIn QuestName="The Will Of The Lich King" QuestId="12714" TurnInName="Prince Valanar" TurnInId="28907" />
-		<PickUp QuestName="The Crypt of Remembrance" QuestId="12715" GiverName="Prince Valanar" GiverId="28907" />
-		<PickUp QuestName="The Plaguebringer's Request" QuestId="12716" GiverName="Noth the Plaguebringer" GiverId="28919" />
-		<TurnIn QuestName="The Crypt of Remembrance" QuestId="12715" TurnInName="Prince Keleseth" TurnInId="28911" />
-		<PickUp QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" GiverName="Prince Keleseth" GiverId="28911" />
-		<PickUp QuestName="Lambs To The Slaughter" QuestId="12722" GiverName="Baron Rivendare" GiverId="28910" />
+		<TurnIn QuestName="Tonight We Dine In Havenshire" QuestId="12679" TurnInName="Orithos the Sky Darkener" TurnInId="28647" X="2322.23" Y="-5748.33" Z="154.042" />
+		<!-- Q12678 If Chaos Drives, Let Suffering Hold The Reins: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\DK Starting revised by Nesox.xml -->
+		<Objective QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" Type="KillMob" MobId="28763" KillCount="10" />
+		<Objective QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" Type="KillMob" MobId="28764" KillCount="10" />
+		<TurnIn QuestName="If Chaos Drives, Let Suffering Hold The Reins" QuestId="12678" TurnInName="Prince Valanar" TurnInId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<PickUp QuestName="Gothik the Harvester" QuestId="12697" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<TurnIn QuestName="Gothik the Harvester" QuestId="12697" TurnInName="Gothik the Harvester" TurnInId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
+		<PickUp QuestName="The Gift That Keeps On Giving" QuestId="12698" GiverName="Gothik the Harvester" GiverId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
+		<!-- Q12698 The Gift That Keeps On Giving: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\Classic\DK Start Zone.xml -->
+		<If Condition="HasQuest(12698) &amp;&amp; !IsQuestCompleted(12698)">
+			<If Condition="( Me.Minions != null ) &amp;&amp; ( Me.Minions.Count &lt; 5 )">
+				<CustomBehavior File="InteractWith" MobId="28819" MobState="Alive" InteractByUsingItemId="39253" Range="20" WaitTime="5000" X="2434.626" Y="-5929.263" Z="96.8934" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(12698) &amp;&amp; !IsQuestCompleted(12698)">
+			<MoveTo DestName="Gothik the Harvester" X="2348.769" Y="-5758.279" Z="153.9225" />
+		</If>
+
+		<If Condition="HasQuest(12698) &amp;&amp; !IsQuestCompleted(12698)">
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+		</If>
+
+		<TurnIn QuestName="The Gift That Keeps On Giving" QuestId="12698" TurnInName="Gothik the Harvester" TurnInId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
+		<PickUp QuestName="An Attack Of Opportunity" QuestId="12700" GiverName="Gothik the Harvester" GiverId="28658" X="2348.77" Y="-5758.28" Z="154.058" />
+		<TurnIn QuestName="An Attack Of Opportunity" QuestId="12700" TurnInName="Prince Valanar" TurnInId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<PickUp QuestName="Massacre At Light's Point" QuestId="12701" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<Objective QuestName="Massacre At Light's Point" QuestId="12701" Type="KillMob" MobId="28834" KillCount="100" />
+		<TurnIn QuestName="Massacre At Light's Point" QuestId="12701" TurnInName="Prince Valanar" TurnInId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<PickUp QuestName="Victory At Death's Breach!" QuestId="12706" GiverName="Prince Valanar" GiverId="28377" X="2371.37" Y="-5701.04" Z="154.005" />
+		<TurnIn QuestName="Victory At Death's Breach!" QuestId="12706" TurnInName="Highlord Darion Mograine" TurnInId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<PickUp QuestName="The Will Of The Lich King" QuestId="12714" GiverName="Highlord Darion Mograine" GiverId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<TurnIn QuestName="The Will Of The Lich King" QuestId="12714" TurnInName="Prince Valanar" TurnInId="28907" X="2316.65" Y="-5738.61" Z="155.981" />
+		<PickUp QuestName="The Crypt of Remembrance" QuestId="12715" GiverName="Prince Valanar" GiverId="28907" X="2316.65" Y="-5738.61" Z="155.981" />
+		<PickUp QuestName="The Plaguebringer's Request" QuestId="12716" GiverName="Noth the Plaguebringer" GiverId="28919" X="1982.74" Y="-5815.54" Z="101.112" />
+		<TurnIn QuestName="The Crypt of Remembrance" QuestId="12715" TurnInName="Prince Keleseth" TurnInId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
+		<PickUp QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" GiverName="Prince Keleseth" GiverId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
+		<PickUp QuestName="Lambs To The Slaughter" QuestId="12722" GiverName="Baron Rivendare" GiverId="28910" X="1876.44" Y="-5777.14" Z="85.0903" />
 		<Objective QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" Type="CollectItem" ItemId="39362" CollectCount="1" />
-		<TurnIn QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" TurnInName="Prince Keleseth" TurnInId="28911" />
-		<PickUp QuestName="How To Win Friends And Influence Enemies" QuestId="12720" GiverName="Prince Keleseth" GiverId="28911" />
+		<Objective QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" Type="KillMob" MobId="28945" KillCount="1" />
+		<TurnIn QuestName="Nowhere To Run And Nowhere To Hide" QuestId="12719" TurnInName="Prince Keleseth" TurnInId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
+		<PickUp QuestName="How To Win Friends And Influence Enemies" QuestId="12720" GiverName="Prince Keleseth" GiverId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
 		<Objective QuestName="The Plaguebringer's Request" QuestId="12716" Type="CollectItem" ItemId="39326" CollectCount="1" />
 		<Objective QuestName="The Plaguebringer's Request" QuestId="12716" Type="CollectItem" ItemId="39324" CollectCount="1" />
-		<Objective QuestName="How To Win Friends And Influence Enemies" QuestId="12720" Type="CollectItem" ItemId="39371" CollectCount="1" />
-		<Objective QuestName="How To Win Friends And Influence Enemies" QuestId="12720" Type="CollectItem" ItemId="142274" CollectCount="1" />
 		<Objective QuestName="The Plaguebringer's Request" QuestId="12716" Type="CollectItem" ItemId="39328" CollectCount="10" />
-		<Objective QuestName="Lambs To The Slaughter" QuestId="12722" Type="KillMob" MobId="28942" KillCount="15" />
-		<TurnIn QuestName="The Plaguebringer's Request" QuestId="12716" TurnInName="Noth the Plaguebringer" TurnInId="28919" />
-		<PickUp QuestName="Noth's Special Brew" QuestId="12717" GiverName="Noth the Plaguebringer" GiverId="28919" />
+		<TurnIn QuestName="The Plaguebringer's Request" QuestId="12716" TurnInName="Noth the Plaguebringer" TurnInId="28919" X="1982.74" Y="-5815.54" Z="101.112" />
+		<PickUp QuestName="Noth's Special Brew" QuestId="12717" GiverName="Noth the Plaguebringer" GiverId="28919" X="1982.74" Y="-5815.54" Z="101.112" />
 		<!-- Quest 12717 (Noth's Special Brew) — TurnIn Object not in 3.3.5a -->
-		<TurnIn QuestName="How To Win Friends And Influence Enemies" QuestId="12720" TurnInName="Prince Keleseth" TurnInId="28911" />
-		<PickUp QuestName="Behind Scarlet Lines" QuestId="12723" GiverName="Prince Keleseth" GiverId="28911" />
-		<TurnIn QuestName="Lambs To The Slaughter" QuestId="12722" TurnInName="Baron Rivendare" TurnInId="28910" />
-		<TurnIn QuestName="Behind Scarlet Lines" QuestId="12723" TurnInName="Orbaz Bloodbane" TurnInId="28914" />
-		<PickUp QuestName="The Path Of The Righteous Crusader" QuestId="12724" GiverName="Orbaz Bloodbane" GiverId="28914" />
-		<PickUp QuestName="Brothers In Death" QuestId="12725" GiverName="Thassarian" GiverId="28913" />
-		<TurnIn QuestName="Brothers In Death" QuestId="12725" TurnInName="Koltira Deathweaver" TurnInId="28912" />
-		<PickUp QuestName="Bloody Breakout" QuestId="12727" GiverName="Koltira Deathweaver" GiverId="28912" />
+		<TurnIn QuestName="How To Win Friends And Influence Enemies" QuestId="12720" TurnInName="Prince Keleseth" TurnInId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
+		<PickUp QuestName="Behind Scarlet Lines" QuestId="12723" GiverName="Prince Keleseth" GiverId="28911" X="1879.4" Y="-5765.1" Z="83.8607" />
+		<!-- Q12722 Lambs To The Slaughter: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\DK Starting revised by Nesox.xml -->
+		<Objective QuestName="Lambs To The Slaughter" QuestId="12722" Type="KillMob" MobId="28984" KillCount="10" />
+		<CustomBehavior File="KillUntilComplete" QuestId="12722" MobId1="28942" MobId2="28939" MobId3="28610" MobId4="28946" X="1620.13" Y="-5785.031" Z="116.1579" />
+		<TurnIn QuestName="Lambs To The Slaughter" QuestId="12722" TurnInName="Baron Rivendare" TurnInId="28910" X="1876.44" Y="-5777.14" Z="85.0903" />
+		<TurnIn QuestName="Behind Scarlet Lines" QuestId="12723" TurnInName="Orbaz Bloodbane" TurnInId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<PickUp QuestName="The Path Of The Righteous Crusader" QuestId="12724" GiverName="Orbaz Bloodbane" GiverId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<PickUp QuestName="Brothers In Death" QuestId="12725" GiverName="Thassarian" GiverId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
+		<TurnIn QuestName="Brothers In Death" QuestId="12725" TurnInName="Koltira Deathweaver" TurnInId="28912" X="1655.97" Y="-6038.76" Z="128.758" />
+		<PickUp QuestName="Bloody Breakout" QuestId="12727" GiverName="Koltira Deathweaver" GiverId="28912" X="1655.97" Y="-6038.76" Z="128.758" />
 		<Objective QuestName="Bloody Breakout" QuestId="12727" Type="CollectItem" ItemId="39510" CollectCount="1" />
 		<Objective QuestName="The Path Of The Righteous Crusader" QuestId="12724" Type="CollectItem" ItemId="39504" CollectCount="1" />
-		<TurnIn QuestName="The Path Of The Righteous Crusader" QuestId="12724" TurnInName="Orbaz Bloodbane" TurnInId="28914" />
-		<TurnIn QuestName="Bloody Breakout" QuestId="12727" TurnInName="Thassarian" TurnInId="28913" />
-		<PickUp QuestName="A Cry For Vengeance!" QuestId="12738" GiverName="Thassarian" GiverId="28913" />
-		<TurnIn QuestName="A Cry For Vengeance!" QuestId="12738" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+		<TurnIn QuestName="The Path Of The Righteous Crusader" QuestId="12724" TurnInName="Orbaz Bloodbane" TurnInId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<TurnIn QuestName="Bloody Breakout" QuestId="12727" TurnInName="Thassarian" TurnInId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
+		<PickUp QuestName="A Cry For Vengeance!" QuestId="12738" GiverName="Thassarian" GiverId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
+		<TurnIn QuestName="A Cry For Vengeance!" QuestId="12738" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		<If Condition="(Me.Race == WoWRace.Human)">
-			<PickUp QuestName="A Special Surprise" QuestId="12742" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12742" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.NightElf)">
-			<PickUp QuestName="A Special Surprise" QuestId="12743" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12743" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="A Special Surprise" QuestId="12744" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12744" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Gnome)">
-			<PickUp QuestName="A Special Surprise" QuestId="12745" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12745" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Draenei)">
-			<PickUp QuestName="A Special Surprise" QuestId="12746" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12746" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Tauren)">
-			<PickUp QuestName="A Special Surprise" QuestId="12739" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12739" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="A Special Surprise" QuestId="12747" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12747" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Orc)">
-			<PickUp QuestName="A Special Surprise" QuestId="12748" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12748" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="A Special Surprise" QuestId="12749" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12749" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Undead)">
-			<PickUp QuestName="A Special Surprise" QuestId="12750" GiverName="Knight Commander Plaguefist" GiverId="29053" />
+			<PickUp QuestName="A Special Surprise" QuestId="12750" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Draenei)">
@@ -416,84 +507,86 @@
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Human)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12742" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12742" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.NightElf)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12743" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12743" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Dwarf)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12744" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12744" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Gnome)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12745" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12745" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Draenei)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12746" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
-		</If>
-
-		<If Condition="(Me.Race == WoWRace.Worgen)">
-			<TurnIn QuestName="A Special Surprise" QuestId="28649" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12746" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Tauren)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12739" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12739" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12747" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12747" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Orc)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12748" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12748" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12749" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12749" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.Undead)">
-			<TurnIn QuestName="A Special Surprise" QuestId="12750" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
+			<TurnIn QuestName="A Special Surprise" QuestId="12750" TurnInName="Knight Commander Plaguefist" TurnInId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
 		</If>
 
-		<If Condition="(Me.Race == WoWRace.Goblin)">
-			<TurnIn QuestName="A Special Surprise" QuestId="28650" TurnInName="Knight Commander Plaguefist" TurnInId="29053" />
-		</If>
-
-		<PickUp QuestName="A Sort Of Homecoming" QuestId="12751" GiverName="Knight Commander Plaguefist" GiverId="29053" />
-		<TurnIn QuestName="A Sort Of Homecoming" QuestId="12751" TurnInName="Thassarian" TurnInId="28913" />
-		<PickUp QuestName="Ambush At The Overlook" QuestId="12754" GiverName="Orbaz Bloodbane" GiverId="28914" />
+		<PickUp QuestName="A Sort Of Homecoming" QuestId="12751" GiverName="Knight Commander Plaguefist" GiverId="29053" X="1371.66" Y="-5719.72" Z="136.504" />
+		<TurnIn QuestName="A Sort Of Homecoming" QuestId="12751" TurnInName="Thassarian" TurnInId="28913" X="1397.51" Y="-5827.42" Z="137.271" />
+		<PickUp QuestName="Ambush At The Overlook" QuestId="12754" GiverName="Orbaz Bloodbane" GiverId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
 		<Objective QuestName="Ambush At The Overlook" QuestId="12754" Type="CollectItem" ItemId="39646" CollectCount="1" />
 		<Objective QuestName="Ambush At The Overlook" QuestId="12754" Type="CollectItem" ItemId="39647" CollectCount="1" />
-		<TurnIn QuestName="Ambush At The Overlook" QuestId="12754" TurnInName="Orbaz Bloodbane" TurnInId="28914" />
-		<PickUp QuestName="A Meeting With Fate" QuestId="12755" GiverName="Orbaz Bloodbane" GiverId="28914" />
-		<TurnIn QuestName="A Meeting With Fate" QuestId="12755" TurnInName="High General Abbendis" TurnInId="29077" />
-		<PickUp QuestName="The Scarlet Onslaught Emerges" QuestId="12756" GiverName="High General Abbendis" GiverId="29077" />
-		<TurnIn QuestName="The Scarlet Onslaught Emerges" QuestId="12756" TurnInName="Orbaz Bloodbane" TurnInId="28914" />
-		<PickUp QuestName="Scarlet Armies Approach..." QuestId="12757" GiverName="Orbaz Bloodbane" GiverId="28914" />
-		<TurnIn QuestName="Scarlet Armies Approach..." QuestId="12757" TurnInName="Highlord Darion Mograine" TurnInId="28444" />
-		<PickUp QuestName="The Scarlet Apocalypse" QuestId="12778" GiverName="Highlord Darion Mograine" GiverId="28444" />
-		<TurnIn QuestName="The Scarlet Apocalypse" QuestId="12778" TurnInName="The Lich King" TurnInId="29110" />
-		<PickUp QuestName="An End To All Things..." QuestId="12779" GiverName="The Lich King" GiverId="29110" />
-		<While Condition="((HasQuest(12779)) &amp;&amp; (!IsQuestCompleted(12779)))" >
+		<TurnIn QuestName="Ambush At The Overlook" QuestId="12754" TurnInName="Orbaz Bloodbane" TurnInId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<PickUp QuestName="A Meeting With Fate" QuestId="12755" GiverName="Orbaz Bloodbane" GiverId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<TurnIn QuestName="A Meeting With Fate" QuestId="12755" TurnInName="High General Abbendis" TurnInId="29077" X="1320.41" Y="-6124.41" Z="14.7567" />
+		<PickUp QuestName="The Scarlet Onslaught Emerges" QuestId="12756" GiverName="High General Abbendis" GiverId="29077" X="1320.41" Y="-6124.41" Z="14.7567" />
+		<TurnIn QuestName="The Scarlet Onslaught Emerges" QuestId="12756" TurnInName="Orbaz Bloodbane" TurnInId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<PickUp QuestName="Scarlet Armies Approach..." QuestId="12757" GiverName="Orbaz Bloodbane" GiverId="28914" X="1403.94" Y="-5826.62" Z="137.274" />
+		<TurnIn QuestName="Scarlet Armies Approach..." QuestId="12757" TurnInName="Highlord Darion Mograine" TurnInId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<PickUp QuestName="The Scarlet Apocalypse" QuestId="12778" GiverName="Highlord Darion Mograine" GiverId="28444" X="2460.5" Y="-5593.47" Z="367.476" />
+		<TurnIn QuestName="The Scarlet Apocalypse" QuestId="12778" TurnInName="The Lich King" TurnInId="29110" X="2310.27" Y="-5742.21" Z="161.207" />
+		<PickUp QuestName="An End To All Things..." QuestId="12779" GiverName="The Lich King" GiverId="29110" X="2310.27" Y="-5742.21" Z="161.207" />
+		<While Condition="((HasQuest(12779)) &amp;&amp; (!IsQuestCompleted(12779)))">
 			<CustomBehavior File="UseItemOn" QuestId="12779" MobId="29104" ItemId="39700" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1513.18" Y="-6021.43" Z="116.689" />
 		</While>
+
 		<Objective QuestName="An End To All Things..." QuestId="12779" Type="KillMob" MobId="29104" KillCount="10" />
-		<Objective QuestName="An End To All Things..." QuestId="12779" Type="KillMob" MobId="4286" KillCount="150" />
-		<TurnIn QuestName="An End To All Things..." QuestId="12779" TurnInName="The Lich King" TurnInId="29110" />
-		<PickUp QuestName="The Lich King's Command" QuestId="12800" GiverName="The Lich King" GiverId="29110" />
-		<TurnIn QuestName="The Lich King's Command" QuestId="12800" TurnInName="Scourge Commander Thalanor" TurnInId="31082" />
-		<PickUp QuestName="The Light of Dawn" QuestId="12801" GiverName="Scourge Commander Thalanor" GiverId="31082" />
-		<TurnIn QuestName="The Light of Dawn" QuestId="12801" TurnInName="Highlord Darion Mograine" TurnInId="29173" />
-		<PickUp QuestName="Taking Back Acherus" QuestId="13165" GiverName="Highlord Darion Mograine" GiverId="29173" />
-		<TurnIn QuestName="Taking Back Acherus" QuestId="13165" TurnInName="Highlord Darion Mograine" TurnInId="31084" />
-		<PickUp QuestName="The Battle For The Ebon Hold" QuestId="13166" GiverName="Highlord Darion Mograine" GiverId="29173" />
+		<TurnIn QuestName="An End To All Things..." QuestId="12779" TurnInName="The Lich King" TurnInId="29110" X="2310.27" Y="-5742.21" Z="161.207" />
+		<PickUp QuestName="The Lich King's Command" QuestId="12800" GiverName="The Lich King" GiverId="29110" X="2310.27" Y="-5742.21" Z="161.207" />
+		<TurnIn QuestName="The Lich King's Command" QuestId="12800" TurnInName="Scourge Commander Thalanor" TurnInId="31082" X="2447.85" Y="-5125.37" Z="78.6562" />
+		<PickUp QuestName="The Light of Dawn" QuestId="12801" GiverName="Scourge Commander Thalanor" GiverId="31082" X="2447.85" Y="-5125.37" Z="78.6562" />
+		<!-- Q12801 The Light of Dawn: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\DK Starting revised by Nesox.xml -->
+		<If Condition="HasQuest(12801) &amp;&amp; !IsQuestCompleted(12801)">
+			<CustomBehavior File="EquipItem" ItemId="38661" />
+		</If>
+
+		<If Condition="HasQuest(12801) &amp;&amp; !IsQuestCompleted(12801)">
+			<CustomBehavior File="DeathknightStart\TheLightOfDawn" QuestId="12801" />
+		</If>
+
+		<TurnIn QuestName="The Light of Dawn" QuestId="12801" TurnInName="Highlord Darion Mograine" TurnInId="29173" X="2431.67" Y="-5137.02" Z="83.9246" />
+		<PickUp QuestName="Taking Back Acherus" QuestId="13165" GiverName="Highlord Darion Mograine" GiverId="29173" X="2431.67" Y="-5137.02" Z="83.9246" />
+		<TurnIn QuestName="Taking Back Acherus" QuestId="13165" TurnInName="Highlord Darion Mograine" TurnInId="31084" X="2375.38" Y="-5650.72" Z="382.523" />
+		<PickUp QuestName="The Battle For The Ebon Hold" QuestId="13166" GiverName="Highlord Darion Mograine" GiverId="31084" X="2375.38" Y="-5650.72" Z="382.523" />
 		<Objective QuestName="The Battle For The Ebon Hold" QuestId="13166" Type="KillMob" MobId="31099" KillCount="1" />
-		<TurnIn QuestName="The Battle For The Ebon Hold" QuestId="13166" TurnInName="Highlord Darion Mograine" TurnInId="31084" />
-		<PickUp QuestName="Where Kings Walk" QuestId="13188" GiverName="Highlord Darion Mograine" GiverId="31084" />
-		<TurnIn QuestName="Where Kings Walk" QuestId="13188" TurnInName="King Varian Wrynn" TurnInId="29611" />
+		<TurnIn QuestName="The Battle For The Ebon Hold" QuestId="13166" TurnInName="Highlord Darion Mograine" TurnInId="31084" X="2375.38" Y="-5650.72" Z="382.523" />
+		<PickUp QuestName="Where Kings Walk" QuestId="13188" GiverName="Highlord Darion Mograine" GiverId="31084" X="2375.38" Y="-5650.72" Z="382.523" />
+		<TurnIn QuestName="Where Kings Walk" QuestId="13188" TurnInName="King Varian Wrynn" TurnInId="29611" X="-8441.42" Y="333.102" Z="122.579" />
+		<CustomBehavior File="LoadProfile" ProfileName="The Burning Crusade (58-70)_Hellfire Peninsula (58-62)" />
 	</QuestOrder>
 </HBProfile>

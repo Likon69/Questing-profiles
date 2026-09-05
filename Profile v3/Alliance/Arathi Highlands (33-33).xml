@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Arathi Highlands (33-33)</Name>
-	<MinLevel>33</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,44 +17,80 @@
 
 	<Vendors>
 		<!-- Haferet (2353) — no spawn data -->
-		<Vendor Name="Innkeeper Shaussified" Entry="2354" Type="Food" X="-530.603" Y="-390.108" Z="45.1607" />
+		<Vendor Name="Jannos Ironwill" Entry="1471" Type="Repair" X="-1278.57" Y="-2522" Z="21.4577" />
+		<Vendor Name="Narj Deepslice" Entry="2814" Type="Food" X="-1275.9" Y="-2506.19" Z="21.9792" />
+		<Vendor Name="Samuel Hawke" Entry="15127" Type="Repair" X="-1218.48" Y="-2521.56" Z="21.9227" />
+		<Vendor Name="Harggan" Entry="8161" Type="Repair" X="333.705" Y="-2091.51" Z="131.647" />
+		<Vendor Name="Truk Wildbeard" Entry="4782" Type="Food" X="380.805" Y="-2128.05" Z="121.09" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="681" Name="Northfold Manor">
 		<Objective Type="KillMob" MobId="2589" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-755.565" Y="-2031.31" Z="34.0643" />
-				<Hotspot X="-775.245" Y="-2035.73" Z="34.1738" />
-				<Hotspot X="-854.12" Y="-2002.11" Z="34.7652" />
-				<Hotspot X="-835.366" Y="-2076.21" Z="34.3338" />
-				<Hotspot X="-803.064" Y="-1981.05" Z="34.0347" />
+				<Hotspot X="-755.57" Y="-2031.31" Z="34.06" />
+				<Hotspot X="-775.25" Y="-2035.73" Z="34.17" />
+				<Hotspot X="-854.12" Y="-2002.11" Z="34.77" />
+				<Hotspot X="-835.37" Y="-2076.21" Z="34.33" />
+				<Hotspot X="-803.06" Y="-1981.05" Z="34.03" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="2586" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-769.643" Y="-2087.32" Z="34.3055" />
-				<Hotspot X="-781.302" Y="-2116.04" Z="38.1838" />
-				<Hotspot X="-893.874" Y="-2114.54" Z="45.949" />
-				<Hotspot X="-923.797" Y="-2087.77" Z="48.1807" />
-				<Hotspot X="-910.356" Y="-2052.62" Z="49.6462" />
+				<Hotspot X="-769.64" Y="-2087.32" Z="34.31" />
+				<Hotspot X="-781.3" Y="-2116.04" Z="38.18" />
+				<Hotspot X="-893.87" Y="-2114.54" Z="45.95" />
+				<Hotspot X="-923.8" Y="-2087.77" Z="48.18" />
+				<Hotspot X="-910.36" Y="-2052.62" Z="49.65" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="658" Name="Hints of a New Plague?">
+		<Objective Type="CollectItem" ItemId="4482" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Forsaken Courier" Id="2714" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1552.43" Y="-3029.31" Z="13.64" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Arathi Highlands (33-33) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(681))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Northfold Manor" QuestId="681" GiverName="Captain Nials" GiverId="2700" />
-		<TurnIn QuestName="Malin's Request" QuestId="690" TurnInName="Skuerto" TurnInId="2789" />
-		<TurnIn QuestName="Hints of a New Plague?" QuestId="659" TurnInName="Quae" TurnInId="2712" />
-		<PickUp QuestName="Hints of a New Plague?" QuestId="658" GiverName="Quae" GiverId="2712" />
+		<PickUp QuestName="Northfold Manor" QuestId="681" GiverName="Captain Nials" GiverId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
+		<TurnIn QuestName="Malin's Request" QuestId="690" TurnInName="Skuerto" TurnInId="2789" X="-1261.6" Y="-2546.09" Z="21.7138" />
+		<TurnIn QuestName="Hints of a New Plague?" QuestId="659" TurnInName="Quae" TurnInId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		<PickUp QuestName="Hints of a New Plague?" QuestId="658" GiverName="Quae" GiverId="2712" X="-1425.68" Y="-3033.32" Z="32.8839" />
+		<Objective QuestName="Hints of a New Plague?" QuestId="658" Type="CollectItem" ItemId="4482" CollectCount="1" />
 		<Objective QuestName="Northfold Manor" QuestId="681" Type="KillMob" MobId="2589" KillCount="6" />
 		<Objective QuestName="Northfold Manor" QuestId="681" Type="KillMob" MobId="2586" KillCount="10" />
-		<TurnIn QuestName="Northfold Manor" QuestId="681" TurnInName="Captain Nials" TurnInId="2700" />
+		<TurnIn QuestName="Northfold Manor" QuestId="681" TurnInName="Captain Nials" TurnInId="2700" X="-1274.69" Y="-2516.63" Z="21.4792" />
 		<CustomBehavior File="LoadProfile" ProfileName="Dustwallow Marsh (33-33)" />
 	</QuestOrder>
 </HBProfile>

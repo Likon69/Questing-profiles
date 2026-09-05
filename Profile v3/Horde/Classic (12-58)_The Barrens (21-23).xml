@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\The Barrens (21-23)</Name>
-	<MinLevel>21</MinLevel>
-	<MaxLevel>23</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,45 +16,200 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
-		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
-		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
-		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Vendor Name="Katis" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Innkeeper Byula" Entry="7714" Type="Food" X="-2376.27" Y="-1995.74" Z="96.7881" />
+		<Vendor Name="Sanuye Runetotem" Entry="10380" Type="Repair" X="-2374.26" Y="-1948.79" Z="96.1699" />
+		<Vendor Name="Gahroot" Entry="3705" Type="Food" X="-2402.17" Y="-1911.01" Z="96.8255" />
+		<Vendor Name="Zanara" Entry="9552" Type="Repair" X="-3086.6" Y="-2838.95" Z="34.5123" />
+		<Vendor Name="Krak" Entry="4883" Type="Repair" X="-3112.94" Y="-2885.78" Z="35.3489" />
+		<Vendor Name="Ogg'marr" Entry="4879" Type="Food" X="-3117.45" Y="-2902" Z="34.0738" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="63" Name="Call of Water">
+		<Objective Type="CollectItem" ItemId="7812" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Corrupt Minor Manifestation of Water" Id="5894" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="427.39" Y="1821.41" Z="10.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="879" Name="Betrayal from Within">
+		<Objective Type="CollectItem" ItemId="5072" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lok Orcbane" Id="3435" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3829.2" Y="-1445.56" Z="134.16" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5073" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Nak" Id="3434" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4001.8" Y="-1816.72" Z="92.51" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5074" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kuz" Id="3436" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3814.72" Y="-1955.13" Z="94.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="843" Name="Gann's Reclamation">
+		<Objective Type="KillMob" MobId="3375" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-4082.65" Y="-2174.6" Z="50.46" />
+				<Hotspot X="-4138.31" Y="-2190.96" Z="50.41" />
+				<Hotspot X="-4164.1" Y="-2184.44" Z="50.88" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5006" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Prospector Khazgorm" Id="3392" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4212.91" Y="-2274.4" Z="50.31" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="846" Name="Revenge of Gann">
+		<Objective Type="CollectItem" ItemId="5017" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Bael'dun Soldier" Id="3376" />
+				<Mob Name="Bael'dun Rifleman" Id="3377" />
+				<Mob Name="Bael'dun Officer" Id="3378" />
+				<Mob Name="Lord Cyrik Blackforge" Id="6668" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4064.79" Y="-2294.91" Z="124.12" />
+				<Hotspot X="-4074.72" Y="-2352.82" Z="120.6" />
+				<Hotspot X="-4055.49" Y="-2392.29" Z="126.77" />
+				<Hotspot X="-4111.86" Y="-2303.19" Z="127.07" />
+				<Hotspot X="-4182.04" Y="-2146.93" Z="69.51" />
+				<Hotspot X="-4076.54" Y="-2404.13" Z="128.13" />
+				<Hotspot X="-4103" Y="-2365.05" Z="128.59" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5018" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Bael'dun Soldier" Id="3376" />
+				<Mob Name="Bael'dun Rifleman" Id="3377" />
+				<Mob Name="Bael'dun Officer" Id="3378" />
+				<Mob Name="Lord Cyrik Blackforge" Id="6668" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4064.79" Y="-2294.91" Z="124.12" />
+				<Hotspot X="-4074.72" Y="-2352.82" Z="120.6" />
+				<Hotspot X="-4055.49" Y="-2392.29" Z="126.77" />
+				<Hotspot X="-4111.86" Y="-2303.19" Z="127.07" />
+				<Hotspot X="-4182.04" Y="-2146.93" Z="69.51" />
+				<Hotspot X="-4076.54" Y="-2404.13" Z="128.13" />
+				<Hotspot X="-4103" Y="-2365.05" Z="128.59" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5019" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Bael'dun Soldier" Id="3376" />
+				<Mob Name="Bael'dun Rifleman" Id="3377" />
+				<Mob Name="Bael'dun Officer" Id="3378" />
+				<Mob Name="Lord Cyrik Blackforge" Id="6668" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4064.79" Y="-2294.91" Z="124.12" />
+				<Hotspot X="-4074.72" Y="-2352.82" Z="120.6" />
+				<Hotspot X="-4055.49" Y="-2392.29" Z="126.77" />
+				<Hotspot X="-4111.86" Y="-2303.19" Z="127.07" />
+				<Hotspot X="-4182.04" Y="-2146.93" Z="69.51" />
+				<Hotspot X="-4076.54" Y="-2404.13" Z="128.13" />
+				<Hotspot X="-4103" Y="-2365.05" Z="128.59" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<TurnIn QuestName="Further Instructions" QuestId="1094" TurnInName="Sputtervalve" TurnInId="3442" />
-		<PickUp QuestName="Further Instructions" QuestId="1095" GiverName="Sputtervalve" GiverId="3442" />
-		<TurnIn QuestName="Deepmoss Spider Eggs" QuestId="1069" TurnInName="Mebok Mizzyrix" TurnInId="3446" />
-		<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" />
-		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="220" GiverName="Brine" GiverId="5899" />
+		<!-- Travel to Classic (12-58)_The Barrens (21-23) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1095))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="220" TurnInName="Islen Waterseer" TurnInId="5901" />
+		<TurnIn QuestName="Further Instructions" QuestId="1094" TurnInName="Sputtervalve" TurnInId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
+		<PickUp QuestName="Further Instructions" QuestId="1095" GiverName="Sputtervalve" GiverId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
+		<TurnIn QuestName="Deepmoss Spider Eggs" QuestId="1069" TurnInName="Mebok Mizzyrix" TurnInId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
+		<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="63" GiverName="Islen Waterseer" GiverId="5901" />
+			<PickUp QuestName="Call of Water" QuestId="220" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="220" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="63" GiverName="Islen Waterseer" GiverId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Water" QuestId="63" Type="CollectItem" ItemId="7812" CollectCount="1" />
 			<!-- Quest 63 (Call of Water) — TurnIn Object not in 3.3.5a -->
-			<PickUp QuestName="Call of Water" QuestId="100" GiverName="Islen Waterseer" GiverId="5901" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<PickUp QuestName="Call of Water" QuestId="100" GiverName="Tiev Mordune" GiverId="7007" X="430.385" Y="1881.86" Z="15.4168" />
 			<TurnIn QuestName="Call of Water" QuestId="100" TurnInName="Minor Manifestation of Water" TurnInId="5895" />
 			<PickUp QuestName="Call of Water" QuestId="96" GiverName="Minor Manifestation of Water" GiverId="5895" />
-			<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+					<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 		</If>
 
-		<PickUp QuestName="Betrayal from Within" QuestId="879" GiverName="Mangletooth" GiverId="3430" />
-		<PickUp QuestName="Weapons of Choice" QuestId="893" GiverName="Tatternack Steelforge" GiverId="3433" />
-		<Objective QuestName="Owatanka" QuestId="884" Type="CollectItem" ItemId="5102" CollectCount="1" />
-		<PickUp QuestName="Owatanka" QuestId="884" GiverName="Innkeeper Byula" GiverId="7714" />
+		<PickUp QuestName="Betrayal from Within" QuestId="879" GiverName="Mangletooth" GiverId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />
+		<PickUp QuestName="Weapons of Choice" QuestId="893" GiverName="Tatternack Steelforge" GiverId="3433" X="-2284.69" Y="-1947.39" Z="96.0461" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5102)">
+			<CustomBehavior File="CollectThings" CollectItemId="5102" CollectItemCount="1" HuntingGroundRadius="120" MobId="3473" X="-2509.89" Y="-2377.26" Z="92.4167">
+				<Hotspot X="-2509.89" Y="-2377.26" Z="92.42" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5102)">
+			<PickUp QuestName="Owatanka" QuestId="884" GiverName="Owatanka's Tailspike" GiverId="5102" GiverType="Item" />
+		</If>
+
 		<If Condition="Me.Level &lt; 22">
 			<SetGrindArea>
 				<GrindArea>
@@ -72,32 +224,46 @@
 			</SetGrindArea>
 			<GrindTo Level="22" />
 		</If>
+
 		<Objective QuestName="Egg Hunt" QuestId="868" Type="CollectItem" ItemId="5058" CollectCount="12" />
-		<PickUp QuestName="Gann's Reclamation" QuestId="843" GiverName="Gann Stonespire" GiverId="3341" />
+		<PickUp QuestName="Gann's Reclamation" QuestId="843" GiverName="Gann Stonespire" GiverId="3341" X="-3589.96" Y="-2027.71" Z="91.7917" />
 		<Objective QuestName="Betrayal from Within" QuestId="879" Type="CollectItem" ItemId="5074" CollectCount="1" />
 		<Objective QuestName="Betrayal from Within" QuestId="879" Type="CollectItem" ItemId="5073" CollectCount="1" />
 		<Objective QuestName="Betrayal from Within" QuestId="879" Type="CollectItem" ItemId="5072" CollectCount="1" />
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5093" CollectCount="1" />
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5092" CollectCount="1" />
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5094" CollectCount="1" />
-		<Objective QuestName="Washte Pawne" QuestId="885" Type="CollectItem" ItemId="5103" CollectCount="1" />
-		<While Condition="((HasQuest(843)) &amp;&amp; (!IsQuestCompleted(843)))" >
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5103)">
+			<CustomBehavior File="CollectThings" CollectItemId="5103" CollectItemCount="1" HuntingGroundRadius="120" MobId="3472" X="-3854.66" Y="-1752.77" Z="93.4167">
+				<Hotspot X="-3854.66" Y="-1752.77" Z="93.42" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(843)) &amp;&amp; (!IsQuestCompleted(843)))">
 			<CustomBehavior File="UseItemOn" QuestId="843" MobId="3374" ItemId="5103" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-4105.0" Y="-2211.54" Z="53.2454" />
 		</While>
-		<PickUp QuestName="Washte Pawne" QuestId="885" GiverName="Gann Stonespire" GiverId="3341" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5103)">
+			<PickUp QuestName="Washte Pawne" QuestId="885" GiverName="Washte Pawne's Feather" GiverId="5103" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Chen's Empty Keg" QuestId="822" Type="CollectItem" ItemId="4898" CollectCount="5" />
 		<Objective QuestName="Chen's Empty Keg" QuestId="822" Type="CollectItem" ItemId="4897" CollectCount="1" />
 		<Objective QuestName="Gann's Reclamation" QuestId="843" Type="CollectItem" ItemId="5006" CollectCount="1" />
-		<TurnIn QuestName="Gann's Reclamation" QuestId="843" TurnInName="Gann Stonespire" TurnInId="3341" />
-		<PickUp QuestName="Revenge of Gann" QuestId="846" GiverName="Gann Stonespire" GiverId="3341" />
-		<TurnIn QuestName="Weapons of Choice" QuestId="893" TurnInName="Tatternack Steelforge" TurnInId="3433" />
-		<TurnIn QuestName="Owatanka" QuestId="884" TurnInName="Jorn Skyseer" TurnInId="3387" />
-		<TurnIn QuestName="Washte Pawne" QuestId="885" TurnInName="Jorn Skyseer" TurnInId="3387" />
-		<TurnIn QuestName="Betrayal from Within" QuestId="879" TurnInName="Mangletooth" TurnInId="3430" />
-		<PickUp QuestName="Betrayal from Within" QuestId="906" GiverName="Mangletooth" GiverId="3430" />
-		<TurnIn QuestName="Betrayal from Within" QuestId="906" TurnInName="Thork" TurnInId="3429" />
-		<TurnIn QuestName="Egg Hunt" QuestId="868" TurnInName="Korran" TurnInId="3428" />
-		<TurnIn QuestName="Chen's Empty Keg" QuestId="822" TurnInName="Brewmaster Drohn" TurnInId="3292" />
+		<Objective QuestName="Gann's Reclamation" QuestId="843" Type="KillMob" MobId="3375" KillCount="5" />
+		<TurnIn QuestName="Gann's Reclamation" QuestId="843" TurnInName="Gann Stonespire" TurnInId="3341" X="-3589.96" Y="-2027.71" Z="91.7917" />
+		<PickUp QuestName="Revenge of Gann" QuestId="846" GiverName="Gann Stonespire" GiverId="3341" X="-3589.96" Y="-2027.71" Z="91.7917" />
+		<Objective QuestName="Revenge of Gann" QuestId="846" Type="CollectItem" ItemId="5017" CollectCount="6" />
+		<Objective QuestName="Revenge of Gann" QuestId="846" Type="CollectItem" ItemId="5018" CollectCount="6" />
+		<Objective QuestName="Revenge of Gann" QuestId="846" Type="CollectItem" ItemId="5019" CollectCount="6" />
+		<TurnIn QuestName="Weapons of Choice" QuestId="893" TurnInName="Tatternack Steelforge" TurnInId="3433" X="-2284.69" Y="-1947.39" Z="96.0461" />
+		<TurnIn QuestName="Owatanka" QuestId="884" TurnInName="Jorn Skyseer" TurnInId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />
+		<TurnIn QuestName="Washte Pawne" QuestId="885" TurnInName="Jorn Skyseer" TurnInId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />
+		<TurnIn QuestName="Betrayal from Within" QuestId="879" TurnInName="Mangletooth" TurnInId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />
+		<PickUp QuestName="Betrayal from Within" QuestId="906" GiverName="Mangletooth" GiverId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />
+		<TurnIn QuestName="Betrayal from Within" QuestId="906" TurnInName="Thork" TurnInId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<TurnIn QuestName="Egg Hunt" QuestId="868" TurnInName="Korran" TurnInId="3428" X="-389.282" Y="-2552.14" Z="98.9925" />
+		<TurnIn QuestName="Chen's Empty Keg" QuestId="822" TurnInName="Brewmaster Drohn" TurnInId="3292" X="-981.24" Y="-3686.49" Z="9.5055" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Stonetalon Mountains (23-24)" />
 	</QuestOrder>
 </HBProfile>

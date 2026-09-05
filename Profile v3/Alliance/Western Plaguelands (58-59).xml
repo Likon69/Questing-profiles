@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Western Plaguelands (58-59)</Name>
-	<MinLevel>58</MinLevel>
-	<MaxLevel>59</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,31 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Veron Amberstill" Entry="6929" Type="Repair" X="1633.99" Y="-4439.37" Z="15.7436" />
-		<Vendor Name="Innkeeper Grilka" Entry="6928" Type="Food" X="340.362" Y="-4686.29" Z="16.5411" />
+		<Vendor Name="Innkeeper Grosk" Entry="6928" Type="Food" X="340.362" Y="-4686.29" Z="16.5411" />
+		<Vendor Name="Leonard Porter" Entry="12942" Type="Repair" X="949.885" Y="-1435.65" Z="62.6731" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Truk Wildbeard" Entry="4782" Type="Food" X="380.805" Y="-2128.05" Z="121.09" />
+		<Vendor Name="Harggan" Entry="8161" Type="Repair" X="333.705" Y="-2091.51" Z="131.647" />
+		<Vendor Name="Thanthaldis Snowgleam" Entry="13217" Type="Repair" X="-24.1885" Y="-321.177" Z="131.224" />
+		<Vendor Name="Barkeep Kelly" Entry="2366" Type="Food" X="-849.45" Y="-583.486" Z="11.6872" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="5153" Name="A Strange Historian">
+		<Objective Type="CollectItem" ItemId="12894" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Joseph Redpath's Monument" Id="176145" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1166.31" Y="-1720.26" Z="60.62" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="5154" Name="The Annals of Darrowshire">
 		<Objective Type="CollectItem" ItemId="12900" CollectCount="1">
 			<CollectFrom>
@@ -57,103 +71,130 @@
 	<Quest Id="6004" Name="Unfinished Business">
 		<Objective Type="KillMob" MobId="10605" KillCount="2">
 			<Hotspots>
-				<Hotspot X="1893.33" Y="-1326.18" Z="59.8258" />
-				<Hotspot X="1871.43" Y="-1314.84" Z="60.0947" />
-				<Hotspot X="1763.01" Y="-1246.06" Z="60.3214" />
-				<Hotspot X="1878.15" Y="-1337.87" Z="60.1733" />
-				<Hotspot X="1896.56" Y="-1616.52" Z="60.5759" />
+				<Hotspot X="1893.33" Y="-1326.18" Z="59.83" />
+				<Hotspot X="1871.43" Y="-1314.84" Z="60.09" />
+				<Hotspot X="1763.01" Y="-1246.06" Z="60.32" />
+				<Hotspot X="1878.15" Y="-1337.87" Z="60.17" />
+				<Hotspot X="1896.56" Y="-1616.52" Z="60.58" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="1831" KillCount="2">
 			<Hotspots>
-				<Hotspot X="1863.54" Y="-1346.68" Z="60.5846" />
-				<Hotspot X="1858.34" Y="-1334.8" Z="61.3346" />
-				<Hotspot X="1762.2" Y="-1244.8" Z="60.2191" />
-				<Hotspot X="1893.67" Y="-1618.53" Z="60.6432" />
-				<Hotspot X="1870.9" Y="-1333.11" Z="60.1979" />
+				<Hotspot X="1863.54" Y="-1346.68" Z="60.58" />
+				<Hotspot X="1858.34" Y="-1334.8" Z="61.33" />
+				<Hotspot X="1762.2" Y="-1244.8" Z="60.22" />
+				<Hotspot X="1893.67" Y="-1618.53" Z="60.64" />
+				<Hotspot X="1870.9" Y="-1333.11" Z="60.2" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="1826" KillCount="2">
 			<Hotspots>
-				<Hotspot X="2344.72" Y="-2058.66" Z="164.659" />
-				<Hotspot X="2206.17" Y="-1789.29" Z="63.9466" />
-				<Hotspot X="2315.94" Y="-1854.88" Z="92.1702" />
-				<Hotspot X="2213.95" Y="-1777.66" Z="63.3216" />
-				<Hotspot X="2289.82" Y="-1852.5" Z="88.243" />
+				<Hotspot X="2344.72" Y="-2058.66" Z="164.66" />
+				<Hotspot X="2206.17" Y="-1789.29" Z="63.95" />
+				<Hotspot X="2315.94" Y="-1854.88" Z="92.17" />
+				<Hotspot X="2213.95" Y="-1777.66" Z="63.32" />
+				<Hotspot X="2289.82" Y="-1852.5" Z="88.24" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="1833" KillCount="2">
 			<Hotspots>
-				<Hotspot X="2189.58" Y="-1751.7" Z="59.5013" />
-				<Hotspot X="2293.58" Y="-1873.52" Z="87.9875" />
-				<Hotspot X="2415.34" Y="-1716.52" Z="108.241" />
-				<Hotspot X="2379.45" Y="-1551.25" Z="108.307" />
-				<Hotspot X="2378.74" Y="-1680.58" Z="105.243" />
+				<Hotspot X="2189.58" Y="-1751.7" Z="59.5" />
+				<Hotspot X="2293.58" Y="-1873.52" Z="87.99" />
+				<Hotspot X="2415.34" Y="-1716.52" Z="108.24" />
+				<Hotspot X="2379.45" Y="-1551.25" Z="108.31" />
+				<Hotspot X="2378.74" Y="-1680.58" Z="105.24" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="6023" Name="Unfinished Business">
 		<Objective Type="KillMob" MobId="11613" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2331.89" Y="-2070.1" Z="168.541" />
+				<Hotspot X="2331.89" Y="-2070.1" Z="168.54" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="11611" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2689.51" Y="-1954.99" Z="107.239" />
+				<Hotspot X="2689.51" Y="-1954.99" Z="107.24" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Western Plaguelands (58-59) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(5225))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1792.78" Y="5406.54" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1792.78" Y="5406.54" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Return to Chillwind Camp" QuestId="5223" TurnInName="High Priestess MacDonnell" TurnInId="11053" />
-		<PickUp QuestName="Target: Gahrron's Withering" QuestId="5225" GiverName="High Priestess MacDonnell" GiverId="11053" />
-		<TurnIn QuestName="Skeletal Fragments" QuestId="5537" TurnInName="Alchemist Arbington" TurnInId="11056" />
-		<TurnIn QuestName="The Eastern Plagues" QuestId="6185" TurnInName="Flint Shadowmore" TurnInId="12425" />
-		<PickUp QuestName="The Blightcaller Cometh" QuestId="6186" GiverName="Flint Shadowmore" GiverId="12425" />
-		<TurnIn QuestName="A Plague Upon Thee" QuestId="5903" TurnInName="Nathaniel Dumah" TurnInId="11616" />
-		<PickUp QuestName="A Plague Upon Thee" QuestId="5904" GiverName="Nathaniel Dumah" GiverId="11616" />
-		<TurnIn QuestName="Auntie Marlene" QuestId="5152" TurnInName="Marlene Redpath" TurnInId="10927" />
-		<PickUp QuestName="A Strange Historian" QuestId="5153" GiverName="Marlene Redpath" GiverId="10927" />
+		<TurnIn QuestName="Return to Chillwind Camp" QuestId="5223" TurnInName="High Priestess MacDonnell" TurnInId="11053" X="944.298" Y="-1431.14" Z="64.0076" />
+		<PickUp QuestName="Target: Gahrron's Withering" QuestId="5225" GiverName="High Priestess MacDonnell" GiverId="11053" X="944.298" Y="-1431.14" Z="64.0076" />
+		<TurnIn QuestName="Skeletal Fragments" QuestId="5537" TurnInName="Alchemist Arbington" TurnInId="11056" X="965.135" Y="-1417.87" Z="66.7977" />
+		<TurnIn QuestName="The Eastern Plagues" QuestId="6185" TurnInName="Flint Shadowmore" TurnInId="12425" X="944.157" Y="-1458.45" Z="62.6499" />
+		<PickUp QuestName="The Blightcaller Cometh" QuestId="6186" GiverName="Flint Shadowmore" GiverId="12425" X="944.157" Y="-1458.45" Z="62.6499" />
+		<TurnIn QuestName="A Plague Upon Thee" QuestId="5903" TurnInName="Nathaniel Dumah" TurnInId="11616" X="934.77" Y="-1450.32" Z="62.7314" />
+		<PickUp QuestName="A Plague Upon Thee" QuestId="5904" GiverName="Nathaniel Dumah" GiverId="11616" X="934.77" Y="-1450.32" Z="62.7314" />
+		<TurnIn QuestName="Auntie Marlene" QuestId="5152" TurnInName="Marlene Redpath" TurnInId="10927" X="1114.2" Y="-1697.44" Z="67.5886" />
+		<PickUp QuestName="A Strange Historian" QuestId="5153" GiverName="Marlene Redpath" GiverId="10927" X="1114.2" Y="-1697.44" Z="67.5886" />
 		<Objective QuestName="A Strange Historian" QuestId="5153" Type="CollectItem" ItemId="12894" CollectCount="1" />
-		<TurnIn QuestName="A Strange Historian" QuestId="5153" TurnInName="Chromie" TurnInId="10667" />
-		<PickUp QuestName="The Annals of Darrowshire" QuestId="5154" GiverName="Chromie" GiverId="10667" />
-		<PickUp QuestName="A Matter of Time" QuestId="4971" GiverName="Chromie" GiverId="10667" />
-		<While Condition="((HasQuest(4971)) &amp;&amp; (!IsQuestCompleted(4971)))" >
+		<TurnIn QuestName="A Strange Historian" QuestId="5153" TurnInName="Chromie" TurnInId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<PickUp QuestName="The Annals of Darrowshire" QuestId="5154" GiverName="Chromie" GiverId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<PickUp QuestName="A Matter of Time" QuestId="4971" GiverName="Chromie" GiverId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<While Condition="((HasQuest(4971)) &amp;&amp; (!IsQuestCompleted(4971)))">
 			<CustomBehavior File="UseItemOn" QuestId="4971" MobId="10717" ItemId="12627" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<Objective QuestName="A Matter of Time" QuestId="4971" Type="KillMob" MobId="10717" KillCount="15" />
+
+		<Objective QuestName="A Matter of Time" QuestId="4971" Type="KillMob" MobId="10717" KillCount="10" />
 		<Objective QuestName="The Annals of Darrowshire" QuestId="5154" Type="CollectItem" ItemId="12900" CollectCount="1" />
-		<TurnIn QuestName="A Matter of Time" QuestId="4971" TurnInName="Chromie" TurnInId="10667" />
-		<TurnIn QuestName="The Annals of Darrowshire" QuestId="5154" TurnInName="Chromie" TurnInId="10667" />
-		<PickUp QuestName="Counting Out Time" QuestId="4972" GiverName="Chromie" GiverId="10667" />
-		<PickUp QuestName="Brother Carlin" QuestId="5210" GiverName="Chromie" GiverId="10667" />
+		<!-- REVIEW Q4971 A Matter of Time: UseItemOn target 10717 Temporal Parasite has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4971)) &amp;&amp; (IsQuestCompleted(4971)))">
+			<TurnIn QuestName="A Matter of Time" QuestId="4971" TurnInName="Chromie" TurnInId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		</If>
+
+		<If Condition="((HasQuest(4971)) &amp;&amp; (!IsQuestCompleted(4971)))">
+			<AbandonQuest QuestId="4971" />
+		</If>
+
+		<TurnIn QuestName="The Annals of Darrowshire" QuestId="5154" TurnInName="Chromie" TurnInId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<PickUp QuestName="Counting Out Time" QuestId="4972" GiverName="Chromie" GiverId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<PickUp QuestName="Brother Carlin" QuestId="5210" GiverName="Chromie" GiverId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
 		<Objective QuestName="Counting Out Time" QuestId="4972" Type="CollectItem" ItemId="12638" CollectCount="5" />
-		<TurnIn QuestName="Counting Out Time" QuestId="4972" TurnInName="Chromie" TurnInId="10667" />
-		<TurnIn QuestName="The Wildlife Suffers Too" QuestId="4985" TurnInName="Mulgris Deepriver" TurnInId="10739" />
-		<PickUp QuestName="Glyphed Oaken Branch" QuestId="4986" GiverName="Mulgris Deepriver" GiverId="10739" />
+		<TurnIn QuestName="Counting Out Time" QuestId="4972" TurnInName="Chromie" TurnInId="10667" X="1452.81" Y="-1279.91" Z="68.6052" />
+		<TurnIn QuestName="The Wildlife Suffers Too" QuestId="4985" TurnInName="Mulgris Deepriver" TurnInId="10739" X="1513.06" Y="-1893.84" Z="60.5976" />
+		<PickUp QuestName="Glyphed Oaken Branch" QuestId="4986" GiverName="Mulgris Deepriver" GiverId="10739" X="1513.06" Y="-1893.84" Z="60.5976" />
 		<Objective QuestName="Target: Gahrron's Withering" QuestId="5225" Type="CollectItem" ItemId="13196" CollectCount="1" />
 		<!-- Quest 5225 (Target: Gahrron's Withering) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Return to Chillwind Point" QuestId="5226" GiverName="Mulgris Deepriver" GiverId="10739" />
+		<PickUp QuestName="Return to Chillwind Camp" QuestId="5226" GiverName="Scourge Cauldron" GiverId="176392" GiverType="Object" X="1690.47" Y="-2272.56" Z="58.9362" />
 		<!-- Quest 5904 (A Plague Upon Thee) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="A Plague Upon Thee" QuestId="6389" GiverName="Mulgris Deepriver" GiverId="10739" />
-		<PickUp QuestName="Unfinished Business" QuestId="6004" GiverName="Kirsta Deepshadow" GiverId="11610" />
+		<PickUp QuestName="A Plague Upon Thee" QuestId="6389" GiverName="Termite Barrel" GiverId="177491" GiverType="Object" />
+		<PickUp QuestName="Unfinished Business" QuestId="6004" GiverName="Kirsta Deepshadow" GiverId="11610" X="2562.35" Y="-1815.91" Z="33.5166" />
 		<Objective QuestName="Unfinished Business" QuestId="6004" Type="KillMob" MobId="10605" KillCount="2" />
 		<Objective QuestName="Unfinished Business" QuestId="6004" Type="KillMob" MobId="1831" KillCount="2" />
 		<Objective QuestName="Unfinished Business" QuestId="6004" Type="KillMob" MobId="1826" KillCount="2" />
 		<Objective QuestName="Unfinished Business" QuestId="6004" Type="KillMob" MobId="1833" KillCount="2" />
-		<TurnIn QuestName="Unfinished Business" QuestId="6004" TurnInName="Kirsta Deepshadow" TurnInId="11610" />
-		<PickUp QuestName="Unfinished Business" QuestId="6023" GiverName="Kirsta Deepshadow" GiverId="11610" />
+		<TurnIn QuestName="Unfinished Business" QuestId="6004" TurnInName="Kirsta Deepshadow" TurnInId="11610" X="2562.35" Y="-1815.91" Z="33.5166" />
+		<PickUp QuestName="Unfinished Business" QuestId="6023" GiverName="Kirsta Deepshadow" GiverId="11610" X="2562.35" Y="-1815.91" Z="33.5166" />
 		<Objective QuestName="Unfinished Business" QuestId="6023" Type="KillMob" MobId="11613" KillCount="1" />
 		<Objective QuestName="Unfinished Business" QuestId="6023" Type="KillMob" MobId="11611" KillCount="1" />
-		<TurnIn QuestName="Unfinished Business" QuestId="6023" TurnInName="Kirsta Deepshadow" TurnInId="11610" />
-		<TurnIn QuestName="Return to Chillwind Camp" QuestId="5226" TurnInName="High Priestess MacDonnell" TurnInId="11053" />
-		<PickUp QuestName="Mission Accomplished!" QuestId="5237" GiverName="Commander Ashlam Valorfist" GiverId="10838" />
-		<TurnIn QuestName="A Plague Upon Thee" QuestId="6389" TurnInName="Nathaniel Dumah" TurnInId="11616" />
-		<TurnIn QuestName="Brother Carlin" QuestId="5210" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<TurnIn QuestName="The Blightcaller Cometh" QuestId="6186" TurnInName="King Varian Wrynn" TurnInId="29611" />
+		<TurnIn QuestName="Unfinished Business" QuestId="6023" TurnInName="Kirsta Deepshadow" TurnInId="11610" X="2562.35" Y="-1815.91" Z="33.5166" />
+		<TurnIn QuestName="Return to Chillwind Camp" QuestId="5226" TurnInName="High Priestess MacDonnell" TurnInId="11053" X="944.298" Y="-1431.14" Z="64.0076" />
+		<PickUp QuestName="Mission Accomplished!" QuestId="5237" GiverName="Commander Ashlam Valorfist" GiverId="10838" X="957.713" Y="-1419.47" Z="66.347" />
+		<TurnIn QuestName="A Plague Upon Thee" QuestId="6389" TurnInName="Nathaniel Dumah" TurnInId="11616" X="934.77" Y="-1450.32" Z="62.7314" />
+		<TurnIn QuestName="Brother Carlin" QuestId="5210" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<TurnIn QuestName="The Blightcaller Cometh" QuestId="6186" TurnInName="King Varian Wrynn" TurnInId="29611" X="-8441.42" Y="333.102" Z="122.579" />
 		<CustomBehavior File="LoadProfile" ProfileName="Silithus (59-60)" />
 	</QuestOrder>
 </HBProfile>

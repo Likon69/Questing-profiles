@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Felwood (55-55)</Name>
-	<MinLevel>55</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,181 +17,252 @@
 
 	<Vendors>
 		<!-- Nata Dawnstrider (11344) — no spawn data -->
-		<Vendor Name="Innkeeper Biribi" Entry="14981" Type="Food" X="-8390.29" Y="285.503" Z="120.969" />
+		<Vendor Name="Altsoba Ragetotem" Entry="10379" Type="Repair" X="5095.58" Y="-360.128" Z="357.379" />
+		<Vendor Name="Bale" Entry="2806" Type="Food" X="5092.96" Y="-356.463" Z="357.396" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="8460" Name="Timbermaw Ally">
 		<Objective Type="KillMob" MobId="7153" KillCount="6">
 			<Hotspots>
-				<Hotspot X="3753.17" Y="-1217.82" Z="209.753" />
-				<Hotspot X="3607.32" Y="-1039.43" Z="220.976" />
+				<Hotspot X="3753.17" Y="-1217.82" Z="209.75" />
+				<Hotspot X="3607.32" Y="-1039.43" Z="220.98" />
 				<Hotspot X="3609.52" Y="-1156.05" Z="215.7" />
-				<Hotspot X="3621.24" Y="-1214.55" Z="217.544" />
-				<Hotspot X="3570.23" Y="-1127.83" Z="219.991" />
+				<Hotspot X="3621.24" Y="-1214.55" Z="217.54" />
+				<Hotspot X="3570.23" Y="-1127.83" Z="219.99" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7155" KillCount="6">
 			<Hotspots>
-				<Hotspot X="3552.57" Y="-1084.76" Z="223.412" />
-				<Hotspot X="3688.21" Y="-1011.26" Z="223.954" />
-				<Hotspot X="3618.7" Y="-1188.61" Z="213.385" />
-				<Hotspot X="3704.07" Y="-1135.35" Z="207.948" />
+				<Hotspot X="3552.57" Y="-1084.76" Z="223.41" />
+				<Hotspot X="3688.21" Y="-1011.26" Z="223.95" />
+				<Hotspot X="3618.7" Y="-1188.61" Z="213.38" />
+				<Hotspot X="3704.07" Y="-1135.35" Z="207.95" />
 				<Hotspot X="3724.05" Y="-1024.52" Z="226.88" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7154" KillCount="6">
 			<Hotspots>
-				<Hotspot X="3659.64" Y="-1020.65" Z="221.612" />
-				<Hotspot X="3584.86" Y="-1175.01" Z="219.842" />
-				<Hotspot X="3582.85" Y="-1082.78" Z="221.176" />
-				<Hotspot X="3718.73" Y="-1172.03" Z="207.628" />
-				<Hotspot X="3627.95" Y="-1189.24" Z="212.881" />
+				<Hotspot X="3659.64" Y="-1020.65" Z="221.61" />
+				<Hotspot X="3584.86" Y="-1175.01" Z="219.84" />
+				<Hotspot X="3582.85" Y="-1082.78" Z="221.18" />
+				<Hotspot X="3718.73" Y="-1172.03" Z="207.63" />
+				<Hotspot X="3627.95" Y="-1189.24" Z="212.88" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="5155" Name="Forces of Jaedenar">
 		<Objective Type="KillMob" MobId="7125" KillCount="4">
 			<Hotspots>
-				<Hotspot X="4792.15" Y="-565.158" Z="285.087" />
-				<Hotspot X="4761.73" Y="-583.714" Z="279.782" />
-				<Hotspot X="4779.26" Y="-572.04" Z="275.844" />
-				<Hotspot X="4818.86" Y="-591.139" Z="290.55" />
-				<Hotspot X="4864.79" Y="-605.092" Z="307.287" />
+				<Hotspot X="4792.15" Y="-565.16" Z="285.09" />
+				<Hotspot X="4761.73" Y="-583.71" Z="279.78" />
+				<Hotspot X="4779.26" Y="-572.04" Z="275.84" />
+				<Hotspot X="4818.86" Y="-591.14" Z="290.55" />
+				<Hotspot X="4864.79" Y="-605.09" Z="307.29" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7113" KillCount="4">
 			<Hotspots>
-				<Hotspot X="4781.55" Y="-540.811" Z="284.361" />
-				<Hotspot X="4805.13" Y="-547.412" Z="272.959" />
-				<Hotspot X="4856.33" Y="-369.072" Z="352.084" />
-				<Hotspot X="4740.15" Y="-451.848" Z="349.006" />
-				<Hotspot X="4789.91" Y="-574.192" Z="285.208" />
+				<Hotspot X="4781.55" Y="-540.81" Z="284.36" />
+				<Hotspot X="4805.13" Y="-547.41" Z="272.96" />
+				<Hotspot X="4856.33" Y="-369.07" Z="352.08" />
+				<Hotspot X="4740.15" Y="-451.85" Z="349.01" />
+				<Hotspot X="4789.91" Y="-574.19" Z="285.21" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7115" KillCount="6">
 			<Hotspots>
-				<Hotspot X="4753.5" Y="-545.315" Z="284.959" />
-				<Hotspot X="4786.12" Y="-523.577" Z="283.96" />
-				<Hotspot X="4777.93" Y="-557.573" Z="275.15" />
-				<Hotspot X="4756.2" Y="-597.928" Z="279.563" />
-				<Hotspot X="4811.07" Y="-576.129" Z="286.274" />
+				<Hotspot X="4753.5" Y="-545.32" Z="284.96" />
+				<Hotspot X="4786.12" Y="-523.58" Z="283.96" />
+				<Hotspot X="4777.93" Y="-557.57" Z="275.15" />
+				<Hotspot X="4756.2" Y="-597.93" Z="279.56" />
+				<Hotspot X="4811.07" Y="-576.13" Z="286.27" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7112" KillCount="6">
 			<Hotspots>
-				<Hotspot X="4750.5" Y="-550.487" Z="283.622" />
-				<Hotspot X="4782.52" Y="-527.412" Z="283.624" />
-				<Hotspot X="4774.06" Y="-583.119" Z="280.288" />
-				<Hotspot X="4767.34" Y="-570.026" Z="278.062" />
-				<Hotspot X="4749.07" Y="-597.87" Z="280.253" />
+				<Hotspot X="4750.5" Y="-550.49" Z="283.62" />
+				<Hotspot X="4782.52" Y="-527.41" Z="283.62" />
+				<Hotspot X="4774.06" Y="-583.12" Z="280.29" />
+				<Hotspot X="4767.34" Y="-570.03" Z="278.06" />
+				<Hotspot X="4749.07" Y="-597.87" Z="280.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="5156" Name="Verifying the Corruption">
 		<Objective Type="KillMob" MobId="9878" KillCount="2">
 			<Hotspots>
-				<Hotspot X="5568.85" Y="-882.877" Z="377.43" />
-				<Hotspot X="5562.34" Y="-925.108" Z="377.145" />
-				<Hotspot X="5546.28" Y="-817.698" Z="353.535" />
-				<Hotspot X="5683.37" Y="-729.215" Z="376.707" />
-				<Hotspot X="5669.46" Y="-811.385" Z="377.576" />
+				<Hotspot X="5568.85" Y="-882.88" Z="377.43" />
+				<Hotspot X="5562.34" Y="-925.11" Z="377.14" />
+				<Hotspot X="5546.28" Y="-817.7" Z="353.54" />
+				<Hotspot X="5683.37" Y="-729.22" Z="376.71" />
+				<Hotspot X="5669.46" Y="-811.38" Z="377.58" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="9879" KillCount="2">
 			<Hotspots>
-				<Hotspot X="5653.56" Y="-986.303" Z="377.195" />
-				<Hotspot X="5563.0" Y="-951.885" Z="376.765" />
-				<Hotspot X="5647.88" Y="-850.98" Z="379.829" />
-				<Hotspot X="5554.77" Y="-678.227" Z="335.743" />
-				<Hotspot X="5613.32" Y="-714.615" Z="343.297" />
+				<Hotspot X="5653.56" Y="-986.3" Z="377.19" />
+				<Hotspot X="5563" Y="-951.88" Z="376.76" />
+				<Hotspot X="5647.88" Y="-850.98" Z="379.83" />
+				<Hotspot X="5554.77" Y="-678.23" Z="335.74" />
+				<Hotspot X="5613.32" Y="-714.62" Z="343.3" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4102" Name="Cleansing Felwood">
+		<Objective Type="CollectItem" ItemId="11503" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Warpwood Moss Flayer" Id="7100" />
+				<Mob Name="Warpwood Shredder" Id="7101" />
+				<Mob Name="Dessecus" Id="7104" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6278.55" Y="-1697.09" Z="431.63" />
+				<Hotspot X="6306.84" Y="-1650.94" Z="428.17" />
+				<Hotspot X="6316.26" Y="-1773.32" Z="421.62" />
+				<Hotspot X="6380.74" Y="-1520.77" Z="441.44" />
+				<Hotspot X="6342.18" Y="-1757.13" Z="421.63" />
+				<Hotspot X="6353.32" Y="-1696.92" Z="440.04" />
+				<Hotspot X="6379.43" Y="-1652.13" Z="437.57" />
+				<Hotspot X="6374.02" Y="-1768.09" Z="421.16" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4521" Name="Wild Guardians">
+		<Objective Type="KillMob" MobId="7451" KillCount="15">
+			<Hotspots>
+				<Hotspot X="6932.25" Y="-3960.13" Z="738.84" />
+				<Hotspot X="6993.97" Y="-4233.03" Z="699.74" />
+				<Hotspot X="7039.06" Y="-4213.95" Z="696.85" />
+				<Hotspot X="7197.48" Y="-4218.32" Z="708.49" />
+				<Hotspot X="7013.55" Y="-4337.13" Z="753.47" />
+				<Hotspot X="7188.15" Y="-4283.56" Z="689.91" />
+				<Hotspot X="6893.88" Y="-4446.77" Z="728.54" />
+				<Hotspot X="6915" Y="-4501.95" Z="714.28" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7450" KillCount="15">
+			<Hotspots>
+				<Hotspot X="6663.76" Y="-2674.53" Z="534.83" />
+				<Hotspot X="6437.42" Y="-2888.2" Z="574.65" />
+				<Hotspot X="6613.64" Y="-2998.01" Z="580.75" />
+				<Hotspot X="6848.32" Y="-2946.26" Z="598.18" />
+				<Hotspot X="6753.03" Y="-3047.62" Z="572.42" />
+				<Hotspot X="6710.07" Y="-3081.55" Z="572.45" />
+				<Hotspot X="6814.52" Y="-3081.16" Z="583.47" />
+				<Hotspot X="6861.98" Y="-3201.65" Z="637.95" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="4120" Name="The Strength of Corruption">
 		<Objective Type="KillMob" MobId="8957" KillCount="12">
 			<Hotspots>
-				<Hotspot X="6214.11" Y="-1600.0" Z="456.532" />
-				<Hotspot X="6614.74" Y="-1919.12" Z="547.613" />
-				<Hotspot X="6283.69" Y="-1581.49" Z="461.227" />
-				<Hotspot X="6325.15" Y="-1558.03" Z="446.153" />
-				<Hotspot X="6177.5" Y="-1617.82" Z="477.741" />
+				<Hotspot X="6214.11" Y="-1600" Z="456.53" />
+				<Hotspot X="6614.74" Y="-1919.12" Z="547.61" />
+				<Hotspot X="6283.69" Y="-1581.49" Z="461.23" />
+				<Hotspot X="6325.15" Y="-1558.03" Z="446.15" />
+				<Hotspot X="6177.5" Y="-1617.82" Z="477.74" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="8961" KillCount="12">
 			<Hotspots>
-				<Hotspot X="6319.74" Y="-1608.8" Z="462.353" />
+				<Hotspot X="6319.74" Y="-1608.8" Z="462.35" />
 				<Hotspot X="6387.95" Y="-1613.56" Z="471.03" />
-				<Hotspot X="6638.23" Y="-1620.49" Z="477.701" />
-				<Hotspot X="6615.92" Y="-1452.73" Z="466.929" />
-				<Hotspot X="6419.15" Y="-1651.15" Z="489.931" />
+				<Hotspot X="6638.23" Y="-1620.49" Z="477.7" />
+				<Hotspot X="6615.92" Y="-1452.73" Z="466.93" />
+				<Hotspot X="6419.15" Y="-1651.15" Z="489.93" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8461" Name="Deadwood of the North">
 		<Objective Type="KillMob" MobId="7156" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6901.48" Y="-2020.1" Z="583.248" />
-				<Hotspot X="6821.03" Y="-1812.37" Z="564.751" />
-				<Hotspot X="6748.33" Y="-1890.33" Z="549.724" />
-				<Hotspot X="6627.08" Y="-1954.44" Z="550.976" />
-				<Hotspot X="6739.87" Y="-1955.28" Z="550.604" />
+				<Hotspot X="6901.48" Y="-2020.1" Z="583.25" />
+				<Hotspot X="6821.03" Y="-1812.37" Z="564.75" />
+				<Hotspot X="6748.33" Y="-1890.33" Z="549.72" />
+				<Hotspot X="6627.08" Y="-1954.44" Z="550.98" />
+				<Hotspot X="6739.87" Y="-1955.28" Z="550.6" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7157" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6810.62" Y="-1860.13" Z="551.045" />
-				<Hotspot X="6786.71" Y="-1871.71" Z="550.807" />
+				<Hotspot X="6810.62" Y="-1860.13" Z="551.04" />
+				<Hotspot X="6786.71" Y="-1871.71" Z="550.81" />
 				<Hotspot X="6820.06" Y="-2019.6" Z="569.76" />
-				<Hotspot X="6637.04" Y="-1996.57" Z="551.863" />
-				<Hotspot X="6689.16" Y="-2005.93" Z="559.684" />
+				<Hotspot X="6637.04" Y="-1996.57" Z="551.86" />
+				<Hotspot X="6689.16" Y="-2005.93" Z="559.68" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7158" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6873.22" Y="-2039.05" Z="581.747" />
-				<Hotspot X="6795.32" Y="-1829.39" Z="559.952" />
-				<Hotspot X="6705.94" Y="-1892.44" Z="549.714" />
-				<Hotspot X="6660.46" Y="-2018.97" Z="552.197" />
-				<Hotspot X="6690.2" Y="-1950.99" Z="551.087" />
+				<Hotspot X="6873.22" Y="-2039.05" Z="581.75" />
+				<Hotspot X="6795.32" Y="-1829.39" Z="559.95" />
+				<Hotspot X="6705.94" Y="-1892.44" Z="549.71" />
+				<Hotspot X="6660.46" Y="-2018.97" Z="552.2" />
+				<Hotspot X="6690.2" Y="-1950.99" Z="551.09" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Felwood (55-55) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8460))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Timbermaw Ally" QuestId="8460" GiverName="Grazle" GiverId="11554" />
+		<PickUp QuestName="Timbermaw Ally" QuestId="8460" GiverName="Grazle" GiverId="11554" X="3874.76" Y="-1286.59" Z="220.49" />
 		<Objective QuestName="Timbermaw Ally" QuestId="8460" Type="KillMob" MobId="7153" KillCount="6" />
 		<Objective QuestName="Timbermaw Ally" QuestId="8460" Type="KillMob" MobId="7155" KillCount="6" />
 		<Objective QuestName="Timbermaw Ally" QuestId="8460" Type="KillMob" MobId="7154" KillCount="6" />
-		<TurnIn QuestName="Timbermaw Ally" QuestId="8460" TurnInName="Grazle" TurnInId="11554" />
-		<PickUp QuestName="Speak to Nafien" QuestId="8462" GiverName="Grazle" GiverId="11554" />
-		<PickUp QuestName="Forces of Jaedenar" QuestId="5155" GiverName="Greta Mosshoof" GiverId="10922" />
-		<PickUp QuestName="Verifying the Corruption" QuestId="5156" GiverName="Taronn Redfeather" GiverId="10921" />
-		<PickUp QuestName="Cleansing Felwood" QuestId="4102" GiverName="Maybess Riverbreeze" GiverId="9529" />
-		<Objective QuestName="A Sample of Slime..." QuestId="4293" Type="CollectItem" ItemId="12230" CollectCount="30" />
+		<TurnIn QuestName="Timbermaw Ally" QuestId="8460" TurnInName="Grazle" TurnInId="11554" X="3874.76" Y="-1286.59" Z="220.49" />
+		<PickUp QuestName="Speak to Nafien" QuestId="8462" GiverName="Grazle" GiverId="11554" X="3874.76" Y="-1286.59" Z="220.49" />
+		<PickUp QuestName="Forces of Jaedenar" QuestId="5155" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<PickUp QuestName="Verifying the Corruption" QuestId="5156" GiverName="Taronn Redfeather" GiverId="10921" X="4004.65" Y="-1284.46" Z="254.349" />
+		<PickUp QuestName="Cleansing Felwood" QuestId="4102" GiverName="Maybess Riverbreeze" GiverId="9529" X="3946.78" Y="-1046.39" Z="246.118" />
+		<Objective QuestName="A Sample of Slime..." QuestId="4293" Type="CollectItem" ItemId="12234" CollectCount="5" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7125" KillCount="4" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7113" KillCount="4" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7115" KillCount="6" />
 		<Objective QuestName="Forces of Jaedenar" QuestId="5155" Type="KillMob" MobId="7112" KillCount="6" />
-		<PickUp QuestName="Well of Corruption" QuestId="4505" GiverName="Winna Hazzard" GiverId="9996" />
-		<PickUp QuestName="Wild Guardians" QuestId="4521" GiverName="Trull Failbane" GiverId="10306" />
+		<PickUp QuestName="Well of Corruption" QuestId="4505" GiverName="Winna Hazzard" GiverId="9996" X="5126.82" Y="-325.127" Z="358.926" />
+		<PickUp QuestName="Wild Guardians" QuestId="4521" GiverName="Trull Failbane" GiverId="10306" X="5109.6" Y="-355.176" Z="357.205" />
+		<Objective QuestName="Wild Guardians" QuestId="4521" Type="KillMob" MobId="7451" KillCount="15" />
+		<Objective QuestName="Wild Guardians" QuestId="4521" Type="KillMob" MobId="7450" KillCount="15" />
 		<Objective QuestName="Verifying the Corruption" QuestId="5156" Type="KillMob" MobId="9878" KillCount="2" />
 		<Objective QuestName="Verifying the Corruption" QuestId="5156" Type="KillMob" MobId="9879" KillCount="2" />
 		<Objective QuestName="Cleansing Felwood" QuestId="4102" Type="CollectItem" ItemId="11503" CollectCount="15" />
 		<Objective QuestName="The Strength of Corruption" QuestId="4120" Type="KillMob" MobId="8957" KillCount="12" />
 		<Objective QuestName="The Strength of Corruption" QuestId="4120" Type="KillMob" MobId="8961" KillCount="12" />
-		<TurnIn QuestName="Speak to Nafien" QuestId="8462" TurnInName="Nafien" TurnInId="15395" />
-		<PickUp QuestName="Deadwood of the North" QuestId="8461" GiverName="Nafien" GiverId="15395" />
+		<TurnIn QuestName="Speak to Nafien" QuestId="8462" TurnInName="Nafien" TurnInId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
+		<PickUp QuestName="Deadwood of the North" QuestId="8461" GiverName="Nafien" GiverId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7156" KillCount="6" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7157" KillCount="6" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7158" KillCount="6" />
-		<TurnIn QuestName="Deadwood of the North" QuestId="8461" TurnInName="Nafien" TurnInId="15395" />
-		<PickUp QuestName="Speak to Salfa" QuestId="8465" GiverName="Nafien" GiverId="15395" />
+		<TurnIn QuestName="Deadwood of the North" QuestId="8461" TurnInName="Nafien" TurnInId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
+		<PickUp QuestName="Speak to Salfa" QuestId="8465" GiverName="Nafien" GiverId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Winterspring (55-56)" />
 	</QuestOrder>
 </HBProfile>

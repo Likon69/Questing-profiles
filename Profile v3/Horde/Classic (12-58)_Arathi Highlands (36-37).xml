@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Arathi Highlands (36-37)</Name>
-	<MinLevel>36</MinLevel>
-	<MaxLevel>37</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,13 +17,121 @@
 
 	<Vendors>
 		<!-- Haferet (2353) — no spawn data -->
-		<Vendor Name="Innkeeper Shaussified" Entry="2354" Type="Food" X="-530.603" Y="-390.108" Z="45.1607" />
+		<Vendor Name="Mu'uta" Entry="9555" Type="Repair" X="-933.85" Y="-3477.47" Z="51.3872" />
+		<Vendor Name="Uttnar" Entry="4954" Type="Food" X="-948.304" Y="-3537.25" Z="71.5343" />
+		<Vendor Name="Innkeeper Adegwa" Entry="9501" Type="Food" X="-912.374" Y="-3524.92" Z="72.7679" />
+		<Vendor Name="Rutherford Twing" Entry="15126" Type="Repair" X="-845.512" Y="-3507.93" Z="73.6511" />
+		<Vendor Name="Smith Slagtree" Entry="14737" Type="Repair" X="-589.954" Y="-4548.46" Z="9.1615" />
+		<Vendor Name="Lard" Entry="14731" Type="Food" X="-622.033" Y="-4583.4" Z="11.7704" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1164" Name="To Steal From Thieves">
+		<Objective Type="CollectItem" ItemId="5832" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Marcel Dabyrie" Id="4481" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1048.93" Y="-2815.72" Z="42.24" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5830" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kenata Dabyrie" Id="4480" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-999.39" Y="-2896.35" Z="63.72" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5831" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Fardel Dabyrie" Id="4479" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1062.09" Y="-2902.44" Z="42.15" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="676" Name="The Hammer May Fall">
+		<Objective Type="KillMob" MobId="2564" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-1238.57" Y="-2015.16" Z="44.05" />
+				<Hotspot X="-1239.17" Y="-2057.78" Z="48.41" />
+				<Hotspot X="-1236.94" Y="-2077.03" Z="51.97" />
+				<Hotspot X="-1223.81" Y="-2047.64" Z="44.83" />
+				<Hotspot X="-1194.16" Y="-2005.66" Z="31.29" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="2562" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-1241.94" Y="-2221.55" Z="56.75" />
+				<Hotspot X="-1154.67" Y="-2191.18" Z="58.32" />
+				<Hotspot X="-1179.68" Y="-2205.32" Z="56.92" />
+				<Hotspot X="-1081.85" Y="-2051.48" Z="62.26" />
+				<Hotspot X="-1124.32" Y="-2148.72" Z="54.96" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="671" Name="Foul Magics">
+		<Objective Type="CollectItem" ItemId="4495" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Syndicate Highwayman" Id="2586" />
+				<Mob Name="Syndicate Pathstalker" Id="2587" />
+				<Mob Name="Syndicate Mercenary" Id="2589" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-882.85" Y="-2098.83" Z="40.51" />
+				<Hotspot X="-838.79" Y="-2099.98" Z="36.61" />
+				<Hotspot X="-780.32" Y="-2095.56" Z="35.52" />
+				<Hotspot X="-907.57" Y="-2071.16" Z="44.34" />
+				<Hotspot X="-835" Y="-2072.18" Z="34.6" />
+				<Hotspot X="-883.2" Y="-2032.79" Z="34.47" />
+				<Hotspot X="-768.47" Y="-2025.44" Z="34.38" />
+				<Hotspot X="-924.87" Y="-2010.71" Z="52.17" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="701" Name="Guile of the Raptor">
+		<Objective Type="CollectItem" ItemId="4513" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Highland Fleshstalker" Id="2561" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1684.6" Y="-2811.87" Z="39.64" />
+				<Hotspot X="-1752.37" Y="-2850.71" Z="44.97" />
+				<Hotspot X="-1683.36" Y="-2749.53" Z="47.24" />
+				<Hotspot X="-1772.27" Y="-2789.73" Z="50.73" />
+				<Hotspot X="-1674.77" Y="-2679.2" Z="42.71" />
+				<Hotspot X="-1768.61" Y="-2748.84" Z="48.81" />
+				<Hotspot X="-1768.37" Y="-2692.86" Z="45.17" />
+				<Hotspot X="-1807.82" Y="-2660.57" Z="53.22" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="642" Name="The Princess Trapped">
+		<Objective Type="CollectItem" ItemId="4435" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Drywhisker Kobold" Id="2572" />
+				<Mob Name="Drywhisker Surveyor" Id="2573" />
+				<Mob Name="Drywhisker Digger" Id="2574" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-872.77" Y="-3911.45" Z="138.67" />
+				<Hotspot X="-914.46" Y="-3863.48" Z="142.42" />
+				<Hotspot X="-863.82" Y="-3960.32" Z="146.29" />
+				<Hotspot X="-827.22" Y="-3899.4" Z="144.72" />
+				<Hotspot X="-910.78" Y="-3957.71" Z="146.28" />
+				<Hotspot X="-947.26" Y="-3883.63" Z="152.74" />
+				<Hotspot X="-957.17" Y="-3927.99" Z="145.28" />
+				<Hotspot X="-892.54" Y="-3999.57" Z="145.28" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="651" Name="Stones of Binding">
 		<Objective Type="CollectItem" ItemId="4484" CollectCount="1">
 			<CollectFrom>
@@ -53,58 +158,55 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="676" Name="The Hammer May Fall">
-		<Objective Type="KillMob" MobId="2564" KillCount="10">
-			<Hotspots>
-				<Hotspot X="-1238.57" Y="-2015.16" Z="44.0483" />
-				<Hotspot X="-1239.17" Y="-2057.78" Z="48.4124" />
-				<Hotspot X="-1236.94" Y="-2077.03" Z="51.9654" />
-				<Hotspot X="-1223.81" Y="-2047.64" Z="44.8272" />
-				<Hotspot X="-1194.16" Y="-2005.66" Z="31.2917" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="2562" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-1241.94" Y="-2221.55" Z="56.7471" />
-				<Hotspot X="-1154.67" Y="-2191.18" Z="58.3234" />
-				<Hotspot X="-1179.68" Y="-2205.32" Z="56.9194" />
-				<Hotspot X="-1081.85" Y="-2051.48" Z="62.2639" />
-				<Hotspot X="-1124.32" Y="-2148.72" Z="54.9609" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Arathi Highlands (36-37) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1164))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="To Steal From Thieves" QuestId="1164" GiverName="Genavie Callow" GiverId="4486" />
-		<Objective QuestName="Helcular's Revenge" QuestId="553" Type="CollectItem" ItemId="3710" CollectCount="1" />
-		<PickUp QuestName="The Hammer May Fall" QuestId="676" GiverName="Tallow" GiverId="2770" />
-		<TurnIn QuestName="Trollbane" QuestId="638" TurnInName="Zengu" TurnInId="2703" />
-		<PickUp QuestName="Foul Magics" QuestId="671" GiverName="Tor'gan" GiverId="2706" />
-		<PickUp QuestName="Guile of the Raptor" QuestId="701" GiverName="Tor'gan" GiverId="2706" />
-		<PickUp QuestName="The Princess Trapped" QuestId="642" GiverName="Tor'gan" GiverId="2706" />
+		<PickUp QuestName="To Steal From Thieves" QuestId="1164" GiverName="Genavie Callow" GiverId="4486" X="1561.39" Y="260.797" Z="-43.0193" />
+		<Objective QuestName="To Steal From Thieves" QuestId="1164" Type="CollectItem" ItemId="5831" CollectCount="1" />
+		<PickUp QuestName="The Hammer May Fall" QuestId="676" GiverName="Tallow" GiverId="2770" X="-17.59" Y="-913.064" Z="55.9463" />
+		<TurnIn QuestName="Trollbane" QuestId="638" TurnInName="Zengu" TurnInId="2703" X="-948.284" Y="-3523.49" Z="71.0174" />
+		<PickUp QuestName="Foul Magics" QuestId="671" GiverName="Tor'gan" GiverId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
+		<PickUp QuestName="Guile of the Raptor" QuestId="701" GiverName="Tor'gan" GiverId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
+		<PickUp QuestName="The Princess Trapped" QuestId="642" GiverName="Shards of Myzrael" GiverId="138492" GiverType="Object" X="-942.842" Y="-3116.75" Z="48.4206" />
 		<Objective QuestName="The Princess Trapped" QuestId="642" Type="CollectItem" ItemId="4435" CollectCount="12" />
-		<TurnIn QuestName="The Princess Trapped" QuestId="642" TurnInName="Object_2701" TurnInType="Object" TurnInId="2701" />
-		<PickUp QuestName="Stones of Binding" QuestId="651" GiverName="Tor'gan" GiverId="2706" />
+		<TurnIn QuestName="The Princess Trapped" QuestId="642" TurnInName="Iridescent Shards" TurnInType="Object" TurnInId="2701" X="-876.186" Y="-3901.82" Z="143.1" />
+		<PickUp QuestName="Stones of Binding" QuestId="651" GiverName="Iridescent Shards" GiverId="2701" GiverType="Object" X="-876.186" Y="-3901.82" Z="143.1" />
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4484" CollectCount="1" />
 		<Objective QuestName="To Steal From Thieves" QuestId="1164" Type="CollectItem" ItemId="5830" CollectCount="1" />
 		<Objective QuestName="To Steal From Thieves" QuestId="1164" Type="CollectItem" ItemId="5832" CollectCount="1" />
-		<Objective QuestName="To Steal From Thieves" QuestId="1164" Type="CollectItem" ItemId="58312" CollectCount="1" />
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4485" CollectCount="1" />
 		<Objective QuestName="Guile of the Raptor" QuestId="701" Type="CollectItem" ItemId="4513" CollectCount="12" />
 		<Objective QuestName="The Hammer May Fall" QuestId="676" Type="KillMob" MobId="2564" KillCount="10" />
 		<Objective QuestName="The Hammer May Fall" QuestId="676" Type="KillMob" MobId="2562" KillCount="8" />
 		<Objective QuestName="Foul Magics" QuestId="671" Type="CollectItem" ItemId="4495" CollectCount="10" />
 		<Objective QuestName="Stones of Binding" QuestId="651" Type="CollectItem" ItemId="4483" CollectCount="1" />
-		<TurnIn QuestName="Stones of Binding" QuestId="651" TurnInName="Object_2702" TurnInType="Object" TurnInId="2702" />
-		<TurnIn QuestName="The Hammer May Fall" QuestId="676" TurnInName="Drum Fel" TurnInId="2771" />
-		<TurnIn QuestName="Foul Magics" QuestId="671" TurnInName="Tor'gan" TurnInId="2706" />
-		<TurnIn QuestName="Guile of the Raptor" QuestId="701" TurnInName="Tor'gan" TurnInId="2706" />
-		<PickUp QuestName="Guile of the Raptor" QuestId="702" GiverName="Tor'gan" GiverId="2706" />
-		<TurnIn QuestName="Guile of the Raptor" QuestId="702" TurnInName="Gor'mul" TurnInId="2792" />
-		<PickUp QuestName="Guile of the Raptor" QuestId="847" GiverName="Gor'mul" GiverId="2792" />
-		<TurnIn QuestName="Guile of the Raptor" QuestId="847" TurnInName="Tor'gan" TurnInId="2706" />
+		<TurnIn QuestName="Stones of Binding" QuestId="651" TurnInName="Stone of Inner Binding" TurnInType="Object" TurnInId="2702" X="-1510.34" Y="-2170.79" Z="17.263" />
+		<TurnIn QuestName="The Hammer May Fall" QuestId="676" TurnInName="Drum Fel" TurnInId="2771" X="-947.488" Y="-3539.4" Z="71.0106" />
+		<TurnIn QuestName="Foul Magics" QuestId="671" TurnInName="Tor'gan" TurnInId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
+		<TurnIn QuestName="Guile of the Raptor" QuestId="701" TurnInName="Tor'gan" TurnInId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
+		<PickUp QuestName="Guile of the Raptor" QuestId="702" GiverName="Tor'gan" GiverId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
+		<TurnIn QuestName="Guile of the Raptor" QuestId="702" TurnInName="Gor'mul" TurnInId="2792" X="-947.559" Y="-3481.63" Z="51.4059" />
+		<PickUp QuestName="Guile of the Raptor" QuestId="847" GiverName="Gor'mul" GiverId="2792" X="-947.559" Y="-3481.63" Z="51.4059" />
+		<TurnIn QuestName="Guile of the Raptor" QuestId="847" TurnInName="Tor'gan" TurnInId="2706" X="-1004.31" Y="-3556.5" Z="57.2718" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Alterac Mountains (37-38)" />
 	</QuestOrder>
 </HBProfile>

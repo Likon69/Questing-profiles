@@ -1,40 +1,106 @@
 <HBProfile>
 	<Name>The Burning Crusade (58-70)\Blade's Edge Mountains Group Quests</Name>
-	<MinLevel>58</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Fizit &quot;Doc&quot; Clocktock" Entry="21110" Type="Food" X="1944.85" Y="5537.87" Z="266.734" />
+		<Vendor Name="Bossi Pentapiston" Entry="21112" Type="Repair" X="1910.42" Y="5548.36" Z="264.016" />
+		<Vendor Name="Cahill" Entry="19499" Type="Repair" X="2100.73" Y="6797.84" Z="175.696" />
+		<Vendor Name="Innkeeper Shaunessy" Entry="19495" Type="Food" X="2098.18" Y="6903.92" Z="183.313" />
+		<Vendor Name="Innkeeper Kerp" Entry="18908" Type="Food" X="1056.38" Y="7370.99" Z="39.6667" />
+		<Vendor Name="Maktu" Entry="18010" Type="Repair" X="1020.84" Y="7383.45" Z="36.3243" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="10795" Name="A Date with Dorgok">
 		<Objective Type="KillMob" MobId="20753" KillCount="1">
 			<Hotspots>
-				<Hotspot X="3538.87" Y="5854.35" Z="25.9781" />
+				<Hotspot X="3538.87" Y="5854.35" Z="25.98" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10799" Name="Into the Churning Gulch">
+		<Objective Type="CollectItem" ItemId="31132" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Greater Crust Burster" Id="21380" />
+				<Mob Name="Young Crust Burster" Id="21381" />
+				<Mob Name="Bone Crawler" Id="21849" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2994.74" Y="6091.69" Z="6.94" />
+				<Hotspot X="3040.49" Y="6076.51" Z="1.24" />
+				<Hotspot X="2951.39" Y="6159.31" Z="8.83" />
+				<Hotspot X="2882.88" Y="6182.55" Z="8.84" />
+				<Hotspot X="2803.89" Y="6185.83" Z="2.41" />
+				<Hotspot X="2834.31" Y="6238.33" Z="9.05" />
+				<Hotspot X="2787.67" Y="6216.42" Z="2.97" />
+				<Hotspot X="2850.61" Y="6281.23" Z="12.23" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10800" Name="Goodnight, Gronn">
+		<Objective Type="CollectItem" ItemId="31349" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Grulloc's Sack" Id="185152" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2680.37" Y="5542.47" Z="-2.88" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10805" Name="Massacre at Gruul's Lair">
 		<Objective Type="KillMob" MobId="20757" KillCount="1">
 			<Hotspots>
-				<Hotspot X="3679.63" Y="5229.52" Z="7.796" />
+				<Hotspot X="3679.63" Y="5229.52" Z="7.8" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="19997" KillCount="10">
+			<Hotspots>
+				<Hotspot X="3580.2" Y="5675.34" Z="-10.21" />
+				<Hotspot X="3672.7" Y="5587.97" Z="-14.4" />
+				<Hotspot X="3590.87" Y="5433.42" Z="23.94" />
+				<Hotspot X="3488.9" Y="5308.77" Z="-13.18" />
+				<Hotspot X="3436.29" Y="5252.95" Z="-3.77" />
+				<Hotspot X="3541.05" Y="5327.61" Z="-12.13" />
+				<Hotspot X="3402.78" Y="5213.97" Z="1.83" />
+				<Hotspot X="3673.14" Y="5488.47" Z="-19.71" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="19996" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3490.79" Y="5320.75" Z="-12.51" />
+				<Hotspot X="3556.29" Y="5362.61" Z="-9.55" />
+				<Hotspot X="3394.43" Y="5221.59" Z="1.76" />
+				<Hotspot X="3522.97" Y="5277.68" Z="-22.72" />
+				<Hotspot X="3727.89" Y="5317.51" Z="-7.44" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="20729" KillCount="5">
+			<Hotspots>
+				<Hotspot X="3580.05" Y="5670.02" Z="-10.09" />
+				<Hotspot X="3677.25" Y="5601.56" Z="-9.31" />
+				<Hotspot X="3663.11" Y="5482.19" Z="-20.47" />
+				<Hotspot X="3595.38" Y="5357.47" Z="-14.17" />
+				<Hotspot X="3661.66" Y="5425.05" Z="-20.25" />
+				<Hotspot X="3534.25" Y="5283.52" Z="-21.94" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -42,32 +108,93 @@
 		<Objective Type="KillMob" MobId="19961" KillCount="4">
 			<Hotspots>
 				<Hotspot X="2962.18" Y="4867.59" Z="277.53" />
-				<Hotspot X="2924.09" Y="4845.89" Z="279.071" />
-				<Hotspot X="2892.13" Y="4779.99" Z="277.635" />
-				<Hotspot X="2929.56" Y="4773.5" Z="283.636" />
-				<Hotspot X="2973.15" Y="4762.98" Z="285.438" />
+				<Hotspot X="2924.09" Y="4845.89" Z="279.07" />
+				<Hotspot X="2892.13" Y="4779.99" Z="277.63" />
+				<Hotspot X="2929.56" Y="4773.5" Z="283.64" />
+				<Hotspot X="2973.15" Y="4762.98" Z="285.44" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="19960" KillCount="4">
 			<Hotspots>
-				<Hotspot X="2961.35" Y="4827.73" Z="277.629" />
-				<Hotspot X="2963.09" Y="4793.36" Z="282.714" />
-				<Hotspot X="2937.23" Y="4783.72" Z="282.839" />
-				<Hotspot X="2880.71" Y="4836.11" Z="278.049" />
-				<Hotspot X="2944.35" Y="4764.96" Z="283.689" />
+				<Hotspot X="2961.35" Y="4827.73" Z="277.63" />
+				<Hotspot X="2963.09" Y="4793.36" Z="282.71" />
+				<Hotspot X="2937.23" Y="4783.72" Z="282.84" />
+				<Hotspot X="2880.71" Y="4836.11" Z="278.05" />
+				<Hotspot X="2944.35" Y="4764.96" Z="283.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10516" Name="The Trappings of a Vindicator">
+		<Objective Type="CollectItem" ItemId="30413" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Droggam" Id="20731" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2514.04" Y="6766.01" Z="5.3" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="30415" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mugdorg" Id="20726" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2249.62" Y="6531.69" Z="3.38" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10517" Name="Gorr'Dim, Your Time Has Come...">
 		<Objective Type="KillMob" MobId="20732" KillCount="1">
 			<Hotspots>
-				<Hotspot X="2648.19" Y="6733.19" Z="22.3566" />
+				<Hotspot X="2648.19" Y="6733.19" Z="22.36" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10518" Name="Planting the Banner">
+		<Objective Type="CollectItem" ItemId="30416" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bladespire Champion" Id="21296" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2315.73" Y="6739.75" Z="40.29" />
+				<Hotspot X="2295.76" Y="6660.93" Z="17.84" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to The Burning Crusade (58-70)_Blade's Edge Mountains Group Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(10797))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6550.8" Y="924.9" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="6550.8" WaitAtY="924.9" WaitAtZ="6.2" TransportStartX="6550.4" TransportStartY="938.2" TransportStartZ="0" TransportEndX="-4265" TransportEndY="-11317.2" TransportEndZ="0" GetOffX="-4260.246" GetOffY="-11331.36" GetOffZ="5.4902" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-9007.58" Y="871.87" Z="129.69" />
+				<CustomBehavior File="GoThruPortal" X="-9007.58" Y="871.87" Z="129.69" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
 		<If Condition="Me.Level &lt; 65">
 			<SetGrindArea>
@@ -81,63 +208,108 @@
 			</SetGrindArea>
 			<GrindTo Level="65" />
 		</If>
+
 		<Objective QuestName="A Date with Dorgok" QuestId="10795" Type="KillMob" MobId="20753" KillCount="1" />
-		<Objective QuestName="Favor of the Gronn" QuestId="10797" Type="CollectItem" ItemId="31363" CollectCount="1" />
-		<PickUp QuestName="Favor of the Gronn" QuestId="10797" />
-		<TurnIn QuestName="Favor of the Gronn" QuestId="10797" TurnInName="Commander Haephus Stonewall" TurnInId="22149" />
-		<PickUp QuestName="Pay the Baron a Visit" QuestId="10798" GiverName="Commander Haephus Stonewall" GiverId="22149" />
-		<TurnIn QuestName="Pay the Baron a Visit" QuestId="10798" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Into the Churning Gulch" QuestId="10799" GiverName="Baron Sablemane" GiverId="22103" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31363)">
+			<CustomBehavior File="CollectThings" CollectItemId="31363" CollectItemCount="1" HuntingGroundRadius="120" MobId="20753" X="3538.87" Y="5854.35" Z="25.9781">
+				<Hotspot X="3538.87" Y="5854.35" Z="25.98" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31363)">
+			<PickUp QuestName="Favor of the Gronn" QuestId="10797" GiverId="31363" GiverName="Gorgrom's Favor" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Favor of the Gronn" QuestId="10797" TurnInName="Commander Haephus Stonewall" TurnInId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		<PickUp QuestName="Pay the Baron a Visit" QuestId="10798" GiverName="Commander Haephus Stonewall" GiverId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		<TurnIn QuestName="Pay the Baron a Visit" QuestId="10798" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Into the Churning Gulch" QuestId="10799" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
 		<Objective QuestName="Into the Churning Gulch" QuestId="10799" Type="CollectItem" ItemId="31132" CollectCount="7" />
-		<TurnIn QuestName="Into the Churning Gulch" QuestId="10799" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Goodnight, Gronn" QuestId="10800" GiverName="Baron Sablemane" GiverId="22103" />
+		<TurnIn QuestName="Into the Churning Gulch" QuestId="10799" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Goodnight, Gronn" QuestId="10800" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
 		<Objective QuestName="Goodnight, Gronn" QuestId="10800" Type="CollectItem" ItemId="31349" CollectCount="1" />
-		<TurnIn QuestName="Goodnight, Gronn" QuestId="10800" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="It's a Trap!" QuestId="10801" GiverName="Baron Sablemane" GiverId="22103" />
-		<TurnIn QuestName="It's a Trap!" QuestId="10801" TurnInName="Commander Haephus Stonewall" TurnInId="22149" />
-		<PickUp QuestName="Gorgrom the Dragon-Eater" QuestId="10802" GiverName="Commander Haephus Stonewall" GiverId="22149" />
-		<While Condition="((HasQuest(10802)) &amp;&amp; (!IsQuestCompleted(10802)))" >
+		<TurnIn QuestName="Goodnight, Gronn" QuestId="10800" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="It's a Trap!" QuestId="10801" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<TurnIn QuestName="It's a Trap!" QuestId="10801" TurnInName="Commander Haephus Stonewall" TurnInId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		<PickUp QuestName="Gorgrom the Dragon-Eater" QuestId="10802" GiverName="Commander Haephus Stonewall" GiverId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		<While Condition="((HasQuest(10802)) &amp;&amp; (!IsQuestCompleted(10802)))">
 			<CustomBehavior File="UseItemOn" QuestId="10802" MobId="22434" ItemId="31754" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10802" TurnInName="Commander Haephus Stonewall" TurnInId="22149" />
-		<PickUp QuestName="Baron Sablemane Has Requested Your Presence" QuestId="10818" GiverName="Commander Haephus Stonewall" GiverId="22149" />
-		<TurnIn QuestName="Baron Sablemane Has Requested Your Presence" QuestId="10818" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Massacre at Gruul's Lair" QuestId="10805" GiverName="Baron Sablemane" GiverId="22103" />
+
+		<!-- REVIEW Q10802 Gorgrom the Dragon-Eater: UseItemOn target 22434 [DND]Ogre Pike Planted Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10802)) &amp;&amp; (IsQuestCompleted(10802)))">
+			<TurnIn QuestName="Gorgrom the Dragon-Eater" QuestId="10802" TurnInName="Commander Haephus Stonewall" TurnInId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		</If>
+
+		<If Condition="((HasQuest(10802)) &amp;&amp; (!IsQuestCompleted(10802)))">
+			<AbandonQuest QuestId="10802" />
+		</If>
+
+		<PickUp QuestName="Baron Sablemane Has Requested Your Presence" QuestId="10818" GiverName="Commander Haephus Stonewall" GiverId="22149" X="3034.59" Y="5483.08" Z="147.203" />
+		<TurnIn QuestName="Baron Sablemane Has Requested Your Presence" QuestId="10818" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Massacre at Gruul's Lair" QuestId="10805" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
 		<Objective QuestName="Massacre at Gruul's Lair" QuestId="10805" Type="KillMob" MobId="20757" KillCount="1" />
-		<TurnIn QuestName="Massacre at Gruul's Lair" QuestId="10805" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<PickUp QuestName="Showdown" QuestId="10806" GiverName="Baron Sablemane" GiverId="22103" />
-		<While Condition="((HasQuest(10806)) &amp;&amp; (!IsQuestCompleted(10806)))" >
+		<Objective QuestName="Massacre at Gruul's Lair" QuestId="10805" Type="KillMob" MobId="19997" KillCount="10" />
+		<Objective QuestName="Massacre at Gruul's Lair" QuestId="10805" Type="KillMob" MobId="19996" KillCount="5" />
+		<Objective QuestName="Massacre at Gruul's Lair" QuestId="10805" Type="KillMob" MobId="20729" KillCount="5" />
+		<TurnIn QuestName="Massacre at Gruul's Lair" QuestId="10805" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<PickUp QuestName="Showdown" QuestId="10806" GiverName="Baron Sablemane" GiverId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		<While Condition="((HasQuest(10806)) &amp;&amp; (!IsQuestCompleted(10806)))">
 			<CustomBehavior File="UseItemOn" QuestId="10806" MobId="20555" ItemId="31808" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Showdown" QuestId="10806" TurnInName="Baron Sablemane" TurnInId="22103" />
-		<Objective QuestName="Showdown" QuestId="10806" Type="CollectItem" ItemId="31384" CollectCount="1" />
-		<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Baron Sablemane" GiverId="22103" />
-		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" />
-		<PickUp QuestName="Mystery Mask" QuestId="10812" GiverName="O'Mally Zapnabber" GiverId="22020" />
-		<TurnIn QuestName="Mystery Mask" QuestId="10812" TurnInName="Wildlord Antelarion" TurnInId="22127" />
-		<PickUp QuestName="Felsworn Gas Mask" QuestId="10819" GiverName="Wildlord Antelarion" GiverId="22127" />
-		<Objective QuestName="Felsworn Gas Mask" QuestId="10819" Type="CollectItem" ItemId="31366" CollectCount="1" />
+
+		<!-- REVIEW Q10806 Showdown: UseItemOn target 20555 Goc has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10806)) &amp;&amp; (IsQuestCompleted(10806)))">
+			<TurnIn QuestName="Showdown" QuestId="10806" TurnInName="Baron Sablemane" TurnInId="22103" X="2919.11" Y="5956.93" Z="3.1615" />
+		</If>
+
+		<If Condition="((HasQuest(10806)) &amp;&amp; (!IsQuestCompleted(10806)))">
+			<AbandonQuest QuestId="10806" />
+		</If>
+
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+			<CustomBehavior File="CollectThings" CollectItemId="31384" CollectItemCount="1" HuntingGroundRadius="120" MobId="21300" X="3113.37" Y="5087.61" Z="267.159">
+				<Hotspot X="3113.37" Y="5087.61" Z="267.16" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Damaged Mask" QuestId="10810" TurnInName="O'Mally Zapnabber" TurnInId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		<PickUp QuestName="Mystery Mask" QuestId="10812" GiverName="O'Mally Zapnabber" GiverId="22020" X="2948.06" Y="5446.82" Z="147.584" />
+		<TurnIn QuestName="Mystery Mask" QuestId="10812" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		<PickUp QuestName="Felsworn Gas Mask" QuestId="10819" GiverName="Wildlord Antelarion" GiverId="22127" X="2959.73" Y="5465.37" Z="144.332" />
 		<!-- Quest 10819 (Felsworn Gas Mask) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Deceive thy Enemy" QuestId="10820" GiverName="Wildlord Antelarion" GiverId="22127" />
+		<PickUp QuestName="Deceive thy Enemy" QuestId="10820" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19961" KillCount="4" />
 		<Objective QuestName="Deceive thy Enemy" QuestId="10820" Type="KillMob" MobId="19960" KillCount="4" />
 		<!-- Quest 10820 (Deceive thy Enemy) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="You're Fired!" QuestId="10821" GiverName="Wildlord Antelarion" GiverId="22127" />
-		<Objective QuestName="You're Fired!" QuestId="10821" Type="CollectItem" ItemId="31536" CollectCount="5" />
-		<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" />
-		<PickUp QuestName="The Trappings of a Vindicator" QuestId="10516" GiverName="Vindicator Vuuleen" GiverId="21277" />
+		<PickUp QuestName="You're Fired!" QuestId="10821" GiverName="Legion Communicator" GiverId="185165" GiverType="Object" X="2960.45" Y="4870.89" Z="278.011" />
+		<!-- REVIEW Q10821 You're Fired!: kill/event 19963 Doomcryer x1 (neutral, spawns=0) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(10821)) &amp;&amp; (IsQuestCompleted(10821)))">
+			<TurnIn QuestName="You're Fired!" QuestId="10821" TurnInName="Wildlord Antelarion" TurnInId="22127" X="2959.73" Y="5465.37" Z="144.332" />
+		</If>
+
+		<If Condition="((HasQuest(10821)) &amp;&amp; (!IsQuestCompleted(10821)))">
+			<AbandonQuest QuestId="10821" />
+		</If>
+
+		<PickUp QuestName="The Trappings of a Vindicator" QuestId="10516" GiverName="Vindicator Vuuleen" GiverId="21277" X="2533.75" Y="6458.37" Z="-3.0456" />
 		<Objective QuestName="The Trappings of a Vindicator" QuestId="10516" Type="CollectItem" ItemId="30413" CollectCount="1" />
 		<Objective QuestName="The Trappings of a Vindicator" QuestId="10516" Type="CollectItem" ItemId="30415" CollectCount="1" />
-		<TurnIn QuestName="The Trappings of a Vindicator" QuestId="10516" TurnInName="Vindicator Vuuleen" TurnInId="21277" />
-		<PickUp QuestName="Gorr'Dim, Your Time Has Come..." QuestId="10517" GiverName="Vindicator Vuuleen" GiverId="21277" />
-		<While Condition="((HasQuest(10517)) &amp;&amp; (!IsQuestCompleted(10517)))" >
+		<TurnIn QuestName="The Trappings of a Vindicator" QuestId="10516" TurnInName="Vindicator Vuuleen" TurnInId="21277" X="2533.75" Y="6458.37" Z="-3.0456" />
+		<PickUp QuestName="Gorr'Dim, Your Time Has Come..." QuestId="10517" GiverName="Vindicator Vuuleen" GiverId="21277" X="2533.75" Y="6458.37" Z="-3.0456" />
+		<While Condition="((HasQuest(10517)) &amp;&amp; (!IsQuestCompleted(10517)))">
 			<CustomBehavior File="UseItemOn" QuestId="10517" MobId="20732" ItemId="29443" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2648.19" Y="6733.19" Z="22.3566" />
 		</While>
+
 		<Objective QuestName="Gorr'Dim, Your Time Has Come..." QuestId="10517" Type="KillMob" MobId="20732" KillCount="1" />
-		<TurnIn QuestName="Gorr'Dim, Your Time Has Come..." QuestId="10517" TurnInName="Vindicator Vuuleen" TurnInId="21277" />
-		<PickUp QuestName="Planting the Banner" QuestId="10518" GiverName="Vindicator Vuuleen" GiverId="21277" />
+		<TurnIn QuestName="Gorr'Dim, Your Time Has Come..." QuestId="10517" TurnInName="Vindicator Vuuleen" TurnInId="21277" X="2533.75" Y="6458.37" Z="-3.0456" />
+		<PickUp QuestName="Planting the Banner" QuestId="10518" GiverName="Vindicator Vuuleen" GiverId="21277" X="2533.75" Y="6458.37" Z="-3.0456" />
 		<Objective QuestName="Planting the Banner" QuestId="10518" Type="CollectItem" ItemId="30416" CollectCount="1" />
 		<Objective QuestName="Planting the Banner" QuestId="10518" Type="CollectItem" ItemId="30417" CollectCount="1" />
-		<TurnIn QuestName="Planting the Banner" QuestId="10518" TurnInName="Commander Skyshadow" TurnInId="21158" />
+		<TurnIn QuestName="Planting the Banner" QuestId="10518" TurnInName="Commander Skyshadow" TurnInId="21158" X="2014.72" Y="6881.02" Z="179.016" />
 	</QuestOrder>
 </HBProfile>

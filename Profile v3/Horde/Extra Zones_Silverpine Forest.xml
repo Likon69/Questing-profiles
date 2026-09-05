@@ -1,37 +1,89 @@
 <HBProfile>
 	<Name>Extra Zones\Silverpine Forest</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>21</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Nadia Vernon" Entry="9553" Type="Repair" X="566.309" Y="1559.6" Z="132.602" />
+		<Vendor Name="Andrea Boynton" Entry="3554" Type="Repair" X="567.864" Y="1568.51" Z="132.864" />
+		<Vendor Name="Alexandre Lefevre" Entry="3552" Type="Repair" X="571.536" Y="1576.59" Z="132.863" />
+		<Vendor Name="Gwyn Farrow" Entry="5886" Type="Food" X="553.08" Y="1600.14" Z="129.208" />
+		<Vendor Name="Innkeeper Bates" Entry="6739" Type="Food" X="510.916" Y="1636.47" Z="126.027" />
+		<Vendor Name="Tawny Grisette" Entry="4554" Type="Food" X="1622.25" Y="263.732" Z="-43.1027" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="421" Name="Prove Your Worth">
 		<Objective Type="KillMob" MobId="1769" KillCount="5">
 			<Hotspots>
-				<Hotspot X="919.399" Y="1223.84" Z="46.7811" />
-				<Hotspot X="955.64" Y="1103.1" Z="47.4907" />
-				<Hotspot X="1019.47" Y="1122.84" Z="44.531" />
-				<Hotspot X="1083.38" Y="1150.22" Z="44.5913" />
-				<Hotspot X="1035.9" Y="1197.68" Z="48.9457" />
+				<Hotspot X="919.4" Y="1223.84" Z="46.78" />
+				<Hotspot X="955.64" Y="1103.1" Z="47.49" />
+				<Hotspot X="1019.47" Y="1122.84" Z="44.53" />
+				<Hotspot X="1083.38" Y="1150.22" Z="44.59" />
+				<Hotspot X="1035.9" Y="1197.68" Z="48.95" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="447" Name="A Recipe For Death">
+		<Objective Type="CollectItem" ItemId="3253" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Ferocious Grizzled Bear" Id="1778" />
+				<Mob Name="Giant Grizzled Bear" Id="1797" />
+				<Mob Name="Old Vicejaw" Id="12432" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1118.02" Y="1259.46" Z="41.35" />
+				<Hotspot X="1200.33" Y="1293.98" Z="39.56" />
+				<Hotspot X="1248.44" Y="1306.71" Z="45.5" />
+				<Hotspot X="1147.32" Y="1315.74" Z="34.14" />
+				<Hotspot X="1063.05" Y="1269.72" Z="43.74" />
+				<Hotspot X="1268.41" Y="1389.86" Z="49" />
+				<Hotspot X="1108.68" Y="1351.27" Z="38.05" />
+				<Hotspot X="1179.34" Y="1376.32" Z="34.08" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3254" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Moss Stalker" Id="1780" />
+				<Mob Name="Mist Creeper" Id="1781" />
+				<Mob Name="Krethis Shadowspinner" Id="12433" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1221.11" Y="1887.73" Z="11.52" />
+				<Hotspot X="1255.37" Y="1934.46" Z="13.8" />
+				<Hotspot X="1423.42" Y="1953.55" Z="12.42" />
+				<Hotspot X="1284.64" Y="1950.84" Z="16.77" />
+				<Hotspot X="1370.38" Y="1970.58" Z="14.89" />
+				<Hotspot X="1215.61" Y="1965.05" Z="10.44" />
+				<Hotspot X="1313.52" Y="1978.66" Z="14.53" />
+				<Hotspot X="1260.01" Y="1977.84" Z="16.45" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="437" Name="The Dead Fields">
+		<Objective Type="CollectItem" ItemId="3622" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Nightlash" Id="1983" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1073.84" Y="1543.37" Z="28.68" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -45,124 +97,276 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="423" Name="Arugal's Folly">
+		<Objective Type="CollectItem" ItemId="3156" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Moonrage Glutton" Id="1779" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="765.65" Y="1634.23" Z="34" />
+				<Hotspot X="776.18" Y="1584.25" Z="30.19" />
+				<Hotspot X="789.69" Y="1622.89" Z="29.38" />
+				<Hotspot X="828.29" Y="1728.62" Z="20.9" />
+				<Hotspot X="864.35" Y="1620.85" Z="29.54" />
+				<Hotspot X="843.53" Y="1679.71" Z="23.23" />
+				<Hotspot X="885.2" Y="1493.33" Z="38.15" />
+				<Hotspot X="863.59" Y="1732.32" Z="15.55" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3157" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Moonrage Darksoul" Id="1782" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="783.2" Y="1627.99" Z="31.37" />
+				<Hotspot X="849.93" Y="1537.99" Z="36.07" />
+				<Hotspot X="818.3" Y="1783" Z="14.68" />
+				<Hotspot X="912.6" Y="1762.26" Z="15.82" />
+				<Hotspot X="907.14" Y="1840.68" Z="5.76" />
+				<Hotspot X="965.65" Y="1830.61" Z="8.68" />
+				<Hotspot X="980.31" Y="1870.71" Z="10.49" />
+				<Hotspot X="306.22" Y="1096.62" Z="93.55" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="425" Name="Ivar the Foul">
+		<Objective Type="CollectItem" ItemId="3621" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Ivar the Foul" Id="1971" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1277.38" Y="1286.28" Z="52.99" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="424" Name="Arugal's Folly">
+		<Objective Type="CollectItem" ItemId="3634" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grimson the Pale" Id="1972" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="410.69" Y="989.72" Z="108.12" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="479" Name="Ambermill Investigations">
+		<Objective Type="CollectItem" ItemId="3354" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Dalaran Protector" Id="1912" />
+				<Mob Name="Dalaran Mage" Id="1914" />
+				<Mob Name="Dalaran Conjuror" Id="1915" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="143.38" Y="1146.11" Z="71.77" />
+				<Hotspot X="89.91" Y="1120.4" Z="68.75" />
+				<Hotspot X="144.4" Y="1069.46" Z="92.45" />
+				<Hotspot X="-35.27" Y="1131.38" Z="65.89" />
+				<Hotspot X="21.73" Y="1078.48" Z="72.58" />
+				<Hotspot X="-75.67" Y="1012.45" Z="65.63" />
+				<Hotspot X="-127.26" Y="1029.36" Z="67.82" />
+				<Hotspot X="-73.4" Y="953.75" Z="68.4" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="530" Name="A Husband's Revenge">
+		<Objective Type="CollectItem" ItemId="3613" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Valdred Moray" Id="2332" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-704.94" Y="1574.82" Z="17.19" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="443" Name="Rot Hide Ichor">
+		<Objective Type="CollectItem" ItemId="3236" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Rot Hide Brute" Id="1939" />
+				<Mob Name="Rot Hide Plague Weaver" Id="1940" />
+				<Mob Name="Rot Hide Savage" Id="1942" />
+				<Mob Name="Raging Rot Hide" Id="1943" />
+				<Mob Name="Rot Hide Bruiser" Id="1944" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="804" Y="697.15" Z="52.83" />
+				<Hotspot X="705.22" Y="667.25" Z="43.53" />
+				<Hotspot X="869.09" Y="685.16" Z="54.18" />
+				<Hotspot X="934.35" Y="713.12" Z="61.09" />
+				<Hotspot X="742.5" Y="649.92" Z="46.67" />
+				<Hotspot X="814.45" Y="656.39" Z="54.88" />
+				<Hotspot X="1009.92" Y="723.09" Z="66.54" />
+				<Hotspot X="658.37" Y="611.84" Z="41.92" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="516" Name="Beren's Peril">
 		<Objective Type="KillMob" MobId="1974" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-405.515" Y="915.922" Z="118.82" />
-				<Hotspot X="-316.002" Y="1037.61" Z="117.749" />
-				<Hotspot X="-288.096" Y="1025.36" Z="115.146" />
-				<Hotspot X="-305.307" Y="1066.69" Z="117.554" />
-				<Hotspot X="-290.14" Y="1011.5" Z="113.612" />
+				<Hotspot X="-405.51" Y="915.92" Z="118.82" />
+				<Hotspot X="-316" Y="1037.61" Z="117.75" />
+				<Hotspot X="-288.1" Y="1025.36" Z="115.15" />
+				<Hotspot X="-305.31" Y="1066.69" Z="117.55" />
+				<Hotspot X="-290.14" Y="1011.5" Z="113.61" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="1973" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-321.882" Y="1051.01" Z="118.255" />
-				<Hotspot X="-336.214" Y="1031.54" Z="118.971" />
-				<Hotspot X="-317.944" Y="1039.05" Z="117.534" />
-				<Hotspot X="-288.228" Y="1024.13" Z="115.024" />
-				<Hotspot X="-290.375" Y="1044.4" Z="115.962" />
+				<Hotspot X="-321.88" Y="1051.01" Z="118.25" />
+				<Hotspot X="-336.21" Y="1031.54" Z="118.97" />
+				<Hotspot X="-317.94" Y="1039.05" Z="117.53" />
+				<Hotspot X="-288.23" Y="1024.13" Z="115.02" />
+				<Hotspot X="-290.38" Y="1044.4" Z="115.96" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="Escorting Erland" QuestId="435" GiverName="Deathstalker Erland" GiverId="1978" />
-		<TurnIn QuestName="Escorting Erland" QuestId="435" TurnInName="Rane Yorick" TurnInId="1950" />
-		<PickUp QuestName="The Deathstalkers' Report" QuestId="449" GiverName="Rane Yorick" GiverId="1950" />
-		<Objective QuestName="Wild Hearts" QuestId="429" Type="CollectItem" ItemId="3164" CollectCount="6" />
-		<PickUp QuestName="Prove Your Worth" QuestId="421" GiverName="Dalar Dawnweaver" GiverId="1938" />
-		<PickUp QuestName="Border Crossings" QuestId="477" GiverName="Shadow Priest Allister" GiverId="2121" />
-		<If Condition="(Me.Race == WoWRace.Undead)">
-			<PickUp QuestName="Supplying the Sepulcher" QuestId="6321" GiverName="Deathguard Podrig" GiverId="6389" />
-			<TurnIn QuestName="Delivery to Silverpine Forest" QuestId="445" TurnInName="Apothecary Renferrel" TurnInId="1937" />
+		<!-- Travel to Extra Zones_Silverpine Forest from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(435))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<PickUp QuestName="A Recipe For Death" QuestId="447" GiverName="Apothecary Renferrel" GiverId="1937" />
-		<TurnIn QuestName="The Deathstalkers' Report" QuestId="449" TurnInName="High Executor Hadrec" TurnInId="1952" />
-		<PickUp QuestName="Speak with Renferrel" QuestId="3221" GiverName="High Executor Hadrec" GiverId="1952" />
-		<PickUp QuestName="Lost Deathstalkers" QuestId="428" GiverName="High Executor Hadrec" GiverId="1952" />
-		<PickUp QuestName="The Dead Fields" QuestId="437" GiverName="High Executor Hadrec" GiverId="1952" />
-		<TurnIn QuestName="Speak with Renferrel" QuestId="3221" TurnInName="Apothecary Renferrel" TurnInId="1937" />
-		<PickUp QuestName="Zinge's Delivery" QuestId="1359" GiverName="Apothecary Renferrel" GiverId="1937" />
+		<PickUp QuestName="Escorting Erland" QuestId="435" GiverName="Deathstalker Erland" GiverId="1978" X="1409.68" Y="1090.26" Z="53.7694" />
+		<TurnIn QuestName="Escorting Erland" QuestId="435" TurnInName="Rane Yorick" TurnInId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
+		<PickUp QuestName="The Deathstalkers' Report" QuestId="449" GiverName="Rane Yorick" GiverId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
+		<Objective QuestName="Wild Hearts" QuestId="429" Type="CollectItem" ItemId="3164" CollectCount="6" />
+		<PickUp QuestName="Prove Your Worth" QuestId="421" GiverName="Dalar Dawnweaver" GiverId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<PickUp QuestName="Border Crossings" QuestId="477" GiverName="Shadow Priest Allister" GiverId="2121" X="520.624" Y="1602.92" Z="126.53" />
 		<If Condition="(Me.Race == WoWRace.Undead)">
-			<TurnIn QuestName="Supplying the Sepulcher" QuestId="6321" TurnInName="Karos Razok" TurnInId="2226" />
-			<PickUp QuestName="Ride to the Undercity" QuestId="6323" GiverName="Karos Razok" GiverId="2226" />
-			<TurnIn QuestName="Ride to the Undercity" QuestId="6323" TurnInName="Gordon Wendham" TurnInId="4556" />
-			<PickUp QuestName="Michael Garrett" QuestId="6322" GiverName="Gordon Wendham" GiverId="4556" />
-			<TurnIn QuestName="Michael Garrett" QuestId="6322" TurnInName="Michael Garrett" TurnInId="4551" />
-			<PickUp QuestName="Return to Podrig" QuestId="6324" GiverName="Michael Garrett" GiverId="4551" />
-			<TurnIn QuestName="Return to Podrig" QuestId="6324" TurnInName="Deathguard Podrig" TurnInId="6389" />
+			<PickUp QuestName="Supplying the Sepulcher" QuestId="6321" GiverName="Deathguard Podrig" GiverId="6389" X="499.653" Y="1626.22" Z="125.748" />
+			<TurnIn QuestName="Delivery to Silverpine Forest" QuestId="445" TurnInName="Apothecary Renferrel" TurnInId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		</If>
+
+		<PickUp QuestName="A Recipe For Death" QuestId="447" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<TurnIn QuestName="The Deathstalkers' Report" QuestId="449" TurnInName="High Executor Hadrec" TurnInId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<PickUp QuestName="Speak with Renferrel" QuestId="3221" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<PickUp QuestName="Lost Deathstalkers" QuestId="428" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<PickUp QuestName="The Dead Fields" QuestId="437" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<TurnIn QuestName="Speak with Renferrel" QuestId="3221" TurnInName="Apothecary Renferrel" TurnInId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<PickUp QuestName="Zinge's Delivery" QuestId="1359" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<If Condition="(Me.Race == WoWRace.Undead)">
+			<TurnIn QuestName="Supplying the Sepulcher" QuestId="6321" TurnInName="Karos Razok" TurnInId="2226" X="473.939" Y="1533.95" Z="131.96" />
+			<PickUp QuestName="Ride to the Undercity" QuestId="6323" GiverName="Karos Razok" GiverId="2226" X="473.939" Y="1533.95" Z="131.96" />
+			<TurnIn QuestName="Ride to the Undercity" QuestId="6323" TurnInName="Gordon Wendham" TurnInId="4556" X="1610.45" Y="283.261" Z="-43.0189" />
+			<PickUp QuestName="Michael Garrett" QuestId="6322" GiverName="Gordon Wendham" GiverId="4556" X="1610.45" Y="283.261" Z="-43.0189" />
+			<TurnIn QuestName="Michael Garrett" QuestId="6322" TurnInName="Michael Garrett" TurnInId="4551" X="1567.12" Y="266.345" Z="-43.0194" />
+			<PickUp QuestName="Return to Podrig" QuestId="6324" GiverName="Michael Garrett" GiverId="4551" X="1567.12" Y="266.345" Z="-43.0194" />
+			<TurnIn QuestName="Return to Podrig" QuestId="6324" TurnInName="Deathguard Podrig" TurnInId="6389" X="499.653" Y="1626.22" Z="125.748" />
 		</If>
 
 		<Objective QuestName="Prove Your Worth" QuestId="421" Type="KillMob" MobId="1769" KillCount="5" />
 		<Objective QuestName="A Recipe For Death" QuestId="447" Type="CollectItem" ItemId="3253" CollectCount="6" />
-		<TurnIn QuestName="Prove Your Worth" QuestId="421" TurnInName="Dalar Dawnweaver" TurnInId="1938" />
-		<PickUp QuestName="Arugal's Folly" QuestId="422" GiverName="Dalar Dawnweaver" GiverId="1938" />
+		<TurnIn QuestName="Prove Your Worth" QuestId="421" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<PickUp QuestName="Arugal's Folly" QuestId="422" GiverName="Dalar Dawnweaver" GiverId="1938" X="552.829" Y="1593.87" Z="130.219" />
 		<Objective QuestName="Arugal's Folly" QuestId="422" Type="CollectItem" ItemId="3155" CollectCount="1" />
-		<TurnIn QuestName="Lost Deathstalkers" QuestId="428" TurnInName="Rane Yorick" TurnInId="1950" />
-		<PickUp QuestName="Wild Hearts" QuestId="429" GiverName="Rane Yorick" GiverId="1950" />
+		<TurnIn QuestName="Lost Deathstalkers" QuestId="428" TurnInName="Rane Yorick" TurnInId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
+		<PickUp QuestName="Wild Hearts" QuestId="429" GiverName="Rane Yorick" GiverId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
 		<Objective QuestName="The Dead Fields" QuestId="437" Type="CollectItem" ItemId="3622" CollectCount="1" />
 		<Objective QuestName="A Recipe For Death" QuestId="447" Type="CollectItem" ItemId="3254" CollectCount="6" />
-		<TurnIn QuestName="Wild Hearts" QuestId="429" TurnInName="Apothecary Renferrel" TurnInId="1937" />
-		<PickUp QuestName="Return to Quinn" QuestId="430" GiverName="Apothecary Renferrel" GiverId="1937" />
-		<TurnIn QuestName="The Dead Fields" QuestId="437" TurnInName="High Executor Hadrec" TurnInId="1952" />
-		<PickUp QuestName="The Decrepit Ferry" QuestId="438" GiverName="High Executor Hadrec" GiverId="1952" />
-		<TurnIn QuestName="Arugal's Folly" QuestId="422" TurnInName="Dalar Dawnweaver" TurnInId="1938" />
-		<PickUp QuestName="Arugal's Folly" QuestId="423" GiverName="Dalar Dawnweaver" GiverId="1938" />
-		<TurnIn QuestName="A Recipe For Death" QuestId="447" TurnInName="Master Apothecary Faranell" TurnInId="2055" />
-		<TurnIn QuestName="Zinge's Delivery" QuestId="1359" TurnInName="Apothecary Zinge" TurnInId="5204" />
-		<PickUp QuestName="Sample for Helbrim" QuestId="1358" GiverName="Apothecary Zinge" GiverId="5204" />
-		<TurnIn QuestName="Border Crossings" QuestId="477" TurnInName="Object_1627" TurnInType="Object" TurnInId="1627" />
-		<PickUp QuestName="Maps and Runes" QuestId="478" GiverName="Apothecary Zinge" GiverId="5204" />
-		<TurnIn QuestName="The Decrepit Ferry" QuestId="438" TurnInName="Object_1593" TurnInType="Object" TurnInId="1593" />
-		<PickUp QuestName="Rot Hide Clues" QuestId="439" GiverName="Apothecary Zinge" GiverId="5204" />
-		<TurnIn QuestName="Return to Quinn" QuestId="430" TurnInName="Quinn Yorick" TurnInId="1951" />
-		<PickUp QuestName="Ivar the Foul" QuestId="425" GiverName="Rane Yorick" GiverId="1950" />
+		<TurnIn QuestName="Wild Hearts" QuestId="429" TurnInName="Apothecary Renferrel" TurnInId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<PickUp QuestName="Return to Quinn" QuestId="430" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<TurnIn QuestName="The Dead Fields" QuestId="437" TurnInName="High Executor Hadrec" TurnInId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<PickUp QuestName="The Decrepit Ferry" QuestId="438" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<TurnIn QuestName="Arugal's Folly" QuestId="422" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<PickUp QuestName="Arugal's Folly" QuestId="423" GiverName="Dalar Dawnweaver" GiverId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<TurnIn QuestName="A Recipe For Death" QuestId="447" TurnInName="Master Apothecary Faranell" TurnInId="2055" X="1434.48" Y="404.854" Z="-85.1753" />
+		<TurnIn QuestName="Zinge's Delivery" QuestId="1359" TurnInName="Apothecary Zinge" TurnInId="5204" X="1442.86" Y="392.127" Z="-84.8985" />
+		<PickUp QuestName="Sample for Helbrim" QuestId="1358" GiverName="Apothecary Zinge" GiverId="5204" X="1442.86" Y="392.127" Z="-84.8985" />
+		<TurnIn QuestName="Border Crossings" QuestId="477" TurnInName="Dalaran Crate" TurnInType="Object" TurnInId="1627" X="-22.4965" Y="1354.5" Z="59.6505" />
+		<PickUp QuestName="Maps and Runes" QuestId="478" GiverName="Dalaran Crate" GiverId="1627" GiverType="Object" X="-22.4965" Y="1354.5" Z="59.6505" />
+		<TurnIn QuestName="The Decrepit Ferry" QuestId="438" TurnInName="Corpse Laden Boat" TurnInType="Object" TurnInId="1593" X="689.519" Y="995.651" Z="33.5328" />
+		<PickUp QuestName="Rot Hide Clues" QuestId="439" GiverName="Corpse Laden Boat" GiverId="1593" GiverType="Object" X="689.519" Y="995.651" Z="33.5328" />
+		<TurnIn QuestName="Return to Quinn" QuestId="430" TurnInName="Quinn Yorick" TurnInId="1951" X="1314.01" Y="1205.91" Z="58.5953" />
+		<PickUp QuestName="Ivar the Foul" QuestId="425" GiverName="Rane Yorick" GiverId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
 		<Objective QuestName="Ivar the Foul" QuestId="425" Type="CollectItem" ItemId="3621" CollectCount="1" />
-		<TurnIn QuestName="Ivar the Foul" QuestId="425" TurnInName="Rane Yorick" TurnInId="1950" />
+		<TurnIn QuestName="Ivar the Foul" QuestId="425" TurnInName="Rane Yorick" TurnInId="1950" X="1290.69" Y="1204.7" Z="52.8049" />
 		<Objective QuestName="Arugal's Folly" QuestId="423" Type="CollectItem" ItemId="3157" CollectCount="3" />
 		<Objective QuestName="Arugal's Folly" QuestId="423" Type="CollectItem" ItemId="3156" CollectCount="6" />
-		<TurnIn QuestName="Rot Hide Clues" QuestId="439" TurnInName="High Executor Hadrec" TurnInId="1952" />
-		<PickUp QuestName="The Engraved Ring" QuestId="440" GiverName="High Executor Hadrec" GiverId="1952" />
-		<TurnIn QuestName="Maps and Runes" QuestId="478" TurnInName="Shadow Priest Allister" TurnInId="2121" />
-		<PickUp QuestName="Dalar's Analysis" QuestId="481" GiverName="Shadow Priest Allister" GiverId="2121" />
-		<TurnIn QuestName="Arugal's Folly" QuestId="423" TurnInName="Dalar Dawnweaver" TurnInId="1938" />
-		<PickUp QuestName="Arugal's Folly" QuestId="424" GiverName="Dalar Dawnweaver" GiverId="1938" />
-		<TurnIn QuestName="Dalar's Analysis" QuestId="481" TurnInName="Dalar Dawnweaver" TurnInId="1938" />
-		<PickUp QuestName="Dalaran's Intentions" QuestId="482" GiverName="Dalar Dawnweaver" GiverId="1938" />
-		<TurnIn QuestName="Dalaran's Intentions" QuestId="482" TurnInName="Shadow Priest Allister" TurnInId="2121" />
-		<PickUp QuestName="Ambermill Investigations" QuestId="479" GiverName="Shadow Priest Allister" GiverId="2121" />
+		<TurnIn QuestName="Rot Hide Clues" QuestId="439" TurnInName="High Executor Hadrec" TurnInId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<PickUp QuestName="The Engraved Ring" QuestId="440" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
+		<TurnIn QuestName="Maps and Runes" QuestId="478" TurnInName="Shadow Priest Allister" TurnInId="2121" X="520.624" Y="1602.92" Z="126.53" />
+		<PickUp QuestName="Dalar's Analysis" QuestId="481" GiverName="Shadow Priest Allister" GiverId="2121" X="520.624" Y="1602.92" Z="126.53" />
+		<TurnIn QuestName="Arugal's Folly" QuestId="423" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<PickUp QuestName="Arugal's Folly" QuestId="424" GiverName="Dalar Dawnweaver" GiverId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<TurnIn QuestName="Dalar's Analysis" QuestId="481" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<PickUp QuestName="Dalaran's Intentions" QuestId="482" GiverName="Dalar Dawnweaver" GiverId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<TurnIn QuestName="Dalaran's Intentions" QuestId="482" TurnInName="Shadow Priest Allister" TurnInId="2121" X="520.624" Y="1602.92" Z="126.53" />
+		<PickUp QuestName="Ambermill Investigations" QuestId="479" GiverName="Shadow Priest Allister" GiverId="2121" X="520.624" Y="1602.92" Z="126.53" />
 		<Objective QuestName="Arugal's Folly" QuestId="424" Type="CollectItem" ItemId="3634" CollectCount="1" />
 		<Objective QuestName="Ambermill Investigations" QuestId="479" Type="CollectItem" ItemId="3354" CollectCount="8" />
-		<TurnIn QuestName="Arugal's Folly" QuestId="424" TurnInName="Dalar Dawnweaver" TurnInId="1938" />
-		<TurnIn QuestName="Ambermill Investigations" QuestId="479" TurnInName="Shadow Priest Allister" TurnInId="2121" />
-		<TurnIn QuestName="The Engraved Ring" QuestId="440" TurnInName="Magistrate Sevren" TurnInId="1499" />
-		<PickUp QuestName="Raleigh and the Undercity" QuestId="441" GiverName="Magistrate Sevren" GiverId="1499" />
-		<PickUp QuestName="Until Death Do Us Part" QuestId="264" GiverName="Clarice Foster" GiverId="5543" />
-		<TurnIn QuestName="Raleigh and the Undercity" QuestId="441" TurnInName="Raleigh Andrean" TurnInId="2050" />
-		<PickUp QuestName="A Husband's Revenge" QuestId="530" GiverName="Raleigh Andrean" GiverId="2050" />
-		<TurnIn QuestName="Until Death Do Us Part" QuestId="264" TurnInName="Object_24776" TurnInType="Object" TurnInId="24776" />
-		<PickUp QuestName="Rot Hide Ichor" QuestId="443" GiverName="High Executor Hadrec" GiverId="1952" />
+		<TurnIn QuestName="Arugal's Folly" QuestId="424" TurnInName="Dalar Dawnweaver" TurnInId="1938" X="552.829" Y="1593.87" Z="130.219" />
+		<TurnIn QuestName="Ambermill Investigations" QuestId="479" TurnInName="Shadow Priest Allister" TurnInId="2121" X="520.624" Y="1602.92" Z="126.53" />
+		<TurnIn QuestName="The Engraved Ring" QuestId="440" TurnInName="Magistrate Sevren" TurnInId="1499" X="2305.91" Y="265.164" Z="38.7532" />
+		<PickUp QuestName="Raleigh and the Undercity" QuestId="441" GiverName="Magistrate Sevren" GiverId="1499" X="2305.91" Y="265.164" Z="38.7532" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-1936.32" Y="5445.95" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1936.32" Y="5445.95" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<PickUp QuestName="Until Death Do Us Part" QuestId="264" GiverName="Clarice Foster" GiverId="5543" X="-1033.71" Y="215.326" Z="110.769" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Raleigh and the Undercity" QuestId="441" TurnInName="Raleigh Andrean" TurnInId="2050" X="1604.32" Y="278.268" Z="-55.2596" />
+		<PickUp QuestName="A Husband's Revenge" QuestId="530" GiverName="Raleigh Andrean" GiverId="2050" X="1604.32" Y="278.268" Z="-55.2596" />
+		<TurnIn QuestName="Until Death Do Us Part" QuestId="264" TurnInName="Yuriv's Tombstone" TurnInType="Object" TurnInId="24776" X="471.821" Y="1594.13" Z="126.601" />
+		<PickUp QuestName="Rot Hide Ichor" QuestId="443" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
 		<Objective QuestName="A Husband's Revenge" QuestId="530" Type="CollectItem" ItemId="3613" CollectCount="1" />
-		<Objective QuestName="Resting in Pieces" QuestId="460" Type="CollectItem" ItemId="3317" CollectCount="1" />
-		<PickUp QuestName="Resting in Pieces" QuestId="460" GiverName="High Executor Hadrec" GiverId="1952" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 3317)">
+			<CustomBehavior File="CollectThings" CollectItemId="3317" CollectItemCount="1" HuntingGroundRadius="120" MobId="1939" MobId2="1940" MobId3="1942" MobId4="1943" MobId5="1944" X="803.9953" Y="697.15" Z="52.828">
+				<Hotspot X="804" Y="697.15" Z="52.83" />
+				<Hotspot X="705.22" Y="667.25" Z="43.53" />
+				<Hotspot X="869.09" Y="685.16" Z="54.18" />
+				<Hotspot X="934.35" Y="713.12" Z="61.09" />
+				<Hotspot X="742.5" Y="649.92" Z="46.67" />
+				<Hotspot X="814.45" Y="656.39" Z="54.88" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 3317)">
+			<PickUp QuestName="Resting in Pieces" QuestId="460" GiverName="A Talking Head" GiverId="3317" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Rot Hide Ichor" QuestId="443" Type="CollectItem" ItemId="3236" CollectCount="8" />
-		<TurnIn QuestName="Resting in Pieces" QuestId="460" TurnInName="Object_1599" TurnInType="Object" TurnInId="1599" />
-		<PickUp QuestName="The Hidden Niche" QuestId="461" GiverName="High Executor Hadrec" GiverId="1952" />
+		<TurnIn QuestName="Resting in Pieces" QuestId="460" TurnInName="Shallow Grave" TurnInType="Object" TurnInId="1599" X="970.835" Y="599.321" Z="53.9521" />
+		<PickUp QuestName="The Hidden Niche" QuestId="461" GiverName="Shallow Grave" GiverId="1599" GiverType="Object" X="970.835" Y="599.321" Z="53.9521" />
 		<!-- Quest 461 (The Hidden Niche) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Wand to Bethor" QuestId="491" GiverName="High Executor Hadrec" GiverId="1952" />
-		<TurnIn QuestName="Rot Hide Ichor" QuestId="443" TurnInName="Apothecary Renferrel" TurnInId="1937" />
-		<PickUp QuestName="Rot Hide Origins" QuestId="444" GiverName="Apothecary Renferrel" GiverId="1937" />
-		<TurnIn QuestName="A Husband's Revenge" QuestId="530" TurnInName="Raleigh Andrean" TurnInId="2050" />
-		<TurnIn QuestName="Rot Hide Origins" QuestId="444" TurnInName="Bethor Iceshard" TurnInId="1498" />
-		<TurnIn QuestName="Wand to Bethor" QuestId="491" TurnInName="Bethor Iceshard" TurnInId="1498" />
-		<PickUp QuestName="Beren's Peril" QuestId="516" GiverName="Shadow Priest Allister" GiverId="2121" />
-		<PickUp QuestName="Journey to Hillsbrad Foothills" QuestId="493" GiverName="Apothecary Renferrel" GiverId="1937" />
+		<PickUp QuestName="Wand to Bethor" QuestId="491" GiverName="Dusty Shelf" GiverId="112888" GiverType="Object" X="971.939" Y="704.891" Z="85.0009" />
+		<TurnIn QuestName="Rot Hide Ichor" QuestId="443" TurnInName="Apothecary Renferrel" TurnInId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<PickUp QuestName="Rot Hide Origins" QuestId="444" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
+		<TurnIn QuestName="A Husband's Revenge" QuestId="530" TurnInName="Raleigh Andrean" TurnInId="2050" X="1604.32" Y="278.268" Z="-55.2596" />
+		<TurnIn QuestName="Rot Hide Origins" QuestId="444" TurnInName="Bethor Iceshard" TurnInId="1498" X="1766.27" Y="66.6262" Z="-46.2381" />
+		<TurnIn QuestName="Wand to Bethor" QuestId="491" TurnInName="Bethor Iceshard" TurnInId="1498" X="1766.27" Y="66.6262" Z="-46.2381" />
+		<PickUp QuestName="Beren's Peril" QuestId="516" GiverName="Shadow Priest Allister" GiverId="2121" X="520.624" Y="1602.92" Z="126.53" />
+		<PickUp QuestName="Journey to Hillsbrad Foothills" QuestId="493" GiverName="Apothecary Renferrel" GiverId="1937" X="522.449" Y="1652.3" Z="125.843" />
 		<Objective QuestName="Beren's Peril" QuestId="516" Type="KillMob" MobId="1974" KillCount="6" />
 		<Objective QuestName="Beren's Peril" QuestId="516" Type="KillMob" MobId="1973" KillCount="6" />
-		<TurnIn QuestName="Beren's Peril" QuestId="516" TurnInName="Shadow Priest Allister" TurnInId="2121" />
+		<TurnIn QuestName="Beren's Peril" QuestId="516" TurnInName="Shadow Priest Allister" TurnInId="2121" X="520.624" Y="1602.92" Z="126.53" />
 	</QuestOrder>
 </HBProfile>

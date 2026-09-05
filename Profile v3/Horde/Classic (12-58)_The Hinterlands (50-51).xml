@@ -1,27 +1,33 @@
 <HBProfile>
 	<Name>Classic (12-58)\The Hinterlands (50-51)</Name>
-	<MinLevel>50</MinLevel>
-	<MaxLevel>51</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Uttnar" Entry="4954" Type="Food" X="-948.304" Y="-3537.25" Z="71.5343" />
+		<Vendor Name="Mu'uta" Entry="9555" Type="Repair" X="-933.85" Y="-3477.47" Z="51.3872" />
+		<Vendor Name="Innkeeper Adegwa" Entry="9501" Type="Food" X="-912.374" Y="-3524.92" Z="72.7679" />
+		<Vendor Name="Rutherford Twing" Entry="15126" Type="Repair" X="-845.512" Y="-3507.93" Z="73.6511" />
+		<Vendor Name="Lard" Entry="14731" Type="Food" X="-622.033" Y="-4583.4" Z="11.7704" />
+		<Vendor Name="Smith Slagtree" Entry="14737" Type="Repair" X="-589.954" Y="-4548.46" Z="9.1615" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="2641" Name="Sprinkle's Secret Ingredient">
@@ -35,7 +41,18 @@
 				<Hotspot X="-69.08" Y="-3117.58" Z="100.22" />
 				<Hotspot X="-67.85" Y="-3153.98" Z="97.69" />
 				<Hotspot X="-49.44" Y="-3140.39" Z="100.7" />
-				<Hotspot X="-46.25" Y="-3174.9" Z="100.0" />
+				<Hotspot X="-46.25" Y="-3174.9" Z="100" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7815" Name="Snapjaws, Mon!">
+		<Objective Type="KillMob" MobId="2505" KillCount="10">
+			<Hotspots>
+				<Hotspot X="302.19" Y="-4844.87" Z="-23.11" />
+				<Hotspot X="392.59" Y="-4859.38" Z="-13.26" />
+				<Hotspot X="-379.93" Y="-4665.08" Z="-9.57" />
+				<Hotspot X="-15.46" Y="-4853.16" Z="-16.67" />
+				<Hotspot X="-313.44" Y="-4681.32" Z="-6.66" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -56,14 +73,13 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="7815" Name="Snapjaws, Mon!">
-		<Objective Type="KillMob" MobId="2505" KillCount="15">
+	<Quest Id="7816" Name="Gammerita, Mon!">
+		<Objective Type="CollectItem" ItemId="19023" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Gammerita" Id="7977" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="302.187" Y="-4844.87" Z="-23.1115" />
-				<Hotspot X="392.586" Y="-4859.38" Z="-13.263" />
-				<Hotspot X="-379.925" Y="-4665.08" Z="-9.5736" />
-				<Hotspot X="-15.465" Y="-4853.16" Z="-16.6703" />
-				<Hotspot X="-313.444" Y="-4681.32" Z="-6.6642" />
+				<Hotspot X="-27.8" Y="-4670.38" Z="10.33" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -77,31 +93,86 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="4502" Name="Volcanic Activity">
+		<Objective Type="CollectItem" ItemId="11829" CollectCount="9">
+			<CollectFrom>
+				<Mob Name="Scorching Elemental" Id="6520" />
+				<Mob Name="Living Blaze" Id="6521" />
+				<Mob Name="Blazerunner" Id="9376" />
+				<Mob Name="Blazing Invader" Id="14460" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7019.94" Y="-1419.43" Z="-248.09" />
+				<Hotspot X="-7069.64" Y="-1505.92" Z="-261.94" />
+				<Hotspot X="-7063.3" Y="-1452.48" Z="-262.7" />
+				<Hotspot X="-7012.58" Y="-1281.3" Z="-268.22" />
+				<Hotspot X="-7094.46" Y="-1417.75" Z="-234.57" />
+				<Hotspot X="-7053.18" Y="-1307.15" Z="-248.14" />
+				<Hotspot X="-7036.98" Y="-1228.78" Z="-270.98" />
+				<Hotspot X="-7077.44" Y="-1357.61" Z="-223.61" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_The Hinterlands (50-51) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1444))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Ripple Recovery" QuestId="650" TurnInName="Gilveradin Sunchaser" TurnInId="7801" />
-		<TurnIn QuestName="The Atal'ai Exile" QuestId="1429" TurnInName="Atal'ai Exile" TurnInId="5598" />
-		<PickUp QuestName="Return to Fel'Zerul" QuestId="1444" GiverName="Atal'ai Exile" GiverId="5598" />
+		<TurnIn QuestName="Ripple Recovery" QuestId="650" TurnInName="Gilveradin Sunchaser" TurnInId="7801" X="219.417" Y="-2603.37" Z="160.356" />
+		<TurnIn QuestName="The Atal'ai Exile" QuestId="1429" TurnInName="Atal'ai Exile" TurnInId="5598" X="-463.676" Y="-2874.4" Z="96.8502" />
+		<PickUp QuestName="Return to Fel'Zerul" QuestId="1444" GiverName="Atal'ai Exile" GiverId="5598" X="-463.676" Y="-2874.4" Z="96.8502" />
 		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
-		<PickUp QuestName="Lard Lost His Lunch" QuestId="7840" GiverName="Lard" GiverId="14731" />
-		<PickUp QuestName="Snapjaws, Mon!" QuestId="7815" GiverName="Katoom the Angler" GiverId="14740" />
-		<PickUp QuestName="Gammerita, Mon!" QuestId="7816" GiverName="Katoom the Angler" GiverId="14740" />
+		<PickUp QuestName="Lard Lost His Lunch" QuestId="7840" GiverName="Lard" GiverId="14731" X="-622.033" Y="-4583.4" Z="11.7704" />
+		<PickUp QuestName="Snapjaws, Mon!" QuestId="7815" GiverName="Katoom the Angler" GiverId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
 		<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
-		<Objective QuestName="Gammerita, Mon!" QuestId="7816" Type="CollectItem" ItemId="19023" CollectCount="1" />
 		<Objective QuestName="Lard Lost His Lunch" QuestId="7840" Type="CollectItem" ItemId="19034" CollectCount="1" />
-		<TurnIn QuestName="Cortello's Riddle" QuestId="626" TurnInName="Object_2556" TurnInType="Object" TurnInId="2556" />
-		<Objective QuestName="Snapjaws, Mon!" QuestId="7815" Type="KillMob" MobId="2505" KillCount="15" />
-		<TurnIn QuestName="Lard Lost His Lunch" QuestId="7840" TurnInName="Lard" TurnInId="14731" />
-		<TurnIn QuestName="Snapjaws, Mon!" QuestId="7815" TurnInName="Katoom the Angler" TurnInId="14740" />
-		<TurnIn QuestName="Gammerita, Mon!" QuestId="7816" TurnInName="Katoom the Angler" TurnInId="14740" />
-		<TurnIn QuestName="Jes'rimon's Payment to Jediga" QuestId="3563" TurnInName="Jediga" TurnInId="8587" />
-		<TurnIn QuestName="Magatha's Payment to Jediga" QuestId="3562" TurnInName="Jediga" TurnInId="8587" />
-		<TurnIn QuestName="Andron's Payment to Jediga" QuestId="3564" TurnInName="Jediga" TurnInId="8587" />
+		<TurnIn QuestName="Cortello's Riddle" QuestId="626" TurnInName="Cortello's Treasure" TurnInType="Object" TurnInId="2556" X="264.878" Y="-4685.26" Z="-8.5783" />
+		<Objective QuestName="Snapjaws, Mon!" QuestId="7815" Type="KillMob" MobId="2505" KillCount="10" />
+		<TurnIn QuestName="Lard Lost His Lunch" QuestId="7840" TurnInName="Lard" TurnInId="14731" X="-622.033" Y="-4583.4" Z="11.7704" />
+		<TurnIn QuestName="Snapjaws, Mon!" QuestId="7815" TurnInName="Katoom the Angler" TurnInId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
+		<TurnIn QuestName="Gammerita, Mon!" QuestId="7816" TurnInName="Katoom the Angler" TurnInId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
+		<PickUp QuestName="Gammerita, Mon!" QuestId="7816" GiverName="Katoom the Angler" GiverId="14740" X="-626.071" Y="-4667.71" Z="6.5081" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Jes'rimon's Payment to Jediga" QuestId="3563" TurnInName="Jediga" TurnInId="8587" X="3603.02" Y="-4421.08" Z="112.075" />
+		<Objective QuestName="Gammerita, Mon!" QuestId="7816" Type="CollectItem" ItemId="19023" CollectCount="1" />
+		<TurnIn QuestName="Magatha's Payment to Jediga" QuestId="3562" TurnInName="Jediga" TurnInId="8587" X="3603.02" Y="-4421.08" Z="112.075" />
+		<TurnIn QuestName="Andron's Payment to Jediga" QuestId="3564" TurnInName="Jediga" TurnInId="8587" X="3603.02" Y="-4421.08" Z="112.075" />
 		<Objective QuestName="The Stone Circle" QuestId="3444" Type="CollectItem" ItemId="10556" CollectCount="1" />
-		<PickUp QuestName="Volcanic Activity" QuestId="4502" GiverName="Liv Rizzlefix" GiverId="8496" />
-		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" />
+		<PickUp QuestName="Volcanic Activity" QuestId="4502" GiverName="Liv Rizzlefix" GiverId="8496" X="-1004.47" Y="-3705.17" Z="4.6417" />
+		<Objective QuestName="Volcanic Activity" QuestId="4502" Type="CollectItem" ItemId="11829" CollectCount="9" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-996.8669" Y="-3826.07" Z="5.5362" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-996.8669" WaitAtY="-3826.07" WaitAtZ="5.5362" TransportStartX="-1005.6" TransportStartY="-3841.6" TransportStartZ="0" StandOnX="-997.3311" StandOnY="-3836.707" StandOnZ="6.0309" TransportEndX="-14277.7" TransportEndY="582.9" TransportEndZ="0" GetOffX="-14280.88" GetOffY="566.6268" GetOffZ="6.9795" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Whiskey Slim's Lost Grog" QuestId="580" TurnInName="Whiskey Slim" TurnInId="2491" X="-14463.6" Y="489.274" Z="15.205" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Blasted Lands (51-52)" />
 	</QuestOrder>
 </HBProfile>

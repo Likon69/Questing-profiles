@@ -1,30 +1,47 @@
 <HBProfile>
 	<Name>Classic (12-58)\Stranglethorn Vale (42-43)</Name>
-	<MinLevel>42</MinLevel>
-	<MaxLevel>43</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Innkeeper Thulbek" Entry="5814" Type="Food" X="-12434.4" Y="211.559" Z="2.4485" />
+		<Vendor Name="Nargatt" Entry="7485" Type="Food" X="-12414" Y="166.158" Z="3.4752" />
+		<Vendor Name="Hragran" Entry="1147" Type="Repair" X="-12410.2" Y="203.675" Z="2.4344" />
+		<Vendor Name="Vharr" Entry="1146" Type="Repair" X="-12357.8" Y="155.552" Z="4.3285" />
+		<Vendor Name="Krakk" Entry="1381" Type="Repair" X="-12357.7" Y="142.379" Z="4.5604" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="604" Name="The Bloodsail Buccaneers">
+		<Objective Type="KillMob" MobId="1563" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-14674" Y="419.18" Z="3.33" />
+				<Hotspot X="-14703.33" Y="511.88" Z="2.32" />
+				<Hotspot X="-14725.65" Y="496.02" Z="3.52" />
+				<Hotspot X="-14617.7" Y="245.02" Z="0.68" />
+				<Hotspot X="-14549.5" Y="182.2" Z="2.75" />
+				<Hotspot X="-14455.1" Y="116.53" Z="4.94" />
+				<Hotspot X="-14891.1" Y="299.78" Z="3" />
+				<Hotspot X="-13549.2" Y="683.99" Z="0.82" />
+			</Hotspots>
+		</Objective>
 		<Objective Type="CollectItem" ItemId="3920" CollectCount="1">
 			<CollectFrom>
 				<GameObject Name="Bloodsail Charts" Id="2086" />
@@ -43,6 +60,137 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="587" Name="Up to Snuff">
+		<Objective Type="CollectItem" ItemId="3910" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Bloodsail Raider" Id="1561" />
+				<Mob Name="Bloodsail Mage" Id="1562" />
+				<Mob Name="Bloodsail Swashbuckler" Id="1563" />
+				<Mob Name="Bloodsail Warlock" Id="1564" />
+				<Mob Name="Bloodsail Sea Dog" Id="1565" />
+				<Mob Name="Bloodsail Elder Magus" Id="1653" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14691.71" Y="487.7" Z="2.83" />
+				<Hotspot X="-14617.43" Y="325.56" Z="3.19" />
+				<Hotspot X="-14674" Y="419.18" Z="3.33" />
+				<Hotspot X="-14707.3" Y="523.67" Z="2.06" />
+				<Hotspot X="-14736" Y="506.87" Z="3.69" />
+				<Hotspot X="-14617.7" Y="245.02" Z="0.68" />
+				<Hotspot X="-14152.15" Y="433.9" Z="9.19" />
+				<Hotspot X="-14177.1" Y="376.99" Z="21.29" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="600" Name="Venture Company Mining">
+		<Objective Type="CollectItem" ItemId="3917" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Venture Co. Strip Miner" Id="674" />
+				<Mob Name="Venture Co. Foreman" Id="675" />
+				<Mob Name="Venture Co. Surveyor" Id="676" />
+				<Mob Name="Venture Co. Tinkerer" Id="677" />
+				<Mob Name="Foreman Cozzle" Id="4723" />
+				<Mob Name="Verifonix" Id="14492" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13134.52" Y="-464.72" Z="50.11" />
+				<Hotspot X="-13073.23" Y="-456.27" Z="47.67" />
+				<Hotspot X="-13014.83" Y="-363.26" Z="30.12" />
+				<Hotspot X="-13024.37" Y="-416.94" Z="44.24" />
+				<Hotspot X="-13054.6" Y="-477.56" Z="51.62" />
+				<Hotspot X="-12983.1" Y="-442.88" Z="51.28" />
+				<Hotspot X="-12941.4" Y="-419.56" Z="28.42" />
+				<Hotspot X="-12938.47" Y="-466.01" Z="45.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="621" Name="Zanzil's Secret">
+		<Objective Type="CollectItem" ItemId="4016" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Zanzil Zombie" Id="1488" />
+				<Mob Name="Zanzil Hunter" Id="1489" />
+				<Mob Name="Zanzil Witch Doctor" Id="1490" />
+				<Mob Name="Zanzil Naga" Id="1491" />
+				<Mob Name="Yenniku" Id="2530" />
+				<Mob Name="Zanzil the Outcast" Id="2534" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13712" Y="-246.3" Z="0.75" />
+				<Hotspot X="-13652.27" Y="-262.45" Z="8.21" />
+				<Hotspot X="-13677.42" Y="-297.76" Z="7.86" />
+				<Hotspot X="-13620.1" Y="-260.57" Z="9.18" />
+				<Hotspot X="-13634.85" Y="-316.25" Z="8.59" />
+				<Hotspot X="-13682.6" Y="-365.04" Z="1.17" />
+				<Hotspot X="-13576.9" Y="-247.35" Z="23.56" />
+				<Hotspot X="-13377.62" Y="2.05" Z="22.26" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="617" Name="Akiris by the Bundle">
+		<Objective Type="CollectItem" ItemId="4029" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Naga Explorer" Id="1907" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13912.25" Y="430.49" Z="99.72" />
+				<Hotspot X="-13908.1" Y="659.01" Z="12.23" />
+				<Hotspot X="-13863.5" Y="491.43" Z="94.21" />
+				<Hotspot X="-13862.6" Y="633.22" Z="18.96" />
+				<Hotspot X="-13859.7" Y="433.24" Z="91.76" />
+				<Hotspot X="-13857.1" Y="583.68" Z="45.53" />
+				<Hotspot X="-13875.4" Y="690.94" Z="3.2" />
+				<Hotspot X="-13826.1" Y="494.98" Z="83.31" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="609" Name="Voodoo Dues">
+		<Objective Type="CollectItem" ItemId="3924" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Maury &quot;Club Foot&quot; Wilkins" Id="2535" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13349.3" Y="-28.53" Z="22.28" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3925" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Jon-Jon the Crow" Id="2536" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13374.3" Y="-7.69" Z="22.04" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3926" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Chucky &quot;Ten Thumbs&quot;" Id="2537" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-13646.5" Y="-331.61" Z="8.36" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="576" Name="Keep An Eye Out">
+		<Objective Type="CollectItem" ItemId="3897" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodsail Raider" Id="1561" />
+				<Mob Name="Bloodsail Mage" Id="1562" />
+				<Mob Name="Bloodsail Swashbuckler" Id="1563" />
+				<Mob Name="Bloodsail Warlock" Id="1564" />
+				<Mob Name="Bloodsail Sea Dog" Id="1565" />
+				<Mob Name="Bloodsail Elder Magus" Id="1653" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14609.55" Y="320.14" Z="3" />
+				<Hotspot X="-14177.1" Y="376.99" Z="21.29" />
+				<Hotspot X="-14633.2" Y="336.4" Z="3.57" />
+				<Hotspot X="-14152.15" Y="433.9" Z="9.19" />
+				<Hotspot X="-14549.5" Y="182.2" Z="2.75" />
+				<Hotspot X="-14266.9" Y="163.12" Z="9.31" />
+				<Hotspot X="-14128.65" Y="469.04" Z="2.37" />
+				<Hotspot X="-14617.7" Y="245.02" Z="0.68" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="573" Name="Mok'thardin's Enchantment">
 		<Objective Type="CollectItem" ItemId="737" CollectCount="1">
 			<CollectFrom>
@@ -53,18 +201,272 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="339" Name="Chapter I">
+		<Objective Type="CollectItem" ItemId="2728" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2730" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2732" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2725" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="340" Name="Chapter II">
+		<Objective Type="CollectItem" ItemId="2738" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2740" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2734" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2735" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="341" Name="Chapter III">
+		<Objective Type="CollectItem" ItemId="2744" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2745" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2748" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2742" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="342" Name="Chapter IV">
+		<Objective Type="CollectItem" ItemId="2749" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2750" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="2751" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodscalp Warrior" Id="587" />
+				<Mob Name="Bloodscalp Scout" Id="588" />
+				<Mob Name="Bloodscalp Hunter" Id="595" />
+				<Mob Name="Bloodscalp Berserker" Id="597" />
+				<Mob Name="Bloodscalp Witch Doctor" Id="660" />
+				<Mob Name="Skullsplitter Warrior" Id="667" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11788.6" Y="34.51" Z="16.11" />
+				<Hotspot X="-11754.6" Y="87.55" Z="26.87" />
+				<Hotspot X="-11882.7" Y="48.43" Z="22.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Stranglethorn Vale (42-43) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(604))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-996.8669" Y="-3826.07" Z="5.5362" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-996.8669" WaitAtY="-3826.07" WaitAtZ="5.5362" TransportStartX="-1005.6" TransportStartY="-3841.6" TransportStartZ="0" StandOnX="-997.3311" StandOnY="-3836.707" StandOnZ="6.0309" TransportEndX="-14277.7" TransportEndY="582.9" TransportEndZ="0" GetOffX="-14280.88" GetOffY="566.6268" GetOffZ="6.9795" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-996.8669" Y="-3826.07" Z="5.5362" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-996.8669" WaitAtY="-3826.07" WaitAtZ="5.5362" TransportStartX="-1005.6" TransportStartY="-3841.6" TransportStartZ="0" StandOnX="-997.3311" StandOnY="-3836.707" StandOnZ="6.0309" TransportEndX="-14277.7" TransportEndY="582.9" TransportEndZ="0" GetOffX="-14280.88" GetOffY="566.6268" GetOffZ="6.9795" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="604" GiverName="Fleet Master Seahorn" GiverId="2487" />
-		<TurnIn QuestName="Dream Dust in the Swamp" QuestId="1116" TurnInName="Krazek" TurnInId="773" />
-		<PickUp QuestName="Up to Snuff" QuestId="587" GiverName="Deeg" GiverId="2488" />
-		<PickUp QuestName="Venture Company Mining" QuestId="600" GiverName="Crank Fizzlebub" GiverId="2498" />
-		<PickUp QuestName="Zanzil's Secret" QuestId="621" GiverName="Crank Fizzlebub" GiverId="2498" />
-		<PickUp QuestName="Akiris by the Bundle" QuestId="617" GiverName="Privateer Bloads" GiverId="2494" />
-		<PickUp QuestName="Voodoo Dues" QuestId="609" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" />
-		<PickUp QuestName="Keep An Eye Out" QuestId="576" GiverName="Dizzy One-Eye" GiverId="2493" />
+		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="604" GiverName="Fleet Master Seahorn" GiverId="2487" X="-14444.8" Y="486.81" Z="28.809" />
+		<TurnIn QuestName="Dream Dust in the Swamp" QuestId="1116" TurnInName="Krazek" TurnInId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="Up to Snuff" QuestId="587" GiverName="Deeg" GiverId="2488" X="-14459.2" Y="503" Z="26.3593" />
+		<PickUp QuestName="Venture Company Mining" QuestId="600" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<PickUp QuestName="Zanzil's Secret" QuestId="621" GiverName="Crank Fizzlebub" GiverId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<PickUp QuestName="Akiris by the Bundle" QuestId="617" GiverName="Privateer Bloads" GiverId="2494" X="-14418.2" Y="513.462" Z="4.9596" />
+		<PickUp QuestName="Voodoo Dues" QuestId="609" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<PickUp QuestName="Keep An Eye Out" QuestId="576" GiverName="Dizzy One-Eye" GiverId="2493" X="-14397.6" Y="396.286" Z="22.7223" />
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="CollectItem" ItemId="3920" CollectCount="1" />
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="CollectItem" ItemId="3921" CollectCount="1" />
 		<Objective QuestName="Up to Snuff" QuestId="587" Type="CollectItem" ItemId="3910" CollectCount="15" />
@@ -77,7 +479,7 @@
 		<Objective QuestName="Zanzil's Secret" QuestId="621" Type="CollectItem" ItemId="4016" CollectCount="12" />
 		<Objective QuestName="Venture Company Mining" QuestId="600" Type="CollectItem" ItemId="3917" CollectCount="10" />
 		<Objective QuestName="Raptor Mastery" QuestId="197" Type="CollectItem" ItemId="3877" CollectCount="1" />
-		<TurnIn QuestName="Mok'thardin's Enchantment" QuestId="573" TurnInName="Far Seer Mok'thardin" TurnInId="2465" />
+		<TurnIn QuestName="Mok'thardin's Enchantment" QuestId="573" TurnInName="Far Seer Mok'thardin" TurnInId="2465" X="-12412.8" Y="171.235" Z="3.4119" />
 		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2725" CollectCount="1" />
 		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2728" CollectCount="1" />
 		<Objective QuestName="Chapter I" QuestId="339" Type="CollectItem" ItemId="2730" CollectCount="1" />
@@ -93,27 +495,36 @@
 		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2749" CollectCount="1" />
 		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2750" CollectCount="1" />
 		<Objective QuestName="Chapter IV" QuestId="342" Type="CollectItem" ItemId="2751" CollectCount="1" />
-		<PickUp QuestName="The Green Hills of Stranglethorn" QuestId="338" GiverName="Barnil Stonepot" GiverId="716" />
-		<PickUp QuestName="Chapter I" QuestId="339" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter I" QuestId="339" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter II" QuestId="340" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter II" QuestId="340" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter III" QuestId="341" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter III" QuestId="341" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<PickUp QuestName="Chapter IV" QuestId="342" GiverName="Barnil Stonepot" GiverId="716" />
-		<TurnIn QuestName="Chapter IV" QuestId="342" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<TurnIn QuestName="The Green Hills of Stranglethorn" QuestId="338" TurnInName="Barnil Stonepot" TurnInId="716" />
-		<TurnIn QuestName="Raptor Mastery" QuestId="197" TurnInName="Hemet Nesingwary" TurnInId="715" />
-		<TurnIn QuestName="Venture Company Mining" QuestId="600" TurnInName="Crank Fizzlebub" TurnInId="2498" />
-		<TurnIn QuestName="Zanzil's Secret" QuestId="621" TurnInName="Crank Fizzlebub" TurnInId="2498" />
-		<PickUp QuestName="Rumors for Kravel" QuestId="1117" GiverName="Krazek" GiverId="773" />
-		<PickUp QuestName="Tran'rek" QuestId="2864" GiverName="Krazek" GiverId="773" />
-		<TurnIn QuestName="Up to Snuff" QuestId="587" TurnInName="Deeg" TurnInId="2488" />
-		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="604" TurnInName="Fleet Master Seahorn" TurnInId="2487" />
-		<TurnIn QuestName="Akiris by the Bundle" QuestId="617" TurnInName="Privateer Bloads" TurnInId="2494" />
-		<TurnIn QuestName="Voodoo Dues" QuestId="609" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" />
-		<PickUp QuestName="Stoley's Debt" QuestId="2872" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" />
-		<TurnIn QuestName="Keep An Eye Out" QuestId="576" TurnInName="Dizzy One-Eye" TurnInId="2493" />
+		<PickUp QuestName="The Green Hills of Stranglethorn" QuestId="338" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter I" QuestId="339" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Chapter I" QuestId="339" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter II" QuestId="340" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Chapter II" QuestId="340" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter III" QuestId="341" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Chapter III" QuestId="341" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<PickUp QuestName="Chapter IV" QuestId="342" GiverName="Barnil Stonepot" GiverId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<TurnIn QuestName="Chapter IV" QuestId="342" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		<!-- REVIEW Q338 The Green Hills of Stranglethorn: collect 2756 Green Hills of Stranglethorn - Chapter I x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(338)) &amp;&amp; (IsQuestCompleted(338)))">
+			<TurnIn QuestName="The Green Hills of Stranglethorn" QuestId="338" TurnInName="Barnil Stonepot" TurnInId="716" X="-11616.7" Y="-54.8325" Z="11.1371" />
+		</If>
+
+		<If Condition="((HasQuest(338)) &amp;&amp; (!IsQuestCompleted(338)))">
+			<AbandonQuest QuestId="338" />
+		</If>
+
+		<TurnIn QuestName="Raptor Mastery" QuestId="197" TurnInName="Hemet Nesingwary Jr." TurnInId="715" X="-11628.6" Y="-54.5569" Z="11.0223" />
+		<TurnIn QuestName="Venture Company Mining" QuestId="600" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<TurnIn QuestName="Zanzil's Secret" QuestId="621" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
+		<PickUp QuestName="Rumors for Kravel" QuestId="1117" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<PickUp QuestName="Tran'rek" QuestId="2864" GiverName="Krazek" GiverId="773" X="-14453.3" Y="501.465" Z="26.3593" />
+		<TurnIn QuestName="Up to Snuff" QuestId="587" TurnInName="Deeg" TurnInId="2488" X="-14459.2" Y="503" Z="26.3593" />
+		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="KillMob" MobId="1563" KillCount="10" />
+		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="604" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
+		<TurnIn QuestName="Akiris by the Bundle" QuestId="617" TurnInName="Privateer Bloads" TurnInId="2494" X="-14418.2" Y="513.462" Z="4.9596" />
+		<TurnIn QuestName="Voodoo Dues" QuestId="609" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<PickUp QuestName="Stoley's Debt" QuestId="2872" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		<TurnIn QuestName="Keep An Eye Out" QuestId="576" TurnInName="Dizzy One-Eye" TurnInId="2493" X="-14397.6" Y="396.286" Z="22.7223" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Dustwallow Marsh (43-44)" />
 	</QuestOrder>
 </HBProfile>

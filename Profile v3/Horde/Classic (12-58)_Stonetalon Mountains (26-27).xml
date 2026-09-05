@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Stonetalon Mountains (26-27)</Name>
-	<MinLevel>26</MinLevel>
-	<MaxLevel>27</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,55 +16,92 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Makaba Flathoof" Entry="7916" Type="Repair" X="8707.46" Y="988.88" Z="14.1964" />
-		<Vendor Name="Innkeeper Jayka" Entry="12740" Type="Food" X="7466.15" Y="-2122.08" Z="492.427" />
+		<Vendor Name="Innkeeper Jayka" Entry="7731" Type="Food" X="893.652" Y="927.947" Z="106.364" />
+		<Vendor Name="Borand" Entry="9549" Type="Repair" X="992.181" Y="1030.96" Z="105.676" />
+		<Vendor Name="Krond" Entry="5870" Type="Food" X="1016.04" Y="988.352" Z="105.1" />
+		<Vendor Name="Denni'ka" Entry="3411" Type="Food" X="-188.424" Y="-347.647" Z="8.8737" />
+		<Vendor Name="Grod" Entry="3093" Type="Repair" X="-1152.76" Y="71.4057" Z="145.878" />
+		<Vendor Name="Tagain" Entry="3092" Type="Repair" X="-1158.5" Y="63.2388" Z="145.878" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="6282" Name="Harpies Threaten">
 		<Objective Type="KillMob" MobId="4022" KillCount="7">
 			<Hotspots>
-				<Hotspot X="949.317" Y="1715.29" Z="-14.6905" />
-				<Hotspot X="826.756" Y="1642.2" Z="-28.6399" />
-				<Hotspot X="750.844" Y="1685.66" Z="-31.5314" />
-				<Hotspot X="821.861" Y="1771.99" Z="-15.4093" />
-				<Hotspot X="800.463" Y="1616.58" Z="-31.8395" />
+				<Hotspot X="949.32" Y="1715.29" Z="-14.69" />
+				<Hotspot X="826.76" Y="1642.2" Z="-28.64" />
+				<Hotspot X="750.84" Y="1685.66" Z="-31.53" />
+				<Hotspot X="821.86" Y="1771.99" Z="-15.41" />
+				<Hotspot X="800.46" Y="1616.58" Z="-31.84" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4025" KillCount="7">
 			<Hotspots>
-				<Hotspot X="948.891" Y="1679.82" Z="-12.1807" />
-				<Hotspot X="790.729" Y="1742.48" Z="-20.3377" />
-				<Hotspot X="919.809" Y="1741.91" Z="-11.9346" />
-				<Hotspot X="1010.01" Y="1726.79" Z="-9.7772" />
-				<Hotspot X="901.677" Y="1781.91" Z="-7.3472" />
+				<Hotspot X="948.89" Y="1679.82" Z="-12.18" />
+				<Hotspot X="790.73" Y="1742.48" Z="-20.34" />
+				<Hotspot X="919.81" Y="1741.91" Z="-11.93" />
+				<Hotspot X="1010.01" Y="1726.79" Z="-9.78" />
+				<Hotspot X="901.68" Y="1781.91" Z="-7.35" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4024" KillCount="7">
 			<Hotspots>
-				<Hotspot X="723.161" Y="1477.72" Z="-16.9211" />
-				<Hotspot X="628.924" Y="1542.2" Z="-13.3452" />
-				<Hotspot X="776.019" Y="1425.23" Z="-14.0468" />
-				<Hotspot X="669.888" Y="1439.8" Z="-7.3461" />
-				<Hotspot X="644.378" Y="1439.96" Z="-5.0657" />
+				<Hotspot X="723.16" Y="1477.72" Z="-16.92" />
+				<Hotspot X="628.92" Y="1542.2" Z="-13.35" />
+				<Hotspot X="776.02" Y="1425.23" Z="-14.05" />
+				<Hotspot X="669.89" Y="1439.8" Z="-7.35" />
+				<Hotspot X="644.38" Y="1439.96" Z="-5.07" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4023" KillCount="7">
 			<Hotspots>
-				<Hotspot X="612.175" Y="1550.7" Z="-12.9121" />
-				<Hotspot X="714.181" Y="1520.74" Z="-21.2092" />
-				<Hotspot X="749.439" Y="1514.12" Z="-21.2687" />
-				<Hotspot X="701.547" Y="1551.92" Z="-22.4534" />
-				<Hotspot X="665.889" Y="1543.26" Z="-19.9016" />
+				<Hotspot X="612.17" Y="1550.7" Z="-12.91" />
+				<Hotspot X="714.18" Y="1520.74" Z="-21.21" />
+				<Hotspot X="749.44" Y="1514.12" Z="-21.27" />
+				<Hotspot X="701.55" Y="1551.92" Z="-22.45" />
+				<Hotspot X="665.89" Y="1543.26" Z="-19.9" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6283" Name="Bloodfury Bloodline">
+		<Objective Type="CollectItem" ItemId="16190" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bloodfury Ripper" Id="12579" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="900.68" Y="1743.99" Z="-11.5" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Stonetalon Mountains (26-27) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(6283))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<Objective QuestName="Elemental War" QuestId="6393" Type="CollectItem" ItemId="16312" CollectCount="10" />
 		<Objective QuestName="Harpies Threaten" QuestId="6282" Type="KillMob" MobId="4022" KillCount="7" />
@@ -88,14 +122,15 @@
 			</SetGrindArea>
 			<GrindTo Level="27" />
 		</If>
-		<TurnIn QuestName="Elemental War" QuestId="6393" TurnInName="Tsunaman" TurnInId="11862" />
-		<TurnIn QuestName="Harpies Threaten" QuestId="6282" TurnInName="Maggran Earthbinder" TurnInId="11860" />
-		<PickUp QuestName="Bloodfury Bloodline" QuestId="6283" GiverName="Maggran Earthbinder" GiverId="11860" />
-		<TurnIn QuestName="New Life" QuestId="6381" TurnInName="Tammra Windfield" TurnInId="11864" />
+
+		<TurnIn QuestName="Elemental War" QuestId="6393" TurnInName="Tsunaman" TurnInId="11862" X="824.854" Y="933.05" Z="155.485" />
+		<TurnIn QuestName="Harpies Threaten" QuestId="6282" TurnInName="Maggran Earthbinder" TurnInId="11860" X="925.298" Y="940.918" Z="105.575" />
+		<PickUp QuestName="Bloodfury Bloodline" QuestId="6283" GiverName="Maggran Earthbinder" GiverId="11860" X="925.298" Y="940.918" Z="105.575" />
+		<TurnIn QuestName="New Life" QuestId="6381" TurnInName="Tammra Windfield" TurnInId="11864" X="1015.68" Y="928.041" Z="103.519" />
 		<Objective QuestName="Bloodfury Bloodline" QuestId="6283" Type="CollectItem" ItemId="16190" CollectCount="1" />
-		<TurnIn QuestName="Bloodfury Bloodline" QuestId="6283" TurnInName="Maggran Earthbinder" TurnInId="11860" />
-		<TurnIn QuestName="The Sacred Flame" QuestId="1195" TurnInName="Zangen Stonehoof" TurnInId="4721" />
-		<PickUp QuestName="The Sacred Flame" QuestId="1196" GiverName="Zangen Stonehoof" GiverId="4721" />
+		<TurnIn QuestName="Bloodfury Bloodline" QuestId="6283" TurnInName="Maggran Earthbinder" TurnInId="11860" X="925.298" Y="940.918" Z="105.575" />
+		<TurnIn QuestName="The Sacred Flame" QuestId="1195" TurnInName="Zangen Stonehoof" TurnInId="4721" X="-1207.75" Y="-57.0394" Z="158.601" />
+		<PickUp QuestName="The Sacred Flame" QuestId="1196" GiverName="Zangen Stonehoof" GiverId="4721" X="-1207.75" Y="-57.0394" Z="158.601" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Thousand Needles (27-29)" />
 	</QuestOrder>
 </HBProfile>

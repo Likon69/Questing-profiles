@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Winterspring (53-53)</Name>
-	<MinLevel>53</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -21,10 +18,14 @@
 	<Vendors>
 		<!-- Evie Whirlbrew (10188) — no spawn data -->
 		<!-- Innkeeper Vizzie (10187) — no spawn data -->
+		<Vendor Name="Mylini Frostmoon" Entry="15315" Type="Repair" X="6145.19" Y="-1946.77" Z="574.663" />
+		<Vendor Name="Lyranne Feathersong" Entry="2303" Type="Food" X="7147.01" Y="-4005.61" Z="745.713" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="978" Name="Moontouched Wildkin">
@@ -47,8 +48,35 @@
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Winterspring (53-53) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3908" TurnInName="Donova Snowden" TurnInId="9298" />
+		<If Condition="(Me.ZoneId == 141) || (Me.ZoneId == 1657)">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="It's a Secret to Everybody" QuestId="3908" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<Objective QuestName="Moontouched Wildkin" QuestId="978" Type="CollectItem" ItemId="12383" CollectCount="10" />
 		<CustomBehavior File="LoadProfile" ProfileName="Burning Steppes (53-54)" />
 	</QuestOrder>

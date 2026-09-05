@@ -1,29 +1,52 @@
 <HBProfile>
 	<Name>Class Quests\Paladin Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Eriden" Entry="16670" Type="Repair" X="9862.26" Y="-7374.1" Z="18.6934" />
+		<Vendor Name="Celana" Entry="16619" Type="Repair" X="9867.72" Y="-7445.44" Z="13.7193" />
+		<Vendor Name="Mathaleron" Entry="16620" Type="Repair" X="9834.5" Y="-7446.23" Z="13.7208" />
+		<Vendor Name="Innkeeper Velandra" Entry="16618" Type="Food" X="9684.1" Y="-7363.6" Z="12.0145" />
+		<Vendor Name="Vinemaster Suntouched" Entry="16442" Type="Food" X="9681.59" Y="-7363.88" Z="12.0154" />
+		<Vendor Name="Innkeeper Jovia" Entry="17630" Type="Food" X="9565.68" Y="-7222.8" Z="16.4272" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="9684" Name="Claiming the Light">
+		<Objective Type="CollectItem" ItemId="24156" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mistvale Gorilla" Id="1108" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11838.2" Y="-222.08" Z="17.08" />
+				<Hotspot X="-11884.7" Y="-251.27" Z="17" />
+				<Hotspot X="-11870.15" Y="-165.28" Z="16.47" />
+				<Hotspot X="-11933.1" Y="-266.88" Z="14.55" />
+				<Hotspot X="-11881.3" Y="-113.73" Z="21.56" />
+				<Hotspot X="-11932.3" Y="-194.47" Z="15.99" />
+				<Hotspot X="-11924.1" Y="-154.62" Z="12.77" />
+				<Hotspot X="-11948.5" Y="-118.45" Z="7.73" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="9692" Name="The Path of the Adept">
 		<Objective Type="CollectItem" ItemId="24224" CollectCount="1">
 			<CollectFrom>
@@ -33,170 +56,304 @@
 				<Hotspot X="-207.4" Y="2245.31" Z="79.77" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="6995" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Blackfathom Tide Priestess" Id="4802" />
+				<Mob Name="Blackfathom Oracle" Id="4803" />
+				<Mob Name="Blackfathom Sea Witch" Id="4805" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4252.39" Y="670.84" Z="-28.95" />
+				<Hotspot X="4240.39" Y="733.3" Z="-26.32" />
+				<Hotspot X="4212.47" Y="736.55" Z="-24.42" />
+				<Hotspot X="4334.52" Y="871.32" Z="-20.1" />
+				<Hotspot X="4238.76" Y="803.51" Z="-13.32" />
+				<Hotspot X="4296.6" Y="858.68" Z="-14.19" />
+				<Hotspot X="4317.89" Y="904.13" Z="-14.96" />
+				<Hotspot X="4247" Y="890.88" Z="-9.37" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10590" Name="Prove Your Hatred">
+		<Objective Type="CollectItem" ItemId="12840" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Skeletal Flayer" Id="1783" />
+				<Mob Name="Skeletal Sorcerer" Id="1784" />
+				<Mob Name="Skeletal Terror" Id="1785" />
+				<Mob Name="Skeletal Executioner" Id="1787" />
+				<Mob Name="Skeletal Acolyte" Id="1789" />
+				<Mob Name="Slavering Ghoul" Id="1791" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1744.78" Y="-1116.26" Z="62.81" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="9725" Name="A Demonstration of Loyalty">
 		<Objective Type="KillMob" MobId="17878" KillCount="15">
 			<Hotspots>
-				<Hotspot X="3225.21" Y="-4562.78" Z="108.809" />
-				<Hotspot X="3219.52" Y="-4571.79" Z="109.834" />
-				<Hotspot X="3217.72" Y="-4566.05" Z="109.435" />
-				<Hotspot X="3227.12" Y="-4569.34" Z="109.334" />
-				<Hotspot X="3231.18" Y="-4499.37" Z="111.761" />
+				<Hotspot X="3225.21" Y="-4562.78" Z="108.81" />
+				<Hotspot X="3219.52" Y="-4571.79" Z="109.83" />
+				<Hotspot X="3217.72" Y="-4566.05" Z="109.44" />
+				<Hotspot X="3227.12" Y="-4569.34" Z="109.33" />
+				<Hotspot X="3231.18" Y="-4499.37" Z="111.76" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="182058" UseCount="3">
+			<Hotspots>
+				<Hotspot X="3270.2" Y="-4513.79" Z="108.18" />
+				<Hotspot X="3238.05" Y="-4558.33" Z="106.26" />
+				<Hotspot X="3204.2" Y="-4557.83" Z="107.29" />
+				<Hotspot X="3227.12" Y="-4495.47" Z="111.3" />
+				<Hotspot X="3194.65" Y="-4526.08" Z="109.52" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9735" Name="True Masters of the Light">
+		<Objective Type="CollectItem" ItemId="24284" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Basin of Holy Water" Id="182063" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1796.55" Y="-5422.54" Z="83.49" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9736" Name="True Masters of the Light">
+		<Objective Type="CollectItem" ItemId="18335" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Skeletal Warlord" Id="1788" />
+				<Mob Name="Flesh Golem" Id="1805" />
+				<Mob Name="Scarlet Magus" Id="1832" />
+				<Mob Name="Scarlet Cavalier" Id="1836" />
+				<Mob Name="Foreman Jerris" Id="1843" />
+				<Mob Name="High Protector Lorik" Id="1846" />
+				<GameObject Name="Wooden Chair" Id="17259" />
+				<GameObject Name="Jinxed Hoodoo Pile" Id="180228" />
+				<GameObject Name="Jinxed Hoodoo Pile" Id="180229" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3102.58" Y="-1542.3" Z="151.38" />
+				<Hotspot X="2974.15" Y="-1594.53" Z="178.59" />
+				<Hotspot X="2924" Y="-1520.19" Z="149.27" />
+				<Hotspot X="2857.62" Y="-1515.51" Z="145.78" />
+				<Hotspot X="2936.14" Y="-1388.17" Z="163.29" />
+				<Hotspot X="1558.74" Y="-1468.04" Z="68.4" />
+				<Hotspot X="1380.2" Y="-1629.36" Z="60.56" />
+				<Hotspot X="1483.12" Y="-1417.11" Z="67.77" />
+				<Hotspot X="-8861.44" Y="854.28" Z="99.61" />
+				<Hotspot X="-11452.9" Y="-1613.94" Z="49.03" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="9737" Name="True Masters of the Light">
 		<Objective Type="KillMob" MobId="10917" KillCount="1">
 			<Hotspots>
-				<Hotspot X="3680.53" Y="-3643.8" Z="140.027" />
+				<Hotspot X="3680.53" Y="-3643.8" Z="140.03" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Class Quests_Paladin Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(9678))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
 		<If Condition="Me.Level &lt; 12">
-			<GrindTo Level="12" />
-		</If>
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="The First Trial" QuestId="9678" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<Objective QuestName="The First Trial" QuestId="9678" Type="KillMob" MobId="17716" KillCount="1" />
-			<TurnIn QuestName="The First Trial" QuestId="9678" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-			<PickUp QuestName="A Study in Power" QuestId="9681" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<PickUp QuestName="A Study in Power" QuestId="64319" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-		</If>
-
-		<TurnIn QuestName="A Study in Power" QuestId="9681" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" />
-		<TurnIn QuestName="A Study in Power" QuestId="64319" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" />
-		<PickUp QuestName="Claiming the Light" QuestId="9684" GiverName="Magister Astalor Bloodsworn" GiverId="17718" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Claiming the Light" QuestId="63866" GiverName="Magister Astalor Bloodsworn" GiverId="17718" />
-		</If>
-
-		<Objective QuestName="Claiming the Light" QuestId="9684" Type="CollectItem" ItemId="24156" CollectCount="1" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<Objective QuestName="Claiming the Light" QuestId="63866" Type="CollectItem" ItemId="24156" CollectCount="1" />
-		</If>
-
-		<TurnIn QuestName="Claiming the Light" QuestId="9684" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-		<TurnIn QuestName="Claiming the Light" QuestId="63866" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Redeeming the Dead" QuestId="9685" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<While Condition="((HasQuest(9685)) &amp;&amp; (!IsQuestCompleted(9685)))" >
-				<CustomBehavior File="UseItemOn" QuestId="9685" MobId="17768" ItemId="24184" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9667.23" Y="-7371.32" Z="22.955" />
-			</While>
-			<TurnIn QuestName="Redeeming the Dead" QuestId="9685" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-		</If>
-
-		<If Condition="Me.Level &lt; 20">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 20 - Sangrias Stillblade</Name>
-					<Factions>14</Factions>
+					<Name>Grind to Level 12 - Crazed Dragonhawk</Name>
+					<Factions>7</Factions>
+					<TargetMinLevel>7</TargetMinLevel>
+					<TargetMaxLevel>8</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="89.26" Y="35.20" Z="0.00" />
+						<Hotspot X="10089.9" Y="-7352.99" Z="24.48" />
+						<Hotspot X="10095.2" Y="-7399.66" Z="33.86" />
+						<Hotspot X="10171.5" Y="-7404.47" Z="48.17" />
+						<Hotspot X="10192.3" Y="-7320.83" Z="45.93" />
+						<Hotspot X="10225.5" Y="-7453.73" Z="75.07" />
+						<Hotspot X="10279.3" Y="-7324.25" Z="33.49" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
-			<GrindTo Level="20" />
+			<GrindTo Level="12" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="The Second Trial" QuestId="9690" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<TurnIn QuestName="The Second Trial" QuestId="9690" TurnInName="Master Kelerun Bloodmourn" TurnInId="17807" />
-			<PickUp QuestName="The Second Trial" QuestId="9686" GiverName="Master Kelerun Bloodmourn" GiverId="17807" />
-			<TurnIn QuestName="The Second Trial" QuestId="9686" TurnInName="Master Kelerun Bloodmourn" TurnInId="17807" />
-			<PickUp QuestName="Return to Silvermoon" QuestId="9691" GiverName="Master Kelerun Bloodmourn" GiverId="17807" />
-			<TurnIn QuestName="Return to Silvermoon" QuestId="9691" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-			<PickUp QuestName="The Path of the Adept" QuestId="9692" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
+			<PickUp QuestName="The First Trial" QuestId="9678" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<Objective QuestName="The First Trial" QuestId="9678" Type="KillMob" MobId="17716" KillCount="1" />
+			<TurnIn QuestName="The First Trial" QuestId="9678" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<PickUp QuestName="A Study in Power" QuestId="9681" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+		</If>
+
+		<TurnIn QuestName="A Study in Power" QuestId="9681" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" X="9861.31" Y="-7516.01" Z="-7.9775" />
+		<PickUp QuestName="Claiming the Light" QuestId="9684" GiverName="Magister Astalor Bloodsworn" GiverId="17718" X="9861.31" Y="-7516.01" Z="-7.9775" />
+		<Objective QuestName="Claiming the Light" QuestId="9684" Type="CollectItem" ItemId="24156" CollectCount="1" />
+		<TurnIn QuestName="Claiming the Light" QuestId="9684" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
+			<PickUp QuestName="Redeeming the Dead" QuestId="9685" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<While Condition="((HasQuest(9685)) &amp;&amp; (!IsQuestCompleted(9685)))">
+				<CustomBehavior File="UseItemOn" QuestId="9685" MobId="17768" ItemId="24184" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9667.23" Y="-7371.32" Z="22.955" />
+			</While>
+			<TurnIn QuestName="Redeeming the Dead" QuestId="9685" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+		</If>
+
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
+			<PickUp QuestName="The Second Trial" QuestId="9690" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<TurnIn QuestName="The Second Trial" QuestId="9690" TurnInName="Master Kelerun Bloodmourn" TurnInId="17807" X="10099.6" Y="-6599.11" Z="3.7387" />
+			<PickUp QuestName="The Second Trial" QuestId="9686" GiverName="Master Kelerun Bloodmourn" GiverId="17807" X="10099.6" Y="-6599.11" Z="3.7387" />
+			<TurnIn QuestName="The Second Trial" QuestId="9686" TurnInName="Master Kelerun Bloodmourn" TurnInId="17807" X="10099.6" Y="-6599.11" Z="3.7387" />
+			<PickUp QuestName="Return to Silvermoon" QuestId="9691" GiverName="Master Kelerun Bloodmourn" GiverId="17807" X="10099.6" Y="-6599.11" Z="3.7387" />
+			<TurnIn QuestName="Return to Silvermoon" QuestId="9691" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<PickUp QuestName="The Path of the Adept" QuestId="9692" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
 			<Objective QuestName="The Path of the Adept" QuestId="9692" Type="CollectItem" ItemId="24226" CollectCount="1" />
 			<Objective QuestName="The Path of the Adept" QuestId="9692" Type="CollectItem" ItemId="24224" CollectCount="1" />
 			<Objective QuestName="The Path of the Adept" QuestId="9692" Type="CollectItem" ItemId="24225" CollectCount="1" />
 			<Objective QuestName="The Path of the Adept" QuestId="9692" Type="CollectItem" ItemId="6995" CollectCount="1" />
-			<TurnIn QuestName="The Path of the Adept" QuestId="9692" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-			<PickUp QuestName="Forging the Weapon" QuestId="9707" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<TurnIn QuestName="Forging the Weapon" QuestId="9707" TurnInName="Bemarrin" TurnInId="16669" />
+			<TurnIn QuestName="The Path of the Adept" QuestId="9692" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<PickUp QuestName="Forging the Weapon" QuestId="9707" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<TurnIn QuestName="Forging the Weapon" QuestId="9707" TurnInName="Bemarrin" TurnInId="16669" X="9841.98" Y="-7362.39" Z="18.5945" />
 		</If>
 
 		<If Condition="Me.Level &lt; 40">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 40 - Zelemar the Wrathful</Name>
-					<Factions>954</Factions>
+					<Name>Grind to Level 40 - Winter Reveler</Name>
+					<Factions>35</Factions>
+					<TargetMinLevel>30</TargetMinLevel>
+					<TargetMaxLevel>70</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="79.60" Y="38.40" Z="0.00" />
+						<Hotspot X="9797.09" Y="-7253.71" Z="26.26" />
+						<Hotspot X="9696.77" Y="-7375.28" Z="12" />
+						<Hotspot X="9575.2" Y="-7221.3" Z="16.22" />
+						<Hotspot X="9474.59" Y="-6863.39" Z="17.46" />
+						<Hotspot X="9379.95" Y="-6787.26" Z="14.32" />
+						<Hotspot X="7674.63" Y="-6836.41" Z="79.32" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="40" />
 		</If>
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="The Thalassian Warhorse" QuestId="9712" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-		</If>
 
 		<If Condition="Me.Level &lt; 50">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 50 - Zelemar the Wrathful</Name>
-					<Factions>954</Factions>
+					<Name>Grind to Level 50 - Midsummer Celebrant</Name>
+					<Factions>35</Factions>
+					<TargetMinLevel>40</TargetMinLevel>
+					<TargetMaxLevel>70</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="89.40" Y="35.40" Z="0.00" />
+						<Hotspot X="9797.09" Y="-7253.71" Z="26.26" />
+						<Hotspot X="9379.95" Y="-6787.26" Z="14.32" />
+						<Hotspot X="7674.63" Y="-6836.41" Z="79.32" />
+						<Hotspot X="-2236.26" Y="-11905.58" Z="27.02" />
+						<Hotspot X="3116.75" Y="3723.96" Z="144.51" />
+						<Hotspot X="2927.2" Y="3695.54" Z="143.86" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="50" />
 		</If>
-		<PickUp QuestName="To The Bulwark" QuestId="9601" GiverName="Champion Bachi" GiverId="16681" />
-		<TurnIn QuestName="To The Bulwark" QuestId="9601" TurnInName="Mehlar Dawnblade" TurnInId="17099" />
-		<PickUp QuestName="Prove Your Hatred" QuestId="10590" GiverName="Mehlar Dawnblade" GiverId="17099" />
-		<PickUp QuestName="Argent Dawn Commission" QuestId="5405" GiverName="Argent Officer Garush" GiverId="10839" />
-		<Objective QuestName="Argent Dawn Commission" QuestId="5405" Type="CollectItem" ItemId="12846" CollectCount="1" />
-		<TurnIn QuestName="Argent Dawn Commission" QuestId="5405" TurnInName="Argent Officer Garush" TurnInId="10857" />
-		<Objective QuestName="Argent Dawn Commission" QuestId="5405" Type="CollectItem" ItemId="12846" CollectCount="1" />
-		<Objective QuestName="Prove Your Hatred" QuestId="10590" Type="CollectItem" ItemId="12840" CollectCount="20" />
-		<TurnIn QuestName="Prove Your Hatred" QuestId="10590" TurnInName="Mehlar Dawnblade" TurnInId="17099" />
-		<PickUp QuestName="Wisdom of the Banshee Queen" QuestId="10592" GiverName="Mehlar Dawnblade" GiverId="17099" />
-		<TurnIn QuestName="Wisdom of the Banshee Queen" QuestId="10592" TurnInName="Lady Sylvanas Windrunner" TurnInId="10181" />
-		<PickUp QuestName="Ancient Evil" QuestId="10593" GiverName="Lady Sylvanas Windrunner" GiverId="10181" />
-		<Objective QuestName="Ancient Evil" QuestId="10593" Type="CollectItem" ItemId="22444" CollectCount="1" />
-		<TurnIn QuestName="Ancient Evil" QuestId="10593" TurnInName="Mehlar Dawnblade" TurnInId="17099" />
-		<If Condition="Me.Level &lt; 60">
-			<SetGrindArea>
-				<GrindArea>
-					<Name>Grind to Level 60 - Atal'alarion</Name>
-					<Factions>37</Factions>
-					<Hotspots>
-						<Hotspot X="83.20" Y="71.10" Z="0.00" />
-					</Hotspots>
-				</GrindArea>
-			</SetGrindArea>
-			<GrindTo Level="60" />
+
+		<PickUp QuestName="To The Bulwark" QuestId="9601" GiverName="Champion Bachi" GiverId="16681" X="9850.97" Y="-7517.68" Z="19.8144" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
 		</If>
-		<PickUp QuestName="A Summons from Lord Solanar" QuestId="9721" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-		<TurnIn QuestName="A Summons from Lord Solanar" QuestId="9721" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="The Master's Path" QuestId="9722" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
-		<TurnIn QuestName="The Master's Path" QuestId="9722" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="A Gesture of Commitment" QuestId="9723" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
+
+		<TurnIn QuestName="To The Bulwark" QuestId="9601" TurnInName="Mehlar Dawnblade" TurnInId="17099" X="1688.86" Y="-727.09" Z="58.3251" />
+		<PickUp QuestName="Prove Your Hatred" QuestId="10590" GiverName="Mehlar Dawnblade" GiverId="17099" X="1688.86" Y="-727.09" Z="58.3251" />
+		<PickUp QuestName="Argent Dawn Commission" QuestId="5405" GiverName="Argent Quartermaster Lightspark" GiverId="10857" X="966.826" Y="-1425.31" Z="65.3258" />
+		<TurnIn QuestName="Argent Dawn Commission" QuestId="5405" TurnInName="Argent Quartermaster Lightspark" TurnInId="10857" X="966.826" Y="-1425.31" Z="65.3258" />
+		<Objective QuestName="Prove Your Hatred" QuestId="10590" Type="CollectItem" ItemId="12840" CollectCount="20" />
+		<TurnIn QuestName="Prove Your Hatred" QuestId="10590" TurnInName="Mehlar Dawnblade" TurnInId="17099" X="1688.86" Y="-727.09" Z="58.3251" />
+		<PickUp QuestName="Wisdom of the Banshee Queen" QuestId="10592" GiverName="Mehlar Dawnblade" GiverId="17099" X="1688.86" Y="-727.09" Z="58.3251" />
+		<TurnIn QuestName="Wisdom of the Banshee Queen" QuestId="10592" TurnInName="Lady Sylvanas Windrunner" TurnInId="10181" X="1290.41" Y="316.247" Z="-57.2376" />
+		<PickUp QuestName="Ancient Evil" QuestId="10593" GiverName="Lady Sylvanas Windrunner" GiverId="10181" X="1290.41" Y="316.247" Z="-57.2376" />
+		<Objective QuestName="Ancient Evil" QuestId="10593" Type="CollectItem" ItemId="22444" CollectCount="1" />
+		<TurnIn QuestName="Ancient Evil" QuestId="10593" TurnInName="Mehlar Dawnblade" TurnInId="17099" X="1688.86" Y="-727.09" Z="58.3251" />
+		<If Condition="Me.MapId != 530">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<PickUp QuestName="A Summons from Lord Solanar" QuestId="9721" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+		<TurnIn QuestName="A Summons from Lord Solanar" QuestId="9721" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<PickUp QuestName="The Master's Path" QuestId="9722" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<TurnIn QuestName="The Master's Path" QuestId="9722" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<PickUp QuestName="A Gesture of Commitment" QuestId="9723" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
 		<Objective QuestName="A Gesture of Commitment" QuestId="9723" Type="CollectItem" ItemId="12360" CollectCount="6" />
 		<Objective QuestName="A Gesture of Commitment" QuestId="9723" Type="CollectItem" ItemId="8838" CollectCount="10" />
 		<Objective QuestName="A Gesture of Commitment" QuestId="9723" Type="CollectItem" ItemId="20520" CollectCount="5" />
-		<TurnIn QuestName="A Gesture of Commitment" QuestId="9723" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="A Demonstration of Loyalty" QuestId="9725" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
+		<!-- REVIEW Q9723 A Gesture of Commitment: collect 14047 Runecloth x40 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9723)) &amp;&amp; (IsQuestCompleted(9723)))">
+			<TurnIn QuestName="A Gesture of Commitment" QuestId="9723" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		</If>
+
+		<If Condition="((HasQuest(9723)) &amp;&amp; (!IsQuestCompleted(9723)))">
+			<AbandonQuest QuestId="9723" />
+		</If>
+
+		<PickUp QuestName="A Demonstration of Loyalty" QuestId="9725" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
 		<Objective QuestName="A Demonstration of Loyalty" QuestId="9725" Type="KillMob" MobId="17878" KillCount="15" />
-		<TurnIn QuestName="A Demonstration of Loyalty" QuestId="9725" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="True Masters of the Light" QuestId="9735" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
+		<Objective QuestName="A Demonstration of Loyalty" QuestId="9725" Type="UseObject" ObjectId="182058" UseCount="3" />
+		<TurnIn QuestName="A Demonstration of Loyalty" QuestId="9725" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<PickUp QuestName="True Masters of the Light" QuestId="9735" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
 		<Objective QuestName="True Masters of the Light" QuestId="9735" Type="CollectItem" ItemId="24284" CollectCount="1" />
-		<TurnIn QuestName="True Masters of the Light" QuestId="9735" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="True Masters of the Light" QuestId="9736" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
-		<Objective QuestName="True Masters of the Light" QuestId="9736" Type="CollectItem" ItemId="10620" CollectCount="1" />
+		<TurnIn QuestName="True Masters of the Light" QuestId="9735" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<PickUp QuestName="True Masters of the Light" QuestId="9736" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
 		<Objective QuestName="True Masters of the Light" QuestId="9736" Type="CollectItem" ItemId="12800" CollectCount="1" />
 		<Objective QuestName="True Masters of the Light" QuestId="9736" Type="CollectItem" ItemId="18335" CollectCount="1" />
-		<TurnIn QuestName="True Masters of the Light" QuestId="9736" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
-		<PickUp QuestName="True Masters of the Light" QuestId="9737" GiverName="Lord Solanar Bloodwrath" GiverId="25223" />
-		<While Condition="((HasQuest(9737)) &amp;&amp; (!IsQuestCompleted(9737)))" >
+		<!-- REVIEW Q9736 True Masters of the Light: collect 24286 Arcane Catalyst x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9736)) &amp;&amp; (IsQuestCompleted(9736)))">
+			<TurnIn QuestName="True Masters of the Light" QuestId="9736" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		</If>
+
+		<If Condition="((HasQuest(9736)) &amp;&amp; (!IsQuestCompleted(9736)))">
+			<AbandonQuest QuestId="9736" />
+		</If>
+
+		<PickUp QuestName="True Masters of the Light" QuestId="9737" GiverName="Lord Solanar Bloodwrath" GiverId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		<While Condition="((HasQuest(9737)) &amp;&amp; (!IsQuestCompleted(9737)))">
 			<CustomBehavior File="UseItemOn" QuestId="9737" MobId="17915" ItemId="24287" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3664.08" Y="-3602.07" Z="137.043" />
 		</While>
-		<Objective QuestName="True Masters of the Light" QuestId="9737" Type="KillMob" MobId="10917" KillCount="1" />
-		<TurnIn QuestName="True Masters of the Light" QuestId="9737" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" />
+
+		<!-- REVIEW Q9737 True Masters of the Light: UseItemOn target 17915 [PH] Invis Paladin Quest Credit has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9737)) &amp;&amp; (IsQuestCompleted(9737)))">
+			<TurnIn QuestName="True Masters of the Light" QuestId="9737" TurnInName="Lord Solanar Bloodwrath" TurnInId="25223" X="9840.6" Y="-7515.86" Z="-7.9776" />
+		</If>
+
+		<If Condition="((HasQuest(9737)) &amp;&amp; (!IsQuestCompleted(9737)))">
+			<AbandonQuest QuestId="9737" />
+		</If>
+
 	</QuestOrder>
 </HBProfile>

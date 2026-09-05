@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Felwood (55-56)</Name>
-	<MinLevel>55</MinLevel>
-	<MaxLevel>56</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,27 +17,96 @@
 
 	<Vendors>
 		<!-- Nata Dawnstrider (11344) — no spawn data -->
-		<Vendor Name="Innkeeper Biribi" Entry="14981" Type="Food" X="-8390.29" Y="285.503" Z="120.969" />
+		<Vendor Name="Tiyani" Entry="4195" Type="Food" X="4986.99" Y="80.0395" Z="52.8232" />
+		<Vendor Name="Innkeeper Kimlya" Entry="6738" Type="Food" X="2781.16" Y="-432.997" Z="116.665" />
+		<Vendor Name="Nantar" Entry="3959" Type="Food" X="2754.83" Y="-441.923" Z="111.553" />
+		<Vendor Name="Aeolynn" Entry="3952" Type="Repair" X="2769.5" Y="-288.052" Z="111.192" />
+		<Vendor Name="Tandaan Lightmane" Entry="3953" Type="Repair" X="2754.85" Y="-292.216" Z="111.192" />
+		<Vendor Name="Xai'ander" Entry="11137" Type="Repair" X="2672.31" Y="-363.604" Z="110.811" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="5165" Name="Dousing the Flames of Protection">
+		<Objective Type="UseObject" ObjectId="176159" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5113.6" Y="-524.67" Z="296.59" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="176160" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5091.5" Y="-470.31" Z="298.16" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="176161" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5017.8" Y="-456.18" Z="321.93" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Felwood (55-56) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(5165))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Cleansed Water Returns to Felwood" QuestId="5159" TurnInName="Greta Mosshoof" TurnInId="10922" />
-		<PickUp QuestName="Dousing the Flames of Protection" QuestId="5165" GiverName="Greta Mosshoof" GiverId="10922" />
-		<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" />
-		<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" />
-		<TurnIn QuestName="Purified!" QuestId="4442" TurnInName="Eridan Bluewind" TurnInId="9116" />
-		<Objective QuestName="A Strange Red Key" QuestId="5202" Type="CollectItem" ItemId="13140" CollectCount="1" />
-		<While Condition="((HasQuest(5165)) &amp;&amp; (!IsQuestCompleted(5165)))" >
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(5165))">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="Cleansed Water Returns to Felwood" QuestId="5159" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<PickUp QuestName="Dousing the Flames of Protection" QuestId="5165" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<Objective QuestName="Dousing the Flames of Protection" QuestId="5165" Type="UseObject" ObjectId="176159" UseCount="1" />
+		<Objective QuestName="Dousing the Flames of Protection" QuestId="5165" Type="UseObject" ObjectId="176160" UseCount="1" />
+		<Objective QuestName="Dousing the Flames of Protection" QuestId="5165" Type="UseObject" ObjectId="176161" UseCount="1" />
+		<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		<TurnIn QuestName="Purified!" QuestId="4442" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 13140)">
+			<CustomBehavior File="CollectThings" CollectItemId="13140" CollectItemCount="1" HuntingGroundRadius="120" MobId="7114" MobId2="7118" MobId3="7120" MobId4="9862" MobId5="14523" X="5045.6975" Y="-537.77" Z="309.387">
+				<Hotspot X="5045.7" Y="-537.77" Z="309.39" />
+				<Hotspot X="4924.27" Y="-399.47" Z="332.55" />
+				<Hotspot X="4974.04" Y="-431.05" Z="323.62" />
+				<Hotspot X="5027.57" Y="-481.1" Z="319.08" />
+				<Hotspot X="5100.83" Y="-521.9" Z="296.72" />
+				<Hotspot X="5091.31" Y="-474.38" Z="297.87" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(5165)) &amp;&amp; (!IsQuestCompleted(5165)))">
 			<CustomBehavior File="UseItemOn" QuestId="5165" MobId="176158" ItemId="13140" NumOfTimes="1" MobType="GameObject" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="A Strange Red Key" QuestId="5202" GiverName="Eridan Bluewind" GiverId="9116" />
-		<TurnIn QuestName="A Strange Red Key" QuestId="5202" TurnInName="Captured Arko'narin" TurnInId="11016" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 13140)">
+			<PickUp QuestName="A Strange Red Key" QuestId="5202" GiverName="Blood Red Key" GiverId="13140" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="A Strange Red Key" QuestId="5202" TurnInName="Captured Arko'narin" TurnInId="11016" X="5007.17" Y="-440.187" Z="319.142" />
 		<Objective QuestName="Toxic Horrors" QuestId="5086" Type="CollectItem" ItemId="12822" CollectCount="3" />
 		<CustomBehavior File="LoadProfile" ProfileName="Winterspring (56-56)" />
 	</QuestOrder>

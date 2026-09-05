@@ -1,29 +1,71 @@
 <HBProfile>
 	<Name>Class Quests\Hunter Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Mylini Frostmoon" Entry="15315" Type="Repair" X="6145.19" Y="-1946.77" Z="574.663" />
+		<Vendor Name="Lyranne Feathersong" Entry="2303" Type="Food" X="7147.01" Y="-4005.61" Z="745.713" />
+		<Vendor Name="Shaldyn" Entry="4185" Type="Repair" X="6568.22" Y="439.552" Z="9.1427" />
+		<Vendor Name="Elisa Steelhand" Entry="6300" Type="Repair" X="6538.29" Y="443.297" Z="7.224" />
+		<Vendor Name="Allyndia" Entry="4191" Type="Food" X="6428.75" Y="510.32" Z="8.7334" />
+		<Vendor Name="Innkeeper Shaussiy" Entry="6737" Type="Food" X="6406.51" Y="515.367" Z="8.7257" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="8153" Name="Courser Antlers">
+		<Objective Type="CollectItem" ItemId="20017" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Mosshoof Courser" Id="8761" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4144.93" Y="-5919.24" Z="100.68" />
+				<Hotspot X="4305.52" Y="-5828.38" Z="98.21" />
+				<Hotspot X="4275.13" Y="-5862.76" Z="95.89" />
+				<Hotspot X="4225.17" Y="-5919.21" Z="97.54" />
+				<Hotspot X="4448.35" Y="-5686.47" Z="104.45" />
+				<Hotspot X="4423.95" Y="-5780.82" Z="105.16" />
+				<Hotspot X="4454.07" Y="-5746.29" Z="103.1" />
+				<Hotspot X="4304.77" Y="-5966.35" Z="97.85" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8231" Name="Wavethrashing">
+		<Objective Type="CollectItem" ItemId="20087" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Young Wavethrasher" Id="6347" />
+				<Mob Name="Wavethrasher" Id="6348" />
+				<Mob Name="Great Wavethrasher" Id="6349" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3014.37" Y="-6005.1" Z="-10.36" />
+				<Hotspot X="2917.09" Y="-6109.86" Z="2.21" />
+				<Hotspot X="5006.79" Y="-6217.88" Z="-17.09" />
+				<Hotspot X="2918.68" Y="-6613.63" Z="-11.58" />
+				<Hotspot X="2872.29" Y="-6784.97" Z="-6.4" />
+				<Hotspot X="2173.68" Y="-5616.82" Z="-8.05" />
+				<Hotspot X="2801.7" Y="-6785.23" Z="-0.28" />
+				<Hotspot X="2404.85" Y="-6377.31" Z="6.5" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="8232" Name="The Green Drake">
 		<Objective Type="CollectItem" ItemId="18703" CollectCount="1">
 			<CollectFrom>
@@ -33,58 +75,177 @@
 				<Hotspot X="756.9" Y="-1180.7" Z="-118.6" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="20019" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Morphaz" Id="5719" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-667.59" Y="103.11" Z="-90.83" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7636" Name="Stave of the Ancients">
+		<Objective Type="CollectItem" ItemId="18952" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Simone the Inconspicuous" Id="14527" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6980.17" Y="-742.73" Z="-265.75" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18953" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Franklin the Friendly" Id="14529" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8316.99" Y="-1006.56" Z="177.67" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18954" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Nelson the Nice" Id="14536" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7724.21" Y="1676.43" Z="7.13" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="18955" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Artorius the Amiable" Id="14531" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="7909.71" Y="-4598.67" Z="710.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7635" Name="A Proper String">
+		<Objective Type="CollectItem" ItemId="18705" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Black Dragonspawn" Id="7040" />
+				<Mob Name="Black Wyrmkin" Id="7041" />
+				<Mob Name="Flamescale Dragonspawn" Id="7042" />
+				<Mob Name="Flamescale Wyrmkin" Id="7043" />
+				<Mob Name="Black Drake" Id="7044" />
+				<Mob Name="Scalding Drake" Id="7045" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7560.21" Y="-2656.21" Z="136.2" />
+				<Hotspot X="-7573.25" Y="-2734.08" Z="134.76" />
+				<Hotspot X="-7544.74" Y="-2809.85" Z="151.9" />
+				<Hotspot X="-7574.63" Y="-2760.95" Z="134.52" />
+				<Hotspot X="-7584.55" Y="-2814.06" Z="134.33" />
+				<Hotspot X="-7612.6" Y="-2853.61" Z="133.9" />
+				<Hotspot X="-7627.55" Y="-2812.74" Z="133.83" />
+				<Hotspot X="-7653.28" Y="-2752.51" Z="131.27" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
-			<PickUp QuestName="Taming the Beast" QuestId="6063" GiverName="Dazalar" GiverId="3601" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6063" TurnInName="Dazalar" TurnInId="3601" />
-			<PickUp QuestName="Taming the Beast" QuestId="6101" GiverName="Dazalar" GiverId="3601" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6101" TurnInName="Dazalar" TurnInId="3601" />
-			<PickUp QuestName="Taming the Beast" QuestId="6102" GiverName="Dazalar" GiverId="3601" />
+		<!-- Travel to Class Quests_Hunter Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(6063))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+				<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+				<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+				<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+				<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
-			<PickUp QuestName="Training the Beast" QuestId="6103" GiverName="Dazalar" GiverId="3601" />
-			<TurnIn QuestName="Training the Beast" QuestId="6103" TurnInName="Jocaste" TurnInId="4146" />
+			<PickUp QuestName="Taming the Beast" QuestId="6063" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6063" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<PickUp QuestName="Taming the Beast" QuestId="6101" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6101" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<PickUp QuestName="Taming the Beast" QuestId="6102" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+		</If>
+
+		<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
+			<PickUp QuestName="Training the Beast" QuestId="6103" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<TurnIn QuestName="Training the Beast" QuestId="6103" TurnInName="Jocaste" TurnInId="4146" X="10178" Y="2511.01" Z="1343.24" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
-			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" />
-			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" />
-			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+					<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" X="-5022.09" Y="-1273.85" Z="507.839" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<PickUp QuestName="The Hunter's Charm" QuestId="8151" GiverName="Dorion" GiverId="4205" />
-			<TurnIn QuestName="The Hunter's Charm" QuestId="8151" TurnInName="Ogtinc" TurnInId="8405" />
-			<PickUp QuestName="Courser Antlers" QuestId="8153" GiverName="Ogtinc" GiverId="8405" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+					<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+					<RunTo X="6576.501" Y="769.4759" Z="5.5751" />
+					<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="6576.501" WaitAtY="769.4759" WaitAtZ="5.5751" TransportStartX="6594.6" TransportStartY="769.8" TransportStartZ="0" TransportEndX="8534.3" TransportEndY="1018" TransportEndZ="0" GetOffX="8555" GetOffY="1012.55" GetOffZ="6.06" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<PickUp QuestName="The Hunter's Charm" QuestId="8151" GiverName="Dorion" GiverId="4205" X="10187" Y="2491.67" Z="1358.62" />
+			<TurnIn QuestName="The Hunter's Charm" QuestId="8151" TurnInName="Ogtinc" TurnInId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
+			<PickUp QuestName="Courser Antlers" QuestId="8153" GiverName="Ogtinc" GiverId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
 			<Objective QuestName="Courser Antlers" QuestId="8153" Type="CollectItem" ItemId="20017" CollectCount="2" />
-			<TurnIn QuestName="Courser Antlers" QuestId="8153" TurnInName="Ogtinc" TurnInId="8405" />
-			<PickUp QuestName="Wavethrashing" QuestId="8231" GiverName="Ogtinc" GiverId="8405" />
+			<TurnIn QuestName="Courser Antlers" QuestId="8153" TurnInName="Ogtinc" TurnInId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
+			<PickUp QuestName="Wavethrashing" QuestId="8231" GiverName="Ogtinc" GiverId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
 		</If>
 
 		<Objective QuestName="Wavethrashing" QuestId="8231" Type="CollectItem" ItemId="20087" CollectCount="6" />
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<TurnIn QuestName="Wavethrashing" QuestId="8231" TurnInName="Ogtinc" TurnInId="8405" />
-			<PickUp QuestName="The Green Drake" QuestId="8232" GiverName="Ogtinc" GiverId="8405" />
+			<TurnIn QuestName="Wavethrashing" QuestId="8231" TurnInName="Ogtinc" TurnInId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
+			<PickUp QuestName="The Green Drake" QuestId="8232" GiverName="Ogtinc" GiverId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
 			<Objective QuestName="The Green Drake" QuestId="8232" Type="CollectItem" ItemId="20019" CollectCount="1" />
-			<TurnIn QuestName="The Green Drake" QuestId="8232" TurnInName="Ogtinc" TurnInId="8405" />
-			<Objective QuestName="The Green Drake" QuestId="8232" Type="CollectItem" ItemId="18703" CollectCount="1" />
-			<PickUp QuestName="The Ancient Leaf" QuestId="7632" GiverName="Ogtinc" GiverId="8405" />
-			<TurnIn QuestName="The Ancient Leaf" QuestId="7632" TurnInName="Vartus the Ancient" TurnInId="14524" />
-			<PickUp QuestName="An Introduction" QuestId="7633" GiverName="Vartus the Ancient" GiverId="14524" />
-			<PickUp QuestName="Stave of the Ancients" QuestId="7636" GiverName="Vartus the Ancient" GiverId="14524" />
+			<TurnIn QuestName="The Green Drake" QuestId="8232" TurnInName="Ogtinc" TurnInId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
+			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 18703)">
+				<CustomBehavior File="InteractWith" MobId="179703" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="756.897" Y="-1180.7" Z="-118.596" />
+			</If>
+			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 18703)">
+				<PickUp QuestName="The Ancient Leaf" QuestId="7632" GiverName="Ancient Petrified Leaf" GiverId="18703" GiverType="Item" />
+			</If>
+			<TurnIn QuestName="The Ancient Leaf" QuestId="7632" TurnInName="Vartrus the Ancient" TurnInId="14524" />
+			<PickUp QuestName="An Introduction" QuestId="7633" GiverName="Vartrus the Ancient" GiverId="14524" />
+			<PickUp QuestName="Stave of the Ancients" QuestId="7636" GiverName="Vartrus the Ancient" GiverId="14524" />
 			<PickUp QuestName="A Proper String" QuestId="7635" GiverName="Stoma the Ancient" GiverId="14525" />
-			<Objective QuestName="Stave of the Ancients" QuestId="7636" Type="CollectItem" ItemId="18952" CollectCount="1" />
 			<Objective QuestName="Stave of the Ancients" QuestId="7636" Type="CollectItem" ItemId="18952" CollectCount="1" />
 			<Objective QuestName="Stave of the Ancients" QuestId="7636" Type="CollectItem" ItemId="18953" CollectCount="1" />
 			<Objective QuestName="Stave of the Ancients" QuestId="7636" Type="CollectItem" ItemId="18954" CollectCount="1" />
@@ -93,9 +254,9 @@
 
 		<Objective QuestName="A Proper String" QuestId="7635" Type="CollectItem" ItemId="18705" CollectCount="1" />
 		<If Condition="(Me.Class == WoWClass.Hunter)">
-			<TurnIn QuestName="Stave of the Ancients" QuestId="7636" TurnInName="Vartus the Ancient" TurnInId="14524" />
-			<Objective QuestName="A Proper String" QuestId="7635" Type="CollectItem" ItemId="18713" CollectCount="1" />
-			<Objective QuestName="A Proper String" QuestId="7635" Type="CollectItem" ItemId="18715" CollectCount="1" />
+			<TurnIn QuestName="Stave of the Ancients" QuestId="7636" TurnInName="Vartrus the Ancient" TurnInId="14524" />
+			<Objective QuestName="A Proper String" QuestId="7635" Type="CollectItem" ItemId="18705" CollectCount="1" />
+			<Objective QuestName="A Proper String" QuestId="7635" Type="CollectItem" ItemId="18705" CollectCount="1" />
 		</If>
 
 	</QuestOrder>

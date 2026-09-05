@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Class Quests\Shaman Class Quests</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,124 +16,333 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
-		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
-		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
-		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Vendor Name="Katis" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Tarban Hearthgrain" Entry="8307" Type="Food" X="-555.578" Y="-2965.65" Z="91.7917" />
+		<Vendor Name="Halija Whitestrider" Entry="3486" Type="Repair" X="-539.841" Y="-2672.23" Z="95.8709" />
+		<Vendor Name="Moorane Hearthgrain" Entry="3480" Type="Food" X="-451.129" Y="-2684.29" Z="95.7333" />
+		<Vendor Name="Zargh" Entry="3489" Type="Food" X="-403.68" Y="-2709.34" Z="97.7294" />
+		<Vendor Name="Nargal Deatheye" Entry="3479" Type="Repair" X="-356.996" Y="-2568.86" Z="95.8708" />
+		<Vendor Name="Jahan Hawkwing" Entry="3483" Type="Repair" X="-350.079" Y="-2566.59" Z="97.4414" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="1519" Name="Call of Earth">
+		<Objective Type="CollectItem" ItemId="6634" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Bristleback Shaman" Id="2953" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-2945.13" Y="-1005" Z="54.76" />
+				<Hotspot X="-2861.6" Y="-1027.31" Z="55.61" />
+				<Hotspot X="-2873.71" Y="-1119.64" Z="88.62" />
+				<Hotspot X="-2884.32" Y="-1222.12" Z="69.61" />
+				<Hotspot X="-3110.42" Y="-1202.75" Z="85.45" />
+				<Hotspot X="-3006.67" Y="-1230.15" Z="66.12" />
+				<Hotspot X="-3049.96" Y="-1233.98" Z="78.92" />
+				<Hotspot X="-2951.85" Y="-1284.97" Z="72.33" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1516" Name="Call of Earth">
+		<Objective Type="CollectItem" ItemId="6640" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Felstalker" Id="3102" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-142.25" Y="-4236.41" Z="58.25" />
+				<Hotspot X="-148.68" Y="-4363.93" Z="66.9" />
+				<Hotspot X="-118.38" Y="-4299.8" Z="64.53" />
+				<Hotspot X="-89.55" Y="-4208.53" Z="51.55" />
+				<Hotspot X="-114.12" Y="-4328.78" Z="66.03" />
+				<Hotspot X="-89.87" Y="-4249.98" Z="51.74" />
+				<Hotspot X="-51.23" Y="-4323.6" Z="69" />
+				<Hotspot X="-28.91" Y="-4249.9" Z="67.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1525" Name="Call of Fire">
+		<Objective Type="CollectItem" ItemId="5026" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Razormane Water Seeker" Id="3267" />
+				<Mob Name="Razormane Thornweaver" Id="3268" />
+				<Mob Name="Razormane Geomancer" Id="3269" />
+				<Mob Name="Razormane Mystic" Id="3271" />
+				<Mob Name="Razormane Seer" Id="3458" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-37.01" Y="-3396.21" Z="90.64" />
+				<Hotspot X="-80.76" Y="-3370.37" Z="93.26" />
+				<Hotspot X="-222.13" Y="-3317.44" Z="91.79" />
+				<Hotspot X="-22.13" Y="-3351.05" Z="92.68" />
+				<Hotspot X="-180.5" Y="-3298.4" Z="91.82" />
+				<Hotspot X="-115.32" Y="-3200.88" Z="93.61" />
+				<Hotspot X="-47.31" Y="-3169.03" Z="92.04" />
+				<Hotspot X="-94.91" Y="-3139.13" Z="91.97" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="6652" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Cultist" Id="3199" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="870.8" Y="-4739.76" Z="32.31" />
+				<Hotspot X="915.81" Y="-4712.58" Z="21.87" />
+				<Hotspot X="928.53" Y="-4738.95" Z="20.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1526" Name="Call of Fire">
+		<Objective Type="CollectItem" ItemId="6655" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Minor Manifestation of Fire" Id="5893" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-246.26" Y="-4009.98" Z="187.29" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="63" Name="Call of Water">
+		<Objective Type="CollectItem" ItemId="7812" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Corrupt Minor Manifestation of Water" Id="5894" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="427.39" Y="1821.41" Z="10.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8412" Name="Spirit Totem">
+		<Objective Type="CollectItem" ItemId="20610" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Carrion Vulture" Id="1809" />
+				<Mob Name="Carrion Lurker" Id="1821" />
+				<Mob Name="Venom Mist Lurker" Id="1822" />
+				<Mob Name="Plague Lurker" Id="1824" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1450.39" Y="-1111.86" Z="71.6" />
+				<Hotspot X="1452.58" Y="-1055.66" Z="71.62" />
+				<Hotspot X="1517.81" Y="-1245.03" Z="60.7" />
+				<Hotspot X="1512.01" Y="-1180.51" Z="73.14" />
+				<Hotspot X="1513.39" Y="-1112.62" Z="75.42" />
+				<Hotspot X="1518.66" Y="-1055.6" Z="72.65" />
+				<Hotspot X="1587.26" Y="-1298.3" Z="65.22" />
+				<Hotspot X="1529.85" Y="-974.64" Z="67.85" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20611" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Carrion Vulture" Id="1809" />
+				<Mob Name="Diseased Black Bear" Id="1815" />
+				<Mob Name="Diseased Grizzly" Id="1816" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1417.96" Y="-1145.36" Z="67.54" />
+				<Hotspot X="1448.42" Y="-1177.22" Z="70.29" />
+				<Hotspot X="1488.42" Y="-1214.02" Z="63.25" />
+				<Hotspot X="1485.67" Y="-1146.2" Z="75.68" />
+				<Hotspot X="1481.83" Y="-1020.89" Z="75.81" />
+				<Hotspot X="1567.16" Y="-1199.22" Z="72.81" />
+				<Hotspot X="1543.82" Y="-1151.3" Z="73.31" />
+				<Hotspot X="1574.48" Y="-1267.65" Z="62.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8413" Name="Da Voodoo">
+		<Objective Type="CollectItem" ItemId="20608" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Zolo" Id="5712" />
+				<Mob Name="Loro" Id="5714" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-466.65" Y="24.43" Z="-66.79" />
+				<Hotspot X="-528.65" Y="130.16" Z="-66.75" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20606" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Gasher" Id="5713" />
+				<Mob Name="Zul'Lor" Id="5716" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-527.97" Y="59.45" Z="-66.72" />
+				<Hotspot X="-467.4" Y="166" Z="-66.7" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20607" CollectCount="2">
+			<CollectFrom>
+				<Mob Name="Hukku" Id="5715" />
+				<Mob Name="Mijan" Id="5717" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-405.51" Y="60.46" Z="-67.07" />
+				<Hotspot X="-406.19" Y="131.07" Z="-66.91" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Class Quests_Shaman Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1519))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-1936.32" Y="5445.95" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1936.32" Y="5445.95" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Tauren)">
-			<PickUp QuestName="Call of Earth" QuestId="1519" GiverName="Seer Ravenfeather" GiverId="5888" />
+			<PickUp QuestName="Call of Earth" QuestId="1519" GiverName="Seer Ravenfeather" GiverId="5888" X="-2882.26" Y="-250.201" Z="53.9893" />
 			<Objective QuestName="Call of Earth" QuestId="1519" Type="CollectItem" ItemId="6634" CollectCount="2" />
-			<TurnIn QuestName="Call of Earth" QuestId="1519" TurnInName="Seer Ravenfeather" TurnInId="5888" />
-			<PickUp QuestName="Call of Earth" QuestId="1520" GiverName="Seer Ravenfeather" GiverId="5888" />
-			<TurnIn QuestName="Call of Earth" QuestId="1520" TurnInName="Seer Ravenfeather" TurnInId="5891" />
-			<PickUp QuestName="Call of Earth" QuestId="1521" GiverName="Seer Ravenfeather" GiverId="5888" />
-			<TurnIn QuestName="Call of Earth" QuestId="1521" TurnInName="Seer Ravenfeather" TurnInId="5888" />
+			<TurnIn QuestName="Call of Earth" QuestId="1519" TurnInName="Seer Ravenfeather" TurnInId="5888" X="-2882.26" Y="-250.201" Z="53.9893" />
+			<PickUp QuestName="Call of Earth" QuestId="1520" GiverName="Seer Ravenfeather" GiverId="5888" X="-2882.26" Y="-250.201" Z="53.9893" />
+			<TurnIn QuestName="Call of Earth" QuestId="1520" TurnInName="Minor Manifestation of Earth" TurnInId="5891" X="-3031.36" Y="-720.833" Z="44.8901" />
+			<PickUp QuestName="Call of Earth" QuestId="1521" GiverName="Minor Manifestation of Earth" GiverId="5891" X="-3031.36" Y="-720.833" Z="44.8901" />
+			<TurnIn QuestName="Call of Earth" QuestId="1521" TurnInName="Seer Ravenfeather" TurnInId="5888" X="-2882.26" Y="-250.201" Z="53.9893" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Call of Earth" QuestId="1516" GiverName="Canaga Earthcaller" GiverId="5887" />
+			<PickUp QuestName="Call of Earth" QuestId="1516" GiverName="Canaga Earthcaller" GiverId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 			<Objective QuestName="Call of Earth" QuestId="1516" Type="CollectItem" ItemId="6640" CollectCount="2" />
-			<TurnIn QuestName="Call of Earth" QuestId="1516" TurnInName="Canaga Earthcaller" TurnInId="5887" />
-			<PickUp QuestName="Call of Earth" QuestId="1517" GiverName="Canaga Earthcaller" GiverId="5887" />
+			<TurnIn QuestName="Call of Earth" QuestId="1516" TurnInName="Canaga Earthcaller" TurnInId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
+			<PickUp QuestName="Call of Earth" QuestId="1517" GiverName="Canaga Earthcaller" GiverId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 
-		<TurnIn QuestName="Call of Earth" QuestId="1517" TurnInName="Minor Manifestation of Earth" TurnInId="5891" />
+		<TurnIn QuestName="Call of Earth" QuestId="1517" TurnInName="Minor Manifestation of Earth" TurnInId="5891" X="-877.79" Y="-4290.36" Z="72.7066" />
 		<If Condition="(Me.Class == WoWClass.Shaman) &amp;&amp; (Me.Race == WoWRace.Troll)">
-			<PickUp QuestName="Call of Earth" QuestId="1518" GiverName="Minor Manifestation of Earth" GiverId="5891" />
-			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" />
+			<PickUp QuestName="Call of Earth" QuestId="1518" GiverName="Minor Manifestation of Earth" GiverId="5891" X="-877.79" Y="-4290.36" Z="72.7066" />
+			<TurnIn QuestName="Call of Earth" QuestId="1518" TurnInName="Canaga Earthcaller" TurnInId="5887" X="-630.02" Y="-4204.55" Z="38.2173" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="2983" GiverName="Swart" GiverId="3173" />
+			<PickUp QuestName="Call of Fire" QuestId="2983" GiverName="Swart" GiverId="3173" X="307.114" Y="-4839.91" Z="10.6075" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="2983" TurnInName="Kranal Fiss" TurnInId="5907" />
+		<TurnIn QuestName="Call of Fire" QuestId="2983" TurnInName="Kranal Fiss" TurnInId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1524" GiverName="Kranal Fiss" GiverId="5907" />
+			<PickUp QuestName="Call of Fire" QuestId="1524" GiverName="Kranal Fiss" GiverId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="1524" TurnInName="Telf Joolam" TurnInId="5900" />
+		<TurnIn QuestName="Call of Fire" QuestId="1524" TurnInName="Telf Joolam" TurnInId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1525" GiverName="Telf Joolam" GiverId="5900" />
+			<PickUp QuestName="Call of Fire" QuestId="1525" GiverName="Telf Joolam" GiverId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="5026" CollectCount="1" />
 			<Objective QuestName="Call of Fire" QuestId="1525" Type="CollectItem" ItemId="6652" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Fire" QuestId="1525" TurnInName="Telf Joolam" TurnInId="5900" />
+		<TurnIn QuestName="Call of Fire" QuestId="1525" TurnInName="Telf Joolam" TurnInId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Fire" QuestId="1526" GiverName="Telf Joolam" GiverId="5900" />
+			<PickUp QuestName="Call of Fire" QuestId="1526" GiverName="Telf Joolam" GiverId="5900" X="-269.97" Y="-4000.87" Z="168.218" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Fire" QuestId="1526" Type="CollectItem" ItemId="6655" CollectCount="1" />
-			<TurnIn QuestName="Call of Fire" QuestId="1526" TurnInName="Object_61934" TurnInType="Object" TurnInId="61934" />
-			<PickUp QuestName="Call of Fire" QuestId="1527" GiverName="Telf Joolam" GiverId="5900" />
-			<TurnIn QuestName="Call of Fire" QuestId="1527" TurnInName="Kranal Fiss" TurnInId="5907" />
-			<PickUp QuestName="Call of Water" QuestId="1528" GiverName="Searn Firewarder" GiverId="5892" />
-			<TurnIn QuestName="Call of Water" QuestId="1528" TurnInName="Islen Waterseer" TurnInId="5901" />
-			<PickUp QuestName="Call of Water" QuestId="1530" GiverName="Islen Waterseer" GiverId="5901" />
+			<TurnIn QuestName="Call of Fire" QuestId="1526" TurnInName="Brazier of the Dormant Flame" TurnInType="Object" TurnInId="61934" X="-243.773" Y="-4022.4" Z="187.304" />
+			<PickUp QuestName="Call of Fire" QuestId="1527" GiverName="Brazier of the Dormant Flame" GiverId="61934" GiverType="Object" X="-243.773" Y="-4022.4" Z="187.304" />
+			<TurnIn QuestName="Call of Fire" QuestId="1527" TurnInName="Kranal Fiss" TurnInId="5907" X="268.899" Y="-3055.15" Z="97.1642" />
+			<PickUp QuestName="Call of Water" QuestId="1528" GiverName="Searn Firewarder" GiverId="5892" X="1920.95" Y="-4212.99" Z="42.4051" />
+			<TurnIn QuestName="Call of Water" QuestId="1528" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+			<PickUp QuestName="Call of Water" QuestId="1530" GiverName="Islen Waterseer" GiverId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1530" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1530" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1535" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1535" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			<Objective QuestName="Call of Water" QuestId="1535" Type="CollectItem" ItemId="7769" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1536" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1536" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			<Objective QuestName="Call of Water" QuestId="1536" Type="CollectItem" ItemId="7771" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1534" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1534" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Water" QuestId="1534" Type="CollectItem" ItemId="7770" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1534" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="220" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="220" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="220" TurnInName="Islen Waterseer" TurnInId="5901" />
+		<TurnIn QuestName="Call of Water" QuestId="220" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="63" GiverName="Islen Waterseer" GiverId="5901" />
+			<PickUp QuestName="Call of Water" QuestId="63" GiverName="Islen Waterseer" GiverId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+			<Objective QuestName="Call of Water" QuestId="63" Type="CollectItem" ItemId="7812" CollectCount="1" />
 			<!-- Quest 63 (Call of Water) — TurnIn Object not in 3.3.5a -->
-			<PickUp QuestName="Call of Water" QuestId="100" GiverName="Islen Waterseer" GiverId="5901" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<PickUp QuestName="Call of Water" QuestId="100" GiverName="Tiev Mordune" GiverId="7007" X="430.385" Y="1881.86" Z="15.4168" />
 			<TurnIn QuestName="Call of Water" QuestId="100" TurnInName="Minor Manifestation of Water" TurnInId="5895" />
 			<PickUp QuestName="Call of Water" QuestId="96" GiverName="Minor Manifestation of Water" GiverId="5895" />
-			<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" />
-			<PickUp QuestName="Call of Air" QuestId="1531" GiverName="Searn Firewarder" GiverId="5892" />
-			<TurnIn QuestName="Call of Air" QuestId="1531" TurnInName="Prate Cloudseer" TurnInId="5905" />
-			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7069" CollectCount="1" />
-			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7068" CollectCount="1" />
-			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7067" CollectCount="1" />
-			<Objective QuestName="Call of Air" QuestId="1531" Type="CollectItem" ItemId="7070" CollectCount="1" />
-			<PickUp QuestName="Elemental Mastery" QuestId="8410" GiverName="Beram Skychaser" GiverId="3032" />
-			<TurnIn QuestName="Elemental Mastery" QuestId="8410" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
-			<PickUp QuestName="Spirit Totem" QuestId="8412" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<If Condition="Me.MapId != 1">
+				<If Condition="Me.MapId == 0">
+					<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+					<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+					<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				</If>
+			</If>
+			<TurnIn QuestName="Call of Water" QuestId="96" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+			<PickUp QuestName="Call of Air" QuestId="1531" GiverName="Searn Firewarder" GiverId="5892" X="1920.95" Y="-4212.99" Z="42.4051" />
+			<TurnIn QuestName="Call of Air" QuestId="1531" TurnInName="Prate Cloudseer" TurnInId="5905" X="-5217.65" Y="-2788.99" Z="-7.4459" />
+			<PickUp QuestName="Elemental Mastery" QuestId="8410" GiverName="Beram Skychaser" GiverId="3032" X="-980.841" Y="287.174" Z="138.084" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<!-- REVIEW Q8410 Elemental Mastery: collect 7069 Elemental Air x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(8410)) &amp;&amp; (IsQuestCompleted(8410)))">
+				<TurnIn QuestName="Elemental Mastery" QuestId="8410" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
+			</If>
+			<If Condition="((HasQuest(8410)) &amp;&amp; (!IsQuestCompleted(8410)))">
+				<AbandonQuest QuestId="8410" />
+			</If>
+			<PickUp QuestName="Spirit Totem" QuestId="8412" GiverName="Bath'rah the Windwatcher" GiverId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 			<Objective QuestName="Spirit Totem" QuestId="8412" Type="CollectItem" ItemId="20610" CollectCount="8" />
 			<Objective QuestName="Spirit Totem" QuestId="8412" Type="CollectItem" ItemId="20611" CollectCount="8" />
-			<TurnIn QuestName="Spirit Totem" QuestId="8412" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
-			<PickUp QuestName="Da Voodoo" QuestId="8413" GiverName="Bath'rah the Windwatcher" GiverId="6176" />
+			<TurnIn QuestName="Spirit Totem" QuestId="8412" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
+			<PickUp QuestName="Da Voodoo" QuestId="8413" GiverName="Bath'rah the Windwatcher" GiverId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20606" CollectCount="2" />
 			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20607" CollectCount="2" />
 			<Objective QuestName="Da Voodoo" QuestId="8413" Type="CollectItem" ItemId="20608" CollectCount="2" />
-			<TurnIn QuestName="a Voodoo" QuestId="8413" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" />
+			<TurnIn QuestName="Da Voodoo" QuestId="8413" TurnInName="Bath'rah the Windwatcher" TurnInId="6176" X="250.84" Y="-1470.58" Z="55.4491" />
 		</If>
 
 	</QuestOrder>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Ashenvale (25-26)</Name>
-	<MinLevel>25</MinLevel>
-	<MaxLevel>26</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,53 +16,81 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Mahren Skyseer" Entry="11557" Type="Repair" X="7025.63" Y="-2135.69" Z="586.408" />
-		<Vendor Name="Innkeeper Shimitha" Entry="11558" Type="Food" X="7005.4" Y="-2123.12" Z="587.959" />
+		<Vendor Name="Burkrum" Entry="6028" Type="Repair" X="2354.76" Y="-2540.69" Z="102.896" />
+		<Vendor Name="Innkeeper Kaylisk" Entry="12196" Type="Food" X="2341.86" Y="-2566.99" Z="102.857" />
+		<Vendor Name="Kelm Hargunth" Entry="14754" Type="Repair" X="1046.54" Y="-2104.31" Z="123.065" />
+		<Vendor Name="Vrang Wildgore" Entry="3682" Type="Repair" X="787.375" Y="-1815.08" Z="91.75" />
+		<Vendor Name="Shan'ti" Entry="3342" Type="Food" X="1784.44" Y="-4205.35" Z="40.3172" />
+		<Vendor Name="Olvia" Entry="3312" Type="Food" X="1618.96" Y="-4307.28" Z="3.4172" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
-	<Quest Id="6503" Name="Ashenvale Outrunners">
-		<Objective Type="KillMob" MobId="12856" KillCount="9">
-			<Hotspots>
-				<Hotspot X="1841.4" Y="-2447.05" Z="81.5345" />
-				<Hotspot X="1887.73" Y="-2482.09" Z="70.0649" />
-				<Hotspot X="1928.89" Y="-2671.93" Z="98.3556" />
-				<Hotspot X="1882.36" Y="-2392.49" Z="86.8284" />
-				<Hotspot X="1737.92" Y="-2468.7" Z="96.0357" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="25" Name="Stonetalon Standstill">
 		<Objective Type="KillMob" MobId="3917" KillCount="12">
 			<Hotspots>
-				<Hotspot X="1914.86" Y="-986.527" Z="82.1531" />
-				<Hotspot X="1876.46" Y="-1306.84" Z="82.3311" />
-				<Hotspot X="2000.87" Y="-1214.95" Z="60.3939" />
-				<Hotspot X="1940.09" Y="-1171.98" Z="64.3597" />
-				<Hotspot X="1999.55" Y="-1152.56" Z="80.6255" />
+				<Hotspot X="1914.86" Y="-986.53" Z="82.15" />
+				<Hotspot X="1876.46" Y="-1306.84" Z="82.33" />
+				<Hotspot X="2000.87" Y="-1214.95" Z="60.39" />
+				<Hotspot X="1940.09" Y="-1171.98" Z="64.36" />
+				<Hotspot X="1999.55" Y="-1152.56" Z="80.63" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6503" Name="Ashenvale Outrunners">
+		<Objective Type="KillMob" MobId="12856" KillCount="9">
+			<Hotspots>
+				<Hotspot X="1841.4" Y="-2447.05" Z="81.53" />
+				<Hotspot X="1887.73" Y="-2482.09" Z="70.06" />
+				<Hotspot X="1928.89" Y="-2671.93" Z="98.36" />
+				<Hotspot X="1882.36" Y="-2392.49" Z="86.83" />
+				<Hotspot X="1737.92" Y="-2468.7" Z="96.04" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6441" Name="Satyr Horns">
+		<Objective Type="CollectItem" ItemId="5481" CollectCount="16">
+			<CollectFrom>
+				<Mob Name="Xavian Rogue" Id="3752" />
+				<Mob Name="Xavian Betrayer" Id="3754" />
+				<Mob Name="Xavian Felsworn" Id="3755" />
+				<Mob Name="Xavian Hellcaller" Id="3757" />
+				<Mob Name="Felmusk Satyr" Id="3758" />
+				<Mob Name="Felmusk Rogue" Id="3759" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2594.41" Y="-2236.76" Z="199.61" />
+				<Hotspot X="2632.73" Y="-2266.29" Z="202.49" />
+				<Hotspot X="2500.66" Y="-2157.84" Z="200.5" />
+				<Hotspot X="2555.21" Y="-2171.38" Z="196.02" />
+				<Hotspot X="2505.25" Y="-2116.74" Z="200.82" />
+				<Hotspot X="2589.51" Y="-2143.39" Z="194.9" />
+				<Hotspot X="2568.9" Y="-2113.95" Z="197.94" />
+				<Hotspot X="2662.2" Y="-2142.83" Z="195.79" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="216" Name="Between a Rock and a Thistlefur">
-		<Objective Type="KillMob" MobId="3925" KillCount="12">
+		<Objective Type="KillMob" MobId="3925" KillCount="8">
 			<Hotspots>
-				<Hotspot X="3151.81" Y="-180.865" Z="109.181" />
-				<Hotspot X="2934.07" Y="-109.489" Z="97.047" />
-				<Hotspot X="2917.69" Y="-119.154" Z="99.4666" />
-				<Hotspot X="3318.4" Y="-420.494" Z="149.342" />
-				<Hotspot X="3230.53" Y="-225.786" Z="117.793" />
+				<Hotspot X="3151.81" Y="-180.87" Z="109.18" />
+				<Hotspot X="2934.07" Y="-109.49" Z="97.05" />
+				<Hotspot X="2917.69" Y="-119.15" Z="99.47" />
+				<Hotspot X="3318.4" Y="-420.49" Z="149.34" />
+				<Hotspot X="3230.53" Y="-225.79" Z="117.79" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="3924" KillCount="12">
+		<Objective Type="KillMob" MobId="3924" KillCount="8">
 			<Hotspots>
-				<Hotspot X="2984.77" Y="-121.952" Z="99.5344" />
-				<Hotspot X="3120.52" Y="-89.7765" Z="101.797" />
-				<Hotspot X="3048.42" Y="-46.0318" Z="97.9058" />
-				<Hotspot X="3009.73" Y="-86.6333" Z="99.7185" />
-				<Hotspot X="2981.78" Y="-86.4844" Z="99.6927" />
+				<Hotspot X="2984.77" Y="-121.95" Z="99.53" />
+				<Hotspot X="3120.52" Y="-89.78" Z="101.8" />
+				<Hotspot X="3048.42" Y="-46.03" Z="97.91" />
+				<Hotspot X="3009.73" Y="-86.63" Z="99.72" />
+				<Hotspot X="2981.78" Y="-86.48" Z="99.69" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -86,30 +111,100 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="2478" Name="Mission: Possible But Not Probable">
+		<Objective Type="KillMob" MobId="7310" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1225.62" Y="-2921.09" Z="93.29" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7307" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1226.81" Y="-2922.7" Z="120.68" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="7308" KillCount="2">
+			<Hotspots>
+				<Hotspot X="1231.8" Y="-2923.29" Z="107.05" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8073" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grand Foreman Puzik Gallywix" Id="7288" />
+				<GameObject Name="Gallywix's Lockbox" Id="129127" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1235.16" Y="-2925.27" Z="141.82" />
+				<Hotspot X="1237.13" Y="-2925.65" Z="141.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="8074" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Grand Foreman Puzik Gallywix" Id="7288" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1235.16" Y="-2925.27" Z="141.82" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Ashenvale (25-26) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(6641))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Vorsha the Lasher" QuestId="6641" GiverName="Muglash" GiverId="12717" />
-		<Objective QuestName="Vorsha the Lasher" QuestId="6641" Type="KillMob" MobId="12940" KillCount="1" />
-		<TurnIn QuestName="Vorsha the Lasher" QuestId="6641" TurnInName="Warsong Runner" TurnInId="12863" />
-		<PickUp QuestName="Stonetalon Standstill" QuestId="25" GiverName="Mastok Wrilehiss" GiverId="12737" />
-		<PickUp QuestName="Ashenvale Outrunners" QuestId="6503" GiverName="Kuray'bin" GiverId="12867" />
+		<PickUp QuestName="Vorsha the Lasher" QuestId="6641" GiverName="Muglash" GiverId="12717" X="3341.65" Y="1004.38" Z="3.8982" />
+		<TurnIn QuestName="Vorsha the Lasher" QuestId="6641" TurnInName="Warsong Runner" TurnInId="12863" X="3357.72" Y="995.135" Z="4.7661" />
+		<PickUp QuestName="Stonetalon Standstill" QuestId="25" GiverName="Mastok Wrilehiss" GiverId="12737" X="2366.48" Y="-2548.22" Z="103.273" />
+		<PickUp QuestName="Ashenvale Outrunners" QuestId="6503" GiverName="Kuray'bin" GiverId="12867" X="2054.63" Y="-2400.39" Z="87.825" />
 		<Objective QuestName="Ashenvale Outrunners" QuestId="6503" Type="KillMob" MobId="12856" KillCount="9" />
-		<PickUp QuestName="Torek's Assault" QuestId="6544" GiverName="Torek" GiverId="12858" />
-		<Objective QuestName="Torek's Assault" QuestId="6544" Type="KillMob" MobId="12860" KillCount="1" />
-		<Objective QuestName="The Befouled Element" QuestId="1918" Type="CollectItem" ItemId="16408" CollectCount="1" />
-		<PickUp QuestName="The Befouled Element" QuestId="1918" GiverName="Torek" GiverId="12858" />
+		<PickUp QuestName="Torek's Assault" QuestId="6544" GiverName="Torek" GiverId="12858" X="1778.68" Y="-2241.09" Z="107.942" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16408)">
+			<CustomBehavior File="CollectThings" CollectItemId="16408" CollectItemCount="1" HuntingGroundRadius="120" MobId="12759" X="1958.41" Y="-945.92" Z="70.11">
+				<Hotspot X="1958.41" Y="-945.92" Z="70.11" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16408)">
+			<PickUp QuestName="The Befouled Element" QuestId="1918" GiverName="Befouled Water Globe" GiverId="16408" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Stonetalon Standstill" QuestId="25" Type="KillMob" MobId="3917" KillCount="12" />
-		<Objective QuestName="Ursangous's Paw" QuestId="23" Type="CollectItem" ItemId="16303" CollectCount="1" />
-		<PickUp QuestName="Ursangous's Paw" QuestId="23" GiverName="Torek" GiverId="12858" />
-		<TurnIn QuestName="Stonetalon Standstill" QuestId="25" TurnInName="Mastok Wrilehiss" TurnInId="12737" />
-		<TurnIn QuestName="The Befouled Element" QuestId="1918" TurnInName="Mastok Wrilehiss" TurnInId="12737" />
-		<PickUp QuestName="Je'neu of the Earthen Ring" QuestId="824" GiverName="Mastok Wrilehiss" GiverId="12737" />
-		<PickUp QuestName="Satyr Horns" QuestId="6441" GiverName="Pixel" GiverId="12724" />
-		<TurnIn QuestName="Ursangous's Paw" QuestId="23" TurnInName="Senani Thunderheart" TurnInId="12696" />
-		<TurnIn QuestName="Torek's Assault" QuestId="6544" TurnInName="Ertog Ragetusk" TurnInId="12877" />
-		<TurnIn QuestName="Ashenvale Outrunners" QuestId="6503" TurnInName="Kuray'bin" TurnInId="12867" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16303)">
+			<CustomBehavior File="CollectThings" CollectItemId="16303" CollectItemCount="1" HuntingGroundRadius="120" MobId="12678" X="2030.69" Y="-726.054" Z="102.369">
+				<Hotspot X="2030.69" Y="-726.05" Z="102.37" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16303)">
+			<PickUp QuestName="Ursangous's Paw" QuestId="23" GiverName="Ursangous's Paw" GiverId="16303" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Stonetalon Standstill" QuestId="25" TurnInName="Mastok Wrilehiss" TurnInId="12737" X="2366.48" Y="-2548.22" Z="103.273" />
+		<TurnIn QuestName="The Befouled Element" QuestId="1918" TurnInName="Mastok Wrilehiss" TurnInId="12737" X="2366.48" Y="-2548.22" Z="103.273" />
+		<PickUp QuestName="Je'neu of the Earthen Ring" QuestId="824" GiverName="Mastok Wrilehiss" GiverId="12737" X="2366.48" Y="-2548.22" Z="103.273" />
+		<PickUp QuestName="Satyr Horns" QuestId="6441" GiverName="Pixel" GiverId="12724" X="2309.79" Y="-2513.19" Z="105.394" />
+		<TurnIn QuestName="Ursangous's Paw" QuestId="23" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
+		<TurnIn QuestName="Torek's Assault" QuestId="6544" TurnInName="Ertog Ragetusk" TurnInId="12877" X="2271.91" Y="-2511.46" Z="102.637" />
+		<TurnIn QuestName="Ashenvale Outrunners" QuestId="6503" TurnInName="Kuray'bin" TurnInId="12867" X="2054.63" Y="-2400.39" Z="87.825" />
 		<Objective QuestName="Satyr Horns" QuestId="6441" Type="CollectItem" ItemId="5481" CollectCount="16" />
 		<If Condition="Me.Level &lt; 26">
 			<SetGrindArea>
@@ -125,42 +220,61 @@
 			</SetGrindArea>
 			<GrindTo Level="26" />
 		</If>
-		<Objective QuestName="The Sacred Flame" QuestId="1195" Type="CollectItem" ItemId="5867" CollectCount="1" />
-		<Objective QuestName="Shadumbra's Head" QuestId="24" Type="CollectItem" ItemId="16304" CollectCount="1" />
-		<PickUp QuestName="Shadumbra's Head" QuestId="24" GiverName="Kuray'bin" GiverId="12867" />
+
 		<Objective QuestName="The Sacred Flame" QuestId="1195" Type="CollectItem" ItemId="5868" CollectCount="1" />
-		<TurnIn QuestName="Shadumbra's Head" QuestId="24" TurnInName="Senani Thunderheart" TurnInId="12696" />
-		<TurnIn QuestName="Satyr Horns" QuestId="6441" TurnInName="Pixel" TurnInId="12724" />
-		<TurnIn QuestName="Je'neu of the Earthen Ring" QuestId="824" TurnInName="Je'neu Sancrea" TurnInId="12736" />
-		<PickUp QuestName="Between a Rock and a Thistlefur" QuestId="216" GiverName="Karang Amakkar" GiverId="12757" />
-		<PickUp QuestName="Troll Charm" QuestId="6462" GiverName="Mitsuwa" GiverId="12721" />
-		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3925" KillCount="12" />
-		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3924" KillCount="12" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16304)">
+			<CustomBehavior File="CollectThings" CollectItemId="16304" CollectItemCount="1" HuntingGroundRadius="120" MobId="12677" X="2518.44" Y="-1615.66" Z="144.605">
+				<Hotspot X="2518.44" Y="-1615.66" Z="144.6" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16304)">
+			<PickUp QuestName="Shadumbra's Head" QuestId="24" GiverName="Shadumbra's Head" GiverId="16304" GiverType="Item" />
+		</If>
+
+		<Objective QuestName="The Sacred Flame" QuestId="1195" Type="CollectItem" ItemId="5868" CollectCount="1" />
+		<TurnIn QuestName="Shadumbra's Head" QuestId="24" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
+		<TurnIn QuestName="Satyr Horns" QuestId="6441" TurnInName="Pixel" TurnInId="12724" X="2309.79" Y="-2513.19" Z="105.394" />
+		<TurnIn QuestName="Je'neu of the Earthen Ring" QuestId="824" TurnInName="Je'neu Sancrea" TurnInId="12736" X="3355.07" Y="1033.14" Z="6.0346" />
+		<PickUp QuestName="Between a Rock and a Thistlefur" QuestId="216" GiverName="Karang Amakkar" GiverId="12757" X="3345.46" Y="1013.93" Z="3.3976" />
+		<PickUp QuestName="Troll Charm" QuestId="6462" GiverName="Mitsuwa" GiverId="12721" X="3333.34" Y="1028.3" Z="6.3617" />
+		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3925" KillCount="8" />
+		<Objective QuestName="Between a Rock and a Thistlefur" QuestId="216" Type="KillMob" MobId="3924" KillCount="8" />
 		<Objective QuestName="Troll Charm" QuestId="6462" Type="CollectItem" ItemId="16602" CollectCount="8" />
-		<PickUp QuestName="Freedom to Ruul" QuestId="6482" GiverName="Ruul Snowhoof" GiverId="12818" />
-		<TurnIn QuestName="Freedom to Ruul" QuestId="6482" TurnInName="Yama Snowhoof" TurnInId="12837" />
-		<TurnIn QuestName="Between a Rock and a Thistlefur" QuestId="216" TurnInName="Karang Amakkar" TurnInId="12757" />
-		<TurnIn QuestName="Troll Charm" QuestId="6462" TurnInName="Mitsuwa" TurnInId="12721" />
+		<PickUp QuestName="Freedom to Ruul" QuestId="6482" GiverName="Ruul Snowhoof" GiverId="12818" X="3347.35" Y="-694.701" Z="159.926" />
+		<TurnIn QuestName="Freedom to Ruul" QuestId="6482" TurnInName="Yama Snowhoof" TurnInId="12837" X="2331.42" Y="-2573.9" Z="102.857" />
+		<TurnIn QuestName="Between a Rock and a Thistlefur" QuestId="216" TurnInName="Karang Amakkar" TurnInId="12757" X="3345.46" Y="1013.93" Z="3.3976" />
+		<TurnIn QuestName="Troll Charm" QuestId="6462" TurnInName="Mitsuwa" TurnInId="12721" X="3333.34" Y="1028.3" Z="6.3617" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="The Shattered Salute" QuestId="2460" GiverName="Shenthul" GiverId="3401" />
-			<TurnIn QuestName="The Shattered Salute" QuestId="2460" TurnInName="Shenthul" TurnInId="3401" />
-			<PickUp QuestName="Deep Cover" QuestId="2458" GiverName="Shenthul" GiverId="3401" />
+			<PickUp QuestName="The Shattered Salute" QuestId="2460" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<TurnIn QuestName="The Shattered Salute" QuestId="2460" TurnInName="Shenthul" TurnInId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<PickUp QuestName="Deep Cover" QuestId="2458" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<TurnIn QuestName="Deep Cover" QuestId="2458" TurnInName="Taskmaster Fizzule" TurnInId="7233" />
-			<PickUp QuestName="Mission: Possible But Not Probable" QuestId="2478" GiverName="Taskmaster Fizzule" GiverId="7233" />
+			<TurnIn QuestName="Deep Cover" QuestId="2458" TurnInName="Taskmaster Fizzule" TurnInId="7233" X="1236.78" Y="-2994.62" Z="91.7917" />
+			<PickUp QuestName="Mission: Possible But Not Probable" QuestId="2478" GiverName="Taskmaster Fizzule" GiverId="7233" X="1236.78" Y="-2994.62" Z="91.7917" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8072" CollectCount="1" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8073" CollectCount="1" />
 			<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="CollectItem" ItemId="8074" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Mission: Possible But Not Probable" QuestId="2478" TurnInName="Shenthul" TurnInId="3401" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7310" KillCount="2" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7307" KillCount="2" />
+		<Objective QuestName="Mission: Possible But Not Probable" QuestId="2478" Type="KillMob" MobId="7308" KillCount="2" />
+		<TurnIn QuestName="Mission: Possible But Not Probable" QuestId="2478" TurnInName="Shenthul" TurnInId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
 		<If Condition="(Me.Class == WoWClass.Rogue)">
-			<PickUp QuestName="Hinott's Assistance" QuestId="2479" GiverName="Shenthul" GiverId="3401" />
-			<TurnIn QuestName="Hinott's Assistance" QuestId="2479" TurnInName="Serge Hinott" TurnInId="2391" />
-			<PickUp QuestName="Hinott's Assistance" QuestId="2480" GiverName="Serge Hinott" GiverId="2391" />
-			<TurnIn QuestName="Hinott's Assistance" QuestId="2480" TurnInName="Serge Hinott" TurnInId="2391" />
+			<PickUp QuestName="Hinott's Assistance" QuestId="2479" GiverName="Shenthul" GiverId="3401" X="1771.21" Y="-4284.42" Z="8.0675" />
+			<If Condition="Me.MapId != 0">
+				<If Condition="Me.MapId == 1">
+					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				</If>
+			</If>
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2479" TurnInName="Serge Hinott" TurnInId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
+			<PickUp QuestName="Hinott's Assistance" QuestId="2480" GiverName="Serge Hinott" GiverId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
+			<TurnIn QuestName="Hinott's Assistance" QuestId="2480" TurnInName="Serge Hinott" TurnInId="2391" X="-9.2859" Y="-905.473" Z="57.5575" />
 		</If>
 
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Stonetalon Mountains (26-27)" />

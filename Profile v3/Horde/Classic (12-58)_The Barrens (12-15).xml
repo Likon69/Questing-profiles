@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\The Barrens (12-15)</Name>
-	<MinLevel>12</MinLevel>
-	<MaxLevel>15</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,62 +16,369 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
-		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
-		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
-		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Vendor Name="Katis" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Zargh" Entry="3489" Type="Food" X="-403.68" Y="-2709.34" Z="97.7294" />
+		<Vendor Name="Larhka" Entry="5871" Type="Food" X="-393.28" Y="-2641.5" Z="96.3063" />
+		<Vendor Name="Jahan Hawkwing" Entry="3483" Type="Repair" X="-350.079" Y="-2566.59" Z="97.4414" />
+		<Vendor Name="Hraq" Entry="3477" Type="Repair" X="-343.921" Y="-2558.13" Z="97.9411" />
+		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3934" Type="Food" X="-407.123" Y="-2645.22" Z="96.3063" />
+		<Vendor Name="Nargal Deatheye" Entry="3479" Type="Repair" X="-356.996" Y="-2568.86" Z="95.8708" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="844" Name="Plainstrider Menace">
+		<Objective Type="CollectItem" ItemId="5087" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Greater Plainstrider" Id="3244" />
+				<Mob Name="Ornery Plainstrider" Id="3245" />
+				<Mob Name="Fleeting Plainstrider" Id="3246" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-513.48" Y="-2753.05" Z="92.63" />
+				<Hotspot X="-448.5" Y="-2769.93" Z="92.05" />
+				<Hotspot X="-579.14" Y="-2771.92" Z="91.93" />
+				<Hotspot X="-538.09" Y="-2547.04" Z="92.04" />
+				<Hotspot X="-448.89" Y="-2808.63" Z="92.46" />
+				<Hotspot X="-637.69" Y="-2747.36" Z="93.71" />
+				<Hotspot X="-354.58" Y="-2774.03" Z="91.8" />
+				<Hotspot X="-609.21" Y="-2560.76" Z="92.09" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="869" Name="Raptor Thieves">
+		<Objective Type="CollectItem" ItemId="5062" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Sunscale Lashtail" Id="3254" />
+				<Mob Name="Sunscale Screecher" Id="3255" />
+				<Mob Name="Sunscale Scytheclaw" Id="3256" />
+				<Mob Name="Takk the Leaper" Id="5842" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-619.68" Y="-2740.68" Z="92.48" />
+				<Hotspot X="-711.66" Y="-2782.88" Z="91.98" />
+				<Hotspot X="-813.28" Y="-2661.67" Z="94.06" />
+				<Hotspot X="-815.87" Y="-2820.78" Z="93.03" />
+				<Hotspot X="-809.7" Y="-2908.24" Z="92.23" />
+				<Hotspot X="-654.99" Y="-3051.04" Z="91.92" />
+				<Hotspot X="-752.52" Y="-3093.05" Z="92.04" />
+				<Hotspot X="-1034.88" Y="-2427.46" Z="93.61" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="871" Name="Disrupt the Attacks">
 		<Objective Type="KillMob" MobId="3267" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-43.2116" Y="-2813.28" Z="92.9877" />
-				<Hotspot X="-148.08" Y="-2846.17" Z="95.0553" />
-				<Hotspot X="-120.772" Y="-2820.86" Z="91.7917" />
-				<Hotspot X="-189.592" Y="-3033.26" Z="91.7917" />
-				<Hotspot X="-188.729" Y="-3027.56" Z="91.7917" />
+				<Hotspot X="-43.21" Y="-2813.28" Z="92.99" />
+				<Hotspot X="-148.08" Y="-2846.17" Z="95.06" />
+				<Hotspot X="-120.77" Y="-2820.86" Z="91.79" />
+				<Hotspot X="-189.59" Y="-3033.26" Z="91.79" />
+				<Hotspot X="-188.73" Y="-3027.56" Z="91.79" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3268" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-111.907" Y="-2855.58" Z="92.4167" />
-				<Hotspot X="-186.693" Y="-3022.39" Z="91.7917" />
-				<Hotspot X="-207.322" Y="-3030.23" Z="91.7917" />
-				<Hotspot X="-183.959" Y="-2961.07" Z="91.9167" />
-				<Hotspot X="-218.697" Y="-2922.1" Z="91.7917" />
+				<Hotspot X="-111.91" Y="-2855.58" Z="92.42" />
+				<Hotspot X="-186.69" Y="-3022.39" Z="91.79" />
+				<Hotspot X="-207.32" Y="-3030.23" Z="91.79" />
+				<Hotspot X="-183.96" Y="-2961.07" Z="91.92" />
+				<Hotspot X="-218.7" Y="-2922.1" Z="91.79" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3265" KillCount="3">
 			<Hotspots>
-				<Hotspot X="-174.853" Y="-3375.98" Z="93.1667" />
-				<Hotspot X="-96.4121" Y="-2824.85" Z="91.9913" />
-				<Hotspot X="-23.0895" Y="-3266.17" Z="92.1833" />
-				<Hotspot X="16.3485" Y="-3237.44" Z="94.2916" />
-				<Hotspot X="-116.461" Y="-2960.58" Z="91.7917" />
+				<Hotspot X="-174.85" Y="-3375.98" Z="93.17" />
+				<Hotspot X="-96.41" Y="-2824.85" Z="91.99" />
+				<Hotspot X="-23.09" Y="-3266.17" Z="92.18" />
+				<Hotspot X="16.35" Y="-3237.44" Z="94.29" />
+				<Hotspot X="-116.46" Y="-2960.58" Z="91.79" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="867" Name="Harpy Raiders">
+		<Objective Type="CollectItem" ItemId="5064" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Witchwing Harpy" Id="3276" />
+				<Mob Name="Witchwing Roguefeather" Id="3277" />
+				<Mob Name="Witchwing Slayer" Id="3278" />
+				<Mob Name="Witchwing Ambusher" Id="3279" />
+				<Mob Name="Witchwing Windcaller" Id="3280" />
+				<Mob Name="Serena Bloodfeather" Id="3452" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="324.74" Y="-1611.91" Z="91.92" />
+				<Hotspot X="357.54" Y="-1615.02" Z="92.67" />
+				<Hotspot X="341.9" Y="-1568.48" Z="92.08" />
+				<Hotspot X="281.9" Y="-1545.01" Z="91.79" />
+				<Hotspot X="293.89" Y="-1460.44" Z="91.79" />
+				<Hotspot X="384.33" Y="-1518.23" Z="91.79" />
+				<Hotspot X="356.65" Y="-1461.35" Z="91.98" />
+				<Hotspot X="323.63" Y="-1434.83" Z="91.79" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="848" Name="Fungal Spores">
+		<Objective Type="CollectItem" ItemId="5012" CollectCount="4">
+			<CollectFrom>
+				<GameObject Name="Laden Mushroom" Id="3640" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1381.16" Y="-2983.04" Z="93.05" />
+				<Hotspot X="-1322.77" Y="-3026.72" Z="87.51" />
+				<Hotspot X="-1320.96" Y="-2790.33" Z="92.85" />
+				<Hotspot X="-1303.2" Y="-2977.65" Z="86.99" />
+				<Hotspot X="-1300.76" Y="-3066.81" Z="87.32" />
+				<Hotspot X="-1219.84" Y="-2115.2" Z="92.54" />
+				<Hotspot X="-1208.5" Y="-3000.19" Z="87.49" />
+				<Hotspot X="-1150.61" Y="-2022.81" Z="92.36" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="845" Name="The Zhevra">
+		<Objective Type="CollectItem" ItemId="5086" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Zhevra Runner" Id="3242" />
+				<Mob Name="Zhevra Charger" Id="3426" />
+				<Mob Name="Zhevra Courser" Id="3466" />
+				<Mob Name="Swiftmane" Id="5831" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-619.53" Y="-2847.89" Z="92.21" />
+				<Hotspot X="-693.87" Y="-2523.85" Z="93.92" />
+				<Hotspot X="-743" Y="-2656.82" Z="91.79" />
+				<Hotspot X="-754.18" Y="-2706.04" Z="92.29" />
+				<Hotspot X="-790.8" Y="-2628.3" Z="92.54" />
+				<Hotspot X="-804.23" Y="-2779.77" Z="93.74" />
+				<Hotspot X="-692.26" Y="-2923.54" Z="98.28" />
+				<Hotspot X="-758.95" Y="-2880.45" Z="91.81" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="872" Name="The Disruption Ends">
+		<Objective Type="KillMob" MobId="3269" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-94.91" Y="-3139.13" Z="91.97" />
+				<Hotspot X="-37.57" Y="-3162.48" Z="92.87" />
+				<Hotspot X="-115.32" Y="-3200.88" Z="93.61" />
+				<Hotspot X="-27.43" Y="-3345.31" Z="92.99" />
+				<Hotspot X="-67.34" Y="-3377.96" Z="92.68" />
+				<Hotspot X="-8.21" Y="-3385.27" Z="89.91" />
+				<Hotspot X="-46.9" Y="-3400.8" Z="91.75" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3266" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-47.43" Y="-3122.76" Z="91.79" />
+				<Hotspot X="-96.62" Y="-3172.88" Z="92.35" />
+				<Hotspot X="-85.02" Y="-3210.49" Z="92.17" />
+				<Hotspot X="-185.81" Y="-3284.44" Z="91.79" />
+				<Hotspot X="-55.6" Y="-3256.06" Z="91.71" />
+				<Hotspot X="-210.93" Y="-3343.08" Z="92.42" />
+				<Hotspot X="-159.56" Y="-3325.61" Z="92.92" />
+				<Hotspot X="-233.24" Y="-3384.55" Z="94.29" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5063" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Kreenig Snarlsnout" Id="3438" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-214.25" Y="-3307.53" Z="91.79" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5041" Name="Supplies for the Crossroads">
+		<Objective Type="CollectItem" ItemId="12708" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Crossroads' Supply Crates" Id="175708" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-221.53" Y="-3299.94" Z="91.67" />
+				<Hotspot X="-64.9" Y="-3394.91" Z="92.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="903" Name="Prowlers of the Barrens">
+		<Objective Type="CollectItem" ItemId="5096" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Savannah Prowler" Id="3425" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-851.94" Y="-3356.92" Z="91.79" />
+				<Hotspot X="-539.66" Y="-1890.55" Z="93.04" />
+				<Hotspot X="-712.65" Y="-3424.57" Z="91.79" />
+				<Hotspot X="-1042.86" Y="-3227.71" Z="91.79" />
+				<Hotspot X="-509.33" Y="-1855.78" Z="91.79" />
+				<Hotspot X="-601.5" Y="-1834.05" Z="91.96" />
+				<Hotspot X="-775.09" Y="-1792.61" Z="91.79" />
+				<Hotspot X="-1142.66" Y="-3314.15" Z="91.92" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="887" Name="Southsea Freebooters">
 		<Objective Type="KillMob" MobId="3381" KillCount="12">
 			<Hotspots>
-				<Hotspot X="-1387.12" Y="-3820.48" Z="23.6107" />
-				<Hotspot X="-1316.59" Y="-3819.8" Z="18.2767" />
-				<Hotspot X="-1779.11" Y="-3746.11" Z="6.9949" />
-				<Hotspot X="-1719.14" Y="-3822.49" Z="12.2393" />
-				<Hotspot X="-1742.9" Y="-3730.12" Z="13.7647" />
+				<Hotspot X="-1387.12" Y="-3820.48" Z="23.61" />
+				<Hotspot X="-1316.59" Y="-3819.8" Z="18.28" />
+				<Hotspot X="-1779.11" Y="-3746.11" Z="6.99" />
+				<Hotspot X="-1719.14" Y="-3822.49" Z="12.24" />
+				<Hotspot X="-1742.9" Y="-3730.12" Z="13.76" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="3382" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-1348.52" Y="-3848.37" Z="17.9376" />
-				<Hotspot X="-1778.44" Y="-3724.77" Z="10.1538" />
-				<Hotspot X="-1731.59" Y="-3715.31" Z="16.9736" />
-				<Hotspot X="-1745.06" Y="-3755.27" Z="10.4459" />
-				<Hotspot X="-1751.15" Y="-3732.45" Z="12.8897" />
+				<Hotspot X="-1348.52" Y="-3848.37" Z="17.94" />
+				<Hotspot X="-1778.44" Y="-3724.77" Z="10.15" />
+				<Hotspot X="-1731.59" Y="-3715.31" Z="16.97" />
+				<Hotspot X="-1745.06" Y="-3755.27" Z="10.45" />
+				<Hotspot X="-1751.15" Y="-3732.45" Z="12.89" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="896" Name="Miner's Fortune">
+		<Objective Type="CollectItem" ItemId="5097" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Venture Co. Enforcer" Id="3283" />
+				<Mob Name="Venture Co. Overseer" Id="3286" />
+				<Mob Name="Boss Copperplug" Id="9336" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="1239.84" Y="-3658.73" Z="92.74" />
+				<Hotspot X="1243.78" Y="-3593.05" Z="98.39" />
+				<Hotspot X="1270.37" Y="-3572.76" Z="91.78" />
+				<Hotspot X="1289.74" Y="-3659.55" Z="92.87" />
+				<Hotspot X="1293.51" Y="-3613.6" Z="91.78" />
+				<Hotspot X="1344.99" Y="-3647.98" Z="92.52" />
+				<Hotspot X="1352.71" Y="-3594.16" Z="92.14" />
+				<Hotspot X="1349.69" Y="-3487.39" Z="93.64" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="895" Name="WANTED: Baron Longshore">
+		<Objective Type="CollectItem" ItemId="5084" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Baron Longshore" Id="3467" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1571.79" Y="-3884.28" Z="16.22" />
+				<Hotspot X="-1723.34" Y="-3811.04" Z="11.9" />
+				<Hotspot X="-1751.48" Y="-3720.43" Z="14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="865" Name="Raptor Horns">
+		<Objective Type="CollectItem" ItemId="5055" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Sunscale Scytheclaw" Id="3256" />
+				<Mob Name="Takk the Leaper" Id="5842" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-687.58" Y="-3581.92" Z="92.09" />
+				<Hotspot X="-641.95" Y="-3533.28" Z="92.38" />
+				<Hotspot X="-552.58" Y="-3555.74" Z="92.41" />
+				<Hotspot X="-557.78" Y="-3470.92" Z="93.01" />
+				<Hotspot X="-483.26" Y="-3587.02" Z="93.28" />
+				<Hotspot X="-446.16" Y="-3486.61" Z="94.83" />
+				<Hotspot X="-1589.08" Y="-3122.09" Z="91.79" />
+				<Hotspot X="-1792.62" Y="-3491.54" Z="92.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="821" Name="Chen's Empty Keg">
+		<Objective Type="CollectItem" ItemId="4893" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Savannah Patriarch" Id="3241" />
+				<Mob Name="Savannah Highmane" Id="3243" />
+				<Mob Name="Savannah Huntress" Id="3415" />
+				<Mob Name="Savannah Matriarch" Id="3416" />
+				<Mob Name="Savannah Prowler" Id="3425" />
+				<Mob Name="Humar the Pridelord" Id="5828" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-724.26" Y="-3595.44" Z="93.72" />
+				<Hotspot X="-1151.25" Y="-3393.52" Z="91.74" />
+				<Hotspot X="-651.6" Y="-3745.18" Z="91.79" />
+				<Hotspot X="-632.14" Y="-3639.04" Z="93.56" />
+				<Hotspot X="-851.94" Y="-3356.92" Z="91.79" />
+				<Hotspot X="-598.45" Y="-3672.53" Z="92.62" />
+				<Hotspot X="-712.65" Y="-3424.57" Z="91.79" />
+				<Hotspot X="-595.96" Y="-3622.4" Z="92.33" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4894" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Greater Plainstrider" Id="3244" />
+				<Mob Name="Ornery Plainstrider" Id="3245" />
+				<Mob Name="Fleeting Plainstrider" Id="3246" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-800.66" Y="-3856.7" Z="11.07" />
+				<Hotspot X="-716.18" Y="-3547.87" Z="94.16" />
+				<Hotspot X="-676.54" Y="-3509.85" Z="91.79" />
+				<Hotspot X="-617.73" Y="-3567.15" Z="91.79" />
+				<Hotspot X="-627.42" Y="-3444.87" Z="92.52" />
+				<Hotspot X="-653.4" Y="-3402.07" Z="93.11" />
+				<Hotspot X="-550.79" Y="-3851.77" Z="29.4" />
+				<Hotspot X="-548.26" Y="-3529.37" Z="91.79" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="4895" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Stormhide" Id="3238" />
+				<Mob Name="Thunderhead" Id="3239" />
+				<Mob Name="Stormsnout" Id="3240" />
+				<Mob Name="Owatanka" Id="3473" />
+				<Mob Name="Thunderstomp" Id="5832" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1948.72" Y="-2457.21" Z="91.79" />
+				<Hotspot X="-1817.93" Y="-2328.72" Z="92.76" />
+				<Hotspot X="-1869.8" Y="-2331.56" Z="92.03" />
+				<Hotspot X="-1557.36" Y="-2171.74" Z="83.09" />
+				<Hotspot X="-2012.55" Y="-2384.78" Z="92.03" />
+				<Hotspot X="-1708.91" Y="-2190.07" Z="93.99" />
+				<Hotspot X="-1648.32" Y="-2148.57" Z="92.13" />
+				<Hotspot X="-1412.69" Y="-2053.71" Z="85.08" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="891" Name="The Guns of Northwatch">
+		<Objective Type="KillMob" MobId="3393" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-2079.88" Y="-3644.3" Z="96.27" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3455" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-2093.53" Y="-3496.47" Z="130.08" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="3454" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-2210" Y="-3778" Z="130.86" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="5078" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Theramore Marine" Id="3385" />
+				<Mob Name="Theramore Preserver" Id="3386" />
+				<Mob Name="Captain Fairmount" Id="3393" />
+				<Mob Name="Cannoneer Smythe" Id="3454" />
+				<Mob Name="Cannoneer Whessan" Id="3455" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1877.66" Y="-3660.91" Z="10.44" />
+				<Hotspot X="-1906.74" Y="-3597.09" Z="15.61" />
+				<Hotspot X="-1926.49" Y="-3685.22" Z="10.57" />
+				<Hotspot X="-1914.41" Y="-3498.09" Z="35.7" />
+				<Hotspot X="-1940.88" Y="-3538.09" Z="26.28" />
+				<Hotspot X="-1996.08" Y="-3678.35" Z="20.16" />
+				<Hotspot X="-1996.5" Y="-3597.42" Z="22.53" />
+				<Hotspot X="-2013.93" Y="-3628.09" Z="22.46" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -96,54 +400,127 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="848" Name="Fungal Spores">
-		<Objective Type="CollectItem" ItemId="5012" CollectCount="4">
+	<Quest Id="6128" Name="Gathering the Cure">
+		<Objective Type="CollectItem" ItemId="15852" CollectCount="5">
 			<CollectFrom>
-				<GameObject Name="Laden Mushroom" Id="3640" />
+				<Mob Name="Lost Barrens Kodo" Id="3234" />
+				<Mob Name="Barrens Kodo" Id="3236" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-1381.16" Y="-2983.04" Z="93.05" />
-				<Hotspot X="-1322.77" Y="-3026.72" Z="87.51" />
-				<Hotspot X="-1320.96" Y="-2790.33" Z="92.85" />
-				<Hotspot X="-1303.2" Y="-2977.65" Z="86.99" />
-				<Hotspot X="-1300.76" Y="-3066.81" Z="87.32" />
-				<Hotspot X="-1219.84" Y="-2115.2" Z="92.54" />
-				<Hotspot X="-1208.5" Y="-3000.19" Z="87.49" />
-				<Hotspot X="-1150.61" Y="-2022.81" Z="92.36" />
+				<Hotspot X="-1098.96" Y="-2932.29" Z="92.67" />
+				<Hotspot X="-1188.38" Y="-2854.78" Z="93.79" />
+				<Hotspot X="-1098.19" Y="-3068.57" Z="95.39" />
+				<Hotspot X="-1288.38" Y="-2590.38" Z="91.79" />
+				<Hotspot X="-1322.6" Y="-2712.57" Z="94.09" />
+				<Hotspot X="-1408.7" Y="-2641.65" Z="92.04" />
+				<Hotspot X="-1409.1" Y="-2890.9" Z="93.01" />
+				<Hotspot X="-1482.89" Y="-2798.21" Z="92.86" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="899" Name="Consumed by Hatred">
+		<Objective Type="CollectItem" ItemId="5085" CollectCount="60">
+			<CollectFrom>
+				<Mob Name="Bristleback Hunter" Id="3258" />
+				<Mob Name="Bristleback Water Seeker" Id="3260" />
+				<Mob Name="Bristleback Thornweaver" Id="3261" />
+				<Mob Name="Bristleback Geomancer" Id="3263" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1593.29" Y="-1774.3" Z="93.26" />
+				<Hotspot X="-1902.65" Y="-2740.31" Z="93.18" />
+				<Hotspot X="-1554.33" Y="-1744.6" Z="93.42" />
+				<Hotspot X="-1410.76" Y="-1576.42" Z="94.53" />
+				<Hotspot X="-1636.45" Y="-1797.11" Z="92.1" />
+				<Hotspot X="-1929.43" Y="-2706.98" Z="92.96" />
+				<Hotspot X="-1621.42" Y="-1752.71" Z="92.49" />
+				<Hotspot X="-1541.19" Y="-1679.28" Z="91.79" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="855" Name="Centaur Bracers">
+		<Objective Type="CollectItem" ItemId="5030" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Kolkar Wrangler" Id="3272" />
+				<Mob Name="Kolkar Stormer" Id="3273" />
+				<Mob Name="Kolkar Pack Runner" Id="3274" />
+				<Mob Name="Kolkar Marauder" Id="3275" />
+				<Mob Name="Barak Kodobane" Id="3394" />
+				<Mob Name="Hezrul Bloodmark" Id="3396" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-128.42" Y="-2008.23" Z="91.79" />
+				<Hotspot X="-102.52" Y="-2007.51" Z="91.92" />
+				<Hotspot X="-177.93" Y="-1782.57" Z="92.05" />
+				<Hotspot X="-155.83" Y="-1798.37" Z="91.79" />
+				<Hotspot X="-29.27" Y="-1910.06" Z="93.72" />
+				<Hotspot X="-20.2" Y="-1985.3" Z="93.75" />
+				<Hotspot X="-216.69" Y="-1657.72" Z="91.79" />
+				<Hotspot X="-183.57" Y="-1652.11" Z="92.43" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="850" Name="Kolkar Leaders">
+		<Objective Type="CollectItem" ItemId="5022" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Barak Kodobane" Id="3394" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="23.49" Y="-1714.62" Z="101.47" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<TurnIn QuestName="Conscript of the Horde" QuestId="840" TurnInName="Kargal Battlescar" TurnInId="3337" />
-		<PickUp QuestName="Crossroads Conscription" QuestId="842" GiverName="Kargal Battlescar" GiverId="3337" />
-		<If Condition="(Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Ak'Zeloth" QuestId="809" TurnInName="Ak'Zeloth" TurnInId="3521" />
-			<PickUp QuestName="Meats to Orgrimmar" QuestId="6365" GiverName="Zargh" GiverId="3489" />
+		<!-- Travel to Classic (12-58)_The Barrens (12-15) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(842))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Crossroads Conscription" QuestId="842" TurnInName="Sergra Darkthorn" TurnInId="3338" />
-		<PickUp QuestName="Plainstrider Menace" QuestId="844" GiverName="Sergra Darkthorn" GiverId="3338" />
-		<PickUp QuestName="The Forgotten Pools" QuestId="870" GiverName="Tonga Runetotem" GiverId="3448" />
-		<PickUp QuestName="Raptor Thieves" QuestId="869" GiverName="Gazrog" GiverId="3464" />
-		<PickUp QuestName="Disrupt the Attacks" QuestId="871" GiverName="Thork" GiverId="3429" />
-		<PickUp QuestName="Supplies for the Crossroads" QuestId="5041" GiverName="Thork" GiverId="3429" />
-		<PickUp QuestName="Harpy Raiders" QuestId="867" GiverName="Darsok Swiftdagger" GiverId="3449" />
+		<TurnIn QuestName="Conscript of the Horde" QuestId="840" TurnInName="Kargal Battlescar" TurnInId="3337" X="303.432" Y="-3686.16" Z="27.1502" />
+		<PickUp QuestName="Crossroads Conscription" QuestId="842" GiverName="Kargal Battlescar" GiverId="3337" X="303.432" Y="-3686.16" Z="27.1502" />
 		<If Condition="(Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Meats to Orgrimmar" QuestId="6365" TurnInName="Devrak" TurnInId="3615" />
-			<PickUp QuestName="Ride to Orgrimmar" QuestId="6384" GiverName="Devrak" GiverId="3615" />
+			<TurnIn QuestName="Ak'Zeloth" QuestId="809" TurnInName="Ak'Zeloth" TurnInId="3521" X="256.258" Y="-3693.95" Z="26.4771" />
+			<PickUp QuestName="Meats to Orgrimmar" QuestId="6365" GiverName="Zargh" GiverId="3489" X="-403.68" Y="-2709.34" Z="97.7294" />
 		</If>
 
-		<PickUp QuestName="Wharfmaster Dizzywig" QuestId="1492" GiverName="Apothecary Helbrim" GiverId="3390" />
-		<PickUp QuestName="Fungal Spores" QuestId="848" GiverName="Apothecary Helbrim" GiverId="3390" />
+		<TurnIn QuestName="Crossroads Conscription" QuestId="842" TurnInName="Sergra Darkthorn" TurnInId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
+		<PickUp QuestName="Plainstrider Menace" QuestId="844" GiverName="Sergra Darkthorn" GiverId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
+		<PickUp QuestName="The Forgotten Pools" QuestId="870" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
+		<PickUp QuestName="Raptor Thieves" QuestId="869" GiverName="Gazrog" GiverId="3464" X="-435.952" Y="-2639.21" Z="96.3588" />
+		<PickUp QuestName="Disrupt the Attacks" QuestId="871" GiverName="Thork" GiverId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<PickUp QuestName="Harpy Raiders" QuestId="867" GiverName="Darsok Swiftdagger" GiverId="3449" X="-474.894" Y="-2607.74" Z="127.885" />
 		<If Condition="(Me.Race == WoWRace.Troll)">
-			<TurnIn QuestName="Ride to Orgrimmar" QuestId="6384" TurnInName="Innkeeper Gryshka" TurnInId="6929" />
-			<PickUp QuestName="Doras the Wind Rider Master" QuestId="6385" GiverName="Innkeeper Gryshka" GiverId="6929" />
-			<TurnIn QuestName="Doras the Wind Rider Master" QuestId="6385" TurnInName="Doras" TurnInId="3310" />
-			<PickUp QuestName="Return to the Crossroads." QuestId="6386" GiverName="Doras" GiverId="3310" />
-			<TurnIn QuestName="Return to the Crossroads." QuestId="6386" TurnInName="Zargh" TurnInId="3489" />
+			<TurnIn QuestName="Meats to Orgrimmar" QuestId="6365" TurnInName="Devrak" TurnInId="3615" X="-437.137" Y="-2596" Z="95.8708" />
+			<PickUp QuestName="Ride to Orgrimmar" QuestId="6384" GiverName="Devrak" GiverId="3615" X="-437.137" Y="-2596" Z="95.8708" />
+		</If>
+
+		<PickUp QuestName="Wharfmaster Dizzywig" QuestId="1492" GiverName="Apothecary Helbrim" GiverId="3390" X="-424.542" Y="-2589.88" Z="95.9052" />
+		<PickUp QuestName="Fungal Spores" QuestId="848" GiverName="Apothecary Helbrim" GiverId="3390" X="-424.542" Y="-2589.88" Z="95.9052" />
+		<If Condition="(Me.Race == WoWRace.Troll)">
+			<TurnIn QuestName="Ride to Orgrimmar" QuestId="6384" TurnInName="Innkeeper Gryshka" TurnInId="6929" X="1633.99" Y="-4439.37" Z="15.7436" />
+			<PickUp QuestName="Doras the Wind Rider Master" QuestId="6385" GiverName="Innkeeper Gryshka" GiverId="6929" X="1633.99" Y="-4439.37" Z="15.7436" />
+			<TurnIn QuestName="Doras the Wind Rider Master" QuestId="6385" TurnInName="Doras" TurnInId="3310" X="1676.25" Y="-4313.45" Z="61.9445" />
+			<PickUp QuestName="Return to the Crossroads." QuestId="6386" GiverName="Doras" GiverId="3310" X="1676.25" Y="-4313.45" Z="61.9445" />
+			<TurnIn QuestName="Return to the Crossroads." QuestId="6386" TurnInName="Zargh" TurnInId="3489" X="-403.68" Y="-2709.34" Z="97.7294" />
 		</If>
 
 		<Objective QuestName="Plainstrider Menace" QuestId="844" Type="CollectItem" ItemId="5087" CollectCount="7" />
@@ -159,77 +536,105 @@
 			</SetGrindArea>
 			<GrindTo Level="13" />
 		</If>
-		<Objective QuestName="Chen's Empty Keg" QuestId="819" Type="CollectItem" ItemId="4926" CollectCount="1" />
-		<PickUp QuestName="Chen's Empty Keg" QuestId="819" GiverName="Zargh" GiverId="3489" />
+
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4926)">
+			<CustomBehavior File="InteractWith" MobId="3238" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-232.192" Y="-3021.31" Z="91.6885" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4926)">
+			<PickUp QuestName="Chen's Empty Keg" QuestId="819" GiverName="Chen's Empty Keg" GiverId="4926" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Disrupt the Attacks" QuestId="871" Type="KillMob" MobId="3267" KillCount="8" />
 		<Objective QuestName="Disrupt the Attacks" QuestId="871" Type="KillMob" MobId="3268" KillCount="8" />
 		<Objective QuestName="Disrupt the Attacks" QuestId="871" Type="KillMob" MobId="3265" KillCount="3" />
-		<TurnIn QuestName="Plainstrider Menace" QuestId="844" TurnInName="Sergra Darkthorn" TurnInId="3338" />
-		<PickUp QuestName="The Zhevra" QuestId="845" GiverName="Sergra Darkthorn" GiverId="3338" />
-		<TurnIn QuestName="Disrupt the Attacks" QuestId="871" TurnInName="Thork" TurnInId="3429" />
-		<PickUp QuestName="The Disruption Ends" QuestId="872" GiverName="Thork" GiverId="3429" />
+		<TurnIn QuestName="Plainstrider Menace" QuestId="844" TurnInName="Sergra Darkthorn" TurnInId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
+		<PickUp QuestName="The Zhevra" QuestId="845" GiverName="Sergra Darkthorn" GiverId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
+		<TurnIn QuestName="Disrupt the Attacks" QuestId="871" TurnInName="Thork" TurnInId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<PickUp QuestName="The Disruption Ends" QuestId="872" GiverName="Thork" GiverId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<PickUp QuestName="Supplies for the Crossroads" QuestId="5041" GiverName="Thork" GiverId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
 		<Objective QuestName="The Zhevra" QuestId="845" Type="CollectItem" ItemId="5086" CollectCount="4" />
-		<TurnIn QuestName="The Zhevra" QuestId="845" TurnInName="Sergra Darkthorn" TurnInId="3338" />
-		<PickUp QuestName="Prowlers of the Barrens" QuestId="903" GiverName="Sergra Darkthorn" GiverId="3338" />
+		<TurnIn QuestName="The Zhevra" QuestId="845" TurnInName="Sergra Darkthorn" TurnInId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
+		<PickUp QuestName="Prowlers of the Barrens" QuestId="903" GiverName="Sergra Darkthorn" GiverId="3338" X="-482.475" Y="-2670.19" Z="97.522" />
 		<Objective QuestName="Supplies for the Crossroads" QuestId="5041" Type="CollectItem" ItemId="12708" CollectCount="1" />
 		<Objective QuestName="The Disruption Ends" QuestId="872" Type="CollectItem" ItemId="5063" CollectCount="1" />
-		<PickUp QuestName="Southsea Freebooters" QuestId="887" GiverName="Gazlowe" GiverId="3391" />
-		<PickUp QuestName="Samophlange" QuestId="894" GiverName="Sputtervalve" GiverId="3442" />
-		<TurnIn QuestName="Wharfmaster Dizzywig" QuestId="1492" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" />
-		<PickUp QuestName="Miner's Fortune" QuestId="896" GiverName="Wharfmaster Dizzywig" GiverId="3453" />
-		<PickUp QuestName="WANTED: Baron Longshore" QuestId="895" GiverName="Wharfmaster Dizzywig" GiverId="3453" />
-		<PickUp QuestName="Raptor Horns" QuestId="865" GiverName="Mebok Mizzyrix" GiverId="3446" />
-		<TurnIn QuestName="Chen's Empty Keg" QuestId="819" TurnInName="Brewmaster Drohn" TurnInId="3292" />
-		<PickUp QuestName="Chen's Empty Keg" QuestId="821" GiverName="Brewmaster Drohn" GiverId="3292" />
-		<PickUp QuestName="The Guns of Northwatch" QuestId="891" GiverName="Captain Thalo'thas Brightsun" GiverId="3339" />
+		<PickUp QuestName="Southsea Freebooters" QuestId="887" GiverName="Gazlowe" GiverId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
+		<PickUp QuestName="Samophlange" QuestId="894" GiverName="Sputtervalve" GiverId="3442" X="-902.036" Y="-3759.4" Z="11.6138" />
+		<TurnIn QuestName="Wharfmaster Dizzywig" QuestId="1492" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		<PickUp QuestName="Miner's Fortune" QuestId="896" GiverName="Wharfmaster Dizzywig" GiverId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		<Objective QuestName="Miner's Fortune" QuestId="896" Type="CollectItem" ItemId="5097" CollectCount="1" />
+		<PickUp QuestName="WANTED: Baron Longshore" QuestId="895" GiverName="WANTED" GiverId="3972" GiverType="Object" X="-918.821" Y="-3719.89" Z="10.3143" />
+		<PickUp QuestName="Raptor Horns" QuestId="865" GiverName="Mebok Mizzyrix" GiverId="3446" X="-928.982" Y="-3697.23" Z="8.0664" />
+		<Objective QuestName="Raptor Horns" QuestId="865" Type="CollectItem" ItemId="5055" CollectCount="5" />
+		<TurnIn QuestName="Chen's Empty Keg" QuestId="819" TurnInName="Brewmaster Drohn" TurnInId="3292" X="-981.24" Y="-3686.49" Z="9.5055" />
+		<PickUp QuestName="Chen's Empty Keg" QuestId="821" GiverName="Brewmaster Drohn" GiverId="3292" X="-981.24" Y="-3686.49" Z="9.5055" />
+		<Objective QuestName="Chen's Empty Keg" QuestId="821" Type="CollectItem" ItemId="4895" CollectCount="1" />
+		<PickUp QuestName="The Guns of Northwatch" QuestId="891" GiverName="Captain Thalo'thas Brightsun" GiverId="3339" X="-1024.59" Y="-3688.91" Z="23.1962" />
+		<Objective QuestName="The Guns of Northwatch" QuestId="891" Type="KillMob" MobId="3393" KillCount="1" />
+		<Objective QuestName="The Guns of Northwatch" QuestId="891" Type="KillMob" MobId="3455" KillCount="1" />
+		<Objective QuestName="The Guns of Northwatch" QuestId="891" Type="KillMob" MobId="3454" KillCount="1" />
+		<Objective QuestName="The Guns of Northwatch" QuestId="891" Type="CollectItem" ItemId="5078" CollectCount="10" />
 		<Objective QuestName="WANTED: Baron Longshore" QuestId="895" Type="CollectItem" ItemId="5084" CollectCount="1" />
 		<Objective QuestName="Southsea Freebooters" QuestId="887" Type="KillMob" MobId="3381" KillCount="12" />
 		<Objective QuestName="Southsea Freebooters" QuestId="887" Type="KillMob" MobId="3382" KillCount="6" />
-		<TurnIn QuestName="Southsea Freebooters" QuestId="887" TurnInName="Gazlowe" TurnInId="3391" />
-		<PickUp QuestName="The Missing Shipment" QuestId="890" GiverName="Gazlowe" GiverId="3391" />
-		<TurnIn QuestName="WANTED: Baron Longshore" QuestId="895" TurnInName="Gazlowe" TurnInId="3391" />
-		<TurnIn QuestName="The Missing Shipment" QuestId="890" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" />
-		<PickUp QuestName="The Missing Shipment" QuestId="892" GiverName="Wharfmaster Dizzywig" GiverId="3453" />
-		<TurnIn QuestName="The Missing Shipment" QuestId="892" TurnInName="Gazlowe" TurnInId="3391" />
-		<PickUp QuestName="Stolen Booty" QuestId="888" GiverName="Gazlowe" GiverId="3391" />
+		<TurnIn QuestName="Southsea Freebooters" QuestId="887" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
+		<PickUp QuestName="The Missing Shipment" QuestId="890" GiverName="Gazlowe" GiverId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
+		<TurnIn QuestName="WANTED: Baron Longshore" QuestId="895" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
+		<TurnIn QuestName="The Missing Shipment" QuestId="890" TurnInName="Wharfmaster Dizzywig" TurnInId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		<PickUp QuestName="The Missing Shipment" QuestId="892" GiverName="Wharfmaster Dizzywig" GiverId="3453" X="-985.599" Y="-3796.71" Z="5.2093" />
+		<TurnIn QuestName="The Missing Shipment" QuestId="892" TurnInName="Gazlowe" TurnInId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
+		<PickUp QuestName="Stolen Booty" QuestId="888" GiverName="Gazlowe" GiverId="3391" X="-835.563" Y="-3728.66" Z="26.3746" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
 			<Objective QuestName="Gathering the Cure" QuestId="6128" Type="CollectItem" ItemId="2449" CollectCount="5" />
-			<PickUp QuestName="Lessons Anew" QuestId="6126" GiverName="Turak Runetotem" GiverId="3033" />
-			<TurnIn QuestName="Lessons Anew" QuestId="6126" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="The Principal Source" QuestId="6127" GiverName="Dendrite Starblaze" GiverId="11802" />
+			<PickUp QuestName="Lessons Anew" QuestId="6126" GiverName="Turak Runetotem" GiverId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
+			<TurnIn QuestName="Lessons Anew" QuestId="6126" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<PickUp QuestName="The Principal Source" QuestId="6127" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Druid)">
 			<Objective QuestName="The Principal Source" QuestId="6127" Type="CollectItem" ItemId="15843" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="The Principal Source" QuestId="6127" TurnInName="Tonga Runetotem" TurnInId="3448" />
+		<TurnIn QuestName="The Principal Source" QuestId="6127" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<PickUp QuestName="Gathering the Cure" QuestId="6128" GiverName="Tonga Runetotem" GiverId="3448" />
+			<PickUp QuestName="Gathering the Cure" QuestId="6128" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
 		</If>
 
 		<Objective QuestName="Gathering the Cure" QuestId="6128" Type="CollectItem" ItemId="15852" CollectCount="5" />
 		<If Condition="(Me.Class == WoWClass.Druid)">
-			<TurnIn QuestName="Gathering the Cure" QuestId="6128" TurnInName="Tonga Runetotem" TurnInId="3448" />
-			<PickUp QuestName="Curing the Sick" QuestId="6129" GiverName="Tonga Runetotem" GiverId="3448" />
-			<While Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))" >
-				<CustomBehavior File="UseItemOn" QuestId="6129" MobId="12297" ItemId="15826" NumOfTimes="1" Range="5" CollectionDistance="1000" />
+			<TurnIn QuestName="Gathering the Cure" QuestId="6128" TurnInName="Tonga Runetotem" TurnInId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
+			<PickUp QuestName="Curing the Sick" QuestId="6129" GiverName="Tonga Runetotem" GiverId="3448" X="-544.992" Y="-2672.77" Z="95.8709" />
+			<While Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))">
+				<CustomBehavior File="UseItemOn" QuestId="6129" MobId="12296" ItemId="15826" NumOfTimes="1" Range="5" CollectionDistance="1000" X="130.578" Y="-2890.14" Z="92.3712" />
 			</While>
-			<TurnIn QuestName="Curing the Sick" QuestId="6129" TurnInName="Dendrite Starblaze" TurnInId="11802" />
-			<PickUp QuestName="Power over Poison" QuestId="6130" GiverName="Dendrite Starblaze" GiverId="11802" />
-			<TurnIn QuestName="Power over Poison" QuestId="6130" TurnInName="Turak Runetotem" TurnInId="3033" />
+			<!-- REVIEW Q6129 Curing the Sick: REVIEW: UseItemOn target 12297 Cured Gazelle replaced by 12296 Sickly Gazelle (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(6129)) &amp;&amp; (IsQuestCompleted(6129)))">
+				<TurnIn QuestName="Curing the Sick" QuestId="6129" TurnInName="Dendrite Starblaze" TurnInId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			</If>
+			<If Condition="((HasQuest(6129)) &amp;&amp; (!IsQuestCompleted(6129)))">
+				<AbandonQuest QuestId="6129" />
+			</If>
+			<PickUp QuestName="Power over Poison" QuestId="6130" GiverName="Dendrite Starblaze" GiverId="11802" X="8020" Y="-2678.74" Z="524.532" />
+			<TurnIn QuestName="Power over Poison" QuestId="6130" TurnInName="Turak Runetotem" TurnInId="3033" X="-1039.41" Y="-281.56" Z="159.114" />
 		</If>
 
 		<Objective QuestName="Stolen Booty" QuestId="888" Type="CollectItem" ItemId="5077" CollectCount="1" />
 		<Objective QuestName="Stolen Booty" QuestId="888" Type="CollectItem" ItemId="5076" CollectCount="1" />
-		<TurnIn QuestName="Supplies for the Crossroads" QuestId="5041" TurnInName="Thork" TurnInId="3429" />
-		<TurnIn QuestName="The Disruption Ends" QuestId="872" TurnInName="Thork" TurnInId="3429" />
-		<PickUp QuestName="Consumed by Hatred" QuestId="899" GiverName="Mankrik" GiverId="3432" />
-		<PickUp QuestName="Lost in Battle" QuestId="4921" GiverName="Mankrik" GiverId="3432" />
+		<TurnIn QuestName="Supplies for the Crossroads" QuestId="5041" TurnInName="Thork" TurnInId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<Objective QuestName="The Disruption Ends" QuestId="872" Type="KillMob" MobId="3269" KillCount="8" />
+		<Objective QuestName="The Disruption Ends" QuestId="872" Type="KillMob" MobId="3266" KillCount="8" />
+		<TurnIn QuestName="The Disruption Ends" QuestId="872" TurnInName="Thork" TurnInId="3429" X="-473.202" Y="-2595.7" Z="103.806" />
+		<PickUp QuestName="Consumed by Hatred" QuestId="899" GiverName="Mankrik" GiverId="3432" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Objective QuestName="Consumed by Hatred" QuestId="899" Type="CollectItem" ItemId="5085" CollectCount="60" />
+		<PickUp QuestName="Lost in Battle" QuestId="4921" GiverName="Mankrik" GiverId="3432" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<If Condition="((HasQuest(4921)) &amp;&amp; (!IsQuestCompleted(4921)))">
+			<CustomBehavior File="InteractWith" QuestId="4921" MobId="10668" GossipOptions="1" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-1787.19" Y="-2375.77" Z="91.7681" />
+		</If>
+
 		<Objective QuestName="Chen's Empty Keg" QuestId="821" Type="CollectItem" ItemId="4893" CollectCount="5" />
 		<Objective QuestName="Chen's Empty Keg" QuestId="821" Type="CollectItem" ItemId="4894" CollectCount="5" />
-		<PickUp QuestName="Centaur Bracers" QuestId="855" GiverName="Regthar Deathgate" GiverId="3389" />
-		<PickUp QuestName="Kolkar Leaders" QuestId="850" GiverName="Regthar Deathgate" GiverId="3389" />
+		<PickUp QuestName="Centaur Bracers" QuestId="855" GiverName="Regthar Deathgate" GiverId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
+		<PickUp QuestName="Kolkar Leaders" QuestId="850" GiverName="Regthar Deathgate" GiverId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
 		<Objective QuestName="Fungal Spores" QuestId="848" Type="CollectItem" ItemId="5012" CollectCount="4" />
 		<Objective QuestName="Kolkar Leaders" QuestId="850" Type="CollectItem" ItemId="5022" CollectCount="1" />
 		<Objective QuestName="Centaur Bracers" QuestId="855" Type="CollectItem" ItemId="5030" CollectCount="15" />
@@ -247,11 +652,19 @@
 			</SetGrindArea>
 			<GrindTo Level="15" />
 		</If>
+
 		<Objective QuestName="Harpy Raiders" QuestId="867" Type="CollectItem" ItemId="5064" CollectCount="8" />
 		<Objective QuestName="Prowlers of the Barrens" QuestId="903" Type="CollectItem" ItemId="5096" CollectCount="7" />
-		<TurnIn QuestName="Centaur Bracers" QuestId="855" TurnInName="Regthar Deathgate" TurnInId="3389" />
-		<TurnIn QuestName="Kolkar Leaders" QuestId="850" TurnInName="Regthar Deathgate" TurnInId="3389" />
-		<PickUp QuestName="Verog the Dervish" QuestId="851" GiverName="Regthar Deathgate" GiverId="3389" />
+		<TurnIn QuestName="Centaur Bracers" QuestId="855" TurnInName="Regthar Deathgate" TurnInId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
+		<TurnIn QuestName="Kolkar Leaders" QuestId="850" TurnInName="Regthar Deathgate" TurnInId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
+		<PickUp QuestName="Verog the Dervish" QuestId="851" GiverName="Regthar Deathgate" GiverId="3389" X="-307.136" Y="-1971.95" Z="96.48" />
+		<!-- Q851 Verog the Dervish: objective nodes transplanted from HonorBuddy drind reference 1-85 Questing Profile Pack\Classic\[A - Quest] 1-58 [Kick]\[H - Quest] 10-60 (LowHangingFruit) 1.5.9.xml -->
+		<RunTo QuestId="851" X="-1210.908" Y="-2724.134" Z="106.6899" />
+		<If Condition="HasQuest(851) &amp;&amp; !IsQuestCompleted(851)">
+			<CustomBehavior File="WaitTimer" WaitTime="60000" />
+		</If>
+
+		<Objective QuestName="Verog the Dervish" QuestId="851" Type="CollectItem" ItemId="5023" CollectCount="1" />
 		<Objective QuestName="Raptor Thieves" QuestId="869" Type="CollectItem" ItemId="5062" CollectCount="12" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Stonetalon Mountains (15-16)" />
 	</QuestOrder>

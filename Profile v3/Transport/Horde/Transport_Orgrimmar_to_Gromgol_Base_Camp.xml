@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Orgrimmar to Grom'gol Base Camp
     Transport: The Iron Eagle (ID: 20808)
     Faction: Horde
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Orgrimmar_to_Grom'gol_Base_Camp</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="1323.69" Y="-4631.55" Z="53.89" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="20808"
-        WaitAtX="1323.69" WaitAtY="-4631.55" WaitAtZ="53.89"
-        TransportStartX="1312.28" TransportStartY="-4623.69" TransportStartZ="72.03"
-        StandOnX="1315.58" StandOnY="-4622.63" StandOnZ="54.03"
-        TransportEndX="-12457.91" TransportEndY="134.56" TransportEndZ="31.51"
-        GetOffX="-12462.09" GetOffY="145.83" GetOffZ="11.9" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="-12462.09" Y="145.83" Z="11.9" />
-  </QuestOrder>
-  
+	<Name>Transport_Orgrimmar_to_Grom'gol_Base_Camp</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="1354" Y="-4642.6" Z="53.6" />
+		<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

@@ -1,54 +1,114 @@
 <HBProfile>
 	<Name>Classic (12-58)\Burning Steppes (54-54)</Name>
-	<MinLevel>54</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Gruna" Entry="3708" Type="Food" X="-7498.05" Y="-2191.42" Z="165.738" />
+		<Vendor Name="Sranda" Entry="1407" Type="Repair" X="-6673.13" Y="-2151.46" Z="244.227" />
+		<Vendor Name="Innkeeper Shul'kar" Entry="9356" Type="Food" X="-6650.01" Y="-2149.09" Z="245.434" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="4061" Name="The Rise of the Machines">
+		<Objective Type="CollectItem" ItemId="11266" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Greater Obsidian Elemental" Id="7032" />
+				<Mob Name="War Reaver" Id="7039" />
+				<Mob Name="Malfunctioning Reaver" Id="8981" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7647.09" Y="-2210.02" Z="131.84" />
+				<Hotspot X="-7652.39" Y="-2080.91" Z="124.19" />
+				<Hotspot X="-7611.25" Y="-2585.78" Z="133.29" />
+				<Hotspot X="-7714.19" Y="-2105.28" Z="133.44" />
+				<Hotspot X="-7700.9" Y="-1927.57" Z="136.24" />
+				<Hotspot X="-7719.26" Y="-2052.23" Z="133.44" />
+				<Hotspot X="-7749.53" Y="-2219.23" Z="133.57" />
+				<Hotspot X="-7731.33" Y="-1865.9" Z="133.9" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3822" Name="Krom'Grul">
+		<Objective Type="CollectItem" ItemId="11058" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Krom'Grul" Id="8977" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7957.11" Y="-2600.06" Z="173.93" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Burning Steppes (54-54) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(4061))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Rise of the Machines" QuestId="4061" GiverName="Hierophant Theodora Mulvadania" GiverId="9079" />
-		<PickUp QuestName="Dreadmaul Rock" QuestId="3821" GiverName="Thal'trak Proudtusk" GiverId="9082" />
-		<PickUp QuestName="Broodling Essence" QuestId="4726" GiverName="Tinkee Steamboil" GiverId="10267" />
-		<PickUp QuestName="Tablet of the Seven" QuestId="4296" GiverName="Maxwort Uberglint" GiverId="9536" />
-		<TurnIn QuestName="Yuka Screwspigot" QuestId="4324" TurnInName="Yuka Screwspigot" TurnInId="9544" />
+		<PickUp QuestName="The Rise of the Machines" QuestId="4061" GiverName="Hierophant Theodora Mulvadania" GiverId="9079" X="-6682.35" Y="-2154.34" Z="244.195" />
+		<PickUp QuestName="Dreadmaul Rock" QuestId="3821" GiverName="Thal'trak Proudtusk" GiverId="9082" X="-6686.64" Y="-2162.67" Z="244.195" />
+		<PickUp QuestName="Broodling Essence" QuestId="4726" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<PickUp QuestName="Tablet of the Seven" QuestId="4296" GiverName="Maxwort Uberglint" GiverId="9536" X="-7497.99" Y="-2175.15" Z="165.61" />
+		<TurnIn QuestName="Yuka Screwspigot" QuestId="4324" TurnInName="Yuka Screwspigot" TurnInId="9544" X="-7459.77" Y="-2201.64" Z="165.37" />
 		<Objective QuestName="Broodling Essence" QuestId="4726" Type="CollectItem" ItemId="12283" CollectCount="8" />
-		<PickUp QuestName="A Taste of Flame" QuestId="4022" GiverName="Cyrus Therepentous" GiverId="9459" />
-		<TurnIn QuestName="A Taste of Flame" QuestId="4022" TurnInName="Cyrus Therepentous" TurnInId="9459" />
+		<PickUp QuestName="A Taste of Flame" QuestId="4022" GiverName="Cyrus Therepentous" GiverId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
+		<!-- REVIEW Q4022 A Taste of Flame: collect 10575 Black Dragonflight Molt x1 (no loot source: spell/vendor/event) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4022)) &amp;&amp; (IsQuestCompleted(4022)))">
+			<TurnIn QuestName="A Taste of Flame" QuestId="4022" TurnInName="Cyrus Therepentous" TurnInId="9459" X="-7647.31" Y="-3051.95" Z="131.25" />
+		</If>
+
+		<If Condition="((HasQuest(4022)) &amp;&amp; (!IsQuestCompleted(4022)))">
+			<AbandonQuest QuestId="4022" />
+		</If>
+
 		<TurnIn QuestName="Dreadmaul Rock" QuestId="3821" TurnInName="Sha'ni Proudtusk" TurnInId="9136" />
 		<PickUp QuestName="Krom'Grul" QuestId="3822" GiverName="Sha'ni Proudtusk" GiverId="9136" />
 		<Objective QuestName="Krom'Grul" QuestId="3822" Type="CollectItem" ItemId="11058" CollectCount="1" />
-		<Objective QuestName="Krom'Grul" QuestId="3822" Type="CollectItem" ItemId="11058" CollectCount="1" />
-		<Objective QuestName="Krom'Grul" QuestId="3822" Type="CollectItem" ItemId="11058" CollectCount="1" />
 		<Objective QuestName="Tablet of the Seven" QuestId="4296" Type="CollectItem" ItemId="11470" CollectCount="1" />
 		<Objective QuestName="The Rise of the Machines" QuestId="4061" Type="CollectItem" ItemId="11266" CollectCount="10" />
-		<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" />
-		<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" />
-		<TurnIn QuestName="Tablet of the Seven" QuestId="4296" TurnInName="Maxwort Uberglint" TurnInId="9536" />
-		<TurnIn QuestName="The Rise of the Machines" QuestId="4061" TurnInName="Hierophant Theodora Mulvadania" TurnInId="9079" />
-		<PickUp QuestName="The Rise of the Machines" QuestId="4062" GiverName="Hierophant Theodora Mulvadania" GiverId="9079" />
-		<TurnIn QuestName="Krom'Grul" QuestId="3822" TurnInName="Thal'trak Proudtusk" TurnInId="9082" />
-		<TurnIn QuestName="The Rise of the Machines" QuestId="4062" TurnInName="Lotwil Veriatus" TurnInId="2921" />
+		<TurnIn QuestName="Broodling Essence" QuestId="4726" TurnInName="Tinkee Steamboil" TurnInId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<PickUp QuestName="Felnok Steelspring" QuestId="4808" GiverName="Tinkee Steamboil" GiverId="10267" X="-7499.82" Y="-2177.6" Z="165.759" />
+		<TurnIn QuestName="Tablet of the Seven" QuestId="4296" TurnInName="Maxwort Uberglint" TurnInId="9536" X="-7497.99" Y="-2175.15" Z="165.61" />
+		<TurnIn QuestName="The Rise of the Machines" QuestId="4061" TurnInName="Hierophant Theodora Mulvadania" TurnInId="9079" X="-6682.35" Y="-2154.34" Z="244.195" />
+		<PickUp QuestName="The Rise of the Machines" QuestId="4062" GiverName="Hierophant Theodora Mulvadania" GiverId="9079" X="-6682.35" Y="-2154.34" Z="244.195" />
+		<TurnIn QuestName="Krom'Grul" QuestId="3822" TurnInName="Thal'trak Proudtusk" TurnInId="9082" X="-6686.64" Y="-2162.67" Z="244.195" />
+		<TurnIn QuestName="The Rise of the Machines" QuestId="4062" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Azshara (54-55)" />
 	</QuestOrder>
 </HBProfile>

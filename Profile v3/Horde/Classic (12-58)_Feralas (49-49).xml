@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Feralas (49-49)</Name>
-	<MinLevel>49</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,80 +16,191 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Angus Stern" Entry="7733" Type="Repair" X="-7158.96" Y="-3841.61" Z="8.8481" />
-		<Vendor Name="Innkeeper Shaunessy" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Worb Strongstitch" Entry="8159" Type="Repair" X="-4339.65" Y="249.374" Z="26.4007" />
+		<Vendor Name="Innkeeper Greul" Entry="7737" Type="Food" X="-4460.1" Y="242.722" Z="39.1908" />
+		<Vendor Name="Cawind Trueaim" Entry="9548" Type="Repair" X="-4484.55" Y="233.527" Z="48.4759" />
+		<Vendor Name="Loorana" Entry="8143" Type="Food" X="-4400.11" Y="194.325" Z="26.5111" />
+		<Vendor Name="Marjak Keenblade" Entry="3073" Type="Repair" X="-2926.32" Y="-215.715" Z="54.2598" />
+		<Vendor Name="Moodan Sungrain" Entry="3883" Type="Food" X="-2940.84" Y="-245.957" Z="53.8927" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="7734" Name="Improved Quality">
+		<Objective Type="CollectItem" ItemId="18947" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Rage Scar Yeti" Id="5296" />
+				<Mob Name="Elder Rage Scar" Id="5297" />
+				<Mob Name="Ferocious Rage Scar" Id="5299" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-3898.3" Y="1573.66" Z="120.58" />
+				<Hotspot X="-3899.61" Y="1619.88" Z="128.21" />
+				<Hotspot X="-3861.74" Y="1637.99" Z="139.92" />
+				<Hotspot X="-3918.12" Y="1657.17" Z="125.97" />
+				<Hotspot X="-3861.13" Y="1695.63" Z="143.24" />
+				<Hotspot X="-3838.94" Y="1752.42" Z="141.82" />
+				<Hotspot X="-3775.61" Y="1752.6" Z="147.75" />
+				<Hotspot X="-3826.68" Y="1805.36" Z="133" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="3063" Name="Vengeance on the Northspring">
 		<Objective Type="KillMob" MobId="5362" KillCount="4">
 			<Hotspots>
-				<Hotspot X="-3105.17" Y="2813.53" Z="80.3285" />
-				<Hotspot X="-2874.77" Y="2652.08" Z="73.0903" />
-				<Hotspot X="-3083.46" Y="2654.63" Z="53.8049" />
-				<Hotspot X="-3031.27" Y="2660.33" Z="57.7634" />
-				<Hotspot X="-3090.12" Y="2781.57" Z="70.9312" />
+				<Hotspot X="-3105.17" Y="2813.53" Z="80.33" />
+				<Hotspot X="-2874.77" Y="2652.08" Z="73.09" />
+				<Hotspot X="-3083.46" Y="2654.63" Z="53.8" />
+				<Hotspot X="-3031.27" Y="2660.33" Z="57.76" />
+				<Hotspot X="-3090.12" Y="2781.57" Z="70.93" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="5363" KillCount="4">
 			<Hotspots>
-				<Hotspot X="-3090.33" Y="2839.76" Z="89.4119" />
-				<Hotspot X="-3113.84" Y="2761.32" Z="72.1997" />
-				<Hotspot X="-2926.16" Y="2788.34" Z="80.3063" />
-				<Hotspot X="-2849.43" Y="2680.05" Z="72.8693" />
-				<Hotspot X="-2947.04" Y="2517.57" Z="36.3828" />
+				<Hotspot X="-3090.33" Y="2839.76" Z="89.41" />
+				<Hotspot X="-3113.84" Y="2761.32" Z="72.2" />
+				<Hotspot X="-2926.16" Y="2788.34" Z="80.31" />
+				<Hotspot X="-2849.43" Y="2680.05" Z="72.87" />
+				<Hotspot X="-2947.04" Y="2517.57" Z="36.38" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="5364" KillCount="4">
 			<Hotspots>
-				<Hotspot X="-3049.38" Y="2784.74" Z="64.5796" />
-				<Hotspot X="-3044.58" Y="2740.72" Z="59.6628" />
-				<Hotspot X="-3104.52" Y="2805.94" Z="79.3285" />
-				<Hotspot X="-2926.64" Y="2815.13" Z="73.5344" />
-				<Hotspot X="-2836.57" Y="2699.75" Z="72.3785" />
+				<Hotspot X="-3049.38" Y="2784.74" Z="64.58" />
+				<Hotspot X="-3044.58" Y="2740.72" Z="59.66" />
+				<Hotspot X="-3104.52" Y="2805.94" Z="79.33" />
+				<Hotspot X="-2926.64" Y="2815.13" Z="73.53" />
+				<Hotspot X="-2836.57" Y="2699.75" Z="72.38" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="5366" KillCount="4">
 			<Hotspots>
-				<Hotspot X="-3012.9" Y="2784.02" Z="53.6183" />
-				<Hotspot X="-3038.06" Y="2669.45" Z="56.3983" />
-				<Hotspot X="-3083.73" Y="2717.74" Z="59.204" />
-				<Hotspot X="-3029.46" Y="2762.08" Z="55.2349" />
-				<Hotspot X="-2971.34" Y="2721.16" Z="52.4896" />
+				<Hotspot X="-3012.9" Y="2784.02" Z="53.62" />
+				<Hotspot X="-3038.06" Y="2669.45" Z="56.4" />
+				<Hotspot X="-3083.73" Y="2717.74" Z="59.2" />
+				<Hotspot X="-3029.46" Y="2762.08" Z="55.23" />
+				<Hotspot X="-2971.34" Y="2721.16" Z="52.49" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="4120" Name="The Strength of Corruption">
+		<Objective Type="KillMob" MobId="8957" KillCount="12">
+			<Hotspots>
+				<Hotspot X="6057.81" Y="-1431.71" Z="422.35" />
+				<Hotspot X="6054.6" Y="-1488.48" Z="439.86" />
+				<Hotspot X="6084.28" Y="-1586.81" Z="467.99" />
+				<Hotspot X="6119.87" Y="-1420.34" Z="412.88" />
+				<Hotspot X="6117.08" Y="-1617.07" Z="481.28" />
+				<Hotspot X="6181.99" Y="-1490.6" Z="438.64" />
+				<Hotspot X="6177.5" Y="-1617.82" Z="477.74" />
+				<Hotspot X="6209.72" Y="-1526.46" Z="440.4" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="8961" KillCount="12">
+			<Hotspots>
+				<Hotspot X="6070.07" Y="-1452.38" Z="427.48" />
+				<Hotspot X="6079.94" Y="-1390" Z="405.23" />
+				<Hotspot X="6100.58" Y="-1552.04" Z="458.12" />
+				<Hotspot X="6115.54" Y="-1491.99" Z="437.42" />
+				<Hotspot X="6319.74" Y="-1608.8" Z="462.35" />
+				<Hotspot X="6387.95" Y="-1613.56" Z="471.03" />
+				<Hotspot X="6353.31" Y="-1930.01" Z="554.45" />
+				<Hotspot X="6419.15" Y="-1651.15" Z="489.93" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="7721" Name="Fuel for the Zapping">
+		<Objective Type="CollectItem" ItemId="18958" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Sea Elemental" Id="5461" />
+				<Mob Name="Sea Spray" Id="5462" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4511.62" Y="2316.16" Z="1.36" />
+				<Hotspot X="-4176.51" Y="2356.99" Z="1.16" />
+				<Hotspot X="-4186.32" Y="2417.43" Z="3.42" />
+				<Hotspot X="-4618.54" Y="2318.41" Z="0.85" />
+				<Hotspot X="-4159.43" Y="2532.18" Z="5.42" />
+				<Hotspot X="-4668.75" Y="2368.75" Z="-0.46" />
+				<Hotspot X="-4622.85" Y="2072.9" Z="5.03" />
+				<Hotspot X="-4119.32" Y="2605.99" Z="3.32" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Feralas (49-49) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(3380))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-1936.32" Y="5445.95" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1936.32" Y="5445.95" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Return to Witch Doctor Uzer'i" QuestId="3122" TurnInName="Witch Doctor Uzer'i" TurnInId="8115" />
-		<PickUp QuestName="The Sunken Temple" QuestId="3380" GiverName="Witch Doctor Uzer'i" GiverId="8115" />
-		<PickUp QuestName="Improved Quality" QuestId="7734" GiverName="Jangdor Swiftstrider" GiverId="7854" />
-		<PickUp QuestName="Dark Heart" QuestId="3062" GiverName="Talo Thornhoof" GiverId="7776" />
-		<PickUp QuestName="Vengeance on the Northspring" QuestId="3063" GiverName="Talo Thornhoof" GiverId="7776" />
-		<PickUp QuestName="The Strength of Corruption" QuestId="4120" GiverName="Talo Thornhoof" GiverId="7776" />
-		<PickUp QuestName="Zapped Giants" QuestId="7003" GiverName="Zorbin Fandazzle" GiverId="14637" />
-		<PickUp QuestName="Fuel for the Zapping" QuestId="7721" GiverName="Zorbin Fandazzle" GiverId="14637" />
+		<TurnIn QuestName="Return to Witch Doctor Uzer'i" QuestId="3122" TurnInName="Witch Doctor Uzer'i" TurnInId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
+		<PickUp QuestName="The Sunken Temple" QuestId="3380" GiverName="Witch Doctor Uzer'i" GiverId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
+		<PickUp QuestName="Improved Quality" QuestId="7734" GiverName="Jangdor Swiftstrider" GiverId="7854" X="-4354.65" Y="268.764" Z="26.4007" />
+		<PickUp QuestName="Dark Heart" QuestId="3062" GiverName="Talo Thornhoof" GiverId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
+		<PickUp QuestName="Vengeance on the Northspring" QuestId="3063" GiverName="Talo Thornhoof" GiverId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
+		<PickUp QuestName="The Strength of Corruption" QuestId="4120" GiverName="Talo Thornhoof" GiverId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
+		<Objective QuestName="The Strength of Corruption" QuestId="4120" Type="KillMob" MobId="8957" KillCount="12" />
+		<Objective QuestName="The Strength of Corruption" QuestId="4120" Type="KillMob" MobId="8961" KillCount="12" />
+		<PickUp QuestName="Zapped Giants" QuestId="7003" GiverName="Zorbin Fandazzle" GiverId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
+		<PickUp QuestName="Fuel for the Zapping" QuestId="7721" GiverName="Zorbin Fandazzle" GiverId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<Objective QuestName="Zapped Giants" QuestId="7003" Type="CollectItem" ItemId="18956" CollectCount="15" />
 		<Objective QuestName="Fuel for the Zapping" QuestId="7721" Type="CollectItem" ItemId="18958" CollectCount="10" />
-		<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" />
-		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" />
+		<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
+		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<Objective QuestName="Improved Quality" QuestId="7734" Type="CollectItem" ItemId="18947" CollectCount="10" />
-		<PickUp QuestName="Perfect Yeti Hide" QuestId="7738" GiverName="Zorbin Fandazzle" GiverId="14637" />
-		<Objective QuestName="Dark Heart" QuestId="3062" Type="CollectItem" ItemId="9530" CollectCount="1" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 18972)">
+			<CustomBehavior File="CollectThings" CollectItemId="18972" CollectItemCount="1" HuntingGroundRadius="120" MobId="5296" MobId2="5297" MobId3="5299" X="-3813.1475" Y="1829.7875" Z="131.6467">
+				<Hotspot X="-3813.15" Y="1829.79" Z="131.65" />
+				<Hotspot X="-3837.71" Y="1784.1" Z="136.64" />
+				<Hotspot X="-3845.69" Y="1722.36" Z="144.14" />
+				<Hotspot X="-3918.61" Y="1647.02" Z="127.06" />
+				<Hotspot X="-3871.49" Y="1668.04" Z="139.07" />
+				<Hotspot X="-3747.4" Y="1800.4" Z="156.08" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 18972)">
+			<PickUp QuestName="Perfect Yeti Hide" QuestId="7738" GiverName="Perfect Yeti Hide" GiverId="18972" GiverType="Item" />
+		</If>
+
+		<Objective QuestName="Dark Heart" QuestId="3062" Type="CollectItem" ItemId="9528" CollectCount="1" />
 		<Objective QuestName="Dark Heart" QuestId="3062" Type="CollectItem" ItemId="9528" CollectCount="1" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5362" KillCount="4" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5363" KillCount="4" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5364" KillCount="4" />
 		<Objective QuestName="Vengeance on the Northspring" QuestId="3063" Type="KillMob" MobId="5366" KillCount="4" />
-		<TurnIn QuestName="Improved Quality" QuestId="7734" TurnInName="Jangdor Swiftstrider" TurnInId="7854" />
-		<TurnIn QuestName="Perfect Yeti Hide" QuestId="7738" TurnInName="Jangdor Swiftstrider" TurnInId="7854" />
-		<TurnIn QuestName="Dark Heart" QuestId="3062" TurnInName="Talo Thornhoof" TurnInId="7776" />
-		<TurnIn QuestName="Vengeance on the Northspring" QuestId="3063" TurnInName="Talo Thornhoof" TurnInId="7776" />
+		<TurnIn QuestName="Improved Quality" QuestId="7734" TurnInName="Jangdor Swiftstrider" TurnInId="7854" X="-4354.65" Y="268.764" Z="26.4007" />
+		<TurnIn QuestName="Perfect Yeti Hide" QuestId="7738" TurnInName="Jangdor Swiftstrider" TurnInId="7854" X="-4354.65" Y="268.764" Z="26.4007" />
+		<TurnIn QuestName="Dark Heart" QuestId="3062" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
+		<TurnIn QuestName="Vengeance on the Northspring" QuestId="3063" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Tanaris (49-50)" />
 	</QuestOrder>
 </HBProfile>

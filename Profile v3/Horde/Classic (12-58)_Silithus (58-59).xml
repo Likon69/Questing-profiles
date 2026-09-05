@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Silithus (58-59)</Name>
-	<MinLevel>58</MinLevel>
-	<MaxLevel>59</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,41 +17,91 @@
 
 	<Vendors>
 		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
-		<Vendor Name="Matta" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Vargus" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Cawind Trueaim" Entry="9548" Type="Repair" X="-4484.55" Y="233.527" Z="48.4759" />
+		<Vendor Name="Loorana" Entry="8143" Type="Food" X="-4400.11" Y="194.325" Z="26.5111" />
+		<Vendor Name="Innkeeper Greul" Entry="7737" Type="Food" X="-4460.1" Y="242.722" Z="39.1908" />
+		<Vendor Name="Worb Strongstitch" Entry="8159" Type="Repair" X="-4339.65" Y="249.374" Z="26.4007" />
+		<Vendor Name="Laer Stepperunner" Entry="3689" Type="Food" X="-4901.5" Y="-1360.03" Z="-51.2594" />
+		<Vendor Name="Marjak Keenblade" Entry="3073" Type="Repair" X="-2926.32" Y="-215.715" Z="54.2598" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="1125" Name="The Spirits of Southwind">
 		<Objective Type="KillMob" MobId="12178" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-7314.79" Y="414.781" Z="21.7374" />
-				<Hotspot X="-7315.56" Y="309.598" Z="10.909" />
-				<Hotspot X="-7314.18" Y="352.466" Z="17.3954" />
-				<Hotspot X="-7215.96" Y="455.471" Z="13.5363" />
-				<Hotspot X="-7139.55" Y="354.197" Z="26.2948" />
+				<Hotspot X="-7314.79" Y="414.78" Z="21.74" />
+				<Hotspot X="-7315.56" Y="309.6" Z="10.91" />
+				<Hotspot X="-7314.18" Y="352.47" Z="17.4" />
+				<Hotspot X="-7215.96" Y="455.47" Z="13.54" />
+				<Hotspot X="-7139.55" Y="354.2" Z="26.29" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="12179" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-7217.56" Y="288.306" Z="47.0961" />
-				<Hotspot X="-7138.59" Y="347.584" Z="26.2948" />
-				<Hotspot X="-7258.11" Y="328.817" Z="47.925" />
-				<Hotspot X="-7116.58" Y="351.869" Z="17.8847" />
-				<Hotspot X="-7316.36" Y="386.531" Z="15.6469" />
+				<Hotspot X="-7217.56" Y="288.31" Z="47.1" />
+				<Hotspot X="-7138.59" Y="347.58" Z="26.29" />
+				<Hotspot X="-7258.11" Y="328.82" Z="47.92" />
+				<Hotspot X="-7116.58" Y="351.87" Z="17.88" />
+				<Hotspot X="-7316.36" Y="386.53" Z="15.65" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8280" Name="Securing the Supply Lines">
 		<Objective Type="KillMob" MobId="11740" KillCount="15">
 			<Hotspots>
-				<Hotspot X="-6327.39" Y="1265.9" Z="6.5949" />
-				<Hotspot X="-6382.82" Y="1326.36" Z="3.3263" />
-				<Hotspot X="-6369.03" Y="467.862" Z="-0.5208" />
-				<Hotspot X="-6247.77" Y="552.957" Z="11.3063" />
-				<Hotspot X="-6847.24" Y="44.191" Z="0.6501" />
+				<Hotspot X="-6327.39" Y="1265.9" Z="6.59" />
+				<Hotspot X="-6382.82" Y="1326.36" Z="3.33" />
+				<Hotspot X="-6369.03" Y="467.86" Z="-0.52" />
+				<Hotspot X="-6247.77" Y="552.96" Z="11.31" />
+				<Hotspot X="-6847.24" Y="44.19" Z="0.65" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8283" Name="Wanted - Deathclasp, Terror of the Sands">
+		<Objective Type="CollectItem" ItemId="20385" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Deathclasp" Id="15196" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8102.7" Y="967.63" Z="59.72" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8277" Name="Deadly Desert Venom">
+		<Objective Type="CollectItem" ItemId="20376" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Sand Skitterer" Id="11738" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6661.99" Y="759.31" Z="12.5" />
+				<Hotspot X="-6662.02" Y="653.45" Z="5.83" />
+				<Hotspot X="-6930.12" Y="978.2" Z="7.35" />
+				<Hotspot X="-6617.75" Y="678.64" Z="5.77" />
+				<Hotspot X="-6696.56" Y="516.6" Z="0.42" />
+				<Hotspot X="-6553.32" Y="674.14" Z="3.37" />
+				<Hotspot X="-6591.96" Y="573.57" Z="1.93" />
+				<Hotspot X="-6531.25" Y="719.26" Z="3.27" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20373" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Stonelash Scorpid" Id="11735" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6671.3" Y="667.67" Z="4.77" />
+				<Hotspot X="-6644.8" Y="709.39" Z="6.49" />
+				<Hotspot X="-6729.7" Y="559.57" Z="2.94" />
+				<Hotspot X="-6660.85" Y="584.76" Z="6.9" />
+				<Hotspot X="-6819.28" Y="990.91" Z="2.37" />
+				<Hotspot X="-6586.79" Y="692.39" Z="3.11" />
+				<Hotspot X="-6846.44" Y="1042.26" Z="0.22" />
+				<Hotspot X="-6914.1" Y="1040.37" Z="1.82" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -73,14 +120,170 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="8318" Name="Secret Communication">
+		<Objective Type="CollectItem" ItemId="20404" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+				<Mob Name="Twilight Avenger" Id="11880" />
+				<Mob Name="Twilight Geolord" Id="11881" />
+				<Mob Name="Twilight Stonecaller" Id="11882" />
+				<Mob Name="Twilight Master" Id="11883" />
+				<Mob Name="Twilight Lord Everun" Id="14479" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6986.09" Y="1087.71" Z="4.58" />
+				<Hotspot X="-6954.06" Y="1119.47" Z="3.09" />
+				<Hotspot X="-7012.78" Y="1106.06" Z="6.22" />
+				<Hotspot X="-7003.84" Y="1132.9" Z="7.5" />
+				<Hotspot X="-6906.24" Y="1170.05" Z="2.82" />
+				<Hotspot X="-6967.48" Y="1174.65" Z="12.78" />
+				<Hotspot X="-7048.57" Y="1130.74" Z="5.78" />
+				<Hotspot X="-7006.08" Y="1178.25" Z="12.03" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="8281" Name="Stepping Up Security">
 		<Objective Type="KillMob" MobId="11741" KillCount="20">
 			<Hotspots>
-				<Hotspot X="-7056.8" Y="1839.1" Z="-0.9701" />
-				<Hotspot X="-6983.4" Y="1550.22" Z="2.311" />
-				<Hotspot X="-7483.33" Y="1383.33" Z="5.2249" />
-				<Hotspot X="-7168.41" Y="1326.74" Z="3.2032" />
-				<Hotspot X="-6973.82" Y="1352.36" Z="0.3958" />
+				<Hotspot X="-7056.8" Y="1839.1" Z="-0.97" />
+				<Hotspot X="-6983.4" Y="1550.22" Z="2.31" />
+				<Hotspot X="-7483.33" Y="1383.33" Z="5.22" />
+				<Hotspot X="-7168.41" Y="1326.74" Z="3.2" />
+				<Hotspot X="-6973.82" Y="1352.36" Z="0.4" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8278" Name="Noggle's Last Hope">
+		<Objective Type="CollectItem" ItemId="20377" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Rock Stalker" Id="11739" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7518.74" Y="845.35" Z="-2.35" />
+				<Hotspot X="-7579.57" Y="782.52" Z="-17.88" />
+				<Hotspot X="-7581.29" Y="883.58" Z="-0.16" />
+				<Hotspot X="-7539.12" Y="1079.49" Z="1.9" />
+				<Hotspot X="-7514.01" Y="1148.85" Z="1.92" />
+				<Hotspot X="-7582.78" Y="1094.71" Z="1.35" />
+				<Hotspot X="-7494.38" Y="1244.9" Z="1.25" />
+				<Hotspot X="-7648.21" Y="965.8" Z="1.24" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20374" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Pincer" Id="11736" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7004.74" Y="1026.38" Z="2.23" />
+				<Hotspot X="-7184.2" Y="903.52" Z="5.36" />
+				<Hotspot X="-7117.97" Y="1017.87" Z="4.21" />
+				<Hotspot X="-7248.83" Y="782.06" Z="4.61" />
+				<Hotspot X="-7259.42" Y="830.02" Z="3.16" />
+				<Hotspot X="-7241.72" Y="589.19" Z="4.08" />
+				<Hotspot X="-7170.65" Y="1027.51" Z="5.47" />
+				<Hotspot X="-7285.66" Y="669.82" Z="1.32" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20375" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Stonelash Flayer" Id="11737" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7504.84" Y="812.22" Z="-11.6" />
+				<Hotspot X="-7577.76" Y="866.06" Z="-5.81" />
+				<Hotspot X="-7517.02" Y="394.1" Z="-13.05" />
+				<Hotspot X="-7584.37" Y="979.08" Z="2.21" />
+				<Hotspot X="-7512.22" Y="308.09" Z="-0.62" />
+				<Hotspot X="-7620.21" Y="945.79" Z="0.24" />
+				<Hotspot X="-7568.51" Y="368.85" Z="-15.18" />
+				<Hotspot X="-7577.37" Y="1101.23" Z="-0.24" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9128" Name="The Elemental Equation">
+		<Objective Type="CollectItem" ItemId="22527" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Scorching Elemental" Id="6520" />
+				<Mob Name="Living Blaze" Id="6521" />
+				<Mob Name="Obsidian Elemental" Id="7031" />
+				<Mob Name="Greater Obsidian Elemental" Id="7032" />
+				<Mob Name="Toxic Horror" Id="7132" />
+				<Mob Name="Smoldar" Id="8278" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6092.56" Y="-1269.75" Z="381.6" />
+				<Hotspot X="6100.82" Y="-1217.06" Z="371.99" />
+				<Hotspot X="6115.07" Y="-1181.11" Z="372.29" />
+				<Hotspot X="6235.69" Y="-1294.39" Z="371.55" />
+				<Hotspot X="6219.77" Y="-1255.34" Z="366.72" />
+				<Hotspot X="6272.76" Y="-1267.69" Z="367.44" />
+				<Hotspot X="6194.22" Y="-1154.38" Z="368.58" />
+				<Hotspot X="6248.27" Y="-1202.01" Z="371.05" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8323" Name="True Believers">
+		<Objective Type="CollectItem" ItemId="20404" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+				<Mob Name="Twilight Avenger" Id="11880" />
+				<Mob Name="Twilight Geolord" Id="11881" />
+				<Mob Name="Twilight Stonecaller" Id="11882" />
+				<Mob Name="Twilight Master" Id="11883" />
+				<Mob Name="Twilight Lord Everun" Id="14479" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6999.58" Y="1097.9" Z="5.14" />
+				<Hotspot X="-7040.76" Y="1132.31" Z="4.81" />
+				<Hotspot X="-6972.02" Y="1073.48" Z="5.04" />
+				<Hotspot X="-7031.74" Y="1169.57" Z="5.99" />
+				<Hotspot X="-6977.86" Y="1123.45" Z="6.71" />
+				<Hotspot X="-6464.32" Y="234.28" Z="4.84" />
+				<Hotspot X="-6939.14" Y="1114.2" Z="0.86" />
+				<Hotspot X="-6440.5" Y="199.21" Z="4.73" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8282" Name="Noggle's Lost Satchel">
+		<Objective Type="CollectItem" ItemId="20379" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Noggle's Satchel" Id="180435" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-8080.96" Y="985.24" Z="48.3" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8306" Name="Into The Maw of Madness">
+		<Objective Type="KillMob" MobId="15215" KillCount="1">
+			<Hotspots>
+				<Hotspot X="-8325.5" Y="727.58" Z="-66.98" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8279" Name="The Twilight Lexicon">
+		<Objective Type="CollectItem" ItemId="20394" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Mayna" Id="15200" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6809.02" Y="1619.7" Z="1.72" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20395" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Exeter" Id="11803" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7964.69" Y="1977.1" Z="7.06" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20396" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Keeper Havunth" Id="11804" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6939.14" Y="1114.2" Z="0.86" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -102,100 +305,205 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="4741" Name="Wild Guardians">
+		<Objective Type="KillMob" MobId="7453" KillCount="13">
+			<Hotspots>
+				<Hotspot X="5724.5" Y="-4507.6" Z="760.9" />
+				<Hotspot X="5681.22" Y="-4521.27" Z="766.22" />
+				<Hotspot X="5712.77" Y="-4853.18" Z="786.63" />
+				<Hotspot X="5584.27" Y="-4906.99" Z="836.71" />
+				<Hotspot X="5638.35" Y="-4898.31" Z="804.89" />
+				<Hotspot X="5784.17" Y="-4887.54" Z="831.32" />
+				<Hotspot X="5717.49" Y="-4914.25" Z="800.55" />
+				<Hotspot X="5679.48" Y="-4927.79" Z="803.91" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Silithus (58-59) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1004))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1931.48" Y="5460.49" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1931.48" Y="5460.49" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The New Frontier" QuestId="1004" GiverName="Harbinger Balthazad" GiverId="10879" />
-		<TurnIn QuestName="The New Frontier" QuestId="1004" TurnInName="Arch Druid Hamuul Runetotem" TurnInId="5769" />
-		<PickUp QuestName="Rabine Saturna" QuestId="1123" GiverName="Arch Druid Hamuul Runetotem" GiverId="5769" />
-		<TurnIn QuestName="Rabine Saturna" QuestId="1123" TurnInName="Rabine Saturna" TurnInId="11801" />
-		<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" />
-		<TurnIn QuestName="Wasteland" QuestId="1124" TurnInName="Layo Starstrike" TurnInId="13220" />
-		<PickUp QuestName="The Spirits of Southwind" QuestId="1125" GiverName="Layo Starstrike" GiverId="13220" />
-		<TurnIn QuestName="Taking Back Silithus" QuestId="8276" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<PickUp QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<PickUp QuestName="Deadly Desert Venom" QuestId="8277" GiverName="Beetix Ficklespragg" GiverId="15189" />
-		<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" />
-		<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" />
-		<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" />
+		<PickUp QuestName="The New Frontier" QuestId="1004" GiverName="Harbinger Balthazad" GiverId="10879" X="1570.35" Y="214.672" Z="-59.2606" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="The New Frontier" QuestId="1004" TurnInName="Arch Druid Hamuul Runetotem" TurnInId="5769" X="-1048.74" Y="-303.954" Z="159.114" />
+		<PickUp QuestName="Rabine Saturna" QuestId="1123" GiverName="Arch Druid Hamuul Runetotem" GiverId="5769" X="-1048.74" Y="-303.954" Z="159.114" />
+		<TurnIn QuestName="Rabine Saturna" QuestId="1123" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		<PickUp QuestName="Wasteland" QuestId="1124" GiverName="Rabine Saturna" GiverId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		<TurnIn QuestName="Wasteland" QuestId="1124" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<PickUp QuestName="The Spirits of Southwind" QuestId="1125" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<TurnIn QuestName="Taking Back Silithus" QuestId="8276" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Securing the Supply Lines" QuestId="8280" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" GiverName="Wanted Poster: Deathclasp" GiverId="180448" GiverType="Object" X="-6847.41" Y="748.786" Z="42.5384" />
+		<PickUp QuestName="Deadly Desert Venom" QuestId="8277" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
 		<Objective QuestName="The Spirits of Southwind" QuestId="1125" Type="KillMob" MobId="12178" KillCount="8" />
 		<Objective QuestName="The Spirits of Southwind" QuestId="1125" Type="KillMob" MobId="12179" KillCount="8" />
-		<TurnIn QuestName="The Spirits of Southwind" QuestId="1125" TurnInName="Layo Starstrike" TurnInId="13220" />
-		<PickUp QuestName="Hive in the Tower" QuestId="1126" GiverName="Layo Starstrike" GiverId="13220" />
+		<TurnIn QuestName="The Spirits of Southwind" QuestId="1125" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<PickUp QuestName="Hive in the Tower" QuestId="1126" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		<Objective QuestName="Hive in the Tower" QuestId="1126" Type="CollectItem" ItemId="17346" CollectCount="1" />
-		<Objective QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" Type="CollectItem" ItemId="20461" CollectCount="1" />
-		<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Layo Starstrike" GiverId="13220" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20461)">
+			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
+		</If>
+
 		<If Condition="Me.Level &lt; 59">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 59 - Hive'Ashi Ambusher</Name>
-					<Factions>310</Factions>
+					<Name>Grind to Level 59 - Tortured Sentinel</Name>
+					<Factions>21</Factions>
+					<TargetMinLevel>56</TargetMinLevel>
+					<TargetMaxLevel>57</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="62.96" Y="53.11" Z="0.00" />
+						<Hotspot X="-7100.92" Y="241.81" Z="3.54" />
+						<Hotspot X="-7093.52" Y="364.52" Z="9.67" />
+						<Hotspot X="-7136.55" Y="327.43" Z="21.8" />
+						<Hotspot X="-7193.29" Y="300.35" Z="41.1" />
+						<Hotspot X="-7139.58" Y="352.87" Z="17.43" />
+						<Hotspot X="-7220.92" Y="336.76" Z="43.14" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="59" />
 		</If>
-		<TurnIn QuestName="Hive in the Tower" QuestId="1126" TurnInName="Layo Starstrike" TurnInId="13220" />
-		<PickUp QuestName="Umber, Archivist" QuestId="6844" GiverName="Layo Starstrike" GiverId="13220" />
-		<PickUp QuestName="Report to General Kirika" QuestId="9416" GiverName="Scout Bloodfist" GiverId="17081" />
+
+		<TurnIn QuestName="Hive in the Tower" QuestId="1126" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<PickUp QuestName="Umber, Archivist" QuestId="6844" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
+		<PickUp QuestName="Report to General Kirika" QuestId="9416" GiverName="Scout Bloodfist" GiverId="17081" X="-6810.62" Y="832.311" Z="50.0878" />
 		<Objective QuestName="Secret Communication" QuestId="8318" Type="CollectItem" ItemId="20404" CollectCount="10" />
 		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20373" CollectCount="8" />
 		<Objective QuestName="Deadly Desert Venom" QuestId="8277" Type="CollectItem" ItemId="20376" CollectCount="8" />
 		<Objective QuestName="Securing the Supply Lines" QuestId="8280" Type="KillMob" MobId="11740" KillCount="15" />
-		<TurnIn QuestName="Securing the Supply Lines" QuestId="8280" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<PickUp QuestName="Stepping Up Security" QuestId="8281" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<TurnIn QuestName="Deadly Desert Venom" QuestId="8277" TurnInName="Beetix Ficklespragg" TurnInId="15189" />
-		<PickUp QuestName="Noggle's Last Hope" QuestId="8278" GiverName="Beetix Ficklespragg" GiverId="15189" />
-		<TurnIn QuestName="Secret Communication" QuestId="8318" TurnInName="Bor Wildmane" TurnInId="15306" />
+		<TurnIn QuestName="Securing the Supply Lines" QuestId="8280" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<PickUp QuestName="Stepping Up Security" QuestId="8281" GiverName="Windcaller Proudhorn" GiverId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<TurnIn QuestName="Deadly Desert Venom" QuestId="8277" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<PickUp QuestName="Noggle's Last Hope" QuestId="8278" GiverName="Beetix Ficklespragg" GiverId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<TurnIn QuestName="Secret Communication" QuestId="8318" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
 		<Objective QuestName="The Twilight Mystery" QuestId="8284" Type="CollectItem" ItemId="20378" CollectCount="8" />
 		<Objective QuestName="The Elemental Equation" QuestId="9128" Type="CollectItem" ItemId="22527" CollectCount="30" />
 		<Objective QuestName="True Believers" QuestId="8323" Type="CollectItem" ItemId="20404" CollectCount="10" />
-		<TurnIn QuestName="Report to General Kirika" QuestId="9416" TurnInName="General Kirika" TurnInId="17079" />
+		<TurnIn QuestName="Report to General Kirika" QuestId="9416" TurnInName="General Kirika" TurnInId="17079" X="-7573.79" Y="769.702" Z="-17.6601" />
 		<Objective QuestName="Stepping Up Security" QuestId="8281" Type="KillMob" MobId="11741" KillCount="20" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20374" CollectCount="3" />
-		<TurnIn QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" TurnInName="Rutgar Glyphshaper" TurnInId="15170" />
+		<!-- Q8308 Brann Bronzebeard's Lost Letter: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\Classic\[A - Quest] 1-58 [Kick]\Silithus.xml -->
+		<If Condition="HasQuest(8308)">
+			<CustomBehavior File="Message" Text="Moving to turn in 'Brann Bronzebeard's Lost Letter'" LogColor="Green" />
+		</If>
+
+		<If Condition="HasQuest(8308)">
+			<MoveTo X="-8022.499" Y="1115.789" Z="2.738349" />
+		</If>
+
+		<TurnIn QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" TurnInName="Rutgar Glyphshaper" TurnInId="15170" X="-8013.06" Y="1099.65" Z="4.7188" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20375" CollectCount="3" />
 		<Objective QuestName="Noggle's Last Hope" QuestId="8278" Type="CollectItem" ItemId="20377" CollectCount="3" />
-		<TurnIn QuestName="Stepping Up Security" QuestId="8281" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="Noggle's Last Hope" QuestId="8278" TurnInName="Beetix Ficklespragg" TurnInId="15189" />
-		<PickUp QuestName="Noggle's Lost Satchel" QuestId="8282" GiverName="Noggle Ficklespragg" GiverId="15190" />
-		<TurnIn QuestName="The Twilight Mystery" QuestId="8284" TurnInName="Geologist Larksbane" TurnInId="15183" />
-		<PickUp QuestName="The Deserter" QuestId="8285" GiverName="Geologist Larksbane" GiverId="15183" />
-		<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" />
-		<PickUp QuestName="Into The Maw of Madness" QuestId="8306" GiverName="Commander Mar'alith" GiverId="15181" />
-		<TurnIn QuestName="The Deserter" QuestId="8285" TurnInName="Hermit Ortell" TurnInId="15194" />
-		<PickUp QuestName="The Twilight Lexicon" QuestId="8279" GiverName="Hermit Ortell" GiverId="15194" />
+		<TurnIn QuestName="Stepping Up Security" QuestId="8281" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		<TurnIn QuestName="Noggle's Last Hope" QuestId="8278" TurnInName="Beetix Ficklespragg" TurnInId="15189" X="-6855.66" Y="739.622" Z="55.0512" />
+		<PickUp QuestName="Noggle's Lost Satchel" QuestId="8282" GiverName="Noggle Ficklespragg" GiverId="15190" X="-6852.64" Y="739.226" Z="56.0303" />
+		<TurnIn QuestName="The Twilight Mystery" QuestId="8284" TurnInName="Geologist Larksbane" TurnInId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<PickUp QuestName="The Deserter" QuestId="8285" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
+		<!-- Q8304 Dearest Natalia: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Reputation\Classic\Cenarion Circle [Kick]\[QO] Cenarion Circle - Silithus A [Kick].xml -->
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<CustomBehavior File="FlyTo" X="-8010.16" Y="1100.567" Z="4.059024" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<CustomBehavior File="ForcedDismount" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+				<CustomBehavior File="InteractWith" QuestId="8304" MobId="15170" NumOfTimes="1" GossipOptions="1, 1, 1, 1, 1, 1, 1, 1" WaitTime="1000" CollectionDistance="50" X="-8010.16" Y="1100.567" Z="4.059024" />
+			</If>
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+			<If Condition="((HasQuest(8304)) &amp;&amp; (!IsQuestCompleted(8304)))">
+				<CustomBehavior File="InteractWith" QuestId="8304" MobId="15171" NumOfTimes="1" GossipOptions="1, 1, 1, 1, 1, 1, 1, 1" WaitTime="1000" CollectionDistance="50" X="-8022.499" Y="1115.789" Z="2.737845" />
+			</If>
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (IsQuestCompleted(8304)))">
+			<CustomBehavior File="FlyTo" X="-6836.007" Y="845.5305" Z="48.99781" />
+		</If>
+
+		<If Condition="((HasQuest(8304)) &amp;&amp; (IsQuestCompleted(8304)))">
+			<CustomBehavior File="ForcedDismount" />
+		</If>
+
+		<TurnIn QuestName="Dearest Natalia" QuestId="8304" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		<PickUp QuestName="Into The Maw of Madness" QuestId="8306" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		<Objective QuestName="Into The Maw of Madness" QuestId="8306" Type="KillMob" MobId="15215" KillCount="1" />
+		<TurnIn QuestName="The Deserter" QuestId="8285" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<PickUp QuestName="The Twilight Lexicon" QuestId="8279" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
 		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20396" CollectCount="1" />
 		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20394" CollectCount="1" />
 		<Objective QuestName="The Twilight Lexicon" QuestId="8279" Type="CollectItem" ItemId="20395" CollectCount="1" />
 		<Objective QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" Type="CollectItem" ItemId="20385" CollectCount="1" />
 		<Objective QuestName="Noggle's Lost Satchel" QuestId="8282" Type="CollectItem" ItemId="20379" CollectCount="1" />
-		<TurnIn QuestName="The Twilight Lexicon" QuestId="8279" TurnInName="Hermit Ortell" TurnInId="15194" />
-		<PickUp QuestName="A Terrible Purpose" QuestId="8287" GiverName="Hermit Ortell" GiverId="15194" />
-		<PickUp QuestName="True Believers" QuestId="8323" GiverName="Hermit Ortell" GiverId="15194" />
-		<TurnIn QuestName="True Believers" QuestId="8323" TurnInName="Hermit Ortell" TurnInId="15194" />
-		<TurnIn QuestName="Noggle's Lost Satchel" QuestId="8282" TurnInName="Noggle Ficklespragg" TurnInId="15190" />
-		<TurnIn QuestName="A Terrible Purpose" QuestId="8287" TurnInName="Commander Mar'alith" TurnInId="15181" />
-		<TurnIn QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" TurnInName="Vish Kozus" TurnInId="15182" />
-		<TurnIn QuestName="Melding of Influences" QuestId="4642" TurnInName="Chemist Fuely" TurnInId="10136" />
-		<Objective QuestName="Brother Carlin" QuestId="5210" Type="CollectItem" ItemId="13202" CollectCount="1" />
-		<PickUp QuestName="The Elemental Equation" QuestId="9128" GiverName="Archmage Angela Dosantos" GiverId="16116" />
-		<TurnIn QuestName="The Elemental Equation" QuestId="9128" TurnInName="Archmage Angela Dosantos" TurnInId="16116" />
-		<TurnIn QuestName="Brother Carlin" QuestId="5210" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<PickUp QuestName="Villains of Darrowshire" QuestId="5181" GiverName="Carlin Redpath" GiverId="11063" />
+		<TurnIn QuestName="The Twilight Lexicon" QuestId="8279" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<PickUp QuestName="A Terrible Purpose" QuestId="8287" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<PickUp QuestName="True Believers" QuestId="8323" GiverName="Hermit Ortell" GiverId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<TurnIn QuestName="True Believers" QuestId="8323" TurnInName="Hermit Ortell" TurnInId="15194" X="-7578.72" Y="196.914" Z="11.5488" />
+		<TurnIn QuestName="Noggle's Lost Satchel" QuestId="8282" TurnInName="Noggle Ficklespragg" TurnInId="15190" X="-6852.64" Y="739.226" Z="56.0303" />
+		<TurnIn QuestName="A Terrible Purpose" QuestId="8287" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		<TurnIn QuestName="Wanted - Deathclasp, Terror of the Sands" QuestId="8283" TurnInName="Vish Kozus" TurnInId="15182" X="-6740.08" Y="769.562" Z="128.521" />
+		<If Condition="Me.MapId != 0">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Melding of Influences" QuestId="4642" TurnInName="Chemist Fuely" TurnInId="10136" X="1408.45" Y="417.941" Z="-84.8823" />
+		<PickUp QuestName="The Elemental Equation" QuestId="9128" GiverName="Archmage Angela Dosantos" GiverId="16116" X="2296.01" Y="-5340.98" Z="90.8799" />
+		<TurnIn QuestName="The Elemental Equation" QuestId="9128" TurnInName="Archmage Angela Dosantos" TurnInId="16116" X="2296.01" Y="-5340.98" Z="90.8799" />
+		<TurnIn QuestName="Brother Carlin" QuestId="5210" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<PickUp QuestName="Villains of Darrowshire" QuestId="5181" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
 		<Objective QuestName="Villains of Darrowshire" QuestId="5181" Type="CollectItem" ItemId="12956" CollectCount="1" />
 		<Objective QuestName="Villains of Darrowshire" QuestId="5181" Type="CollectItem" ItemId="12957" CollectCount="1" />
-		<TurnIn QuestName="Villains of Darrowshire" QuestId="5181" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<PickUp QuestName="Wild Guardians" QuestId="4741" GiverName="Trull Failbane" GiverId="10306" />
+		<TurnIn QuestName="Villains of Darrowshire" QuestId="5181" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<PickUp QuestName="Wild Guardians" QuestId="4741" GiverName="Trull Failbane" GiverId="10306" X="5109.6" Y="-355.176" Z="357.205" />
+		<Objective QuestName="Wild Guardians" QuestId="4741" Type="KillMob" MobId="7453" KillCount="13" />
 		<Objective QuestName="Toxic Horrors" QuestId="5086" Type="CollectItem" ItemId="12822" CollectCount="3" />
-		<TurnIn QuestName="Umber, Archivist" QuestId="6844" TurnInName="Umber" TurnInId="11939" />
-		<PickUp QuestName="Uncovering Past Secrets" QuestId="6845" GiverName="Umber" GiverId="11939" />
-		<TurnIn QuestName="Uncovering Past Secrets" QuestId="6845" TurnInName="Rabine Saturna" TurnInId="11801" />
-		<PickUp QuestName="Under the Chitin Was..." QuestId="1185" GiverName="Umber" GiverId="11939" />
+		<TurnIn QuestName="Umber, Archivist" QuestId="6844" TurnInName="Umber" TurnInId="11939" X="7943.56" Y="-2417.24" Z="494.055" />
+		<PickUp QuestName="Uncovering Past Secrets" QuestId="6845" GiverName="Umber" GiverId="11939" X="7943.56" Y="-2417.24" Z="494.055" />
+		<TurnIn QuestName="Uncovering Past Secrets" QuestId="6845" TurnInName="Rabine Saturna" TurnInId="11801" X="7797.39" Y="-2574.32" Z="488.562" />
+		<PickUp QuestName="Under the Chitin Was..." QuestId="1185" GiverName="Umber" GiverId="11939" X="7943.56" Y="-2417.24" Z="494.055" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Winterspring (59-60)" />
 	</QuestOrder>
 </HBProfile>

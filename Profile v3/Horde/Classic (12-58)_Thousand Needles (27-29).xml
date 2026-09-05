@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Thousand Needles (27-29)</Name>
-	<MinLevel>27</MinLevel>
-	<MaxLevel>29</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,30 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Klockmort Spannerspan" Entry="4608" Type="Repair" X="1756.95" Y="416.858" Z="-57.1312" />
-		<Vendor Name="Innkeeper Abeqwa" Entry="4584" Type="Food" X="1407.3" Y="58.854" Z="-62.1954" />
+		<Vendor Name="Laer Stepperunner" Entry="3689" Type="Food" X="-4901.5" Y="-1360.03" Z="-51.2594" />
+		<Vendor Name="Starn" Entry="9551" Type="Repair" X="-5453.35" Y="-2408.38" Z="89.3594" />
+		<Vendor Name="Turhaw" Entry="4875" Type="Food" X="-5467.54" Y="-2432.64" Z="89.7824" />
+		<Vendor Name="Innkeeper Abeqwa" Entry="11116" Type="Food" X="-5477.85" Y="-2460.43" Z="89.3671" />
+		<Vendor Name="Zulrg" Entry="4884" Type="Repair" X="-3146.33" Y="-2873.78" Z="34.3575" />
+		<Vendor Name="Zanara" Entry="9552" Type="Repair" X="-3086.6" Y="-2838.95" Z="34.5123" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1197" Name="The Sacred Flame">
+		<Objective Type="CollectItem" ItemId="5869" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Ancient Brazier" Id="20807" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4889.76" Y="-2281.96" Z="-70.51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="4821" Name="Alien Egg">
 		<Objective Type="CollectItem" ItemId="12467" CollectCount="1">
 			<CollectFrom>
@@ -38,13 +51,13 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="1197" Name="The Sacred Flame">
-		<Objective Type="CollectItem" ItemId="5869" CollectCount="1">
+	<Quest Id="5147" Name="Wanted - Arnak Grimtotem">
+		<Objective Type="CollectItem" ItemId="12884" CollectCount="1">
 			<CollectFrom>
-				<GameObject Name="Ancient Brazier" Id="20807" />
+				<Mob Name="Arnak Grimtotem" Id="10896" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-4889.76" Y="-2281.96" Z="-70.51" />
+				<Hotspot X="-4754.08" Y="-2108.98" Z="83.34" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -82,49 +95,85 @@
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Thousand Needles (27-29) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1197))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="The Sacred Flame" QuestId="1196" TurnInName="Rau Cliffrunner" TurnInId="4722" />
-		<PickUp QuestName="The Sacred Flame" QuestId="1197" GiverName="Rau Cliffrunner" GiverId="4722" />
+		<TurnIn QuestName="The Sacred Flame" QuestId="1196" TurnInName="Rau Cliffrunner" TurnInId="4722" X="-5483.62" Y="-2463.44" Z="89.3671" />
+		<PickUp QuestName="The Sacred Flame" QuestId="1197" GiverName="Rau Cliffrunner" GiverId="4722" X="-5483.62" Y="-2463.44" Z="89.3671" />
 		<Objective QuestName="Alien Egg" QuestId="4821" Type="CollectItem" ItemId="12467" CollectCount="1" />
-		<PickUp QuestName="Test of Faith" QuestId="1149" GiverName="Dorn Plainstalker" GiverId="2986" />
-		<TurnIn QuestName="Test of Faith" QuestId="1149" TurnInName="Dorn Plainstalker" TurnInId="2986" />
+		<PickUp QuestName="Test of Faith" QuestId="1149" GiverName="Dorn Plainstalker" GiverId="2986" X="-5183.59" Y="-2806.95" Z="-6.9201" />
+		<TurnIn QuestName="Test of Faith" QuestId="1149" TurnInName="Dorn Plainstalker" TurnInId="2986" X="-5183.59" Y="-2806.95" Z="-6.9201" />
 		<Objective QuestName="The Sacred Flame" QuestId="1197" Type="CollectItem" ItemId="5869" CollectCount="1" />
-		<TurnIn QuestName="Alien Egg" QuestId="4821" TurnInName="Hagar Lightninghoof" TurnInId="10539" />
-		<PickUp QuestName="Serpent Wild" QuestId="4865" GiverName="Hagar Lightninghoof" GiverId="10539" />
-		<TurnIn QuestName="The Sacred Flame" QuestId="1197" TurnInName="Rau Cliffrunner" TurnInId="4722" />
-		<PickUp QuestName="Wanted - Arnak Grimtotem" QuestId="5147" GiverName="Rau Cliffrunner" GiverId="4722" />
-		<TurnIn QuestName="Serpent Wild" QuestId="4865" TurnInName="Motega Firemane" TurnInId="10428" />
-		<PickUp QuestName="Sacred Fire" QuestId="5062" GiverName="Motega Firemane" GiverId="10428" />
+		<TurnIn QuestName="Alien Egg" QuestId="4821" TurnInName="Hagar Lightninghoof" TurnInId="10539" X="-5441.8" Y="-2397.47" Z="89.3227" />
+		<PickUp QuestName="Serpent Wild" QuestId="4865" GiverName="Hagar Lightninghoof" GiverId="10539" X="-5441.8" Y="-2397.47" Z="89.3227" />
+		<TurnIn QuestName="The Sacred Flame" QuestId="1197" TurnInName="Rau Cliffrunner" TurnInId="4722" X="-5483.62" Y="-2463.44" Z="89.3671" />
+		<PickUp QuestName="Wanted - Arnak Grimtotem" QuestId="5147" GiverName="Wanted Poster - Arnak Grimtotem" GiverId="176115" GiverType="Object" X="-5458.62" Y="-2457.55" Z="89.2801" />
+		<TurnIn QuestName="Serpent Wild" QuestId="4865" TurnInName="Motega Firemane" TurnInId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
+		<PickUp QuestName="Sacred Fire" QuestId="5062" GiverName="Motega Firemane" GiverId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
 		<If Condition="Me.Level &lt; 28">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 28 - Arikara</Name>
-					<Factions>14</Factions>
+					<Name>Grind to Level 28 - Galak Mauler</Name>
+					<Factions>16,131</Factions>
+					<TargetMinLevel>26</TargetMinLevel>
+					<TargetMaxLevel>29</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="33.59" Y="36.84" Z="0.00" />
+						<Hotspot X="-4695.03" Y="-1440.02" Z="-50.47" />
+						<Hotspot X="-4659.71" Y="-1251.22" Z="-52.05" />
+						<Hotspot X="-4628.04" Y="-1274.75" Z="-50.26" />
+						<Hotspot X="-4613.35" Y="-1330.81" Z="-45.08" />
+						<Hotspot X="-5183.27" Y="-1221.41" Z="48.35" />
+						<Hotspot X="-4593.46" Y="-1266.16" Z="-52.34" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="28" />
 		</If>
+
 		<Objective QuestName="Sacred Fire" QuestId="5062" Type="CollectItem" ItemId="12732" CollectCount="10" />
-		<TurnIn QuestName="Sacred Fire" QuestId="5062" TurnInName="Magatha Grimtotem" TurnInId="4046" />
-		<PickUp QuestName="Arikara" QuestId="5088" GiverName="Magatha Grimtotem" GiverId="4046" />
-		<TurnIn QuestName="Grimtotem Spying" QuestId="5064" TurnInName="Cliffwatcher Longhorn" TurnInId="10537" />
+		<TurnIn QuestName="Sacred Fire" QuestId="5062" TurnInName="Magatha Grimtotem" TurnInId="4046" X="-1065.08" Y="-212.398" Z="159.114" />
+		<PickUp QuestName="Arikara" QuestId="5088" GiverName="Magatha Grimtotem" GiverId="4046" X="-1065.08" Y="-212.398" Z="159.114" />
+		<TurnIn QuestName="Grimtotem Spying" QuestId="5064" TurnInName="Cliffwatcher Longhorn" TurnInId="10537" X="-5454.95" Y="-2442.79" Z="90.0237" />
 		<Objective QuestName="Arikara" QuestId="5088" Type="CollectItem" ItemId="12925" CollectCount="1" />
 		<Objective QuestName="Wanted - Arnak Grimtotem" QuestId="5147" Type="CollectItem" ItemId="12884" CollectCount="1" />
-		<PickUp QuestName="Free at Last" QuestId="4904" GiverName="Lakota Windsong" GiverId="10646" />
-		<TurnIn QuestName="Arikara" QuestId="5088" TurnInName="Motega Firemane" TurnInId="10428" />
+		<PickUp QuestName="Free at Last" QuestId="4904" GiverName="Lakota Windsong" GiverId="10646" X="-4742.52" Y="-2103" Z="83.7146" />
+		<TurnIn QuestName="Arikara" QuestId="5088" TurnInName="Motega Firemane" TurnInId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
 		<Objective QuestName="Wind Rider" QuestId="4767" Type="CollectItem" ItemId="12356" CollectCount="10" />
-		<PickUp QuestName="Homeward Bound" QuestId="4770" GiverName="Pao'ka Swiftmountain" GiverId="10427" />
+		<PickUp QuestName="Homeward Bound" QuestId="4770" GiverName="Pao'ka Swiftmountain" GiverId="10427" X="-5156.69" Y="-1220.49" Z="48.7887" />
 		<Objective QuestName="Steelsnap" QuestId="1131" Type="CollectItem" ItemId="5837" CollectCount="1" />
-		<Objective QuestName="Assassination Plot" QuestId="4881" Type="CollectItem" ItemId="12564" CollectCount="1" />
-		<Objective QuestName="Assassination Plot" QuestId="4881" Type="CollectItem" ItemId="12564" CollectCount="1" />
-		<PickUp QuestName="Assassination Plot" QuestId="4881" GiverName="Pao'ka Swiftmountain" GiverId="10427" />
-		<TurnIn QuestName="Homeward Bound" QuestId="4770" TurnInName="Motega Firemane" TurnInId="10428" />
-		<TurnIn QuestName="Assassination Plot" QuestId="4881" TurnInName="Kanati Greycloud" TurnInId="10638" />
-		<PickUp QuestName="Protect Kanati Greycloud" QuestId="4966" GiverName="Kanati Greycloud" GiverId="10638" />
-		<TurnIn QuestName="Protect Kanati Greycloud" QuestId="4966" TurnInName="Kanati Greycloud" TurnInId="10638" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12564)">
+			<CustomBehavior File="CollectThings" CollectItemId="12564" CollectItemCount="1" HuntingGroundRadius="120" MobId="10617" X="-5128.15" Y="-2080.7" Z="-37.4284">
+				<Hotspot X="-5128.15" Y="-2080.7" Z="-37.43" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12564)">
+			<PickUp QuestName="Assassination Plot" QuestId="4881" GiverName="Assassination Note" GiverId="12564" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Homeward Bound" QuestId="4770" TurnInName="Motega Firemane" TurnInId="10428" X="-4915.57" Y="-1381.18" Z="-52.6008" />
+		<TurnIn QuestName="Assassination Plot" QuestId="4881" TurnInName="Kanati Greycloud" TurnInId="10638" X="-4906.05" Y="-1366.99" Z="-52.6008" />
+		<PickUp QuestName="Protect Kanati Greycloud" QuestId="4966" GiverName="Kanati Greycloud" GiverId="10638" X="-4906.05" Y="-1366.99" Z="-52.6008" />
+		<TurnIn QuestName="Protect Kanati Greycloud" QuestId="4966" TurnInName="Kanati Greycloud" TurnInId="10638" X="-4906.05" Y="-1366.99" Z="-52.6008" />
 		<If Condition="Me.Level &lt; 29">
 			<SetGrindArea>
 				<GrindArea>
@@ -139,11 +188,12 @@
 			</SetGrindArea>
 			<GrindTo Level="29" />
 		</If>
-		<TurnIn QuestName="Free at Last" QuestId="4904" TurnInName="Thalia Amberhide" TurnInId="10645" />
-		<TurnIn QuestName="Wanted - Arnak Grimtotem" QuestId="5147" TurnInName="Cliffwatcher Longhorn" TurnInId="10537" />
-		<TurnIn QuestName="Wind Rider" QuestId="4767" TurnInName="Elu" TurnInId="10377" />
-		<TurnIn QuestName="Steelsnap" QuestId="1131" TurnInName="Melor Stonehoof" TurnInId="3441" />
-		<PickUp QuestName="Frostmaw" QuestId="1136" GiverName="Melor Stonehoof" GiverId="3441" />
+
+		<TurnIn QuestName="Free at Last" QuestId="4904" TurnInName="Thalia Amberhide" TurnInId="10645" X="-5480.67" Y="-2456.03" Z="89.3671" />
+		<TurnIn QuestName="Wanted - Arnak Grimtotem" QuestId="5147" TurnInName="Cliffwatcher Longhorn" TurnInId="10537" X="-5454.95" Y="-2442.79" Z="90.0237" />
+		<TurnIn QuestName="Wind Rider" QuestId="4767" TurnInName="Elu" TurnInId="10377" X="-5401.73" Y="-2410.17" Z="89.2762" />
+		<TurnIn QuestName="Steelsnap" QuestId="1131" TurnInName="Melor Stonehoof" TurnInId="3441" X="-1413.06" Y="-125.633" Z="159.018" />
+		<PickUp QuestName="Frostmaw" QuestId="1136" GiverName="Melor Stonehoof" GiverId="3441" X="-1413.06" Y="-125.633" Z="159.018" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Hillsbrad Foothills (29-30)" />
 	</QuestOrder>
 </HBProfile>

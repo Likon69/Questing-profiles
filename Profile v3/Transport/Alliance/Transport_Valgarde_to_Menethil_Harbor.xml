@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Valgarde to Menethil Harbor
     Transport: The Northspear (ID: 181688)
     Faction: Alliance
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Valgarde_to_Menethil_Harbor</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="610.0" Y="-5159.5" Z="5.86" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="181688"
-        WaitAtX="610.0" WaitAtY="-5159.5" WaitAtZ="5.86"
-        TransportStartX="620.21" TransportStartY="-5165.75" TransportStartZ="-0.05"
-        StandOnX="625.0" StandOnY="-5172.0" StandOnZ="6.05"
-        TransportEndX="-3695.17" TransportEndY="-593.88" TransportEndZ="-0.06"
-        GetOffX="-3702.6" GetOffY="-584.85" GetOffZ="6.32" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="-3702.6" Y="-584.85" Z="6.32" />
-  </QuestOrder>
-  
+	<Name>Transport_Valgarde_to_Menethil_Harbor</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+		<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

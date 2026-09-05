@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Desolace (32-34)</Name>
-	<MinLevel>32</MinLevel>
-	<MaxLevel>34</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,141 +16,131 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Kulwia" Entry="4499" Type="Repair" X="-5201.8" Y="-1569.02" Z="-48.1368" />
 		<!-- Innkeeper Kauth (4492) — no spawn data -->
+		<Vendor Name="Muuran" Entry="8878" Type="Repair" X="-1241.63" Y="1734" Z="89.9728" />
+		<Vendor Name="Grod" Entry="3093" Type="Repair" X="-1152.76" Y="71.4057" Z="145.878" />
+		<Vendor Name="Bountiful Barrel" Entry="35343" Type="Food" X="-1317.71" Y="208.647" Z="58.8602" />
+		<Vendor Name="Fela" Entry="3095" Type="Repair" X="-1161.71" Y="70.4291" Z="145.878" />
+		<Vendor Name="Laha Farplain" Entry="34684" Type="Food" X="-1313.09" Y="189.957" Z="59.9336" />
+		<Vendor Name="Harnor" Entry="8152" Type="Food" X="-1144.79" Y="1931.35" Z="89.2302" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1482" Name="The Corrupter">
+		<Objective Type="CollectItem" ItemId="6442" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Oracle" Id="4718" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-210.94" Y="2751.28" Z="-1.84" />
+				<Hotspot X="-15.59" Y="2814.09" Z="-30.86" />
+				<Hotspot X="147.73" Y="2709.56" Z="-67.67" />
+				<Hotspot X="214.75" Y="2988.45" Z="1.52" />
+				<Hotspot X="254.04" Y="2948.59" Z="7.7" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="9534" Name="Destroy the Legion">
 		<Objective Type="KillMob" MobId="11697" KillCount="6">
 			<Hotspots>
 				<Hotspot X="1784.69" Y="-3181.21" Z="91.61" />
-				<Hotspot X="1625.63" Y="-3322.63" Z="144.496" />
-				<Hotspot X="1708.13" Y="-3471.89" Z="144.303" />
-				<Hotspot X="1730.53" Y="-3469.6" Z="144.374" />
-				<Hotspot X="1684.11" Y="-3426.6" Z="145.077" />
+				<Hotspot X="1625.63" Y="-3322.63" Z="144.5" />
+				<Hotspot X="1708.13" Y="-3471.89" Z="144.3" />
+				<Hotspot X="1730.53" Y="-3469.6" Z="144.37" />
+				<Hotspot X="1684.11" Y="-3426.6" Z="145.08" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="6073" KillCount="6">
 			<Hotspots>
-				<Hotspot X="1853.34" Y="-3169.58" Z="94.5721" />
-				<Hotspot X="1978.36" Y="-3015.44" Z="106.821" />
-				<Hotspot X="1915.31" Y="-3088.49" Z="110.881" />
-				<Hotspot X="1979.1" Y="-2952.5" Z="105.404" />
-				<Hotspot X="1920.32" Y="-3152.29" Z="97.9181" />
+				<Hotspot X="1853.34" Y="-3169.58" Z="94.57" />
+				<Hotspot X="1978.36" Y="-3015.44" Z="106.82" />
+				<Hotspot X="1915.31" Y="-3088.49" Z="110.88" />
+				<Hotspot X="1979.1" Y="-2952.5" Z="105.4" />
+				<Hotspot X="1920.32" Y="-3152.29" Z="97.92" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="6115" KillCount="6">
 			<Hotspots>
-				<Hotspot X="1949.69" Y="-2986.14" Z="101.639" />
-				<Hotspot X="1941.7" Y="-3180.24" Z="101.233" />
+				<Hotspot X="1949.69" Y="-2986.14" Z="101.64" />
+				<Hotspot X="1941.7" Y="-3180.24" Z="101.23" />
 				<Hotspot X="1655.86" Y="-3253.21" Z="144.81" />
 				<Hotspot X="2114.24" Y="-3078.28" Z="109.95" />
-				<Hotspot X="2053.7" Y="-3084.85" Z="103.972" />
+				<Hotspot X="2053.7" Y="-3084.85" Z="103.97" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1365" Name="Khan Dez'hepah">
+		<Objective Type="CollectItem" ItemId="6066" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Khan Dez'hepah" Id="5600" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-795.57" Y="934.17" Z="90.58" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="1434" Name="Befouled by Satyr">
 		<Objective Type="KillMob" MobId="4670" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-183.883" Y="718.04" Z="91.1805" />
-				<Hotspot X="-50.7124" Y="914.98" Z="91.8914" />
-				<Hotspot X="-56.9874" Y="984.487" Z="91.4803" />
-				<Hotspot X="-46.9785" Y="1044.72" Z="99.3789" />
-				<Hotspot X="-220.958" Y="818.454" Z="91.174" />
+				<Hotspot X="-183.88" Y="718.04" Z="91.18" />
+				<Hotspot X="-50.71" Y="914.98" Z="91.89" />
+				<Hotspot X="-56.99" Y="984.49" Z="91.48" />
+				<Hotspot X="-46.98" Y="1044.72" Z="99.38" />
+				<Hotspot X="-220.96" Y="818.45" Z="91.17" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4672" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-388.227" Y="856.291" Z="90.9798" />
-				<Hotspot X="-413.866" Y="815.99" Z="91.6507" />
-				<Hotspot X="-125.914" Y="848.426" Z="118.784" />
-				<Hotspot X="-85.5146" Y="815.159" Z="124.344" />
-				<Hotspot X="-51.2473" Y="782.473" Z="106.494" />
+				<Hotspot X="-388.23" Y="856.29" Z="90.98" />
+				<Hotspot X="-413.87" Y="815.99" Z="91.65" />
+				<Hotspot X="-125.91" Y="848.43" Z="118.78" />
+				<Hotspot X="-85.51" Y="815.16" Z="124.34" />
+				<Hotspot X="-51.25" Y="782.47" Z="106.49" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4673" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-176.091" Y="663.9" Z="91.4603" />
-				<Hotspot X="-320.557" Y="720.907" Z="89.293" />
-				<Hotspot X="-324.491" Y="854.808" Z="93.2528" />
-				<Hotspot X="-51.8462" Y="959.227" Z="91.7429" />
-				<Hotspot X="-282.069" Y="823.043" Z="90.7793" />
+				<Hotspot X="-176.09" Y="663.9" Z="91.46" />
+				<Hotspot X="-320.56" Y="720.91" Z="89.29" />
+				<Hotspot X="-324.49" Y="854.81" Z="93.25" />
+				<Hotspot X="-51.85" Y="959.23" Z="91.74" />
+				<Hotspot X="-282.07" Y="823.04" Z="90.78" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="4675" KillCount="7">
 			<Hotspots>
-				<Hotspot X="-242.372" Y="694.713" Z="100.894" />
-				<Hotspot X="-238.371" Y="721.484" Z="100.898" />
-				<Hotspot X="-314.354" Y="780.99" Z="89.6826" />
-				<Hotspot X="-19.402" Y="880.652" Z="93.3022" />
-				<Hotspot X="-53.214" Y="964.865" Z="91.6179" />
+				<Hotspot X="-242.37" Y="694.71" Z="100.89" />
+				<Hotspot X="-238.37" Y="721.48" Z="100.9" />
+				<Hotspot X="-314.35" Y="780.99" Z="89.68" />
+				<Hotspot X="-19.4" Y="880.65" Z="93.3" />
+				<Hotspot X="-53.21" Y="964.87" Z="91.62" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="6142" Name="Clam Bait">
-		<Objective Type="CollectItem" ItemId="15874" CollectCount="1">
+	<Quest Id="1366" Name="Centaur Bounty">
+		<Objective Type="CollectItem" ItemId="6067" CollectCount="15">
 			<CollectFrom>
-				<GameObject Name="Giant Softshell Clam" Id="177784" />
+				<Mob Name="Kolkar Centaur" Id="4632" />
+				<Mob Name="Kolkar Scout" Id="4633" />
+				<Mob Name="Kolkar Mauler" Id="4634" />
+				<Mob Name="Kolkar Windchaser" Id="4635" />
+				<Mob Name="Kolkar Battle Lord" Id="4636" />
+				<Mob Name="Kolkar Destroyer" Id="4637" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-606.14" Y="2758.65" Z="-24.81" />
-				<Hotspot X="-588.83" Y="2648.15" Z="-19.47" />
-				<Hotspot X="-573.62" Y="2860.44" Z="-36.24" />
-				<Hotspot X="-545.83" Y="2710.22" Z="-27.91" />
-				<Hotspot X="-468.38" Y="2699.84" Z="-26.48" />
-				<Hotspot X="-464.64" Y="2797.81" Z="-31.18" />
-				<Hotspot X="-404.71" Y="2752.26" Z="-25.59" />
-				<Hotspot X="-371.0" Y="2697.79" Z="-19.86" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="6143" Name="Other Fish to Fry">
-		<Objective Type="KillMob" MobId="4714" KillCount="7">
-			<Hotspots>
-				<Hotspot X="249.128" Y="2884.33" Z="3.7418" />
-				<Hotspot X="86.445" Y="2886.54" Z="-24.4595" />
-				<Hotspot X="-218.924" Y="2715.82" Z="-17.2216" />
-				<Hotspot X="-239.504" Y="2806.38" Z="-3.7637" />
-				<Hotspot X="-248.691" Y="2786.73" Z="0.7833" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="4711" KillCount="7">
-			<Hotspots>
-				<Hotspot X="-186.787" Y="2582.48" Z="-31.1879" />
-				<Hotspot X="-184.875" Y="2519.23" Z="-29.1547" />
-				<Hotspot X="-381.159" Y="2652.73" Z="-12.9661" />
-				<Hotspot X="-261.534" Y="2624.46" Z="-22.4008" />
-				<Hotspot X="-346.118" Y="2646.97" Z="-19.8494" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="4712" KillCount="5">
-			<Hotspots>
-				<Hotspot X="-151.215" Y="2481.53" Z="-36.8936" />
-				<Hotspot X="251.116" Y="2984.82" Z="1.8546" />
-				<Hotspot X="-211.209" Y="2820.54" Z="-26.2043" />
-				<Hotspot X="-247.124" Y="2752.37" Z="-5.8636" />
-				<Hotspot X="-412.542" Y="2619.03" Z="-5.4274" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="5501" Name="Bone Collector">
-		<Objective Type="CollectItem" ItemId="13703" CollectCount="10">
-			<CollectFrom>
-				<GameObject Name="Kodo Bones" Id="176751" />
-			</CollectFrom>
-			<Hotspots>
-				<Hotspot X="-1461.4" Y="1785.83" Z="50.27" />
-				<Hotspot X="-1386.78" Y="2157.37" Z="66.95" />
-				<Hotspot X="-1383.97" Y="1838.74" Z="50.14" />
-				<Hotspot X="-1358.2" Y="1787.12" Z="50.14" />
-				<Hotspot X="-1349.28" Y="2031.71" Z="50.14" />
-				<Hotspot X="-1315.02" Y="1796.78" Z="50.14" />
-				<Hotspot X="-1310.88" Y="2035.5" Z="50.14" />
-				<Hotspot X="-1307.84" Y="1949.76" Z="51.0" />
+				<Hotspot X="-1655.57" Y="1284.73" Z="90.63" />
+				<Hotspot X="-1632.17" Y="1230.11" Z="90.94" />
+				<Hotspot X="-1111.87" Y="1151.47" Z="92.02" />
+				<Hotspot X="-1652.74" Y="1182.44" Z="90.4" />
+				<Hotspot X="-1798.31" Y="1268.01" Z="90.98" />
+				<Hotspot X="-1061.91" Y="1132.8" Z="89.91" />
+				<Hotspot X="-985.14" Y="1145.99" Z="93.37" />
+				<Hotspot X="-1781.4" Y="1217.05" Z="91.12" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -174,49 +161,234 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="6143" Name="Other Fish to Fry">
+		<Objective Type="KillMob" MobId="4714" KillCount="7">
+			<Hotspots>
+				<Hotspot X="249.13" Y="2884.33" Z="3.74" />
+				<Hotspot X="86.44" Y="2886.54" Z="-24.46" />
+				<Hotspot X="-218.92" Y="2715.82" Z="-17.22" />
+				<Hotspot X="-239.5" Y="2806.38" Z="-3.76" />
+				<Hotspot X="-248.69" Y="2786.73" Z="0.78" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="4711" KillCount="7">
+			<Hotspots>
+				<Hotspot X="-186.79" Y="2582.48" Z="-31.19" />
+				<Hotspot X="-184.88" Y="2519.23" Z="-29.15" />
+				<Hotspot X="-381.16" Y="2652.73" Z="-12.97" />
+				<Hotspot X="-261.53" Y="2624.46" Z="-22.4" />
+				<Hotspot X="-346.12" Y="2646.97" Z="-19.85" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="4712" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-151.22" Y="2481.53" Z="-36.89" />
+				<Hotspot X="251.12" Y="2984.82" Z="1.85" />
+				<Hotspot X="-211.21" Y="2820.54" Z="-26.2" />
+				<Hotspot X="-247.12" Y="2752.37" Z="-5.86" />
+				<Hotspot X="-412.54" Y="2619.03" Z="-5.43" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6142" Name="Clam Bait">
+		<Objective Type="CollectItem" ItemId="15874" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Giant Softshell Clam" Id="177784" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-606.14" Y="2758.65" Z="-24.81" />
+				<Hotspot X="-588.83" Y="2648.15" Z="-19.47" />
+				<Hotspot X="-573.62" Y="2860.44" Z="-36.24" />
+				<Hotspot X="-545.83" Y="2710.22" Z="-27.91" />
+				<Hotspot X="-468.38" Y="2699.84" Z="-26.48" />
+				<Hotspot X="-464.64" Y="2797.81" Z="-31.18" />
+				<Hotspot X="-404.71" Y="2752.26" Z="-25.59" />
+				<Hotspot X="-371" Y="2697.79" Z="-19.86" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="6161" Name="Claim Rackmore's Treasure!">
+		<Objective Type="CollectItem" ItemId="15881" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Slitherblade Naga" Id="4711" />
+				<Mob Name="Slitherblade Sorceress" Id="4712" />
+				<Mob Name="Slitherblade Warrior" Id="4713" />
+				<Mob Name="Slitherblade Myrmidon" Id="4714" />
+				<Mob Name="Slitherblade Razortail" Id="4715" />
+				<Mob Name="Slitherblade Tidehunter" Id="4716" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-412.54" Y="2619.03" Z="-5.43" />
+				<Hotspot X="-363.64" Y="2649.85" Z="-16.41" />
+				<Hotspot X="-359.1" Y="2616.09" Z="-5.69" />
+				<Hotspot X="-334.84" Y="2572.84" Z="4.89" />
+				<Hotspot X="-316.46" Y="2683.05" Z="-22.33" />
+				<Hotspot X="-276.61" Y="2599.4" Z="-16.16" />
+				<Hotspot X="-241.72" Y="2603.69" Z="-20.78" />
+				<Hotspot X="-232.01" Y="2679.1" Z="-40.18" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="15878" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Drysnap Crawler" Id="11562" />
+				<Mob Name="Drysnap Pincer" Id="11563" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-489.57" Y="2665.26" Z="-20.63" />
+				<Hotspot X="-563.42" Y="2663.3" Z="-22.51" />
+				<Hotspot X="-433.8" Y="2725.97" Z="-22.39" />
+				<Hotspot X="-480.36" Y="2748.83" Z="-29.2" />
+				<Hotspot X="-589.36" Y="2714.89" Z="-25.8" />
+				<Hotspot X="-438.44" Y="2781.25" Z="-29.59" />
+				<Hotspot X="-384.07" Y="2807.31" Z="-24.52" />
+				<Hotspot X="-482.46" Y="2813.65" Z="-31.17" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5741" Name="Sceptre of Light">
+		<Objective Type="CollectItem" ItemId="15750" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Burning Blade Seer" Id="13019" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-451.79" Y="1753.09" Z="153.57" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1481" Name="The Corrupter">
+		<Objective Type="CollectItem" ItemId="6441" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Hatefury Shadowstalker" Id="4674" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-348.5" Y="822.06" Z="96.89" />
+				<Hotspot X="-384.67" Y="785.82" Z="92.07" />
+				<Hotspot X="-15.01" Y="1081.08" Z="113.58" />
+				<Hotspot X="-260.03" Y="794.98" Z="89.56" />
+				<Hotspot X="-185.32" Y="846.59" Z="99.31" />
+				<Hotspot X="-288.2" Y="745.65" Z="88.7" />
+				<Hotspot X="55.59" Y="967.22" Z="155.1" />
+				<Hotspot X="-89.19" Y="771.57" Z="132.89" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5501" Name="Bone Collector">
+		<Objective Type="CollectItem" ItemId="13703" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Kodo Bones" Id="176751" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1461.4" Y="1785.83" Z="50.27" />
+				<Hotspot X="-1386.78" Y="2157.37" Z="66.95" />
+				<Hotspot X="-1383.97" Y="1838.74" Z="50.14" />
+				<Hotspot X="-1358.2" Y="1787.12" Z="50.14" />
+				<Hotspot X="-1349.28" Y="2031.71" Z="50.14" />
+				<Hotspot X="-1315.02" Y="1796.78" Z="50.14" />
+				<Hotspot X="-1310.88" Y="2035.5" Z="50.14" />
+				<Hotspot X="-1307.84" Y="1949.76" Z="51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="!((Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Undead))">
-			<Objective QuestName="The Corrupter" QuestId="1482" Type="CollectItem" ItemId="5996" CollectCount="4" />
+		<!-- Travel to Classic (12-58)_Desolace (32-34) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1146))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="The Swarm Grows" QuestId="1145" TurnInName="Belgrom Rockmaul" TurnInId="4485" />
-		<PickUp QuestName="The Swarm Grows" QuestId="1146" GiverName="Belgrom Rockmaul" GiverId="4485" />
-		<PickUp QuestName="Alliance Relations" QuestId="1431" GiverName="Craven Drok" GiverId="5639" />
-		<TurnIn QuestName="Alliance Relations" QuestId="1431" TurnInName="Keldran" TurnInId="5640" />
-		<PickUp QuestName="Alliance Relations" QuestId="1432" GiverName="Keldran" GiverId="5640" />
-		<PickUp QuestName="Destroy the Legion" QuestId="9534" GiverName="Valusha" GiverId="17355" />
-		<Objective QuestName="Sharptalon's Claw" QuestId="2" Type="CollectItem" ItemId="16305" CollectCount="1" />
-		<While Condition="((HasQuest(9534)) &amp;&amp; (!IsQuestCompleted(9534)))" >
+		<If Condition="!((Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Undead))">
+			<Objective QuestName="The Corrupter" QuestId="1482" Type="CollectItem" ItemId="6442" CollectCount="1" />
+		</If>
+
+		<TurnIn QuestName="The Swarm Grows" QuestId="1145" TurnInName="Belgrom Rockmaul" TurnInId="4485" X="1953.59" Y="-4735.77" Z="48.7374" />
+		<PickUp QuestName="The Swarm Grows" QuestId="1146" GiverName="Belgrom Rockmaul" GiverId="4485" X="1953.59" Y="-4735.77" Z="48.7374" />
+		<PickUp QuestName="Alliance Relations" QuestId="1431" GiverName="Craven Drok" GiverId="5639" X="1844.49" Y="-4400.1" Z="4.678" />
+		<TurnIn QuestName="Alliance Relations" QuestId="1431" TurnInName="Keldran" TurnInId="5640" X="1781.55" Y="-3997.07" Z="53.3907" />
+		<PickUp QuestName="Alliance Relations" QuestId="1432" GiverName="Keldran" GiverId="5640" X="1781.55" Y="-3997.07" Z="53.3907" />
+		<PickUp QuestName="Destroy the Legion" QuestId="9534" GiverName="Valusha" GiverId="17355" X="2351.69" Y="-2523.1" Z="104.845" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16305)">
+			<CustomBehavior File="CollectThings" CollectItemId="16305" CollectItemCount="1" HuntingGroundRadius="120" MobId="12676" X="1979.8" Y="-2624.07" Z="92.8362">
+				<Hotspot X="1979.8" Y="-2624.07" Z="92.84" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(9534)) &amp;&amp; (!IsQuestCompleted(9534)))">
 			<CustomBehavior File="UseItemOn" QuestId="9534" MobId="11697" ItemId="16305" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1784.69" Y="-3181.21" Z="91.61" />
 		</While>
-		<PickUp QuestName="Sharptalon's Claw" QuestId="2" GiverName="Valusha" GiverId="17355" />
-		<Objective QuestName="Sharptalon's Claw" QuestId="2" Type="CollectItem" ItemId="23797" CollectCount="1" />
-		<PickUp QuestName="Diabolical Plans" QuestId="9535" GiverName="Valusha" GiverId="17355" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16305)">
+			<PickUp QuestName="Sharptalon's Claw" QuestId="2" GiverName="Sharptalon's Claw" GiverId="16305" GiverType="Item" />
+		</If>
+
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23797)">
+			<CustomBehavior File="CollectThings" CollectItemId="23797" CollectItemCount="1" HuntingGroundRadius="120" MobId="6073" MobId2="6115" MobId3="11697" X="1784.69" Y="-3181.21" Z="91.61">
+				<Hotspot X="1784.69" Y="-3181.21" Z="91.61" />
+				<Hotspot X="1853.34" Y="-3169.58" Z="94.57" />
+				<Hotspot X="1684.45" Y="-3202.92" Z="121.56" />
+				<Hotspot X="1682.38" Y="-3116.47" Z="89.56" />
+				<Hotspot X="1931.01" Y="-3166.26" Z="99.58" />
+				<Hotspot X="1655.86" Y="-3253.21" Z="144.81" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23797)">
+			<PickUp QuestName="Diabolical Plans" QuestId="9535" GiverName="Diabolical Plans" GiverId="23797" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Destroy the Legion" QuestId="9534" Type="KillMob" MobId="11697" KillCount="6" />
 		<Objective QuestName="Destroy the Legion" QuestId="9534" Type="KillMob" MobId="6073" KillCount="6" />
 		<Objective QuestName="Destroy the Legion" QuestId="9534" Type="KillMob" MobId="6115" KillCount="6" />
-		<TurnIn QuestName="Sharptalon's Claw" QuestId="2" TurnInName="Senani Thunderheart" TurnInId="12696" />
-		<PickUp QuestName="The Hunt Completed" QuestId="247" GiverName="Senani Thunderheart" GiverId="12696" />
-		<TurnIn QuestName="Destroy the Legion" QuestId="9534" TurnInName="Valusha" TurnInId="17355" />
-		<TurnIn QuestName="Diabolical Plans" QuestId="9535" TurnInName="Valusha" TurnInId="17355" />
-		<PickUp QuestName="Kodo Roundup" QuestId="5561" GiverName="Smeed Scrabblescrew" GiverId="11596" />
-		<While Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))" >
-			<CustomBehavior File="UseItemOn" QuestId="5561" MobId="11627" ItemId="13892" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" />
-		<TurnIn QuestName="The Kolkar of Desolace" QuestId="1362" TurnInName="Felgur Twocuts" TurnInId="5395" />
-		<PickUp QuestName="Khan Dez'hepah" QuestId="1365" GiverName="Felgur Twocuts" GiverId="5395" />
-		<PickUp QuestName="Gelkis Alliance" QuestId="1368" GiverName="Gurda Wildmane" GiverId="5412" />
-		<TurnIn QuestName="Family Tree" QuestId="5361" TurnInName="Nataka Longhorn" TurnInId="11259" />
-		<PickUp QuestName="Catch of the Day" QuestId="5386" GiverName="Nataka Longhorn" GiverId="11259" />
-		<TurnIn QuestName="Alliance Relations" QuestId="1432" TurnInName="Takata Steelblade" TurnInId="5641" />
-		<PickUp QuestName="Alliance Relations" QuestId="1433" GiverName="Takata Steelblade" GiverId="5641" />
-		<PickUp QuestName="Befouled by Satyr" QuestId="1434" GiverName="Takata Steelblade" GiverId="5641" />
-		<TurnIn QuestName="Alliance Relations" QuestId="1433" TurnInName="Maurin Bonesplitter" TurnInId="4498" />
-		<PickUp QuestName="The Burning of Spirits" QuestId="1435" GiverName="Maurin Bonesplitter" GiverId="4498" />
+		<TurnIn QuestName="Sharptalon's Claw" QuestId="2" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
+		<PickUp QuestName="The Hunt Completed" QuestId="247" GiverName="Senani Thunderheart" GiverId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
+		<TurnIn QuestName="Destroy the Legion" QuestId="9534" TurnInName="Valusha" TurnInId="17355" X="2351.69" Y="-2523.1" Z="104.845" />
+		<TurnIn QuestName="Diabolical Plans" QuestId="9535" TurnInName="Valusha" TurnInId="17355" X="2351.69" Y="-2523.1" Z="104.845" />
+		<PickUp QuestName="Kodo Roundup" QuestId="5561" GiverName="Smeed Scrabblescrew" GiverId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		<!-- Q5561 Kodo Roundup: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\[H - Quest] 1-58 [Kick]\[H - Quest] 12-58 K-EK [Kick].xml -->
+		<If Condition="(!IsQuestCompleted(14314))">
+			<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+				<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+					<CustomBehavior File="UseItemOn" QuestId="5561" MobId1="4702" MobId2="4700" ItemId="13892" WaitTime="6000" Range="5" CollectionDistance="500" X="-1295.744" Y="1840.136" Z="52.33176" />
+				</If>
+			</If>
+		</If>
+
+		<If Condition="(!IsQuestCompleted(14314))">
+			<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+				<If Condition="((HasQuest(5561)) &amp;&amp; (!IsQuestCompleted(5561)))">
+					<CustomBehavior File="InteractWith" QuestId="5561" MobId1="11627" MobId2="4700" MobId3="4702" CollectionDistance="100" WaitForNpcs="False" X="-1408.956" Y="1504.514" Z="59.06141" />
+				</If>
+			</If>
+		</If>
+
+		<TurnIn QuestName="Kodo Roundup" QuestId="5561" TurnInName="Smeed Scrabblescrew" TurnInId="11596" X="-1402.43" Y="1497.07" Z="61.373" />
+		<TurnIn QuestName="The Kolkar of Desolace" QuestId="1362" TurnInName="Felgur Twocuts" TurnInId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
+		<PickUp QuestName="Khan Dez'hepah" QuestId="1365" GiverName="Felgur Twocuts" GiverId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
+		<PickUp QuestName="Gelkis Alliance" QuestId="1368" GiverName="Gurda Wildmane" GiverId="5412" X="-1337.06" Y="1702.54" Z="89.9855" />
+		<TurnIn QuestName="Family Tree" QuestId="5361" TurnInName="Nataka Longhorn" TurnInId="11259" X="-1221.01" Y="1742.1" Z="90.7142" />
+		<PickUp QuestName="Catch of the Day" QuestId="5386" GiverName="Nataka Longhorn" GiverId="11259" X="-1221.01" Y="1742.1" Z="90.7142" />
+		<TurnIn QuestName="Alliance Relations" QuestId="1432" TurnInName="Takata Steelblade" TurnInId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
+		<PickUp QuestName="Alliance Relations" QuestId="1433" GiverName="Takata Steelblade" GiverId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
+		<PickUp QuestName="Befouled by Satyr" QuestId="1434" GiverName="Takata Steelblade" GiverId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
+		<TurnIn QuestName="Alliance Relations" QuestId="1433" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<PickUp QuestName="The Burning of Spirits" QuestId="1435" GiverName="Maurin Bonesplitter" GiverId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
 		<Objective QuestName="Khan Dez'hepah" QuestId="1365" Type="CollectItem" ItemId="6066" CollectCount="1" />
 		<If Condition="Me.Level &lt; 33">
 			<SetGrindArea>
@@ -230,46 +402,52 @@
 			</SetGrindArea>
 			<GrindTo Level="33" />
 		</If>
-		<TurnIn QuestName="Khan Dez'hepah" QuestId="1365" TurnInName="Felgur Twocuts" TurnInId="5395" />
-		<PickUp QuestName="Centaur Bounty" QuestId="1366" GiverName="Felgur Twocuts" GiverId="5395" />
-		<TurnIn QuestName="Gelkis Alliance" QuestId="1368" TurnInName="Uthek the Wise" TurnInId="5397" />
-		<PickUp QuestName="Stealing Supplies" QuestId="1370" GiverName="Uthek the Wise" GiverId="5397" />
-		<PickUp QuestName="Hunting in Stranglethorn" QuestId="5763" GiverName="Roon Wildmane" GiverId="11877" />
-		<PickUp QuestName="Hand of Iruxos" QuestId="5381" GiverName="Taiga Wisemane" GiverId="11624" />
-		<PickUp QuestName="Other Fish to Fry" QuestId="6143" GiverName="Drulzegar Skraghook" GiverId="12340" />
-		<PickUp QuestName="Clam Bait" QuestId="6142" GiverName="Mai'Lahii" GiverId="12031" />
-		<If Condition="!((Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Undead))">
-		</If>
 
-		<Objective QuestName="Catch of the Day" QuestId="5386" Type="CollectItem" ItemId="13545" CollectCount="10" />
+		<TurnIn QuestName="Khan Dez'hepah" QuestId="1365" TurnInName="Felgur Twocuts" TurnInId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
+		<PickUp QuestName="Centaur Bounty" QuestId="1366" GiverName="Felgur Twocuts" GiverId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
+		<TurnIn QuestName="Gelkis Alliance" QuestId="1368" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<PickUp QuestName="Stealing Supplies" QuestId="1370" GiverName="Uthek the Wise" GiverId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<PickUp QuestName="Hunting in Stranglethorn" QuestId="5763" GiverName="Roon Wildmane" GiverId="11877" X="-1714.58" Y="3107.18" Z="33.5831" />
+		<PickUp QuestName="Hand of Iruxos" QuestId="5381" GiverName="Taiga Wisemane" GiverId="11624" X="-1592.93" Y="3072.68" Z="49.0746" />
+		<PickUp QuestName="Other Fish to Fry" QuestId="6143" GiverName="Drulzegar Skraghook" GiverId="12340" X="-1732.59" Y="3184.92" Z="4.1139" />
+		<PickUp QuestName="Clam Bait" QuestId="6142" GiverName="Mai'Lahii" GiverId="12031" X="-1705.49" Y="3215.33" Z="8.0161" />
 		<Objective QuestName="Catch of the Day" QuestId="5386" Type="CollectItem" ItemId="13546" CollectCount="2" />
-		<PickUp QuestName="Claim Rackmore's Treasure!" QuestId="6161" GiverName="Jinar'Zillen" GiverId="11317" />
-		<PickUp QuestName="Sceptre of Light" QuestId="5741" GiverName="Azore Aldamort" GiverId="11863" />
+		<Objective QuestName="Catch of the Day" QuestId="5386" Type="CollectItem" ItemId="13546" CollectCount="2" />
+		<PickUp QuestName="Claim Rackmore's Treasure!" QuestId="6161" GiverName="Rackmore's Log" GiverId="177787" GiverType="Object" X="-459.514" Y="2611.73" Z="2.0908" />
+		<PickUp QuestName="Sceptre of Light" QuestId="5741" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
 		<Objective QuestName="The Burning of Spirits" QuestId="1435" Type="CollectItem" ItemId="6435" CollectCount="15" />
-		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="20310" CollectCount="1" />
-		<PickUp QuestName="The Corrupter" QuestId="1480" GiverName="Azore Aldamort" GiverId="11863" />
-		<TurnIn QuestName="Catch of the Day" QuestId="5386" TurnInName="Nataka Longhorn" TurnInId="11259" />
-		<TurnIn QuestName="The Burning of Spirits" QuestId="1435" TurnInName="Maurin Bonesplitter" TurnInId="4498" />
-		<TurnIn QuestName="The Corrupter" QuestId="1480" TurnInName="Maurin Bonesplitter" TurnInId="4498" />
-		<PickUp QuestName="The Corrupter" QuestId="1481" GiverName="Maurin Bonesplitter" GiverId="4498" />
+		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6766)">
+			<PickUp QuestName="The Corrupter" QuestId="1480" GiverName="Flayed Demon Skin (old2)" GiverId="6766" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Catch of the Day" QuestId="5386" TurnInName="Nataka Longhorn" TurnInId="11259" X="-1221.01" Y="1742.1" Z="90.7142" />
+		<TurnIn QuestName="The Burning of Spirits" QuestId="1435" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<!-- REVIEW Q1480 The Corrupter: start item 6766 Flayed Demon Skin (old2) has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(1480)) &amp;&amp; (IsQuestCompleted(1480)))">
+			<TurnIn QuestName="The Corrupter" QuestId="1480" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		</If>
+
+		<If Condition="((HasQuest(1480)) &amp;&amp; (!IsQuestCompleted(1480)))">
+			<AbandonQuest QuestId="1480" />
+		</If>
+
+		<PickUp QuestName="The Corrupter" QuestId="1481" GiverName="Maurin Bonesplitter" GiverId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
 		<Objective QuestName="The Corrupter" QuestId="1481" Type="CollectItem" ItemId="6441" CollectCount="1" />
 		<Objective QuestName="Befouled by Satyr" QuestId="1434" Type="KillMob" MobId="4670" KillCount="7" />
 		<Objective QuestName="Befouled by Satyr" QuestId="1434" Type="KillMob" MobId="4672" KillCount="7" />
 		<Objective QuestName="Befouled by Satyr" QuestId="1434" Type="KillMob" MobId="4673" KillCount="7" />
 		<Objective QuestName="Befouled by Satyr" QuestId="1434" Type="KillMob" MobId="4675" KillCount="7" />
-		<PickUp QuestName="Bone Collector" QuestId="5501" GiverName="Bibbly F'utzbuckle" GiverId="11438" />
-		<TurnIn QuestName="Befouled by Satyr" QuestId="1434" TurnInName="Takata Steelblade" TurnInId="5641" />
-		<PickUp QuestName="Alliance Relations" QuestId="1436" GiverName="Takata Steelblade" GiverId="5641" />
-		<TurnIn QuestName="The Corrupter" QuestId="1481" TurnInName="Maurin Bonesplitter" TurnInId="4498" />
-		<PickUp QuestName="The Corrupter" QuestId="1482" GiverName="Maurin Bonesplitter" GiverId="4498" />
-		<TurnIn QuestName="Sceptre of Light" QuestId="5741" TurnInName="Azore Aldamort" TurnInId="11863" />
-		<PickUp QuestName="Book of the Ancients" QuestId="6027" GiverName="Azore Aldamort" GiverId="11863" />
-		<If Condition="!((Me.Class == WoWClass.Druid) &amp;&amp; (Me.Race == WoWRace.Undead))">
-		</If>
-
+		<PickUp QuestName="Bone Collector" QuestId="5501" GiverName="Bibbly F'utzbuckle" GiverId="11438" X="-716.667" Y="1431.25" Z="90.3854" />
+		<TurnIn QuestName="Befouled by Satyr" QuestId="1434" TurnInName="Takata Steelblade" TurnInId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
+		<PickUp QuestName="Alliance Relations" QuestId="1436" GiverName="Takata Steelblade" GiverId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
+		<TurnIn QuestName="The Corrupter" QuestId="1481" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<PickUp QuestName="The Corrupter" QuestId="1482" GiverName="Maurin Bonesplitter" GiverId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<TurnIn QuestName="Sceptre of Light" QuestId="5741" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<PickUp QuestName="Book of the Ancients" QuestId="6027" GiverName="Azore Aldamort" GiverId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
 		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15878" CollectCount="1" />
-		<Objective QuestName="Clam Bait" QuestId="6142" Type="CollectItem" ItemId="15874" CollectCount="1" />
+		<Objective QuestName="Clam Bait" QuestId="6142" Type="CollectItem" ItemId="15924" CollectCount="10" />
 		<Objective QuestName="Clam Bait" QuestId="6142" Type="CollectItem" ItemId="15924" CollectCount="10" />
 		<Objective QuestName="Claim Rackmore's Treasure!" QuestId="6161" Type="CollectItem" ItemId="15881" CollectCount="1" />
 		<If Condition="Me.Level &lt; 34">
@@ -286,26 +464,27 @@
 			</SetGrindArea>
 			<GrindTo Level="34" />
 		</If>
+
 		<!-- Quest 6161 (Claim Rackmore's Treasure!) — TurnIn Object not in 3.3.5a -->
 		<Objective QuestName="Book of the Ancients" QuestId="6027" Type="CollectItem" ItemId="15803" CollectCount="1" />
 		<Objective QuestName="The Corrupter" QuestId="1482" Type="CollectItem" ItemId="6442" CollectCount="1" />
 		<Objective QuestName="Other Fish to Fry" QuestId="6143" Type="KillMob" MobId="4714" KillCount="7" />
 		<Objective QuestName="Other Fish to Fry" QuestId="6143" Type="KillMob" MobId="4711" KillCount="7" />
 		<Objective QuestName="Other Fish to Fry" QuestId="6143" Type="KillMob" MobId="4712" KillCount="5" />
-		<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" />
-		<TurnIn QuestName="The Corrupter" QuestId="1482" TurnInName="Maurin Bonesplitter" TurnInId="4498" />
-		<PickUp QuestName="The Corrupter" QuestId="1484" GiverName="Maurin Bonesplitter" GiverId="4498" />
-		<TurnIn QuestName="The Corrupter" QuestId="1484" TurnInName="Takata Steelblade" TurnInId="5641" />
+		<TurnIn QuestName="Book of the Ancients" QuestId="6027" TurnInName="Azore Aldamort" TurnInId="11863" X="-362.255" Y="2485.14" Z="75.4965" />
+		<TurnIn QuestName="The Corrupter" QuestId="1482" TurnInName="Maurin Bonesplitter" TurnInId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<PickUp QuestName="The Corrupter" QuestId="1484" GiverName="Maurin Bonesplitter" GiverId="4498" X="-1150.1" Y="1884.43" Z="88.8391" />
+		<TurnIn QuestName="The Corrupter" QuestId="1484" TurnInName="Takata Steelblade" TurnInId="5641" X="-1178.41" Y="1869.98" Z="94.873" />
 		<Objective QuestName="Bone Collector" QuestId="5501" Type="CollectItem" ItemId="13703" CollectCount="10" />
 		<Objective QuestName="Stealing Supplies" QuestId="1370" Type="CollectItem" ItemId="6069" CollectCount="6" />
 		<Objective QuestName="Centaur Bounty" QuestId="1366" Type="CollectItem" ItemId="6067" CollectCount="15" />
-		<TurnIn QuestName="Centaur Bounty" QuestId="1366" TurnInName="Felgur Twocuts" TurnInId="5395" />
-		<TurnIn QuestName="Bone Collector" QuestId="5501" TurnInName="Bibbly F'utzbuckle" TurnInId="11438" />
+		<TurnIn QuestName="Centaur Bounty" QuestId="1366" TurnInName="Felgur Twocuts" TurnInId="5395" X="-1333.66" Y="1706.99" Z="89.9855" />
+		<TurnIn QuestName="Bone Collector" QuestId="5501" TurnInName="Bibbly F'utzbuckle" TurnInId="11438" X="-716.667" Y="1431.25" Z="90.3854" />
 		<Objective QuestName="Hand of Iruxos" QuestId="5381" Type="CollectItem" ItemId="13542" CollectCount="1" />
-		<TurnIn QuestName="Hand of Iruxos" QuestId="5381" TurnInName="Taiga Wisemane" TurnInId="11624" />
-		<TurnIn QuestName="Stealing Supplies" QuestId="1370" TurnInName="Uthek the Wise" TurnInId="5397" />
-		<TurnIn QuestName="Other Fish to Fry" QuestId="6143" TurnInName="Drulzegar Skraghook" TurnInId="12340" />
-		<TurnIn QuestName="Clam Bait" QuestId="6142" TurnInName="Mai'Lahii" TurnInId="12031" />
+		<TurnIn QuestName="Hand of Iruxos" QuestId="5381" TurnInName="Taiga Wisemane" TurnInId="11624" X="-1592.93" Y="3072.68" Z="49.0746" />
+		<TurnIn QuestName="Stealing Supplies" QuestId="1370" TurnInName="Uthek the Wise" TurnInId="5397" X="-1923.64" Y="2604.98" Z="64.8895" />
+		<TurnIn QuestName="Other Fish to Fry" QuestId="6143" TurnInName="Drulzegar Skraghook" TurnInId="12340" X="-1732.59" Y="3184.92" Z="4.1139" />
+		<TurnIn QuestName="Clam Bait" QuestId="6142" TurnInName="Mai'Lahii" TurnInId="12031" X="-1705.49" Y="3215.33" Z="8.0161" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Dustwallow Marsh (34-35)" />
 	</QuestOrder>
 </HBProfile>

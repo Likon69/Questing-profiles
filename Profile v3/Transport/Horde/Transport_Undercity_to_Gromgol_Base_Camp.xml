@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HBProfile xsi:noNamespaceSchemaLocation="../Schemas/EchoSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <!-- 
+<HBProfile>
+	<!-- 
     Transport Profile: Undercity to Grom'gol Base Camp
     Transport: The Purple Princess (ID: 195276)
     Faction: Horde
@@ -8,29 +7,21 @@
     
     Generated from WRobot coordinates
   -->
-  
-  <Name>Transport_Undercity_to_Grom'gol_Base_Camp</Name>
-  <MinLevel>1</MinLevel>
-  <MaxLevel>80</MaxLevel>
-  
-  <AvoidMobs>true</AvoidMobs>
-  <LootMobs>false</LootMobs>
-  <SellGrey>false</SellGrey>
-  
-  <QuestOrder>
-    <!-- Run to departure dock -->
-    <RunTo X="2057.04" Y="237.56" Z="97.03" />
-    
-    <!-- Take transport -->
-    <CustomBehavior File="UseTransport" TransportId="195276"
-        WaitAtX="2057.04" WaitAtY="237.56" WaitAtZ="97.03"
-        TransportStartX="2047.52" TransportStartY="236.13" TransportStartZ="115.0"
-        StandOnX="2051.58" StandOnY="242.16" StandOnZ="97.1"
-        TransportEndX="-12441.14" TransportEndY="197.26" TransportEndZ="31.51"
-        GetOffX="-12433.8" GetOffY="204.32" GetOffZ="11.9" />
-    
-    <!-- Move away from dock -->
-    <RunTo X="-12433.8" Y="204.32" Z="11.9" />
-  </QuestOrder>
-  
+	<Name>Transport_Undercity_to_Grom'gol_Base_Camp</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+
+	<AvoidMobs />
+
+	<SellGrey>false</SellGrey>
+
+	<QuestOrder>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		<!-- Run to departure dock -->
+		<!-- Take transport -->
+		<RunTo X="2054.6" Y="241.7" Z="99.9" />
+		<CustomBehavior File="UseTransport" TransportId="176495" DestName="The Purple Princess" WaitAtX="2054.6" WaitAtY="241.7" WaitAtZ="99.9" TransportStartX="2062.6" TransportStartY="235.3" TransportStartZ="117.7" StandOnX="2062.6" StandOnY="235.3" StandOnZ="99.9" TransportEndX="-12406.9" TransportEndY="211.8" TransportEndZ="49.7" GetOffX="-12417.8" GetOffY="208.3" GetOffZ="31.3" />
+		<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		<!-- Move away from dock -->
+	</QuestOrder>
 </HBProfile>

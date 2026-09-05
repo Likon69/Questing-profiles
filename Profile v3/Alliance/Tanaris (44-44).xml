@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Tanaris (44-44)</Name>
-	<MinLevel>44</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -24,7 +21,9 @@
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="1187" Name="Razzeric's Tweaking">
@@ -37,57 +36,109 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1707" Name="Water Pouch Bounty">
+		<Objective Type="CollectItem" ItemId="8483" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Wastewander Rogue" Id="5615" />
+				<Mob Name="Wastewander Thief" Id="5616" />
+				<Mob Name="Wastewander Shadow Mage" Id="5617" />
+				<Mob Name="Wastewander Bandit" Id="5618" />
+				<Mob Name="Wastewander Assassin" Id="5623" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6952.23" Y="-4290.61" Z="9.42" />
+				<Hotspot X="-6997.66" Y="-4330.9" Z="10.48" />
+				<Hotspot X="-7541.94" Y="-4280.88" Z="9.73" />
+				<Hotspot X="-6941.48" Y="-4363" Z="10.88" />
+				<Hotspot X="-7581.16" Y="-4265.8" Z="9.7" />
+				<Hotspot X="-7001.02" Y="-4400.14" Z="9.5" />
+				<Hotspot X="-7381.1" Y="-4403.88" Z="10.16" />
+				<Hotspot X="-6919.84" Y="-4396.74" Z="11.47" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="1690" Name="Wastewander Justice">
 		<Objective Type="KillMob" MobId="5618" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-7444.27" Y="-4606.74" Z="10.6268" />
-				<Hotspot X="-6987.99" Y="-4413.14" Z="9.6483" />
-				<Hotspot X="-7378.89" Y="-4712.7" Z="10.989" />
-				<Hotspot X="-7410.04" Y="-4548.58" Z="10.8202" />
-				<Hotspot X="-7275.84" Y="-4542.53" Z="9.0018" />
+				<Hotspot X="-7444.27" Y="-4606.74" Z="10.63" />
+				<Hotspot X="-6987.99" Y="-4413.14" Z="9.65" />
+				<Hotspot X="-7378.89" Y="-4712.7" Z="10.99" />
+				<Hotspot X="-7410.04" Y="-4548.58" Z="10.82" />
+				<Hotspot X="-7275.84" Y="-4542.53" Z="9" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="5616" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-7409.34" Y="-4584.32" Z="8.8443" />
-				<Hotspot X="-7218.59" Y="-4645.01" Z="9.2493" />
-				<Hotspot X="-7319.44" Y="-4618.22" Z="8.8608" />
-				<Hotspot X="-7236.4" Y="-4631.24" Z="9.2985" />
-				<Hotspot X="-7411.57" Y="-4616.26" Z="10.9756" />
+				<Hotspot X="-7409.34" Y="-4584.32" Z="8.84" />
+				<Hotspot X="-7218.59" Y="-4645.01" Z="9.25" />
+				<Hotspot X="-7319.44" Y="-4618.22" Z="8.86" />
+				<Hotspot X="-7236.4" Y="-4631.24" Z="9.3" />
+				<Hotspot X="-7411.57" Y="-4616.26" Z="10.98" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Tanaris (44-44) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1118))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<Objective QuestName="Rumors for Kravel" QuestId="1117" Type="CollectItem" ItemId="5804" CollectCount="1" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(1118))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
 		<Objective QuestName="Razzeric's Tweaking" QuestId="1187" Type="CollectItem" ItemId="5862" CollectCount="1" />
-		<TurnIn QuestName="Tran'rek" QuestId="2864" TurnInName="Tran'rek" TurnInId="7876" />
-		<TurnIn QuestName="Rumors for Kravel" QuestId="1117" TurnInName="Kravel Koalbeard" TurnInId="4452" />
-		<PickUp QuestName="Back to Booty Bay" QuestId="1118" GiverName="Kravel Koalbeard" GiverId="4452" />
-		<TurnIn QuestName="News for Fizzle" QuestId="1137" TurnInName="Fizzle Brassbolts" TurnInId="4454" />
-		<PickUp QuestName="Keeping Pace" QuestId="1190" GiverName="Pozzik" GiverId="4630" />
-		<TurnIn QuestName="Razzeric's Tweaking" QuestId="1187" TurnInName="Razzeric" TurnInId="4706" />
-		<PickUp QuestName="Safety First" QuestId="1188" GiverName="Razzeric" GiverId="4706" />
-		<TurnIn QuestName="Keeping Pace" QuestId="1190" TurnInName="Object_20805" TurnInType="Object" TurnInId="20805" />
-		<PickUp QuestName="Rizzle's Schematics" QuestId="1194" GiverName="Zamek" GiverId="4709" />
-		<TurnIn QuestName="Rizzle's Schematics" QuestId="1194" TurnInName="Pozzik" TurnInId="4630" />
-		<TurnIn QuestName="Safety First" QuestId="1188" TurnInName="Shreev" TurnInId="4708" />
-		<PickUp QuestName="Water Pouch Bounty" QuestId="1707" GiverName="Spigot Operator Luglunket" GiverId="7408" />
-		<PickUp QuestName="Wastewander Justice" QuestId="1690" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" />
-		<PickUp QuestName="Gadgetzan Water Survey" QuestId="992" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" />
+		<TurnIn QuestName="Tran'rek" QuestId="2864" TurnInName="Tran'rek" TurnInId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
+		<TurnIn QuestName="Rumors for Kravel" QuestId="1117" TurnInName="Kravel Koalbeard" TurnInId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
+		<PickUp QuestName="Back to Booty Bay" QuestId="1118" GiverName="Kravel Koalbeard" GiverId="4452" X="-6233.24" Y="-3855.97" Z="-58.6667" />
+		<TurnIn QuestName="News for Fizzle" QuestId="1137" TurnInName="Fizzle Brassbolts" TurnInId="4454" X="-6229.03" Y="-3868.18" Z="-58.6667" />
+		<PickUp QuestName="Keeping Pace" QuestId="1190" GiverName="Pozzik" GiverId="4630" X="-6192.6" Y="-3961.18" Z="-58.6667" />
+		<TurnIn QuestName="Razzeric's Tweaking" QuestId="1187" TurnInName="Razzeric" TurnInId="4706" X="-6198.75" Y="-3967.77" Z="-58.6667" />
+		<PickUp QuestName="Safety First" QuestId="1188" GiverName="Razzeric" GiverId="4706" X="-6198.75" Y="-3967.77" Z="-58.6667" />
+		<TurnIn QuestName="Keeping Pace" QuestId="1190" TurnInName="Rizzle's Unguarded Plans" TurnInType="Object" TurnInId="20805" X="-6237.57" Y="-3830.87" Z="-58.1378" />
+		<PickUp QuestName="Rizzle's Schematics" QuestId="1194" GiverName="Rizzle's Unguarded Plans" GiverId="20805" GiverType="Object" X="-6237.57" Y="-3830.87" Z="-58.1378" />
+		<TurnIn QuestName="Rizzle's Schematics" QuestId="1194" TurnInName="Pozzik" TurnInId="4630" X="-6192.6" Y="-3961.18" Z="-58.6667" />
+		<TurnIn QuestName="Safety First" QuestId="1188" TurnInName="Shreev" TurnInId="4708" X="-7128.14" Y="-3735.07" Z="8.4377" />
+		<PickUp QuestName="Water Pouch Bounty" QuestId="1707" GiverName="Spigot Operator Luglunket" GiverId="7408" X="-7183.48" Y="-3840.23" Z="8.8053" />
+		<PickUp QuestName="Wastewander Justice" QuestId="1690" GiverName="Chief Engineer Bilgewhizzle" GiverId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
+		<PickUp QuestName="Gadgetzan Water Survey" QuestId="992" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6257" CollectCount="3" />
 		<Objective QuestName="Gadgetzan Water Survey" QuestId="992" Type="CollectItem" ItemId="8585" CollectCount="1" />
-		<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" />
-		<PickUp QuestName="Screecher Spirits" QuestId="3520" GiverName="Yeh'kinya" GiverId="8579" />
-		<TurnIn QuestName="Stoley's Debt" QuestId="2872" TurnInName="Stoley" TurnInId="7881" />
+		<TurnIn QuestName="Gadgetzan Water Survey" QuestId="992" TurnInName="Senior Surveyor Fizzledowser" TurnInId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
+		<PickUp QuestName="Screecher Spirits" QuestId="3520" GiverName="Yeh'kinya" GiverId="8579" X="-6903.4" Y="-4840.94" Z="8.4641" />
+		<TurnIn QuestName="Stoley's Debt" QuestId="2872" TurnInName="Stoley" TurnInId="7881" X="-6978.01" Y="-4849.36" Z="8.0595" />
 		<Objective QuestName="Water Pouch Bounty" QuestId="1707" Type="CollectItem" ItemId="8483" CollectCount="5" />
 		<Objective QuestName="Wastewander Justice" QuestId="1690" Type="KillMob" MobId="5618" KillCount="10" />
 		<Objective QuestName="Wastewander Justice" QuestId="1690" Type="KillMob" MobId="5616" KillCount="10" />
-		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6257" CollectCount="3" />
-		<TurnIn QuestName="Wastewander Justice" QuestId="1690" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" />
-		<TurnIn QuestName="Water Pouch Bounty" QuestId="1707" TurnInName="Spigot Operator Luglunket" TurnInId="7408" />
+		<TurnIn QuestName="Wastewander Justice" QuestId="1690" TurnInName="Chief Engineer Bilgewhizzle" TurnInId="7407" X="-7186.64" Y="-3838.6" Z="8.7467" />
+		<TurnIn QuestName="Water Pouch Bounty" QuestId="1707" TurnInName="Spigot Operator Luglunket" TurnInId="7408" X="-7183.48" Y="-3840.23" Z="8.8053" />
 		<CustomBehavior File="LoadProfile" ProfileName="Dustwallow Marsh (44-45)" />
 	</QuestOrder>
 </HBProfile>

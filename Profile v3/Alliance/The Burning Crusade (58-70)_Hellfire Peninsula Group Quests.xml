@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>The Burning Crusade (58-70)\Hellfire Peninsula Group Quests</Name>
-	<MinLevel>58</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,64 +16,159 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Provisioner Nasela" Entry="18905" Type="Repair" X="-568.976" Y="4151.49" Z="68.217" />
 		<!-- Provisioner Gawlin (18904) — no spawn data -->
+		<Vendor Name="Dumphry" Entry="21209" Type="Repair" X="-595.426" Y="2899.24" Z="59.2054" />
+		<Vendor Name="Sid Limbardi" Entry="16826" Type="Food" X="-708.871" Y="2739.13" Z="94.8168" />
+		<Vendor Name="Markus Scylan" Entry="22227" Type="Repair" X="-707.807" Y="2716.12" Z="94.8203" />
+		<Vendor Name="Humphry" Entry="16823" Type="Repair" X="-717.317" Y="2607.58" Z="91.0112" />
+		<Vendor Name="Supply Officer Shandria" Entry="19314" Type="Food" X="-696.839" Y="1875.52" Z="63.5099" />
+		<Vendor Name="Provisioner Anir" Entry="16798" Type="Food" X="95.0439" Y="4292.25" Z="101.97" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="10483" Name="Ill Omens">
+		<Objective Type="CollectItem" ItemId="30157" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Bleeding Hollow Grunt" Id="16871" />
+				<Mob Name="Bleeding Hollow Dark Shaman" Id="16873" />
+				<Mob Name="Bleeding Hollow Peon" Id="16907" />
+				<Mob Name="Bleeding Hollow Necrolyte" Id="19422" />
+				<Mob Name="Bleeding Hollow Tormentor" Id="19424" />
+				<Mob Name="Worg Master Kruush" Id="19442" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-781.26" Y="1990.02" Z="40.4" />
+				<Hotspot X="-851.96" Y="1951.49" Z="69.64" />
+				<Hotspot X="-863.94" Y="1862.32" Z="78.11" />
+				<Hotspot X="-839.24" Y="2002.14" Z="58.04" />
+				<Hotspot X="-941.41" Y="1883.23" Z="83.64" />
+				<Hotspot X="-920.47" Y="1968.78" Z="67.29" />
+				<Hotspot X="-946.79" Y="1934.92" Z="68.5" />
+				<Hotspot X="-889.05" Y="2033.68" Z="45.44" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10484" Name="Cursed Talismans">
+		<Objective Type="CollectItem" ItemId="30157" CollectCount="12">
+			<CollectFrom>
+				<Mob Name="Bleeding Hollow Grunt" Id="16871" />
+				<Mob Name="Bleeding Hollow Dark Shaman" Id="16873" />
+				<Mob Name="Bleeding Hollow Peon" Id="16907" />
+				<Mob Name="Bleeding Hollow Necrolyte" Id="19422" />
+				<Mob Name="Bleeding Hollow Tormentor" Id="19424" />
+				<Mob Name="Worg Master Kruush" Id="19442" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-781.26" Y="1990.02" Z="40.4" />
+				<Hotspot X="-851.96" Y="1951.49" Z="69.64" />
+				<Hotspot X="-863.94" Y="1862.32" Z="78.11" />
+				<Hotspot X="-839.24" Y="2002.14" Z="58.04" />
+				<Hotspot X="-941.41" Y="1883.23" Z="83.64" />
+				<Hotspot X="-920.47" Y="1968.78" Z="67.29" />
+				<Hotspot X="-946.79" Y="1934.92" Z="68.5" />
+				<Hotspot X="-889.05" Y="2033.68" Z="45.44" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10485" Name="Warlord of the Bleeding Hollow">
+		<Objective Type="CollectItem" ItemId="30158" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Warlord Morkh" Id="16964" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-1173.46" Y="1920.36" Z="81.6" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="10909" Name="Fel Spirits">
 		<Objective Type="KillMob" MobId="16878" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-66.1805" Y="3132.85" Z="-4.5813" />
-				<Hotspot X="21.1449" Y="3180.24" Z="10.3897" />
-				<Hotspot X="-5.2397" Y="3205.32" Z="13.557" />
-				<Hotspot X="35.5727" Y="3245.55" Z="19.3068" />
-				<Hotspot X="31.7025" Y="3247.38" Z="19.1851" />
+				<Hotspot X="-66.18" Y="3132.85" Z="-4.58" />
+				<Hotspot X="21.14" Y="3180.24" Z="10.39" />
+				<Hotspot X="-5.24" Y="3205.32" Z="13.56" />
+				<Hotspot X="35.57" Y="3245.55" Z="19.31" />
+				<Hotspot X="31.7" Y="3247.38" Z="19.19" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10937" Name="Drill the Drillmaster">
 		<Objective Type="KillMob" MobId="19312" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-456.882" Y="3061.48" Z="-52.9424" />
+				<Hotspot X="-456.88" Y="3061.48" Z="-52.94" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10399" Name="The Heart of Darkness">
 		<Objective Type="KillMob" MobId="16951" KillCount="10">
 			<Hotspots>
-				<Hotspot X="339.352" Y="3250.78" Z="62.4316" />
-				<Hotspot X="144.676" Y="3573.35" Z="67.1821" />
-				<Hotspot X="192.877" Y="3507.72" Z="64.8315" />
-				<Hotspot X="446.44" Y="3391.33" Z="68.0362" />
-				<Hotspot X="321.507" Y="3431.27" Z="64.1772" />
+				<Hotspot X="339.35" Y="3250.78" Z="62.43" />
+				<Hotspot X="144.68" Y="3573.35" Z="67.18" />
+				<Hotspot X="192.88" Y="3507.72" Z="64.83" />
+				<Hotspot X="446.44" Y="3391.33" Z="68.04" />
+				<Hotspot X="321.51" Y="3431.27" Z="64.18" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10400" Name="Overlord">
 		<Objective Type="KillMob" MobId="19191" KillCount="1">
 			<Hotspots>
-				<Hotspot X="394.614" Y="3276.6" Z="74.6257" />
+				<Hotspot X="394.61" Y="3276.6" Z="74.63" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9490" Name="The Rock Flayer Matriarch">
+		<Objective Type="CollectItem" ItemId="23687" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Blacktalon the Savage" Id="17057" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-759.98" Y="3816.24" Z="20" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="10132" Name="Colossal Menace">
 		<Objective Type="KillMob" MobId="19188" KillCount="5">
 			<Hotspots>
-				<Hotspot X="-114.469" Y="4818.41" Z="39.5818" />
-				<Hotspot X="-63.3096" Y="4868.44" Z="55.968" />
-				<Hotspot X="-32.0013" Y="4804.67" Z="46.9591" />
-				<Hotspot X="-11.9675" Y="4854.78" Z="56.1866" />
-				<Hotspot X="21.6032" Y="4830.08" Z="61.6036" />
+				<Hotspot X="-114.47" Y="4818.41" Z="39.58" />
+				<Hotspot X="-63.31" Y="4868.44" Z="55.97" />
+				<Hotspot X="-32" Y="4804.67" Z="46.96" />
+				<Hotspot X="-11.97" Y="4854.78" Z="56.19" />
+				<Hotspot X="21.6" Y="4830.08" Z="61.6" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to The Burning Crusade (58-70)_Hellfire Peninsula Group Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(10119))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6550.8" Y="924.9" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="6550.8" WaitAtY="924.9" WaitAtZ="6.2" TransportStartX="6550.4" TransportStartY="938.2" TransportStartZ="0" TransportEndX="-4265" TransportEndY="-11317.2" TransportEndZ="0" GetOffX="-4260.246" GetOffY="-11331.36" GetOffZ="5.4902" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1790.98" Y="5413.98" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1790.98" Y="5413.98" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+				<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
 		<If Condition="Me.Level &lt; 58">
 			<SetGrindArea>
@@ -90,55 +182,147 @@
 			</SetGrindArea>
 			<GrindTo Level="58" />
 		</If>
-		<PickUp QuestName="Through the Dark Portal" QuestId="10119" GiverName="Watch Commander Relthorn Netherwane" GiverId="16841" />
-		<TurnIn QuestName="Through the Dark Portal" QuestId="10119" TurnInName="Commander Duron" TurnInId="19229" />
-		<PickUp QuestName="Arrival in Outland" QuestId="10288" GiverName="Commander Duron" GiverId="19229" />
-		<TurnIn QuestName="Arrival in Outland" QuestId="10288" TurnInName="Amish Wildhammer" TurnInId="18931" />
-		<PickUp QuestName="Journey to Honor Hold" QuestId="10140" GiverName="Amish Wildhammer" GiverId="18931" />
-		<TurnIn QuestName="Journey to Honor Hold" QuestId="10140" TurnInName="Marshal Isildor" TurnInId="19308" />
-		<PickUp QuestName="Force Commander Danath" QuestId="10254" GiverName="Marshal Isildor" GiverId="19308" />
-		<TurnIn QuestName="Force Commander Danath" QuestId="10254" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" />
-		<PickUp QuestName="Know your Enemy" QuestId="10160" GiverName="Force Commander Danath Trollbane" GiverId="16819" />
-		<TurnIn QuestName="Know your Enemy" QuestId="10160" TurnInName="Lieutenant Amadi" TurnInId="16820" />
-		<PickUp QuestName="Fel Orc Scavengers" QuestId="10482" GiverName="Lieutenant Amadi" GiverId="16820" />
-		<TurnIn QuestName="Fel Orc Scavengers" QuestId="10482" TurnInName="Lieutenant Amadi" TurnInId="16820" />
-		<PickUp QuestName="Ill Omens" QuestId="10483" GiverName="Lieutenant Amadi" GiverId="16820" />
+
+		<PickUp QuestName="Through the Dark Portal" QuestId="10119" GiverName="Watch Commander Relthorn Netherwane" GiverId="16841" X="-11815.2" Y="-3195.54" Z="-30.9174" />
+		<If Condition="Me.MapId != 530">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />
+				<CustomBehavior File="GoThruPortal" X="-11908.9" Y="-3209.1" Z="-14.79" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Through the Dark Portal" QuestId="10119" TurnInName="Commander Duron" TurnInId="19229" X="-266.369" Y="1028.86" Z="54.4067" />
+		<PickUp QuestName="Arrival in Outland" QuestId="10288" GiverName="Commander Duron" GiverId="19229" X="-266.369" Y="1028.86" Z="54.4067" />
+		<TurnIn QuestName="Arrival in Outland" QuestId="10288" TurnInName="Amish Wildhammer" TurnInId="18931" X="-323.81" Y="1027.61" Z="54.2399" />
+		<PickUp QuestName="Journey to Honor Hold" QuestId="10140" GiverName="Amish Wildhammer" GiverId="18931" X="-323.81" Y="1027.61" Z="54.2399" />
+		<TurnIn QuestName="Journey to Honor Hold" QuestId="10140" TurnInName="Marshal Isildor" TurnInId="19308" X="-681.164" Y="2708.75" Z="95.5693" />
+		<PickUp QuestName="Force Commander Danath" QuestId="10254" GiverName="Marshal Isildor" GiverId="19308" X="-681.164" Y="2708.75" Z="95.5693" />
+		<TurnIn QuestName="Force Commander Danath" QuestId="10254" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" X="-815.609" Y="2614.2" Z="124.472" />
+		<PickUp QuestName="Know your Enemy" QuestId="10160" GiverName="Force Commander Danath Trollbane" GiverId="16819" X="-815.609" Y="2614.2" Z="124.472" />
+		<TurnIn QuestName="Know your Enemy" QuestId="10160" TurnInName="Lieutenant Amadi" TurnInId="16820" X="-591.543" Y="2910.22" Z="59.2956" />
+		<PickUp QuestName="Fel Orc Scavengers" QuestId="10482" GiverName="Lieutenant Amadi" GiverId="16820" X="-591.543" Y="2910.22" Z="59.2956" />
+		<!-- Q10482 Fel Orc Scavengers: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\BC\[Fly][A - Quest] BC 58-70 [Kick].xml -->
+		<If Condition="(!IsQuestCompleted(10159))">
+			<If Condition="((HasQuest(10482)) &amp;&amp; (!IsQuestCompleted(10482)))">
+				<Objective QuestName="Fel Orc Scavengers" QuestId="10482" Type="KillMob" KillCount="20" Name="Bonechewer Orc" MobId="21161" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Fel Orc Scavengers" QuestId="10482" TurnInName="Lieutenant Amadi" TurnInId="16820" X="-591.543" Y="2910.22" Z="59.2956" />
+		<PickUp QuestName="Ill Omens" QuestId="10483" GiverName="Lieutenant Amadi" GiverId="16820" X="-591.543" Y="2910.22" Z="59.2956" />
 		<Objective QuestName="Ill Omens" QuestId="10483" Type="CollectItem" ItemId="30157" CollectCount="1" />
-		<TurnIn QuestName="Ill Omens" QuestId="10483" TurnInName="Corporal Ironridge" TurnInId="21133" />
-		<PickUp QuestName="Cursed Talismans" QuestId="10484" GiverName="Corporal Ironridge" GiverId="21133" />
+		<TurnIn QuestName="Ill Omens" QuestId="10483" TurnInName="Corporal Ironridge" TurnInId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
+		<PickUp QuestName="Cursed Talismans" QuestId="10484" GiverName="Corporal Ironridge" GiverId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
 		<Objective QuestName="Cursed Talismans" QuestId="10484" Type="CollectItem" ItemId="30157" CollectCount="12" />
-		<TurnIn QuestName="Cursed Talismans" QuestId="10484" TurnInName="Corporal Ironridge" TurnInId="21133" />
-		<PickUp QuestName="Warlord of the Bleeding Hollow" QuestId="10485" GiverName="Corporal Ironridge" GiverId="21133" />
+		<TurnIn QuestName="Cursed Talismans" QuestId="10484" TurnInName="Corporal Ironridge" TurnInId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
+		<PickUp QuestName="Warlord of the Bleeding Hollow" QuestId="10485" GiverName="Corporal Ironridge" GiverId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
 		<Objective QuestName="Warlord of the Bleeding Hollow" QuestId="10485" Type="CollectItem" ItemId="30158" CollectCount="1" />
-		<TurnIn QuestName="Warlord of the Bleeding Hollow" QuestId="10485" TurnInName="Corporal Ironridge" TurnInId="21133" />
-		<PickUp QuestName="Return to Honor Hold" QuestId="10903" GiverName="Corporal Ironridge" GiverId="21133" />
-		<TurnIn QuestName="Return to Honor Hold" QuestId="10903" TurnInName="Assistant Klatu" TurnInId="22430" />
-		<PickUp QuestName="Fel Spirits" QuestId="10909" GiverName="Assistant Klatu" GiverId="22430" />
-		<While Condition="((HasQuest(10909)) &amp;&amp; (!IsQuestCompleted(10909)))" >
-			<CustomBehavior File="UseItemOn" QuestId="10909" MobId="22454" ItemId="31772" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<Objective QuestName="Fel Spirits" QuestId="10909" Type="KillMob" MobId="16878" KillCount="1" />
-		<Objective QuestName="Fel Spirits" QuestId="10909" Type="KillMob" MobId="22454" KillCount="1" />
-		<TurnIn QuestName="Fel Spirits" QuestId="10909" TurnInName="Assistant Klatu" TurnInId="22430" />
-		<PickUp QuestName="The Exorcism of Colonel Jules" QuestId="10935" GiverName="Assistant Klatu" GiverId="22430" />
-		<While Condition="((HasQuest(10935)) &amp;&amp; (!IsQuestCompleted(10935)))" >
+		<TurnIn QuestName="Warlord of the Bleeding Hollow" QuestId="10485" TurnInName="Corporal Ironridge" TurnInId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
+		<PickUp QuestName="Return to Honor Hold" QuestId="10903" GiverName="Corporal Ironridge" GiverId="21133" X="-701.021" Y="1874.66" Z="63.4574" />
+		<TurnIn QuestName="Return to Honor Hold" QuestId="10903" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<PickUp QuestName="Fel Spirits" QuestId="10909" GiverName="Assistant Klatu" GiverId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<!-- Q10909 Fel Spirits: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\BC\[Fly][A - Quest] BC 58-70 [Kick].xml -->
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<UseItem ItemId="31772" QuestName="Fel Spirits" QuestId="10909" X="-1104.507" Y="3242.45" Z="67.1872" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1087.372" Y="3229.71" Z="64.82997" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1092.803" Y="3266.422" Z="69.53545" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<CustomBehavior File="WaitTimer" WaitTime="45000" GoalText="Waiting for Fel Spirits to attack {TimeRemaining}" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<UseItem ItemId="31772" QuestName="Fel Spirits" QuestId="10909" X="-1113.598" Y="3242.122" Z="67.22581" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1132.652" Y="3254.331" Z="67.40011" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1143.8" Y="3245.659" Z="67.25727" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<CustomBehavior File="WaitTimer" WaitTime="45000" GoalText="Waiting for Fel Spirits to attack {TimeRemaining}" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<UseItem ItemId="31772" QuestName="Fel Spirits" QuestId="10909" X="-1128.296" Y="3221.131" Z="67.22539" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1156.244" Y="3215.759" Z="69.29639" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<MoveTo DestName="Shattered Hand Berserker" X="-1117.424" Y="3196.708" Z="67.23844" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(10909) &amp;&amp; !IsQuestCompleted(10909)">
+			<If Condition="!IsQuestCompleted(10909)">
+				<CustomBehavior File="WaitTimer" WaitTime="45000" GoalText="Waiting for Fel Spirits to attack {TimeRemaining}" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Fel Spirits" QuestId="10909" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<PickUp QuestName="The Exorcism of Colonel Jules" QuestId="10935" GiverName="Assistant Klatu" GiverId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<While Condition="((HasQuest(10935)) &amp;&amp; (!IsQuestCompleted(10935)))">
 			<CustomBehavior File="UseItemOn" QuestId="10935" MobId="22432" ItemId="31828" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-710.211" Y="2754.36" Z="102.367" />
 		</While>
-		<TurnIn QuestName="The Exorcism of Colonel Jules" QuestId="10935" TurnInName="Assistant Klatu" TurnInId="22430" />
-		<PickUp QuestName="Trollbane is Looking for You" QuestId="10936" GiverName="Assistant Klatu" GiverId="22430" />
-		<TurnIn QuestName="Trollbane is Looking for You" QuestId="10936" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" />
-		<PickUp QuestName="Drill the Drillmaster" QuestId="10937" GiverName="Force Commander Danath Trollbane" GiverId="16819" />
+
+		<TurnIn QuestName="The Exorcism of Colonel Jules" QuestId="10935" TurnInName="Assistant Klatu" TurnInId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<PickUp QuestName="Trollbane is Looking for You" QuestId="10936" GiverName="Assistant Klatu" GiverId="22430" X="-710.679" Y="2734.28" Z="101.675" />
+		<TurnIn QuestName="Trollbane is Looking for You" QuestId="10936" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" X="-815.609" Y="2614.2" Z="124.472" />
+		<PickUp QuestName="Drill the Drillmaster" QuestId="10937" GiverName="Force Commander Danath Trollbane" GiverId="16819" X="-815.609" Y="2614.2" Z="124.472" />
 		<Objective QuestName="Drill the Drillmaster" QuestId="10937" Type="KillMob" MobId="19312" KillCount="1" />
-		<TurnIn QuestName="Drill the Drillmaster" QuestId="10937" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" />
-		<Objective QuestName="The Dark Missive" QuestId="10395" Type="CollectItem" ItemId="29588" CollectCount="1" />
-		<PickUp QuestName="The Dark Missive" QuestId="10395" GiverName="Force Commander Danath Trollbane" GiverId="16819" />
-		<TurnIn QuestName="The Dark Missive" QuestId="10395" TurnInName="Warp-Scryer Kryv" TurnInId="16839" />
-		<PickUp QuestName="The Heart of Darkness" QuestId="10399" GiverName="Warp-Scryer Kryv" GiverId="16839" />
+		<TurnIn QuestName="Drill the Drillmaster" QuestId="10937" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" X="-815.609" Y="2614.2" Z="124.472" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29588)">
+			<PickUp QuestName="The Dark Missive" QuestId="10395" GiverName="Burning Legion Missive" GiverId="29588" GiverType="Item" />
+		</If>
+
+		<!-- Q10395 The Dark Missive: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\BC\[Fly][A - Quest] BC 58-70 [Kick].xml -->
+		<If Condition="HasQuest(10395)">
+			<CustomBehavior File="FlyTo" DestName="Turnin: The Dark Missive" X="-734.3295" Y="2660.671" Z="95.8051" />
+		</If>
+
+		<TurnIn QuestName="The Dark Missive" QuestId="10395" TurnInName="Warp-Scryer Kryv" TurnInId="16839" X="-809.405" Y="2611.59" Z="124.472" />
+		<PickUp QuestName="The Heart of Darkness" QuestId="10399" GiverName="Warp-Scryer Kryv" GiverId="16839" X="-809.405" Y="2611.59" Z="124.472" />
 		<Objective QuestName="The Heart of Darkness" QuestId="10399" Type="KillMob" MobId="16951" KillCount="10" />
-		<TurnIn QuestName="The Heart of Darkness" QuestId="10399" TurnInName="Warp-Scryer Kryv" TurnInId="16839" />
-		<PickUp QuestName="Overlord" QuestId="10400" GiverName="Force Commander Danath Trollbane" GiverId="16819" />
+		<TurnIn QuestName="The Heart of Darkness" QuestId="10399" TurnInName="Warp-Scryer Kryv" TurnInId="16839" X="-809.405" Y="2611.59" Z="124.472" />
+		<PickUp QuestName="Overlord" QuestId="10400" GiverName="Force Commander Danath Trollbane" GiverId="16819" X="-815.609" Y="2614.2" Z="124.472" />
 		<Objective QuestName="Overlord" QuestId="10400" Type="KillMob" MobId="19191" KillCount="1" />
-		<TurnIn QuestName="Overlord" QuestId="10400" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" />
+		<TurnIn QuestName="Overlord" QuestId="10400" TurnInName="Force Commander Danath Trollbane" TurnInId="16819" X="-815.609" Y="2614.2" Z="124.472" />
 		<If Condition="Me.Level &lt; 60">
 			<SetGrindArea>
 				<GrindArea>
@@ -153,9 +337,10 @@
 			</SetGrindArea>
 			<GrindTo Level="60" />
 		</If>
-		<PickUp QuestName="The Rock Flayer Matriarch" QuestId="9490" GiverName="Ikan" GiverId="16799" />
+
+		<PickUp QuestName="The Rock Flayer Matriarch" QuestId="9490" GiverName="Ikan" GiverId="16799" X="96.1441" Y="4347.31" Z="102.357" />
 		<Objective QuestName="The Rock Flayer Matriarch" QuestId="9490" Type="CollectItem" ItemId="23687" CollectCount="1" />
-		<TurnIn QuestName="The Rock Flayer Matriarch" QuestId="9490" TurnInName="Ikan" TurnInId="16799" />
+		<TurnIn QuestName="The Rock Flayer Matriarch" QuestId="9490" TurnInName="Ikan" TurnInId="16799" X="96.1441" Y="4347.31" Z="102.357" />
 		<If Condition="Me.Level &lt; 61">
 			<SetGrindArea>
 				<GrindArea>
@@ -170,22 +355,47 @@
 			</SetGrindArea>
 			<GrindTo Level="61" />
 		</If>
-		<PickUp QuestName="Colossal Menace" QuestId="10132" GiverName="Tola'thion" GiverId="19293" />
+
+		<PickUp QuestName="Colossal Menace" QuestId="10132" GiverName="Tola'thion" GiverId="19293" X="-310.951" Y="4732.8" Z="17.0877" />
 		<Objective QuestName="Colossal Menace" QuestId="10132" Type="KillMob" MobId="19188" KillCount="5" />
-		<Objective QuestName="Crimson Crystal Clue" QuestId="10134" Type="CollectItem" ItemId="29476" CollectCount="1" />
-		<While Condition="((HasQuest(10132)) &amp;&amp; (!IsQuestCompleted(10132)))" >
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29476)">
+			<CustomBehavior File="CollectThings" CollectItemId="29476" CollectItemCount="1" HuntingGroundRadius="120" MobId="19188" X="-114.469" Y="4818.41" Z="39.5818">
+				<Hotspot X="-114.47" Y="4818.41" Z="39.58" />
+				<Hotspot X="-63.31" Y="4868.44" Z="55.97" />
+				<Hotspot X="-80.11" Y="4748.93" Z="29.75" />
+				<Hotspot X="-32" Y="4804.67" Z="46.96" />
+				<Hotspot X="-11.97" Y="4854.78" Z="56.19" />
+				<Hotspot X="21.6" Y="4830.08" Z="61.6" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(10132)) &amp;&amp; (!IsQuestCompleted(10132)))">
 			<CustomBehavior File="UseItemOn" QuestId="10132" MobId="19188" ItemId="29476" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-114.469" Y="4818.41" Z="39.5818" />
 		</While>
-		<PickUp QuestName="Crimson Crystal Clue" QuestId="10134" GiverName="Tola'thion" GiverId="19293" />
-		<TurnIn QuestName="Colossal Menace" QuestId="10132" TurnInName="Tola'thion" TurnInId="19293" />
-		<TurnIn QuestName="Crimson Crystal Clue" QuestId="10134" TurnInName="Tola'thion" TurnInId="19293" />
-		<PickUp QuestName="The Earthbinder" QuestId="10349" GiverName="Tola'thion" GiverId="19293" />
-		<TurnIn QuestName="The Earthbinder" QuestId="10349" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" />
-		<PickUp QuestName="Natural Rememdies" QuestId="10351" GiverName="Earthbinder Galandria Nightbreeze" GiverId="19294" />
-		<While Condition="((HasQuest(10351)) &amp;&amp; (!IsQuestCompleted(10351)))" >
-			<CustomBehavior File="UseItemOn" QuestId="10351" MobId="19305" ItemId="29478" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<Objective QuestName="Natural Rememdies" QuestId="10351" Type="KillMob" MobId="19305" KillCount="1" />
-		<TurnIn QuestName="Natural Rememdies" QuestId="10351" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29476)">
+			<PickUp QuestName="Crimson Crystal Clue" QuestId="10134" GiverName="Crimson Crystal Shard" GiverId="29476" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Colossal Menace" QuestId="10132" TurnInName="Tola'thion" TurnInId="19293" X="-310.951" Y="4732.8" Z="17.0877" />
+		<TurnIn QuestName="Crimson Crystal Clue" QuestId="10134" TurnInName="Tola'thion" TurnInId="19293" X="-310.951" Y="4732.8" Z="17.0877" />
+		<PickUp QuestName="The Earthbinder" QuestId="10349" GiverName="Tola'thion" GiverId="19293" X="-310.951" Y="4732.8" Z="17.0877" />
+		<TurnIn QuestName="The Earthbinder" QuestId="10349" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" X="-294.766" Y="4715.08" Z="28.1862" />
+		<PickUp QuestName="Natural Remedies" QuestId="10351" GiverName="Earthbinder Galandria Nightbreeze" GiverId="19294" X="-294.766" Y="4715.08" Z="28.1862" />
+		<!-- Q10351 Natural Remedies: objective nodes transplanted from HonorBuddy MoP reference 1-90 Questing Evermoon Profile Pack\BC\[Fly][A - Quest] BC 58-70 [Kick].xml -->
+		<If Condition="HasQuest(10351) &amp;&amp; !IsQuestCompleted(10351)">
+			<MoveTo DestName="Goliathon's Base" QuestId="10351" X="134.8253" Y="4834.953" Z="76.86269" />
+		</If>
+
+		<If Condition="HasQuest(10351) &amp;&amp; !IsQuestCompleted(10351)">
+			<CustomBehavior QuestId="10351" File="Misc\RunLua" Lua="UseItemByName(29478)" WaitTime="1000" />
+		</If>
+
+		<If Condition="HasQuest(10351) &amp;&amp; !IsQuestCompleted(10351)">
+			<CustomBehavior File="WaitTimer" WaitTime="60000" GoalText="Waiting for Goliathon: {TimeRemaining}" />
+		</If>
+
+		<Objective QuestName="Natural Remedies" QuestId="10351" Type="KillMob" MobId="19305" KillCount="1" />
+		<TurnIn QuestName="Natural Remedies" QuestId="10351" TurnInName="Earthbinder Galandria Nightbreeze" TurnInId="19294" X="-294.766" Y="4715.08" Z="28.1862" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Felwood (56-56)</Name>
-	<MinLevel>56</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,31 +17,82 @@
 
 	<Vendors>
 		<!-- Nata Dawnstrider (11344) — no spawn data -->
-		<Vendor Name="Innkeeper Biribi" Entry="14981" Type="Food" X="-8390.29" Y="285.503" Z="120.969" />
+		<Vendor Name="Burkrum" Entry="6028" Type="Repair" X="2354.76" Y="-2540.69" Z="102.896" />
+		<Vendor Name="Innkeeper Kaylisk" Entry="12196" Type="Food" X="2341.86" Y="-2566.99" Z="102.857" />
+		<Vendor Name="Kelm Hargunth" Entry="14754" Type="Repair" X="1046.54" Y="-2104.31" Z="123.065" />
+		<Vendor Name="Vrang Wildgore" Entry="3682" Type="Repair" X="787.375" Y="-1815.08" Z="91.75" />
+		<Vendor Name="Wik'Tar" Entry="12962" Type="Food" X="3362.23" Y="1024.84" Z="2.9541" />
+		<Vendor Name="Bale" Entry="2806" Type="Food" X="5092.96" Y="-356.463" Z="357.396" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="5887" Name="Salve via Hunting">
+		<Objective Type="CollectItem" ItemId="11515" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Cursed Ooze" Id="7086" />
+				<Mob Name="Tainted Ooze" Id="7092" />
+				<Mob Name="Vile Ooze" Id="7093" />
+				<Mob Name="Ironbeak Owl" Id="7097" />
+				<Mob Name="Ironbeak Screecher" Id="7098" />
+				<Mob Name="Ironbeak Hunter" Id="7099" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3958.67" Y="-920.59" Z="264.7" />
+				<Hotspot X="4007.62" Y="-1173.03" Z="272.1" />
+				<Hotspot X="4010.5" Y="-918.52" Z="258.13" />
+				<Hotspot X="3772.93" Y="-1030.35" Z="230.67" />
+				<Hotspot X="3984.32" Y="-1271.98" Z="251.82" />
+				<Hotspot X="4174.46" Y="-1106.72" Z="302.63" />
+				<Hotspot X="4010.78" Y="-782.98" Z="286.63" />
+				<Hotspot X="3851.95" Y="-1318.36" Z="215.18" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Felwood (56-56) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(5157))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="Wild Guardians" QuestId="4521" TurnInName="Trull Failbane" TurnInId="10306" />
-		<TurnIn QuestName="Forces of Jaedenar" QuestId="5155" TurnInName="Greta Mosshoof" TurnInId="10922" />
-		<PickUp QuestName="Collection of the Corrupt Water" QuestId="5157" GiverName="Greta Mosshoof" GiverId="10922" />
-		<TurnIn QuestName="Verifying the Corruption" QuestId="5156" TurnInName="Taronn Redfeather" TurnInId="10921" />
-		<TurnIn QuestName="Cleansing Felwood" QuestId="4102" TurnInName="Maybess Riverbreeze" TurnInId="9529" />
-		<Objective QuestName="Salve via Hunting" QuestId="5887" Type="CollectItem" ItemId="11511" CollectCount="1" />
+		<TurnIn QuestName="Wild Guardians" QuestId="4521" TurnInName="Trull Failbane" TurnInId="10306" X="5109.6" Y="-355.176" Z="357.205" />
+		<TurnIn QuestName="Forces of Jaedenar" QuestId="5155" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<PickUp QuestName="Collection of the Corrupt Water" QuestId="5157" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<TurnIn QuestName="Verifying the Corruption" QuestId="5156" TurnInName="Taronn Redfeather" TurnInId="10921" X="4004.65" Y="-1284.46" Z="254.349" />
+		<TurnIn QuestName="Cleansing Felwood" QuestId="4102" TurnInName="Maybess Riverbreeze" TurnInId="9529" X="3946.78" Y="-1046.39" Z="246.118" />
+		<Objective QuestName="Salve via Hunting" QuestId="5887" Type="CollectItem" ItemId="11515" CollectCount="6" />
 		<Objective QuestName="Well of Corruption" QuestId="4505" Type="CollectItem" ItemId="12567" CollectCount="1" />
 		<Objective QuestName="Salve via Hunting" QuestId="5887" Type="CollectItem" ItemId="11515" CollectCount="6" />
 		<Objective QuestName="Collection of the Corrupt Water" QuestId="5157" Type="CollectItem" ItemId="12907" CollectCount="1" />
-		<TurnIn QuestName="Well of Corruption" QuestId="4505" TurnInName="Winna Hazzard" TurnInId="9996" />
-		<TurnIn QuestName="Collection of the Corrupt Water" QuestId="5157" TurnInName="Greta Mosshoof" TurnInId="10922" />
-		<PickUp QuestName="Seeking Spiritual Aid" QuestId="5158" GiverName="Greta Mosshoof" GiverId="10922" />
-		<PickUp QuestName="Salve via Hunting" QuestId="5887" GiverName="Maybess Riverbreeze" GiverId="9529" />
-		<TurnIn QuestName="Seeking Spiritual Aid" QuestId="5158" TurnInName="Islen Waterseer" TurnInId="5901" />
-		<TurnIn QuestName="The Strength of Corruption" QuestId="4120" TurnInName="Talo Thornhoof" TurnInId="7776" />
+		<TurnIn QuestName="Well of Corruption" QuestId="4505" TurnInName="Winna Hazzard" TurnInId="9996" X="5126.82" Y="-325.127" Z="358.926" />
+		<TurnIn QuestName="Collection of the Corrupt Water" QuestId="5157" TurnInName="Greta Mosshoof" TurnInId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<PickUp QuestName="Seeking Spiritual Aid" QuestId="5158" GiverName="Greta Mosshoof" GiverId="10922" X="3985.84" Y="-1303.03" Z="251.154" />
+		<PickUp QuestName="Salve via Hunting" QuestId="5887" GiverName="Maybess Riverbreeze" GiverId="9529" X="3946.78" Y="-1046.39" Z="246.118" />
+		<TurnIn QuestName="Seeking Spiritual Aid" QuestId="5158" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+		<TurnIn QuestName="The Strength of Corruption" QuestId="4120" TurnInName="Talo Thornhoof" TurnInId="7776" X="-4397.66" Y="146.916" Z="25.5951" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Western Plaguelands (56-58)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Eastern Plaguelands (57-58)</Name>
-	<MinLevel>57</MinLevel>
-	<MaxLevel>58</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,75 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Quartermaster Miranda Breechlock" Entry="11097" Type="Repair" X="350.42" Y="-2090.4" Z="113.868" />
 		<!-- Innkeeper Freeland (14746) — no spawn data -->
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Truk Wildbeard" Entry="4782" Type="Food" X="380.805" Y="-2128.05" Z="121.09" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="5542" Name="Demon Dogs">
+		<Objective Type="KillMob" MobId="8596" KillCount="20">
+			<Hotspots>
+				<Hotspot X="1563.8" Y="-3929.91" Z="174.95" />
+				<Hotspot X="2490.42" Y="-2528.57" Z="101.03" />
+				<Hotspot X="1736.15" Y="-2765.63" Z="64.5" />
+				<Hotspot X="1859.9" Y="-2741.14" Z="94.25" />
+				<Hotspot X="2214.78" Y="-3406.16" Z="171.1" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="8597" KillCount="5">
+			<Hotspots>
+				<Hotspot X="2281.1" Y="-4738.01" Z="95.88" />
+				<Hotspot X="1943.99" Y="-5289.06" Z="92.36" />
+				<Hotspot X="2231.86" Y="-4443.39" Z="118.85" />
+				<Hotspot X="2222.34" Y="-4938" Z="77.51" />
+				<Hotspot X="2312.26" Y="-4288.92" Z="78.22" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="8598" KillCount="5">
+			<Hotspots>
+				<Hotspot X="2947.36" Y="-4713.27" Z="99.4" />
+				<Hotspot X="2812.68" Y="-4154.12" Z="91.73" />
+				<Hotspot X="3036.12" Y="-4515.49" Z="106.13" />
+				<Hotspot X="2948.31" Y="-4606.65" Z="77.06" />
+				<Hotspot X="2724.95" Y="-4609.68" Z="90.66" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5543" Name="Blood Tinged Skies">
+		<Objective Type="KillMob" MobId="8600" KillCount="30">
+			<Hotspots>
+				<Hotspot X="1851.85" Y="-2766.02" Z="89.67" />
+				<Hotspot X="1781.38" Y="-2939.41" Z="73.45" />
+				<Hotspot X="1640.12" Y="-4970.62" Z="83.6" />
+				<Hotspot X="1511.35" Y="-3156.7" Z="111.38" />
+				<Hotspot X="1607.83" Y="-4683.33" Z="84.18" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5544" Name="Carrion Grubbage">
+		<Objective Type="CollectItem" ItemId="13853" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Carrion Grub" Id="8603" />
+				<Mob Name="Carrion Devourer" Id="8605" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2710.85" Y="-2448.35" Z="65.64" />
+				<Hotspot X="2606.8" Y="-2485.3" Z="74.36" />
+				<Hotspot X="2613.32" Y="-2411.26" Z="55.76" />
+				<Hotspot X="2302.69" Y="-2572.1" Z="74.03" />
+				<Hotspot X="2118.96" Y="-2853.83" Z="85.62" />
+				<Hotspot X="2092.2" Y="-2932.47" Z="88.53" />
+				<Hotspot X="2014.2" Y="-2988.19" Z="79.13" />
+				<Hotspot X="1869.71" Y="-2830.05" Z="85.02" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="6185" Name="The Eastern Plagues">
 		<Objective Type="CollectItem" ItemId="16002" CollectCount="1">
 			<CollectFrom>
@@ -53,43 +111,13 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="5543" Name="Blood Tinged Skies">
-		<Objective Type="KillMob" MobId="8600" KillCount="30">
+	<Quest Id="6021" Name="Zaeldarr the Outcast">
+		<Objective Type="CollectItem" ItemId="15785" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Zaeldarr the Outcast" Id="12250" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="1851.85" Y="-2766.02" Z="89.6741" />
-				<Hotspot X="1781.38" Y="-2939.41" Z="73.4536" />
-				<Hotspot X="1640.12" Y="-4970.62" Z="83.6006" />
-				<Hotspot X="1511.35" Y="-3156.7" Z="111.378" />
-				<Hotspot X="1607.83" Y="-4683.33" Z="84.1828" />
-			</Hotspots>
-		</Objective>
-	</Quest>
-	<Quest Id="5542" Name="Demon Dogs">
-		<Objective Type="KillMob" MobId="8596" KillCount="20">
-			<Hotspots>
-				<Hotspot X="1563.8" Y="-3929.91" Z="174.954" />
-				<Hotspot X="2490.42" Y="-2528.57" Z="101.029" />
-				<Hotspot X="1736.15" Y="-2765.63" Z="64.4961" />
-				<Hotspot X="1859.9" Y="-2741.14" Z="94.2524" />
-				<Hotspot X="2214.78" Y="-3406.16" Z="171.099" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="8597" KillCount="5">
-			<Hotspots>
-				<Hotspot X="2281.1" Y="-4738.01" Z="95.8788" />
-				<Hotspot X="1943.99" Y="-5289.06" Z="92.3617" />
-				<Hotspot X="2231.86" Y="-4443.39" Z="118.847" />
-				<Hotspot X="2222.34" Y="-4938.0" Z="77.5105" />
-				<Hotspot X="2312.26" Y="-4288.92" Z="78.2225" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="8598" KillCount="5">
-			<Hotspots>
-				<Hotspot X="2947.36" Y="-4713.27" Z="99.3967" />
-				<Hotspot X="2812.68" Y="-4154.12" Z="91.7327" />
-				<Hotspot X="3036.12" Y="-4515.49" Z="106.127" />
-				<Hotspot X="2948.31" Y="-4606.65" Z="77.0554" />
-				<Hotspot X="2724.95" Y="-4609.68" Z="90.6552" />
+				<Hotspot X="1609.43" Y="-3248.63" Z="68.05" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -110,49 +138,85 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="6164" Name="Augustus' Receipt Book">
+		<Objective Type="CollectItem" ItemId="15884" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Augustus' Receipt Book" Id="177789" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2997.61" Y="-2860.27" Z="107.63" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Eastern Plaguelands (57-58) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(5542))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1792.78" Y="5406.54" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1792.78" Y="5406.54" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Demon Dogs" QuestId="5542" GiverName="Tirion Fordring" GiverId="1855" />
-		<PickUp QuestName="Blood Tinged Skies" QuestId="5543" GiverName="Tirion Fordring" GiverId="1855" />
-		<PickUp QuestName="Carrion Grubbage" QuestId="5544" GiverName="Tirion Fordring" GiverId="1855" />
+		<PickUp QuestName="Demon Dogs" QuestId="5542" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Blood Tinged Skies" QuestId="5543" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Carrion Grubbage" QuestId="5544" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<Objective QuestName="The Eastern Plagues" QuestId="6185" Type="CollectItem" ItemId="16002" CollectCount="1" />
 		<Objective QuestName="The Eastern Plagues" QuestId="6185" Type="CollectItem" ItemId="16001" CollectCount="1" />
 		<Objective QuestName="The Eastern Plagues" QuestId="6185" Type="CollectItem" ItemId="16003" CollectCount="1" />
-		<TurnIn QuestName="Sister Pamela" QuestId="5601" TurnInName="Pamela Redpath" TurnInId="10926" />
-		<PickUp QuestName="Pamela's Doll" QuestId="5149" GiverName="Pamela Redpath" GiverId="10926" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12886" CollectCount="1" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12887" CollectCount="1" />
-		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12888" CollectCount="1" />
+		<TurnIn QuestName="Sister Pamela" QuestId="5601" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Pamela's Doll" QuestId="5149" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
-		<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" />
-		<PickUp QuestName="Auntie Marlene" QuestId="5152" GiverName="Pamela Redpath" GiverId="10926" />
-		<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<Objective QuestName="Pamela's Doll" QuestId="5149" Type="CollectItem" ItemId="12885" CollectCount="1" />
+		<TurnIn QuestName="Pamela's Doll" QuestId="5149" TurnInName="Pamela Redpath" TurnInId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Auntie Marlene" QuestId="5152" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
+		<PickUp QuestName="Uncle Carlin" QuestId="5241" GiverName="Pamela Redpath" GiverId="10926" X="1456.32" Y="-3596.44" Z="86.9627" />
 		<Objective QuestName="Blood Tinged Skies" QuestId="5543" Type="KillMob" MobId="8600" KillCount="30" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8596" KillCount="20" />
 		<Objective QuestName="Carrion Grubbage" QuestId="5544" Type="CollectItem" ItemId="13853" CollectCount="15" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8597" KillCount="5" />
-		<PickUp QuestName="Zaeldarr the Outcast" QuestId="6021" GiverName="Caretaker Alen" GiverId="11038" />
-		<PickUp QuestName="The Restless Souls" QuestId="5281" GiverName="Caretaker Alen" GiverId="11038" />
-		<TurnIn QuestName="Duke Nicholas Zverenhoff" QuestId="6030" TurnInName="Duke Nicholas Zverenhoff" TurnInId="11039" />
-		<TurnIn QuestName="Uncle Carlin" QuestId="5241" TurnInName="Carlin Redpath" TurnInId="11063" />
-		<PickUp QuestName="Defenders of Darrowshire" QuestId="5211" GiverName="Carlin Redpath" GiverId="11063" />
-		<TurnIn QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" TurnInName="Aurora Skycaller" TurnInId="10304" />
+		<PickUp QuestName="Zaeldarr the Outcast" QuestId="6021" GiverName="Caretaker Alen" GiverId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<PickUp QuestName="The Restless Souls" QuestId="5281" GiverName="Caretaker Alen" GiverId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<TurnIn QuestName="Duke Nicholas Zverenhoff" QuestId="6030" TurnInName="Duke Nicholas Zverenhoff" TurnInId="11039" X="2255.89" Y="-5337.72" Z="86.2628" />
+		<TurnIn QuestName="Uncle Carlin" QuestId="5241" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<PickUp QuestName="Defenders of Darrowshire" QuestId="5211" GiverName="Carlin Redpath" GiverId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		<TurnIn QuestName="Troubled Spirits of Kel'Theril" QuestId="5245" TurnInName="Aurora Skycaller" TurnInId="10304" X="3232.15" Y="-4256.49" Z="98.206" />
 		<Objective QuestName="Demon Dogs" QuestId="5542" Type="KillMob" MobId="8598" KillCount="5" />
 		<Objective QuestName="A Plague Upon Thee" QuestId="5903" Type="CollectItem" ItemId="15043" CollectCount="100" />
-		<TurnIn QuestName="The Restless Souls" QuestId="5281" TurnInName="Egan" TurnInId="11140" />
-		<PickUp QuestName="Augustus' Receipt Book" QuestId="6164" GiverName="Augustus the Touched" GiverId="12384" />
+		<TurnIn QuestName="The Restless Souls" QuestId="5281" TurnInName="Egan" TurnInId="11140" X="2929.07" Y="-2744.69" Z="109.697" />
+		<PickUp QuestName="Augustus' Receipt Book" QuestId="6164" GiverName="Augustus the Touched" GiverId="12384" X="2935.74" Y="-2744.64" Z="109.691" />
 		<Objective QuestName="Augustus' Receipt Book" QuestId="6164" Type="CollectItem" ItemId="15884" CollectCount="1" />
-		<TurnIn QuestName="Augustus' Receipt Book" QuestId="6164" TurnInName="Augustus the Touched" TurnInId="12384" />
-		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" />
-		<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" />
-		<TurnIn QuestName="Redemption" QuestId="5742" TurnInName="Tirion Fordring" TurnInId="1855" />
+		<TurnIn QuestName="Augustus' Receipt Book" QuestId="6164" TurnInName="Augustus the Touched" TurnInId="12384" X="2935.74" Y="-2744.64" Z="109.691" />
+		<TurnIn QuestName="Demon Dogs" QuestId="5542" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Blood Tinged Skies" QuestId="5543" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Carrion Grubbage" QuestId="5544" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<PickUp QuestName="Redemption" QuestId="5742" GiverName="Tirion Fordring" GiverId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
+		<TurnIn QuestName="Redemption" QuestId="5742" TurnInName="Tirion Fordring" TurnInId="1855" X="2672.04" Y="-2478.26" Z="72.6985" />
 		<Objective QuestName="Zaeldarr the Outcast" QuestId="6021" Type="CollectItem" ItemId="15785" CollectCount="1" />
-		<TurnIn QuestName="Zaeldarr the Outcast" QuestId="6021" TurnInName="Caretaker Alen" TurnInId="11038" />
-		<TurnIn QuestName="Defenders of Darrowshire" QuestId="5211" TurnInName="Carlin Redpath" TurnInId="11063" />
+		<TurnIn QuestName="Zaeldarr the Outcast" QuestId="6021" TurnInName="Caretaker Alen" TurnInId="11038" X="2151.72" Y="-5264.51" Z="95.873" />
+		<!-- REVIEW Q5211 Defenders of Darrowshire: kill/event 11064 Darrowshire Spirit x15 (neutral, spawns=0) (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(5211)) &amp;&amp; (IsQuestCompleted(5211)))">
+			<TurnIn QuestName="Defenders of Darrowshire" QuestId="5211" TurnInName="Carlin Redpath" TurnInId="11063" X="2257.31" Y="-5340.87" Z="86.8037" />
+		</If>
+
+		<If Condition="((HasQuest(5211)) &amp;&amp; (!IsQuestCompleted(5211)))">
+			<AbandonQuest QuestId="5211" />
+		</If>
+
 		<CustomBehavior File="LoadProfile" ProfileName="Western Plaguelands (58-59)" />
 	</QuestOrder>
 </HBProfile>

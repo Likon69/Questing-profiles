@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Northrend (69-80)\Sholazar Basin (77-78)</Name>
-	<MinLevel>77</MinLevel>
-	<MaxLevel>78</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,54 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Provisioner Nasela" Entry="28070" Type="Repair" X="1077.41" Y="474.16" Z="207.803" />
 		<!-- Provisioner Gawlin (28071) — no spawn data -->
+		<Vendor Name="&quot;Charlie&quot; Northtop" Entry="26596" Type="Food" X="4178.47" Y="5278.22" Z="26.7764" />
+		<Vendor Name="Willis Wobblewheel" Entry="26599" Type="Repair" X="4135.78" Y="5282.23" Z="25.1142" />
+		<Vendor Name="Chief Engineer Galpen Rolltie" Entry="26600" Type="Repair" X="4136.73" Y="5316.55" Z="28.726" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="12524" Name="Venture Co. Misadventure">
+		<Objective Type="KillMob" MobId="28123" KillCount="15">
+			<Hotspots>
+				<Hotspot X="5874.87" Y="5555.09" Z="-71.82" />
+				<Hotspot X="5881.57" Y="5497.49" Z="-69.95" />
+				<Hotspot X="5870.15" Y="5420.73" Z="-84.77" />
+				<Hotspot X="5850.43" Y="5389.31" Z="-84.16" />
+				<Hotspot X="5941.16" Y="5449.76" Z="-91" />
+				<Hotspot X="5805.37" Y="5330.74" Z="-94.27" />
+				<Hotspot X="5977.08" Y="5489.22" Z="-83.52" />
+				<Hotspot X="5901.76" Y="5355.42" Z="-99.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12624" Name="It Could Be Anywhere!">
+		<Objective Type="CollectItem" ItemId="38642" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Dreadsaber" Id="28001" />
+				<Mob Name="Mangal Crocolisk" Id="28002" />
+				<Mob Name="Bittertide Hydra" Id="28003" />
+				<Mob Name="Goretalon Roc" Id="28004" />
+				<Mob Name="Shardhorn Rhino" Id="28009" />
+				<Mob Name="Stranded Thresher" Id="28010" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5494.03" Y="5760.67" Z="-89.62" />
+				<Hotspot X="5545.38" Y="5664.53" Z="-85.25" />
+				<Hotspot X="5551.77" Y="5850.34" Z="-72.68" />
+				<Hotspot X="5664.23" Y="5834.93" Z="-65.01" />
+				<Hotspot X="5461.43" Y="5785.27" Z="-78.44" />
+				<Hotspot X="5466.2" Y="5677.95" Z="-102.69" />
+				<Hotspot X="5517.75" Y="5905.36" Z="-61.14" />
+				<Hotspot X="5734.54" Y="5819.91" Z="-62.79" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="12522" Name="Need an Engine, Take an Engine">
 		<Objective Type="CollectItem" ItemId="38334" CollectCount="1">
 			<CollectFrom>
@@ -40,12 +77,12 @@
 	<Quest Id="12525" Name="Wipe That Grin Off His Face">
 		<Objective Type="KillMob" MobId="28188" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5831.19" Y="5367.35" Z="-74.7741" />
+				<Hotspot X="5831.19" Y="5367.35" Z="-74.77" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28186" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5824.16" Y="5368.46" Z="-67.629" />
+				<Hotspot X="5824.16" Y="5368.46" Z="-67.63" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -66,36 +103,112 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="12592" Name="The Great Hunter's Challenge">
+		<Objective Type="KillMob" MobId="28566" KillCount="60">
+			<Hotspots>
+				<Hotspot X="5545.45" Y="5767.53" Z="-77.8" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="12549" Name="Dreadsaber Mastery: Becoming a Predator">
 		<Objective Type="KillMob" MobId="28001" KillCount="15">
 			<Hotspots>
-				<Hotspot X="4770.65" Y="5489.01" Z="-39.7684" />
-				<Hotspot X="5383.37" Y="5619.34" Z="-93.541" />
-				<Hotspot X="5285.96" Y="5623.31" Z="-92.756" />
-				<Hotspot X="5250.17" Y="5936.97" Z="-58.1112" />
-				<Hotspot X="5729.14" Y="5311.76" Z="-93.0845" />
+				<Hotspot X="4770.65" Y="5489.01" Z="-39.77" />
+				<Hotspot X="5383.37" Y="5619.34" Z="-93.54" />
+				<Hotspot X="5285.96" Y="5623.31" Z="-92.76" />
+				<Hotspot X="5250.17" Y="5936.97" Z="-58.11" />
+				<Hotspot X="5729.14" Y="5311.76" Z="-93.08" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12520" Name="Rhino Mastery: The Test">
 		<Objective Type="KillMob" MobId="28009" KillCount="15">
 			<Hotspots>
-				<Hotspot X="5760.98" Y="5294.81" Z="-99.2477" />
-				<Hotspot X="5634.24" Y="5514.09" Z="-83.928" />
-				<Hotspot X="5633.79" Y="5504.67" Z="-85.0684" />
-				<Hotspot X="5540.49" Y="5681.65" Z="-81.7046" />
-				<Hotspot X="5550.26" Y="5647.41" Z="-88.8046" />
+				<Hotspot X="5760.98" Y="5294.81" Z="-99.25" />
+				<Hotspot X="5634.24" Y="5514.09" Z="-83.93" />
+				<Hotspot X="5633.79" Y="5504.67" Z="-85.07" />
+				<Hotspot X="5540.49" Y="5681.65" Z="-81.7" />
+				<Hotspot X="5550.26" Y="5647.41" Z="-88.8" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12550" Name="Dreadsaber Mastery: Stalking the Prey">
+		<Objective Type="UseObject" ObjectId="190700" UseCount="3">
+			<Hotspots>
+				<Hotspot X="6106.04" Y="5581.19" Z="-56.16" />
+				<Hotspot X="6077.51" Y="5478.87" Z="-80.46" />
+				<Hotspot X="6168.08" Y="5565.53" Z="-44.22" />
+				<Hotspot X="6152.14" Y="5474.6" Z="-74.71" />
+				<Hotspot X="6201.63" Y="5509.87" Z="-60.27" />
+				<Hotspot X="6236.02" Y="5536.28" Z="-35.67" />
+				<Hotspot X="6217.21" Y="5485.1" Z="-55.87" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12804" Name="A Steak Fit for a Hunter">
+		<Objective Type="CollectItem" ItemId="40394" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Longneck Grazer" Id="28129" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5462.01" Y="5783.15" Z="-78.66" />
+				<Hotspot X="5406.08" Y="5816.31" Z="-74.7" />
+				<Hotspot X="5460.16" Y="5897.88" Z="-57.7" />
+				<Hotspot X="5448.08" Y="5976.19" Z="-39.04" />
+				<Hotspot X="5302.69" Y="5690.8" Z="-88.36" />
+				<Hotspot X="5296.25" Y="5806.18" Z="-78.91" />
+				<Hotspot X="5324.77" Y="5631.49" Z="-92.97" />
+				<Hotspot X="5364.29" Y="5989.9" Z="-36.99" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12551" Name="Crocolisk Mastery: The Trial">
 		<Objective Type="KillMob" MobId="28002" KillCount="15">
 			<Hotspots>
-				<Hotspot X="5873.42" Y="4876.16" Z="-130.826" />
-				<Hotspot X="5155.51" Y="4721.06" Z="-135.553" />
-				<Hotspot X="5164.63" Y="4674.37" Z="-136.069" />
-				<Hotspot X="5114.19" Y="4744.79" Z="-135.729" />
-				<Hotspot X="5287.64" Y="4703.07" Z="-136.276" />
+				<Hotspot X="5873.42" Y="4876.16" Z="-130.83" />
+				<Hotspot X="5155.51" Y="4721.06" Z="-135.55" />
+				<Hotspot X="5164.63" Y="4674.37" Z="-136.07" />
+				<Hotspot X="5114.19" Y="4744.79" Z="-135.73" />
+				<Hotspot X="5287.64" Y="4703.07" Z="-136.28" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12543" Name="An Offering for Soo-rahm">
+		<Objective Type="CollectItem" ItemId="38505" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Emperor Cobra" Id="28011" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5589.52" Y="5339.75" Z="-135.86" />
+				<Hotspot X="5657.75" Y="5260.77" Z="-132.64" />
+				<Hotspot X="5557.95" Y="5161.27" Z="-131.99" />
+				<Hotspot X="5688.38" Y="5209.57" Z="-132.3" />
+				<Hotspot X="5237.66" Y="5110.83" Z="-136.08" />
+				<Hotspot X="5191.9" Y="5123.99" Z="-135.35" />
+				<Hotspot X="5151.1" Y="5132.11" Z="-131.57" />
+				<Hotspot X="5662.59" Y="5157.55" Z="-132.62" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12558" Name="Dreadsaber Mastery: Ready to Pounce">
+		<Objective Type="CollectItem" ItemId="38523" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Shango" Id="28297" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6203.81" Y="5528.57" Z="-51.82" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12645" Name="The Taste Test">
+		<Objective Type="KillMob" MobId="28047" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5562.35" Y="5737.39" Z="-74.58" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="28568" KillCount="1">
+			<Hotspots>
+				<Hotspot X="5483.16" Y="4730.05" Z="-194.28" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -116,32 +229,75 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12683" Name="Burning to Help">
-		<Objective Type="KillMob" MobId="28003" KillCount="1">
+	<Quest Id="12556" Name="Rhino Mastery: The Kill">
+		<Objective Type="CollectItem" ItemId="38522" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Farunn" Id="28288" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="5999.95" Y="4997.17" Z="-106.357" />
-				<Hotspot X="6009.18" Y="4956.37" Z="-107.458" />
-				<Hotspot X="5991.04" Y="4924.98" Z="-106.088" />
-				<Hotspot X="6167.65" Y="5348.61" Z="-123.657" />
-				<Hotspot X="6138.79" Y="5410.24" Z="-116.381" />
+				<Hotspot X="6043.49" Y="4893.72" Z="-94.2" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12699" Name="An Embarassing Incident">
+		<Objective Type="CollectItem" ItemId="39264" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Raised Mud" Id="190778" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5482.05" Y="4816.4" Z="-217.1" />
+				<Hotspot X="5446.87" Y="4796.41" Z="-217.33" />
+				<Hotspot X="5438.22" Y="4824.9" Z="-220.35" />
+				<Hotspot X="5443.53" Y="4867.83" Z="-211.71" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12654" Name="The Part-time Hunter">
+		<Objective Type="CollectItem" ItemId="38703" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Pitch" Id="28097" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5044.78" Y="4728.17" Z="-131.21" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12603" Name="Sharpening Your Talons">
 		<Objective Type="KillMob" MobId="28378" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6462.64" Y="4798.01" Z="-38.2898" />
-				<Hotspot X="6545.8" Y="4775.77" Z="-23.5739" />
-				<Hotspot X="6413.92" Y="4766.97" Z="-53.7231" />
-				<Hotspot X="6423.59" Y="4801.75" Z="-73.1588" />
-				<Hotspot X="6388.88" Y="4828.13" Z="-77.2423" />
+				<Hotspot X="6462.64" Y="4798.01" Z="-38.29" />
+				<Hotspot X="6545.8" Y="4775.77" Z="-23.57" />
+				<Hotspot X="6413.92" Y="4766.97" Z="-53.72" />
+				<Hotspot X="6423.59" Y="4801.75" Z="-73.16" />
+				<Hotspot X="6388.88" Y="4828.13" Z="-77.24" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="12614" Name="Post-partum Aggression">
-		<Objective Type="KillMob" MobId="28467" KillCount="1">
+	<Quest Id="12683" Name="Burning to Help">
+		<Objective Type="KillMob" MobId="28003" KillCount="5">
 			<Hotspots>
-				<Hotspot X="6668.33" Y="4878.36" Z="-10.8776" />
+				<Hotspot X="5999.95" Y="4997.17" Z="-106.36" />
+				<Hotspot X="6009.18" Y="4956.37" Z="-107.46" />
+				<Hotspot X="5991.04" Y="4924.98" Z="-106.09" />
+				<Hotspot X="6167.65" Y="5348.61" Z="-123.66" />
+				<Hotspot X="6138.79" Y="5410.24" Z="-116.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12681" Name="Reagent Agent">
+		<Objective Type="CollectItem" ItemId="39161" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Goretalon Roc" Id="28004" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6453.27" Y="4570.59" Z="-45.25" />
+				<Hotspot X="6598.43" Y="4549.32" Z="-41.01" />
+				<Hotspot X="6482.59" Y="4503.36" Z="-53.86" />
+				<Hotspot X="6563.3" Y="4494.62" Z="-39.06" />
+				<Hotspot X="6596.23" Y="4485.54" Z="-18.96" />
+				<Hotspot X="6528.56" Y="4446.35" Z="-32.05" />
+				<Hotspot X="6546.31" Y="4428.03" Z="-39.92" />
+				<Hotspot X="6457.47" Y="4414.32" Z="-42.96" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -162,99 +318,180 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="12614" Name="Post-partum Aggression">
+		<Objective Type="KillMob" MobId="28467" KillCount="1">
+			<Hotspots>
+				<Hotspot X="6668.33" Y="4878.36" Z="-10.88" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="12561" Name="An Issue of Trust">
 		<Objective Type="KillMob" MobId="28101" KillCount="6">
 			<Hotspots>
-				<Hotspot X="5611.21" Y="3577.92" Z="-19.9379" />
-				<Hotspot X="5457.25" Y="3583.97" Z="-14.6509" />
-				<Hotspot X="5386.45" Y="3664.01" Z="-7.3298" />
-				<Hotspot X="5444.8" Y="3792.84" Z="-66.3987" />
-				<Hotspot X="6178.75" Y="4054.23" Z="-5.4637" />
+				<Hotspot X="5611.21" Y="3577.92" Z="-19.94" />
+				<Hotspot X="5457.25" Y="3583.97" Z="-14.65" />
+				<Hotspot X="5386.45" Y="3664.01" Z="-7.33" />
+				<Hotspot X="5444.8" Y="3792.84" Z="-66.4" />
+				<Hotspot X="6178.75" Y="4054.23" Z="-5.46" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28108" KillCount="10">
 			<Hotspots>
-				<Hotspot X="5454.55" Y="3946.73" Z="-73.6866" />
-				<Hotspot X="5445.16" Y="4139.3" Z="-90.4675" />
-				<Hotspot X="5944.7" Y="4213.77" Z="-79.5553" />
-				<Hotspot X="5588.76" Y="3586.92" Z="-22.5334" />
-				<Hotspot X="5411.1" Y="3986.55" Z="-76.5012" />
+				<Hotspot X="5454.55" Y="3946.73" Z="-73.69" />
+				<Hotspot X="5445.16" Y="4139.3" Z="-90.47" />
+				<Hotspot X="5944.7" Y="4213.77" Z="-79.56" />
+				<Hotspot X="5588.76" Y="3586.92" Z="-22.53" />
+				<Hotspot X="5411.1" Y="3986.55" Z="-76.5" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12611" Name="Returned Sevenfold">
 		<Objective Type="KillMob" MobId="28443" KillCount="1">
 			<Hotspots>
-				<Hotspot X="6006.05" Y="4023.68" Z="-44.8432" />
+				<Hotspot X="6006.05" Y="4023.68" Z="-44.84" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12805" Name="Salvaging Life's Strength">
 		<Objective Type="KillMob" MobId="29124" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5444.03" Y="4026.5" Z="-52.866" />
-				<Hotspot X="5510.44" Y="3807.5" Z="-56.8597" />
-				<Hotspot X="5555.39" Y="3834.6" Z="-42.6517" />
-				<Hotspot X="5513.15" Y="3778.31" Z="-54.2903" />
-				<Hotspot X="5662.63" Y="3720.97" Z="-20.6076" />
+				<Hotspot X="5444.03" Y="4026.5" Z="-52.87" />
+				<Hotspot X="5510.44" Y="3807.5" Z="-56.86" />
+				<Hotspot X="5555.39" Y="3834.6" Z="-42.65" />
+				<Hotspot X="5513.15" Y="3778.31" Z="-54.29" />
+				<Hotspot X="5662.63" Y="3720.97" Z="-20.61" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12617" Name="Exterminate the Intruders">
 		<Objective Type="KillMob" MobId="28373" KillCount="8">
 			<Hotspots>
-				<Hotspot X="5964.91" Y="4477.69" Z="-94.2995" />
-				<Hotspot X="6106.39" Y="4412.78" Z="-86.0293" />
-				<Hotspot X="6034.21" Y="4532.36" Z="-86.4763" />
-				<Hotspot X="6049.71" Y="4535.28" Z="-87.3962" />
-				<Hotspot X="6100.29" Y="4516.44" Z="-79.6881" />
+				<Hotspot X="5964.91" Y="4477.69" Z="-94.3" />
+				<Hotspot X="6106.39" Y="4412.78" Z="-86.03" />
+				<Hotspot X="6034.21" Y="4532.36" Z="-86.48" />
+				<Hotspot X="6049.71" Y="4535.28" Z="-87.4" />
+				<Hotspot X="6100.29" Y="4516.44" Z="-79.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12660" Name="Weapons of Destruction">
+		<Objective Type="UseObject" ObjectId="190590" UseCount="4">
+			<Hotspots>
+				<Hotspot X="5988.04" Y="4473.78" Z="-87.36" />
+				<Hotspot X="6092.64" Y="4425.49" Z="-83.97" />
+				<Hotspot X="6073.83" Y="4463.66" Z="-84.99" />
+				<Hotspot X="6012.03" Y="4517.3" Z="-86.86" />
+				<Hotspot X="6130.8" Y="4462.61" Z="-84.54" />
+				<Hotspot X="6102.15" Y="4497.03" Z="-81.34" />
+				<Hotspot X="6075.99" Y="4523.62" Z="-81.01" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12559" Name="Powering the Waygate - The Maker's Perch">
+		<Objective Type="UseObject" ObjectId="190508" UseCount="1">
+			<Hotspots>
+				<Hotspot X="6256.69" Y="5786.75" Z="-6.13" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12613" Name="Powering the Waygate - The Maker's Overlook">
+		<Objective Type="UseObject" ObjectId="190509" UseCount="1">
+			<Hotspots>
+				<Hotspot X="5751.16" Y="3048.88" Z="287.99" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12691" Name="A Timeworn Coffer">
+		<Objective Type="CollectItem" ItemId="39227" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sholazar Guardian" Id="28069" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5711.83" Y="3430.66" Z="300.88" />
+				<Hotspot X="5720.84" Y="3307.83" Z="299.77" />
+				<Hotspot X="5739.91" Y="3145.29" Z="294.05" />
+				<Hotspot X="5727.62" Y="3062.82" Z="288.07" />
+				<Hotspot X="5774.48" Y="3066.99" Z="288.07" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12547" Name="The Activation Rune">
+		<Objective Type="CollectItem" ItemId="38708" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="High Cultist Herenn" Id="28601" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6028.08" Y="-1249.02" Z="-146.76" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12529" Name="The Ape Hunter's Slave">
 		<Objective Type="KillMob" MobId="28098" KillCount="8">
 			<Hotspots>
-				<Hotspot X="4987.56" Y="4869.29" Z="-101.367" />
-				<Hotspot X="4994.23" Y="4911.15" Z="-102.971" />
-				<Hotspot X="5006.55" Y="4724.52" Z="-101.181" />
-				<Hotspot X="4997.89" Y="4788.89" Z="-102.488" />
-				<Hotspot X="5078.84" Y="4518.86" Z="-99.0146" />
+				<Hotspot X="4987.56" Y="4869.29" Z="-101.37" />
+				<Hotspot X="4994.23" Y="4911.15" Z="-102.97" />
+				<Hotspot X="5006.55" Y="4724.52" Z="-101.18" />
+				<Hotspot X="4997.89" Y="4788.89" Z="-102.49" />
+				<Hotspot X="5078.84" Y="4518.86" Z="-99.01" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28096" KillCount="6">
 			<Hotspots>
-				<Hotspot X="5234.52" Y="4153.57" Z="-86.8308" />
-				<Hotspot X="5234.97" Y="4341.79" Z="-97.7358" />
-				<Hotspot X="5189.31" Y="4238.12" Z="-96.0386" />
-				<Hotspot X="5183.48" Y="4130.31" Z="-80.9349" />
-				<Hotspot X="5186.8" Y="4240.51" Z="-96.174" />
+				<Hotspot X="5234.52" Y="4153.57" Z="-86.83" />
+				<Hotspot X="5234.97" Y="4341.79" Z="-97.74" />
+				<Hotspot X="5189.31" Y="4238.12" Z="-96.04" />
+				<Hotspot X="5183.48" Y="4130.31" Z="-80.93" />
+				<Hotspot X="5186.8" Y="4240.51" Z="-96.17" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12530" Name="Tormenting the Softknuckles">
 		<Objective Type="KillMob" MobId="28213" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5128.56" Y="3980.97" Z="-61.6965" />
+				<Hotspot X="5128.56" Y="3980.97" Z="-61.7" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12533" Name="The Wasp Hunter's Apprentice">
 		<Objective Type="KillMob" MobId="28086" KillCount="6">
 			<Hotspots>
-				<Hotspot X="4886.03" Y="4758.86" Z="-73.4961" />
-				<Hotspot X="4768.64" Y="4674.46" Z="-54.6772" />
-				<Hotspot X="4949.55" Y="4752.03" Z="-93.7504" />
-				<Hotspot X="4856.86" Y="4401.1" Z="-62.6357" />
-				<Hotspot X="4862.41" Y="4392.82" Z="-62.0045" />
+				<Hotspot X="4886.03" Y="4758.86" Z="-73.5" />
+				<Hotspot X="4768.64" Y="4674.46" Z="-54.68" />
+				<Hotspot X="4949.55" Y="4752.03" Z="-93.75" />
+				<Hotspot X="4856.86" Y="4401.1" Z="-62.64" />
+				<Hotspot X="4862.41" Y="4392.82" Z="-62" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28085" KillCount="9">
 			<Hotspots>
-				<Hotspot X="5033.19" Y="4298.49" Z="-49.1119" />
-				<Hotspot X="5039.42" Y="4231.74" Z="-47.2019" />
-				<Hotspot X="5036.99" Y="4230.29" Z="-47.2019" />
-				<Hotspot X="4928.88" Y="4219.16" Z="-29.7915" />
-				<Hotspot X="4972.88" Y="4227.24" Z="-37.8087" />
+				<Hotspot X="5033.19" Y="4298.49" Z="-49.11" />
+				<Hotspot X="5039.42" Y="4231.74" Z="-47.2" />
+				<Hotspot X="5036.99" Y="4230.29" Z="-47.2" />
+				<Hotspot X="4928.88" Y="4219.16" Z="-29.79" />
+				<Hotspot X="4972.88" Y="4227.24" Z="-37.81" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12534" Name="The Sapphire Queen">
+		<Objective Type="CollectItem" ItemId="38477" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Sapphire Hive Queen" Id="28087" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4975.34" Y="4447.26" Z="-130.14" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12531" Name="The Underground Menace">
+		<Objective Type="CollectItem" ItemId="38473" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Serfex the Reaver" Id="28083" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="4859.41" Y="4397.72" Z="-62.17" />
+				<Hotspot X="4828.27" Y="4759.1" Z="-75.66" />
+				<Hotspot X="4801.76" Y="4364.83" Z="-56.69" />
+				<Hotspot X="4767.1" Y="4694.61" Z="-67.34" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -278,16 +515,16 @@
 	<Quest Id="12571" Name="Make the Bad Snake Go Away">
 		<Objective Type="KillMob" MobId="28358" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5767.67" Y="4452.68" Z="-136.278" />
+				<Hotspot X="5767.67" Y="4452.68" Z="-136.28" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28011" KillCount="10">
 			<Hotspots>
 				<Hotspot X="5230.06" Y="4675.45" Z="-133.68" />
-				<Hotspot X="5257.75" Y="4743.93" Z="-132.369" />
-				<Hotspot X="5109.22" Y="4784.63" Z="-133.081" />
+				<Hotspot X="5257.75" Y="4743.93" Z="-132.37" />
+				<Hotspot X="5109.22" Y="4784.63" Z="-133.08" />
 				<Hotspot X="5191.56" Y="4668.22" Z="-134.58" />
-				<Hotspot X="5080.68" Y="4845.36" Z="-131.295" />
+				<Hotspot X="5080.68" Y="4845.36" Z="-131.29" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -304,91 +541,142 @@
 	<Quest Id="12576" Name="Forced Hand">
 		<Objective Type="KillMob" MobId="28080" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6707.16" Y="5156.77" Z="-19.4783" />
-				<Hotspot X="6656.94" Y="5124.21" Z="-35.2076" />
-				<Hotspot X="6630.12" Y="5180.35" Z="-40.8894" />
-				<Hotspot X="6539.96" Y="5135.16" Z="-52.7691" />
-				<Hotspot X="6579.11" Y="5160.23" Z="-45.6312" />
+				<Hotspot X="6707.16" Y="5156.77" Z="-19.48" />
+				<Hotspot X="6656.94" Y="5124.21" Z="-35.21" />
+				<Hotspot X="6630.12" Y="5180.35" Z="-40.89" />
+				<Hotspot X="6539.96" Y="5135.16" Z="-52.77" />
+				<Hotspot X="6579.11" Y="5160.23" Z="-45.63" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28081" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6665.7" Y="5019.8" Z="-15.8159" />
-				<Hotspot X="6686.64" Y="5218.41" Z="-17.8379" />
-				<Hotspot X="6605.46" Y="5138.35" Z="-35.9772" />
-				<Hotspot X="6647.04" Y="5042.07" Z="-31.2682" />
-				<Hotspot X="6665.5" Y="5135.03" Z="-35.3874" />
+				<Hotspot X="6665.7" Y="5019.8" Z="-15.82" />
+				<Hotspot X="6686.64" Y="5218.41" Z="-17.84" />
+				<Hotspot X="6605.46" Y="5138.35" Z="-35.98" />
+				<Hotspot X="6647.04" Y="5042.07" Z="-31.27" />
+				<Hotspot X="6665.5" Y="5135.03" Z="-35.39" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12546" Name="Reclamation">
 		<Objective Type="KillMob" MobId="28212" KillCount="1">
 			<Hotspots>
-				<Hotspot X="6124.73" Y="3782.15" Z="98.2121" />
+				<Hotspot X="6124.73" Y="3782.15" Z="98.21" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28103" KillCount="1">
 			<Hotspots>
-				<Hotspot X="6208.47" Y="3873.8" Z="132.398" />
+				<Hotspot X="6208.47" Y="3873.8" Z="132.4" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="28208" KillCount="1">
 			<Hotspots>
-				<Hotspot X="6300.65" Y="3879.63" Z="173.767" />
+				<Hotspot X="6300.65" Y="3879.63" Z="173.77" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12579" Name="Lifeblood of the Mosswalker Shrine">
+		<Objective Type="CollectItem" ItemId="39063" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Lifeblood Shard" Id="190702" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="5720.31" Y="3939.39" Z="-84.01" />
+				<Hotspot X="5686.31" Y="3951.17" Z="-88.03" />
+				<Hotspot X="5658.79" Y="3977.03" Z="-87.66" />
+				<Hotspot X="5679.4" Y="3917.62" Z="-86.13" />
+				<Hotspot X="5678.33" Y="3875.49" Z="-78.21" />
+				<Hotspot X="5717.79" Y="3826.79" Z="-60.62" />
+				<Hotspot X="5694.29" Y="3846.43" Z="-63.23" />
+				<Hotspot X="5753.14" Y="3805.42" Z="-50.95" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="12581" Name="A Hero's Burden">
 		<Objective Type="KillMob" MobId="28659" KillCount="1">
 			<Hotspots>
-				<Hotspot X="5613.98" Y="3787.84" Z="-91.9357" />
+				<Hotspot X="5613.98" Y="3787.84" Z="-91.94" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Northrend (69-80)_Sholazar Basin (77-78) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 571) &amp;&amp; (!IsQuestCompleted(12521))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8300.08" Y="1405.158" Z="4.4224" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="-8300.08" WaitAtY="1405.158" WaitAtZ="4.4224" TransportStartX="-8288.8" TransportStartY="1424.7" TransportStartZ="0" StandOnX="-8295.016" StandOnY="1422.455" StandOnZ="9.4776" TransportEndX="2218.4" TransportEndY="5119.6" TransportEndZ="0" GetOffX="2234.375" GetOffY="5132.568" GetOffZ="5.3432" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8300.08" Y="1405.158" Z="4.4224" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="-8300.08" WaitAtY="1405.158" WaitAtZ="4.4224" TransportStartX="-8288.8" TransportStartY="1424.7" TransportStartZ="0" StandOnX="-8295.016" StandOnY="1422.455" StandOnZ="9.4776" TransportEndX="2218.4" TransportEndY="5119.6" TransportEndZ="0" GetOffX="2234.375" GetOffY="5132.568" GetOffZ="5.3432" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-1792.78" Y="5406.54" Z="-12.43" />
+				<CustomBehavior File="GoThruPortal" X="-1792.78" Y="5406.54" Z="-12.43" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-8300.08" Y="1405.158" Z="4.4224" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="-8300.08" WaitAtY="1405.158" WaitAtZ="4.4224" TransportStartX="-8288.8" TransportStartY="1424.7" TransportStartZ="0" StandOnX="-8295.016" StandOnY="1422.455" StandOnZ="9.4776" TransportEndX="2218.4" TransportEndY="5119.6" TransportEndZ="0" GetOffX="2234.375" GetOffY="5132.568" GetOffZ="5.3432" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" GiverName="Archmage Pentarus" GiverId="28160" />
-		<TurnIn QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" TurnInName="Monte Muzzleshot" TurnInId="27987" />
-		<PickUp QuestName="Welcome to Sholazar Basin" QuestId="12489" GiverName="Monte Muzzleshot" GiverId="27987" />
-		<PickUp QuestName="Venture Co. Misadventure" QuestId="12524" GiverName="Debaar" GiverId="28032" />
-		<PickUp QuestName="It Could Be Anywhere!" QuestId="12624" GiverName="Chad" GiverId="28497" />
-		<TurnIn QuestName="Welcome to Sholazar Basin" QuestId="12489" TurnInName="Hemet Nesingwary" TurnInId="27986" />
-		<PickUp QuestName="Need an Engine, Take an Engine" QuestId="12522" GiverName="Weslex Quickwrench" GiverId="28033" />
+		<PickUp QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" GiverName="Archmage Pentarus" GiverId="28160" X="5833.99" Y="483.519" Z="658.261" />
+		<TurnIn QuestName="Where in the World is Hemet Nesingwary?" QuestId="12521" TurnInName="Monte Muzzleshot" TurnInId="27987" X="5584.02" Y="5200.42" Z="-129.298" />
+		<PickUp QuestName="Welcome to Sholazar Basin" QuestId="12489" GiverName="Monte Muzzleshot" GiverId="27987" X="5584.02" Y="5200.42" Z="-129.298" />
+		<PickUp QuestName="Venture Co. Misadventure" QuestId="12524" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="It Could Be Anywhere!" QuestId="12624" GiverName="Chad" GiverId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<TurnIn QuestName="Welcome to Sholazar Basin" QuestId="12489" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<PickUp QuestName="Need an Engine, Take an Engine" QuestId="12522" GiverName="Weslex Quickwrench" GiverId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
 		<Objective QuestName="Need an Engine, Take an Engine" QuestId="12522" Type="CollectItem" ItemId="38334" CollectCount="1" />
-		<PickUp QuestName="Engineering a Disaster" QuestId="12688" GiverName="Engineer Helice" GiverId="28787" />
-		<TurnIn QuestName="Venture Co. Misadventure" QuestId="12524" TurnInName="Debaar" TurnInId="28032" />
-		<PickUp QuestName="Wipe That Grin Off His Face" QuestId="12525" GiverName="Debaar" GiverId="28032" />
-		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" />
-		<TurnIn QuestName="Engineering a Disaster" QuestId="12688" TurnInName="Hemet Nesingwary" TurnInId="27986" />
-		<TurnIn QuestName="Need an Engine, Take an Engine" QuestId="12522" TurnInName="Weslex Quickwrench" TurnInId="28033" />
-		<PickUp QuestName="Have a Part, Give a Part" QuestId="12523" GiverName="Weslex Quickwrench" GiverId="28033" />
+		<PickUp QuestName="Engineering a Disaster" QuestId="12688" GiverName="Engineer Helice" GiverId="28787" X="5910.23" Y="5380.47" Z="-98.8115" />
+		<Objective QuestName="Venture Co. Misadventure" QuestId="12524" Type="KillMob" MobId="28123" KillCount="15" />
+		<TurnIn QuestName="Venture Co. Misadventure" QuestId="12524" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="Wipe That Grin Off His Face" QuestId="12525" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<TurnIn QuestName="It Could Be Anywhere!" QuestId="12624" TurnInName="Chad" TurnInId="28497" X="5575.85" Y="5758.88" Z="-75.117" />
+		<TurnIn QuestName="Engineering a Disaster" QuestId="12688" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<TurnIn QuestName="Need an Engine, Take an Engine" QuestId="12522" TurnInName="Weslex Quickwrench" TurnInId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		<PickUp QuestName="Have a Part, Give a Part" QuestId="12523" GiverName="Weslex Quickwrench" GiverId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
 		<Objective QuestName="Wipe That Grin Off His Face" QuestId="12525" Type="KillMob" MobId="28188" KillCount="1" />
 		<Objective QuestName="Wipe That Grin Off His Face" QuestId="12525" Type="KillMob" MobId="28186" KillCount="1" />
 		<Objective QuestName="Have a Part, Give a Part" QuestId="12523" Type="CollectItem" ItemId="38349" CollectCount="7" />
-		<TurnIn QuestName="Have a Part, Give a Part" QuestId="12523" TurnInName="Weslex Quickwrench" TurnInId="28033" />
-		<PickUp QuestName="Aerial Surveillance" QuestId="12696" GiverName="Professor Calvert" GiverId="28266" />
-		<TurnIn QuestName="Wipe That Grin Off His Face" QuestId="12525" TurnInName="Debaar" TurnInId="28032" />
-		<PickUp QuestName="Kick, What Kick?" QuestId="12589" GiverName="Drostan" GiverId="28328" />
-		<While Condition="((HasQuest(12589)) &amp;&amp; (!IsQuestCompleted(12589)))" >
+		<TurnIn QuestName="Have a Part, Give a Part" QuestId="12523" TurnInName="Weslex Quickwrench" TurnInId="28033" X="5589.35" Y="5824.71" Z="-68.4405" />
+		<PickUp QuestName="Aerial Surveillance" QuestId="12696" GiverName="Professor Calvert" GiverId="28266" X="5589.55" Y="5822.47" Z="-68.7008" />
+		<TurnIn QuestName="Wipe That Grin Off His Face" QuestId="12525" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="Kick, What Kick?" QuestId="12589" GiverName="Drostan" GiverId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		<While Condition="((HasQuest(12589)) &amp;&amp; (!IsQuestCompleted(12589)))">
 			<CustomBehavior File="UseItemOn" QuestId="12589" MobId="28053" ItemId="38573" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Kick, What Kick?" QuestId="12589" TurnInName="Drostan" TurnInId="28328" />
-		<PickUp QuestName="The Great Hunter's Challenge" QuestId="12592" GiverName="Drostan" GiverId="28328" />
-		<PickUp QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" GiverName="Buck Cantwell" GiverId="28031" />
-		<PickUp QuestName="Rhino Mastery: The Test" QuestId="12520" GiverName="Hemet Nesingwary" GiverId="27986" />
+
+		<!-- REVIEW Q12589 Kick, What Kick?: UseItemOn target 28053 Apple has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(12589)) &amp;&amp; (IsQuestCompleted(12589)))">
+			<TurnIn QuestName="Kick, What Kick?" QuestId="12589" TurnInName="Drostan" TurnInId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		</If>
+
+		<If Condition="((HasQuest(12589)) &amp;&amp; (!IsQuestCompleted(12589)))">
+			<AbandonQuest QuestId="12589" />
+		</If>
+
+		<PickUp QuestName="The Great Hunter's Challenge" QuestId="12592" GiverName="Drostan" GiverId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		<PickUp QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<PickUp QuestName="Rhino Mastery: The Test" QuestId="12520" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
 		<Objective QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" Type="KillMob" MobId="28001" KillCount="15" />
 		<Objective QuestName="Rhino Mastery: The Test" QuestId="12520" Type="KillMob" MobId="28009" KillCount="15" />
-		<TurnIn QuestName="Rhino Mastery: The Test" QuestId="12520" TurnInName="Hemet Nesingwary" TurnInId="27986" />
-		<PickUp QuestName="Rhino Mastery: The Chase" QuestId="12526" GiverName="Hemet Nesingwary" GiverId="27986" />
-		<TurnIn QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" TurnInName="Buck Cantwell" TurnInId="28031" />
-		<PickUp QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" GiverName="Buck Cantwell" GiverId="28031" />
-		<PickUp QuestName="A Steak Fit for a Hunter" QuestId="12804" GiverName="Korg the Cleaver" GiverId="28046" />
-		<PickUp QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" GiverName="Grimbooze Thunderbrew" GiverId="29157" />
-		<PickUp QuestName="Crocolisk Mastery: The Trial" QuestId="12551" GiverName="Debaar" GiverId="28032" />
-		<TurnIn QuestName="Rhino Mastery: The Chase" QuestId="12526" TurnInName="Oracle Soo-rahm" TurnInId="28191" />
-		<PickUp QuestName="An Offering for Soo-rahm" QuestId="12543" GiverName="Oracle Soo-rahm" GiverId="28191" />
+		<TurnIn QuestName="Rhino Mastery: The Test" QuestId="12520" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<PickUp QuestName="Rhino Mastery: The Chase" QuestId="12526" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<TurnIn QuestName="Dreadsaber Mastery: Becoming a Predator" QuestId="12549" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<PickUp QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<PickUp QuestName="A Steak Fit for a Hunter" QuestId="12804" GiverName="Korg the Cleaver" GiverId="28046" X="5559.11" Y="5765.43" Z="-77.9385" />
+		<PickUp QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		<PickUp QuestName="Crocolisk Mastery: The Trial" QuestId="12551" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<TurnIn QuestName="Rhino Mastery: The Chase" QuestId="12526" TurnInName="Oracle Soo-rahm" TurnInId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		<PickUp QuestName="An Offering for Soo-rahm" QuestId="12543" GiverName="Oracle Soo-rahm" GiverId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
 		<Objective QuestName="A Steak Fit for a Hunter" QuestId="12804" Type="CollectItem" ItemId="40394" CollectCount="5" />
 		<Objective QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" Type="CollectItem" ItemId="38656" CollectCount="1" />
 		<Objective QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" Type="CollectItem" ItemId="38653" CollectCount="2" />
@@ -396,228 +684,298 @@
 		<Objective QuestName="An Offering for Soo-rahm" QuestId="12543" Type="CollectItem" ItemId="38505" CollectCount="5" />
 		<Objective QuestName="Crocolisk Mastery: The Trial" QuestId="12551" Type="KillMob" MobId="28002" KillCount="15" />
 		<Objective QuestName="It Could Be Anywhere!" QuestId="12624" Type="CollectItem" ItemId="38642" CollectCount="1" />
-		<TurnIn QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" TurnInName="Buck Cantwell" TurnInId="28031" />
-		<PickUp QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" GiverName="Buck Cantwell" GiverId="28031" />
-		<TurnIn QuestName="A Steak Fit for a Hunter" QuestId="12804" TurnInName="Korg the Cleaver" TurnInId="28046" />
-		<TurnIn QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" />
-		<PickUp QuestName="Still At It" QuestId="12644" GiverName="Grimbooze Thunderbrew" GiverId="29157" />
+		<Objective QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" Type="UseObject" ObjectId="190700" UseCount="3" />
+		<TurnIn QuestName="Dreadsaber Mastery: Stalking the Prey" QuestId="12550" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<PickUp QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" GiverName="Buck Cantwell" GiverId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<TurnIn QuestName="A Steak Fit for a Hunter" QuestId="12804" TurnInName="Korg the Cleaver" TurnInId="28046" X="5559.11" Y="5765.43" Z="-77.9385" />
+		<TurnIn QuestName="Some Make Lemonade, Some Make Liquor" QuestId="12634" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		<PickUp QuestName="Still At It" QuestId="12644" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
 		<Objective QuestName="Still At It" QuestId="12644" Type="CollectItem" ItemId="38688" CollectCount="1" />
-		<TurnIn QuestName="Still At It" QuestId="12644" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" />
-		<PickUp QuestName="The Taste Test" QuestId="12645" GiverName="Grimbooze Thunderbrew" GiverId="29157" />
-		<TurnIn QuestName="The Great Hunter's Challenge" QuestId="12592" TurnInName="Drostan" TurnInId="28328" />
-		<TurnIn QuestName="Crocolisk Mastery: The Trial" QuestId="12551" TurnInName="Debaar" TurnInId="28032" />
-		<PickUp QuestName="Crocolisk Mastery: The Plan" QuestId="12560" GiverName="Debaar" GiverId="28032" />
-		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))" >
+		<TurnIn QuestName="Still At It" QuestId="12644" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		<PickUp QuestName="The Taste Test" QuestId="12645" GiverName="Grimbooze Thunderbrew" GiverId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		<Objective QuestName="The Great Hunter's Challenge" QuestId="12592" Type="KillMob" MobId="28566" KillCount="60" />
+		<TurnIn QuestName="The Great Hunter's Challenge" QuestId="12592" TurnInName="Drostan" TurnInId="28328" X="5547.83" Y="5749.53" Z="-77.6173" />
+		<TurnIn QuestName="Crocolisk Mastery: The Trial" QuestId="12551" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="Crocolisk Mastery: The Plan" QuestId="12560" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))">
 			<CustomBehavior File="UseItemOn" QuestId="12645" MobId="27986" ItemId="38697" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5584.49" Y="5748.84" Z="-71.9047" />
 		</While>
-		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))" >
+
+		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))">
 			<CustomBehavior File="UseItemOn" QuestId="12645" MobId="27986" ItemId="38697" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5584.49" Y="5748.84" Z="-71.9047" />
 		</While>
-		<TurnIn QuestName="An Offering for Soo-rahm" QuestId="12543" TurnInName="Oracle Soo-rahm" TurnInId="28191" />
-		<PickUp QuestName="The Bones of Nozronn" QuestId="12544" GiverName="Oracle Soo-rahm" GiverId="28191" />
-		<While Condition="((HasQuest(12544)) &amp;&amp; (!IsQuestCompleted(12544)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12544" MobId="28256" ItemId="38519" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="The Bones of Nozronn" QuestId="12544" TurnInName="Hemet Nesingwary" TurnInId="27986" />
-		<PickUp QuestName="Rhino Mastery: The Kill" QuestId="12556" GiverName="Hemet Nesingwary" GiverId="27986" />
+
+		<TurnIn QuestName="An Offering for Soo-rahm" QuestId="12543" TurnInName="Oracle Soo-rahm" TurnInId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		<PickUp QuestName="The Bones of Nozronn" QuestId="12544" GiverName="Oracle Soo-rahm" GiverId="28191" X="5355.12" Y="5814.42" Z="-74.0425" />
+		<!-- Q12544 The Bones of Nozronn: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\LK\[Fly][A - Quest] LK 68-80 [Kick] R.xml -->
+		<If Condition="(!IsQuestCompleted(12561))">
+			<If Condition="((HasQuest(12544)) &amp;&amp; (!IsQuestCompleted(12544)))">
+				<UseItem QuestName="The Bones of Nozronn" QuestId="12544" ItemId="38519" X="5210.412" Y="5791.234" Z="-70.80236" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="The Bones of Nozronn" QuestId="12544" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<PickUp QuestName="Rhino Mastery: The Kill" QuestId="12556" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
 		<Objective QuestName="Crocolisk Mastery: The Plan" QuestId="12560" Type="CollectItem" ItemId="38553" CollectCount="5" />
-		<TurnIn QuestName="Aerial Surveillance" QuestId="12696" TurnInName="Pilot Vic" TurnInId="28746" />
-		<PickUp QuestName="An Embarassing Incident" QuestId="12699" GiverName="Pilot Vic" GiverId="28746" />
-		<PickUp QuestName="Force of Nature" QuestId="12803" GiverName="Pilot Vic" GiverId="28746" />
-		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))" >
+		<TurnIn QuestName="Aerial Surveillance" QuestId="12696" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<PickUp QuestName="An Embarassing Incident" QuestId="12699" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<PickUp QuestName="Force of Nature" QuestId="12803" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<While Condition="((HasQuest(12645)) &amp;&amp; (!IsQuestCompleted(12645)))">
 			<CustomBehavior File="UseItemOn" QuestId="12645" MobId="27986" ItemId="38697" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5584.49" Y="5748.84" Z="-71.9047" />
 		</While>
-		<PickUp QuestName="The Part-time Hunter" QuestId="12654" GiverName="Tamara Wobblesprocket" GiverId="28568" />
+
+		<PickUp QuestName="The Part-time Hunter" QuestId="12654" GiverName="Tamara Wobblesprocket" GiverId="28568" X="5483.16" Y="4730.05" Z="-194.283" />
 		<Objective QuestName="An Embarassing Incident" QuestId="12699" Type="CollectItem" ItemId="39264" CollectCount="1" />
-		<TurnIn QuestName="An Embarassing Incident" QuestId="12699" TurnInName="Pilot Vic" TurnInId="28746" />
-		<PickUp QuestName="Reconnaissance Flight" QuestId="12671" GiverName="Pilot Vic" GiverId="28746" />
-		<TurnIn QuestName="Reconnaissance Flight" QuestId="12671" TurnInName="Pilot Vic" TurnInId="28746" />
-		<TurnIn QuestName="The Taste Test" QuestId="12645" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" />
-		<TurnIn QuestName="Crocolisk Mastery: The Plan" QuestId="12560" TurnInName="Debaar" TurnInId="28032" />
-		<PickUp QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" GiverName="Debaar" GiverId="28032" />
+		<TurnIn QuestName="An Embarassing Incident" QuestId="12699" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<PickUp QuestName="Reconnaissance Flight" QuestId="12671" GiverName="Pilot Vic" GiverId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<TurnIn QuestName="Reconnaissance Flight" QuestId="12671" TurnInName="Pilot Vic" TurnInId="28746" X="5500.68" Y="4753.16" Z="-194.396" />
+		<Objective QuestName="The Taste Test" QuestId="12645" Type="KillMob" MobId="28047" KillCount="1" />
+		<Objective QuestName="The Taste Test" QuestId="12645" Type="KillMob" MobId="28568" KillCount="1" />
+		<TurnIn QuestName="The Taste Test" QuestId="12645" TurnInName="Grimbooze Thunderbrew" TurnInId="29157" X="5542.86" Y="5762.68" Z="-78.169" />
+		<TurnIn QuestName="Crocolisk Mastery: The Plan" QuestId="12560" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" GiverName="Debaar" GiverId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
 		<Objective QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" Type="CollectItem" ItemId="38523" CollectCount="1" />
 		<Objective QuestName="Rhino Mastery: The Kill" QuestId="12556" Type="CollectItem" ItemId="38522" CollectCount="1" />
 		<Objective QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" Type="CollectItem" ItemId="38559" CollectCount="1" />
 		<Objective QuestName="The Part-time Hunter" QuestId="12654" Type="CollectItem" ItemId="38703" CollectCount="1" />
-		<PickUp QuestName="Playing Along" QuestId="12528" GiverName="Tracker Gekgek" GiverId="28095" />
-		<TurnIn QuestName="The Part-time Hunter" QuestId="12654" TurnInName="Tamara Wobblesprocket" TurnInId="28568" />
-		<TurnIn QuestName="Rhino Mastery: The Kill" QuestId="12556" TurnInName="Hemet Nesingwary" TurnInId="27986" />
-		<TurnIn QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" TurnInName="Buck Cantwell" TurnInId="28031" />
-		<TurnIn QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" TurnInName="Debaar" TurnInId="28032" />
-		<PickUp QuestName="In Search of Bigger Game" QuestId="12595" GiverName="Hemet Nesingwary" GiverId="27986" />
-		<TurnIn QuestName="In Search of Bigger Game" QuestId="12595" TurnInName="Dorian Drakestalker" TurnInId="28376" />
-		<PickUp QuestName="Sharpening Your Talons" QuestId="12603" GiverName="Dorian Drakestalker" GiverId="28376" />
-		<PickUp QuestName="Securing the Bait" QuestId="12605" GiverName="Dorian Drakestalker" GiverId="28376" />
-		<PickUp QuestName="Burning to Help" QuestId="12683" GiverName="Colvin Norrington" GiverId="28771" />
-		<Objective QuestName="Burning to Help" QuestId="12683" Type="KillMob" MobId="28003" KillCount="1" />
-		<While Condition="((HasQuest(12683)) &amp;&amp; (!IsQuestCompleted(12683)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12683" MobId="28771" ItemId="39164" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6455.09" Y="5096.63" Z="-64.4071" />
-		</While>
-		<Objective QuestName="Burning to Help" QuestId="12683" Type="KillMob" MobId="28003" KillCount="5" />
+		<PickUp QuestName="Playing Along" QuestId="12528" GiverName="Tracker Gekgek" GiverId="28095" X="5063.25" Y="4727.75" Z="-132.243" />
+		<TurnIn QuestName="The Part-time Hunter" QuestId="12654" TurnInName="Tamara Wobblesprocket" TurnInId="28568" X="5483.16" Y="4730.05" Z="-194.283" />
+		<TurnIn QuestName="Rhino Mastery: The Kill" QuestId="12556" TurnInName="Hemet Nesingwary" TurnInId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<TurnIn QuestName="Dreadsaber Mastery: Ready to Pounce" QuestId="12558" TurnInName="Buck Cantwell" TurnInId="28031" X="5573.14" Y="5767.55" Z="-75.1196" />
+		<TurnIn QuestName="Crocolisk Mastery: The Ambush" QuestId="12569" TurnInName="Debaar" TurnInId="28032" X="5548.14" Y="5742.24" Z="-76.3733" />
+		<PickUp QuestName="In Search of Bigger Game" QuestId="12595" GiverName="Hemet Nesingwary" GiverId="27986" X="5584.49" Y="5748.84" Z="-71.9047" />
+		<TurnIn QuestName="In Search of Bigger Game" QuestId="12595" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<PickUp QuestName="Sharpening Your Talons" QuestId="12603" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<PickUp QuestName="Securing the Bait" QuestId="12605" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
 		<Objective QuestName="Securing the Bait" QuestId="12605" Type="CollectItem" ItemId="38600" CollectCount="6" />
 		<Objective QuestName="Sharpening Your Talons" QuestId="12603" Type="KillMob" MobId="28378" KillCount="6" />
-		<TurnIn QuestName="Sharpening Your Talons" QuestId="12603" TurnInName="Dorian Drakestalker" TurnInId="28376" />
-		<TurnIn QuestName="Securing the Bait" QuestId="12605" TurnInName="Dorian Drakestalker" TurnInId="28376" />
-		<TurnIn QuestName="Burning to Help" QuestId="12683" TurnInName="Colvin Norrington" TurnInId="28771" />
-		<PickUp QuestName="Reagent Agent" QuestId="12681" GiverName="Colvin Norrington" GiverId="28771" />
-		<PickUp QuestName="A Mammoth Undertaking" QuestId="12607" GiverName="Zootfizzle" GiverId="28374" />
-		<PickUp QuestName="My Pet Roc" QuestId="12658" GiverName="Zootfizzle" GiverId="28374" />
-		<While Condition="((HasQuest(12607)) &amp;&amp; (!IsQuestCompleted(12607)))" >
+		<TurnIn QuestName="Sharpening Your Talons" QuestId="12603" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<TurnIn QuestName="Securing the Bait" QuestId="12605" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<PickUp QuestName="Burning to Help" QuestId="12683" GiverName="Colvin Norrington" GiverId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<TurnIn QuestName="Burning to Help" QuestId="12683" TurnInName="Colvin Norrington" TurnInId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<Objective QuestName="Burning to Help" QuestId="12683" Type="KillMob" MobId="28003" KillCount="5" />
+		<CustomBehavior File="UseItemOn" QuestId="12683" MobId="28771" ItemId="39164" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<PickUp QuestName="Reagent Agent" QuestId="12681" GiverName="Colvin Norrington" GiverId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<PickUp QuestName="A Mammoth Undertaking" QuestId="12607" GiverName="Zootfizzle" GiverId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		<PickUp QuestName="My Pet Roc" QuestId="12658" GiverName="Zootfizzle" GiverId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		<While Condition="((HasQuest(12607)) &amp;&amp; (!IsQuestCompleted(12607)))">
 			<CustomBehavior File="UseItemOn" QuestId="12607" MobId="28374" ItemId="38627" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6448.37" Y="5094.66" Z="-63.9814" />
 		</While>
-		<TurnIn QuestName="A Mammoth Undertaking" QuestId="12607" TurnInName="Zootfizzle" TurnInId="28374" />
-		<PickUp QuestName="Post-partum Aggression" QuestId="12614" GiverName="Dorian Drakestalker" GiverId="28376" />
+
+		<TurnIn QuestName="A Mammoth Undertaking" QuestId="12607" TurnInName="Zootfizzle" TurnInId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		<PickUp QuestName="Post-partum Aggression" QuestId="12614" GiverName="Dorian Drakestalker" GiverId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
 		<Objective QuestName="Post-partum Aggression" QuestId="12614" Type="KillMob" MobId="28467" KillCount="1" />
 		<Objective QuestName="My Pet Roc" QuestId="12658" Type="CollectItem" ItemId="38705" CollectCount="7" />
 		<Objective QuestName="Reagent Agent" QuestId="12681" Type="CollectItem" ItemId="39161" CollectCount="5" />
-		<TurnIn QuestName="Post-partum Aggression" QuestId="12614" TurnInName="Dorian Drakestalker" TurnInId="28376" />
-		<TurnIn QuestName="Reagent Agent" QuestId="12681" TurnInName="Colvin Norrington" TurnInId="28771" />
-		<TurnIn QuestName="My Pet Roc" QuestId="12658" TurnInName="Zootfizzle" TurnInId="28374" />
-		<TurnIn QuestName="Force of Nature" QuestId="12803" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="An Issue of Trust" QuestId="12561" GiverName="Avatar of Freya" GiverId="27801" />
+		<TurnIn QuestName="Post-partum Aggression" QuestId="12614" TurnInName="Dorian Drakestalker" TurnInId="28376" X="6453.86" Y="5084.78" Z="-64.0947" />
+		<TurnIn QuestName="Reagent Agent" QuestId="12681" TurnInName="Colvin Norrington" TurnInId="28771" X="6455.09" Y="5096.63" Z="-64.4071" />
+		<TurnIn QuestName="My Pet Roc" QuestId="12658" TurnInName="Zootfizzle" TurnInId="28374" X="6448.37" Y="5094.66" Z="-63.9814" />
+		<TurnIn QuestName="Force of Nature" QuestId="12803" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="An Issue of Trust" QuestId="12561" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
 		<Objective QuestName="An Issue of Trust" QuestId="12561" Type="KillMob" MobId="28101" KillCount="6" />
 		<Objective QuestName="An Issue of Trust" QuestId="12561" Type="KillMob" MobId="28108" KillCount="10" />
-		<TurnIn QuestName="An Issue of Trust" QuestId="12561" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Returned Sevenfold" QuestId="12611" GiverName="Avatar of Freya" GiverId="27801" />
-		<While Condition="((HasQuest(12611)) &amp;&amp; (!IsQuestCompleted(12611)))" >
+		<TurnIn QuestName="An Issue of Trust" QuestId="12561" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Returned Sevenfold" QuestId="12611" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<While Condition="((HasQuest(12611)) &amp;&amp; (!IsQuestCompleted(12611)))">
 			<CustomBehavior File="UseItemOn" QuestId="12611" MobId="28443" ItemId="38657" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6006.05" Y="4023.68" Z="-44.8432" />
 		</While>
+
 		<Objective QuestName="Returned Sevenfold" QuestId="12611" Type="KillMob" MobId="28443" KillCount="1" />
-		<TurnIn QuestName="Returned Sevenfold" QuestId="12611" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="The Fallen Pillar" QuestId="12612" GiverName="Avatar of Freya" GiverId="27801" />
-		<PickUp QuestName="Salvaging Life's Strength" QuestId="12805" GiverName="Avatar of Freya" GiverId="27801" />
-		<TurnIn QuestName="The Fallen Pillar" QuestId="12612" TurnInName="Avatar of Freya" TurnInId="28464" />
-		<PickUp QuestName="Cultist Incursion" QuestId="12608" GiverName="Avatar of Freya" GiverId="27801" />
-		<Objective QuestName="Salvaging Life's Strength" QuestId="12805" Type="KillMob" MobId="29124" KillCount="1" />
-		<While Condition="((HasQuest(12805)) &amp;&amp; (!IsQuestCompleted(12805)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12805" MobId="29303" ItemId="40397" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="Salvaging Life's Strength" QuestId="12805" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<TurnIn QuestName="Cultist Incursion" QuestId="12608" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Exterminate the Intruders" QuestId="12617" GiverName="Avatar of Freya" GiverId="27801" />
-		<PickUp QuestName="Weapons of Destruction" QuestId="12660" GiverName="Avatar of Freya" GiverId="27801" />
+		<TurnIn QuestName="Returned Sevenfold" QuestId="12611" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="The Fallen Pillar" QuestId="12612" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<TurnIn QuestName="The Fallen Pillar" QuestId="12612" TurnInName="Cultist Corpse" TurnInId="28464" X="5536.11" Y="4094.29" Z="43.295" />
+		<PickUp QuestName="Cultist Incursion" QuestId="12608" GiverName="Cultist Corpse" GiverId="28464" X="5536.11" Y="4094.29" Z="43.295" />
+		<PickUp QuestName="Salvaging Life's Strength" QuestId="12805" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<!-- Q12805 Salvaging Life's Strength: objective nodes transplanted from HonorBuddy drind reference LK\[Fly][A - Quest] LK 68-80 [Kick] - ßeta.xml -->
+		<If Condition="((HasQuest(12805)) &amp;&amp; (IsQuestCompleted(12805)))">
+			<CustomBehavior File="FlyTo" DestName="Turnin Quest" X="5874.56" Y="4116.636" Z="-85.51167" />
+		</If>
+
+		<If Condition="((HasQuest(12805)) &amp;&amp; (IsQuestCompleted(12805)))">
+			<CustomBehavior File="ForcedDismount" />
+		</If>
+
+		<TurnIn QuestName="Salvaging Life's Strength" QuestId="12805" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<TurnIn QuestName="Cultist Incursion" QuestId="12608" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Exterminate the Intruders" QuestId="12617" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Weapons of Destruction" QuestId="12660" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
 		<Objective QuestName="Exterminate the Intruders" QuestId="12617" Type="KillMob" MobId="28373" KillCount="8" />
-		<TurnIn QuestName="Exterminate the Intruders" QuestId="12617" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<TurnIn QuestName="Weapons of Destruction" QuestId="12660" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="The Lifewarden's Wrath" QuestId="12620" GiverName="Avatar of Freya" GiverId="27801" />
-		<While Condition="((HasQuest(12620)) &amp;&amp; (!IsQuestCompleted(12620)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12620" MobId="28595" ItemId="38684" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
-		<TurnIn QuestName="The Lifewarden's Wrath" QuestId="12620" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Freya's Pact" QuestId="12621" GiverName="Avatar of Freya" GiverId="27801" />
-		<TurnIn QuestName="Freya's Pact" QuestId="12621" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" GiverName="Avatar of Freya" GiverId="27801" />
-		<TurnIn QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" GiverName="Avatar of Freya" GiverId="27801" />
-		<PickUp QuestName="A Timeworn Coffer" QuestId="12691" GiverName="Avatar of Freya" GiverId="27801" />
+		<TurnIn QuestName="Exterminate the Intruders" QuestId="12617" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<Objective QuestName="Weapons of Destruction" QuestId="12660" Type="UseObject" ObjectId="190590" UseCount="4" />
+		<TurnIn QuestName="Weapons of Destruction" QuestId="12660" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="The Lifewarden's Wrath" QuestId="12620" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<!-- Q12620 The Lifewarden's Wrath: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Other\[Fly][A - Quest] LK 68-80 [Kick] - User Assist.xml -->
+		<If Condition="(!IsQuestCompleted(12797))">
+			<If Condition="((HasQuest(12620)) &amp;&amp; (!IsQuestCompleted(12620)))">
+				<UseItem QuestId="12620" ItemId="38684" X="6208.104" Y="4762.392" Z="222.7582" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="The Lifewarden's Wrath" QuestId="12620" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Freya's Pact" QuestId="12621" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<!-- Q12621 Freya's Pact: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Other\[Fly][A - Quest] LK 68-80 [Kick] - User Assist.xml -->
+		<If Condition="(!IsQuestCompleted(12797))">
+			<If Condition="((HasQuest(12621)) &amp;&amp; (!IsQuestCompleted(12621)))">
+				<CustomBehavior File="InteractWith" QuestId="12621" MobId="27801" GossipOptions="1, 1, 1" X="5874.56" Y="4116.636" Z="-85.51167" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Freya's Pact" QuestId="12621" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<Objective QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" Type="UseObject" ObjectId="190508" UseCount="1" />
+		<TurnIn QuestName="Powering the Waygate - The Maker's Perch" QuestId="12559" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="A Timeworn Coffer" QuestId="12691" GiverName="Timeworn Coffer" GiverId="190768" GiverType="Object" X="5666.69" Y="3426.17" Z="300.843" />
 		<Objective QuestName="A Timeworn Coffer" QuestId="12691" Type="CollectItem" ItemId="39227" CollectCount="1" />
 		<!-- Quest 12691 (A Timeworn Coffer) — TurnIn Object not in 3.3.5a -->
-		<TurnIn QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="The Etymidian" QuestId="12548" GiverName="Avatar of Freya" GiverId="27801" />
-		<TurnIn QuestName="The Etymidian" QuestId="12548" TurnInName="The Etymidian" TurnInId="28092" />
-		<PickUp QuestName="The Activation Rune" QuestId="12547" GiverName="The Etymidian" GiverId="28092" />
+		<Objective QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" Type="UseObject" ObjectId="190509" UseCount="1" />
+		<TurnIn QuestName="Powering the Waygate - The Maker's Overlook" QuestId="12613" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="The Etymidian" QuestId="12548" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="The Etymidian" QuestId="12548" TurnInName="The Etymidian" TurnInId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		<PickUp QuestName="The Activation Rune" QuestId="12547" GiverName="The Etymidian" GiverId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
 		<Objective QuestName="The Activation Rune" QuestId="12547" Type="CollectItem" ItemId="38708" CollectCount="1" />
-		<TurnIn QuestName="The Activation Rune" QuestId="12547" TurnInName="The Etymidian" TurnInId="28092" />
-		<PickUp QuestName="Back Through the Waygate" QuestId="12797" GiverName="The Etymidian" GiverId="28092" />
-		<TurnIn QuestName="Playing Along" QuestId="12528" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<PickUp QuestName="The Ape Hunter's Slave" QuestId="12529" GiverName="High-Shaman Rakjak" GiverId="28082" />
+		<TurnIn QuestName="The Activation Rune" QuestId="12547" TurnInName="The Etymidian" TurnInId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		<PickUp QuestName="Back Through the Waygate" QuestId="12797" GiverName="The Etymidian" GiverId="28092" X="-6193.86" Y="-1219.55" Z="-160.768" />
+		<If Condition="Me.MapId != 571">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8300.08" Y="1405.158" Z="4.4224" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="-8300.08" WaitAtY="1405.158" WaitAtZ="4.4224" TransportStartX="-8288.8" TransportStartY="1424.7" TransportStartZ="0" StandOnX="-8295.016" StandOnY="1422.455" StandOnZ="9.4776" TransportEndX="2218.4" TransportEndY="5119.6" TransportEndZ="0" GetOffX="2234.375" GetOffY="5132.568" GetOffZ="5.3432" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Playing Along" QuestId="12528" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="The Ape Hunter's Slave" QuestId="12529" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<PickUp QuestName="Tormenting the Softknuckles" QuestId="12530" GiverName="Goregek the Gorilla Hunter" GiverId="28214" />
 		<Objective QuestName="The Ape Hunter's Slave" QuestId="12529" Type="KillMob" MobId="28098" KillCount="8" />
-		<While Condition="((HasQuest(12530)) &amp;&amp; (!IsQuestCompleted(12530)))" >
+		<While Condition="((HasQuest(12530)) &amp;&amp; (!IsQuestCompleted(12530)))">
 			<CustomBehavior File="UseItemOn" QuestId="12530" MobId="28213" ItemId="38467" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5128.56" Y="3980.97" Z="-61.6965" />
 		</While>
+
 		<Objective QuestName="Tormenting the Softknuckles" QuestId="12530" Type="KillMob" MobId="28213" KillCount="1" />
 		<Objective QuestName="The Ape Hunter's Slave" QuestId="12529" Type="KillMob" MobId="28096" KillCount="6" />
-		<TurnIn QuestName="The Ape Hunter's Slave" QuestId="12529" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<TurnIn QuestName="Tormenting the Softknuckles" QuestId="12530" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<PickUp QuestName="The Wasp Hunter's Apprentice" QuestId="12533" GiverName="High-Shaman Rakjak" GiverId="28082" />
-		<PickUp QuestName="The Sapphire Queen" QuestId="12534" GiverName="Elder Harkek" GiverId="28138" />
+		<TurnIn QuestName="The Ape Hunter's Slave" QuestId="12529" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<TurnIn QuestName="Tormenting the Softknuckles" QuestId="12530" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="The Wasp Hunter's Apprentice" QuestId="12533" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="The Sapphire Queen" QuestId="12534" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		<Objective QuestName="The Sapphire Queen" QuestId="12534" Type="CollectItem" ItemId="38477" CollectCount="1" />
 		<Objective QuestName="The Wasp Hunter's Apprentice" QuestId="12533" Type="KillMob" MobId="28086" KillCount="6" />
 		<Objective QuestName="The Wasp Hunter's Apprentice" QuestId="12533" Type="KillMob" MobId="28085" KillCount="9" />
-		<TurnIn QuestName="The Wasp Hunter's Apprentice" QuestId="12533" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<TurnIn QuestName="The Sapphire Queen" QuestId="12534" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<PickUp QuestName="Flown the Coop!" QuestId="12532" GiverName="Elder Harkek" GiverId="28138" />
+		<TurnIn QuestName="The Wasp Hunter's Apprentice" QuestId="12533" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<TurnIn QuestName="The Sapphire Queen" QuestId="12534" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="Flown the Coop!" QuestId="12532" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		<Objective QuestName="Flown the Coop!" QuestId="12532" Type="CollectItem" ItemId="38483" CollectCount="12" />
-		<TurnIn QuestName="Flown the Coop!" QuestId="12532" TurnInName="Elder Harkek" TurnInId="28138" />
-		<PickUp QuestName="The Underground Menace" QuestId="12531" GiverName="Elder Harkek" GiverId="28138" />
-		<PickUp QuestName="Mischief in the Making" QuestId="12535" GiverName="High-Shaman Rakjak" GiverId="28082" />
+		<TurnIn QuestName="Flown the Coop!" QuestId="12532" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		<PickUp QuestName="The Underground Menace" QuestId="12531" GiverName="Elder Harkek" GiverId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
+		<PickUp QuestName="Mischief in the Making" QuestId="12535" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<Objective QuestName="The Underground Menace" QuestId="12531" Type="CollectItem" ItemId="38473" CollectCount="1" />
 		<Objective QuestName="Mischief in the Making" QuestId="12535" Type="CollectItem" ItemId="38504" CollectCount="8" />
-		<TurnIn QuestName="The Underground Menace" QuestId="12531" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<TurnIn QuestName="Mischief in the Making" QuestId="12535" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" />
+		<TurnIn QuestName="The Underground Menace" QuestId="12531" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<TurnIn QuestName="Mischief in the Making" QuestId="12535" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="A Rough Ride" QuestId="12536" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<TurnIn QuestName="A Rough Ride" QuestId="12536" TurnInName="Zepik the Gorloc Hunter" TurnInId="28216" />
-		<PickUp QuestName="Lightning Definitely Strikes Twice" QuestId="12537" GiverName="Zepik the Gorloc Hunter" GiverId="28668" />
-		<PickUp QuestName="The Mist Isn't Listening" QuestId="12538" GiverName="Zepik the Gorloc Hunter" GiverId="28668" />
-		<Objective QuestName="The Mist Isn't Listening" QuestId="12538" Type="CollectItem" ItemId="38512" CollectCount="1" />
-		<While Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))" >
+		<PickUp QuestName="Lightning Definitely Strikes Twice" QuestId="12537" GiverName="Zepik the Gorloc Hunter" GiverId="28216" />
+		<PickUp QuestName="The Mist Isn't Listening" QuestId="12538" GiverName="Zepik the Gorloc Hunter" GiverId="28216" />
+		<While Condition="((HasQuest(12538)) &amp;&amp; (!IsQuestCompleted(12538)))">
 			<CustomBehavior File="UseItemOn" QuestId="12538" MobId="28110" ItemId="38512" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6305.25" Y="4987.93" Z="-89.451" />
 		</While>
+
 		<TurnIn QuestName="Lightning Definitely Strikes Twice" QuestId="12537" TurnInName="Zepik the Gorloc Hunter" TurnInId="28216" />
 		<TurnIn QuestName="The Mist Isn't Listening" QuestId="12538" TurnInName="Zepik the Gorloc Hunter" TurnInId="28216" />
 		<PickUp QuestName="Hoofing It" QuestId="12539" GiverName="Zepik the Gorloc Hunter" GiverId="28216" />
-		<TurnIn QuestName="Hoofing It" QuestId="12539" TurnInName="High-Shaman Rakjak" TurnInId="28082" />
-		<PickUp QuestName="Just Following Orders" QuestId="12540" GiverName="High-Shaman Rakjak" GiverId="28082" />
+		<TurnIn QuestName="Hoofing It" QuestId="12539" TurnInName="High-Shaman Rakjak" TurnInId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
+		<PickUp QuestName="Just Following Orders" QuestId="12540" GiverName="High-Shaman Rakjak" GiverId="28082" X="5280.53" Y="4533.72" Z="-80.4395" />
 		<Objective QuestName="Just Following Orders" QuestId="12540" Type="KillMob" MobId="28325" KillCount="1" />
-		<TurnIn QuestName="Just Following Orders" QuestId="12540" TurnInName="Injured Rainspeaker Oracle" TurnInId="28217" />
-		<PickUp QuestName="Fortunate Misunderstandings" QuestId="12570" GiverName="Injured Rainspeaker Oracle" GiverId="28217" />
-		<TurnIn QuestName="Fortunate Misunderstandings" QuestId="12570" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<PickUp QuestName="Make the Bad Snake Go Away" QuestId="12571" GiverName="High-Oracle Soo-say" GiverId="28027" />
-		<While Condition="((HasQuest(12571)) &amp;&amp; (!IsQuestCompleted(12571)))" >
+		<TurnIn QuestName="Just Following Orders" QuestId="12540" TurnInName="Injured Rainspeaker Oracle" TurnInId="28217" X="5400.44" Y="4502.65" Z="-130.794" />
+		<PickUp QuestName="Fortunate Misunderstandings" QuestId="12570" GiverName="Injured Rainspeaker Oracle" GiverId="28217" X="5400.44" Y="4502.65" Z="-130.794" />
+		<TurnIn QuestName="Fortunate Misunderstandings" QuestId="12570" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<PickUp QuestName="Make the Bad Snake Go Away" QuestId="12571" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<While Condition="((HasQuest(12571)) &amp;&amp; (!IsQuestCompleted(12571)))">
 			<CustomBehavior File="UseItemOn" QuestId="12571" MobId="28011" ItemId="38622" NumOfTimes="1" Range="5" CollectionDistance="1000" X="5230.06" Y="4675.45" Z="-133.68" />
 		</While>
+
 		<PickUp QuestName="Gods like Shiny Things" QuestId="12572" GiverName="Lafoo" GiverId="28120" />
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28358" KillCount="1" />
 		<Objective QuestName="Gods like Shiny Things" QuestId="12572" Type="CollectItem" ItemId="38575" CollectCount="6" />
 		<Objective QuestName="Make the Bad Snake Go Away" QuestId="12571" Type="KillMob" MobId="28011" KillCount="10" />
-		<TurnIn QuestName="Make the Bad Snake Go Away" QuestId="12571" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<TurnIn QuestName="Gods like Shiny Things" QuestId="12572" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<PickUp QuestName="Making Peace" QuestId="12573" GiverName="High-Oracle Soo-say" GiverId="28027" />
-		<TurnIn QuestName="Making Peace" QuestId="12573" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<PickUp QuestName="Back So Soon?" QuestId="12574" GiverName="High-Oracle Soo-say" GiverId="28027" />
-		<TurnIn QuestName="Back So Soon?" QuestId="12574" TurnInName="Mistcaller Soo-gan" TurnInId="28114" />
-		<PickUp QuestName="The Lost Mistwhisper Treasure" QuestId="12575" GiverName="Mistcaller Soo-gan" GiverId="28114" />
-		<PickUp QuestName="Forced Hand" QuestId="12576" GiverName="Mistcaller Soo-gan" GiverId="28114" />
-		<While Condition="((HasQuest(12576)) &amp;&amp; (!IsQuestCompleted(12576)))" >
+		<TurnIn QuestName="Make the Bad Snake Go Away" QuestId="12571" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<TurnIn QuestName="Gods like Shiny Things" QuestId="12572" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<PickUp QuestName="Making Peace" QuestId="12573" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<TurnIn QuestName="Making Peace" QuestId="12573" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<PickUp QuestName="Back So Soon?" QuestId="12574" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<TurnIn QuestName="Back So Soon?" QuestId="12574" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<PickUp QuestName="The Lost Mistwhisper Treasure" QuestId="12575" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<PickUp QuestName="Forced Hand" QuestId="12576" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<While Condition="((HasQuest(12576)) &amp;&amp; (!IsQuestCompleted(12576)))">
 			<CustomBehavior File="UseItemOn" QuestId="12576" MobId="28080" ItemId="38623" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6707.16" Y="5156.77" Z="-19.4783" />
 		</While>
-		<Objective QuestName="The Lost Mistwhisper Treasure" QuestId="12575" Type="CollectItem" ItemId="38601" CollectCount="1" />
+
 		<Objective QuestName="Forced Hand" QuestId="12576" Type="KillMob" MobId="28080" KillCount="8" />
 		<Objective QuestName="Forced Hand" QuestId="12576" Type="KillMob" MobId="28081" KillCount="6" />
-		<TurnIn QuestName="The Lost Mistwhisper Treasure" QuestId="12575" TurnInName="Mistcaller Soo-gan" TurnInId="28114" />
-		<TurnIn QuestName="Forced Hand" QuestId="12576" TurnInName="Mistcaller Soo-gan" TurnInId="28114" />
-		<PickUp QuestName="Home Time!" QuestId="12577" GiverName="Mistcaller Soo-gan" GiverId="28114" />
-		<TurnIn QuestName="Home Time!" QuestId="12577" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" />
-		<Objective QuestName="The Angry Gorloc" QuestId="12578" Type="CollectItem" ItemId="38624" CollectCount="1" />
-		<TurnIn QuestName="Back Through the Waygate" QuestId="12797" TurnInName="Avatar of Freya" TurnInId="27801" />
-		<PickUp QuestName="Reclamation" QuestId="12546" GiverName="Avatar of Freya" GiverId="27801" />
-		<While Condition="((HasQuest(12546)) &amp;&amp; (!IsQuestCompleted(12546)))" >
+		<!-- Q12575 The Lost Mistwhisper Treasure: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\LK\[Fly][A - Quest] LK 68-80 [Kick].xml -->
+		<If Condition="(!IsQuestCompleted(12561))">
+			<If Condition="((HasQuest(12575)) &amp;&amp; (!IsQuestCompleted(12575)))">
+				<Objective QuestName="The Lost Mistwhisper Treasure" QuestId="12575" Type="KillMob" MobId="28105" KillCount="1" />
+			</If>
+		</If>
+
+		<If Condition="(!IsQuestCompleted(12561))">
+			<If Condition="((HasQuest(12575)) &amp;&amp; (!IsQuestCompleted(12575)))">
+				<Objective QuestName="The Lost Mistwhisper Treasure" QuestId="12575" Type="CollectItem" ItemId="38601" CollectCount="1" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="The Lost Mistwhisper Treasure" QuestId="12575" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<TurnIn QuestName="Forced Hand" QuestId="12576" TurnInName="Mistcaller Soo-gan" TurnInId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<PickUp QuestName="Home Time!" QuestId="12577" GiverName="Mistcaller Soo-gan" GiverId="28114" X="6165" Y="5092.98" Z="-97.2936" />
+		<TurnIn QuestName="Home Time!" QuestId="12577" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<PickUp QuestName="The Angry Gorloc" QuestId="12578" GiverName="High-Oracle Soo-say" GiverId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<TurnIn QuestName="Back Through the Waygate" QuestId="12797" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<PickUp QuestName="Reclamation" QuestId="12546" GiverName="Avatar of Freya" GiverId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
+		<While Condition="((HasQuest(12546)) &amp;&amp; (!IsQuestCompleted(12546)))">
 			<CustomBehavior File="UseItemOn" QuestId="12546" MobId="28212" ItemId="38709" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6124.73" Y="3782.15" Z="98.2121" />
 		</While>
+
 		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28212" KillCount="1" />
 		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28103" KillCount="1" />
 		<Objective QuestName="Reclamation" QuestId="12546" Type="KillMob" MobId="28208" KillCount="1" />
-		<TurnIn QuestName="Reclamation" QuestId="12546" TurnInName="Avatar of Freya" TurnInId="27801" />
+		<TurnIn QuestName="Reclamation" QuestId="12546" TurnInName="Avatar of Freya" TurnInId="27801" X="5876.06" Y="4116.53" Z="-85.4289" />
 		<TurnIn QuestName="The Angry Gorloc" QuestId="12578" TurnInName="Moodle" TurnInId="28122" />
 		<PickUp QuestName="The Mosswalker Savior" QuestId="12580" GiverName="Moodle" GiverId="28122" />
 		<PickUp QuestName="Lifeblood of the Mosswalker Shrine" QuestId="12579" GiverName="Moodle" GiverId="28122" />
-		<While Condition="((HasQuest(12580)) &amp;&amp; (!IsQuestCompleted(12580)))" >
-			<CustomBehavior File="UseItemOn" QuestId="12580" MobId="28644" ItemId="44065" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
+		<!-- Q12580 The Mosswalker Savior: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\LK\[Fly][A - Quest] LK 68-80 [Kick].xml -->
+		<If Condition="(!IsQuestCompleted(12561))">
+			<If Condition="((HasQuest(12580)) &amp;&amp; (!IsQuestCompleted(12580)))">
+				<CustomBehavior File="InteractWith" QuestId="12580" MobId="28113" NumOfTimes="100" MobState="Alive" WaitForNpcs="False" GossipOptions="1" CollectionDistance="500" X="5813.002" Y="3631.94" Z="-11.94503" />
+			</If>
+		</If>
+
 		<TurnIn QuestName="The Mosswalker Savior" QuestId="12580" TurnInName="Moodle" TurnInId="28122" />
 		<Objective QuestName="Lifeblood of the Mosswalker Shrine" QuestId="12579" Type="CollectItem" ItemId="39063" CollectCount="10" />
 		<TurnIn QuestName="Lifeblood of the Mosswalker Shrine" QuestId="12579" TurnInName="Moodle" TurnInId="28122" />
 		<PickUp QuestName="A Hero's Burden" QuestId="12581" GiverName="Moodle" GiverId="28122" />
 		<Objective QuestName="A Hero's Burden" QuestId="12581" Type="KillMob" MobId="28659" KillCount="1" />
 		<!-- Quest 12581 (A Hero's Burden) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Hand of the Oracles" QuestId="12689" GiverName="Jaloot" GiverId="28667" />
-		<PickUp QuestName="Return of the Friendly Dryskin" QuestId="12695" GiverName="Jaloot" GiverId="28667" />
-		<PickUp QuestName="Frenzyheart Champion" QuestId="12582" GiverName="Zepik the Gorloc Hunter" GiverId="28668" />
-		<PickUp QuestName="Return of the Lich Hunter" QuestId="12692" GiverName="Zepik the Gorloc Hunter" GiverId="28668" />
-		<TurnIn QuestName="Return of the Friendly Dryskin" QuestId="12695" TurnInName="High-Oracle Soo-say" TurnInId="28027" />
-		<TurnIn QuestName="Return of the Lich Hunter" QuestId="12692" TurnInName="Elder Harkek" TurnInId="28138" />
+		<PickUp QuestName="Hand of the Oracles" QuestId="12689" GiverName="Jaloot" GiverId="28667" X="5616.92" Y="3772.68" Z="-94.258" />
+		<PickUp QuestName="Return of the Friendly Dryskin" QuestId="12695" GiverName="Jaloot" GiverId="28667" X="5616.92" Y="3772.68" Z="-94.258" />
+		<PickUp QuestName="Frenzyheart Champion" QuestId="12582" GiverName="Zepik the Gorloc Hunter" GiverId="28668" X="5631.63" Y="3794.36" Z="-92.2367" />
+		<PickUp QuestName="Return of the Lich Hunter" QuestId="12692" GiverName="Zepik the Gorloc Hunter" GiverId="28668" X="5631.63" Y="3794.36" Z="-92.2367" />
+		<TurnIn QuestName="Return of the Friendly Dryskin" QuestId="12695" TurnInName="High-Oracle Soo-say" TurnInId="28027" X="5650.8" Y="4551.02" Z="-134.77" />
+		<TurnIn QuestName="Return of the Lich Hunter" QuestId="12692" TurnInName="Elder Harkek" TurnInId="28138" X="5263.77" Y="4511.33" Z="-84.7118" />
 		<CustomBehavior File="LoadProfile" ProfileName="Northrend (69-80)_The Storm Peaks (78-79)" />
 	</QuestOrder>
 </HBProfile>

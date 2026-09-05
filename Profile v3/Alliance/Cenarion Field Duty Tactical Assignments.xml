@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Cenarion Field Duty Tactical Assignments</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -20,71 +17,191 @@
 
 	<Vendors>
 		<Vendor Name="Vargus" Entry="15176" Type="Repair" X="-6860.93" Y="753.044" Z="42.5555" />
-		<Vendor Name="Matta" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
+		<Vendor Name="Vargus" Entry="15176" Type="Food" X="-6860.93" Y="753.044" Z="42.5555" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="8740" Name="Twilight Marauders">
 		<Objective Type="KillMob" MobId="15541" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-6374.21" Y="532.318" Z="6.1941" />
+				<Hotspot X="-6374.21" Y="532.32" Z="6.19" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="15542" KillCount="5">
+		<Objective Type="KillMob" MobId="15542" KillCount="2">
 			<Hotspots>
-				<Hotspot X="-6362.06" Y="551.901" Z="7.3023" />
-				<Hotspot X="-6366.48" Y="541.942" Z="6.9074" />
+				<Hotspot X="-6362.06" Y="551.9" Z="7.3" />
+				<Hotspot X="-6366.48" Y="541.94" Z="6.91" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8498" Name="Twilight Battle Orders">
+		<Objective Type="CollectItem" ItemId="20803" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Twilight Prophet" Id="15308" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7895.31" Y="1891.94" Z="8.45" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Cenarion Field Duty Tactical Assignments from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(8507))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Field Duty" QuestId="8507" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="23024" CollectCount="1" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(8507))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="Field Duty" QuestId="8507" GiverName="Windcaller Kaldon" GiverId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
+		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
 		<PickUp QuestName="Field Duty Papers" QuestId="8508" GiverName="Captain Blackanvil" GiverId="15440" />
 		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
-		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" />
-		<PickUp QuestName="Azure Templar" QuestId="8737" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<While Condition="((HasQuest(8737)) &amp;&amp; (!IsQuestCompleted(8737)))" >
+		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21245)">
+			<PickUp QuestName="Azure Templar" QuestId="8737" GiverName="Tactical Task Briefing I" GiverId="21245" GiverType="Item" />
+		</If>
+
+		<While Condition="((HasQuest(8737)) &amp;&amp; (!IsQuestCompleted(8737)))">
 			<CustomBehavior File="UseItemOn" QuestId="8737" MobId="15211" ItemId="21751" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="Earthen Templar" QuestId="8536" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<While Condition="((HasQuest(8536)) &amp;&amp; (!IsQuestCompleted(8536)))" >
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21751)">
+			<PickUp QuestName="Earthen Templar" QuestId="8536" GiverName="Tactical Task Briefing III" GiverId="21751" GiverType="Item" />
+		</If>
+
+		<While Condition="((HasQuest(8536)) &amp;&amp; (!IsQuestCompleted(8536)))">
 			<CustomBehavior File="UseItemOn" QuestId="8536" MobId="15307" ItemId="21165" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="Hive'Zora Scout Report" QuestId="8534" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Hive'Regal Scout Report" QuestId="8738" GiverName="Windcaller Kaldon" GiverId="15540" />
-		<PickUp QuestName="Twilight Marauders" QuestId="8740" GiverName="Windcaller Kaldon" GiverId="15540" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21165)">
+			<PickUp QuestName="Hive'Zora Scout Report" QuestId="8534" GiverName="Tactical Task Briefing VI" GiverId="21165" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21166)">
+			<PickUp QuestName="Hive'Regal Scout Report" QuestId="8738" GiverName="Tactical Task Briefing VII" GiverId="21166" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20944)">
+			<PickUp QuestName="Twilight Marauders" QuestId="8740" GiverName="Tactical Task Briefing IX" GiverId="20944" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Azure Templar" QuestId="8737" Type="KillMob" MobId="15211" KillCount="1" />
 		<Objective QuestName="Earthen Templar" QuestId="8536" Type="KillMob" MobId="15307" KillCount="1" />
 		<Objective QuestName="Hive'Zora Scout Report" QuestId="8534" Type="CollectItem" ItemId="21158" CollectCount="1" />
 		<Objective QuestName="Hive'Regal Scout Report" QuestId="8738" Type="CollectItem" ItemId="21160" CollectCount="1" />
 		<Objective QuestName="Twilight Marauders" QuestId="8740" Type="KillMob" MobId="15541" KillCount="1" />
-		<Objective QuestName="Twilight Marauders" QuestId="8740" Type="KillMob" MobId="15542" KillCount="5" />
-		<TurnIn QuestName="Azure Templar" QuestId="8737" TurnInName="Bor Wildmane" TurnInId="15306" />
-		<TurnIn QuestName="Earthen Templar" QuestId="8536" TurnInName="Bor Wildmane" TurnInId="15306" />
-		<TurnIn QuestName="Hive'Zora Scout Report" QuestId="8534" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="Hive'Regal Scout Report" QuestId="8738" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<TurnIn QuestName="Twilight Marauders" QuestId="8740" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<PickUp QuestName="Crimson Templar" QuestId="8537" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<While Condition="((HasQuest(8537)) &amp;&amp; (!IsQuestCompleted(8537)))" >
+		<Objective QuestName="Twilight Marauders" QuestId="8740" Type="KillMob" MobId="15542" KillCount="2" />
+		<!-- REVIEW Q8737 Azure Templar: start item 21245 Tactical Task Briefing I has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8737)) &amp;&amp; (IsQuestCompleted(8737)))">
+			<TurnIn QuestName="Azure Templar" QuestId="8737" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		</If>
+
+		<If Condition="((HasQuest(8737)) &amp;&amp; (!IsQuestCompleted(8737)))">
+			<AbandonQuest QuestId="8737" />
+		</If>
+
+		<!-- REVIEW Q8536 Earthen Templar: start item 21751 Tactical Task Briefing III has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8536)) &amp;&amp; (IsQuestCompleted(8536)))">
+			<TurnIn QuestName="Earthen Templar" QuestId="8536" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		</If>
+
+		<If Condition="((HasQuest(8536)) &amp;&amp; (!IsQuestCompleted(8536)))">
+			<AbandonQuest QuestId="8536" />
+		</If>
+
+		<!-- REVIEW Q8534 Hive'Zora Scout Report: start item 21165 Tactical Task Briefing VI has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8534)) &amp;&amp; (IsQuestCompleted(8534)))">
+			<TurnIn QuestName="Hive'Zora Scout Report" QuestId="8534" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8534)) &amp;&amp; (!IsQuestCompleted(8534)))">
+			<AbandonQuest QuestId="8534" />
+		</If>
+
+		<!-- REVIEW Q8738 Hive'Regal Scout Report: start item 21166 Tactical Task Briefing VII has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8738)) &amp;&amp; (IsQuestCompleted(8738)))">
+			<TurnIn QuestName="Hive'Regal Scout Report" QuestId="8738" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8738)) &amp;&amp; (!IsQuestCompleted(8738)))">
+			<AbandonQuest QuestId="8738" />
+		</If>
+
+		<!-- REVIEW Q8740 Twilight Marauders: start item 20944 Tactical Task Briefing IX has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8740)) &amp;&amp; (IsQuestCompleted(8740)))">
+			<TurnIn QuestName="Twilight Marauders" QuestId="8740" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8740)) &amp;&amp; (!IsQuestCompleted(8740)))">
+			<AbandonQuest QuestId="8740" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20945)">
+			<PickUp QuestName="Crimson Templar" QuestId="8537" GiverName="Tactical Task Briefing II" GiverId="20945" GiverType="Item" />
+		</If>
+
+		<While Condition="((HasQuest(8537)) &amp;&amp; (!IsQuestCompleted(8537)))">
 			<CustomBehavior File="UseItemOn" QuestId="8537" MobId="15209" ItemId="20947" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="Hoary Templar" QuestId="8535" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<While Condition="((HasQuest(8535)) &amp;&amp; (!IsQuestCompleted(8535)))" >
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20947)">
+			<PickUp QuestName="Hoary Templar" QuestId="8535" GiverName="Tactical Task Briefing IV" GiverId="20947" GiverType="Item" />
+		</If>
+
+		<While Condition="((HasQuest(8535)) &amp;&amp; (!IsQuestCompleted(8535)))">
 			<CustomBehavior File="UseItemOn" QuestId="8535" MobId="15212" ItemId="20948" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="The Four Dukes" QuestId="8538" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<While Condition="((HasQuest(8538)) &amp;&amp; (!IsQuestCompleted(8538)))" >
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20948)">
+			<PickUp QuestName="The Four Dukes" QuestId="8538" GiverName="Tactical Task Briefing V" GiverId="20948" GiverType="Item" />
+		</If>
+
+		<While Condition="((HasQuest(8538)) &amp;&amp; (!IsQuestCompleted(8538)))">
 			<CustomBehavior File="UseItemOn" QuestId="8538" MobId="15206" ItemId="21167" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<PickUp QuestName="Hive'Ashi Scout Report" QuestId="8739" GiverName="Windcaller Proudhorn" GiverId="15191" />
-		<PickUp QuestName="Twilight Battle Orders" QuestId="8498" GiverName="Windcaller Proudhorn" GiverId="15191" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21167)">
+			<PickUp QuestName="Hive'Ashi Scout Report" QuestId="8739" GiverName="Tactical Task Briefing VIII" GiverId="21167" GiverType="Item" />
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20943)">
+			<PickUp QuestName="Twilight Battle Orders" QuestId="8498" GiverName="Tactical Task Briefing X" GiverId="20943" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Crimson Templar" QuestId="8537" Type="KillMob" MobId="15209" KillCount="1" />
 		<Objective QuestName="Hoary Templar" QuestId="8535" Type="KillMob" MobId="15212" KillCount="1" />
 		<Objective QuestName="The Four Dukes" QuestId="8538" Type="KillMob" MobId="15206" KillCount="1" />
@@ -93,11 +210,51 @@
 		<Objective QuestName="The Four Dukes" QuestId="8538" Type="KillMob" MobId="15208" KillCount="1" />
 		<Objective QuestName="Hive'Ashi Scout Report" QuestId="8739" Type="CollectItem" ItemId="21161" CollectCount="1" />
 		<Objective QuestName="Twilight Battle Orders" QuestId="8498" Type="CollectItem" ItemId="20803" CollectCount="1" />
-		<TurnIn QuestName="Crimson Templar" QuestId="8537" TurnInName="Bor Wildmane" TurnInId="15306" />
-		<TurnIn QuestName="Hoary Templar" QuestId="8535" TurnInName="Bor Wildmane" TurnInId="15306" />
-		<TurnIn QuestName="The Four Dukes" QuestId="8538" TurnInName="Commander Mar'alith" TurnInId="15181" />
-		<TurnIn QuestName="Twilight Battle Orders" QuestId="8498" TurnInName="Commander Mar'alith" TurnInId="15181" />
-		<TurnIn QuestName="Hive'Ashi Scout Report" QuestId="8739" TurnInName="Windcaller Proudhorn" TurnInId="15191" />
-		<Objective QuestName="Field Duty Papers" QuestId="8508" Type="CollectItem" ItemId="20809" CollectCount="1" />
+		<!-- REVIEW Q8537 Crimson Templar: start item 20945 Tactical Task Briefing II has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8537)) &amp;&amp; (IsQuestCompleted(8537)))">
+			<TurnIn QuestName="Crimson Templar" QuestId="8537" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		</If>
+
+		<If Condition="((HasQuest(8537)) &amp;&amp; (!IsQuestCompleted(8537)))">
+			<AbandonQuest QuestId="8537" />
+		</If>
+
+		<!-- REVIEW Q8535 Hoary Templar: start item 20947 Tactical Task Briefing IV has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8535)) &amp;&amp; (IsQuestCompleted(8535)))">
+			<TurnIn QuestName="Hoary Templar" QuestId="8535" TurnInName="Bor Wildmane" TurnInId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
+		</If>
+
+		<If Condition="((HasQuest(8535)) &amp;&amp; (!IsQuestCompleted(8535)))">
+			<AbandonQuest QuestId="8535" />
+		</If>
+
+		<!-- REVIEW Q8538 The Four Dukes: start item 20948 Tactical Task Briefing V has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8538)) &amp;&amp; (IsQuestCompleted(8538)))">
+			<TurnIn QuestName="The Four Dukes" QuestId="8538" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		</If>
+
+		<If Condition="((HasQuest(8538)) &amp;&amp; (!IsQuestCompleted(8538)))">
+			<AbandonQuest QuestId="8538" />
+		</If>
+
+		<!-- REVIEW Q8498 Twilight Battle Orders: start item 20943 Tactical Task Briefing X has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8498)) &amp;&amp; (IsQuestCompleted(8498)))">
+			<TurnIn QuestName="Twilight Battle Orders" QuestId="8498" TurnInName="Commander Mar'alith" TurnInId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
+		</If>
+
+		<If Condition="((HasQuest(8498)) &amp;&amp; (!IsQuestCompleted(8498)))">
+			<AbandonQuest QuestId="8498" />
+		</If>
+
+		<!-- REVIEW Q8739 Hive'Ashi Scout Report: start item 21167 Tactical Task Briefing VIII has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8739)) &amp;&amp; (IsQuestCompleted(8739)))">
+			<TurnIn QuestName="Hive'Ashi Scout Report" QuestId="8739" TurnInName="Windcaller Proudhorn" TurnInId="15191" X="-6847.81" Y="755.68" Z="42.2256" />
+		</If>
+
+		<If Condition="((HasQuest(8739)) &amp;&amp; (!IsQuestCompleted(8739)))">
+			<AbandonQuest QuestId="8739" />
+		</If>
+
+		<Objective QuestName="Field Duty Papers" QuestId="8508" Type="CollectItem" ItemId="23024" CollectCount="1" />
 	</QuestOrder>
 </HBProfile>

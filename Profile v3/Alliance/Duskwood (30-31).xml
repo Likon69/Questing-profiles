@@ -1,48 +1,85 @@
 <HBProfile>
 	<Name>Duskwood (30-31)</Name>
-	<MinLevel>30</MinLevel>
-	<MaxLevel>31</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Morley Eberlein" Entry="959" Type="Repair" X="-9548.45" Y="-709.983" Z="90.5103" />
+		<Vendor Name="Avette Fellwood" Entry="228" Type="Repair" X="-10517.2" Y="-1138.53" Z="26.1772" />
+		<Vendor Name="Barkeep Hann" Entry="274" Type="Food" X="-10509.3" Y="-1155.51" Z="28.0995" />
+		<Vendor Name="Innkeeper Trelayne" Entry="6790" Type="Food" X="-10516" Y="-1161.21" Z="28.1161" />
+		<Vendor Name="Morg Gnarltree" Entry="226" Type="Repair" X="-10596.6" Y="-1163.85" Z="30.0597" />
+		<Vendor Name="Toddrick" Entry="3935" Type="Food" X="-9466.42" Y="0.0613" Z="57.0335" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="181" Name="Look To The Stars">
+		<Objective Type="CollectItem" ItemId="1968" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Zzarc' Vul" Id="300" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11224.8" Y="-160.55" Z="5.96" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="173" Name="Worgen in the Woods">
 		<Objective Type="KillMob" MobId="533" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-10260.7" Y="-841.453" Z="42.5025" />
-				<Hotspot X="-10653.6" Y="-839.113" Z="61.197" />
-				<Hotspot X="-10388.0" Y="-815.53" Z="47.7868" />
-				<Hotspot X="-10264.2" Y="-714.354" Z="45.2232" />
-				<Hotspot X="-10412.2" Y="-924.673" Z="45.631" />
+				<Hotspot X="-10260.7" Y="-841.45" Z="42.5" />
+				<Hotspot X="-10653.6" Y="-839.11" Z="61.2" />
+				<Hotspot X="-10388" Y="-815.53" Z="47.79" />
+				<Hotspot X="-10264.2" Y="-714.35" Z="45.22" />
+				<Hotspot X="-10412.2" Y="-924.67" Z="45.63" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="58" Name="The Night Watch">
+		<Objective Type="KillMob" MobId="604" KillCount="20">
+			<Hotspots>
+				<Hotspot X="-10332.3" Y="122.91" Z="3.04" />
+				<Hotspot X="-10322.6" Y="140.17" Z="1.78" />
+				<Hotspot X="-10334.9" Y="137.4" Z="4.02" />
+				<Hotspot X="-10341.7" Y="172.72" Z="15.82" />
+				<Hotspot X="-10359.4" Y="202.73" Z="34.38" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1244" Name="The Missing Diplomat">
+		<Objective Type="CollectItem" ItemId="5947" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Defias Strongbox" Id="21052" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11014" Y="187.36" Z="28.79" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="221" Name="Worgen in the Woods">
 		<Objective Type="KillMob" MobId="205" KillCount="12">
 			<Hotspots>
-				<Hotspot X="-10646.8" Y="-884.137" Z="50.1853" />
-				<Hotspot X="-10467.1" Y="-810.72" Z="51.953" />
-				<Hotspot X="-10432.3" Y="-811.614" Z="50.0888" />
-				<Hotspot X="-10630.5" Y="-874.173" Z="49.2065" />
-				<Hotspot X="-10650.4" Y="-912.464" Z="52.1801" />
+				<Hotspot X="-10646.8" Y="-884.14" Z="50.19" />
+				<Hotspot X="-10467.1" Y="-810.72" Z="51.95" />
+				<Hotspot X="-10432.3" Y="-811.61" Z="50.09" />
+				<Hotspot X="-10630.5" Y="-874.17" Z="49.21" />
+				<Hotspot X="-10650.4" Y="-912.46" Z="52.18" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -56,24 +93,65 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="58" Name="The Night Watch">
-		<Objective Type="KillMob" MobId="604" KillCount="20">
+	<Quest Id="133" Name="Ghoulish Effigy">
+		<Objective Type="CollectItem" ItemId="884" CollectCount="7">
+			<CollectFrom>
+				<Mob Name="Flesh Eater" Id="3" />
+				<Mob Name="Bone Chewer" Id="210" />
+				<Mob Name="Brain Eater" Id="570" />
+				<Mob Name="Plague Spreader" Id="604" />
+				<Mob Name="Rotted One" Id="948" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-10332.3" Y="122.914" Z="3.0443" />
-				<Hotspot X="-10322.6" Y="140.166" Z="1.7805" />
-				<Hotspot X="-10334.9" Y="137.397" Z="4.0228" />
-				<Hotspot X="-10341.7" Y="172.724" Z="15.8161" />
-				<Hotspot X="-10359.4" Y="202.731" Z="34.3771" />
+				<Hotspot X="-10329.96" Y="132.53" Z="15.7" />
+				<Hotspot X="-10308.08" Y="151.4" Z="9.72" />
+				<Hotspot X="-10230.52" Y="154.74" Z="1.19" />
+				<Hotspot X="-10264.6" Y="172.47" Z="0.62" />
+				<Hotspot X="-10366.72" Y="149.78" Z="23.78" />
+				<Hotspot X="-10348.52" Y="189.19" Z="30.83" />
+				<Hotspot X="-10218.35" Y="198.54" Z="2.16" />
+				<Hotspot X="-10314.4" Y="219.84" Z="34.04" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="1244" Name="The Missing Diplomat">
-		<Objective Type="CollectItem" ItemId="5947" CollectCount="1">
+	<Quest Id="134" Name="Ogre Thieves">
+		<Objective Type="CollectItem" ItemId="1349" CollectCount="1">
 			<CollectFrom>
-				<GameObject Name="Defias Strongbox" Id="21052" />
+				<GameObject Name="Abercrombie's Crate" Id="119" />
+				<GameObject Name="Tirisfal" Id="1688" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-11014.0" Y="187.36" Z="28.79" />
+				<Hotspot X="-11091" Y="-68.96" Z="15.49" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="98" Name="The Legend of Stalvan">
+		<Objective Type="CollectItem" ItemId="3629" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Stalvan Mistmantle" Id="315" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10368" Y="-1254.99" Z="35.92" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="222" Name="Worgen in the Woods">
+		<Objective Type="KillMob" MobId="920" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-11077.6" Y="-1140.17" Z="42.84" />
+				<Hotspot X="-11106.5" Y="-1160.67" Z="42.25" />
+				<Hotspot X="-11133.2" Y="-1167.76" Z="43" />
+				<Hotspot X="-11149.3" Y="-1166.35" Z="43.97" />
+				<Hotspot X="-11103.3" Y="-1151.91" Z="41.92" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="206" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-11023.3" Y="-1147.91" Z="38.71" />
+				<Hotspot X="-11041.6" Y="-1125.62" Z="38.6" />
+				<Hotspot X="-11025.6" Y="-1137.82" Z="38.71" />
+				<Hotspot X="-10948" Y="-1118.83" Z="38.74" />
+				<Hotspot X="-10980.1" Y="-1119.2" Z="38.71" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -87,98 +165,108 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="222" Name="Worgen in the Woods">
-		<Objective Type="KillMob" MobId="920" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-11077.6" Y="-1140.17" Z="42.8358" />
-				<Hotspot X="-11106.5" Y="-1160.67" Z="42.2494" />
-				<Hotspot X="-11133.2" Y="-1167.76" Z="43.0021" />
-				<Hotspot X="-11149.3" Y="-1166.35" Z="43.9705" />
-				<Hotspot X="-11103.3" Y="-1151.91" Z="41.9221" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="206" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-11023.3" Y="-1147.91" Z="38.7108" />
-				<Hotspot X="-11041.6" Y="-1125.62" Z="38.6025" />
-				<Hotspot X="-11025.6" Y="-1137.82" Z="38.7108" />
-				<Hotspot X="-10948.0" Y="-1118.83" Z="38.7397" />
-				<Hotspot X="-10980.1" Y="-1119.2" Z="38.7097" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Duskwood (30-31) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1179))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="-3999.067" Y="-4726.306" Z="4.3842" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3999.067" WaitAtY="-4726.306" WaitAtZ="4.3842" TransportStartX="-4016.4" TransportStartY="-4740.6" TransportStartZ="0" StandOnX="-4006.659" StandOnY="-4734.664" StandOnZ="6.0765" TransportEndX="-3905.2" TransportEndY="-585.8" TransportEndZ="0" GetOffX="-3904.1" GetOffY="-605.2" GetOffZ="5.3" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="The Brassbolts Brothers" QuestId="1179" GiverName="Pilot Longbeard" GiverId="2092" />
-		<TurnIn QuestName="Blessed Arm" QuestId="322" TurnInName="Grimand Elmore" TurnInId="1416" />
-		<PickUp QuestName="Armed and Ready" QuestId="325" GiverName="Grimand Elmore" GiverId="1416" />
-		<TurnIn QuestName="Cleansing the Eye" QuestId="293" TurnInName="Archbishop Benedictus" TurnInId="1284" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1274" GiverName="Thomas" GiverId="4982" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1274" TurnInName="Bishop DeLavey" TurnInId="4960" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1241" GiverName="Bishop DeLavey" GiverId="4960" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1241" TurnInName="Jorgen" TurnInId="4959" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1242" GiverName="Jorgen" GiverId="4959" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1242" TurnInName="Elling Trias" TurnInId="482" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1243" GiverName="Elling Trias" GiverId="482" />
-		<Objective QuestName="The Legend of Stalvan" QuestId="74" Type="CollectItem" ItemId="916" CollectCount="1" />
-		<Objective QuestName="Juice Delivery" QuestId="159" Type="CollectItem" ItemId="1451" CollectCount="1" />
-		<PickUp QuestName="Look To The Stars" QuestId="181" GiverName="Viktori Prism'Antras" GiverId="276" />
-		<PickUp QuestName="Worgen in the Woods" QuestId="173" GiverName="Calor" GiverId="663" />
-		<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1243" TurnInName="Watcher Backus" TurnInId="840" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1244" GiverName="Watcher Backus" GiverId="840" />
+		<PickUp QuestName="The Brassbolts Brothers" QuestId="1179" GiverName="Pilot Longbeard" GiverId="2092" X="-5065.23" Y="-1288.6" Z="502.047" />
+		<TurnIn QuestName="Blessed Arm" QuestId="322" TurnInName="Grimand Elmore" TurnInId="1416" X="-8387" Y="685.202" Z="95.356" />
+		<PickUp QuestName="Armed and Ready" QuestId="325" GiverName="Grimand Elmore" GiverId="1416" X="-8387" Y="685.202" Z="95.356" />
+		<TurnIn QuestName="Cleansing the Eye" QuestId="293" TurnInName="Archbishop Benedictus" TurnInId="1284" X="-8523" Y="848.783" Z="106.702" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1274" GiverName="Thomas" GiverId="4982" X="-8511" Y="860.464" Z="109.839" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1274" TurnInName="Bishop DeLavey" TurnInId="4960" X="-8507" Y="328.347" Z="120.885" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1241" GiverName="Bishop DeLavey" GiverId="4960" X="-8507" Y="328.347" Z="120.885" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1241" TurnInName="Jorgen" TurnInId="4959" X="-8981.78" Y="397.36" Z="75.9548" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1242" GiverName="Jorgen" GiverId="4959" X="-8981.78" Y="397.36" Z="75.9548" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1242" TurnInName="Elling Trias" TurnInId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1243" GiverName="Elling Trias" GiverId="482" X="-8854.12" Y="575.652" Z="101.15" />
+		<PickUp QuestName="Look To The Stars" QuestId="181" GiverName="Viktori Prism'Antras" GiverId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
+		<PickUp QuestName="Worgen in the Woods" QuestId="173" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<PickUp QuestName="The Night Watch" QuestId="58" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1243" TurnInName="Watcher Backus" TurnInId="840" X="-10320.5" Y="-1125.69" Z="21.832" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1244" GiverName="Watcher Backus" GiverId="840" X="-10320.5" Y="-1125.69" Z="21.832" />
 		<Objective QuestName="Worgen in the Woods" QuestId="173" Type="KillMob" MobId="533" KillCount="6" />
-		<TurnIn QuestName="Worgen in the Woods" QuestId="173" TurnInName="Calor" TurnInId="663" />
-		<PickUp QuestName="Worgen in the Woods" QuestId="221" GiverName="Calor" GiverId="663" />
-		<Objective QuestName="An Old History Book" QuestId="337" Type="CollectItem" ItemId="2794" CollectCount="1" />
-		<While Condition="((HasQuest(221)) &amp;&amp; (!IsQuestCompleted(221)))" >
+		<TurnIn QuestName="Worgen in the Woods" QuestId="173" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<PickUp QuestName="Worgen in the Woods" QuestId="221" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 2794)">
+			<CustomBehavior File="CollectThings" CollectItemId="2794" CollectItemCount="1" HuntingGroundRadius="120" MobId="3" MobId2="48" MobId3="202" MobId4="203" MobId5="205" MobId6="206" X="-10625.3333" Y="-890.137" Z="49.2526">
+				<Hotspot X="-10625.33" Y="-890.14" Z="49.25" />
+				<Hotspot X="-10576.1" Y="-955.15" Z="48.4" />
+				<Hotspot X="-10609.6" Y="-979.2" Z="62.49" />
+				<Hotspot X="-10532.95" Y="-974.22" Z="48.84" />
+				<Hotspot X="-10530.9" Y="-786.68" Z="57.44" />
+				<Hotspot X="-10470.8" Y="-824.44" Z="51.4" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(221)) &amp;&amp; (!IsQuestCompleted(221)))">
 			<CustomBehavior File="UseItemOn" QuestId="221" MobId="205" ItemId="2794" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-10646.8" Y="-884.137" Z="50.1853" />
 		</While>
-		<PickUp QuestName="An Old History Book" QuestId="337" GiverName="Avette Fellwood" GiverId="228" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 2794)">
+			<PickUp QuestName="An Old History Book" QuestId="337" GiverName="An Old History Book" GiverId="2794" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Worgen in the Woods" QuestId="221" Type="KillMob" MobId="205" KillCount="12" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="74" TurnInName="Marshal Haggard" TurnInId="294" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="75" GiverName="Marshal Haggard" GiverId="294" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="74" TurnInName="Marshal Haggard" TurnInId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="75" GiverName="Marshal Haggard" GiverId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
 		<Objective QuestName="The Legend of Stalvan" QuestId="75" Type="CollectItem" ItemId="921" CollectCount="1" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="75" TurnInName="Marshal Haggard" TurnInId="294" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="78" GiverName="Marshal Haggard" GiverId="294" />
-		<TurnIn QuestName="Juice Delivery" QuestId="159" TurnInName="Abercrombie" TurnInId="289" />
-		<PickUp QuestName="Ghoulish Effigy" QuestId="133" GiverName="Abercrombie" GiverId="289" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="75" TurnInName="Marshal Haggard" TurnInId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="78" GiverName="Marshal Haggard" GiverId="294" X="-9545.33" Y="-1401.1" Z="54.1478" />
+		<TurnIn QuestName="Juice Delivery" QuestId="159" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<PickUp QuestName="Ghoulish Effigy" QuestId="133" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
 		<Objective QuestName="Ghoulish Effigy" QuestId="133" Type="CollectItem" ItemId="884" CollectCount="7" />
 		<Objective QuestName="The Night Watch" QuestId="58" Type="KillMob" MobId="604" KillCount="20" />
-		<TurnIn QuestName="Ghoulish Effigy" QuestId="133" TurnInName="Abercrombie" TurnInId="289" />
-		<PickUp QuestName="Ogre Thieves" QuestId="134" GiverName="Abercrombie" GiverId="289" />
+		<TurnIn QuestName="Ghoulish Effigy" QuestId="133" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<PickUp QuestName="Ogre Thieves" QuestId="134" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
 		<Objective QuestName="The Missing Diplomat" QuestId="1244" Type="CollectItem" ItemId="5947" CollectCount="1" />
 		<Objective QuestName="Ogre Thieves" QuestId="134" Type="CollectItem" ItemId="1349" CollectCount="1" />
 		<Objective QuestName="Look To The Stars" QuestId="181" Type="CollectItem" ItemId="1968" CollectCount="1" />
-		<TurnIn QuestName="Ogre Thieves" QuestId="134" TurnInName="Abercrombie" TurnInId="289" />
-		<PickUp QuestName="Note to the Mayor" QuestId="160" GiverName="Abercrombie" GiverId="289" />
-		<TurnIn QuestName="Armed and Ready" QuestId="325" TurnInName="Sven Yorgen" TurnInId="311" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="78" TurnInName="Tavernkeep Smitts" TurnInId="273" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="79" GiverName="Tavernkeep Smitts" GiverId="273" />
-		<TurnIn QuestName="The Night Watch" QuestId="58" TurnInName="Commander Althea Ebonlocke" TurnInId="264" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="79" TurnInName="Commander Althea Ebonlocke" TurnInId="264" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="80" GiverName="Commander Althea Ebonlocke" GiverId="264" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="80" TurnInName="Clerk Daltry" TurnInId="267" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="97" GiverName="Clerk Daltry" GiverId="267" />
-		<TurnIn QuestName="Note to the Mayor" QuestId="160" TurnInName="Lord Ello Ebonlocke" TurnInId="263" />
-		<PickUp QuestName="Translate Abercrombie's Note" QuestId="251" GiverName="Lord Ello Ebonlocke" GiverId="263" />
-		<TurnIn QuestName="Translate Abercrombie's Note" QuestId="251" TurnInName="Sirra Von'Indi" TurnInId="268" />
-		<PickUp QuestName="Wait for Sirra to Finish" QuestId="401" GiverName="Sirra Von'Indi" GiverId="268" />
-		<TurnIn QuestName="Wait for Sirra to Finish" QuestId="401" TurnInName="Sirra Von'Indi" TurnInId="268" />
-		<PickUp QuestName="Translation to Ello" QuestId="252" GiverName="Sirra Von'Indi" GiverId="268" />
-		<TurnIn QuestName="Translation to Ello" QuestId="252" TurnInName="Lord Ello Ebonlocke" TurnInId="263" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="97" TurnInName="Commander Althea Ebonlocke" TurnInId="264" />
-		<PickUp QuestName="The Legend of Stalvan" QuestId="98" GiverName="Commander Althea Ebonlocke" GiverId="264" />
-		<TurnIn QuestName="Worgen in the Woods" QuestId="221" TurnInName="Calor" TurnInId="663" />
-		<PickUp QuestName="Worgen in the Woods" QuestId="222" GiverName="Calor" GiverId="663" />
-		<TurnIn QuestName="The Missing Diplomat" QuestId="1244" TurnInName="Watcher Backus" TurnInId="840" />
-		<PickUp QuestName="The Missing Diplomat" QuestId="1245" GiverName="Watcher Backus" GiverId="840" />
+		<TurnIn QuestName="Ogre Thieves" QuestId="134" TurnInName="Abercrombie" TurnInId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<PickUp QuestName="Note to the Mayor" QuestId="160" GiverName="Abercrombie" GiverId="289" X="-10283" Y="74.4014" Z="38.9313" />
+		<TurnIn QuestName="Armed and Ready" QuestId="325" TurnInName="Sven Yorgen" TurnInId="311" X="-10329.9" Y="623.241" Z="26.8738" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="78" TurnInName="Tavernkeep Smitts" TurnInId="273" X="-10517.4" Y="-1158.66" Z="28.0995" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="79" GiverName="Tavernkeep Smitts" GiverId="273" X="-10517.4" Y="-1158.66" Z="28.0995" />
+		<TurnIn QuestName="The Night Watch" QuestId="58" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="79" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="80" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="80" TurnInName="Clerk Daltry" TurnInId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="97" GiverName="Clerk Daltry" GiverId="267" X="-10560" Y="-1124.98" Z="30.071" />
+		<TurnIn QuestName="Note to the Mayor" QuestId="160" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<PickUp QuestName="Translate Abercrombie's Note" QuestId="251" GiverName="Lord Ello Ebonlocke" GiverId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<TurnIn QuestName="Translate Abercrombie's Note" QuestId="251" TurnInName="Sirra Von'Indi" TurnInId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<PickUp QuestName="Wait for Sirra to Finish" QuestId="401" GiverName="Sirra Von'Indi" GiverId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<TurnIn QuestName="Wait for Sirra to Finish" QuestId="401" TurnInName="Sirra Von'Indi" TurnInId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<PickUp QuestName="Translation to Ello" QuestId="252" GiverName="Sirra Von'Indi" GiverId="268" X="-10573.7" Y="-1128" Z="29.1669" />
+		<TurnIn QuestName="Translation to Ello" QuestId="252" TurnInName="Lord Ello Ebonlocke" TurnInId="263" X="-10552.2" Y="-1108.79" Z="31.5114" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="97" TurnInName="Commander Althea Ebonlocke" TurnInId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<PickUp QuestName="The Legend of Stalvan" QuestId="98" GiverName="Commander Althea Ebonlocke" GiverId="264" X="-10560.8" Y="-1153.7" Z="28.0765" />
+		<TurnIn QuestName="Worgen in the Woods" QuestId="221" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<PickUp QuestName="Worgen in the Woods" QuestId="222" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
+		<TurnIn QuestName="The Missing Diplomat" QuestId="1244" TurnInName="Watcher Backus" TurnInId="840" X="-10320.5" Y="-1125.69" Z="21.832" />
+		<PickUp QuestName="The Missing Diplomat" QuestId="1245" GiverName="Watcher Backus" GiverId="840" X="-10320.5" Y="-1125.69" Z="21.832" />
 		<Objective QuestName="The Legend of Stalvan" QuestId="98" Type="CollectItem" ItemId="3629" CollectCount="1" />
 		<Objective QuestName="A Noble Brew" QuestId="335" Type="CollectItem" ItemId="2779" CollectCount="1" />
-		<TurnIn QuestName="The Legend of Stalvan" QuestId="98" TurnInName="Madame Eva" TurnInId="265" />
-		<TurnIn QuestName="Look To The Stars" QuestId="181" TurnInName="Viktori Prism'Antras" TurnInId="276" />
+		<TurnIn QuestName="The Legend of Stalvan" QuestId="98" TurnInName="Madame Eva" TurnInId="265" X="-10532" Y="-1213.64" Z="28.1175" />
+		<TurnIn QuestName="Look To The Stars" QuestId="181" TurnInName="Viktori Prism'Antras" TurnInId="276" X="-10581.1" Y="-1321.31" Z="50.3933" />
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="920" KillCount="8" />
 		<Objective QuestName="Worgen in the Woods" QuestId="222" Type="KillMob" MobId="206" KillCount="8" />
 		<CustomBehavior File="LoadProfile" ProfileName="Stranglethorn Vale (31-32)" />

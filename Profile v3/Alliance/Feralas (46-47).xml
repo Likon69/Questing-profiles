@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Feralas (46-47)</Name>
-	<MinLevel>46</MinLevel>
-	<MaxLevel>47</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,14 +16,101 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Angus Stern" Entry="7733" Type="Repair" X="-7158.96" Y="-3841.61" Z="8.8481" />
-		<Vendor Name="Innkeeper Shaunessy" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Innkeeper Thulfram" Entry="7744" Type="Food" X="399.725" Y="-2119.74" Z="131.563" />
+		<Vendor Name="Pratt McGrubben" Entry="7852" Type="Repair" X="-4345.38" Y="3312.75" Z="10.0974" />
+		<Vendor Name="Mardrack Greenwell" Entry="7941" Type="Food" X="-4364.43" Y="3284.22" Z="13.6339" />
+		<Vendor Name="Dulciea Frostmoon" Entry="10293" Type="Repair" X="-4365.9" Y="3302" Z="13.6392" />
+		<Vendor Name="Innkeeper Shyria" Entry="7736" Type="Food" X="-4381.59" Y="3289.45" Z="13.6266" />
+		<Vendor Name="Harklane" Entry="7943" Type="Food" X="-4509.71" Y="3285.25" Z="14.9415" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="2821" Name="The Mark of Quality">
+		<Objective Type="CollectItem" ItemId="8973" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Feral Scar Yeti" Id="5292" />
+				<Mob Name="Hulking Feral Scar" Id="5293" />
+				<Mob Name="Enraged Feral Scar" Id="5295" />
+				<Mob Name="Bloodroar the Stalker" Id="5346" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5091.24" Y="1928.43" Z="89.19" />
+				<Hotspot X="-5060.41" Y="1876.97" Z="85.05" />
+				<Hotspot X="-5034.4" Y="1838.07" Z="77.75" />
+				<Hotspot X="-5145.88" Y="1886.02" Z="100.55" />
+				<Hotspot X="-5080.21" Y="1826.67" Z="79.09" />
+				<Hotspot X="-5020.31" Y="1781.48" Z="68.05" />
+				<Hotspot X="-5144.24" Y="1821.73" Z="92.43" />
+				<Hotspot X="-4974.24" Y="1750.63" Z="64.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2982" Name="The High Wilderness">
+		<Objective Type="KillMob" MobId="5236" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-5739.76" Y="1222.35" Z="66.35" />
+				<Hotspot X="-5543.93" Y="993.7" Z="16.51" />
+				<Hotspot X="-5754.1" Y="1123.4" Z="68.67" />
+				<Hotspot X="-5567.08" Y="1098.5" Z="17.76" />
+				<Hotspot X="-5554.51" Y="1017.75" Z="14.2" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5240" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-5715.53" Y="1178.7" Z="66.61" />
+				<Hotspot X="-5596.2" Y="1325.79" Z="29.51" />
+				<Hotspot X="-5006.37" Y="1309.33" Z="94.43" />
+				<Hotspot X="-5769.19" Y="1404.14" Z="54.22" />
+				<Hotspot X="-4922.92" Y="1218.75" Z="62.77" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="5232" KillCount="8">
+			<Hotspots>
+				<Hotspot X="-3531.52" Y="224.62" Z="149.39" />
+				<Hotspot X="-3586.61" Y="215.16" Z="140.1" />
+				<Hotspot X="-3586.44" Y="199.91" Z="136.56" />
+				<Hotspot X="-4890.78" Y="1243.28" Z="77.45" />
+				<Hotspot X="-4913.71" Y="1175.46" Z="58.89" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2869" Name="Against the Hatecrest">
+		<Objective Type="CollectItem" ItemId="9247" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Hatecrest Warrior" Id="5331" />
+				<Mob Name="Hatecrest Wave Rider" Id="5332" />
+				<Mob Name="Hatecrest Serpent Guard" Id="5333" />
+				<Mob Name="Hatecrest Myrmidon" Id="5334" />
+				<Mob Name="Hatecrest Screamer" Id="5335" />
+				<Mob Name="Hatecrest Sorceress" Id="5336" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-4736.41" Y="3441.85" Z="18.33" />
+				<Hotspot X="-4681.5" Y="3131.01" Z="1.03" />
+				<Hotspot X="-4777.91" Y="3496.47" Z="10.77" />
+				<Hotspot X="-4814.22" Y="3456.78" Z="11.82" />
+				<Hotspot X="-4842.74" Y="3395.09" Z="15.69" />
+				<Hotspot X="-4709.96" Y="3587.5" Z="12.32" />
+				<Hotspot X="-4752.37" Y="3113.37" Z="0.2" />
+				<Hotspot X="-4813.53" Y="3522.13" Z="9.13" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2870" Name="Against Lord Shalzaru">
+		<Objective Type="CollectItem" ItemId="9248" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Lord Shalzaru" Id="8136" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-5631.35" Y="3461" Z="2.6" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="2741" Name="The Super Egg-O-Matic">
 		<Objective Type="CollectItem" ItemId="8564" CollectCount="1">
 			<CollectFrom>
@@ -44,104 +128,138 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="2982" Name="The High Wilderness">
-		<Objective Type="KillMob" MobId="5236" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-5739.76" Y="1222.35" Z="66.3547" />
-				<Hotspot X="-5543.93" Y="993.696" Z="16.5127" />
-				<Hotspot X="-5754.1" Y="1123.4" Z="68.6717" />
-				<Hotspot X="-5567.08" Y="1098.5" Z="17.7634" />
-				<Hotspot X="-5554.51" Y="1017.75" Z="14.1975" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="5240" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-5715.53" Y="1178.7" Z="66.6073" />
-				<Hotspot X="-5596.2" Y="1325.79" Z="29.5073" />
-				<Hotspot X="-5006.37" Y="1309.33" Z="94.4347" />
-				<Hotspot X="-5769.19" Y="1404.14" Z="54.2198" />
-				<Hotspot X="-4922.92" Y="1218.75" Z="62.771" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="5232" KillCount="8">
-			<Hotspots>
-				<Hotspot X="-3531.52" Y="224.624" Z="149.388" />
-				<Hotspot X="-3586.61" Y="215.162" Z="140.098" />
-				<Hotspot X="-3586.44" Y="199.911" Z="136.561" />
-				<Hotspot X="-4890.78" Y="1243.28" Z="77.4524" />
-				<Hotspot X="-4913.71" Y="1175.46" Z="58.8896" />
-			</Hotspots>
-		</Objective>
-	</Quest>
 	<Quest Id="2970" Name="Doling Justice">
 		<Objective Type="KillMob" MobId="7727" KillCount="6">
 			<Hotspots>
-				<Hotspot X="-4579.8" Y="859.037" Z="62.5833" />
-				<Hotspot X="-4559.06" Y="657.949" Z="57.7953" />
-				<Hotspot X="-4503.51" Y="709.421" Z="68.8389" />
-				<Hotspot X="-4492.88" Y="785.292" Z="65.7131" />
-				<Hotspot X="-4515.39" Y="811.049" Z="63.0038" />
+				<Hotspot X="-4579.8" Y="859.04" Z="62.58" />
+				<Hotspot X="-4559.06" Y="657.95" Z="57.8" />
+				<Hotspot X="-4503.51" Y="709.42" Z="68.84" />
+				<Hotspot X="-4492.88" Y="785.29" Z="65.71" />
+				<Hotspot X="-4515.39" Y="811.05" Z="63" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7725" KillCount="10">
 			<Hotspots>
-				<Hotspot X="-4162.52" Y="778.928" Z="148.408" />
-				<Hotspot X="-4538.72" Y="672.333" Z="60.2229" />
-				<Hotspot X="-4553.5" Y="779.687" Z="47.8547" />
-				<Hotspot X="-4600.34" Y="822.483" Z="47.3132" />
-				<Hotspot X="-4514.15" Y="723.69" Z="62.5522" />
+				<Hotspot X="-4162.52" Y="778.93" Z="148.41" />
+				<Hotspot X="-4538.72" Y="672.33" Z="60.22" />
+				<Hotspot X="-4553.5" Y="779.69" Z="47.85" />
+				<Hotspot X="-4600.34" Y="822.48" Z="47.31" />
+				<Hotspot X="-4514.15" Y="723.69" Z="62.55" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7726" KillCount="12">
 			<Hotspots>
-				<Hotspot X="-4227.26" Y="648.075" Z="70.6681" />
-				<Hotspot X="-4562.84" Y="860.832" Z="60.8183" />
-				<Hotspot X="-4545.76" Y="657.794" Z="58.7566" />
-				<Hotspot X="-4581.77" Y="828.687" Z="48.8691" />
-				<Hotspot X="-4529.06" Y="792.544" Z="59.7115" />
+				<Hotspot X="-4227.26" Y="648.08" Z="70.67" />
+				<Hotspot X="-4562.84" Y="860.83" Z="60.82" />
+				<Hotspot X="-4545.76" Y="657.79" Z="58.76" />
+				<Hotspot X="-4581.77" Y="828.69" Z="48.87" />
+				<Hotspot X="-4529.06" Y="792.54" Z="59.71" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="3661" Name="Favored of Elune?">
+		<Objective Type="CollectItem" ItemId="10819" CollectCount="15">
+			<CollectFrom>
+				<GameObject Name="Wildkin Feather" Id="153239" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="258.3" Y="-2325.22" Z="115.65" />
+				<Hotspot X="229.08" Y="-2347.75" Z="114.73" />
+				<Hotspot X="118.29" Y="-2181.55" Z="105.9" />
+				<Hotspot X="358.83" Y="-2827.92" Z="121.34" />
+				<Hotspot X="364.28" Y="-2857" Z="117.48" />
+				<Hotspot X="160.26" Y="-2430.17" Z="126.85" />
+				<Hotspot X="61.14" Y="-2185.37" Z="106.8" />
+				<Hotspot X="360.9" Y="-2940.11" Z="120.08" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Feralas (46-47) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(3022))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4037.81" Y="-11555.5" Z="-138.32" />
+				<CustomBehavior File="GoThruPortal" X="-4037.81" Y="-11555.5" Z="-138.32" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="593.5266" Y="-5103.054" Z="5.2604" />
+				<CustomBehavior File="UseTransport" TransportId="181688" DestName="The Northspear" WaitAtX="593.5266" WaitAtY="-5103.054" WaitAtZ="5.2604" TransportStartX="584" TransportStartY="-5118.9" TransportStartZ="0" StandOnX="589.7733" StandOnY="-5118.479" StandOnZ="9.5609" TransportEndX="-3712.7" TransportEndY="-569.5" TransportEndZ="0" GetOffX="-3720.1" GetOffY="-589.2" GetOffZ="6.4" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-3904.1" Y="-605.2" Z="5.3" />
+				<CustomBehavior File="UseTransport" TransportId="176231" DestName="The Lady Mehley" WaitAtX="-3904.1" WaitAtY="-605.2" WaitAtZ="5.3" TransportStartX="-3905.2" TransportStartY="-585.8" TransportStartZ="0" TransportEndX="-4016.4" TransportEndY="-4740.6" TransportEndZ="0" GetOffX="-3999.359" GetOffY="-4723.525" GetOffZ="4.3211" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Handle With Care" QuestId="3022" GiverName="Curgle Cranklehop" GiverId="7763" />
-		<Objective QuestName="Screecher Spirits" QuestId="3520" Type="CollectItem" ItemId="10699" CollectCount="1" />
-		<PickUp QuestName="The Mark of Quality" QuestId="2821" GiverName="Pratt McGrubben" GiverId="7852" />
-		<PickUp QuestName="The Missing Courier" QuestId="4124" GiverName="Latronicus Moonspear" GiverId="7877" />
-		<PickUp QuestName="The Ruins of Solarsal" QuestId="2866" GiverName="Shandris Feathermoon" GiverId="3936" />
-		<PickUp QuestName="In Search of Knowledge" QuestId="2939" GiverName="Troyas Moonbreeze" GiverId="7764" />
-		<PickUp QuestName="The High Wilderness" QuestId="2982" GiverName="Angelas Moonbreeze" GiverId="7900" />
-		<TurnIn QuestName="The Missing Courier" QuestId="4124" TurnInName="Ginro Hearthkindle" TurnInId="7880" />
-		<PickUp QuestName="The Missing Courier" QuestId="4125" GiverName="Ginro Hearthkindle" GiverId="7880" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(3022))">
+			<RunTo X="9661.83" Y="2509.61" Z="1331.63" />
+			<CustomBehavior File="GoThruPortal" X="9661.83" Y="2509.61" Z="1331.63" Timeout="60000" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+			<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<PickUp QuestName="Handle With Care" QuestId="3022" GiverName="Curgle Cranklehop" GiverId="7763" X="-7112.68" Y="-3831.32" Z="9.7369" />
+		<PickUp QuestName="The Mark of Quality" QuestId="2821" GiverName="Pratt McGrubben" GiverId="7852" X="-4345.38" Y="3312.75" Z="10.0974" />
+		<PickUp QuestName="The Missing Courier" QuestId="4124" GiverName="Latronicus Moonspear" GiverId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
+		<PickUp QuestName="The Ruins of Solarsal" QuestId="2866" GiverName="Shandris Feathermoon" GiverId="3936" X="-4505.82" Y="3337.48" Z="14.1203" />
+		<PickUp QuestName="In Search of Knowledge" QuestId="2939" GiverName="Troyas Moonbreeze" GiverId="7764" X="-4474.9" Y="3232.88" Z="13.7295" />
+		<PickUp QuestName="The High Wilderness" QuestId="2982" GiverName="Angelas Moonbreeze" GiverId="7900" X="-4480.03" Y="3229.6" Z="13.8128" />
+		<TurnIn QuestName="The Missing Courier" QuestId="4124" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<PickUp QuestName="The Missing Courier" QuestId="4125" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
 		<!-- Quest 2866 (The Ruins of Solarsal) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Return to Feathermoon Stronghold" QuestId="2867" GiverName="Ginro Hearthkindle" GiverId="7880" />
-		<TurnIn QuestName="Return to Feathermoon Stronghold" QuestId="2867" TurnInName="Shandris Feathermoon" TurnInId="3936" />
-		<PickUp QuestName="Against the Hatecrest" QuestId="3130" GiverName="Shandris Feathermoon" GiverId="3936" />
-		<TurnIn QuestName="Against the Hatecrest" QuestId="3130" TurnInName="Latronicus Moonspear" TurnInId="7877" />
-		<PickUp QuestName="Against the Hatecrest" QuestId="2869" GiverName="Latronicus Moonspear" GiverId="7877" />
+		<PickUp QuestName="Return to Feathermoon Stronghold" QuestId="2867" GiverName="Solarsal Gazebo" GiverId="142179" GiverType="Object" X="-4791.75" Y="3613.3" Z="12.5194" />
+		<TurnIn QuestName="Return to Feathermoon Stronghold" QuestId="2867" TurnInName="Shandris Feathermoon" TurnInId="3936" X="-4505.82" Y="3337.48" Z="14.1203" />
+		<PickUp QuestName="Against the Hatecrest" QuestId="3130" GiverName="Shandris Feathermoon" GiverId="3936" X="-4505.82" Y="3337.48" Z="14.1203" />
+		<TurnIn QuestName="Against the Hatecrest" QuestId="3130" TurnInName="Latronicus Moonspear" TurnInId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
+		<PickUp QuestName="Against the Hatecrest" QuestId="2869" GiverName="Latronicus Moonspear" GiverId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
 		<Objective QuestName="Against the Hatecrest" QuestId="2869" Type="CollectItem" ItemId="9247" CollectCount="10" />
-		<TurnIn QuestName="Against the Hatecrest" QuestId="2869" TurnInName="Latronicus Moonspear" TurnInId="7877" />
-		<PickUp QuestName="Against Lord Shalzaru" QuestId="2870" GiverName="Latronicus Moonspear" GiverId="7877" />
+		<TurnIn QuestName="Against the Hatecrest" QuestId="2869" TurnInName="Latronicus Moonspear" TurnInId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
+		<PickUp QuestName="Against Lord Shalzaru" QuestId="2870" GiverName="Latronicus Moonspear" GiverId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
 		<Objective QuestName="Against Lord Shalzaru" QuestId="2870" Type="CollectItem" ItemId="9248" CollectCount="1" />
-		<Objective QuestName="Against Lord Shalzaru" QuestId="2870" Type="CollectItem" ItemId="8705" CollectCount="1" />
-		<PickUp QuestName="Find OOX-22/FE!" QuestId="2766" GiverName="Faralorn" GiverId="7942" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 8705)">
+			<CustomBehavior File="CollectThings" CollectItemId="8705" CollectItemCount="1" HuntingGroundRadius="120" MobId="5229" MobId2="5232" MobId3="5234" MobId4="5236" MobId5="5237" MobId6="5238" X="-5025.715" Y="1305.03" Z="90.9341">
+				<Hotspot X="-5025.72" Y="1305.03" Z="90.93" />
+				<Hotspot X="-4988.33" Y="1295.74" Z="94.85" />
+				<Hotspot X="-4894.5" Y="1232.16" Z="71.98" />
+				<Hotspot X="-5380.02" Y="1361.16" Z="24.75" />
+				<Hotspot X="-5015.41" Y="1232.24" Z="53.86" />
+				<Hotspot X="-5065.68" Y="1224.44" Z="50.68" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 8705)">
+			<PickUp QuestName="Find OOX-22/FE!" QuestId="2766" GiverName="OOX-22/FE Distress Beacon" GiverId="8705" GiverType="Item" />
+		</If>
+
 		<!-- Quest 4125 (The Missing Courier) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Boat Wreckage" QuestId="4127" GiverName="Faralorn" GiverId="7942" />
-		<TurnIn QuestName="Boat Wreckage" QuestId="4127" TurnInName="Ginro Hearthkindle" TurnInId="7880" />
-		<PickUp QuestName="The Knife Revealed" QuestId="4129" GiverName="Ginro Hearthkindle" GiverId="7880" />
-		<TurnIn QuestName="Against Lord Shalzaru" QuestId="2870" TurnInName="Latronicus Moonspear" TurnInId="7877" />
-		<PickUp QuestName="Delivering the Relic" QuestId="2871" GiverName="Latronicus Moonspear" GiverId="7877" />
-		<TurnIn QuestName="Delivering the Relic" QuestId="2871" TurnInName="Vestia Moonspear" TurnInId="7878" />
-		<TurnIn QuestName="The Knife Revealed" QuestId="4129" TurnInName="Quintis Jonespyre" TurnInId="7879" />
-		<PickUp QuestName="Psychometric Reading" QuestId="4130" GiverName="Quintis Jonespyre" GiverId="7879" />
-		<TurnIn QuestName="Psychometric Reading" QuestId="4130" TurnInName="Ginro Hearthkindle" TurnInId="7880" />
-		<PickUp QuestName="The Woodpaw Gnolls" QuestId="4131" GiverName="Ginro Hearthkindle" GiverId="7880" />
-		<While Condition="((HasQuest(3520)) &amp;&amp; (!IsQuestCompleted(3520)))" >
+		<PickUp QuestName="Boat Wreckage" QuestId="4127" GiverName="Wrecked Row Boat" GiverId="164909" GiverType="Object" X="-5376.7" Y="2283.4" Z="-2.0686" />
+		<TurnIn QuestName="Boat Wreckage" QuestId="4127" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<PickUp QuestName="The Knife Revealed" QuestId="4129" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<TurnIn QuestName="Against Lord Shalzaru" QuestId="2870" TurnInName="Latronicus Moonspear" TurnInId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
+		<PickUp QuestName="Delivering the Relic" QuestId="2871" GiverName="Latronicus Moonspear" GiverId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
+		<TurnIn QuestName="Delivering the Relic" QuestId="2871" TurnInName="Vestia Moonspear" TurnInId="7878" X="-4454.42" Y="3351.35" Z="14.9415" />
+		<TurnIn QuestName="The Knife Revealed" QuestId="4129" TurnInName="Quintis Jonespyre" TurnInId="7879" X="-4395.55" Y="3186.61" Z="58.6435" />
+		<PickUp QuestName="Psychometric Reading" QuestId="4130" GiverName="Quintis Jonespyre" GiverId="7879" X="-4395.55" Y="3186.61" Z="58.6435" />
+		<TurnIn QuestName="Psychometric Reading" QuestId="4130" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<PickUp QuestName="The Woodpaw Gnolls" QuestId="4131" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<While Condition="((HasQuest(3520)) &amp;&amp; (!IsQuestCompleted(3520)))">
 			<CustomBehavior File="UseItemOn" QuestId="3520" MobId="8612" ItemId="10699" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
-		<TurnIn QuestName="Find OOX-22/FE!" QuestId="2766" TurnInName="Homing Robot OOX-22/FE" TurnInId="7807" />
+
+		<TurnIn QuestName="Find OOX-22/FE!" QuestId="2766" TurnInName="Homing Robot OOX-22/FE" TurnInId="7807" X="-4947.29" Y="1733.71" Z="62.246" />
 		<Objective QuestName="The Mark of Quality" QuestId="2821" Type="CollectItem" ItemId="8973" CollectCount="10" />
 		<Objective QuestName="The Super Egg-O-Matic" QuestId="2741" Type="CollectItem" ItemId="8564" CollectCount="1" />
 		<Objective QuestName="The High Wilderness" QuestId="2982" Type="KillMob" MobId="5236" KillCount="8" />
@@ -149,35 +267,47 @@
 		<Objective QuestName="The High Wilderness" QuestId="2982" Type="KillMob" MobId="5232" KillCount="8" />
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6258" CollectCount="3" />
 		<Objective QuestName="Rhapsody's Kalimdor Kocktail" QuestId="1452" Type="CollectItem" ItemId="6259" CollectCount="3" />
-		<PickUp QuestName="Freedom for All Creatures" QuestId="2969" GiverName="Kindal Moonweaver" GiverId="7956" />
-		<TurnIn QuestName="Freedom for All Creatures" QuestId="2969" TurnInName="Kindal Moonweaver" TurnInId="7956" />
-		<PickUp QuestName="Doling Justice" QuestId="2970" GiverName="Jer'kai Moonweaver" GiverId="7957" />
+		<PickUp QuestName="Freedom for All Creatures" QuestId="2969" GiverName="Kindal Moonweaver" GiverId="7956" X="-4481.82" Y="858.533" Z="74.6309" />
+		<TurnIn QuestName="Freedom for All Creatures" QuestId="2969" TurnInName="Kindal Moonweaver" TurnInId="7956" X="-4481.82" Y="858.533" Z="74.6309" />
+		<PickUp QuestName="Doling Justice" QuestId="2970" GiverName="Jer'kai Moonweaver" GiverId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
 		<Objective QuestName="Doling Justice" QuestId="2970" Type="KillMob" MobId="7727" KillCount="6" />
 		<Objective QuestName="Doling Justice" QuestId="2970" Type="KillMob" MobId="7725" KillCount="10" />
 		<Objective QuestName="Doling Justice" QuestId="2970" Type="KillMob" MobId="7726" KillCount="12" />
-		<TurnIn QuestName="Doling Justice" QuestId="2970" TurnInName="Jer'kai Moonweaver" TurnInId="7957" />
-		<PickUp QuestName="Doling Justice" QuestId="2972" GiverName="Jer'kai Moonweaver" GiverId="7957" />
+		<TurnIn QuestName="Doling Justice" QuestId="2970" TurnInName="Jer'kai Moonweaver" TurnInId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
+		<PickUp QuestName="Doling Justice" QuestId="2972" GiverName="Jer'kai Moonweaver" GiverId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
 		<!-- Quest 4131 (The Woodpaw Gnolls) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="The Writhing Deep" QuestId="4135" GiverName="Jer'kai Moonweaver" GiverId="7957" />
-		<PickUp QuestName="Thalanaar Delivery" QuestId="4281" GiverName="Jer'kai Moonweaver" GiverId="7957" />
+		<PickUp QuestName="The Writhing Deep" QuestId="4135" GiverName="Large Leather Backpacks" GiverId="164953" GiverType="Object" X="-4975.6" Y="346.066" Z="23.0333" />
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11463)">
+			<PickUp QuestName="Thalanaar Delivery" QuestId="4281" GiverName="Undelivered Parcel" GiverId="11463" GiverType="Item" />
+		</If>
+
 		<!-- Quest 4135 (The Writhing Deep) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Freed from the Hive" QuestId="4265" GiverName="Jer'kai Moonweaver" GiverId="7957" />
-		<TurnIn QuestName="The Mark of Quality" QuestId="2821" TurnInName="Pratt McGrubben" TurnInId="7852" />
-		<TurnIn QuestName="The High Wilderness" QuestId="2982" TurnInName="Angelas Moonbreeze" TurnInId="7900" />
-		<PickUp QuestName="The Sunken Temple" QuestId="3445" GiverName="Angelas Moonbreeze" GiverId="7900" />
-		<TurnIn QuestName="Freed from the Hive" QuestId="4265" TurnInName="Ginro Hearthkindle" TurnInId="7880" />
-		<PickUp QuestName="A Hero's Welcome" QuestId="4266" GiverName="Ginro Hearthkindle" GiverId="7880" />
-		<TurnIn QuestName="A Hero's Welcome" QuestId="4266" TurnInName="Shandris Feathermoon" TurnInId="3936" />
-		<PickUp QuestName="Rise of the Silithid" QuestId="4267" GiverName="Shandris Feathermoon" GiverId="3936" />
-		<TurnIn QuestName="Handle With Care" QuestId="3022" TurnInName="Erelas Ambersky" TurnInId="7916" />
-		<PickUp QuestName="Favored of Elune?" QuestId="3661" GiverName="Erelas Ambersky" GiverId="7916" />
-		<TurnIn QuestName="In Search of Knowledge" QuestId="2939" TurnInName="Daryn Lightwind" TurnInId="7907" />
-		<PickUp QuestName="Feralas: A History" QuestId="2940" GiverName="Daryn Lightwind" GiverId="7907" />
-		<TurnIn QuestName="Feralas: A History" QuestId="2940" TurnInName="Daryn Lightwind" TurnInId="7907" />
-		<PickUp QuestName="The Borrower" QuestId="2941" GiverName="Daryn Lightwind" GiverId="7907" />
-		<TurnIn QuestName="Rise of the Silithid" QuestId="4267" TurnInName="Gracina Spiritmight" TurnInId="7740" />
-		<TurnIn QuestName="Doling Justice" QuestId="2972" TurnInName="Tyrande Whisperwind" TurnInId="7999" />
-		<TurnIn QuestName="Thalanaar Delivery" QuestId="4281" TurnInName="Falfindel Waywarder" TurnInId="4048" />
+		<PickUp QuestName="Freed from the Hive" QuestId="4265" GiverName="Zukk'ash Pod" GiverId="164954" GiverType="Object" X="-5318.97" Y="433.019" Z="13.0373" />
+		<TurnIn QuestName="The Mark of Quality" QuestId="2821" TurnInName="Pratt McGrubben" TurnInId="7852" X="-4345.38" Y="3312.75" Z="10.0974" />
+		<TurnIn QuestName="The High Wilderness" QuestId="2982" TurnInName="Angelas Moonbreeze" TurnInId="7900" X="-4480.03" Y="3229.6" Z="13.8128" />
+		<PickUp QuestName="The Sunken Temple" QuestId="3445" GiverName="Angelas Moonbreeze" GiverId="7900" X="-4480.03" Y="3229.6" Z="13.8128" />
+		<TurnIn QuestName="Freed from the Hive" QuestId="4265" TurnInName="Ginro Hearthkindle" TurnInId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<PickUp QuestName="A Hero's Welcome" QuestId="4266" GiverName="Ginro Hearthkindle" GiverId="7880" X="-4457.71" Y="3227.39" Z="23.2019" />
+		<TurnIn QuestName="A Hero's Welcome" QuestId="4266" TurnInName="Shandris Feathermoon" TurnInId="3936" X="-4505.82" Y="3337.48" Z="14.1203" />
+		<PickUp QuestName="Rise of the Silithid" QuestId="4267" GiverName="Shandris Feathermoon" GiverId="3936" X="-4505.82" Y="3337.48" Z="14.1203" />
+		<TurnIn QuestName="Handle With Care" QuestId="3022" TurnInName="Erelas Ambersky" TurnInId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<PickUp QuestName="Favored of Elune?" QuestId="3661" GiverName="Erelas Ambersky" GiverId="7916" X="8707.46" Y="988.88" Z="14.1964" />
+		<Objective QuestName="Favored of Elune?" QuestId="3661" Type="CollectItem" ItemId="10819" CollectCount="15" />
+		<TurnIn QuestName="In Search of Knowledge" QuestId="2939" TurnInName="Daryn Lightwind" TurnInId="7907" X="8701.16" Y="993.116" Z="23.5854" />
+		<PickUp QuestName="Feralas: A History" QuestId="2940" GiverName="Feralas: A History" GiverId="142958" GiverType="Object" X="8727.45" Y="1002.96" Z="23.5019" />
+		<TurnIn QuestName="Feralas: A History" QuestId="2940" TurnInName="Daryn Lightwind" TurnInId="7907" X="8701.16" Y="993.116" Z="23.5854" />
+		<PickUp QuestName="The Borrower" QuestId="2941" GiverName="Daryn Lightwind" GiverId="7907" X="8701.16" Y="993.116" Z="23.5854" />
+		<TurnIn QuestName="Rise of the Silithid" QuestId="4267" TurnInName="Gracina Spiritmight" TurnInId="7740" X="9634.06" Y="2495.63" Z="1354.89" />
+		<TurnIn QuestName="Doling Justice" QuestId="2972" TurnInName="Tyrande Whisperwind" TurnInId="7999" X="9662.52" Y="2524.57" Z="1360.08" />
+		<!-- REVIEW Q4281 Thalanaar Delivery: start item 11463 Undelivered Parcel has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(4281)) &amp;&amp; (IsQuestCompleted(4281)))">
+			<TurnIn QuestName="Thalanaar Delivery" QuestId="4281" TurnInName="Falfindel Waywarder" TurnInId="4048" X="-4524.14" Y="-787.884" Z="-41.5917" />
+		</If>
+
+		<If Condition="((HasQuest(4281)) &amp;&amp; (!IsQuestCompleted(4281)))">
+			<AbandonQuest QuestId="4281" />
+		</If>
+
 		<CustomBehavior File="LoadProfile" ProfileName="Tanaris (47-49)" />
 	</QuestOrder>
 </HBProfile>

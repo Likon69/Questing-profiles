@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Starter Guides (1-12)\Eversong Woods (1-13) [Blood Elf Starter]</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>13</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -33,20 +30,46 @@
 		<Vendor Name="Noellene" Entry="16275" Type="Train" TrainClass="Paladin" X="9516.0498" Y="-6870.96" Z="18.8333" />
 		<Vendor Name="Hannovia" Entry="16270" Type="Train" TrainClass="Hunter" X="9529.21" Y="-6864.5801" Z="18.8327" />
 		<Vendor Name="Tannaria" Entry="16279" Type="Train" TrainClass="Rogue" X="9534.1504" Y="-6876" Z="26.2321" />
+		<Vendor Name="Sleyin" Entry="18926" Type="Repair" X="9482.34" Y="-6805.51" Z="16.5757" />
+		<Vendor Name="Vara" Entry="16186" Type="Repair" X="9473.87" Y="-6845.84" Z="28.4612" />
+		<Vendor Name="Innkeeper Delaniel" Entry="15433" Type="Food" X="9476.91" Y="-6859.21" Z="17.4246" />
+		<Vendor Name="Kyrenna" Entry="18929" Type="Food" X="9552.02" Y="-6825.11" Z="16.5134" />
+		<Vendor Name="Farsil" Entry="16258" Type="Repair" X="9527.11" Y="-6882.95" Z="18.8333" />
+		<Vendor Name="Bountiful Barrel" Entry="35342" Type="Food" X="9285.98" Y="-7199.02" Z="17.4229" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="8325" Name="Reclaiming Sunstrider Isle">
 		<Objective Type="KillMob" MobId="15274" KillCount="8">
 			<Hotspots>
-				<Hotspot X="10187.8" Y="-6347.56" Z="30.459" />
-				<Hotspot X="10195.0" Y="-6320.27" Z="28.3769" />
-				<Hotspot X="10206.3" Y="-6307.28" Z="26.9459" />
+				<Hotspot X="10187.8" Y="-6347.56" Z="30.46" />
+				<Hotspot X="10195" Y="-6320.27" Z="28.38" />
+				<Hotspot X="10206.3" Y="-6307.28" Z="26.95" />
 				<Hotspot X="10213.5" Y="-6351.58" Z="30.85" />
 				<Hotspot X="10214.2" Y="-6337.41" Z="30.85" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8326" Name="Unfortunate Measures">
+		<Objective Type="CollectItem" ItemId="20797" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Springpaw Cub" Id="15366" />
+				<Mob Name="Springpaw Lynx" Id="15372" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10310.85" Y="-6433.77" Z="41.63" />
+				<Hotspot X="10286.62" Y="-6280.56" Z="26.31" />
+				<Hotspot X="10269.2" Y="-6410.45" Z="40.22" />
+				<Hotspot X="10382" Y="-6459.09" Z="37.9" />
+				<Hotspot X="10436.35" Y="-6302.3" Z="38.97" />
+				<Hotspot X="10437.8" Y="-6443.52" Z="35.99" />
+				<Hotspot X="10308.9" Y="-6246.58" Z="28.19" />
+				<Hotspot X="10469.35" Y="-6392.97" Z="45.42" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -59,24 +82,110 @@
 				<Hotspot X="10294.9" Y="-6030.45" Z="28.44" />
 			</Hotspots>
 		</Objective>
+		<Objective Type="CollectItem" ItemId="20472" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Solanian's Journal" Id="180512" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10223.9" Y="-6344.17" Z="30.84" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20470" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Solanian's Scrying Orb" Id="180510" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10093" Y="-6218.32" Z="16.67" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8345" Name="The Shrine of Dath'Remar">
+		<Objective Type="UseObject" ObjectId="180516" UseCount="1">
+			<Hotspots>
+				<Hotspot X="10405.8" Y="-5946.01" Z="42.51" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8336" Name="A Fistful of Slivers">
+		<Objective Type="CollectItem" ItemId="20482" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Arcane Wraith" Id="15273" />
+				<Mob Name="Mana Wyrm" Id="15274" />
+				<Mob Name="Feral Tender" Id="15294" />
+				<Mob Name="Tainted Arcane Wraith" Id="15298" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10382.9" Y="-6291.4" Z="28.2" />
+				<Hotspot X="10307.3" Y="-6368.21" Z="28.69" />
+				<Hotspot X="10419.33" Y="-6260.33" Z="31.82" />
+				<Hotspot X="10312.8" Y="-6304.02" Z="26.54" />
+				<Hotspot X="10383.45" Y="-6233.87" Z="29.36" />
+				<Hotspot X="10266.7" Y="-6332.91" Z="26.66" />
+				<Hotspot X="10418.1" Y="-6197.27" Z="32.88" />
+				<Hotspot X="10228.21" Y="-6349.43" Z="30.52" />
+			</Hotspots>
+		</Objective>
 	</Quest>
 	<Quest Id="8334" Name="Aggression">
 		<Objective Type="KillMob" MobId="15271" KillCount="7">
 			<Hotspots>
-				<Hotspot X="10105.3" Y="-6423.38" Z="30.8718" />
-				<Hotspot X="10082.7" Y="-6381.62" Z="10.7393" />
-				<Hotspot X="10101.0" Y="-6363.83" Z="15.734" />
-				<Hotspot X="10106.2" Y="-6382.96" Z="20.0423" />
-				<Hotspot X="10058.5" Y="-6284.86" Z="10.8042" />
+				<Hotspot X="10105.3" Y="-6423.38" Z="30.87" />
+				<Hotspot X="10082.7" Y="-6381.62" Z="10.74" />
+				<Hotspot X="10101" Y="-6363.83" Z="15.73" />
+				<Hotspot X="10106.2" Y="-6382.96" Z="20.04" />
+				<Hotspot X="10058.5" Y="-6284.86" Z="10.8" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="15294" KillCount="7">
 			<Hotspots>
-				<Hotspot X="10096.0" Y="-6354.86" Z="11.5868" />
-				<Hotspot X="10102.6" Y="-6363.13" Z="16.1144" />
-				<Hotspot X="10067.2" Y="-6267.55" Z="13.0933" />
-				<Hotspot X="10073.9" Y="-6280.82" Z="13.9683" />
-				<Hotspot X="10085.1" Y="-6280.95" Z="12.8433" />
+				<Hotspot X="10096" Y="-6354.86" Z="11.59" />
+				<Hotspot X="10102.6" Y="-6363.13" Z="16.11" />
+				<Hotspot X="10067.2" Y="-6267.55" Z="13.09" />
+				<Hotspot X="10073.9" Y="-6280.82" Z="13.97" />
+				<Hotspot X="10085.1" Y="-6280.95" Z="12.84" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8335" Name="Felendren the Banished">
+		<Objective Type="KillMob" MobId="15298" KillCount="2">
+			<Hotspots>
+				<Hotspot X="10148.57" Y="-6010.06" Z="94.71" />
+				<Hotspot X="10083.7" Y="-6034.95" Z="42.24" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="20799" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Felendren the Banished" Id="15367" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="10150.9" Y="-6006.24" Z="110.24" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8472" Name="Major Malfunction">
+		<Objective Type="CollectItem" ItemId="21808" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Arcane Patroller" Id="15638" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9601.2" Y="-6799.55" Z="11.65" />
+				<Hotspot X="9646.82" Y="-6800.99" Z="11.4" />
+				<Hotspot X="9546.68" Y="-6661.59" Z="9.85" />
+				<Hotspot X="9668.75" Y="-6741.76" Z="-1" />
+				<Hotspot X="9507.95" Y="-6591.95" Z="18.03" />
+				<Hotspot X="9758.31" Y="-6852.84" Z="19.09" />
+				<Hotspot X="9766.16" Y="-6716.44" Z="0.06" />
+				<Hotspot X="9627.96" Y="-6556.09" Z="5.61" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8468" Name="Wanted: Thaelis the Hungerer">
+		<Objective Type="CollectItem" ItemId="21781" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Thaelis the Hungerer" Id="15949" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9804.5" Y="-6704.95" Z="2.69" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -97,34 +206,193 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="9352" Name="Darnassian Intrusions">
+		<Objective Type="KillMob" MobId="15968" KillCount="1">
+			<Hotspots>
+				<Hotspot X="9039.11" Y="-6298.55" Z="22.63" />
+				<Hotspot X="9121.22" Y="-6171.12" Z="35.57" />
+				<Hotspot X="9045.06" Y="-6164.24" Z="30.29" />
+				<Hotspot X="9089.52" Y="-6126.73" Z="35.9" />
+				<Hotspot X="9005.09" Y="-6194.03" Z="23.36" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="8486" Name="Arcane Instability">
 		<Objective Type="KillMob" MobId="15648" KillCount="5">
 			<Hotspots>
-				<Hotspot X="9080.07" Y="-6286.61" Z="25.2798" />
-				<Hotspot X="9125.0" Y="-6202.78" Z="46.7797" />
-				<Hotspot X="9152.9" Y="-6222.26" Z="17.1799" />
-				<Hotspot X="9099.81" Y="-6230.37" Z="29.1046" />
-				<Hotspot X="9135.42" Y="-6207.08" Z="19.4463" />
+				<Hotspot X="9080.07" Y="-6286.61" Z="25.28" />
+				<Hotspot X="9125" Y="-6202.78" Z="46.78" />
+				<Hotspot X="9152.9" Y="-6222.26" Z="17.18" />
+				<Hotspot X="9099.81" Y="-6230.37" Z="29.1" />
+				<Hotspot X="9135.42" Y="-6207.08" Z="19.45" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="15647" KillCount="5">
 			<Hotspots>
-				<Hotspot X="9146.17" Y="-6248.99" Z="17.6942" />
-				<Hotspot X="9119.0" Y="-6258.14" Z="18.5601" />
-				<Hotspot X="9124.06" Y="-6222.43" Z="45.961" />
-				<Hotspot X="9179.39" Y="-6211.8" Z="18.6498" />
-				<Hotspot X="9073.05" Y="-6255.76" Z="17.1847" />
+				<Hotspot X="9146.17" Y="-6248.99" Z="17.69" />
+				<Hotspot X="9119" Y="-6258.14" Z="18.56" />
+				<Hotspot X="9124.06" Y="-6222.43" Z="45.96" />
+				<Hotspot X="9179.39" Y="-6211.8" Z="18.65" />
+				<Hotspot X="9073.05" Y="-6255.76" Z="17.18" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8884" Name="Fish Heads, Fish Heads...">
+		<Objective Type="CollectItem" ItemId="21757" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Grimscale Murloc" Id="15668" />
+				<Mob Name="Grimscale Oracle" Id="15669" />
+				<Mob Name="Grimscale Forager" Id="15670" />
+				<Mob Name="Mmmrrrggglll" Id="15937" />
+				<Mob Name="Grimscale Seer" Id="15950" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9091.93" Y="-5867" Z="0.74" />
+				<Hotspot X="9180.63" Y="-5863.7" Z="2.86" />
+				<Hotspot X="9036.01" Y="-5866.35" Z="0.22" />
+				<Hotspot X="9081.36" Y="-5821.67" Z="-0.58" />
+				<Hotspot X="9132.69" Y="-5807.62" Z="0.36" />
+				<Hotspot X="9169.06" Y="-5814.12" Z="-0.32" />
+				<Hotspot X="9224.25" Y="-5822.52" Z="-2.38" />
+				<Hotspot X="9028.89" Y="-5809.51" Z="1.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8885" Name="The Ring of Mmmrrrggglll">
+		<Objective Type="CollectItem" ItemId="21770" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mmmrrrggglll" Id="15937" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8869.87" Y="-5775.96" Z="0.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8886" Name="Grimscale Pirates!">
+		<Objective Type="CollectItem" ItemId="21771" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Grimscale Murloc" Id="15668" />
+				<Mob Name="Grimscale Oracle" Id="15669" />
+				<Mob Name="Mmmrrrggglll" Id="15937" />
+				<GameObject Name="Captain Kelisendra's Cargo" Id="180917" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8884.51" Y="-5776.59" Z="-1.5" />
+				<Hotspot X="8782.65" Y="-5760.93" Z="0.8" />
+				<Hotspot X="8809.7" Y="-5732.48" Z="-0.14" />
+				<Hotspot X="8876.69" Y="-5725.66" Z="-0.08" />
+				<Hotspot X="8838.73" Y="-5702.34" Z="-1.7" />
+				<Hotspot X="8717.1" Y="-5703.27" Z="-0.46" />
+				<Hotspot X="8773.37" Y="-5690.33" Z="0.5" />
+				<Hotspot X="8665.45" Y="-5687.32" Z="0.87" />
+				<Hotspot X="8882.55" Y="-5734.93" Z="0.06" />
+				<Hotspot X="8844.85" Y="-5714.57" Z="0.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8480" Name="Lost Armaments">
+		<Objective Type="CollectItem" ItemId="22413" CollectCount="8">
+			<CollectFrom>
+				<GameObject Name="Weapon Container" Id="181107" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8810.88" Y="-6193.83" Z="6.87" />
+				<Hotspot X="8856.28" Y="-6183.19" Z="0.39" />
+				<Hotspot X="8836.51" Y="-6095.26" Z="-16.7" />
+				<Hotspot X="8734.97" Y="-6123.21" Z="20.12" />
+				<Hotspot X="8777.34" Y="-6050.13" Z="4.72" />
+				<Hotspot X="8808.59" Y="-6014.91" Z="3.39" />
+				<Hotspot X="8836.04" Y="-6004" Z="-11.19" />
+				<Hotspot X="8741.56" Y="-6024.2" Z="7.09" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8491" Name="Pelt Collection">
+		<Objective Type="CollectItem" ItemId="20772" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Springpaw Stalker" Id="15651" />
+				<Mob Name="Elder Springpaw" Id="15652" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8808.1" Y="-6717.39" Z="49.43" />
+				<Hotspot X="8819.43" Y="-6784.36" Z="44" />
+				<Hotspot X="8869.15" Y="-6768.49" Z="34.03" />
+				<Hotspot X="8883.76" Y="-6716.51" Z="37.1" />
+				<Hotspot X="8891.86" Y="-6634.54" Z="37.33" />
+				<Hotspot X="8790.55" Y="-6817.58" Z="54.42" />
+				<Hotspot X="8746.39" Y="-6556.92" Z="65.12" />
+				<Hotspot X="8881.25" Y="-6589.58" Z="36.48" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8892" Name="Situation at Sunsail Anchorage">
+		<Objective Type="KillMob" MobId="15645" KillCount="5">
+			<Hotspots>
+				<Hotspot X="8775.06" Y="-6142.58" Z="4.53" />
+				<Hotspot X="8749.94" Y="-6090.6" Z="20.11" />
+				<Hotspot X="8710.01" Y="-6089.42" Z="15.52" />
+				<Hotspot X="8721.58" Y="-6102.61" Z="20.09" />
+				<Hotspot X="8718.77" Y="-6102.02" Z="49.05" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="16162" KillCount="5">
+			<Hotspots>
+				<Hotspot X="8790.93" Y="-6195.75" Z="7.7" />
+				<Hotspot X="8772.45" Y="-6181.39" Z="7.45" />
+				<Hotspot X="8818.35" Y="-6193.96" Z="6.95" />
+				<Hotspot X="8795.21" Y="-6134.73" Z="4.81" />
+				<Hotspot X="8768.84" Y="-6145.84" Z="4.99" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9252" Name="Defending Fairbreeze Village">
+		<Objective Type="KillMob" MobId="15658" KillCount="4">
+			<Hotspots>
+				<Hotspot X="8750.13" Y="-7134.96" Z="35.38" />
+				<Hotspot X="8688.45" Y="-7078.42" Z="44.31" />
+				<Hotspot X="8743.88" Y="-7145.57" Z="35.35" />
+				<Hotspot X="8692.87" Y="-7059" Z="47.52" />
+				<Hotspot X="8737.21" Y="-7051.51" Z="40.75" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="15657" KillCount="4">
+			<Hotspots>
+				<Hotspot X="8189.91" Y="-6822.08" Z="78.34" />
+				<Hotspot X="8221.09" Y="-6850.13" Z="82.4" />
+				<Hotspot X="8250.97" Y="-6858.74" Z="87.6" />
+				<Hotspot X="8313.02" Y="-6954.12" Z="93.51" />
+				<Hotspot X="8310.35" Y="-6982.76" Z="93.55" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9062" Name="Soaked Pages">
+		<Objective Type="CollectItem" ItemId="22414" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Soaked Tome" Id="181110" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9006.21" Y="-6671.24" Z="6.81" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8483" Name="The Dwarven Spy">
+		<Objective Type="CollectItem" ItemId="20764" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Prospector Anvilward" Id="15420" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="9291.54" Y="-6682.77" Z="22.54" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8475" Name="The Dead Scar">
 		<Objective Type="KillMob" MobId="15654" KillCount="8">
 			<Hotspots>
-				<Hotspot X="9319.04" Y="-6990.06" Z="16.2523" />
-				<Hotspot X="9271.21" Y="-6972.31" Z="5.0772" />
-				<Hotspot X="9293.16" Y="-6938.06" Z="6.2178" />
-				<Hotspot X="9291.61" Y="-6908.02" Z="8.7144" />
-				<Hotspot X="9163.88" Y="-6914.03" Z="6.7599" />
+				<Hotspot X="9319.04" Y="-6990.06" Z="16.25" />
+				<Hotspot X="9271.21" Y="-6972.31" Z="5.08" />
+				<Hotspot X="9293.16" Y="-6938.06" Z="6.22" />
+				<Hotspot X="9291.61" Y="-6908.02" Z="8.71" />
+				<Hotspot X="9163.88" Y="-6914.03" Z="6.76" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -145,91 +413,161 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="9252" Name="Defending Fairbreeze Village">
-		<Objective Type="KillMob" MobId="15658" KillCount="4">
+	<Quest Id="9076" Name="Wretched Ringleader">
+		<Objective Type="CollectItem" ItemId="22487" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Aldaron the Reckless" Id="16294" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="8750.13" Y="-7134.96" Z="35.3793" />
-				<Hotspot X="8688.45" Y="-7078.42" Z="44.3085" />
-				<Hotspot X="8743.88" Y="-7145.57" Z="35.3512" />
-				<Hotspot X="8692.87" Y="-7059.0" Z="47.5174" />
-				<Hotspot X="8737.21" Y="-7051.51" Z="40.7471" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="15657" KillCount="4">
-			<Hotspots>
-				<Hotspot X="8189.91" Y="-6822.08" Z="78.3389" />
-				<Hotspot X="8221.09" Y="-6850.13" Z="82.4023" />
-				<Hotspot X="8250.97" Y="-6858.74" Z="87.6049" />
-				<Hotspot X="8313.02" Y="-6954.12" Z="93.5131" />
-				<Hotspot X="8310.35" Y="-6982.76" Z="93.5487" />
+				<Hotspot X="8763.01" Y="-6103.01" Z="73.16" />
 			</Hotspots>
 		</Objective>
 	</Quest>
-	<Quest Id="8892" Name="Situation at Sunsail Anchorage">
-		<Objective Type="KillMob" MobId="15645" KillCount="5">
+	<Quest Id="9147" Name="The Fallen Courier">
+		<Objective Type="CollectItem" ItemId="22570" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Starving Ghostclaw" Id="16347" />
+				<Mob Name="Ghostclaw Lynx" Id="16348" />
+				<Mob Name="Ghostclaw Ravager" Id="16349" />
+				<Mob Name="Spindleweb Spider" Id="16350" />
+				<Mob Name="Spindleweb Lurker" Id="16351" />
+				<Mob Name="Greater Spindleweb" Id="16352" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="8775.06" Y="-6142.58" Z="4.5318" />
-				<Hotspot X="8749.94" Y="-6090.6" Z="20.1055" />
-				<Hotspot X="8710.01" Y="-6089.42" Z="15.5152" />
-				<Hotspot X="8721.58" Y="-6102.61" Z="20.0914" />
-				<Hotspot X="8718.77" Y="-6102.02" Z="49.0517" />
+				<Hotspot X="7991.5" Y="-6935.06" Z="56.8" />
+				<Hotspot X="7977.69" Y="-6834.88" Z="53.84" />
+				<Hotspot X="7919.69" Y="-6903.83" Z="67.54" />
+				<Hotspot X="7942.2" Y="-6837.45" Z="58.74" />
+				<Hotspot X="7920.86" Y="-6975.99" Z="83.25" />
+				<Hotspot X="7940.71" Y="-6791.64" Z="56.5" />
+				<Hotspot X="7871.91" Y="-6912.86" Z="72.68" />
+				<Hotspot X="7934" Y="-7067.05" Z="117.14" />
 			</Hotspots>
 		</Objective>
-		<Objective Type="KillMob" MobId="16162" KillCount="5">
+	</Quest>
+	<Quest Id="8889" Name="Deactivating the Spire">
+		<Objective Type="UseObject" ObjectId="180916" UseCount="1">
 			<Hotspots>
-				<Hotspot X="8790.93" Y="-6195.75" Z="7.7043" />
-				<Hotspot X="8772.45" Y="-6181.39" Z="7.4517" />
-				<Hotspot X="8818.35" Y="-6193.96" Z="6.9516" />
-				<Hotspot X="8795.21" Y="-6134.73" Z="4.8115" />
-				<Hotspot X="8768.84" Y="-6145.84" Z="4.9947" />
+				<Hotspot X="9335.96" Y="-7883.82" Z="144.47" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="180919" UseCount="1">
+			<Hotspots>
+				<Hotspot X="9336" Y="-7884.21" Z="161" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="UseObject" ObjectId="180920" UseCount="1">
+			<Hotspots>
+				<Hotspot X="9290.02" Y="-7917.32" Z="178.93" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8894" Name="Cleaning up the Grounds">
 		<Objective Type="KillMob" MobId="15966" KillCount="6">
 			<Hotspots>
-				<Hotspot X="9317.49" Y="-7868.12" Z="159.206" />
-				<Hotspot X="9329.17" Y="-7861.92" Z="159.206" />
-				<Hotspot X="9345.83" Y="-7837.5" Z="62.3838" />
-				<Hotspot X="9349.89" Y="-7822.45" Z="136.569" />
-				<Hotspot X="9416.77" Y="-7839.91" Z="45.8224" />
+				<Hotspot X="9317.49" Y="-7868.12" Z="159.21" />
+				<Hotspot X="9329.17" Y="-7861.92" Z="159.21" />
+				<Hotspot X="9345.83" Y="-7837.5" Z="62.38" />
+				<Hotspot X="9349.89" Y="-7822.45" Z="136.57" />
+				<Hotspot X="9416.77" Y="-7839.91" Z="45.82" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="15967" KillCount="6">
 			<Hotspots>
-				<Hotspot X="9266.1" Y="-7847.47" Z="74.9413" />
-				<Hotspot X="9332.83" Y="-7837.41" Z="63.8626" />
-				<Hotspot X="9309.99" Y="-7881.6" Z="159.206" />
-				<Hotspot X="9321.98" Y="-7875.84" Z="142.245" />
-				<Hotspot X="9337.4" Y="-7868.27" Z="142.246" />
+				<Hotspot X="9266.1" Y="-7847.47" Z="74.94" />
+				<Hotspot X="9332.83" Y="-7837.41" Z="63.86" />
+				<Hotspot X="9309.99" Y="-7881.6" Z="159.21" />
+				<Hotspot X="9321.98" Y="-7875.84" Z="142.25" />
+				<Hotspot X="9337.4" Y="-7868.27" Z="142.25" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8476" Name="Amani Encroachment">
 		<Objective Type="KillMob" MobId="15643" KillCount="5">
 			<Hotspots>
-				<Hotspot X="8857.26" Y="-7679.81" Z="137.108" />
-				<Hotspot X="8809.12" Y="-7716.11" Z="144.593" />
-				<Hotspot X="8714.87" Y="-7879.51" Z="164.727" />
-				<Hotspot X="8610.73" Y="-7886.85" Z="154.978" />
+				<Hotspot X="8857.26" Y="-7679.81" Z="137.11" />
+				<Hotspot X="8809.12" Y="-7716.11" Z="144.59" />
+				<Hotspot X="8714.87" Y="-7879.51" Z="164.73" />
+				<Hotspot X="8610.73" Y="-7886.85" Z="154.98" />
 				<Hotspot X="8683.02" Y="-7933.14" Z="153.04" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="15641" KillCount="5">
 			<Hotspots>
-				<Hotspot X="8648.74" Y="-7855.22" Z="159.849" />
-				<Hotspot X="8650.58" Y="-7916.69" Z="153.996" />
-				<Hotspot X="8687.24" Y="-7944.7" Z="152.838" />
+				<Hotspot X="8648.74" Y="-7855.22" Z="159.85" />
+				<Hotspot X="8650.58" Y="-7916.69" Z="154" />
+				<Hotspot X="8687.24" Y="-7944.7" Z="152.84" />
 				<Hotspot X="8512.94" Y="-7948.96" Z="155.71" />
-				<Hotspot X="8480.7" Y="-7978.5" Z="157.333" />
+				<Hotspot X="8480.7" Y="-7978.5" Z="157.33" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8477" Name="The Spearcrafter's Hammer">
+		<Objective Type="CollectItem" ItemId="20759" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Spearcrafter Otembe" Id="15408" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8668.46" Y="-7939.93" Z="153.41" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="8479" Name="Zul'Marosh">
+		<Objective Type="CollectItem" ItemId="20760" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Chieftain Zul'Marosh" Id="15407" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="8425.4" Y="-7566.3" Z="174.68" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="9684" Name="Claiming the Light">
+		<Objective Type="CollectItem" ItemId="24156" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Mistvale Gorilla" Id="1108" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11838.2" Y="-222.08" Z="17.08" />
+				<Hotspot X="-11884.7" Y="-251.27" Z="17" />
+				<Hotspot X="-11870.15" Y="-165.28" Z="16.47" />
+				<Hotspot X="-11933.1" Y="-266.88" Z="14.55" />
+				<Hotspot X="-11881.3" Y="-113.73" Z="21.56" />
+				<Hotspot X="-11932.3" Y="-194.47" Z="15.99" />
+				<Hotspot X="-11924.1" Y="-154.62" Z="12.77" />
+				<Hotspot X="-11948.5" Y="-118.45" Z="7.73" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="False" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Starter Guides (1-12)_Eversong Woods (1-13) [Blood Elf Starter] from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(8325))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
+				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="1975.661" Y="-6097.837" Z="67.1533" />
+				<CustomBehavior File="UseTransport" TransportId="181689" DestName="The Cloudkisser" WaitAtX="1975.661" WaitAtY="-6097.837" WaitAtZ="67.1533" TransportStartX="1989.4" TransportStartY="-6082.8" TransportStartZ="85.6" StandOnX="1981.89" StandOnY="-6090.596" StandOnZ="67.7387" TransportEndX="2056.5" TransportEndY="381.6" TransportEndZ="100.4" GetOffX="2060.931" GetOffY="361.9963" GetOffZ="82.5015" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="InteractWith" MobId="184503" ObjectType="GameObject" WaitTime="5000" Range="5" X="1805.85" Y="348.86" Z="70.87" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Reclaiming Sunstrider Isle" QuestId="8325" GiverName="Magistrix Erona" GiverId="15278" />
+		<PickUp QuestName="Reclaiming Sunstrider Isle" QuestId="8325" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
 		<Objective QuestName="Reclaiming Sunstrider Isle" QuestId="8325" Type="KillMob" MobId="15274" KillCount="8" />
 		<If Condition="Me.Level &lt; 2">
 			<SetGrindArea>
@@ -245,56 +583,56 @@
 			</SetGrindArea>
 			<GrindTo Level="2" />
 		</If>
-		<TurnIn QuestName="Reclaiming Sunstrider Isle" QuestId="8325" TurnInName="Magistrix Erona" TurnInId="15278" />
-		<PickUp QuestName="Unfortunate Measures" QuestId="8326" GiverName="Magistrix Erona" GiverId="15278" />
+
+		<TurnIn QuestName="Reclaiming Sunstrider Isle" QuestId="8325" TurnInName="Magistrix Erona" TurnInId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+		<PickUp QuestName="Unfortunate Measures" QuestId="8326" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Hunter Training" QuestId="9393" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Hunter Training" QuestId="9393" TurnInName="Ranger Sallina" TurnInId="15513" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10070" GiverName="Ranger Sallina" GiverId="15513" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10070" TurnInName="Well Watcher Solanian" TurnInId="15295" />
-			<PickUp QuestName="Solanian's Belongings" QuestId="8330" GiverName="Well Watcher Solanian" GiverId="15295" />
-			<PickUp QuestName="The Shrine of Dath'Remar" QuestId="8345" GiverName="Well Watcher Solanian" GiverId="15295" />
+			<PickUp QuestName="Hunter Training" QuestId="9393" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Hunter Training" QuestId="9393" TurnInName="Ranger Sallina" TurnInId="15513" X="10384.7" Y="-6410.67" Z="38.6156" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10070" GiverName="Ranger Sallina" GiverId="15513" X="10384.7" Y="-6410.67" Z="38.6156" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10070" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
+			<PickUp QuestName="Solanian's Belongings" QuestId="8330" GiverName="Well Watcher Solanian" GiverId="15295" X="10406" Y="-6396.24" Z="52.1757" />
+			<PickUp QuestName="The Shrine of Dath'Remar" QuestId="8345" GiverName="Well Watcher Solanian" GiverId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Paladin Training" QuestId="9676" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Paladin Training" QuestId="9676" TurnInName="Jesthenis Sunstriker" TurnInId="15280" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10069" GiverName="Jesthenis Sunstriker" GiverId="15280" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10069" TurnInName="Well Watcher Solanian" TurnInId="15295" />
+			<PickUp QuestName="Paladin Training" QuestId="9676" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Paladin Training" QuestId="9676" TurnInName="Jesthenis Sunstriker" TurnInId="15280" X="10366.7" Y="-6431.53" Z="38.6157" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10069" GiverName="Jesthenis Sunstriker" GiverId="15280" X="10366.7" Y="-6431.53" Z="38.6157" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10069" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Rogue Training" QuestId="9392" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Rogue Training" QuestId="9392" TurnInName="Pathstalker Kariel" TurnInId="15285" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10071" GiverName="Pathstalker Kariel" GiverId="15285" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10071" TurnInName="Well Watcher Solanian" TurnInId="15295" />
+			<PickUp QuestName="Rogue Training" QuestId="9392" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Rogue Training" QuestId="9392" TurnInName="Pathstalker Kariel" TurnInId="15285" X="10384.5" Y="-6404.99" Z="38.6156" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10071" GiverName="Pathstalker Kariel" GiverId="15285" X="10384.5" Y="-6404.99" Z="38.6156" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10071" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Priest) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Priest Training" QuestId="8564" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Priest Training" QuestId="8564" TurnInName="Matron Arena" TurnInId="15284" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10072" GiverName="Matron Arena" GiverId="15284" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10072" TurnInName="Well Watcher Solanian" TurnInId="15295" />
+			<PickUp QuestName="Priest Training" QuestId="8564" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Priest Training" QuestId="8564" TurnInName="Matron Arena" TurnInId="15284" X="10372.4" Y="-6428.84" Z="38.6155" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10072" GiverName="Matron Arena" GiverId="15284" X="10372.4" Y="-6428.84" Z="38.6155" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10072" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Mage) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Mage Training" QuestId="8328" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Mage Training" QuestId="8328" TurnInName="Julia Sunstriker" TurnInId="15279" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10068" GiverName="Julia Sunstriker" GiverId="15279" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10068" TurnInName="Well Watcher Solanian" TurnInId="15295" />
+			<PickUp QuestName="Mage Training" QuestId="8328" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Mage Training" QuestId="8328" TurnInName="Julia Sunstriker" TurnInId="15279" X="10337.2" Y="-6419.45" Z="38.6156" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10068" GiverName="Julia Sunstriker" GiverId="15279" X="10337.2" Y="-6419.45" Z="38.6156" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10068" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Warlock Training" QuestId="8563" GiverName="Magistrix Erona" GiverId="15278" />
-			<TurnIn QuestName="Warlock Training" QuestId="8563" TurnInName="Summoner Teli'Larien" TurnInId="15283" />
-			<PickUp QuestName="Windows to the Source" QuestId="8344" GiverName="Summoner Teli'Larien" GiverId="15283" />
-			<PickUp QuestName="Well Watcher Solanian" QuestId="10073" GiverName="Summoner Teli'Larien" GiverId="15283" />
-			<TurnIn QuestName="Well Watcher Solanian" QuestId="10073" TurnInName="Well Watcher Solanian" TurnInId="15295" />
+			<PickUp QuestName="Warlock Training" QuestId="8563" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+			<TurnIn QuestName="Warlock Training" QuestId="8563" TurnInName="Summoner Teli'Larien" TurnInId="15283" X="10337.6" Y="-6405.03" Z="38.6156" />
+			<PickUp QuestName="Well Watcher Solanian" QuestId="10073" GiverName="Summoner Teli'Larien" GiverId="15283" X="10337.6" Y="-6405.03" Z="38.6156" />
+			<TurnIn QuestName="Well Watcher Solanian" QuestId="10073" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
 		</If>
 
 		<If Condition="(Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="A Fistful of Slivers" QuestId="8336" GiverName="Arcanist Ithanas" GiverId="15296" />
-			<PickUp QuestName="Thirst Unending" QuestId="8346" GiverName="Arcanist Helion" GiverId="15297" />
+			<PickUp QuestName="A Fistful of Slivers" QuestId="8336" GiverName="Arcanist Ithanas" GiverId="15296" X="10413.7" Y="-6372.46" Z="35.7242" />
+			<PickUp QuestName="Thirst Unending" QuestId="8346" GiverName="Arcanist Helion" GiverId="15297" X="10419.7" Y="-6318.62" Z="35.6568" />
 		</If>
 
 		<Objective QuestName="A Fistful of Slivers" QuestId="8336" Type="CollectItem" ItemId="20482" CollectCount="6" />
@@ -312,6 +650,7 @@
 			</SetGrindArea>
 			<GrindTo Level="3" />
 		</If>
+
 		<Objective QuestName="Solanian's Belongings" QuestId="8330" Type="CollectItem" ItemId="20471" CollectCount="1" />
 		<Objective QuestName="Solanian's Belongings" QuestId="8330" Type="CollectItem" ItemId="20470" CollectCount="1" />
 		<Objective QuestName="Unfortunate Measures" QuestId="8326" Type="CollectItem" ItemId="20797" CollectCount="8" />
@@ -329,24 +668,48 @@
 			</SetGrindArea>
 			<GrindTo Level="4" />
 		</If>
-		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<Objective QuestName="Windows to the Source" QuestId="8344" Type="CollectItem" ItemId="20935" CollectCount="1" />
-			<Objective QuestName="Windows to the Source" QuestId="8344" Type="CollectItem" ItemId="20934" CollectCount="4" />
-		</If>
 
 		<Objective QuestName="Solanian's Belongings" QuestId="8330" Type="CollectItem" ItemId="20472" CollectCount="1" />
-		<TurnIn QuestName="Unfortunate Measures" QuestId="8326" TurnInName="Magistrix Erona" TurnInId="15278" />
-		<PickUp QuestName="Report to Lanthan Perilon" QuestId="8327" GiverName="Magistrix Erona" GiverId="15278" />
-		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="Windows to the Source" QuestId="8344" TurnInName="Summoner Teli'Larien" TurnInId="15283" />
+		<TurnIn QuestName="Unfortunate Measures" QuestId="8326" TurnInName="Magistrix Erona" TurnInId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+		<PickUp QuestName="Report to Lanthan Perilon" QuestId="8327" GiverName="Magistrix Erona" GiverId="15278" X="10352" Y="-6359.93" Z="34.1146" />
+		<TurnIn QuestName="Solanian's Belongings" QuestId="8330" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
+		<Objective QuestName="The Shrine of Dath'Remar" QuestId="8345" Type="UseObject" ObjectId="180516" UseCount="1" />
+		<TurnIn QuestName="The Shrine of Dath'Remar" QuestId="8345" TurnInName="Well Watcher Solanian" TurnInId="15295" X="10406" Y="-6396.24" Z="52.1757" />
+		<TurnIn QuestName="A Fistful of Slivers" QuestId="8336" TurnInName="Arcanist Ithanas" TurnInId="15296" X="10413.7" Y="-6372.46" Z="35.7242" />
+		<!-- Q8346 Thirst Unending: objective nodes transplanted from HonorBuddy MoP reference TBMC\Questing\Vanilla\Starter\[Quest] Blood Elf Start [Brodie].xml -->
+		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+			<If Condition="Me.Class == WoWClass.Warrior">
+				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="69179" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Solanian's Belongings" QuestId="8330" TurnInName="Well Watcher Solanian" TurnInId="15295" />
-		<TurnIn QuestName="The Shrine of Dath'Remar" QuestId="8345" TurnInName="Well Watcher Solanian" TurnInId="15295" />
-		<TurnIn QuestName="A Fistful of Slivers" QuestId="8336" TurnInName="Arcanist Ithanas" TurnInId="15296" />
-		<TurnIn QuestName="Thirst Unending" QuestId="8346" TurnInName="Arcanist Helion" TurnInId="15297" />
-		<TurnIn QuestName="Report to Lanthan Perilon" QuestId="8327" TurnInName="Lanthan Perilon" TurnInId="15281" />
-		<PickUp QuestName="Aggression" QuestId="8334" GiverName="Lanthan Perilon" GiverId="15281" />
+		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+			<If Condition="Me.Class == WoWClass.Hunter">
+				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="80483" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+			<If Condition="Me.Class == WoWClass.Monk">
+				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="129597" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+			<If Condition="Me.Class == WoWClass.Rogue">
+				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="25046" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
+			</If>
+		</If>
+
+		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+			<If Condition="Me.Class == WoWClass.Paladin || Me.Class == WoWClass.Priest || Me.Class == WoWClass.Mage || Me.Class == WoWClass.Warlock">
+				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="28730" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Thirst Unending" QuestId="8346" TurnInName="Arcanist Helion" TurnInId="15297" X="10419.7" Y="-6318.62" Z="35.6568" />
+		<TurnIn QuestName="Report to Lanthan Perilon" QuestId="8327" TurnInName="Lanthan Perilon" TurnInId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
+		<PickUp QuestName="Aggression" QuestId="8334" GiverName="Lanthan Perilon" GiverId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
 		<Objective QuestName="Aggression" QuestId="8334" Type="KillMob" MobId="15271" KillCount="7" />
 		<Objective QuestName="Aggression" QuestId="8334" Type="KillMob" MobId="15294" KillCount="7" />
 		<If Condition="Me.Level &lt; 5">
@@ -363,20 +726,32 @@
 			</SetGrindArea>
 			<GrindTo Level="5" />
 		</If>
-		<TurnIn QuestName="Aggression" QuestId="8334" TurnInName="Lanthan Perilon" TurnInId="15281" />
-		<PickUp QuestName="Felendren the Banished" QuestId="8335" GiverName="Lanthan Perilon" GiverId="15281" />
+
+		<TurnIn QuestName="Aggression" QuestId="8334" TurnInName="Lanthan Perilon" TurnInId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
+		<PickUp QuestName="Felendren the Banished" QuestId="8335" GiverName="Lanthan Perilon" GiverId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
 		<Objective QuestName="Felendren the Banished" QuestId="8335" Type="CollectItem" ItemId="20799" CollectCount="1" />
 		<If Condition="(Me.Race == WoWRace.BloodElf)">
-			<Objective QuestName="Felendren the Banished" QuestId="8335" Type="CollectItem" ItemId="20483" CollectCount="1" />
-			<While Condition="((HasQuest(8335)) &amp;&amp; (!IsQuestCompleted(8335)))" >
+			<Objective QuestName="Felendren the Banished" QuestId="8335" Type="CollectItem" ItemId="20799" CollectCount="1" />
+			<While Condition="((HasQuest(8335)) &amp;&amp; (!IsQuestCompleted(8335)))">
 				<CustomBehavior File="UseItemOn" QuestId="8335" MobId="15273" ItemId="20483" NumOfTimes="1" Range="5" CollectionDistance="1000" X="10235.4" Y="-5984.8" Z="38.944" />
 			</While>
-			<PickUp QuestName="Tainted Arcane Sliver" QuestId="8338" GiverName="Lanthan Perilon" GiverId="15281" />
+			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20483)">
+				<PickUp QuestName="Tainted Arcane Sliver" QuestId="8338" GiverName="Tainted Arcane Sliver" GiverId="20483" GiverType="Item" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Felendren the Banished" QuestId="8335" TurnInName="Lanthan Perilon" TurnInId="15281" />
-		<PickUp QuestName="Aiding the Outrunners" QuestId="8347" GiverName="Lanthan Perilon" GiverId="15281" />
-		<TurnIn QuestName="Tainted Arcane Sliver" QuestId="8338" TurnInName="Arcanist Helion" TurnInId="15297" />
+		<Objective QuestName="Felendren the Banished" QuestId="8335" Type="KillMob" MobId="15298" KillCount="2" />
+		<TurnIn QuestName="Felendren the Banished" QuestId="8335" TurnInName="Lanthan Perilon" TurnInId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
+		<PickUp QuestName="Aiding the Outrunners" QuestId="8347" GiverName="Lanthan Perilon" GiverId="15281" X="10302.3" Y="-6229.3" Z="26.7049" />
+		<!-- REVIEW Q8338 Tainted Arcane Sliver: start item 20483 Tainted Arcane Sliver has no loot source in DB (condition uses unsupported helper: (Me.Location.Distance(new WoWPoint(10349.6, -6357.29, 33.402). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(8338)) &amp;&amp; (IsQuestCompleted(8338)))">
+			<TurnIn QuestName="Tainted Arcane Sliver" QuestId="8338" TurnInName="Arcanist Helion" TurnInId="15297" X="10419.7" Y="-6318.62" Z="35.6568" />
+		</If>
+
+		<If Condition="((HasQuest(8338)) &amp;&amp; (!IsQuestCompleted(8338)))">
+			<AbandonQuest QuestId="8338" />
+		</If>
+
 		<If Condition="Me.Level &lt; 6">
 			<SetGrindArea>
 				<GrindArea>
@@ -391,24 +766,25 @@
 			</SetGrindArea>
 			<GrindTo Level="6" />
 		</If>
-		<TurnIn QuestName="Aiding the Outrunners" QuestId="8347" TurnInName="Outrunner Alarion" TurnInId="15301" />
-		<PickUp QuestName="Slain by the Wretched" QuestId="9704" GiverName="Outrunner Alarion" GiverId="15301" />
-		<TurnIn QuestName="Slain by the Wretched" QuestId="9704" TurnInName="Outrunner Alarion" TurnInId="17849" />
-		<PickUp QuestName="Package Recovery" QuestId="9705" GiverName="Outrunner Alarion" GiverId="15301" />
-		<TurnIn QuestName="Package Recovery" QuestId="9705" TurnInName="Outrunner Alarion" TurnInId="15301" />
-		<PickUp QuestName="Completing the Delivery" QuestId="8350" GiverName="Outrunner Alarion" GiverId="15301" />
-		<PickUp QuestName="Major Malfunction" QuestId="8472" GiverName="Magister Jaronis" GiverId="15418" />
-		<TurnIn QuestName="Completing the Delivery" QuestId="8350" TurnInName="Innkeeper Delaniel" TurnInId="15433" />
-		<PickUp QuestName="Wanted: Thaelis the Hungerer" QuestId="8468" GiverName="Innkeeper Delaniel" GiverId="15433" />
-		<PickUp QuestName="Unstable Mana Crystals" QuestId="8463" GiverName="Aeldon Sunbrand" GiverId="15403" />
+
+		<TurnIn QuestName="Aiding the Outrunners" QuestId="8347" TurnInName="Outrunner Alarion" TurnInId="15301" X="9984.04" Y="-6478.02" Z="1.0799" />
+		<PickUp QuestName="Slain by the Wretched" QuestId="9704" GiverName="Outrunner Alarion" GiverId="15301" X="9984.04" Y="-6478.02" Z="1.0799" />
+		<TurnIn QuestName="Slain by the Wretched" QuestId="9704" TurnInName="Slain Outrunner" TurnInId="17849" X="9871" Y="-6557.19" Z="10.3874" />
+		<PickUp QuestName="Package Recovery" QuestId="9705" GiverName="Slain Outrunner" GiverId="17849" X="9871" Y="-6557.19" Z="10.3874" />
+		<TurnIn QuestName="Package Recovery" QuestId="9705" TurnInName="Outrunner Alarion" TurnInId="15301" X="9984.04" Y="-6478.02" Z="1.0799" />
+		<PickUp QuestName="Completing the Delivery" QuestId="8350" GiverName="Outrunner Alarion" GiverId="15301" X="9984.04" Y="-6478.02" Z="1.0799" />
+		<PickUp QuestName="Major Malfunction" QuestId="8472" GiverName="Magister Jaronis" GiverId="15418" X="9521.17" Y="-6814.85" Z="16.5752" />
+		<TurnIn QuestName="Completing the Delivery" QuestId="8350" TurnInName="Innkeeper Delaniel" TurnInId="15433" X="9476.91" Y="-6859.21" Z="17.4246" />
+		<PickUp QuestName="Wanted: Thaelis the Hungerer" QuestId="8468" GiverName="Wanted: Thaelis the Hungerer" GiverId="180918" GiverType="Object" X="9521.19" Y="-6860.13" Z="18.7219" />
+		<PickUp QuestName="Unstable Mana Crystals" QuestId="8463" GiverName="Aeldon Sunbrand" GiverId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
 		<Objective QuestName="Wanted: Thaelis the Hungerer" QuestId="8468" Type="CollectItem" ItemId="21781" CollectCount="1" />
 		<Objective QuestName="Unstable Mana Crystals" QuestId="8463" Type="CollectItem" ItemId="20743" CollectCount="6" />
 		<Objective QuestName="Major Malfunction" QuestId="8472" Type="CollectItem" ItemId="21808" CollectCount="6" />
-		<TurnIn QuestName="Major Malfunction" QuestId="8472" TurnInName="Magister Jaronis" TurnInId="15418" />
-		<PickUp QuestName="Delivery to the North Sanctum" QuestId="8895" GiverName="Magister Jaronis" GiverId="15418" />
-		<TurnIn QuestName="Wanted: Thaelis the Hungerer" QuestId="8468" TurnInName="Sergeant Kan'ren" TurnInId="16924" />
-		<TurnIn QuestName="Unstable Mana Crystals" QuestId="8463" TurnInName="Aeldon Sunbrand" TurnInId="15403" />
-		<PickUp QuestName="Darnassian Intrusions" QuestId="9352" GiverName="Aeldon Sunbrand" GiverId="15403" />
+		<TurnIn QuestName="Major Malfunction" QuestId="8472" TurnInName="Magister Jaronis" TurnInId="15418" X="9521.17" Y="-6814.85" Z="16.5752" />
+		<PickUp QuestName="Delivery to the North Sanctum" QuestId="8895" GiverName="Magister Jaronis" GiverId="15418" X="9521.17" Y="-6814.85" Z="16.5752" />
+		<TurnIn QuestName="Wanted: Thaelis the Hungerer" QuestId="8468" TurnInName="Sergeant Kan'ren" TurnInId="16924" X="9512.21" Y="-6840.16" Z="16.4934" />
+		<TurnIn QuestName="Unstable Mana Crystals" QuestId="8463" TurnInName="Aeldon Sunbrand" TurnInId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
+		<PickUp QuestName="Darnassian Intrusions" QuestId="9352" GiverName="Aeldon Sunbrand" GiverId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
 		<If Condition="Me.Level &lt; 7">
 			<SetGrindArea>
 				<GrindArea>
@@ -423,24 +799,52 @@
 			</SetGrindArea>
 			<GrindTo Level="7" />
 		</If>
-		<TurnIn QuestName="Delivery to the North Sanctum" QuestId="8895" TurnInName="Ley-Keeper Caidanis" TurnInId="15405" />
-		<PickUp QuestName="Malfunction at the West Sanctum" QuestId="9119" GiverName="Ley-Keeper Caidanis" GiverId="15405" />
-		<PickUp QuestName="Roadside Ambush" QuestId="9035" GiverName="Apprentice Ralen" GiverId="15941" />
-		<TurnIn QuestName="Malfunction at the West Sanctum" QuestId="9119" TurnInName="Ley-Keeper Velania" TurnInId="15401" />
-		<PickUp QuestName="Arcane Instability" QuestId="8486" GiverName="Ley-Keeper Velania" GiverId="15401" />
-		<Objective QuestName="Incriminating Documents" QuestId="8482" Type="CollectItem" ItemId="20765" CollectCount="1" />
-		<While Condition="((HasQuest(8486)) &amp;&amp; (!IsQuestCompleted(8486)))" >
+
+		<TurnIn QuestName="Delivery to the North Sanctum" QuestId="8895" TurnInName="Ley-Keeper Caidanis" TurnInId="15405" X="9297.13" Y="-6685.43" Z="22.5423" />
+		<PickUp QuestName="Malfunction at the West Sanctum" QuestId="9119" GiverName="Ley-Keeper Caidanis" GiverId="15405" X="9297.13" Y="-6685.43" Z="22.5423" />
+		<PickUp QuestName="Roadside Ambush" QuestId="9035" GiverName="Apprentice Ralen" GiverId="15941" X="9188.76" Y="-6712.91" Z="25.997" />
+		<TurnIn QuestName="Malfunction at the West Sanctum" QuestId="9119" TurnInName="Ley-Keeper Velania" TurnInId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
+		<PickUp QuestName="Arcane Instability" QuestId="8486" GiverName="Ley-Keeper Velania" GiverId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 20765)">
+			<CustomBehavior File="CollectThings" CollectItemId="20765" CollectItemCount="1" HuntingGroundRadius="120" MobId="15968" X="9039.11" Y="-6298.55" Z="22.6258">
+				<Hotspot X="9039.11" Y="-6298.55" Z="22.63" />
+				<Hotspot X="9005.09" Y="-6194.03" Z="23.36" />
+				<Hotspot X="9121.22" Y="-6171.12" Z="35.57" />
+				<Hotspot X="9045.06" Y="-6164.24" Z="30.29" />
+				<Hotspot X="9089.52" Y="-6126.73" Z="35.9" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(8486)) &amp;&amp; (!IsQuestCompleted(8486)))">
 			<CustomBehavior File="UseItemOn" QuestId="8486" MobId="15648" ItemId="20765" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9080.07" Y="-6286.61" Z="25.2798" />
 		</While>
-		<PickUp QuestName="Incriminating Documents" QuestId="8482" GiverName="Ley-Keeper Velania" GiverId="15401" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20765)">
+			<PickUp QuestName="Incriminating Documents" QuestId="8482" GiverName="Incriminating Documents" GiverId="20765" GiverType="Item" />
+		</If>
+
 		<Objective QuestName="Arcane Instability" QuestId="8486" Type="KillMob" MobId="15648" KillCount="5" />
 		<Objective QuestName="Arcane Instability" QuestId="8486" Type="KillMob" MobId="15647" KillCount="5" />
-		<TurnIn QuestName="Arcane Instability" QuestId="8486" TurnInName="Ley-Keeper Velania" TurnInId="15401" />
-		<TurnIn QuestName="Darnassian Intrusions" QuestId="9352" TurnInName="Ley-Keeper Velania" TurnInId="15401" />
-		<PickUp QuestName="Fish Heads, Fish Heads..." QuestId="8884" GiverName="Hathvelion Sungaze" GiverId="15920" />
+		<TurnIn QuestName="Arcane Instability" QuestId="8486" TurnInName="Ley-Keeper Velania" TurnInId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
+		<Objective QuestName="Darnassian Intrusions" QuestId="9352" Type="KillMob" MobId="15968" KillCount="1" />
+		<TurnIn QuestName="Darnassian Intrusions" QuestId="9352" TurnInName="Ley-Keeper Velania" TurnInId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
+		<PickUp QuestName="Fish Heads, Fish Heads..." QuestId="8884" GiverName="Hathvelion Sungaze" GiverId="15920" X="9123.11" Y="-5959.77" Z="32.6951" />
 		<Objective QuestName="Fish Heads, Fish Heads..." QuestId="8884" Type="CollectItem" ItemId="21757" CollectCount="8" />
-		<Objective QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" Type="CollectItem" ItemId="21776" CollectCount="1" />
-		<PickUp QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" GiverName="Hathvelion Sungaze" GiverId="15920" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 21776)">
+			<CustomBehavior File="CollectThings" CollectItemId="21776" CollectItemCount="1" HuntingGroundRadius="120" MobId="15668" MobId2="15669" MobId3="15670" MobId4="15937" MobId5="15950" X="9091.9263" Y="-5867" Z="0.7363">
+				<Hotspot X="9091.93" Y="-5867" Z="0.74" />
+				<Hotspot X="9180.63" Y="-5863.7" Z="2.86" />
+				<Hotspot X="9036.01" Y="-5866.35" Z="0.22" />
+				<Hotspot X="9081.36" Y="-5821.67" Z="-0.58" />
+				<Hotspot X="9132.69" Y="-5807.62" Z="0.36" />
+				<Hotspot X="9169.06" Y="-5814.12" Z="-0.32" />
+			</CustomBehavior>
+		</If>
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21776)">
+			<PickUp QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" GiverName="Captain Kelisendra's Lost Rutters" GiverId="21776" GiverType="Item" />
+		</If>
+
 		<If Condition="Me.Level &lt; 8">
 			<SetGrindArea>
 				<GrindArea>
@@ -455,29 +859,30 @@
 			</SetGrindArea>
 			<GrindTo Level="8" />
 		</If>
-		<TurnIn QuestName="Fish Heads, Fish Heads..." QuestId="8884" TurnInName="Hathvelion Sungaze" TurnInId="15920" />
-		<PickUp QuestName="The Ring of Mmmrrrggglll" QuestId="8885" GiverName="Hathvelion Sungaze" GiverId="15920" />
-		<TurnIn QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" TurnInName="Captain Kelisendra" TurnInId="15921" />
-		<PickUp QuestName="Grimscale Pirates!" QuestId="8886" GiverName="Captain Kelisendra" GiverId="15921" />
-		<PickUp QuestName="Lost Armaments" QuestId="8480" GiverName="Velendris Whitemorn" GiverId="15404" />
-		<PickUp QuestName="Pelt Collection" QuestId="8491" GiverName="Velan Brightoak" GiverId="15417" />
-		<PickUp QuestName="The Wayward Apprentice" QuestId="9254" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" />
-		<PickUp QuestName="Ranger Sareyn" QuestId="9358" GiverName="Marniel Amberlight" GiverId="15397" />
-		<PickUp QuestName="The Scorched Grove" QuestId="9258" GiverName="Ardeyn Riverwind" GiverId="16397" />
-		<PickUp QuestName="Situation at Sunsail Anchorage" QuestId="8892" GiverName="Ranger Degolien" GiverId="15939" />
-		<TurnIn QuestName="Ranger Sareyn" QuestId="9358" TurnInName="Ranger Sareyn" TurnInId="15942" />
-		<PickUp QuestName="Defending Fairbreeze Village" QuestId="9252" GiverName="Ranger Sareyn" GiverId="15942" />
+
+		<TurnIn QuestName="Fish Heads, Fish Heads..." QuestId="8884" TurnInName="Hathvelion Sungaze" TurnInId="15920" X="9123.11" Y="-5959.77" Z="32.6951" />
+		<PickUp QuestName="The Ring of Mmmrrrggglll" QuestId="8885" GiverName="Hathvelion Sungaze" GiverId="15920" X="9123.11" Y="-5959.77" Z="32.6951" />
+		<TurnIn QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" TurnInName="Captain Kelisendra" TurnInId="15921" X="8854.16" Y="-6278.03" Z="7.874" />
+		<PickUp QuestName="Grimscale Pirates!" QuestId="8886" GiverName="Captain Kelisendra" GiverId="15921" X="8854.16" Y="-6278.03" Z="7.874" />
+		<PickUp QuestName="Lost Armaments" QuestId="8480" GiverName="Velendris Whitemorn" GiverId="15404" X="8849.25" Y="-6278.24" Z="8.0203" />
+		<PickUp QuestName="Pelt Collection" QuestId="8491" GiverName="Velan Brightoak" GiverId="15417" X="8755.61" Y="-6690.05" Z="69.6853" />
+		<PickUp QuestName="The Wayward Apprentice" QuestId="9254" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" X="8718.34" Y="-6655.9" Z="72.8381" />
+		<PickUp QuestName="Ranger Sareyn" QuestId="9358" GiverName="Marniel Amberlight" GiverId="15397" X="8700.38" Y="-6638.36" Z="72.8276" />
+		<PickUp QuestName="The Scorched Grove" QuestId="9258" GiverName="Ardeyn Riverwind" GiverId="16397" X="8703.9" Y="-6633.56" Z="72.8276" />
+		<PickUp QuestName="Situation at Sunsail Anchorage" QuestId="8892" GiverName="Ranger Degolien" GiverId="15939" X="8716.27" Y="-6622.22" Z="80.7642" />
+		<TurnIn QuestName="Ranger Sareyn" QuestId="9358" TurnInName="Ranger Sareyn" TurnInId="15942" X="8684.63" Y="-6798.71" Z="94.0984" />
+		<PickUp QuestName="Defending Fairbreeze Village" QuestId="9252" GiverName="Ranger Sareyn" GiverId="15942" X="8684.63" Y="-6798.71" Z="94.0984" />
 		<Objective QuestName="Pelt Collection" QuestId="8491" Type="CollectItem" ItemId="20772" CollectCount="6" />
-		<TurnIn QuestName="Roadside Ambush" QuestId="9035" TurnInName="Apprentice Meledor" TurnInId="15945" />
-		<PickUp QuestName="Soaked Pages" QuestId="9062" GiverName="Apprentice Meledor" GiverId="15945" />
+		<TurnIn QuestName="Roadside Ambush" QuestId="9035" TurnInName="Apprentice Meledor" TurnInId="15945" X="9037.79" Y="-6697.62" Z="12.6447" />
+		<PickUp QuestName="Soaked Pages" QuestId="9062" GiverName="Apprentice Meledor" GiverId="15945" X="9037.79" Y="-6697.62" Z="12.6447" />
 		<Objective QuestName="Soaked Pages" QuestId="9062" Type="CollectItem" ItemId="22414" CollectCount="1" />
-		<TurnIn QuestName="Soaked Pages" QuestId="9062" TurnInName="Apprentice Meledor" TurnInId="15945" />
-		<PickUp QuestName="Taking the Fall" QuestId="9064" GiverName="Apprentice Meledor" GiverId="15945" />
-		<TurnIn QuestName="Incriminating Documents" QuestId="8482" TurnInName="Aeldon Sunbrand" TurnInId="15403" />
-		<PickUp QuestName="The Dwarven Spy" QuestId="8483" GiverName="Aeldon Sunbrand" GiverId="15403" />
+		<TurnIn QuestName="Soaked Pages" QuestId="9062" TurnInName="Apprentice Meledor" TurnInId="15945" X="9037.79" Y="-6697.62" Z="12.6447" />
+		<PickUp QuestName="Taking the Fall" QuestId="9064" GiverName="Apprentice Meledor" GiverId="15945" X="9037.79" Y="-6697.62" Z="12.6447" />
+		<TurnIn QuestName="Incriminating Documents" QuestId="8482" TurnInName="Aeldon Sunbrand" TurnInId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
+		<PickUp QuestName="The Dwarven Spy" QuestId="8483" GiverName="Aeldon Sunbrand" GiverId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
 		<Objective QuestName="The Dwarven Spy" QuestId="8483" Type="CollectItem" ItemId="20764" CollectCount="1" />
-		<TurnIn QuestName="The Dwarven Spy" QuestId="8483" TurnInName="Aeldon Sunbrand" TurnInId="15403" />
-		<PickUp QuestName="The Dead Scar" QuestId="8475" GiverName="Ranger Jaela" GiverId="15416" />
+		<TurnIn QuestName="The Dwarven Spy" QuestId="8483" TurnInName="Aeldon Sunbrand" TurnInId="15403" X="9531.33" Y="-6859.75" Z="18.7898" />
+		<PickUp QuestName="The Dead Scar" QuestId="8475" GiverName="Ranger Jaela" GiverId="15416" X="9374.84" Y="-6966.58" Z="18.1612" />
 		<Objective QuestName="The Dead Scar" QuestId="8475" Type="KillMob" MobId="15654" KillCount="8" />
 		<If Condition="Me.Level &lt; 9">
 			<SetGrindArea>
@@ -493,26 +898,26 @@
 			</SetGrindArea>
 			<GrindTo Level="9" />
 		</If>
-		<TurnIn QuestName="The Dead Scar" QuestId="8475" TurnInName="Ranger Jaela" TurnInId="15416" />
-		<TurnIn QuestName="Taking the Fall" QuestId="9064" TurnInName="Instructor Antheol" TurnInId="15970" />
-		<PickUp QuestName="Swift Discipline" QuestId="9066" GiverName="Instructor Antheol" GiverId="15970" />
-		<TurnIn QuestName="The Wayward Apprentice" QuestId="9254" TurnInName="Apprentice Mirveda" TurnInId="15402" />
-		<PickUp QuestName="Corrupted Soil" QuestId="8487" GiverName="Apprentice Mirveda" GiverId="15402" />
+
+		<TurnIn QuestName="The Dead Scar" QuestId="8475" TurnInName="Ranger Jaela" TurnInId="15416" X="9374.84" Y="-6966.58" Z="18.1612" />
+		<TurnIn QuestName="Taking the Fall" QuestId="9064" TurnInName="Instructor Antheol" TurnInId="15970" X="9251.98" Y="-7230.74" Z="16.4737" />
+		<PickUp QuestName="Swift Discipline" QuestId="9066" GiverName="Instructor Antheol" GiverId="15970" X="9251.98" Y="-7230.74" Z="16.4737" />
+		<TurnIn QuestName="The Wayward Apprentice" QuestId="9254" TurnInName="Apprentice Mirveda" TurnInId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
+		<PickUp QuestName="Corrupted Soil" QuestId="8487" GiverName="Apprentice Mirveda" GiverId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
 		<Objective QuestName="Corrupted Soil" QuestId="8487" Type="CollectItem" ItemId="20771" CollectCount="8" />
-		<TurnIn QuestName="Corrupted Soil" QuestId="8487" TurnInName="Apprentice Mirveda" TurnInId="15402" />
-		<PickUp QuestName="Unexpected Results" QuestId="8488" GiverName="Apprentice Mirveda" GiverId="15402" />
-		<Objective QuestName="Unexpected Results" QuestId="8488" Type="KillMob" MobId="15958" KillCount="1" />
-		<TurnIn QuestName="Unexpected Results" QuestId="8488" TurnInName="Apprentice Mirveda" TurnInId="15402" />
-		<PickUp QuestName="Research Notes" QuestId="9255" GiverName="Apprentice Mirveda" GiverId="15402" />
+		<TurnIn QuestName="Corrupted Soil" QuestId="8487" TurnInName="Apprentice Mirveda" TurnInId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
+		<PickUp QuestName="Unexpected Results" QuestId="8488" GiverName="Apprentice Mirveda" GiverId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
+		<TurnIn QuestName="Unexpected Results" QuestId="8488" TurnInName="Apprentice Mirveda" TurnInId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
+		<PickUp QuestName="Research Notes" QuestId="9255" GiverName="Apprentice Mirveda" GiverId="15402" X="8711.23" Y="-7160.89" Z="43.6012" />
 		<Objective QuestName="Defending Fairbreeze Village" QuestId="9252" Type="KillMob" MobId="15658" KillCount="4" />
 		<Objective QuestName="Defending Fairbreeze Village" QuestId="9252" Type="KillMob" MobId="15657" KillCount="4" />
-		<TurnIn QuestName="Defending Fairbreeze Village" QuestId="9252" TurnInName="Ranger Sareyn" TurnInId="15942" />
-		<PickUp QuestName="Runewarden Deryan" QuestId="9253" GiverName="Ranger Sareyn" GiverId="15942" />
-		<TurnIn QuestName="Pelt Collection" QuestId="8491" TurnInName="Velan Brightoak" TurnInId="15417" />
-		<TurnIn QuestName="Research Notes" QuestId="9255" TurnInName="Magistrix Landra Dawnstrider" TurnInId="16210" />
-		<PickUp QuestName="Saltheril's Haven" QuestId="9395" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" />
-		<TurnIn QuestName="Saltheril's Haven" QuestId="9395" TurnInName="Lord Saltheril" TurnInId="16144" />
-		<PickUp QuestName="The Party Never Ends" QuestId="9067" GiverName="Lord Saltheril" GiverId="16144" />
+		<TurnIn QuestName="Defending Fairbreeze Village" QuestId="9252" TurnInName="Ranger Sareyn" TurnInId="15942" X="8684.63" Y="-6798.71" Z="94.0984" />
+		<PickUp QuestName="Runewarden Deryan" QuestId="9253" GiverName="Ranger Sareyn" GiverId="15942" X="8684.63" Y="-6798.71" Z="94.0984" />
+		<TurnIn QuestName="Pelt Collection" QuestId="8491" TurnInName="Velan Brightoak" TurnInId="15417" X="8755.61" Y="-6690.05" Z="69.6853" />
+		<TurnIn QuestName="Research Notes" QuestId="9255" TurnInName="Magistrix Landra Dawnstrider" TurnInId="16210" X="8718.34" Y="-6655.9" Z="72.8381" />
+		<PickUp QuestName="Saltheril's Haven" QuestId="9395" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" X="8718.34" Y="-6655.9" Z="72.8381" />
+		<TurnIn QuestName="Saltheril's Haven" QuestId="9395" TurnInName="Lord Saltheril" TurnInId="16144" X="8626.61" Y="-6366.06" Z="55.4326" />
+		<PickUp QuestName="The Party Never Ends" QuestId="9067" GiverName="Lord Saltheril" GiverId="16144" X="8626.61" Y="-6366.06" Z="55.4326" />
 		<Objective QuestName="Lost Armaments" QuestId="8480" Type="CollectItem" ItemId="22413" CollectCount="8" />
 		<Objective QuestName="Situation at Sunsail Anchorage" QuestId="8892" Type="KillMob" MobId="15645" KillCount="5" />
 		<Objective QuestName="Situation at Sunsail Anchorage" QuestId="8892" Type="KillMob" MobId="16162" KillCount="5" />
@@ -530,45 +935,50 @@
 			</SetGrindArea>
 			<GrindTo Level="10" />
 		</If>
+
 		<Objective QuestName="The Ring of Mmmrrrggglll" QuestId="8885" Type="CollectItem" ItemId="21770" CollectCount="1" />
 		<Objective QuestName="Grimscale Pirates!" QuestId="8886" Type="CollectItem" ItemId="21771" CollectCount="6" />
-		<TurnIn QuestName="The Ring of Mmmrrrggglll" QuestId="8885" TurnInName="Hathvelion Sungaze" TurnInId="15920" />
-		<TurnIn QuestName="Grimscale Pirates!" QuestId="8886" TurnInName="Captain Kelisendra" TurnInId="15921" />
-		<TurnIn QuestName="Lost Armaments" QuestId="8480" TurnInName="Velendris Whitemorn" TurnInId="15404" />
-		<PickUp QuestName="Wretched Ringleader" QuestId="9076" GiverName="Velendris Whitemorn" GiverId="15404" />
+		<TurnIn QuestName="The Ring of Mmmrrrggglll" QuestId="8885" TurnInName="Hathvelion Sungaze" TurnInId="15920" X="9123.11" Y="-5959.77" Z="32.6951" />
+		<TurnIn QuestName="Grimscale Pirates!" QuestId="8886" TurnInName="Captain Kelisendra" TurnInId="15921" X="8854.16" Y="-6278.03" Z="7.874" />
+		<TurnIn QuestName="Lost Armaments" QuestId="8480" TurnInName="Velendris Whitemorn" TurnInId="15404" X="8849.25" Y="-6278.24" Z="8.0203" />
+		<PickUp QuestName="Wretched Ringleader" QuestId="9076" GiverName="Velendris Whitemorn" GiverId="15404" X="8849.25" Y="-6278.24" Z="8.0203" />
 		<Objective QuestName="Wretched Ringleader" QuestId="9076" Type="CollectItem" ItemId="22487" CollectCount="1" />
-		<TurnIn QuestName="Wretched Ringleader" QuestId="9076" TurnInName="Velendris Whitemorn" TurnInId="15404" />
-		<PickUp QuestName="Missing in the Ghostlands" QuestId="9144" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" />
-		<TurnIn QuestName="Situation at Sunsail Anchorage" QuestId="8892" TurnInName="Ranger Degolien" TurnInId="15939" />
-		<PickUp QuestName="Farstrider Retreat" QuestId="9359" GiverName="Ranger Degolien" GiverId="15939" />
-		<While Condition="((HasQuest(9066)) &amp;&amp; (!IsQuestCompleted(9066)))" >
-			<CustomBehavior File="UseItemOn" QuestId="9066" MobId="15945" ItemId="22473" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9037.79" Y="-6697.62" Z="12.6447" />
-		</While>
-		<While Condition="((HasQuest(9066)) &amp;&amp; (!IsQuestCompleted(9066)))" >
-			<CustomBehavior File="UseItemOn" QuestId="9066" MobId="15945" ItemId="22473" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9037.79" Y="-6697.62" Z="12.6447" />
-		</While>
-		<TurnIn QuestName="Swift Discipline" QuestId="9066" TurnInName="Instructor Antheol" TurnInId="15970" />
+		<TurnIn QuestName="Wretched Ringleader" QuestId="9076" TurnInName="Velendris Whitemorn" TurnInId="15404" X="8849.25" Y="-6278.24" Z="8.0203" />
+		<PickUp QuestName="Missing in the Ghostlands" QuestId="9144" GiverName="Magistrix Landra Dawnstrider" GiverId="16210" X="8718.34" Y="-6655.9" Z="72.8381" />
+		<TurnIn QuestName="Situation at Sunsail Anchorage" QuestId="8892" TurnInName="Ranger Degolien" TurnInId="15939" X="8716.27" Y="-6622.22" Z="80.7642" />
+		<PickUp QuestName="Farstrider Retreat" QuestId="9359" GiverName="Ranger Degolien" GiverId="15939" X="8716.27" Y="-6622.22" Z="80.7642" />
+		<!-- Q9066 Swift Discipline: objective nodes transplanted from HonorBuddy drind reference Azenius Project 1-70 Horde\Horde 1-85\Profiles\1-60 Bracket\Starting Zones 1-12\Blood Elf.xml -->
+		<If Condition="Me.Race == WoWRace.BloodElf">
+			<If Condition="HasQuest(9066) &amp;&amp; !IsQuestCompleted(9066)">
+				<CustomBehavior File="UseItemOn" QuestId="9066" ItemId="22473" MobId="15941" NumOfTimes="1" HpLeftAmount="99" X="9188.763" Y="-6712.909" Z="25.91417" />
+			</If>
+		</If>
+
+		<If Condition="Me.Race == WoWRace.BloodElf">
+			<If Condition="HasQuest(9066) &amp;&amp; !IsQuestCompleted(9066)">
+				<CustomBehavior File="UseItemOn" QuestId="9066" ItemId="22473" MobId="15945" NumOfTimes="1" HpLeftAmount="99" X="9037.787" Y="-6697.619" Z="12.56385" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Swift Discipline" QuestId="9066" TurnInName="Instructor Antheol" TurnInId="15970" X="9251.98" Y="-7230.74" Z="16.4737" />
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="The Stone" QuestId="9529" GiverName="Talionia" GiverId="16647" />
+			<PickUp QuestName="The Stone" QuestId="9529" GiverName="Talionia" GiverId="16647" X="9773.28" Y="-7301.98" Z="14.7505" />
 		</If>
 
-		<TurnIn QuestName="Farstrider Retreat" QuestId="9359" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
+		<TurnIn QuestName="Farstrider Retreat" QuestId="9359" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Taming the Beast" QuestId="9484" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
-			<TurnIn QuestName="Taming the Beast" QuestId="9484" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
-			<PickUp QuestName="Taming the Beast" QuestId="9486" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
+			<PickUp QuestName="Taming the Beast" QuestId="9484" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<TurnIn QuestName="Taming the Beast" QuestId="9484" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<PickUp QuestName="Taming the Beast" QuestId="9486" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="Taming the Beast" QuestId="9486" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
-			<PickUp QuestName="Taming the Beast" QuestId="9485" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
+			<TurnIn QuestName="Taming the Beast" QuestId="9486" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<PickUp QuestName="Taming the Beast" QuestId="9485" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 		</If>
 
-		<TurnIn QuestName="Missing in the Ghostlands" QuestId="9144" TurnInName="Courier Dawnstrider" TurnInId="16183" />
-		<PickUp QuestName="The Fallen Courier" QuestId="9147" GiverName="Apothecary Thedra" GiverId="16196" />
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-		</If>
-
+		<TurnIn QuestName="Missing in the Ghostlands" QuestId="9144" TurnInName="Courier Dawnstrider" TurnInId="16183" X="8119.71" Y="-6899.62" Z="70.8429" />
+		<PickUp QuestName="The Fallen Courier" QuestId="9147" GiverName="Apothecary Thedra" GiverId="16196" X="8118" Y="-6901.53" Z="70.427" />
 		<Objective QuestName="The Fallen Courier" QuestId="9147" Type="CollectItem" ItemId="22570" CollectCount="4" />
 		<If Condition="Me.Level &lt; 11">
 			<SetGrindArea>
@@ -584,47 +994,58 @@
 			</SetGrindArea>
 			<GrindTo Level="11" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
 			<!-- Quest 9529 (The Stone) — TurnIn Object not in 3.3.5a -->
-			<PickUp QuestName="The Rune of Summoning" QuestId="9619" GiverName="Apothecary Thedra" GiverId="16196" />
+			<PickUp QuestName="The Rune of Summoning" QuestId="9619" GiverName="Voidstone" GiverId="181698" GiverType="Object" X="7923.38" Y="-6728.08" Z="43.4225" />
 		</If>
 
-		<While Condition="((HasQuest(9619)) &amp;&amp; (!IsQuestCompleted(9619)))" >
+		<While Condition="((HasQuest(9619)) &amp;&amp; (!IsQuestCompleted(9619)))">
 			<CustomBehavior File="UseItemOn" QuestId="9619" MobId="5676" ItemId="23732" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
+
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
 			<Objective QuestName="The Rune of Summoning" QuestId="9619" Type="KillMob" MobId="5676" KillCount="1" />
 		</If>
 
-		<TurnIn QuestName="The Fallen Courier" QuestId="9147" TurnInName="Apothecary Thedra" TurnInId="16196" />
-		<PickUp QuestName="The Magister's Apprentice" QuestId="8888" GiverName="Magister Duskwither" GiverId="15951" />
+		<TurnIn QuestName="The Fallen Courier" QuestId="9147" TurnInName="Apothecary Thedra" TurnInId="16196" X="8118" Y="-6901.53" Z="70.427" />
+		<PickUp QuestName="The Magister's Apprentice" QuestId="8888" GiverName="Magister Duskwither" GiverId="15951" X="9024.56" Y="-7452.57" Z="103.359" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="Taming the Beast" QuestId="9485" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
-			<PickUp QuestName="Beast Training" QuestId="9673" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
-			<TurnIn QuestName="Beast Training" QuestId="9673" TurnInName="Halthenis" TurnInId="16675" />
+			<TurnIn QuestName="Taming the Beast" QuestId="9485" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<PickUp QuestName="Beast Training" QuestId="9673" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<TurnIn QuestName="Beast Training" QuestId="9673" TurnInName="Halthenis" TurnInId="16675" X="9926.74" Y="-7396.38" Z="13.7191" />
 		</If>
 
 		<If Condition="(Me.Class == WoWClass.Warlock) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="The Rune of Summoning" QuestId="9619" TurnInName="Talionia" TurnInId="16647" />
+			<!-- REVIEW Q9619 The Rune of Summoning: UseItemOn target 5676 Summoned Voidwalker has no spawn or is a kill-credit placeholder (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+			<If Condition="((HasQuest(9619)) &amp;&amp; (IsQuestCompleted(9619)))">
+				<TurnIn QuestName="The Rune of Summoning" QuestId="9619" TurnInName="Talionia" TurnInId="16647" X="9773.28" Y="-7301.98" Z="14.7505" />
+			</If>
+			<If Condition="((HasQuest(9619)) &amp;&amp; (!IsQuestCompleted(9619)))">
+				<AbandonQuest QuestId="9619" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="The Magister's Apprentice" QuestId="8888" TurnInName="Apprentice Loralthalis" TurnInId="15924" />
-		<PickUp QuestName="Deactivating the Spire" QuestId="8889" GiverName="Apprentice Loralthalis" GiverId="15924" />
-		<PickUp QuestName="Where's Wyllithen?" QuestId="9394" GiverName="Apprentice Loralthalis" GiverId="15924" />
-		<PickUp QuestName="Abandoned Investigations" QuestId="8891" GiverName="Apprentice Loralthalis" GiverId="15924" />
-		<TurnIn QuestName="Where's Wyllithen?" QuestId="9394" TurnInName="Groundskeeper Wyllithen" TurnInId="15969" />
-		<PickUp QuestName="Cleaning up the Grounds" QuestId="8894" GiverName="Groundskeeper Wyllithen" GiverId="15969" />
+		<TurnIn QuestName="The Magister's Apprentice" QuestId="8888" TurnInName="Apprentice Loralthalis" TurnInId="15924" X="9186.27" Y="-7827.28" Z="98.2947" />
+		<PickUp QuestName="Deactivating the Spire" QuestId="8889" GiverName="Apprentice Loralthalis" GiverId="15924" X="9186.27" Y="-7827.28" Z="98.2947" />
+		<PickUp QuestName="Where's Wyllithen?" QuestId="9394" GiverName="Apprentice Loralthalis" GiverId="15924" X="9186.27" Y="-7827.28" Z="98.2947" />
+		<PickUp QuestName="Abandoned Investigations" QuestId="8891" GiverName="Magister Duskwither's Journal" GiverId="181011" GiverType="Object" X="9330.7" Y="-7897.8" Z="158.444" />
+		<TurnIn QuestName="Where's Wyllithen?" QuestId="9394" TurnInName="Groundskeeper Wyllithen" TurnInId="15969" X="9500.11" Y="-7871.48" Z="16.2059" />
+		<PickUp QuestName="Cleaning up the Grounds" QuestId="8894" GiverName="Groundskeeper Wyllithen" GiverId="15969" X="9500.11" Y="-7871.48" Z="16.2059" />
 		<Objective QuestName="Cleaning up the Grounds" QuestId="8894" Type="KillMob" MobId="15966" KillCount="6" />
 		<Objective QuestName="Cleaning up the Grounds" QuestId="8894" Type="KillMob" MobId="15967" KillCount="6" />
-		<TurnIn QuestName="Cleaning up the Grounds" QuestId="8894" TurnInName="Groundskeeper Wyllithen" TurnInId="15969" />
-		<TurnIn QuestName="Deactivating the Spire" QuestId="8889" TurnInName="Apprentice Loralthalis" TurnInId="15924" />
-		<PickUp QuestName="Word from the Spire" QuestId="8890" GiverName="Apprentice Loralthalis" GiverId="15924" />
-		<PickUp QuestName="Amani Encroachment" QuestId="8476" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
-		<PickUp QuestName="The Spearcrafter's Hammer" QuestId="8477" GiverName="Arathel Sunforge" GiverId="15400" />
-		<TurnIn QuestName="Word from the Spire" QuestId="8890" TurnInName="Magister Duskwither" TurnInId="15951" />
-		<TurnIn QuestName="Abandoned Investigations" QuestId="8891" TurnInName="Magister Duskwither" TurnInId="15951" />
+		<TurnIn QuestName="Cleaning up the Grounds" QuestId="8894" TurnInName="Groundskeeper Wyllithen" TurnInId="15969" X="9500.11" Y="-7871.48" Z="16.2059" />
+		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180916" UseCount="1" />
+		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180919" UseCount="1" />
+		<Objective QuestName="Deactivating the Spire" QuestId="8889" Type="UseObject" ObjectId="180920" UseCount="1" />
+		<TurnIn QuestName="Deactivating the Spire" QuestId="8889" TurnInName="Apprentice Loralthalis" TurnInId="15924" X="9186.27" Y="-7827.28" Z="98.2947" />
+		<PickUp QuestName="Word from the Spire" QuestId="8890" GiverName="Apprentice Loralthalis" GiverId="15924" X="9186.27" Y="-7827.28" Z="98.2947" />
+		<PickUp QuestName="Amani Encroachment" QuestId="8476" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+		<PickUp QuestName="The Spearcrafter's Hammer" QuestId="8477" GiverName="Arathel Sunforge" GiverId="15400" X="8986.43" Y="-7419.07" Z="89.4855" />
+		<TurnIn QuestName="Word from the Spire" QuestId="8890" TurnInName="Magister Duskwither" TurnInId="15951" X="9024.56" Y="-7452.57" Z="103.359" />
+		<TurnIn QuestName="Abandoned Investigations" QuestId="8891" TurnInName="Magister Duskwither" TurnInId="15951" X="9024.56" Y="-7452.57" Z="103.359" />
 		<Objective QuestName="The Spearcrafter's Hammer" QuestId="8477" Type="CollectItem" ItemId="20759" CollectCount="1" />
-		<PickUp QuestName="Zul'Marosh" QuestId="8479" GiverName="Ven'jashi" GiverId="15406" />
+		<PickUp QuestName="Zul'Marosh" QuestId="8479" GiverName="Ven'jashi" GiverId="15406" X="8666.61" Y="-7960.89" Z="151.876" />
 		<If Condition="Me.Level &lt; 12">
 			<SetGrindArea>
 				<GrindArea>
@@ -639,85 +1060,131 @@
 			</SetGrindArea>
 			<GrindTo Level="12" />
 		</If>
+
 		<Objective QuestName="Zul'Marosh" QuestId="8479" Type="CollectItem" ItemId="20760" CollectCount="1" />
-		<Objective QuestName="Amani Invasion" QuestId="9360" Type="CollectItem" ItemId="23249" CollectCount="1" />
-		<PickUp QuestName="Amani Invasion" QuestId="9360" GiverName="Ven'jashi" GiverId="15406" />
-		<TurnIn QuestName="Zul'Marosh" QuestId="8479" TurnInName="Ven'jashi" TurnInId="15406" />
-		<Objective QuestName="Amani Encroachment" QuestId="8476" Type="KillMob" MobId="15643" KillCount="5" />
-		<Objective QuestName="Amani Encroachment" QuestId="8476" Type="KillMob" MobId="15641" KillCount="5" />
-		<TurnIn QuestName="Amani Encroachment" QuestId="8476" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
-		<TurnIn QuestName="Amani Invasion" QuestId="9360" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" />
-		<PickUp QuestName="Warning Fairbreeze Village" QuestId="9363" GiverName="Lieutenant Dawnrunner" GiverId="15399" />
-		<TurnIn QuestName="The Spearcrafter's Hammer" QuestId="8477" TurnInName="Arathel Sunforge" TurnInId="15400" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="The First Trial" QuestId="9678" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23249)">
+			<CustomBehavior File="CollectThings" CollectItemId="23249" CollectItemCount="1" HuntingGroundRadius="120" MobId="15407" X="8425.4" Y="-7566.3" Z="174.681">
+				<Hotspot X="8425.4" Y="-7566.3" Z="174.68" />
+			</CustomBehavior>
 		</If>
 
-		<TurnIn QuestName="Warning Fairbreeze Village" QuestId="9363" TurnInName="Ranger Degolien" TurnInId="15939" />
-		<TurnIn QuestName="The Party Never Ends" QuestId="9067" TurnInName="Lord Saltheril" TurnInId="16144" />
-		<TurnIn QuestName="The Scorched Grove" QuestId="9258" TurnInName="Larianna Riverwind" TurnInId="15398" />
-		<PickUp QuestName="A Somber Task" QuestId="8473" GiverName="Larianna Riverwind" GiverId="15398" />
-		<Objective QuestName="A Somber Task" QuestId="8473" Type="CollectItem" ItemId="23228" CollectCount="1" />
-		<While Condition="((HasQuest(8473)) &amp;&amp; (!IsQuestCompleted(8473)))" >
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23249)">
+			<PickUp QuestName="Amani Invasion" QuestId="9360" GiverName="Amani Invasion Plans" GiverId="23249" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Zul'Marosh" QuestId="8479" TurnInName="Ven'jashi" TurnInId="15406" X="8666.61" Y="-7960.89" Z="151.876" />
+		<Objective QuestName="Amani Encroachment" QuestId="8476" Type="KillMob" MobId="15643" KillCount="5" />
+		<Objective QuestName="Amani Encroachment" QuestId="8476" Type="KillMob" MobId="15641" KillCount="5" />
+		<TurnIn QuestName="Amani Encroachment" QuestId="8476" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+		<TurnIn QuestName="Amani Invasion" QuestId="9360" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+		<PickUp QuestName="Warning Fairbreeze Village" QuestId="9363" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+		<TurnIn QuestName="The Spearcrafter's Hammer" QuestId="8477" TurnInName="Arathel Sunforge" TurnInId="15400" X="8986.43" Y="-7419.07" Z="89.4855" />
+		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
+			<PickUp QuestName="The First Trial" QuestId="9678" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+		</If>
+
+		<TurnIn QuestName="Warning Fairbreeze Village" QuestId="9363" TurnInName="Ranger Degolien" TurnInId="15939" X="8716.27" Y="-6622.22" Z="80.7642" />
+		<!-- REVIEW Q9067 The Party Never Ends: collect 22775 Suntouched Special Reserve x1 (no loot source: spell/vendor/event) (behavior ForceSetVendor not transplantable). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
+		<If Condition="((HasQuest(9067)) &amp;&amp; (IsQuestCompleted(9067)))">
+			<TurnIn QuestName="The Party Never Ends" QuestId="9067" TurnInName="Lord Saltheril" TurnInId="16144" X="8626.61" Y="-6366.06" Z="55.4326" />
+		</If>
+
+		<If Condition="((HasQuest(9067)) &amp;&amp; (!IsQuestCompleted(9067)))">
+			<AbandonQuest QuestId="9067" />
+		</If>
+
+		<TurnIn QuestName="The Scorched Grove" QuestId="9258" TurnInName="Larianna Riverwind" TurnInId="15398" X="8414.19" Y="-6165" Z="61.3986" />
+		<PickUp QuestName="A Somber Task" QuestId="8473" GiverName="Larianna Riverwind" GiverId="15398" X="8414.19" Y="-6165" Z="61.3986" />
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23228)">
+			<CustomBehavior File="CollectThings" CollectItemId="23228" CollectItemCount="1" HuntingGroundRadius="120" MobId="15409" X="8279.69" Y="-6215.24" Z="54.5363">
+				<Hotspot X="8279.69" Y="-6215.24" Z="54.54" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(8473)) &amp;&amp; (!IsQuestCompleted(8473)))">
 			<CustomBehavior File="UseItemOn" QuestId="8473" MobId="15637" ItemId="23228" NumOfTimes="1" Range="5" CollectionDistance="1000" X="8357.44" Y="-6186.64" Z="61.6855" />
 		</While>
-		<PickUp QuestName="Old Whitebark's Pendant" QuestId="8474" GiverName="Larianna Riverwind" GiverId="15398" />
-		<TurnIn QuestName="A Somber Task" QuestId="8473" TurnInName="Larianna Riverwind" TurnInId="15398" />
-		<TurnIn QuestName="Old Whitebark's Pendant" QuestId="8474" TurnInName="Larianna Riverwind" TurnInId="15398" />
-		<PickUp QuestName="Whitebark's Memory" QuestId="10166" GiverName="Larianna Riverwind" GiverId="15398" />
-		<Objective QuestName="Whitebark's Memory" QuestId="10166" Type="KillMob" MobId="19456" KillCount="1" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23228)">
+			<PickUp QuestName="Old Whitebark's Pendant" QuestId="8474" GiverName="Old Whitebark's Pendant" GiverId="23228" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="A Somber Task" QuestId="8473" TurnInName="Larianna Riverwind" TurnInId="15398" X="8414.19" Y="-6165" Z="61.3986" />
+		<TurnIn QuestName="Old Whitebark's Pendant" QuestId="8474" TurnInName="Larianna Riverwind" TurnInId="15398" X="8414.19" Y="-6165" Z="61.3986" />
+		<PickUp QuestName="Whitebark's Memory" QuestId="10166" GiverName="Larianna Riverwind" GiverId="15398" X="8414.19" Y="-6165" Z="61.3986" />
 		<TurnIn QuestName="Whitebark's Memory" QuestId="10166" TurnInName="Whitebark's Spirit" TurnInId="19456" />
-		<TurnIn QuestName="Runewarden Deryan" QuestId="9253" TurnInName="Runewarden Deryan" TurnInId="16362" />
-		<PickUp QuestName="Powering our Defenses" QuestId="8490" GiverName="Runewarden Deryan" GiverId="16362" />
-		<While Condition="((HasQuest(8490)) &amp;&amp; (!IsQuestCompleted(8490)))" >
-			<CustomBehavior File="UseItemOn" QuestId="8490" MobId="16364" ItemId="22693" NumOfTimes="1" Range="5" CollectionDistance="1000" />
-		</While>
+		<TurnIn QuestName="Runewarden Deryan" QuestId="9253" TurnInName="Runewarden Deryan" TurnInId="16362" X="8235.5" Y="-6664.06" Z="84.5585" />
+		<PickUp QuestName="Powering our Defenses" QuestId="8490" GiverName="Runewarden Deryan" GiverId="16362" X="8235.5" Y="-6664.06" Z="84.5585" />
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
 			<Objective QuestName="The First Trial" QuestId="9678" Type="KillMob" MobId="17716" KillCount="1" />
 		</If>
 
-		<TurnIn QuestName="Powering our Defenses" QuestId="8490" TurnInName="Runewarden Deryan" TurnInId="16362" />
+		<!-- Q8490 Powering our Defenses: objective nodes transplanted from HonorBuddy drind reference Azenius Project 1-70 Horde\Horde 1-85\Profiles\1-60 Bracket\Starting Zones 1-12\Blood Elf.xml -->
+		<If Condition="Me.Race == WoWRace.BloodElf">
+			<If Condition="HasQuest(8490) &amp;&amp; !IsQuestCompleted(8490)">
+				<UseItem ItemId="22693" QuestName="Powering our Defenses" QuestId="8490" X="8275.492" Y="-7215.451" Z="137.8743" />
+			</If>
+		</If>
+
+		<If Condition="Me.Race == WoWRace.BloodElf">
+			<If Condition="HasQuest(8490) &amp;&amp; !IsQuestCompleted(8490)">
+				<CustomBehavior File="KillUntilComplete" QuestId="8490" MobId="17086" X="8275.492" Y="-7215.451" Z="137.8743" />
+			</If>
+		</If>
+
+		<TurnIn QuestName="Powering our Defenses" QuestId="8490" TurnInName="Runewarden Deryan" TurnInId="16362" X="8235.5" Y="-6664.06" Z="84.5585" />
 		<If Condition="Me.Level &lt; 13">
 			<SetGrindArea>
 				<GrindArea>
-					<Name>Grind to Level 13 - Sangrias Stillblade</Name>
-					<Factions>14</Factions>
+					<Name>Grind to Level 13 - Eversong Green Keeper</Name>
+					<Factions>21,38,91</Factions>
+					<TargetMinLevel>7</TargetMinLevel>
+					<TargetMaxLevel>10</TargetMaxLevel>
 					<Hotspots>
-						<Hotspot X="35.28" Y="85.58" Z="0.00" />
+						<Hotspot X="8186.6" Y="-6579.77" Z="79.89" />
+						<Hotspot X="8290.95" Y="-6546.82" Z="86.56" />
+						<Hotspot X="8251.8" Y="-6507.7" Z="82.83" />
+						<Hotspot X="8161.7" Y="-6506.34" Z="78.04" />
+						<Hotspot X="8189.91" Y="-6822.08" Z="78.34" />
+						<Hotspot X="8236.03" Y="-6854.43" Z="85" />
 					</Hotspots>
 				</GrindArea>
 			</SetGrindArea>
 			<GrindTo Level="13" />
 		</If>
+
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<TurnIn QuestName="The First Trial" QuestId="9678" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-			<PickUp QuestName="A Study in Power" QuestId="9681" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<PickUp QuestName="A Study in Power" QuestId="64319" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
+			<TurnIn QuestName="The First Trial" QuestId="9678" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<PickUp QuestName="A Study in Power" QuestId="9681" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
 		</If>
 
-		<TurnIn QuestName="A Study in Power" QuestId="9681" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" />
-		<TurnIn QuestName="A Study in Power" QuestId="64319" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" />
-		<PickUp QuestName="Claiming the Light" QuestId="9684" GiverName="Magister Astalor Bloodsworn" GiverId="17718" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Claiming the Light" QuestId="63866" GiverName="Magister Astalor Bloodsworn" GiverId="17718" />
+		<TurnIn QuestName="A Study in Power" QuestId="9681" TurnInName="Magister Astalor Bloodsworn" TurnInId="17718" X="9861.31" Y="-7516.01" Z="-7.9775" />
+		<If Condition="(Me.Class == WoWClass.Paladin)">
+			<PickUp QuestName="Claiming the Light" QuestId="9684" GiverName="Magister Astalor Bloodsworn" GiverId="17718" X="9861.31" Y="-7516.01" Z="-7.9775" />
 		</If>
 
 		<Objective QuestName="Claiming the Light" QuestId="9684" Type="CollectItem" ItemId="24156" CollectCount="1" />
+		<TurnIn QuestName="Claiming the Light" QuestId="9684" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
 		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<Objective QuestName="Claiming the Light" QuestId="63866" Type="CollectItem" ItemId="24156" CollectCount="1" />
-		</If>
-
-		<TurnIn QuestName="Claiming the Light" QuestId="9684" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-		<TurnIn QuestName="Claiming the Light" QuestId="63866" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
-		<If Condition="(Me.Class == WoWClass.Paladin) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
-			<PickUp QuestName="Redeeming the Dead" QuestId="9685" GiverName="Knight-Lord Bloodvalor" GiverId="17717" />
-			<While Condition="((HasQuest(9685)) &amp;&amp; (!IsQuestCompleted(9685)))" >
+			<PickUp QuestName="Redeeming the Dead" QuestId="9685" GiverName="Knight-Lord Bloodvalor" GiverId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
+			<While Condition="((HasQuest(9685)) &amp;&amp; (!IsQuestCompleted(9685)))">
 				<CustomBehavior File="UseItemOn" QuestId="9685" MobId="17768" ItemId="24184" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9667.23" Y="-7371.32" Z="22.955" />
 			</While>
-			<TurnIn QuestName="Redeeming the Dead" QuestId="9685" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" />
+			<TurnIn QuestName="Redeeming the Dead" QuestId="9685" TurnInName="Knight-Lord Bloodvalor" TurnInId="17717" X="9869.7" Y="-7482.1" Z="15.0325" />
 		</If>
 
-		<PickUp QuestName="Conscript of the Horde" QuestId="840" GiverName="Takrin Pathseeker" GiverId="3336" />
+		<If Condition="Me.MapId != 1">
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
+
+		<PickUp QuestName="Conscript of the Horde" QuestId="840" GiverName="Takrin Pathseeker" GiverId="3336" X="271.805" Y="-4650.83" Z="11.7894" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_The Barrens (12-15)" />
 	</QuestOrder>
 </HBProfile>

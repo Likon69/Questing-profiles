@@ -1,27 +1,30 @@
 <HBProfile>
 	<Name>Classic (12-58)\Badlands (41-42)</Name>
-	<MinLevel>41</MinLevel>
-	<MaxLevel>42</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Sranda" Entry="1407" Type="Repair" X="-6673.13" Y="-2151.46" Z="244.227" />
+		<Vendor Name="Innkeeper Shul'kar" Entry="9356" Type="Food" X="-6650.01" Y="-2149.09" Z="245.434" />
+		<Vendor Name="Gruna" Entry="3708" Type="Food" X="-7498.05" Y="-2191.42" Z="165.738" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="705" Name="Pearl Diving">
@@ -33,16 +36,187 @@
 				<Hotspot X="-12212.3" Y="429.67" Z="-101.36" />
 				<Hotspot X="-12211.3" Y="689.12" Z="-72.46" />
 				<Hotspot X="-12194.5" Y="597.61" Z="-66.16" />
-				<Hotspot X="-12189.1" Y="481.96" Z="-72.0" />
+				<Hotspot X="-12189.1" Y="481.96" Z="-72" />
 				<Hotspot X="-12173.9" Y="439.63" Z="-35.32" />
 				<Hotspot X="-12140.9" Y="558.24" Z="-30.82" />
 				<Hotspot X="-12127.9" Y="525.82" Z="-49.47" />
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="1108" Name="Indurium">
+		<Objective Type="CollectItem" ItemId="5797" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Stonevault Seer" Id="2892" />
+				<Mob Name="Stonevault Bonesnapper" Id="2893" />
+				<Mob Name="Stonevault Shaman" Id="2894" />
+				<Mob Name="Stonevault Rockchewer" Id="4851" />
+				<Mob Name="Stonevault Cave Hunter" Id="4856" />
+				<Mob Name="Stonevault Basher" Id="6733" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6968.4" Y="-3324.9" Z="250.62" />
+				<Hotspot X="-7040.04" Y="-3271.83" Z="248.32" />
+				<Hotspot X="-7005.76" Y="-3337.53" Z="241.16" />
+				<Hotspot X="-7000.86" Y="-3382.34" Z="241.79" />
+				<Hotspot X="-7062.86" Y="-3313.28" Z="241.62" />
+				<Hotspot X="-7082.39" Y="-3291.11" Z="241.79" />
+				<Hotspot X="-7055.89" Y="-3364.47" Z="242.5" />
+				<Hotspot X="-6627.44" Y="-3684.89" Z="265.77" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="710" Name="Study of the Elements: Rock">
+		<Objective Type="CollectItem" ItemId="4626" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Lesser Rock Elemental" Id="2735" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6662.51" Y="-2659.09" Z="247.9" />
+				<Hotspot X="-6617.25" Y="-2623.36" Z="265.37" />
+				<Hotspot X="-6672.78" Y="-2601.12" Z="245.28" />
+				<Hotspot X="-6594.24" Y="-2561.66" Z="276.99" />
+				<Hotspot X="-6648.3" Y="-2554.05" Z="249.41" />
+				<Hotspot X="-6586.4" Y="-2508.21" Z="280.95" />
+				<Hotspot X="-6512.5" Y="-2470.74" Z="309.31" />
+				<Hotspot X="-6582.73" Y="-2445.82" Z="286.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="1419" Name="Coyote Thieves">
+		<Objective Type="CollectItem" ItemId="6166" CollectCount="30">
+			<CollectFrom>
+				<Mob Name="Crag Coyote" Id="2727" />
+				<Mob Name="Feral Crag Coyote" Id="2728" />
+				<Mob Name="Elder Crag Coyote" Id="2729" />
+				<Mob Name="Rabid Crag Coyote" Id="2730" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6941.13" Y="-2348.83" Z="241.42" />
+				<Hotspot X="-6783.45" Y="-2546.29" Z="247.76" />
+				<Hotspot X="-6964.13" Y="-2407.77" Z="241.42" />
+				<Hotspot X="-7001.55" Y="-2337.2" Z="242.6" />
+				<Hotspot X="-7012.92" Y="-2415.06" Z="241.46" />
+				<Hotspot X="-6828.01" Y="-2605.62" Z="241.44" />
+				<Hotspot X="-6978.92" Y="-2498.58" Z="243.3" />
+				<Hotspot X="-6745.11" Y="-2659.32" Z="241.81" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="2258" Name="Badlands Reagent Run">
+		<Objective Type="CollectItem" ItemId="7848" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Rock Elemental" Id="92" />
+				<Mob Name="Lesser Rock Elemental" Id="2735" />
+				<Mob Name="Greater Rock Elemental" Id="2736" />
+				<Mob Name="Ambassador Infernus" Id="2745" />
+				<Mob Name="Rumbler" Id="2752" />
+				<Mob Name="Enraged Rock Elemental" Id="2791" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6529.4" Y="-2408.3" Z="288.5" />
+				<Hotspot X="-6450.94" Y="-2395.32" Z="300.15" />
+				<Hotspot X="-6582.73" Y="-2445.82" Z="286.69" />
+				<Hotspot X="-6492.92" Y="-2443.75" Z="301.23" />
+				<Hotspot X="-6586.4" Y="-2508.21" Z="280.95" />
+				<Hotspot X="-6437.36" Y="-2456.22" Z="320.3" />
+				<Hotspot X="-6500.69" Y="-2489.2" Z="320.18" />
+				<Hotspot X="-6594.24" Y="-2561.66" Z="276.99" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="7846" CollectCount="10">
+			<CollectFrom>
+				<Mob Name="Crag Coyote" Id="2727" />
+				<Mob Name="Feral Crag Coyote" Id="2728" />
+				<Mob Name="Elder Crag Coyote" Id="2729" />
+				<Mob Name="Rabid Crag Coyote" Id="2730" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6941.13" Y="-2348.83" Z="241.42" />
+				<Hotspot X="-7001.55" Y="-2337.2" Z="242.6" />
+				<Hotspot X="-6964.13" Y="-2407.77" Z="241.42" />
+				<Hotspot X="-6783.45" Y="-2546.29" Z="247.76" />
+				<Hotspot X="-7012.92" Y="-2415.06" Z="241.46" />
+				<Hotspot X="-6978.92" Y="-2498.58" Z="243.3" />
+				<Hotspot X="-6828.01" Y="-2605.62" Z="241.44" />
+				<Hotspot X="-6745.11" Y="-2659.32" Z="241.81" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="7847" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Starving Buzzard" Id="2829" />
+				<Mob Name="Buzzard" Id="2830" />
+				<Mob Name="Giant Buzzard" Id="2831" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6704.62" Y="-2515.35" Z="243.92" />
+				<Hotspot X="-6866.51" Y="-2474.94" Z="242.59" />
+				<Hotspot X="-6913.76" Y="-2467.38" Z="243.52" />
+				<Hotspot X="-6895.85" Y="-2506.43" Z="242.76" />
+				<Hotspot X="-7015.73" Y="-2383" Z="240.91" />
+				<Hotspot X="-7066.29" Y="-2384.52" Z="241.68" />
+				<Hotspot X="-6915.89" Y="-2720.09" Z="241.92" />
+				<Hotspot X="-7176.56" Y="-2548.17" Z="248.48" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="711" Name="Study of the Elements: Rock">
+		<Objective Type="CollectItem" ItemId="4627" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Rock Elemental" Id="92" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-6488.99" Y="-2490.99" Z="324.46" />
+				<Hotspot X="-6472.38" Y="-2441.5" Z="304.79" />
+				<Hotspot X="-6423.73" Y="-2465.14" Z="327.17" />
+				<Hotspot X="-6450.94" Y="-2395.32" Z="300.15" />
+				<Hotspot X="-7137.41" Y="-2992.68" Z="261.62" />
+				<Hotspot X="-7140.37" Y="-2951.74" Z="263.31" />
+				<Hotspot X="-7108.7" Y="-3035.9" Z="244.39" />
+				<Hotspot X="-7146.01" Y="-3085.18" Z="262.64" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="712" Name="Study of the Elements: Rock">
+		<Objective Type="CollectItem" ItemId="4628" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Greater Rock Elemental" Id="2736" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-7114.21" Y="-2244.57" Z="288.32" />
+				<Hotspot X="-7297.31" Y="-2491.95" Z="311.26" />
+				<Hotspot X="-7160.15" Y="-2229.12" Z="297.8" />
+				<Hotspot X="-7300.82" Y="-2411.09" Z="276.51" />
+				<Hotspot X="-7335.23" Y="-2448.26" Z="299.72" />
+				<Hotspot X="-7216.94" Y="-2236.03" Z="289.94" />
+				<Hotspot X="-7367.57" Y="-2479.38" Z="324.34" />
+				<Hotspot X="-7179.35" Y="-2165.05" Z="318.65" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Badlands (41-42) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(705))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="9984.3" Y="-7107.59" Z="47.7" />
+				<CustomBehavior File="GoThruPortal" X="9984.3" Y="-7107.59" Z="47.7" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
+				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+			</If>
+		</If>
 
 		<Objective QuestName="Coolant Heads Prevail" QuestId="713" Type="CollectItem" ItemId="3829" CollectCount="1" />
 		<Objective QuestName="Gyro... What?" QuestId="714" Type="CollectItem" ItemId="4389" CollectCount="1" />
@@ -50,32 +224,32 @@
 		<Objective QuestName="Liquid Stone" QuestId="715" Type="CollectItem" ItemId="3823" CollectCount="1" />
 		<Objective QuestName="Stone Is Better than Cloth" QuestId="716" Type="CollectItem" ItemId="2868" CollectCount="1" />
 		<Objective QuestName="Pearl Diving" QuestId="705" Type="CollectItem" ItemId="4611" CollectCount="9" />
-		<PickUp QuestName="Pearl Diving" QuestId="705" GiverName="Rigglefuzz" GiverId="2817" />
-		<PickUp QuestName="Barbecued Buzzard Wings" QuestId="703" GiverName="Rigglefuzz" GiverId="2817" />
-		<TurnIn QuestName="Pearl Diving" QuestId="705" TurnInName="Rigglefuzz" TurnInId="2817" />
-		<TurnIn QuestName="Martek the Exiled" QuestId="1106" TurnInName="Martek the Exiled" TurnInId="4618" />
-		<PickUp QuestName="Indurium" QuestId="1108" GiverName="Martek the Exiled" GiverId="4618" />
+		<PickUp QuestName="Pearl Diving" QuestId="705" GiverName="Rigglefuzz" GiverId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
+		<PickUp QuestName="Barbecued Buzzard Wings" QuestId="703" GiverName="Rigglefuzz" GiverId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
+		<TurnIn QuestName="Pearl Diving" QuestId="705" TurnInName="Rigglefuzz" TurnInId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
+		<TurnIn QuestName="Martek the Exiled" QuestId="1106" TurnInName="Martek the Exiled" TurnInId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
+		<PickUp QuestName="Indurium" QuestId="1108" GiverName="Martek the Exiled" GiverId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
 		<Objective QuestName="Indurium" QuestId="1108" Type="CollectItem" ItemId="5797" CollectCount="10" />
-		<TurnIn QuestName="Indurium" QuestId="1108" TurnInName="Martek the Exiled" TurnInId="4618" />
-		<PickUp QuestName="News for Fizzle" QuestId="1137" GiverName="Martek the Exiled" GiverId="4618" />
-		<PickUp QuestName="Study of the Elements: Rock" QuestId="710" GiverName="Lotwil Veriatus" GiverId="2921" />
-		<PickUp QuestName="Coolant Heads Prevail" QuestId="713" GiverName="Lotwil Veriatus" GiverId="2921" />
-		<TurnIn QuestName="Coolant Heads Prevail" QuestId="713" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="Gyro... What?" QuestId="714" GiverName="Lotwil Veriatus" GiverId="2921" />
-		<TurnIn QuestName="Gyro... What?" QuestId="714" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="Liquid Stone" QuestId="715" GiverName="Lucien Tosselwrench" GiverId="2920" />
-		<TurnIn QuestName="Liquid Stone" QuestId="715" TurnInName="Lucien Tosselwrench" TurnInId="2920" />
-		<TurnIn QuestName="Neeka Bloodscar" QuestId="1418" TurnInName="Neeka Bloodscar" TurnInId="5394" />
-		<PickUp QuestName="Coyote Thieves" QuestId="1419" GiverName="Neeka Bloodscar" GiverId="5394" />
-		<PickUp QuestName="Report to Helgrum" QuestId="1420" GiverName="Neeka Bloodscar" GiverId="5394" />
-		<PickUp QuestName="Badlands Reagent Run" QuestId="2258" GiverName="Jarkal Mossmeld" GiverId="6868" />
+		<TurnIn QuestName="Indurium" QuestId="1108" TurnInName="Martek the Exiled" TurnInId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
+		<PickUp QuestName="News for Fizzle" QuestId="1137" GiverName="Martek the Exiled" GiverId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
+		<PickUp QuestName="Study of the Elements: Rock" QuestId="710" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="Coolant Heads Prevail" QuestId="713" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<TurnIn QuestName="Coolant Heads Prevail" QuestId="713" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="Gyro... What?" QuestId="714" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<TurnIn QuestName="Gyro... What?" QuestId="714" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="Liquid Stone" QuestId="715" GiverName="Lucien Tosselwrench" GiverId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<TurnIn QuestName="Liquid Stone" QuestId="715" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<TurnIn QuestName="Neeka Bloodscar" QuestId="1418" TurnInName="Neeka Bloodscar" TurnInId="5394" X="-6672.05" Y="-2240.34" Z="278.482" />
+		<PickUp QuestName="Coyote Thieves" QuestId="1419" GiverName="Neeka Bloodscar" GiverId="5394" X="-6672.05" Y="-2240.34" Z="278.482" />
+		<PickUp QuestName="Report to Helgrum" QuestId="1420" GiverName="Neeka Bloodscar" GiverId="5394" X="-6672.05" Y="-2240.34" Z="278.482" />
+		<PickUp QuestName="Badlands Reagent Run" QuestId="2258" GiverName="Jarkal Mossmeld" GiverId="6868" X="-6653.35" Y="-2139.33" Z="251.908" />
 		<Objective QuestName="Badlands Reagent Run" QuestId="2258" Type="CollectItem" ItemId="7848" CollectCount="5" />
 		<Objective QuestName="Study of the Elements: Rock" QuestId="710" Type="CollectItem" ItemId="4626" CollectCount="10" />
-		<TurnIn QuestName="Study of the Elements: Rock" QuestId="710" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="Study of the Elements: Rock" QuestId="711" GiverName="Lotwil Veriatus" GiverId="2921" />
+		<TurnIn QuestName="Study of the Elements: Rock" QuestId="710" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="Study of the Elements: Rock" QuestId="711" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		<Objective QuestName="Study of the Elements: Rock" QuestId="711" Type="CollectItem" ItemId="4627" CollectCount="3" />
-		<TurnIn QuestName="Study of the Elements: Rock" QuestId="711" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="Study of the Elements: Rock" QuestId="712" GiverName="Lotwil Veriatus" GiverId="2921" />
+		<TurnIn QuestName="Study of the Elements: Rock" QuestId="711" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="Study of the Elements: Rock" QuestId="712" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		<Objective QuestName="Badlands Reagent Run" QuestId="2258" Type="CollectItem" ItemId="7847" CollectCount="5" />
 		<Objective QuestName="Barbecued Buzzard Wings" QuestId="703" Type="CollectItem" ItemId="3404" CollectCount="4" />
 		<Objective QuestName="Badlands Reagent Run" QuestId="2258" Type="CollectItem" ItemId="7846" CollectCount="10" />
@@ -94,21 +268,22 @@
 			</SetGrindArea>
 			<GrindTo Level="42" />
 		</If>
+
 		<Objective QuestName="Study of the Elements: Rock" QuestId="712" Type="CollectItem" ItemId="4628" CollectCount="5" />
-		<TurnIn QuestName="Study of the Elements: Rock" QuestId="712" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="This Is Going to Be Hard" QuestId="734" GiverName="Lotwil Veriatus" GiverId="2921" />
-		<TurnIn QuestName="This Is Going to Be Hard" QuestId="734" TurnInName="Lucien Tosselwrench" TurnInId="2920" />
-		<PickUp QuestName="This Is Going to Be Hard" QuestId="777" GiverName="Lucien Tosselwrench" GiverId="2920" />
-		<PickUp QuestName="Stone Is Better than Cloth" QuestId="716" GiverName="Lucien Tosselwrench" GiverId="2920" />
-		<TurnIn QuestName="Stone Is Better than Cloth" QuestId="716" TurnInName="Lucien Tosselwrench" TurnInId="2920" />
-		<TurnIn QuestName="This Is Going to Be Hard" QuestId="777" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<PickUp QuestName="This Is Going to Be Hard" QuestId="778" GiverName="Lotwil Veriatus" GiverId="2921" />
+		<TurnIn QuestName="Study of the Elements: Rock" QuestId="712" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="This Is Going to Be Hard" QuestId="734" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<TurnIn QuestName="This Is Going to Be Hard" QuestId="734" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<PickUp QuestName="This Is Going to Be Hard" QuestId="777" GiverName="Lucien Tosselwrench" GiverId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<PickUp QuestName="Stone Is Better than Cloth" QuestId="716" GiverName="Lucien Tosselwrench" GiverId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<TurnIn QuestName="Stone Is Better than Cloth" QuestId="716" TurnInName="Lucien Tosselwrench" TurnInId="2920" X="-6623.19" Y="-2721.47" Z="244.684" />
+		<TurnIn QuestName="This Is Going to Be Hard" QuestId="777" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<PickUp QuestName="This Is Going to Be Hard" QuestId="778" GiverName="Lotwil Veriatus" GiverId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
 		<Objective QuestName="This Is Going to Be Hard" QuestId="778" Type="CollectItem" ItemId="4847" CollectCount="1" />
-		<TurnIn QuestName="This Is Going to Be Hard" QuestId="778" TurnInName="Lotwil Veriatus" TurnInId="2921" />
-		<TurnIn QuestName="Badlands Reagent Run" QuestId="2258" TurnInName="Jarkal Mossmeld" TurnInId="6868" />
-		<TurnIn QuestName="Coyote Thieves" QuestId="1419" TurnInName="Neeka Bloodscar" TurnInId="5394" />
-		<TurnIn QuestName="Barbecued Buzzard Wings" QuestId="703" TurnInName="Rigglefuzz" TurnInId="2817" />
-		<TurnIn QuestName="Report to Helgrum" QuestId="1420" TurnInName="Helgrum the Swift" TurnInId="1442" />
+		<TurnIn QuestName="This Is Going to Be Hard" QuestId="778" TurnInName="Lotwil Veriatus" TurnInId="2921" X="-6633.66" Y="-2724.62" Z="243.43" />
+		<TurnIn QuestName="Badlands Reagent Run" QuestId="2258" TurnInName="Jarkal Mossmeld" TurnInId="6868" X="-6653.35" Y="-2139.33" Z="251.908" />
+		<TurnIn QuestName="Coyote Thieves" QuestId="1419" TurnInName="Neeka Bloodscar" TurnInId="5394" X="-6672.05" Y="-2240.34" Z="278.482" />
+		<TurnIn QuestName="Barbecued Buzzard Wings" QuestId="703" TurnInName="Rigglefuzz" TurnInId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
+		<TurnIn QuestName="Report to Helgrum" QuestId="1420" TurnInName="Helgrum the Swift" TurnInId="1442" X="-10465" Y="-3317.89" Z="40.037" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_Stranglethorn Vale (42-43)" />
 	</QuestOrder>
 </HBProfile>

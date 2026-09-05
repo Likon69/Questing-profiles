@@ -1,46 +1,43 @@
 <HBProfile>
 	<Name>Extra Zones\Westfall</Name>
 	<MinLevel>1</MinLevel>
-	<MaxLevel>21</MaxLevel>
-
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
 	<MailPurple>True</MailPurple>
 
-	<Vendors />
+	<Vendors>
+		<Vendor Name="Farmer Saldean" Entry="233" Type="Food" X="-10128.7" Y="1055.21" Z="36.4333" />
+		<Vendor Name="Mike Miller" Entry="1670" Type="Food" X="-10653.3" Y="995.395" Z="32.9575" />
+		<Vendor Name="William MacGregor" Entry="1668" Type="Repair" X="-10658.5" Y="996.851" Z="32.9575" />
+		<Vendor Name="Innkeeper Heather" Entry="8931" Type="Food" X="-10653.4" Y="1166.52" Z="34.4647" />
+		<Vendor Name="Quartermaster Hudson" Entry="1249" Type="Repair" X="-9653.95" Y="659.651" Z="38.7355" />
+		<Vendor Name="Veldan Lightfoot" Entry="896" Type="Repair" X="-9649.72" Y="661.417" Z="38.7355" />
+	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
-	<Quest Id="12" Name="The People's Militia">
-		<Objective Type="KillMob" MobId="504" KillCount="15">
+	<Quest Id="64" Name="The Forgotten Heirloom">
+		<Objective Type="CollectItem" ItemId="841" CollectCount="1">
+			<CollectFrom>
+				<GameObject Name="Furlbrow's Wardrobe" Id="290" />
+				<GameObject Name="The Sepulcher" Id="1687" />
+			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-9987.65" Y="1478.71" Z="43.5477" />
-				<Hotspot X="-9973.8" Y="1458.38" Z="45.0564" />
-				<Hotspot X="-9875.14" Y="1308.65" Z="43.1871" />
-				<Hotspot X="-9848.13" Y="1325.39" Z="43.3237" />
-				<Hotspot X="-9886.71" Y="1311.43" Z="42.4926" />
-			</Hotspots>
-		</Objective>
-		<Objective Type="KillMob" MobId="95" KillCount="15">
-			<Hotspots>
-				<Hotspot X="-9856.29" Y="1386.08" Z="38.2633" />
-				<Hotspot X="-10001.2" Y="1470.4" Z="40.9513" />
-				<Hotspot X="-9998.19" Y="1451.22" Z="41.3837" />
-				<Hotspot X="-9987.12" Y="1444.62" Z="42.5593" />
-				<Hotspot X="-10005.1" Y="1476.44" Z="40.7722" />
+				<Hotspot X="-9849.81" Y="1290.18" Z="41.89" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -64,102 +61,227 @@
 	<Quest Id="9" Name="The Killing Fields">
 		<Objective Type="KillMob" MobId="114" KillCount="20">
 			<Hotspots>
-				<Hotspot X="-10516.3" Y="1686.63" Z="40.373" />
-				<Hotspot X="-10678.8" Y="1652.12" Z="42.4109" />
-				<Hotspot X="-9896.86" Y="1270.81" Z="41.9403" />
-				<Hotspot X="-10550.5" Y="1651.41" Z="41.5258" />
-				<Hotspot X="-9926.43" Y="1263.58" Z="42.1853" />
+				<Hotspot X="-10516.3" Y="1686.63" Z="40.37" />
+				<Hotspot X="-10678.8" Y="1652.12" Z="42.41" />
+				<Hotspot X="-9896.86" Y="1270.81" Z="41.94" />
+				<Hotspot X="-10550.5" Y="1651.41" Z="41.53" />
+				<Hotspot X="-9926.43" Y="1263.58" Z="42.19" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="38" Name="Westfall Stew">
+		<Objective Type="CollectItem" ItemId="732" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Harvest Golem" Id="36" />
+				<Mob Name="Harvest Watcher" Id="114" />
+				<Mob Name="Harvest Reaper" Id="115" />
+				<Mob Name="Rusty Harvest Golem" Id="480" />
+				<Mob Name="Foe Reaper 4000" Id="573" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10137.05" Y="1120.32" Z="36.88" />
+				<Hotspot X="-10186.4" Y="1081.39" Z="36.62" />
+				<Hotspot X="-10209.1" Y="1023.17" Z="36.34" />
+				<Hotspot X="-10114.8" Y="1156.42" Z="36.41" />
+				<Hotspot X="-10239.43" Y="1031.59" Z="36.29" />
+				<Hotspot X="-10043.1" Y="1143.52" Z="41.73" />
+				<Hotspot X="-10184.7" Y="1151.63" Z="36.84" />
+				<Hotspot X="-9988.26" Y="1123.03" Z="42.54" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="153" Name="Red Leather Bandanas">
+		<Objective Type="CollectItem" ItemId="829" CollectCount="15">
+			<CollectFrom>
+				<Mob Name="Defias Smuggler" Id="95" />
+				<Mob Name="Defias Pathstalker" Id="121" />
+				<Mob Name="Defias Highwayman" Id="122" />
+				<Mob Name="Defias Knuckleduster" Id="449" />
+				<Mob Name="Defias Renegade Mage" Id="450" />
+				<Mob Name="Defias Footpad" Id="481" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10496.48" Y="1229.57" Z="68.14" />
+				<Hotspot X="-10483.3" Y="1283.47" Z="56.55" />
+				<Hotspot X="-10497.05" Y="1326.22" Z="43.54" />
+				<Hotspot X="-10635.1" Y="1383.97" Z="41.97" />
+				<Hotspot X="-10767.73" Y="894.48" Z="35.31" />
+				<Hotspot X="-10459.43" Y="1327.01" Z="45.02" />
+				<Hotspot X="-10477.5" Y="1366.4" Z="51.27" />
+				<Hotspot X="-10333.68" Y="1238.33" Z="39.62" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="12" Name="The People's Militia">
+		<Objective Type="KillMob" MobId="504" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-9987.65" Y="1478.71" Z="43.55" />
+				<Hotspot X="-9973.8" Y="1458.38" Z="45.06" />
+				<Hotspot X="-9875.14" Y="1308.65" Z="43.19" />
+				<Hotspot X="-9848.13" Y="1325.39" Z="43.32" />
+				<Hotspot X="-9886.71" Y="1311.43" Z="42.49" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="95" KillCount="15">
+			<Hotspots>
+				<Hotspot X="-9856.29" Y="1386.08" Z="38.26" />
+				<Hotspot X="-10001.2" Y="1470.4" Z="40.95" />
+				<Hotspot X="-9998.19" Y="1451.22" Z="41.38" />
+				<Hotspot X="-9987.12" Y="1444.62" Z="42.56" />
+				<Hotspot X="-10005.1" Y="1476.44" Z="40.77" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="102" Name="Patrolling Westfall">
+		<Objective Type="CollectItem" ItemId="725" CollectCount="8">
+			<CollectFrom>
+				<Mob Name="Riverpaw Taskmaster" Id="98" />
+				<Mob Name="Riverpaw Gnoll" Id="117" />
+				<Mob Name="Riverpaw Mongrel" Id="123" />
+				<Mob Name="Riverpaw Brute" Id="124" />
+				<Mob Name="Riverpaw Overseer" Id="125" />
+				<Mob Name="Riverpaw Bandit" Id="452" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-10835.75" Y="1156.8" Z="39.63" />
+				<Hotspot X="-10865.65" Y="1130.86" Z="41.95" />
+				<Hotspot X="-10865.4" Y="1176.35" Z="36.05" />
+				<Hotspot X="-10813.5" Y="1270.81" Z="34.47" />
+				<Hotspot X="-10850.3" Y="1298.41" Z="36.07" />
+				<Hotspot X="-10828.68" Y="1327.4" Z="34.69" />
+				<Hotspot X="-10856.7" Y="1346.85" Z="37.48" />
+				<Hotspot X="-11029.44" Y="1044.79" Z="37.81" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="13" Name="The People's Militia">
 		<Objective Type="KillMob" MobId="589" KillCount="15">
 			<Hotspots>
-				<Hotspot X="-10591.0" Y="1993.22" Z="-4.8464" />
-				<Hotspot X="-10555.7" Y="2007.65" Z="-6.7015" />
-				<Hotspot X="-10562.2" Y="1975.09" Z="-4.9036" />
-				<Hotspot X="-11024.2" Y="1660.14" Z="42.8221" />
-				<Hotspot X="-11041.4" Y="1427.7" Z="44.4443" />
+				<Hotspot X="-10591" Y="1993.22" Z="-4.85" />
+				<Hotspot X="-10555.7" Y="2007.65" Z="-6.7" />
+				<Hotspot X="-10562.2" Y="1975.09" Z="-4.9" />
+				<Hotspot X="-11024.2" Y="1660.14" Z="42.82" />
+				<Hotspot X="-11041.4" Y="1427.7" Z="44.44" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="590" KillCount="15">
 			<Hotspots>
-				<Hotspot X="-10498.5" Y="1977.48" Z="10.9144" />
-				<Hotspot X="-10476.7" Y="1971.51" Z="9.7846" />
-				<Hotspot X="-10530.2" Y="1940.12" Z="3.9463" />
-				<Hotspot X="-10571.1" Y="1980.03" Z="-5.5978" />
-				<Hotspot X="-10570.0" Y="2004.27" Z="-6.4623" />
+				<Hotspot X="-10498.5" Y="1977.48" Z="10.91" />
+				<Hotspot X="-10476.7" Y="1971.51" Z="9.78" />
+				<Hotspot X="-10530.2" Y="1940.12" Z="3.95" />
+				<Hotspot X="-10571.1" Y="1980.03" Z="-5.6" />
+				<Hotspot X="-10570" Y="2004.27" Z="-6.46" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="14" Name="The People's Militia">
 		<Objective Type="KillMob" MobId="121" KillCount="5">
 			<Hotspots>
-				<Hotspot X="-11031.3" Y="1661.02" Z="42.9227" />
-				<Hotspot X="-11019.2" Y="1652.34" Z="43.0465" />
-				<Hotspot X="-11155.2" Y="1722.11" Z="41.322" />
-				<Hotspot X="-11158.9" Y="1707.37" Z="42.9868" />
-				<Hotspot X="-11166.3" Y="1709.23" Z="41.6794" />
+				<Hotspot X="-11031.3" Y="1661.02" Z="42.92" />
+				<Hotspot X="-11019.2" Y="1652.34" Z="43.05" />
+				<Hotspot X="-11155.2" Y="1722.11" Z="41.32" />
+				<Hotspot X="-11158.9" Y="1707.37" Z="42.99" />
+				<Hotspot X="-11166.3" Y="1709.23" Z="41.68" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="449" KillCount="5">
 			<Hotspots>
-				<Hotspot X="-11169.7" Y="1723.7" Z="39.9144" />
-				<Hotspot X="-11157.6" Y="1713.76" Z="42.2156" />
-				<Hotspot X="-11113.7" Y="1661.62" Z="49.1317" />
-				<Hotspot X="-11076.1" Y="1784.68" Z="38.4917" />
-				<Hotspot X="-11241.5" Y="1282.92" Z="89.6235" />
+				<Hotspot X="-11169.7" Y="1723.7" Z="39.91" />
+				<Hotspot X="-11157.6" Y="1713.76" Z="42.22" />
+				<Hotspot X="-11113.7" Y="1661.62" Z="49.13" />
+				<Hotspot X="-11076.1" Y="1784.68" Z="38.49" />
+				<Hotspot X="-11241.5" Y="1282.92" Z="89.62" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="122" KillCount="15">
 			<Hotspots>
-				<Hotspot X="-11226.8" Y="1393.29" Z="89.1562" />
-				<Hotspot X="-11156.1" Y="1191.27" Z="75.4143" />
-				<Hotspot X="-11121.0" Y="1177.36" Z="62.4712" />
-				<Hotspot X="-11100.4" Y="1194.48" Z="59.2212" />
-				<Hotspot X="-11229.9" Y="1173.59" Z="89.6933" />
+				<Hotspot X="-11226.8" Y="1393.29" Z="89.16" />
+				<Hotspot X="-11156.1" Y="1191.27" Z="75.41" />
+				<Hotspot X="-11121" Y="1177.36" Z="62.47" />
+				<Hotspot X="-11100.4" Y="1194.48" Z="59.22" />
+				<Hotspot X="-11229.9" Y="1173.59" Z="89.69" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="142" Name="The Defias Brotherhood">
+		<Objective Type="CollectItem" ItemId="1381" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Defias Messenger" Id="550" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11025.1" Y="1459.74" Z="43.09" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="104" Name="The Coastal Menace">
 		<Objective Type="KillMob" MobId="391" KillCount="1">
 			<Hotspots>
-				<Hotspot X="-11360.7" Y="1826.72" Z="7.5823" />
+				<Hotspot X="-11360.7" Y="1826.72" Z="7.58" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="CollectItem" ItemId="3636" CollectCount="1">
+			<CollectFrom>
+				<Mob Name="Old Murk-Eye" Id="391" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-11360.7" Y="1826.72" Z="7.58" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<PickUp QuestName="The Forgotten Heirloom" QuestId="64" GiverName="Farmer Furlbrow" GiverId="237" />
-		<PickUp QuestName="Westfall Stew" QuestId="36" GiverName="Verna Furlbrow" GiverId="238" />
-		<PickUp QuestName="Poor Old Blanchy" QuestId="151" GiverName="Verna Furlbrow" GiverId="238" />
-		<PickUp QuestName="The Killing Fields" QuestId="9" GiverName="Farmer Saldean" GiverId="233" />
-		<TurnIn QuestName="Westfall Stew" QuestId="36" TurnInName="Salma Saldean" TurnInId="235" />
-		<PickUp QuestName="Goretusk Liver Pie" QuestId="22" GiverName="Salma Saldean" GiverId="235" />
-		<PickUp QuestName="Westfall Stew" QuestId="38" GiverName="Salma Saldean" GiverId="235" />
-		<PickUp QuestName="Red Leather Bandanas" QuestId="153" GiverName="Scout Galiaan" GiverId="878" />
-		<TurnIn QuestName="Report to Gryan Stoutmantle" QuestId="109" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The People's Militia" QuestId="12" GiverName="Gryan Stoutmantle" GiverId="234" />
-		<PickUp QuestName="Patrolling Westfall" QuestId="102" GiverName="Captain Danuvin" GiverId="821" />
-		<Objective QuestName="The People's Militia" QuestId="12" Type="KillMob" MobId="504" KillCount="15" />
-		<Objective QuestName="The People's Militia" QuestId="12" Type="KillMob" MobId="95" KillCount="15" />
-		<TurnIn QuestName="The People's Militia" QuestId="12" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The People's Militia" QuestId="13" GiverName="Gryan Stoutmantle" GiverId="234" />
-		<TurnIn QuestName="Red Leather Bandanas" QuestId="153" TurnInName="Scout Galiaan" TurnInId="878" />
-		<If Condition="(Me.Race == WoWRace.Human)">
-			<PickUp QuestName="A Swift Message" QuestId="6181" GiverName="Quartermaster Lewis" GiverId="491" />
-			<TurnIn QuestName="A Swift Message" QuestId="6181" TurnInName="Thor" TurnInId="523" />
-			<PickUp QuestName="Continue to Stormwind" QuestId="6281" GiverName="Thor" GiverId="523" />
-			<TurnIn QuestName="Continue to Stormwind" QuestId="6281" TurnInName="Osric Strang" TurnInId="1323" />
-			<PickUp QuestName="Dungar Longdrink" QuestId="6261" GiverName="Osric Strang" GiverId="1323" />
+		<!-- Travel to Extra Zones_Westfall from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(64))">
+			<If Condition="Me.MapId == 1">
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="6422.6" Y="826.2" Z="6.2" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="6422.6" WaitAtY="826.2" WaitAtZ="6.2" TransportStartX="6406" TransportStartY="822.9" TransportStartZ="0" TransportEndX="-8650.7" TransportEndY="1346.1" TransportEndZ="0" GetOffX="-8642.001" GetOffY="1330.353" GetOffZ="5.233" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Dungar Longdrink" QuestId="6261" TurnInName="Dungar Longdrink" TurnInId="352" />
+		<PickUp QuestName="The Forgotten Heirloom" QuestId="64" GiverName="Farmer Furlbrow" GiverId="237" X="-9851.68" Y="918.296" Z="30.5143" />
+		<PickUp QuestName="Westfall Stew" QuestId="36" GiverName="Verna Furlbrow" GiverId="238" X="-9853.05" Y="919.542" Z="30.4614" />
+		<PickUp QuestName="Poor Old Blanchy" QuestId="151" GiverName="Verna Furlbrow" GiverId="238" X="-9853.05" Y="919.542" Z="30.4614" />
+		<PickUp QuestName="The Killing Fields" QuestId="9" GiverName="Farmer Saldean" GiverId="233" X="-10128.7" Y="1055.21" Z="36.4333" />
+		<TurnIn QuestName="Westfall Stew" QuestId="36" TurnInName="Salma Saldean" TurnInId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
+		<PickUp QuestName="Goretusk Liver Pie" QuestId="22" GiverName="Salma Saldean" GiverId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
+		<PickUp QuestName="Westfall Stew" QuestId="38" GiverName="Salma Saldean" GiverId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
+		<PickUp QuestName="Red Leather Bandanas" QuestId="153" GiverName="Scout Galiaan" GiverId="878" X="-10636.3" Y="1127.26" Z="33.8767" />
+		<TurnIn QuestName="Report to Gryan Stoutmantle" QuestId="109" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The People's Militia" QuestId="12" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="Patrolling Westfall" QuestId="102" GiverName="Captain Danuvin" GiverId="821" X="-10511.2" Y="1041.84" Z="60.7013" />
+		<Objective QuestName="The People's Militia" QuestId="12" Type="KillMob" MobId="504" KillCount="15" />
+		<Objective QuestName="The People's Militia" QuestId="12" Type="KillMob" MobId="95" KillCount="15" />
+		<TurnIn QuestName="The People's Militia" QuestId="12" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The People's Militia" QuestId="13" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<Objective QuestName="Red Leather Bandanas" QuestId="153" Type="CollectItem" ItemId="829" CollectCount="15" />
+		<TurnIn QuestName="Red Leather Bandanas" QuestId="153" TurnInName="Scout Galiaan" TurnInId="878" X="-10636.3" Y="1127.26" Z="33.8767" />
 		<If Condition="(Me.Race == WoWRace.Human)">
-			<PickUp QuestName="Return to Lewis" QuestId="6285" GiverName="Dungar Longdrink" GiverId="352" />
-			<TurnIn QuestName="Return to Lewis" QuestId="6285" TurnInName="Quartermaster Lewis" TurnInId="491" />
+			<PickUp QuestName="A Swift Message" QuestId="6181" GiverName="Quartermaster Lewis" GiverId="491" X="-10500.6" Y="1021.59" Z="60.6106" />
+			<TurnIn QuestName="A Swift Message" QuestId="6181" TurnInName="Thor" TurnInId="523" X="-10628.3" Y="1037.27" Z="34.1915" />
+			<PickUp QuestName="Continue to Stormwind" QuestId="6281" GiverName="Thor" GiverId="523" X="-10628.3" Y="1037.27" Z="34.1915" />
+			<TurnIn QuestName="Continue to Stormwind" QuestId="6281" TurnInName="Osric Strang" TurnInId="1323" X="-8702.28" Y="382.052" Z="103.909" />
+			<PickUp QuestName="Dungar Longdrink" QuestId="6261" GiverName="Osric Strang" GiverId="1323" X="-8702.28" Y="382.052" Z="103.909" />
+		</If>
+
+		<TurnIn QuestName="Dungar Longdrink" QuestId="6261" TurnInName="Dungar Longdrink" TurnInId="352" X="-8835.76" Y="490.084" Z="109.699" />
+		<If Condition="(Me.Race == WoWRace.Human)">
+			<PickUp QuestName="Return to Lewis" QuestId="6285" GiverName="Dungar Longdrink" GiverId="352" X="-8835.76" Y="490.084" Z="109.699" />
+			<TurnIn QuestName="Return to Lewis" QuestId="6285" TurnInName="Quartermaster Lewis" TurnInId="491" X="-10500.6" Y="1021.59" Z="60.6106" />
 		</If>
 
 		<Objective QuestName="Goretusk Liver Pie" QuestId="22" Type="CollectItem" ItemId="723" CollectCount="8" />
@@ -169,40 +291,40 @@
 		<Objective QuestName="Patrolling Westfall" QuestId="102" Type="CollectItem" ItemId="725" CollectCount="8" />
 		<Objective QuestName="Westfall Stew" QuestId="38" Type="CollectItem" ItemId="730" CollectCount="3" />
 		<Objective QuestName="Poor Old Blanchy" QuestId="151" Type="CollectItem" ItemId="1528" CollectCount="8" />
-		<TurnIn QuestName="The Forgotten Heirloom" QuestId="64" TurnInName="Farmer Furlbrow" TurnInId="237" />
-		<TurnIn QuestName="Poor Old Blanchy" QuestId="151" TurnInName="Verna Furlbrow" TurnInId="238" />
+		<TurnIn QuestName="The Forgotten Heirloom" QuestId="64" TurnInName="Farmer Furlbrow" TurnInId="237" X="-9851.68" Y="918.296" Z="30.5143" />
+		<TurnIn QuestName="Poor Old Blanchy" QuestId="151" TurnInName="Verna Furlbrow" TurnInId="238" X="-9853.05" Y="919.542" Z="30.4614" />
 		<Objective QuestName="Westfall Stew" QuestId="38" Type="CollectItem" ItemId="732" CollectCount="3" />
 		<Objective QuestName="Keeper of the Flame" QuestId="103" Type="CollectItem" ItemId="814" CollectCount="5" />
 		<Objective QuestName="The Killing Fields" QuestId="9" Type="KillMob" MobId="114" KillCount="20" />
-		<TurnIn QuestName="The Killing Fields" QuestId="9" TurnInName="Farmer Saldean" TurnInId="233" />
-		<TurnIn QuestName="Goretusk Liver Pie" QuestId="22" TurnInName="Salma Saldean" TurnInId="235" />
-		<TurnIn QuestName="Westfall Stew" QuestId="38" TurnInName="Salma Saldean" TurnInId="235" />
-		<TurnIn QuestName="Patrolling Westfall" QuestId="102" TurnInName="Captain Danuvin" TurnInId="821" />
+		<TurnIn QuestName="The Killing Fields" QuestId="9" TurnInName="Farmer Saldean" TurnInId="233" X="-10128.7" Y="1055.21" Z="36.4333" />
+		<TurnIn QuestName="Goretusk Liver Pie" QuestId="22" TurnInName="Salma Saldean" TurnInId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
+		<TurnIn QuestName="Westfall Stew" QuestId="38" TurnInName="Salma Saldean" TurnInId="235" X="-10112.1" Y="1042.1" Z="37.5542" />
+		<TurnIn QuestName="Patrolling Westfall" QuestId="102" TurnInName="Captain Danuvin" TurnInId="821" X="-10511.2" Y="1041.84" Z="60.7013" />
 		<Objective QuestName="The People's Militia" QuestId="13" Type="KillMob" MobId="589" KillCount="15" />
 		<Objective QuestName="The People's Militia" QuestId="13" Type="KillMob" MobId="590" KillCount="15" />
-		<TurnIn QuestName="The People's Militia" QuestId="13" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The People's Militia" QuestId="14" GiverName="Gryan Stoutmantle" GiverId="234" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="65" GiverName="Gryan Stoutmantle" GiverId="234" />
+		<TurnIn QuestName="The People's Militia" QuestId="13" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The People's Militia" QuestId="14" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="65" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		<Objective QuestName="The People's Militia" QuestId="14" Type="KillMob" MobId="121" KillCount="5" />
 		<Objective QuestName="The People's Militia" QuestId="14" Type="KillMob" MobId="449" KillCount="5" />
 		<Objective QuestName="The People's Militia" QuestId="14" Type="KillMob" MobId="122" KillCount="15" />
-		<TurnIn QuestName="The People's Militia" QuestId="14" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="65" TurnInName="Wiley the Black" TurnInId="266" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="132" GiverName="Wiley the Black" GiverId="266" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="132" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="135" GiverName="Gryan Stoutmantle" GiverId="234" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="135" TurnInName="Master Mathias Shaw" TurnInId="332" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="141" GiverName="Master Mathias Shaw" GiverId="332" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="141" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="142" GiverName="Gryan Stoutmantle" GiverId="234" />
+		<TurnIn QuestName="The People's Militia" QuestId="14" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="65" TurnInName="Wiley the Black" TurnInId="266" X="-9231.59" Y="-2145.62" Z="71.3951" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="132" GiverName="Wiley the Black" GiverId="266" X="-9231.59" Y="-2145.62" Z="71.3951" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="132" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="135" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="135" TurnInName="Master Mathias Shaw" TurnInId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="141" GiverName="Master Mathias Shaw" GiverId="332" X="-8815.27" Y="362.3" Z="109.604" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="141" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="142" GiverName="Gryan Stoutmantle" GiverId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 		<Objective QuestName="The Defias Brotherhood" QuestId="142" Type="CollectItem" ItemId="1381" CollectCount="1" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="142" TurnInName="Gryan Stoutmantle" TurnInId="234" />
-		<PickUp QuestName="The Defias Brotherhood" QuestId="155" GiverName="The Defias Traitor" GiverId="467" />
-		<PickUp QuestName="Keeper of the Flame" QuestId="103" GiverName="Captain Grayson" GiverId="392" />
-		<TurnIn QuestName="Keeper of the Flame" QuestId="103" TurnInName="Captain Grayson" TurnInId="392" />
-		<PickUp QuestName="The Coastal Menace" QuestId="104" GiverName="Captain Grayson" GiverId="392" />
-		<Objective QuestName="The Coastal Menace" QuestId="104" Type="KillMob" MobId="391" KillCount="1" />
-		<TurnIn QuestName="The Coastal Menace" QuestId="104" TurnInName="Captain Grayson" TurnInId="392" />
-		<TurnIn QuestName="The Defias Brotherhood" QuestId="155" TurnInName="Gryan Stoutmantle" TurnInId="234" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="142" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
+		<PickUp QuestName="The Defias Brotherhood" QuestId="155" GiverName="The Defias Traitor" GiverId="467" X="-10508.4" Y="1068" Z="55.2111" />
+		<PickUp QuestName="Keeper of the Flame" QuestId="103" GiverName="Captain Grayson" GiverId="392" X="-11407.1" Y="1966.15" Z="10.5123" />
+		<TurnIn QuestName="Keeper of the Flame" QuestId="103" TurnInName="Captain Grayson" TurnInId="392" X="-11407.1" Y="1966.15" Z="10.5123" />
+		<PickUp QuestName="The Coastal Menace" QuestId="104" GiverName="Captain Grayson" GiverId="392" X="-11407.1" Y="1966.15" Z="10.5123" />
+		<Objective QuestName="The Coastal Menace" QuestId="104" Type="CollectItem" ItemId="3636" CollectCount="1" />
+		<TurnIn QuestName="The Coastal Menace" QuestId="104" TurnInName="Captain Grayson" TurnInId="392" X="-11407.1" Y="1966.15" Z="10.5123" />
+		<TurnIn QuestName="The Defias Brotherhood" QuestId="155" TurnInName="Gryan Stoutmantle" TurnInId="234" X="-10508.8" Y="1045.23" Z="60.7013" />
 	</QuestOrder>
 </HBProfile>

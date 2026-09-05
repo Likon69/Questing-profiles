@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Stonetalon Mountains (15-16)</Name>
-	<MinLevel>15</MinLevel>
-	<MaxLevel>16</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,62 +16,103 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
-		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
-		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
-		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Vendor Name="Katis" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Denni'ka" Entry="3411" Type="Food" X="-188.424" Y="-347.647" Z="8.8737" />
+		<Vendor Name="Kaga Mistrunner" Entry="3025" Type="Food" X="-1182.53" Y="-29.266" Z="164.561" />
+		<Vendor Name="Nan Mistrunner" Entry="3017" Type="Food" X="-1145.67" Y="22.5709" Z="145.363" />
+		<Vendor Name="Sunn Ragetotem" Entry="3022" Type="Repair" X="-1188.96" Y="-1.3029" Z="165.563" />
+		<Vendor Name="Kuna Thunderhorn" Entry="3015" Type="Repair" X="-1168.01" Y="26.1251" Z="145.812" />
+		<Vendor Name="Hogor Thunderhoof" Entry="3018" Type="Repair" X="-1247.13" Y="-63.1144" Z="162.974" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
+	<Quest Id="1062" Name="Goblin Invaders">
+		<Objective Type="KillMob" MobId="3989" KillCount="15">
+			<Hotspots>
+				<Hotspot X="988.31" Y="-392" Z="7.14" />
+				<Hotspot X="1120.26" Y="-422.3" Z="13.7" />
+				<Hotspot X="1073.75" Y="-245.72" Z="3.31" />
+				<Hotspot X="1114.05" Y="-274.52" Z="-3.2" />
+				<Hotspot X="1079.82" Y="-179.11" Z="5.15" />
+				<Hotspot X="1157.94" Y="-324.6" Z="0.4" />
+				<Hotspot X="1120.12" Y="-218.39" Z="-1.24" />
+				<Hotspot X="1055.34" Y="-74.28" Z="10.44" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="6548" Name="Avenge My Village">
 		<Objective Type="KillMob" MobId="11910" KillCount="8">
 			<Hotspots>
-				<Hotspot X="-36.5416" Y="-475.936" Z="-43.2897" />
-				<Hotspot X="-35.024" Y="-571.405" Z="-42.5974" />
-				<Hotspot X="-6.8834" Y="-703.117" Z="-19.0054" />
-				<Hotspot X="72.8767" Y="-735.993" Z="-20.6697" />
-				<Hotspot X="58.5667" Y="-730.387" Z="-20.7827" />
+				<Hotspot X="-36.54" Y="-475.94" Z="-43.29" />
+				<Hotspot X="-35.02" Y="-571.4" Z="-42.6" />
+				<Hotspot X="-6.88" Y="-703.12" Z="-19.01" />
+				<Hotspot X="72.88" Y="-735.99" Z="-20.67" />
+				<Hotspot X="58.57" Y="-730.39" Z="-20.78" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="11911" KillCount="6">
 			<Hotspots>
-				<Hotspot X="32.7501" Y="-641.267" Z="-27.6324" />
-				<Hotspot X="15.7395" Y="-687.727" Z="-19.0144" />
-				<Hotspot X="5.3201" Y="-697.773" Z="-19.0471" />
-				<Hotspot X="1.7731" Y="-685.153" Z="-19.0681" />
-				<Hotspot X="-170.819" Y="-664.651" Z="1.2579" />
+				<Hotspot X="32.75" Y="-641.27" Z="-27.63" />
+				<Hotspot X="15.74" Y="-687.73" Z="-19.01" />
+				<Hotspot X="5.32" Y="-697.77" Z="-19.05" />
+				<Hotspot X="1.77" Y="-685.15" Z="-19.07" />
+				<Hotspot X="-170.82" Y="-664.65" Z="1.26" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="6629" Name="Kill Grundig Darkcloud">
 		<Objective Type="KillMob" MobId="11858" KillCount="1">
 			<Hotspots>
-				<Hotspot X="112.524" Y="-350.556" Z="4.4975" />
+				<Hotspot X="112.52" Y="-350.56" Z="4.5" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="11912" KillCount="6">
 			<Hotspots>
-				<Hotspot X="90.6986" Y="-261.466" Z="5.2181" />
-				<Hotspot X="106.818" Y="-329.647" Z="3.2026" />
-				<Hotspot X="106.611" Y="-254.895" Z="6.0218" />
-				<Hotspot X="114.141" Y="-272.448" Z="5.2943" />
-				<Hotspot X="101.952" Y="-241.196" Z="6.6468" />
+				<Hotspot X="90.7" Y="-261.47" Z="5.22" />
+				<Hotspot X="106.82" Y="-329.65" Z="3.2" />
+				<Hotspot X="106.61" Y="-254.9" Z="6.02" />
+				<Hotspot X="114.14" Y="-272.45" Z="5.29" />
+				<Hotspot X="101.95" Y="-241.2" Z="6.65" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Classic (12-58)_Stonetalon Mountains (15-16) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1062))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-14280.88" Y="566.6268" Z="6.9795" />
+				<CustomBehavior File="UseTransport" TransportId="20808" DestName="The Maiden's Fancy" WaitAtX="-14280.88" WaitAtY="566.6268" WaitAtZ="6.9795" TransportStartX="-14277.7" TransportStartY="582.9" TransportStartZ="0" StandOnX="-14270.46" StandOnY="579.9881" StandOnZ="6.0886" TransportEndX="-1005.6" TransportEndY="-3841.6" TransportEndZ="0" GetOffX="-996.8669" GetOffY="-3826.07" GetOffZ="5.5362" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<PickUp QuestName="Goblin Invaders" QuestId="1062" GiverName="Seereth Stonebreak" GiverId="4049" />
-		<PickUp QuestName="Avenge My Village" QuestId="6548" GiverName="Makaba Flathoof" GiverId="11857" />
+		<PickUp QuestName="Goblin Invaders" QuestId="1062" GiverName="Seereth Stonebreak" GiverId="4049" X="-270" Y="-951" Z="14.372" />
+		<Objective QuestName="Goblin Invaders" QuestId="1062" Type="KillMob" MobId="3989" KillCount="15" />
+		<PickUp QuestName="Avenge My Village" QuestId="6548" GiverName="Makaba Flathoof" GiverId="11857" X="-263" Y="-943" Z="12.439" />
 		<Objective QuestName="Avenge My Village" QuestId="6548" Type="KillMob" MobId="11910" KillCount="8" />
 		<Objective QuestName="Avenge My Village" QuestId="6548" Type="KillMob" MobId="11911" KillCount="6" />
-		<TurnIn QuestName="Avenge My Village" QuestId="6548" TurnInName="Makaba Flathoof" TurnInId="11857" />
-		<PickUp QuestName="Kill Grundig Darkcloud" QuestId="6629" GiverName="Makaba Flathoof" GiverId="11857" />
+		<TurnIn QuestName="Avenge My Village" QuestId="6548" TurnInName="Makaba Flathoof" TurnInId="11857" X="-263" Y="-943" Z="12.439" />
+		<PickUp QuestName="Kill Grundig Darkcloud" QuestId="6629" GiverName="Makaba Flathoof" GiverId="11857" X="-263" Y="-943" Z="12.439" />
 		<Objective QuestName="Kill Grundig Darkcloud" QuestId="6629" Type="KillMob" MobId="11858" KillCount="1" />
 		<Objective QuestName="Kill Grundig Darkcloud" QuestId="6629" Type="KillMob" MobId="11912" KillCount="6" />
 		<If Condition="Me.Level &lt; 16">
@@ -91,10 +129,11 @@
 			</SetGrindArea>
 			<GrindTo Level="16" />
 		</If>
-		<PickUp QuestName="Protect Kaya" QuestId="6523" GiverName="Kaya Flathoof" GiverId="11856" />
-		<TurnIn QuestName="Kill Grundig Darkcloud" QuestId="6629" TurnInName="Makaba Flathoof" TurnInId="11857" />
-		<TurnIn QuestName="Protect Kaya" QuestId="6523" TurnInName="Makaba Flathoof" TurnInId="11857" />
-		<PickUp QuestName="Kaya's Alive" QuestId="6401" GiverName="Makaba Flathoof" GiverId="11857" />
+
+		<PickUp QuestName="Protect Kaya" QuestId="6523" GiverName="Kaya Flathoof" GiverId="11856" X="129.705" Y="-342.522" Z="3.6798" />
+		<TurnIn QuestName="Kill Grundig Darkcloud" QuestId="6629" TurnInName="Makaba Flathoof" TurnInId="11857" X="-263" Y="-943" Z="12.439" />
+		<TurnIn QuestName="Protect Kaya" QuestId="6523" TurnInName="Makaba Flathoof" TurnInId="11857" X="-263" Y="-943" Z="12.439" />
+		<PickUp QuestName="Kaya's Alive" QuestId="6401" GiverName="Makaba Flathoof" GiverId="11857" X="-263" Y="-943" Z="12.439" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_The Barrens (16-20)" />
 	</QuestOrder>
 </HBProfile>

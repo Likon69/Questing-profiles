@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Classic (12-58)\Ashenvale (21-21)</Name>
-	<MinLevel>21</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -19,52 +16,101 @@
 	<MailPurple>True</MailPurple>
 
 	<Vendors>
-		<Vendor Name="Arathi Weaponsmith" Entry="3431" Type="Repair" X="-402.271" Y="-2609.39" Z="95.8329" />
-		<Vendor Name="Hula'mahi" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
-		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3464" Type="Food" X="-435.952" Y="-2639.21" Z="96.3588" />
-		<Vendor Name="Whuut" Entry="3432" Type="Food" X="-520.983" Y="-2641.41" Z="95.8708" />
+		<Vendor Name="Katis" Entry="5816" Type="Repair" X="1820.77" Y="-4300.23" Z="-12.0871" />
+		<Vendor Name="Uthrok" Entry="3488" Type="Repair" X="-351.184" Y="-2556.51" Z="95.8708" />
+		<Vendor Name="Hraq" Entry="3477" Type="Repair" X="-343.921" Y="-2558.13" Z="97.9411" />
+		<Vendor Name="Jahan Hawkwing" Entry="3483" Type="Repair" X="-350.079" Y="-2566.59" Z="97.4414" />
+		<Vendor Name="Larhka" Entry="5871" Type="Food" X="-393.28" Y="-2641.5" Z="96.3063" />
+		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3934" Type="Food" X="-407.123" Y="-2645.22" Z="96.3063" />
+		<Vendor Name="Moorane Hearthgrain" Entry="3480" Type="Food" X="-451.129" Y="-2684.29" Z="95.7333" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
+
+	<Quest Id="6442" Name="Naga at the Zoram Strand">
+		<Objective Type="CollectItem" ItemId="5490" CollectCount="20">
+			<CollectFrom>
+				<Mob Name="Wrathtail Myrmidon" Id="3711" />
+				<Mob Name="Wrathtail Razortail" Id="3712" />
+				<Mob Name="Wrathtail Wave Rider" Id="3713" />
+				<Mob Name="Wrathtail Sea Witch" Id="3715" />
+				<Mob Name="Wrathtail Sorceress" Id="3717" />
+				<Mob Name="Wrathtail Priestess" Id="3944" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="3448.34" Y="1017.37" Z="2.59" />
+				<Hotspot X="3480.51" Y="1051.29" Z="0.16" />
+				<Hotspot X="3534.84" Y="994.55" Z="1.71" />
+				<Hotspot X="3485.27" Y="912.12" Z="5.39" />
+				<Hotspot X="3520.83" Y="960.68" Z="2.42" />
+				<Hotspot X="3531.68" Y="1112.24" Z="-1.13" />
+				<Hotspot X="3561.34" Y="1064.47" Z="-2.82" />
+				<Hotspot X="3519.98" Y="1171.51" Z="-14.37" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
-
-		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1528" GiverName="Searn Firewarder" GiverId="5892" />
-			<TurnIn QuestName="Call of Water" QuestId="1528" TurnInName="Islen Waterseer" TurnInId="5901" />
-			<PickUp QuestName="Call of Water" QuestId="1530" GiverName="Islen Waterseer" GiverId="5901" />
+		<!-- Travel to Classic (12-58)_Ashenvale (21-21) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1528))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="InteractWith" MobId="184502" ObjectType="GameObject" WaitTime="5000" Range="5" X="10032.4" Y="-7000.29" Z="61.31" />
+				<CustomBehavior File="WaitTimer" WaitTime="5000" />
+				<RunTo X="2070.155" Y="289.2588" Z="97.0315" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="2070.155" WaitAtY="289.2588" WaitAtZ="97.0315" TransportStartX="2062.4" TransportStartY="293" TransportStartZ="115" StandOnX="2067.979" StandOnY="295.2747" StandOnZ="97.2368" TransportEndX="1318.1" TransportEndY="-4658" TransportEndZ="71.9" GetOffX="1325.077" GetOffY="-4651.817" GetOffZ="53.7962" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2836.831" Y="6185.15" Z="121.9923" />
+				<CustomBehavior File="UseTransport" TransportId="186238" DestName="The Mighty Wind" WaitAtX="2836.831" WaitAtY="6185.15" WaitAtZ="121.9923" TransportStartX="2837.9" TransportStartY="6187.4" TransportStartZ="140.2" StandOnX="2844.171" StandOnY="6191.577" StandOnZ="122.3017" TransportEndX="1185" TransportEndY="-4144.2" TransportEndZ="70.6" GetOffX="1174.1" GetOffY="-4152.4" GetOffZ="51.6" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1530" TurnInName="Brine" TurnInId="5899" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1535" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1528" GiverName="Searn Firewarder" GiverId="5892" X="1920.95" Y="-4212.99" Z="42.4051" />
+			<TurnIn QuestName="Call of Water" QuestId="1528" TurnInName="Islen Waterseer" TurnInId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+			<PickUp QuestName="Call of Water" QuestId="1530" GiverName="Islen Waterseer" GiverId="5901" X="-1345.12" Y="-4047.61" Z="5.9722" />
+		</If>
+
+		<TurnIn QuestName="Call of Water" QuestId="1530" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
+		<If Condition="(Me.Class == WoWClass.Shaman)">
+			<PickUp QuestName="Call of Water" QuestId="1535" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			<Objective QuestName="Call of Water" QuestId="1535" Type="CollectItem" ItemId="7769" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1535" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1536" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1536" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 			<Objective QuestName="Call of Water" QuestId="1536" Type="CollectItem" ItemId="7771" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" />
+		<TurnIn QuestName="Call of Water" QuestId="1536" TurnInName="Brine" TurnInId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
-			<PickUp QuestName="Call of Water" QuestId="1534" GiverName="Brine" GiverId="5899" />
+			<PickUp QuestName="Call of Water" QuestId="1534" GiverName="Brine" GiverId="5899" X="-3617.51" Y="-1776.77" Z="135.658" />
 		</If>
 
-		<TurnIn QuestName="The Ashenvale Hunt" QuestId="6382" TurnInName="Senani Thunderheart" TurnInId="12696" />
-		<PickUp QuestName="The Ashenvale Hunt" QuestId="6383" GiverName="Senani Thunderheart" GiverId="12696" />
+		<TurnIn QuestName="The Ashenvale Hunt" QuestId="6382" TurnInName="Senani Thunderheart" TurnInId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
+		<PickUp QuestName="The Ashenvale Hunt" QuestId="6383" GiverName="Senani Thunderheart" GiverId="12696" X="2310.52" Y="-2554.7" Z="101.948" />
 		<If Condition="(Me.Class == WoWClass.Shaman)">
 			<Objective QuestName="Call of Water" QuestId="1534" Type="CollectItem" ItemId="7770" CollectCount="1" />
 		</If>
 
-		<TurnIn QuestName="Trouble in the Deeps" QuestId="6562" TurnInName="Je'neu Sancrea" TurnInId="12736" />
-		<PickUp QuestName="Naga at the Zoram Strand" QuestId="6442" GiverName="Marukai" GiverId="12719" />
+		<TurnIn QuestName="Trouble in the Deeps" QuestId="6562" TurnInName="Je'neu Sancrea" TurnInId="12736" X="3355.07" Y="1033.14" Z="6.0346" />
+		<PickUp QuestName="Naga at the Zoram Strand" QuestId="6442" GiverName="Marukai" GiverId="12719" X="3331.24" Y="1025.91" Z="6.3617" />
 		<Objective QuestName="Naga at the Zoram Strand" QuestId="6442" Type="CollectItem" ItemId="5490" CollectCount="20" />
-		<TurnIn QuestName="Naga at the Zoram Strand" QuestId="6442" TurnInName="Marukai" TurnInId="12719" />
+		<TurnIn QuestName="Naga at the Zoram Strand" QuestId="6442" TurnInName="Marukai" TurnInId="12719" X="3331.24" Y="1025.91" Z="6.3617" />
 		<CustomBehavior File="LoadProfile" ProfileName="Classic (12-58)_The Barrens (21-23)" />
 	</QuestOrder>
 </HBProfile>

@@ -1,17 +1,14 @@
 <HBProfile>
 	<Name>Winterspring (55-55)</Name>
-	<MinLevel>55</MinLevel>
-	<MaxLevel>60</MaxLevel>
-
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
 	<MinDurability>0.2</MinDurability>
 	<MinFreeBagSlots>2</MinFreeBagSlots>
-
 	<SellGrey>True</SellGrey>
 	<SellWhite>True</SellWhite>
 	<SellGreen>True</SellGreen>
 	<SellBlue>False</SellBlue>
 	<SellPurple>False</SellPurple>
-
 	<MailGrey>False</MailGrey>
 	<MailWhite>False</MailWhite>
 	<MailGreen>True</MailGreen>
@@ -21,99 +18,159 @@
 	<Vendors>
 		<!-- Evie Whirlbrew (10188) — no spawn data -->
 		<!-- Innkeeper Vizzie (10187) — no spawn data -->
+		<Vendor Name="Mylini Frostmoon" Entry="15315" Type="Repair" X="6145.19" Y="-1946.77" Z="574.663" />
+		<Vendor Name="Lyranne Feathersong" Entry="2303" Type="Food" X="7147.01" Y="-4005.61" Z="745.713" />
 	</Vendors>
 
 	<AvoidMobs />
+
 	<Blackspots />
+
 	<Mailboxes />
 
 	<Quest Id="5082" Name="Threat of the Winterfall">
 		<Objective Type="KillMob" MobId="7441" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6418.35" Y="-3115.4" Z="580.961" />
-				<Hotspot X="6451.47" Y="-3161.82" Z="572.104" />
-				<Hotspot X="6453.58" Y="-3176.64" Z="572.206" />
-				<Hotspot X="6513.78" Y="-3138.88" Z="572.996" />
-				<Hotspot X="6496.59" Y="-3138.79" Z="571.354" />
+				<Hotspot X="6418.35" Y="-3115.4" Z="580.96" />
+				<Hotspot X="6451.47" Y="-3161.82" Z="572.1" />
+				<Hotspot X="6453.58" Y="-3176.64" Z="572.21" />
+				<Hotspot X="6513.78" Y="-3138.88" Z="573" />
+				<Hotspot X="6496.59" Y="-3138.79" Z="571.35" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7442" KillCount="8">
 			<Hotspots>
-				<Hotspot X="6413.54" Y="-3295.41" Z="592.913" />
-				<Hotspot X="6447.59" Y="-3328.85" Z="590.462" />
-				<Hotspot X="6496.07" Y="-3338.02" Z="588.009" />
-				<Hotspot X="6882.35" Y="-2513.31" Z="581.347" />
-				<Hotspot X="6875.04" Y="-2548.72" Z="589.002" />
+				<Hotspot X="6413.54" Y="-3295.41" Z="592.91" />
+				<Hotspot X="6447.59" Y="-3328.85" Z="590.46" />
+				<Hotspot X="6496.07" Y="-3338.02" Z="588.01" />
+				<Hotspot X="6882.35" Y="-2513.31" Z="581.35" />
+				<Hotspot X="6875.04" Y="-2548.72" Z="589" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7440" KillCount="8">
 			<Hotspots>
 				<Hotspot X="6906.65" Y="-5144.72" Z="695.65" />
-				<Hotspot X="6514.72" Y="-3269.61" Z="574.519" />
-				<Hotspot X="6878.17" Y="-4999.09" Z="694.566" />
-				<Hotspot X="6813.83" Y="-2470.48" Z="557.479" />
-				<Hotspot X="6847.1" Y="-2490.14" Z="561.889" />
+				<Hotspot X="6514.72" Y="-3269.61" Z="574.52" />
+				<Hotspot X="6878.17" Y="-4999.09" Z="694.57" />
+				<Hotspot X="6813.83" Y="-2470.48" Z="557.48" />
+				<Hotspot X="6847.1" Y="-2490.14" Z="561.89" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 	<Quest Id="8461" Name="Deadwood of the North">
 		<Objective Type="KillMob" MobId="7156" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6901.48" Y="-2020.1" Z="583.248" />
-				<Hotspot X="6821.03" Y="-1812.37" Z="564.751" />
-				<Hotspot X="6748.33" Y="-1890.33" Z="549.724" />
-				<Hotspot X="6627.08" Y="-1954.44" Z="550.976" />
-				<Hotspot X="6739.87" Y="-1955.28" Z="550.604" />
+				<Hotspot X="6901.48" Y="-2020.1" Z="583.25" />
+				<Hotspot X="6821.03" Y="-1812.37" Z="564.75" />
+				<Hotspot X="6748.33" Y="-1890.33" Z="549.72" />
+				<Hotspot X="6627.08" Y="-1954.44" Z="550.98" />
+				<Hotspot X="6739.87" Y="-1955.28" Z="550.6" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7157" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6810.62" Y="-1860.13" Z="551.045" />
-				<Hotspot X="6786.71" Y="-1871.71" Z="550.807" />
+				<Hotspot X="6810.62" Y="-1860.13" Z="551.04" />
+				<Hotspot X="6786.71" Y="-1871.71" Z="550.81" />
 				<Hotspot X="6820.06" Y="-2019.6" Z="569.76" />
-				<Hotspot X="6637.04" Y="-1996.57" Z="551.863" />
-				<Hotspot X="6689.16" Y="-2005.93" Z="559.684" />
+				<Hotspot X="6637.04" Y="-1996.57" Z="551.86" />
+				<Hotspot X="6689.16" Y="-2005.93" Z="559.68" />
 			</Hotspots>
 		</Objective>
 		<Objective Type="KillMob" MobId="7158" KillCount="6">
 			<Hotspots>
-				<Hotspot X="6873.22" Y="-2039.05" Z="581.747" />
-				<Hotspot X="6795.32" Y="-1829.39" Z="559.952" />
-				<Hotspot X="6705.94" Y="-1892.44" Z="549.714" />
-				<Hotspot X="6660.46" Y="-2018.97" Z="552.197" />
-				<Hotspot X="6690.2" Y="-1950.99" Z="551.087" />
+				<Hotspot X="6873.22" Y="-2039.05" Z="581.75" />
+				<Hotspot X="6795.32" Y="-1829.39" Z="559.95" />
+				<Hotspot X="6705.94" Y="-1892.44" Z="549.71" />
+				<Hotspot X="6660.46" Y="-2018.97" Z="552.2" />
+				<Hotspot X="6690.2" Y="-1950.99" Z="551.09" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="5086" Name="Toxic Horrors">
+		<Objective Type="CollectItem" ItemId="12822" CollectCount="3">
+			<CollectFrom>
+				<Mob Name="Toxic Horror" Id="7132" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="6235.69" Y="-1294.39" Z="371.55" />
+				<Hotspot X="6272.76" Y="-1267.69" Z="367.44" />
+				<Hotspot X="6219.77" Y="-1255.34" Z="366.72" />
+				<Hotspot X="6092.56" Y="-1269.75" Z="381.6" />
+				<Hotspot X="6248.27" Y="-1202.01" Z="371.05" />
+				<Hotspot X="6105.57" Y="-1205.08" Z="372.09" />
+				<Hotspot X="6194.22" Y="-1154.38" Z="368.58" />
+				<Hotspot X="6220.18" Y="-1123.06" Z="370.55" />
 			</Hotspots>
 		</Objective>
 	</Quest>
 
 	<QuestOrder>
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<!-- Travel to Winterspring (55-55) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
+		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(4842))">
+			<If Condition="Me.MapId == 0">
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 530">
+				<RunTo X="-4263.994" Y="-11336.4" Z="5.756" />
+				<CustomBehavior File="UseTransport" TransportId="181646" DestName="Elune's Blessing" WaitAtX="-4263.994" WaitAtY="-11336.4" WaitAtZ="5.756" TransportStartX="-4265" TransportStartY="-11317.2" TransportStartZ="0" StandOnX="-4264.996" StandOnY="-11317.2" StandOnZ="5.5" TransportEndX="6550.4" TransportEndY="938.2" TransportEndZ="0" GetOffX="6550.8" GetOffY="924.9" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+			<If Condition="Me.MapId == 571">
+				<RunTo X="2234.375" Y="5132.568" Z="5.3432" />
+				<CustomBehavior File="UseTransport" TransportId="190536" DestName="Stormwind's Pride" WaitAtX="2234.375" WaitAtY="5132.568" WaitAtZ="5.3432" TransportStartX="2218.4" TransportStartY="5119.6" TransportStartZ="0" StandOnX="2224.698" StandOnY="5120.346" StandOnZ="9.4524" TransportEndX="-8288.8" TransportEndY="1424.7" TransportEndZ="0" GetOffX="-8300.08" GetOffY="1405.158" GetOffZ="4.4224" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<RunTo X="-8639.127" Y="1318.481" Z="5.5368" />
+				<CustomBehavior File="UseTransport" TransportId="176310" DestName="The Bravery" WaitAtX="-8639.127" WaitAtY="1318.481" WaitAtZ="5.5368" TransportStartX="-8650.7" TransportStartY="1346.1" TransportStartZ="0" StandOnX="-8643.842" StandOnY="1346.472" StandOnZ="6.1828" TransportEndX="6406" TransportEndY="822.9" TransportEndZ="0" GetOffX="6422.6" GetOffY="826.2" GetOffZ="6.2" />
+				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+			</If>
+		</If>
 
-		<TurnIn QuestName="The New Springs" QuestId="980" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Strange Sources" QuestId="4842" GiverName="Donova Snowden" GiverId="9298" />
-		<PickUp QuestName="Threat of the Winterfall" QuestId="5082" GiverName="Donova Snowden" GiverId="9298" />
+		<If Condition="((Me.ZoneId == 141) || (Me.ZoneId == 1657)) &amp;&amp; (!IsQuestCompleted(4842))">
+			<RunTo X="8555" Y="1012.55" Z="6.06" />
+			<CustomBehavior File="UseTransport" TransportId="176244" DestName="The Moonspray" WaitAtX="8555" WaitAtY="1012.55" WaitAtZ="6.06" TransportStartX="8534.3" TransportStartY="1018" TransportStartZ="0" TransportEndX="6594.6" TransportEndY="769.8" TransportEndZ="0" GetOffX="6576.501" GetOffY="769.4759" GetOffZ="5.5751" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
+		</If>
+
+		<TurnIn QuestName="The New Springs" QuestId="980" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Strange Sources" QuestId="4842" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Threat of the Winterfall" QuestId="5082" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7441" KillCount="8" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7442" KillCount="8" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7440" KillCount="8" />
-		<Objective QuestName="Winterfall Firewater" QuestId="5083" Type="CollectItem" ItemId="12771" CollectCount="1" />
-		<While Condition="((HasQuest(5082)) &amp;&amp; (!IsQuestCompleted(5082)))" >
+		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+			<CustomBehavior File="CollectThings" CollectItemId="12771" CollectItemCount="1" HuntingGroundRadius="120" MobId="7438" MobId2="7439" MobId3="7440" MobId4="7441" MobId5="7442" MobId6="10916" X="6747.72" Y="-2685.25" Z="543.371">
+				<Hotspot X="6747.72" Y="-2685.25" Z="543.37" />
+				<Hotspot X="6765.27" Y="-2615.89" Z="551.71" />
+				<Hotspot X="6790.35" Y="-2495.8" Z="549.81" />
+			</CustomBehavior>
+		</If>
+
+		<While Condition="((HasQuest(5082)) &amp;&amp; (!IsQuestCompleted(5082)))">
 			<CustomBehavior File="UseItemOn" QuestId="5082" MobId="7442" ItemId="12771" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6413.54" Y="-3295.41" Z="592.913" />
 		</While>
-		<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Donova Snowden" GiverId="9298" />
-		<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" />
-		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Falling to Corruption" QuestId="5084" GiverName="Donova Snowden" GiverId="9298" />
-		<PickUp QuestName="Deadwood of the North" QuestId="8461" GiverName="Nafien" GiverId="15395" />
+
+		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+			<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Empty Firewater Flask" GiverId="12771" GiverType="Item" />
+		</If>
+
+		<TurnIn QuestName="Threat of the Winterfall" QuestId="5082" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<TurnIn QuestName="Winterfall Firewater" QuestId="5083" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Falling to Corruption" QuestId="5084" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Deadwood of the North" QuestId="8461" GiverName="Nafien" GiverId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
 		<!-- Quest 5084 (Falling to Corruption) — TurnIn Object not in 3.3.5a -->
-		<PickUp QuestName="Mystery Goo" QuestId="5085" GiverName="Nafien" GiverId="15395" />
+		<PickUp QuestName="Mystery Goo" QuestId="5085" GiverName="Deadwood Cauldron" GiverId="176091" GiverType="Object" X="6909.33" Y="-1820.12" Z="570.555" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7156" KillCount="6" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7157" KillCount="6" />
 		<Objective QuestName="Deadwood of the North" QuestId="8461" Type="KillMob" MobId="7158" KillCount="6" />
-		<TurnIn QuestName="Deadwood of the North" QuestId="8461" TurnInName="Nafien" TurnInId="15395" />
-		<PickUp QuestName="Speak to Salfa" QuestId="8465" GiverName="Nafien" GiverId="15395" />
-		<TurnIn QuestName="Speak to Salfa" QuestId="8465" TurnInName="Salfa" TurnInId="11556" />
-		<TurnIn QuestName="Mystery Goo" QuestId="5085" TurnInName="Donova Snowden" TurnInId="9298" />
-		<PickUp QuestName="Toxic Horrors" QuestId="5086" GiverName="Donova Snowden" GiverId="9298" />
+		<TurnIn QuestName="Deadwood of the North" QuestId="8461" TurnInName="Nafien" TurnInId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
+		<PickUp QuestName="Speak to Salfa" QuestId="8465" GiverName="Nafien" GiverId="15395" X="6821.85" Y="-2082.51" Z="623.27" />
+		<TurnIn QuestName="Speak to Salfa" QuestId="8465" TurnInName="Salfa" TurnInId="11556" X="6900.44" Y="-2285.77" Z="586.148" />
+		<TurnIn QuestName="Mystery Goo" QuestId="5085" TurnInName="Donova Snowden" TurnInId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<PickUp QuestName="Toxic Horrors" QuestId="5086" GiverName="Donova Snowden" GiverId="9298" X="6395.57" Y="-2536.75" Z="541.548" />
+		<Objective QuestName="Toxic Horrors" QuestId="5086" Type="CollectItem" ItemId="12822" CollectCount="3" />
 		<CustomBehavior File="LoadProfile" ProfileName="Felwood (55-56)" />
 	</QuestOrder>
 </HBProfile>
