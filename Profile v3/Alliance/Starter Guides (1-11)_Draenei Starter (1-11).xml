@@ -51,7 +51,20 @@
 	<Blackspots />
 
 	<Mailboxes />
-
+	<Quest Id="9303" Name="Inoculation">
+	<Objective QuestName="Inoculation" QuestId="9303" Type="UseItem" ItemId="22962" TargetId="16518" TargetType="Npc" UseCount="6">
+	  <CollectFrom />
+	  <MaximumHotspotTime>999999</MaximumHotspotTime>
+	  <Hotspots>
+		<Hotspot X="-4467.302" Y="-13674.04" Z="47.267" />
+		<Hotspot X="-4388.333" Y="-13714.73" Z="50.19876" />
+		<Hotspot X="-4388.255" Y="-13785.69" Z="52.16127" />
+		<Hotspot X="-4386.932" Y="-13788.55" Z="52.16208" />
+		<Hotspot X="-4356.977" Y="-13831.04" Z="69.22269" />
+		<Hotspot X="-4392.823" Y="-13959.64" Z="162.4714" />
+	  </Hotspots>
+	</Objective>
+	</Quest>
 	<Quest Id="9280" Name="Replenishing the Healing Crystals">
 		<Objective Type="CollectItem" ItemId="22889" CollectCount="8">
 			<CollectFrom>
@@ -658,7 +671,9 @@
 		<PickUp QuestName="Spare Parts" QuestId="9305" GiverName="Technician Zhanaa" GiverId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<PickUp QuestName="Inoculation" QuestId="9303" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		<Objective QuestName="Spare Parts" QuestId="9305" Type="CollectItem" ItemId="22978" CollectCount="4" />
-		<CustomBehavior File="InteractWith" NonCompeteDistance="0" QuestId="9294" MobId="181433" Range="20" CollectionDistance="1000" X="-4388.744" Y="-13644.09" Z="38.52658" />
+		<While Condition="((HasQuest(9294)) &amp;&amp; (!IsQuestCompleted(9294)))" >
+			<UseItem QuestId="9294" ItemId="22955" TargetId="181433" TargetType="Gameobject" X="-4386.737" Y="-13646.35" Z="38.52915" />
+		</While>
 		<TurnIn QuestName="Healing the Lake" QuestId="9294" TurnInName="Botanist Taerix" TurnInId="16514" X="-4057.03" Y="-13721.6" Z="72.9162" />
 		<TurnIn QuestName="Spare Parts" QuestId="9305" TurnInName="Technician Zhanaa" TurnInId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<!-- Q9303 Inoculation: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\[A - Quest] 1-58 [Kick]\[A - Quest] 1-12 [Kick]\[A - Quest] Draenei 1-5 [Kick].xml -->
@@ -695,7 +710,15 @@
 		<PickUp QuestName="Travel to Azure Watch" QuestId="9313" GiverName="Technician Zhanaa" GiverId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<PickUp QuestName="Word from Azure Watch" QuestId="9314" GiverName="Aeun" GiverId="16554" X="-4260.66" Y="-13125.4" Z="37.1331" />
 		<PickUp QuestName="Red Snapper - Very Tasty!" QuestId="9452" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
-		<Objective QuestName="Red Snapper - Very Tasty!" QuestId="9452" Type="CollectItem" ItemId="23614" CollectCount="10" />
+		<If Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))" >
+		<CustomBehavior File="UserSettings" LootMobs="True" />
+		<While Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))" >
+			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-4192.753" Y="-13018.9" Z="-2.431108" />
+			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-4030.711" Y="-12994.22" Z="-2.277808" />
+			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-3985.261" Y="-13025.76" Z="-2.515064" />
+		</While>
+		<CustomBehavior File="UserSettings" LootMobs="False" />
+		</If>
 		<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23678)">
