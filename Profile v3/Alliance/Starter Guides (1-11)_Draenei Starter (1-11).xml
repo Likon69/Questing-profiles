@@ -51,20 +51,7 @@
 	<Blackspots />
 
 	<Mailboxes />
-	<Quest Id="9303" Name="Inoculation">
-	<Objective QuestName="Inoculation" QuestId="9303" Type="UseItem" ItemId="22962" TargetId="16518" TargetType="Npc" UseCount="6">
-	  <CollectFrom />
-	  <MaximumHotspotTime>999999</MaximumHotspotTime>
-	  <Hotspots>
-		<Hotspot X="-4467.302" Y="-13674.04" Z="47.267" />
-		<Hotspot X="-4388.333" Y="-13714.73" Z="50.19876" />
-		<Hotspot X="-4388.255" Y="-13785.69" Z="52.16127" />
-		<Hotspot X="-4386.932" Y="-13788.55" Z="52.16208" />
-		<Hotspot X="-4356.977" Y="-13831.04" Z="69.22269" />
-		<Hotspot X="-4392.823" Y="-13959.64" Z="162.4714" />
-	  </Hotspots>
-	</Objective>
-	</Quest>
+
 	<Quest Id="9280" Name="Replenishing the Healing Crystals">
 		<Objective Type="CollectItem" ItemId="22889" CollectCount="8">
 			<CollectFrom>
@@ -494,6 +481,8 @@
 	</Quest>
 
 	<QuestOrder>
+
+
 		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
 		<!-- Travel to Starter Guides (1-11)_Draenei Starter (1-11) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(9279))">
@@ -689,7 +678,7 @@
 		<TurnIn QuestName="The Blood Elves" QuestId="10303" TurnInName="Tolaan" TurnInId="16546" X="-4445.66" Y="-13430.9" Z="51.337" />
 		<PickUp QuestName="Blood Elf Spy" QuestId="9311" GiverName="Tolaan" GiverId="16546" X="-4445.66" Y="-13430.9" Z="51.337" />
 		<Objective QuestName="Blood Elf Spy" QuestId="9311" Type="KillMob" MobId="16522" KillCount="1" />
-		<If Condition="!HasItem(24414)">
+		<If Condition="((HasQuest(9311)) &amp;&amp; (!IsQuestCompleted(9311)) &amp;&amp; (!HasItem(24414)))">
 			<CustomBehavior File="CollectThings" CollectItemId="24414" CollectItemCount="1" HuntingGroundRadius="120" MobId="16522" X="-4579.39" Y="-13319.9" Z="88.0798">
 				<Hotspot X="-4579.39" Y="-13319.9" Z="88.08" />
 			</CustomBehavior>
@@ -704,7 +693,7 @@
 		</If>
 
 		<TurnIn QuestName="Blood Elf Spy" QuestId="9311" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
-		<TurnIn QuestName="Blood Elf Plans" QuestId="9798" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
+		<TurnIn QuestName="Blood Elf Plans" QuestId="9798" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.73333" />
 		<PickUp QuestName="The Emitter" QuestId="9312" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		<TurnIn QuestName="The Emitter" QuestId="9312" TurnInName="Technician Zhanaa" TurnInId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<PickUp QuestName="Travel to Azure Watch" QuestId="9313" GiverName="Technician Zhanaa" GiverId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
