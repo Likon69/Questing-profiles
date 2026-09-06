@@ -325,7 +325,7 @@
 		<PickUp QuestName="What the Flux?" QuestId="7722" GiverName="Master Smith Burninate" GiverId="14624" X="-6524.04" Y="-1188.72" Z="309.338" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18960" CollectCount="1" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18959" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+		<If Condition="!HasItem(11818)">
 			<CustomBehavior File="CollectThings" CollectItemId="11818" CollectItemCount="1" HuntingGroundRadius="120" MobId="5840" MobId2="5844" MobId3="5846" MobId4="8566" MobId5="15692" X="-6575.26" Y="-1171.38" Z="185.589">
 				<Hotspot X="-6575.26" Y="-1171.38" Z="185.59" />
 				<Hotspot X="-6576.65" Y="-1221.07" Z="187.25" />
@@ -336,7 +336,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+		<If Condition="HasItem(11818)">
 			<PickUp QuestName="The Key to Freedom" QuestId="4451" GiverName="Grimesilt Outhouse Key" GiverId="11818" GiverType="Item" />
 		</If>
 

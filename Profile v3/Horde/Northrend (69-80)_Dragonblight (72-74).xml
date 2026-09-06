@@ -1045,13 +1045,13 @@
 		<Objective QuestName="Black Blood of Yogg-Saron" QuestId="12039" Type="CollectItem" ItemId="36725" CollectCount="10" />
 		<Objective QuestName="Prevent the Accord" QuestId="12005" Type="CollectItem" ItemId="35800" CollectCount="1" />
 		<Objective QuestName="Prevent the Accord" QuestId="12005" Type="CollectItem" ItemId="35801" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36746)">
+		<If Condition="!HasItem(36746)">
 			<CustomBehavior File="CollectThings" CollectItemId="36746" CollectItemCount="1" HuntingGroundRadius="120" MobId="26349" X="3401.72" Y="2532.42" Z="59.4827">
 				<Hotspot X="3401.72" Y="2532.42" Z="59.48" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36746)">
+		<If Condition="HasItem(36746)">
 			<PickUp QuestName="A Strange Device" QuestId="12059" GiverName="Goramosh's Strange Device" GiverId="36746" GiverType="Item" />
 		</If>
 
@@ -1091,7 +1091,7 @@
 		<PickUp QuestName="Return of the High Chief" QuestId="12069" GiverName="Banthok Icemist" GiverId="26733" X="4014.54" Y="2359.66" Z="126.748" />
 		<Objective QuestName="Return of the High Chief" QuestId="12069" Type="CollectItem" ItemId="36759" CollectCount="1" />
 		<Objective QuestName="Scourge Armaments" QuestId="12048" Type="CollectItem" ItemId="36736" CollectCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36744)">
+		<If Condition="!HasItem(36744)">
 			<CustomBehavior File="CollectThings" CollectItemId="36744" CollectItemCount="1" HuntingGroundRadius="120" MobId="26319" MobId2="26769" MobId3="26770" MobId4="26771" X="4063.392" Y="2347.526" Z="184.0142">
 				<Hotspot X="4063.39" Y="2347.53" Z="184.01" />
 				<Hotspot X="4102.14" Y="2333.06" Z="181.29" />
@@ -1102,7 +1102,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36744)">
+		<If Condition="HasItem(36744)">
 			<PickUp QuestName="The Flesh-Bound Tome" QuestId="12057" GiverName="Flesh-bound Tome" GiverId="36744" GiverType="Item" />
 		</If>
 
@@ -1189,7 +1189,7 @@
 		<!-- Q12066 The Focus on the Beach: objective nodes transplanted from HonorBuddy C-Cava reference Scripts\[N-Quest](72-75)Dragonblight[Cava].xml. Turn-in stays guarded and the quest is abandoned if still incomplete, so the profile continues. -->
 		<If Condition="Me.IsHorde">
 			<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
 					<RunTo X="3149.258" Y="2148.766" Z="24.33495" />
 				</If>
 			</If>
@@ -1197,7 +1197,7 @@
 
 		<If Condition="Me.IsHorde">
 			<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
 					<CustomBehavior File="ForcedDismount" />
 				</If>
 			</If>
@@ -1205,8 +1205,8 @@
 
 		<If Condition="Me.IsHorde">
 			<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
-					<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
+					<If Condition="!HasItem(36751)">
 						<RunTo X="3149.258" Y="2148.766" Z="24.33495" />
 					</If>
 				</If>
@@ -1215,8 +1215,8 @@
 
 		<If Condition="Me.IsHorde">
 			<If Condition="HasQuest(12066) &amp;&amp; !IsQuestCompleted(12066)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
-					<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
+					<If Condition="!HasItem(36751)">
 						<CustomBehavior File="WaitTimer" WaitTime="4000" />
 					</If>
 				</If>
@@ -1291,7 +1291,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12096" MobId="26321" ItemId="36786" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2824.71" Y="1750.11" Z="151.782" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36780)">
+		<If Condition="!HasItem(36780)">
 			<CustomBehavior File="CollectThings" CollectItemId="36780" CollectItemCount="1" HuntingGroundRadius="120" MobId="26815" X="2847.59" Y="1833.02" Z="139.577">
 				<Hotspot X="2847.59" Y="1833.02" Z="139.58" />
 			</CustomBehavior>
@@ -1301,7 +1301,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12096" MobId="26321" ItemId="36780" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2824.71" Y="1750.11" Z="151.782" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36780)">
+		<If Condition="HasItem(36780)">
 			<PickUp QuestName="A Letter for Home" QuestId="12085" GiverName="Lieutenant Ta'zinni's Letter" GiverId="36780" GiverType="Item" />
 		</If>
 
@@ -1316,7 +1316,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11959" MobId="26227" ItemId="35688" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 37833)">
+		<If Condition="!HasItem(37833)">
 			<CustomBehavior File="CollectThings" CollectItemId="37833" CollectItemCount="1" HuntingGroundRadius="120" MobId="27680" X="3743.79" Y="955.309" Z="53.8455">
 				<Hotspot X="3743.79" Y="955.31" Z="53.85" />
 			</CustomBehavior>
@@ -1326,7 +1326,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11959" MobId="26227" ItemId="37833" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 37833)">
+		<If Condition="HasItem(37833)">
 			<PickUp QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" GiverName="Ruby Brooch" GiverId="37833" GiverType="Item" />
 		</If>
 
@@ -1430,7 +1430,7 @@
 		<TurnIn QuestName="The High Executor Needs You" QuestId="12488" TurnInName="High Executor Wroth" TurnInId="27243" X="3208.62" Y="-678.667" Z="167.62" />
 		<TurnIn QuestName="Emerald Dragon Tears" QuestId="12200" TurnInName="Chief Plaguebringer Middleton" TurnInId="27172" X="3226.72" Y="-728.937" Z="168.146" />
 		<PickUp QuestName="Spread the Good Word" QuestId="12218" GiverName="Chief Plaguebringer Middleton" GiverId="27172" X="3226.72" Y="-728.937" Z="168.146" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 37432)">
+		<If Condition="!HasItem(37432)">
 			<CustomBehavior File="CollectThings" CollectItemId="37432" CollectItemCount="1" HuntingGroundRadius="120" MobId="27209" X="2882.65" Y="-287.679" Z="106.963">
 				<Hotspot X="2882.65" Y="-287.68" Z="106.96" />
 			</CustomBehavior>
@@ -1440,7 +1440,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12218" MobId="27290" ItemId="37432" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3526.48" Y="-1110.92" Z="112.328" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 37432)">
+		<If Condition="HasItem(37432)">
 			<PickUp QuestName="The Rod of Compulsion" QuestId="12271" GiverName="Torturer's Rod" GiverId="37432" GiverType="Item" />
 		</If>
 
@@ -2070,7 +2070,7 @@
 		<Objective QuestName="Pest Control" QuestId="12144" Type="KillMob" MobId="26481" KillCount="3" />
 		<TurnIn QuestName="Pest Control" QuestId="12144" TurnInName="Kontokanis" TurnInId="26979" X="4322.3" Y="1009.02" Z="95.6906" />
 		<PickUp QuestName="Canyon Chase" QuestId="12145" GiverName="Kontokanis" GiverId="26979" X="4322.3" Y="1009.02" Z="95.6906" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36856)">
+		<If Condition="!HasItem(36856)">
 			<CustomBehavior File="CollectThings" CollectItemId="36856" CollectItemCount="1" HuntingGroundRadius="120" MobId="27004" MobId2="27005" X="4092.9" Y="1248.45" Z="57.1379">
 				<Hotspot X="4092.9" Y="1248.45" Z="57.14" />
 				<Hotspot X="4481.23" Y="-438.29" Z="78.81" />
@@ -2081,7 +2081,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12145" MobId="27004" ItemId="36856" NumOfTimes="1" Range="5" CollectionDistance="1000" X="4092.9" Y="1248.45" Z="57.1379" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36856)">
+		<If Condition="HasItem(36856)">
 			<PickUp QuestName="Disturbing Implications" QuestId="12147" GiverName="Emblazoned Battle Horn" GiverId="36856" GiverType="Item" />
 		</If>
 

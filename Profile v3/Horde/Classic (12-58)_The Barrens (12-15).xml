@@ -537,11 +537,11 @@
 			<GrindTo Level="13" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4926)">
+		<If Condition="!HasItem(4926)">
 			<CustomBehavior File="InteractWith" MobId="3238" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-232.192" Y="-3021.31" Z="91.6885" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4926)">
+		<If Condition="HasItem(4926)">
 			<PickUp QuestName="Chen's Empty Keg" QuestId="819" GiverName="Chen's Empty Keg" GiverId="4926" GiverType="Item" />
 		</If>
 

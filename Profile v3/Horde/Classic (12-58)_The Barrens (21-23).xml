@@ -200,13 +200,13 @@
 
 		<PickUp QuestName="Betrayal from Within" QuestId="879" GiverName="Mangletooth" GiverId="3430" X="-2391.57" Y="-1891.09" Z="95.7874" />
 		<PickUp QuestName="Weapons of Choice" QuestId="893" GiverName="Tatternack Steelforge" GiverId="3433" X="-2284.69" Y="-1947.39" Z="96.0461" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5102)">
+		<If Condition="!HasItem(5102)">
 			<CustomBehavior File="CollectThings" CollectItemId="5102" CollectItemCount="1" HuntingGroundRadius="120" MobId="3473" X="-2509.89" Y="-2377.26" Z="92.4167">
 				<Hotspot X="-2509.89" Y="-2377.26" Z="92.42" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5102)">
+		<If Condition="HasItem(5102)">
 			<PickUp QuestName="Owatanka" QuestId="884" GiverName="Owatanka's Tailspike" GiverId="5102" GiverType="Item" />
 		</If>
 
@@ -233,7 +233,7 @@
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5093" CollectCount="1" />
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5092" CollectCount="1" />
 		<Objective QuestName="Weapons of Choice" QuestId="893" Type="CollectItem" ItemId="5094" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5103)">
+		<If Condition="!HasItem(5103)">
 			<CustomBehavior File="CollectThings" CollectItemId="5103" CollectItemCount="1" HuntingGroundRadius="120" MobId="3472" X="-3854.66" Y="-1752.77" Z="93.4167">
 				<Hotspot X="-3854.66" Y="-1752.77" Z="93.42" />
 			</CustomBehavior>
@@ -243,7 +243,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="843" MobId="3374" ItemId="5103" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-4105.0" Y="-2211.54" Z="53.2454" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5103)">
+		<If Condition="HasItem(5103)">
 			<PickUp QuestName="Washte Pawne" QuestId="885" GiverName="Washte Pawne's Feather" GiverId="5103" GiverType="Item" />
 		</If>
 

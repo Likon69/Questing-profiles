@@ -267,7 +267,7 @@
 		<Objective QuestName="Sprinkle's Secret Ingredient" QuestId="2641" Type="CollectItem" ItemId="8526" CollectCount="1" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2655" KillCount="10" />
 		<Objective QuestName="Skulk Rock Clean-up" QuestId="2877" Type="KillMob" MobId="2656" KillCount="10" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 8704)">
+		<If Condition="!HasItem(8704)">
 			<CustomBehavior File="CollectThings" CollectItemId="8704" CollectItemCount="1" HuntingGroundRadius="120" MobId="2505" MobId2="2639" MobId3="2640" MobId4="2641" MobId5="2642" MobId6="2643" X="-211.391" Y="-3244.01" Z="120.811">
 				<Hotspot X="-211.39" Y="-3244.01" Z="120.81" />
 				<Hotspot X="-269.07" Y="-3249.97" Z="122.21" />
@@ -278,7 +278,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 8704)">
+		<If Condition="HasItem(8704)">
 			<PickUp QuestName="Find OOX-09/HL!" QuestId="485" GiverName="OOX-09/HL Distress Beacon" GiverId="8704" GiverType="Item" />
 		</If>
 

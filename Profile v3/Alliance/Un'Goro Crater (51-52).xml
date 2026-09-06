@@ -224,7 +224,7 @@
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11185" CollectCount="7" />
 		<Objective QuestName="Crystals of Power" QuestId="4284" Type="CollectItem" ItemId="11184" CollectCount="7" />
 		<Objective QuestName="Muigin and Larion" QuestId="4141" Type="CollectItem" ItemId="11316" CollectCount="15" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11116)">
+		<If Condition="HasItem(11116)">
 			<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="A Mangled Journal" GiverId="11116" GiverType="Item" />
 		</If>
 

@@ -492,7 +492,7 @@
 		<PickUp QuestName="Deliver Thomas' Report" QuestId="39" GiverName="Guard Thomas" GiverId="261" X="-9610.23" Y="-1032.05" Z="41.3058" />
 		<PickUp QuestName="Report to Gryan Stoutmantle" QuestId="109" GiverName="Guard Thomas" GiverId="261" X="-9610.23" Y="-1032.05" Z="41.3058" />
 		<Objective QuestName="Red Linen Goods" QuestId="83" Type="CollectItem" ItemId="1019" CollectCount="6" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 1972)">
+		<If Condition="!HasItem(1972)">
 			<CustomBehavior File="CollectThings" CollectItemId="1972" CollectItemCount="1" HuntingGroundRadius="120" MobId="116" MobId2="474" MobId3="880" MobId4="881" MobId5="6846" MobId6="6927" X="-9715.12" Y="-939.522" Z="38.3854">
 				<Hotspot X="-9715.12" Y="-939.52" Z="38.39" />
 				<Hotspot X="-9766.92" Y="-917.46" Z="39.8" />
@@ -503,7 +503,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="(Me.CarriedItems.Any(i =&gt; i.Entry == 1972))">
+		<If Condition="(HasItem(1972))">
 			<PickUp QuestName="Furlbrow's Deed" QuestId="184" GiverType="Item" GiverId="1972" />
 		</If>
 

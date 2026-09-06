@@ -318,7 +318,7 @@
 		<PickUp QuestName="The Flawless Flame" QuestId="3442" GiverName="Kalaran Windblade" GiverId="8479" X="-6679.93" Y="-1194.36" Z="240.297" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18960" CollectCount="1" />
 		<Objective QuestName="STOLEN: Smithing Tuyere and Lookout's Spyglass" QuestId="7728" Type="CollectItem" ItemId="18959" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+		<If Condition="!HasItem(11818)">
 			<CustomBehavior File="CollectThings" CollectItemId="11818" CollectItemCount="1" HuntingGroundRadius="120" MobId="5840" MobId2="5844" MobId3="5846" MobId4="8566" MobId5="15692" X="-6664.575" Y="-1187.865" Z="182.6125">
 				<Hotspot X="-6664.57" Y="-1187.87" Z="182.61" />
 				<Hotspot X="-6689.6" Y="-1159.43" Z="184.91" />
@@ -329,7 +329,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11818)">
+		<If Condition="HasItem(11818)">
 			<PickUp QuestName="The Key to Freedom" QuestId="4451" GiverName="Grimesilt Outhouse Key" GiverId="11818" GiverType="Item" />
 		</If>
 

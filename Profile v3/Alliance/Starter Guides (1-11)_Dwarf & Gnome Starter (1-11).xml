@@ -665,7 +665,7 @@
 			<If Condition="Me.Level &gt;= 12">
 				<PickUp QuestName="The Tome of Divinity" QuestId="1645" GiverName="Tiza Battleforge" GiverId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
 			</If>
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6916)">
+			<If Condition="HasItem(6916)">
 				<If Condition="Me.Level &gt;= 12">
 					<PickUp QuestName="The Tome of Divinity" QuestId="1646" GiverName="Tome of Divinity" GiverId="6916" GiverType="Item" />
 				</If>

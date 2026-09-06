@@ -138,7 +138,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11150" MobId="23751" ItemId="33072" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-3640.92" Y="-3421.74" Z="37.4134" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33114)">
+		<If Condition="!HasItem(33114)">
 			<CustomBehavior File="CollectThings" CollectItemId="33114" CollectItemCount="1" HuntingGroundRadius="120" MobId="23881" X="-3663.91" Y="-3453.97" Z="37.2993">
 				<Hotspot X="-3663.91" Y="-3453.97" Z="37.3" />
 			</CustomBehavior>
@@ -148,7 +148,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11150" MobId="23751" ItemId="33114" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-3640.92" Y="-3421.74" Z="37.4134" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33114)">
+		<If Condition="HasItem(33114)">
 			<PickUp QuestName="The Apothecary's Letter" QuestId="11185" GiverName="Sealed Letter" GiverId="33114" GiverType="Item" />
 		</If>
 

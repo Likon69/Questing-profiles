@@ -800,7 +800,7 @@
 		<Objective QuestName="Deaths in the Family" QuestId="354" Type="CollectItem" ItemId="2830" CollectCount="1" />
 		<Objective QuestName="The Mills Overrun" QuestId="426" Type="CollectItem" ItemId="3162" CollectCount="5" />
 		<Objective QuestName="The Mills Overrun" QuestId="426" Type="CollectItem" ItemId="3163" CollectCount="3" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 2839)">
+		<If Condition="!HasItem(2839)">
 			<CustomBehavior File="CollectThings" CollectItemId="2839" CollectItemCount="1" HuntingGroundRadius="120" MobId="1520" MobId2="1522" MobId3="1523" X="2538.965" Y="972.142" Z="89.9921">
 				<Hotspot X="2538.97" Y="972.14" Z="89.99" />
 				<Hotspot X="2599.82" Y="1006.99" Z="100.67" />
@@ -811,7 +811,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 2839)">
+		<If Condition="HasItem(2839)">
 			<PickUp QuestName="A Letter Undelivered" QuestId="361" GiverName="A Letter to Yvette" GiverId="2839" GiverType="Item" />
 		</If>
 

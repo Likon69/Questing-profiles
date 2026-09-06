@@ -95,23 +95,23 @@
 		<PickUp QuestName="Field Duty Papers" QuestId="8732" GiverName="Krug Skullsplit" GiverId="15612" X="-7547.94" Y="718.819" Z="-16.2931" />
 		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
 		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21258)">
+		<If Condition="HasItem(21258)">
 			<PickUp QuestName="The Orgrimmar Legion Needs Mojo!" QuestId="8785" GiverName="Logistics Task Briefing IV" GiverId="21258" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21382)">
+		<If Condition="HasItem(21382)">
 			<PickUp QuestName="Scrying Materials" QuestId="8807" GiverName="Logistics Task Briefing V" GiverId="21382" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21261)">
+		<If Condition="HasItem(21261)">
 			<PickUp QuestName="Arms for the Field" QuestId="8786" GiverName="Logistics Task Briefing VI" GiverId="21261" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21264)">
+		<If Condition="HasItem(21264)">
 			<PickUp QuestName="Armor Kits for the Field" QuestId="8787" GiverName="Logistics Task Briefing VII" GiverId="21264" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21385)">
+		<If Condition="HasItem(21385)">
 			<PickUp QuestName="Bandages for the Field" QuestId="8810" GiverName="Logistics Task Briefing X" GiverId="21385" GiverType="Item" />
 		</If>
 
@@ -171,27 +171,27 @@
 			<AbandonQuest QuestId="8787" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21378)">
+		<If Condition="HasItem(21378)">
 			<PickUp QuestName="Desert Survival Kits" QuestId="8804" GiverName="Logistics Task Briefing I" GiverId="21378" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21379)">
+		<If Condition="HasItem(21379)">
 			<PickUp QuestName="Boots for the Guard" QuestId="8805" GiverName="Logistics Task Briefing II" GiverId="21379" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21380)">
+		<If Condition="HasItem(21380)">
 			<PickUp QuestName="Grinding Stones for the Guard" QuestId="8806" GiverName="Logistics Task Briefing III" GiverId="21380" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21384)">
+		<If Condition="HasItem(21384)">
 			<PickUp QuestName="Uniform Supplies" QuestId="8808" GiverName="Logistics Task Briefing VIII" GiverId="21384" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21381)">
+		<If Condition="HasItem(21381)">
 			<PickUp QuestName="Extraordinary Materials" QuestId="8809" GiverName="Logistics Task Briefing IX" GiverId="21381" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21514)">
+		<If Condition="HasItem(21514)">
 			<PickUp QuestName="The Ultimate Deception" QuestId="8829" GiverName="Logistics Task Briefing XI" GiverId="21514" GiverType="Item" />
 		</If>
 

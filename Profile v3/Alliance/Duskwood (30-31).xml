@@ -206,7 +206,7 @@
 		<Objective QuestName="Worgen in the Woods" QuestId="173" Type="KillMob" MobId="533" KillCount="6" />
 		<TurnIn QuestName="Worgen in the Woods" QuestId="173" TurnInName="Calor" TurnInId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
 		<PickUp QuestName="Worgen in the Woods" QuestId="221" GiverName="Calor" GiverId="663" X="-10572.9" Y="-1211.98" Z="26.2189" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 2794)">
+		<If Condition="!HasItem(2794)">
 			<CustomBehavior File="CollectThings" CollectItemId="2794" CollectItemCount="1" HuntingGroundRadius="120" MobId="3" MobId2="48" MobId3="202" MobId4="203" MobId5="205" MobId6="206" X="-10625.3333" Y="-890.137" Z="49.2526">
 				<Hotspot X="-10625.33" Y="-890.14" Z="49.25" />
 				<Hotspot X="-10576.1" Y="-955.15" Z="48.4" />
@@ -221,7 +221,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="221" MobId="205" ItemId="2794" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-10646.8" Y="-884.137" Z="50.1853" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 2794)">
+		<If Condition="HasItem(2794)">
 			<PickUp QuestName="An Old History Book" QuestId="337" GiverName="An Old History Book" GiverId="2794" GiverType="Item" />
 		</If>
 

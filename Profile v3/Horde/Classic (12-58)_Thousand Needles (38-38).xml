@@ -180,7 +180,7 @@
 		<Objective QuestName="The Swarm Grows" QuestId="1147" Type="KillMob" MobId="4130" KillCount="5" />
 		<Objective QuestName="The Swarm Grows" QuestId="1147" Type="KillMob" MobId="4133" KillCount="5" />
 		<Objective QuestName="The Swarm Grows" QuestId="1147" Type="KillMob" MobId="4131" KillCount="5" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5877)">
+		<If Condition="!HasItem(5877)">
 			<CustomBehavior File="CollectThings" CollectItemId="5877" CollectItemCount="1" HuntingGroundRadius="120" MobId="4130" MobId2="4131" MobId3="4132" MobId4="4133" X="-6410.85" Y="-3589.94" Z="-58.6249">
 				<Hotspot X="-6410.85" Y="-3589.94" Z="-58.62" />
 				<Hotspot X="-6386.26" Y="-3528.63" Z="-58.66" />
@@ -191,7 +191,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5877)">
+		<If Condition="HasItem(5877)">
 			<PickUp QuestName="Parts of the Swarm" QuestId="1148" GiverName="Cracked Silithid Carapace" GiverId="5877" GiverType="Item" />
 		</If>
 

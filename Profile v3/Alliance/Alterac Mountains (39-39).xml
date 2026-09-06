@@ -188,11 +188,11 @@
 		<TurnIn QuestName="Magical Analysis" QuestId="602" TurnInName="Archmage Ansirem Runeweaver" TurnInId="2543" X="34.8848" Y="255.874" Z="42.0349" />
 		<PickUp QuestName="Ansirem's Key" QuestId="603" GiverName="Archmage Ansirem Runeweaver" GiverId="2543" X="34.8848" Y="255.874" Z="42.0349" />
 		<Objective QuestName="Dark Council" QuestId="537" Type="CollectItem" ItemId="3672" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 3706)">
+		<If Condition="!HasItem(3706)">
 			<CustomBehavior File="InteractWith" MobId="1765" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="1226.3" Y="-313.66" Z="43.622" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 3706)">
+		<If Condition="HasItem(3706)">
 			<PickUp QuestName="The Ensorcelled Parchment" QuestId="551" GiverName="Ensorcelled Parchment" GiverId="3706" GiverType="Item" />
 		</If>
 

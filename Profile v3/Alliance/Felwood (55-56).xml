@@ -87,7 +87,7 @@
 		<TurnIn QuestName="Felbound Ancients" QuestId="4441" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		<PickUp QuestName="Purified!" QuestId="4442" GiverName="Eridan Bluewind" GiverId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
 		<TurnIn QuestName="Purified!" QuestId="4442" TurnInName="Eridan Bluewind" TurnInId="9116" X="4008.81" Y="-1310.94" Z="254.58" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 13140)">
+		<If Condition="!HasItem(13140)">
 			<CustomBehavior File="CollectThings" CollectItemId="13140" CollectItemCount="1" HuntingGroundRadius="120" MobId="7114" MobId2="7118" MobId3="7120" MobId4="9862" MobId5="14523" X="5045.6975" Y="-537.77" Z="309.387">
 				<Hotspot X="5045.7" Y="-537.77" Z="309.39" />
 				<Hotspot X="4924.27" Y="-399.47" Z="332.55" />
@@ -102,7 +102,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="5165" MobId="176158" ItemId="13140" NumOfTimes="1" MobType="GameObject" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 13140)">
+		<If Condition="HasItem(13140)">
 			<PickUp QuestName="A Strange Red Key" QuestId="5202" GiverName="Blood Red Key" GiverId="13140" GiverType="Item" />
 		</If>
 

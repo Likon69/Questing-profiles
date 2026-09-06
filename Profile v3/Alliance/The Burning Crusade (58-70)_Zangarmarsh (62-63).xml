@@ -710,7 +710,7 @@
 		<Objective QuestName="Fulgor Spores" QuestId="9777" Type="CollectItem" ItemId="24383" CollectCount="6" />
 		<Objective QuestName="Unfinished Business" QuestId="9901" Type="KillMob" MobId="18280" KillCount="1" />
 		<Objective QuestName="The Dead Mire" QuestId="9782" Type="CollectItem" ItemId="24400" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 24483)">
+		<If Condition="!HasItem(24483)">
 			<CustomBehavior File="CollectThings" CollectItemId="24483" CollectItemCount="1" HuntingGroundRadius="120" MobId="18124" X="352.668" Y="5368.475" Z="20.0464">
 				<Hotspot X="352.67" Y="5368.48" Z="20.05" />
 				<Hotspot X="347.31" Y="5486.74" Z="18.83" />
@@ -725,7 +725,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9791" MobId="18130" ItemId="24483" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-985.899" Y="5148.56" Z="22.9501" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24483)">
+		<If Condition="HasItem(24483)">
 			<PickUp QuestName="Withered Basidium" QuestId="9827" GiverName="Withered Basidium" GiverId="24483" GiverType="Item" />
 		</If>
 
@@ -781,7 +781,7 @@
 		<PickUp QuestName="Diaphanous Wings" QuestId="9790" GiverName="Haalrun" GiverId="18005" X="329.267" Y="6066.22" Z="138.516" />
 		<TurnIn QuestName="Umbrafen Eel Filets" QuestId="9780" TurnInName="Noraani" TurnInId="18006" X="330.868" Y="6074.52" Z="138.517" />
 		<Objective QuestName="Diaphanous Wings" QuestId="9790" Type="CollectItem" ItemId="24372" CollectCount="8" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24330)">
+		<If Condition="HasItem(24330)">
 			<PickUp QuestName="Drain Schematics" QuestId="9731" GiverName="Drain Schematics" GiverId="24330" GiverType="Item" />
 		</If>
 
@@ -939,13 +939,13 @@
 		<TurnIn QuestName="Diaphanous Wings" QuestId="9790" TurnInName="Haalrun" TurnInId="18005" X="329.267" Y="6066.22" Z="138.516" />
 		<Objective QuestName="Natural Armor" QuestId="9834" Type="CollectItem" ItemId="24486" CollectCount="8" />
 		<Objective QuestName="Blacksting's Bane" QuestId="9896" Type="CollectItem" ItemId="25448" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 25459)">
+		<If Condition="!HasItem(25459)">
 			<CustomBehavior File="CollectThings" CollectItemId="25459" CollectItemCount="1" HuntingGroundRadius="120" MobId="18285" X="-59.965" Y="7825.6" Z="23.7213">
 				<Hotspot X="-59.97" Y="7825.6" Z="23.72" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 25459)">
+		<If Condition="HasItem(25459)">
 			<PickUp QuestName="The Count of the Marshes" QuestId="9911" GiverName="&quot;Count&quot; Ungula's Mandible" GiverId="25459" GiverType="Item" />
 		</If>
 

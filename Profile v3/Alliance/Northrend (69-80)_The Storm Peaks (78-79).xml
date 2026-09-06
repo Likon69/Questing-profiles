@@ -999,7 +999,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12915" MobId="29503" ItemId="41505" NumOfTimes="1" Range="5" CollectionDistance="1000" X="7174.86" Y="-3647.9" Z="828.423" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 41556)">
+		<If Condition="!HasItem(41556)">
 			<CustomBehavior File="CollectThings" CollectItemId="41556" CollectItemCount="1" HuntingGroundRadius="120" MobId="29375" X="7199.97" Y="-3600.63" Z="827.002">
 				<Hotspot X="7199.97" Y="-3600.63" Z="827" />
 				<Hotspot X="7164.41" Y="-3565.16" Z="827.64" />
@@ -1010,7 +1010,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 41556)">
+		<If Condition="HasItem(41556)">
 			<PickUp QuestName="The Refiner's Fire" QuestId="12922" GiverName="Slag Covered Metal" GiverId="41556" GiverType="Item" />
 		</If>
 
@@ -1071,7 +1071,7 @@
 		<TurnIn QuestName="The Dark Ore" QuestId="12964" TurnInName="Bouldercrag the Rockshaper" TurnInId="29801" X="8392.55" Y="-392.938" Z="903.202" />
 		<PickUp QuestName="The Gifts of Loken" QuestId="12965" GiverName="Bouldercrag the Rockshaper" GiverId="29801" X="8392.55" Y="-392.938" Z="903.202" />
 		<PickUp QuestName="Facing the Storm" QuestId="12978" GiverName="Bruor Ironbane" GiverId="30152" X="8388.08" Y="-382.951" Z="903.202" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 42203)">
+		<If Condition="!HasItem(42203)">
 			<CustomBehavior File="CollectThings" CollectItemId="42203" CollectItemCount="1" HuntingGroundRadius="120" MobId="29380" X="7891.82" Y="29.8049" Z="1012.99">
 				<Hotspot X="7891.82" Y="29.8" Z="1012.99" />
 				<Hotspot X="7763.88" Y="25.31" Z="1009.39" />
@@ -1086,7 +1086,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12978" MobId="29370" ItemId="42203" NumOfTimes="1" Range="5" CollectionDistance="1000" X="7831.03" Y="24.9519" Z="1009.16" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 42203)">
+		<If Condition="HasItem(42203)">
 			<PickUp QuestName="Armor of Darkness" QuestId="12979" GiverName="Dark Armor Plate" GiverId="42203" GiverType="Item" />
 		</If>
 

@@ -248,7 +248,7 @@
 		<TurnIn QuestName="Tramping Paws" QuestId="276" TurnInName="Rethiel the Greenwarden" TurnInId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
 		<PickUp QuestName="Fire Taboo" QuestId="277" GiverName="Rethiel the Greenwarden" GiverId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
 		<Objective QuestName="Fire Taboo" QuestId="277" Type="CollectItem" ItemId="2611" CollectCount="9" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4433)">
+		<If Condition="!HasItem(4433)">
 			<CustomBehavior File="InteractWith" MobId="2656" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-2362.47" Y="-2461.07" Z="-20.8913" />
 		</If>
 
@@ -259,7 +259,7 @@
 		<Objective QuestName="Apprentice's Duties" QuestId="471" Type="CollectItem" ItemId="3348" CollectCount="6" />
 		<Objective QuestName="Claws from the Deep" QuestId="279" Type="KillMob" MobId="1024" KillCount="12" />
 		<TurnIn QuestName="Claws from the Deep" QuestId="279" TurnInName="Karl Boran" TurnInId="1242" X="-3761.23" Y="-733.229" Z="8.0497" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4433)">
+		<If Condition="HasItem(4433)">
 			<PickUp QuestName="Sully Balloo's Letter" QuestId="637" GiverName="Waterlogged Envelope" GiverId="4433" GiverType="Item" />
 		</If>
 
@@ -290,7 +290,7 @@
 
 		<If Condition="(Me.Class == WoWClass.Paladin)">
 			<PickUp QuestName="The Tome of Valor" QuestId="1793" GiverName="Duthorian Rall" GiverId="6171" X="-8546" Y="845.796" Z="106.601" />
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6776)">
+			<If Condition="HasItem(6776)">
 				<PickUp QuestName="The Tome of Valor" QuestId="1649" GiverName="Tome of Valor" GiverId="6776" GiverType="Item" />
 			</If>
 			<!-- REVIEW Q1649 The Tome of Valor: start item 6776 Tome of Valor has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

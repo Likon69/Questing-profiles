@@ -835,7 +835,7 @@
 		<TurnIn QuestName="The Infested Protectors" QuestId="10896" TurnInName="Lakotae" TurnInId="22420" X="-2860.59" Y="5038.81" Z="-19.9867" />
 		<PickUp QuestName="The Tomb of Lights" QuestId="10840" GiverName="High Priest Orglum" GiverId="22278" X="-2827.24" Y="5060.84" Z="-15.4348" />
 		<PickUp QuestName="Vengeful Souls" QuestId="10842" GiverName="High Priest Orglum" GiverId="22278" X="-2827.24" Y="5060.84" Z="-15.4348" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31707)">
+		<If Condition="!HasItem(31707)">
 			<CustomBehavior File="CollectThings" CollectItemId="31707" CollectItemCount="1" HuntingGroundRadius="120" MobId="21661" MobId2="21902" MobId3="21907" X="-3077.595" Y="4834.95" Z="-21.8371">
 				<Hotspot X="-3077.59" Y="4834.95" Z="-21.84" />
 				<Hotspot X="-3128.87" Y="4849.45" Z="-17.27" />
@@ -850,7 +850,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="10842" MobId="21636" ItemId="31707" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-2981.75" Y="4378.62" Z="-49.227" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31707)">
+		<If Condition="HasItem(31707)">
 			<PickUp QuestName="Cabal Orders" QuestId="10880" GiverName="Cabal Orders" GiverId="31707" GiverType="Item" />
 		</If>
 

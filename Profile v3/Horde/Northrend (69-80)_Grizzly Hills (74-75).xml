@@ -754,7 +754,7 @@
 		<TurnIn QuestName="The Thane of Voldrune" QuestId="12259" TurnInName="Sergeant Nazgrim" TurnInId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
 		<PickUp QuestName="Onward to Camp Oneqwah" QuestId="12451" GiverName="Sergeant Nazgrim" GiverId="27388" X="3274.94" Y="-2213.25" Z="117.112" />
 		<PickUp QuestName="My Enemy's Friend" QuestId="12412" GiverName="Conqueror Krenna" GiverId="26860" X="3270.89" Y="-2197.23" Z="117.456" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 37830)">
+		<If Condition="!HasItem(37830)">
 			<CustomBehavior File="CollectThings" CollectItemId="37830" CollectItemCount="1" HuntingGroundRadius="120" MobId="27546" MobId2="27547" X="3115.425" Y="-3076.29" Z="124.8505">
 				<Hotspot X="3115.43" Y="-3076.29" Z="124.85" />
 				<Hotspot X="3151.98" Y="-3057.84" Z="130.99" />
@@ -769,7 +769,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12412" MobId="27546" ItemId="37830" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3110.83" Y="-3091.04" Z="128.052" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 37830)">
+		<If Condition="HasItem(37830)">
 			<PickUp QuestName="Mikhail's Journal" QuestId="12423" GiverName="Mikhail's Journal" GiverId="37830" GiverType="Item" />
 		</If>
 
@@ -785,35 +785,35 @@
 		<PickUp QuestName="Jun'ik's Coverup" QuestId="12177" GiverName="Hidetrader Jun'ik" GiverId="27037" X="3237.74" Y="-2267.83" Z="115.855" />
 		<PickUp QuestName="Good Troll Hunting" QuestId="12208" GiverName="Sergeant Thurkin" GiverId="27266" X="3250.79" Y="-2275.8" Z="108.653" />
 		<!-- Q12177 Jun'ik's Coverup: objective nodes transplanted from HonorBuddy drind reference 1-85 Questing Profile Pack\LK\[Fly H - Quest] 70-80 Northrend by Eddie4 Beta0.6.xml -->
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 3857)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(3857)))">
 			<RunTo QuestId="0" X="3309.34" Y="-2338.626" Z="110.8462" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 3857)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(3857)))">
 			<CustomBehavior File="BasicInteractWith" QuestId="0" MoveTo="1" NpcID="27134" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 3857)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(3857)))">
 			<CustomBehavior File="WaitTimer" WaitTime="3000" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 3857)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(3857)))">
 			<CustomBehavior File="RunMacro" Macro="/run BuyMerchantItem(6, 1)" NumOfTimes="1" WaitTime="2000" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 30817)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(30817)))">
 			<RunTo QuestId="0" X="3200.552" Y="-2301.466" Z="107.6754" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 30817)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(30817)))">
 			<CustomBehavior File="BasicInteractWith" QuestId="12177" MoveTo="1" NpcID="26868" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 30817)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(30817)))">
 			<CustomBehavior File="WaitTimer" WaitTime="3000" />
 		</If>
 
-		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 30817)))">
+		<If Condition="((HasQuest(12177)) &amp;&amp; (!IsQuestCompleted(12177)) &amp;&amp; (!HasItem(30817)))">
 			<CustomBehavior File="RunMacro" Macro="/run BuyMerchantItem(2, 5)" NumOfTimes="1" WaitTime="2000" />
 		</If>
 

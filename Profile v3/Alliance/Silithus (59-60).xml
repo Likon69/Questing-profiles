@@ -207,7 +207,7 @@
 		<PickUp QuestName="The Twilight Mystery" QuestId="8284" GiverName="Geologist Larksbane" GiverId="15183" X="-6828.49" Y="807.223" Z="52.0997" />
 		<PickUp QuestName="Secret Communication" QuestId="8318" GiverName="Bor Wildmane" GiverId="15306" X="-6836.01" Y="845.531" Z="49.0809" />
 		<PickUp QuestName="Dearest Natalia" QuestId="8304" GiverName="Commander Mar'alith" GiverId="15181" X="-6752.38" Y="823.836" Z="57.3633" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20461)">
+		<If Condition="HasItem(20461)">
 			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
 		</If>
 

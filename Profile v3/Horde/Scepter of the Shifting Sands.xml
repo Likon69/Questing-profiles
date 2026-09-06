@@ -226,7 +226,7 @@
 		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="18562" CollectCount="10" />
 		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12800" CollectCount="10" />
 		<Objective QuestName="The Good News and The Bad News" QuestId="8728" Type="CollectItem" ItemId="12361" CollectCount="10" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20949)">
+		<If Condition="HasItem(20949)">
 			<PickUp QuestName="Azuregos's Magical Ledger" QuestId="8575" GiverName="Magical Ledger" GiverId="20949" GiverType="Item" />
 		</If>
 

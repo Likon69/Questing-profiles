@@ -889,14 +889,14 @@
 			<CustomBehavior File="UseItemOn" QuestId="10397" MobId="19298" ItemId="29588" NumOfTimes="1" Range="5" CollectionDistance="1000" X="569.779" Y="2797.71" Z="218.62" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29588)">
+		<If Condition="HasItem(29588)">
 			<PickUp QuestName="The Dark Missive" QuestId="10395" GiverName="Burning Legion Missive" GiverId="29588" GiverType="Item" />
 		</If>
 
 		<Objective QuestName="Invasion Point: Annihilator" QuestId="10397" Type="UseObject" ObjectId="182935" UseCount="1" />
 		<TurnIn QuestName="Invasion Point: Annihilator" QuestId="10397" TurnInName="Field Marshal Brock" TurnInId="20793" X="497.948" Y="2012.61" Z="112.777" />
 		<PickUp QuestName="Outland Sucks!" QuestId="10236" GiverName="Foreman Razelcraz" GiverId="16915" X="430.101" Y="2886.58" Z="52.3558" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23338)">
+		<If Condition="!HasItem(23338)">
 			<CustomBehavior File="CollectThings" CollectItemId="23338" CollectItemCount="1" HuntingGroundRadius="120" MobId="16857" MobId2="16968" X="200.578" Y="3032.255" Z="-1.0795">
 				<Hotspot X="200.58" Y="3032.26" Z="-1.08" />
 				<Hotspot X="167.5" Y="3001.86" Z="-1.1" />
@@ -907,7 +907,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23338)">
+		<If Condition="HasItem(23338)">
 			<PickUp QuestName="Missing Missive" QuestId="9373" GiverName="Eroded Leather Case" GiverId="23338" GiverType="Item" />
 		</If>
 
@@ -1179,13 +1179,13 @@
 		<PickUp QuestName="The Finest Down" QuestId="9420" GiverName="Mirren Longbeard" GiverId="16851" X="-1010.14" Y="4301.38" Z="68.1336" />
 		<Objective QuestName="Rampaging Ravagers" QuestId="9385" Type="KillMob" MobId="16934" KillCount="10" />
 		<TurnIn QuestName="Rampaging Ravagers" QuestId="9385" TurnInName="Gremni Longbeard" TurnInId="16850" X="-1003.98" Y="4305.97" Z="68.0723" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23580)">
+		<If Condition="!HasItem(23580)">
 			<CustomBehavior File="CollectThings" CollectItemId="23580" CollectItemCount="1" HuntingGroundRadius="120" MobId="17084" X="-1144.66" Y="4221.21" Z="53.5334">
 				<Hotspot X="-1144.66" Y="4221.21" Z="53.53" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23580)">
+		<If Condition="HasItem(23580)">
 			<PickUp QuestName="Avruu's Orb" QuestId="9418" GiverName="Avruu's Orb" GiverId="23580" GiverType="Item" />
 		</If>
 

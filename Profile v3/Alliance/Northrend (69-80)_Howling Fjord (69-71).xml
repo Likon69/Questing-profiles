@@ -1429,7 +1429,7 @@
 		<Objective QuestName="Danger! Explosives!" QuestId="11218" Type="CollectItem" ItemId="33187" CollectCount="18" />
 		<TurnIn QuestName="Where is Explorer Jaren?" QuestId="11393" TurnInName="Explorer Jaren" TurnInId="23833" X="1808.19" Y="-2863.75" Z="3.7262" />
 		<PickUp QuestName="And You Thought Murlocs Smelled Bad!" QuestId="11394" GiverName="Explorer Jaren" GiverId="23833" X="1808.19" Y="-2863.75" Z="3.7262" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33961)">
+		<If Condition="!HasItem(33961)">
 			<CustomBehavior File="CollectThings" CollectItemId="33961" CollectItemCount="1" HuntingGroundRadius="120" MobId="23643" MobId2="23644" MobId3="23645" MobId4="24485" MobId5="24540" X="2336.4563" Y="-2764.4212" Z="2.9886">
 				<Hotspot X="2336.46" Y="-2764.42" Z="2.99" />
 				<Hotspot X="2307.65" Y="-2798.08" Z="7.48" />
@@ -1444,7 +1444,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11394" MobId="23643" ItemId="33961" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2338.83" Y="-2762.69" Z="2.8754" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33961)">
+		<If Condition="HasItem(33961)">
 			<PickUp QuestName="It's a Scourge Device" QuestId="11395" GiverName="Scourge Device" GiverId="33961" GiverType="Item" />
 		</If>
 
@@ -1589,7 +1589,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11245" MobId="24087" ItemId="33323" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1910.92" Y="-4038.31" Z="271.226" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33314)">
+		<If Condition="!HasItem(33314)">
 			<CustomBehavior File="CollectThings" CollectItemId="33314" CollectItemCount="1" HuntingGroundRadius="120" MobId="23661" MobId2="23662" MobId3="23663" MobId4="23664" MobId5="23665" MobId6="23666" X="1928.345" Y="-4039.94" Z="215.7715">
 				<Hotspot X="1928.34" Y="-4039.94" Z="215.77" />
 				<Hotspot X="1889.88" Y="-4073.83" Z="213.13" />
@@ -1600,7 +1600,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33314)">
+		<If Condition="HasItem(33314)">
 			<PickUp QuestName="Stop the Ascension!" QuestId="11249" GiverName="Vrykul Scroll of Ascension" GiverId="33314" GiverType="Item" />
 		</If>
 
@@ -1694,7 +1694,7 @@
 
 		<Objective QuestName="Dealing With Gjalerbron" QuestId="11235" Type="KillMob" MobId="23990" KillCount="8" />
 		<Objective QuestName="Dealing With Gjalerbron" QuestId="11235" Type="KillMob" MobId="23989" KillCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33289)">
+		<If Condition="!HasItem(33289)">
 			<CustomBehavior File="CollectThings" CollectItemId="33289" CollectItemCount="1" HuntingGroundRadius="120" MobId="23989" MobId2="23990" MobId3="23991" MobId4="23992" MobId5="23993" MobId6="24013" X="2603.485" Y="-3585.715" Z="205.3535">
 				<Hotspot X="2603.49" Y="-3585.72" Z="205.35" />
 				<Hotspot X="2595.33" Y="-3546.56" Z="205.86" />
@@ -1709,7 +1709,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11231" MobId="24035" ItemId="33289" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2584.48" Y="-3597.35" Z="168.06" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33289)">
+		<If Condition="HasItem(33289)">
 			<PickUp QuestName="Gjalerbron Attack Plans" QuestId="11237" GiverName="Gjalerbron Attack Plans" GiverId="33289" GiverType="Item" />
 		</If>
 
@@ -1731,13 +1731,13 @@
 		<TurnIn QuestName="Of Keys and Cages" QuestId="11231" TurnInName="Father Levariol" TurnInId="24038" X="1344" Y="-3142.7" Z="172.249" />
 		<PickUp QuestName="In Service to the Light" QuestId="11239" GiverName="Father Levariol" GiverId="24038" X="1344" Y="-3142.7" Z="172.249" />
 		<Objective QuestName="Necro Overlord Mezhen" QuestId="11236" Type="KillMob" MobId="24018" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 34090)">
+		<If Condition="!HasItem(34090)">
 			<CustomBehavior File="CollectThings" CollectItemId="34090" CollectItemCount="1" HuntingGroundRadius="120" MobId="14834" MobId2="24018" X="2589.42" Y="-3742.93" Z="247.053">
 				<Hotspot X="2589.42" Y="-3742.93" Z="247.05" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 34090)">
+		<If Condition="HasItem(34090)">
 			<PickUp QuestName="The Slumbering King" QuestId="11452" GiverName="Mezhen's Writings" GiverId="34090" GiverType="Item" />
 		</If>
 

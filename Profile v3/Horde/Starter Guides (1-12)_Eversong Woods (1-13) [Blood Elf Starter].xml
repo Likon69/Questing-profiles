@@ -735,7 +735,7 @@
 			<While Condition="((HasQuest(8335)) &amp;&amp; (!IsQuestCompleted(8335)))">
 				<CustomBehavior File="UseItemOn" QuestId="8335" MobId="15273" ItemId="20483" NumOfTimes="1" Range="5" CollectionDistance="1000" X="10235.4" Y="-5984.8" Z="38.944" />
 			</While>
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20483)">
+			<If Condition="HasItem(20483)">
 				<PickUp QuestName="Tainted Arcane Sliver" QuestId="8338" GiverName="Tainted Arcane Sliver" GiverId="20483" GiverType="Item" />
 			</If>
 		</If>
@@ -805,7 +805,7 @@
 		<PickUp QuestName="Roadside Ambush" QuestId="9035" GiverName="Apprentice Ralen" GiverId="15941" X="9188.76" Y="-6712.91" Z="25.997" />
 		<TurnIn QuestName="Malfunction at the West Sanctum" QuestId="9119" TurnInName="Ley-Keeper Velania" TurnInId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
 		<PickUp QuestName="Arcane Instability" QuestId="8486" GiverName="Ley-Keeper Velania" GiverId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 20765)">
+		<If Condition="!HasItem(20765)">
 			<CustomBehavior File="CollectThings" CollectItemId="20765" CollectItemCount="1" HuntingGroundRadius="120" MobId="15968" X="9039.11" Y="-6298.55" Z="22.6258">
 				<Hotspot X="9039.11" Y="-6298.55" Z="22.63" />
 				<Hotspot X="9005.09" Y="-6194.03" Z="23.36" />
@@ -819,7 +819,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8486" MobId="15648" ItemId="20765" NumOfTimes="1" Range="5" CollectionDistance="1000" X="9080.07" Y="-6286.61" Z="25.2798" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20765)">
+		<If Condition="HasItem(20765)">
 			<PickUp QuestName="Incriminating Documents" QuestId="8482" GiverName="Incriminating Documents" GiverId="20765" GiverType="Item" />
 		</If>
 
@@ -830,7 +830,7 @@
 		<TurnIn QuestName="Darnassian Intrusions" QuestId="9352" TurnInName="Ley-Keeper Velania" TurnInId="15401" X="9155.78" Y="-6294.84" Z="21.1295" />
 		<PickUp QuestName="Fish Heads, Fish Heads..." QuestId="8884" GiverName="Hathvelion Sungaze" GiverId="15920" X="9123.11" Y="-5959.77" Z="32.6951" />
 		<Objective QuestName="Fish Heads, Fish Heads..." QuestId="8884" Type="CollectItem" ItemId="21757" CollectCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 21776)">
+		<If Condition="!HasItem(21776)">
 			<CustomBehavior File="CollectThings" CollectItemId="21776" CollectItemCount="1" HuntingGroundRadius="120" MobId="15668" MobId2="15669" MobId3="15670" MobId4="15937" MobId5="15950" X="9091.9263" Y="-5867" Z="0.7363">
 				<Hotspot X="9091.93" Y="-5867" Z="0.74" />
 				<Hotspot X="9180.63" Y="-5863.7" Z="2.86" />
@@ -841,7 +841,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21776)">
+		<If Condition="HasItem(21776)">
 			<PickUp QuestName="Captain Kelisendra's Lost Rutters" QuestId="8887" GiverName="Captain Kelisendra's Lost Rutters" GiverId="21776" GiverType="Item" />
 		</If>
 
@@ -1062,13 +1062,13 @@
 		</If>
 
 		<Objective QuestName="Zul'Marosh" QuestId="8479" Type="CollectItem" ItemId="20760" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23249)">
+		<If Condition="!HasItem(23249)">
 			<CustomBehavior File="CollectThings" CollectItemId="23249" CollectItemCount="1" HuntingGroundRadius="120" MobId="15407" X="8425.4" Y="-7566.3" Z="174.681">
 				<Hotspot X="8425.4" Y="-7566.3" Z="174.68" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23249)">
+		<If Condition="HasItem(23249)">
 			<PickUp QuestName="Amani Invasion" QuestId="9360" GiverName="Amani Invasion Plans" GiverId="23249" GiverType="Item" />
 		</If>
 
@@ -1095,7 +1095,7 @@
 
 		<TurnIn QuestName="The Scorched Grove" QuestId="9258" TurnInName="Larianna Riverwind" TurnInId="15398" X="8414.19" Y="-6165" Z="61.3986" />
 		<PickUp QuestName="A Somber Task" QuestId="8473" GiverName="Larianna Riverwind" GiverId="15398" X="8414.19" Y="-6165" Z="61.3986" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23228)">
+		<If Condition="!HasItem(23228)">
 			<CustomBehavior File="CollectThings" CollectItemId="23228" CollectItemCount="1" HuntingGroundRadius="120" MobId="15409" X="8279.69" Y="-6215.24" Z="54.5363">
 				<Hotspot X="8279.69" Y="-6215.24" Z="54.54" />
 			</CustomBehavior>
@@ -1105,7 +1105,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8473" MobId="15637" ItemId="23228" NumOfTimes="1" Range="5" CollectionDistance="1000" X="8357.44" Y="-6186.64" Z="61.6855" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23228)">
+		<If Condition="HasItem(23228)">
 			<PickUp QuestName="Old Whitebark's Pendant" QuestId="8474" GiverName="Old Whitebark's Pendant" GiverId="23228" GiverType="Item" />
 		</If>
 

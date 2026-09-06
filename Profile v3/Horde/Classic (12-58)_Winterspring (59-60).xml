@@ -123,7 +123,7 @@
 		<TurnIn QuestName="Wild Guardians" QuestId="4741" TurnInName="Trull Failbane" TurnInId="10306" X="5109.6" Y="-355.176" Z="357.205" />
 		<PickUp QuestName="Wild Guardians" QuestId="4721" GiverName="Trull Failbane" GiverId="10306" X="5109.6" Y="-355.176" Z="357.205" />
 		<Objective QuestName="Chillwind Horns" QuestId="4809" Type="CollectItem" ItemId="12444" CollectCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12558)">
+		<If Condition="!HasItem(12558)">
 			<CustomBehavior File="CollectThings" CollectItemId="12558" CollectItemCount="1" HuntingGroundRadius="120" MobId="7452" MobId2="7453" MobId3="7454" X="7632.01" Y="-4829.64" Z="779.258">
 				<Hotspot X="7632.01" Y="-4829.64" Z="779.26" />
 				<Hotspot X="7591.82" Y="-4807.01" Z="736.49" />
@@ -138,7 +138,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="4721" MobId="7454" ItemId="12558" NumOfTimes="1" Range="5" CollectionDistance="1000" X="7632.01" Y="-4829.64" Z="779.258" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12558)">
+		<If Condition="HasItem(12558)">
 			<PickUp QuestName="Guarding Secrets" QuestId="4882" GiverName="Blue-feathered Necklace" GiverId="12558" GiverType="Item" />
 		</If>
 

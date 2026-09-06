@@ -176,7 +176,7 @@
 		<TurnIn QuestName="Zapped Giants" QuestId="7003" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<TurnIn QuestName="Fuel for the Zapping" QuestId="7721" TurnInName="Zorbin Fandazzle" TurnInId="14637" X="-4378.62" Y="2327.33" Z="1.5466" />
 		<Objective QuestName="Improved Quality" QuestId="7734" Type="CollectItem" ItemId="18947" CollectCount="10" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 18972)">
+		<If Condition="!HasItem(18972)">
 			<CustomBehavior File="CollectThings" CollectItemId="18972" CollectItemCount="1" HuntingGroundRadius="120" MobId="5296" MobId2="5297" MobId3="5299" X="-3813.1475" Y="1829.7875" Z="131.6467">
 				<Hotspot X="-3813.15" Y="1829.79" Z="131.65" />
 				<Hotspot X="-3837.71" Y="1784.1" Z="136.64" />
@@ -187,7 +187,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 18972)">
+		<If Condition="HasItem(18972)">
 			<PickUp QuestName="Perfect Yeti Hide" QuestId="7738" GiverName="Perfect Yeti Hide" GiverId="18972" GiverType="Item" />
 		</If>
 

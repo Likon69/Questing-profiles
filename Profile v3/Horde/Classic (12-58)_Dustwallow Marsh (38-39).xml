@@ -348,13 +348,13 @@
 		<PickUp QuestName="The Zeppelin Crash" QuestId="11172" GiverName="Apprentice Morlann" GiverId="23600" X="-4043.43" Y="-3395.4" Z="38.2663" />
 		<Objective QuestName="Deadmire" QuestId="1205" Type="CollectItem" ItemId="5945" CollectCount="1" />
 		<Objective QuestName="The Reagent Thief" QuestId="11173" Type="CollectItem" ItemId="33103" CollectCount="6" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33115)">
+		<If Condition="!HasItem(33115)">
 			<CustomBehavior File="CollectThings" CollectItemId="33115" CollectItemCount="1" HuntingGroundRadius="120" MobId="23881" X="-3663.91" Y="-3453.97" Z="37.2993">
 				<Hotspot X="-3663.91" Y="-3453.97" Z="37.3" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33115)">
+		<If Condition="HasItem(33115)">
 			<PickUp QuestName="Signs of Treachery?" QuestId="11186" GiverName="Sealed Letter" GiverId="33115" GiverType="Item" />
 		</If>
 

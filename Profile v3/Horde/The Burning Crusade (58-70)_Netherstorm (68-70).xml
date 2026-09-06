@@ -1936,17 +1936,17 @@
 		<CustomBehavior File="UseItemOn" QuestId="10184" MobId="20934" ItemId="28455" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2147.8" Y="2271.42" Z="74.353" />
 		<PickUp QuestName="A Fate Worse Than Death" QuestId="10185" GiverName="Custodian Dieworth" GiverId="19488" X="2247.11" Y="2277.43" Z="97.9116" />
 		<PickUp QuestName="The Unending Invasion" QuestId="10343" GiverName="Lieutenant-Sorcerer Morran" GiverId="19489" X="2248.73" Y="2273.1" Z="97.9139" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29234)">
+		<If Condition="!HasItem(29234)">
 			<CustomBehavior File="CollectThings" CollectItemId="29234" CollectItemCount="1" HuntingGroundRadius="120" MobId="19546" X="2162.67" Y="2239.2" Z="74.9615">
 				<Hotspot X="2162.67" Y="2239.2" Z="74.96" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29234)">
+		<If Condition="HasItem(29234)">
 			<PickUp QuestName="Abjurist Belmara" QuestId="10305" GiverName="Belmara's Tome" GiverId="29234" GiverType="Item" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29233)">
+		<If Condition="!HasItem(29233)">
 			<CustomBehavior File="CollectThings" CollectItemId="29233" CollectItemCount="1" HuntingGroundRadius="120" MobId="19543" X="2185.22" Y="2115.88" Z="72.4063">
 				<Hotspot X="2185.22" Y="2115.88" Z="72.41" />
 			</CustomBehavior>
@@ -1956,11 +1956,11 @@
 			<CustomBehavior File="UseItemOn" QuestId="10305" MobId="19547" ItemId="29233" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2239.45" Y="2389.64" Z="112.748" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29233)">
+		<If Condition="HasItem(29233)">
 			<PickUp QuestName="Battle-Mage Dathric" QuestId="10182" GiverName="Dathric's Blade" GiverId="29233" GiverType="Item" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29236)">
+		<If Condition="!HasItem(29236)">
 			<CustomBehavior File="CollectThings" CollectItemId="29236" CollectItemCount="1" HuntingGroundRadius="120" MobId="19545" X="2218.05" Y="2155.52" Z="75.1664">
 				<Hotspot X="2218.05" Y="2155.52" Z="75.17" />
 			</CustomBehavior>
@@ -1970,12 +1970,12 @@
 			<CustomBehavior File="UseItemOn" QuestId="10182" MobId="19549" ItemId="29236" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2228.32" Y="2312.22" Z="89.3019" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29236)">
+		<If Condition="HasItem(29236)">
 			<PickUp QuestName="Cohlien Frostweaver" QuestId="10307" GiverName="Cohlien's Cap" GiverId="29236" GiverType="Item" />
 		</If>
 
 		<Objective QuestName="Indispensable Tools" QuestId="10331" Type="CollectItem" ItemId="29365" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29235)">
+		<If Condition="!HasItem(29235)">
 			<CustomBehavior File="CollectThings" CollectItemId="29235" CollectItemCount="1" HuntingGroundRadius="120" MobId="19544" X="2308.53" Y="2152.49" Z="89.9053">
 				<Hotspot X="2308.53" Y="2152.49" Z="89.91" />
 			</CustomBehavior>
@@ -1985,7 +1985,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="10307" MobId="19550" ItemId="29235" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2202.37" Y="2412.08" Z="109.269" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29235)">
+		<If Condition="HasItem(29235)">
 			<PickUp QuestName="Conjurer Luminrath" QuestId="10306" GiverName="Luminrath's Mantle" GiverId="29235" GiverType="Item" />
 		</If>
 

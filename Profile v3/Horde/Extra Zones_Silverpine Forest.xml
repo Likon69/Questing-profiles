@@ -338,7 +338,7 @@
 		<TurnIn QuestName="Until Death Do Us Part" QuestId="264" TurnInName="Yuriv's Tombstone" TurnInType="Object" TurnInId="24776" X="471.821" Y="1594.13" Z="126.601" />
 		<PickUp QuestName="Rot Hide Ichor" QuestId="443" GiverName="High Executor Hadrec" GiverId="1952" X="522.449" Y="1626.15" Z="104.997" />
 		<Objective QuestName="A Husband's Revenge" QuestId="530" Type="CollectItem" ItemId="3613" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 3317)">
+		<If Condition="!HasItem(3317)">
 			<CustomBehavior File="CollectThings" CollectItemId="3317" CollectItemCount="1" HuntingGroundRadius="120" MobId="1939" MobId2="1940" MobId3="1942" MobId4="1943" MobId5="1944" X="803.9953" Y="697.15" Z="52.828">
 				<Hotspot X="804" Y="697.15" Z="52.83" />
 				<Hotspot X="705.22" Y="667.25" Z="43.53" />
@@ -349,7 +349,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 3317)">
+		<If Condition="HasItem(3317)">
 			<PickUp QuestName="Resting in Pieces" QuestId="460" GiverName="A Talking Head" GiverId="3317" GiverType="Item" />
 		</If>
 

@@ -873,11 +873,11 @@
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3128" KillCount="10" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3129" KillCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3192" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4881)">
+		<If Condition="!HasItem(4881)">
 			<CustomBehavior File="InteractWith" MobId="3239" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-223.825" Y="-5095.61" Z="49.3529" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4881)">
+		<If Condition="HasItem(4881)">
 			<PickUp QuestName="The Admiral's Orders" QuestId="830" GiverName="Aged Envelope" GiverId="4881" GiverType="Item" />
 		</If>
 

@@ -661,7 +661,7 @@
 		<Objective QuestName="Menacing Marshfangs" QuestId="9770" Type="KillMob" MobId="18130" KillCount="10" />
 		<TurnIn QuestName="Searching for Scout Jyoba" QuestId="9771" TurnInName="Scout Jyoba" TurnInId="18035" X="719.491" Y="5415.51" Z="-26.0545" />
 		<PickUp QuestName="Jyoba's Report" QuestId="9772" GiverName="Scout Jyoba" GiverId="18035" X="719.491" Y="5415.51" Z="-26.0545" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 24484)">
+		<If Condition="!HasItem(24484)">
 			<CustomBehavior File="CollectThings" CollectItemId="24484" CollectItemCount="1" HuntingGroundRadius="120" MobId="18124" X="747.413" Y="5330.35" Z="-3.3552">
 				<Hotspot X="747.41" Y="5330.35" Z="-3.36" />
 				<Hotspot X="728.59" Y="5509.84" Z="-1.04" />
@@ -672,13 +672,13 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24484)">
+		<If Condition="HasItem(24484)">
 			<PickUp QuestName="Withered Basidium" QuestId="9828" GiverName="Withered Basidium" GiverId="24484" GiverType="Item" />
 		</If>
 
 		<Objective QuestName="Jyoba's Report" QuestId="9772" Type="CollectItem" ItemId="24373" CollectCount="1" />
 		<Objective QuestName="Natural Enemies" QuestId="9743" Type="CollectItem" ItemId="24291" CollectCount="6" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24330)">
+		<If Condition="HasItem(24330)">
 			<PickUp QuestName="Drain Schematics" QuestId="9731" GiverName="Drain Schematics" GiverId="24330" GiverType="Item" />
 		</If>
 
@@ -708,7 +708,7 @@
 		<Objective QuestName="Angling to Beat the Competition" QuestId="9845" Type="KillMob" MobId="18214" KillCount="10" />
 		<Objective QuestName="Nothin' Says Lovin' Like a Big Stinger" QuestId="9898" Type="CollectItem" ItemId="25448" CollectCount="1" />
 		<Objective QuestName="Spirits of the Feralfen" QuestId="9846" Type="CollectItem" ItemId="24497" CollectCount="10" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 25459)">
+		<If Condition="!HasItem(25459)">
 			<CustomBehavior File="CollectThings" CollectItemId="25459" CollectItemCount="1" HuntingGroundRadius="120" MobId="18285" X="-59.965" Y="7825.6" Z="23.7213">
 				<Hotspot X="-59.97" Y="7825.6" Z="23.72" />
 			</CustomBehavior>
@@ -718,7 +718,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9841" MobId="18133" ItemId="25459" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-444.971" Y="8319.95" Z="15.3407" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 25459)">
+		<If Condition="HasItem(25459)">
 			<PickUp QuestName="The Count of the Marshes" QuestId="9911" GiverName="&quot;Count&quot; Ungula's Mandible" GiverId="25459" GiverType="Item" />
 		</If>
 

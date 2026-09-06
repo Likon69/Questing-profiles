@@ -595,7 +595,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9857" MobId="17130" ItemId="24504" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-1379.51" Y="6271.72" Z="50.393" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24504)">
+		<If Condition="HasItem(24504)">
 			<PickUp QuestName="The Howling Wind" QuestId="9861" GiverName="Howling Wind" GiverId="24504" GiverType="Item" />
 		</If>
 
@@ -628,7 +628,7 @@
 		<Objective QuestName="Talbuk Mastery" QuestId="9858" Type="KillMob" MobId="17131" KillCount="12" />
 		<Objective QuestName="Clefthoof Mastery" QuestId="9850" Type="KillMob" MobId="17132" KillCount="12" />
 		<PickUp QuestName="The Consortium Needs You!" QuestId="9913" GiverName="Consortium Recruiter" GiverId="18335" X="-1239.51" Y="7425.82" Z="23.5818" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24559)">
+		<If Condition="HasItem(24559)">
 			<PickUp QuestName="Murkblood Invaders" QuestId="9871" GiverName="Murkblood Invasion Plans" GiverId="24559" GiverType="Item" />
 		</If>
 

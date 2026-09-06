@@ -85,7 +85,7 @@
 		<PickUp QuestName="Field Duty Papers" QuestId="8732" GiverName="Krug Skullsplit" GiverId="15612" X="-7547.94" Y="718.819" Z="-16.2931" />
 		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
 		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21245)">
+		<If Condition="HasItem(21245)">
 			<PickUp QuestName="Azure Templar" QuestId="8737" GiverName="Tactical Task Briefing I" GiverId="21245" GiverType="Item" />
 		</If>
 
@@ -93,7 +93,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8737" MobId="15211" ItemId="21751" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21751)">
+		<If Condition="HasItem(21751)">
 			<PickUp QuestName="Earthen Templar" QuestId="8536" GiverName="Tactical Task Briefing III" GiverId="21751" GiverType="Item" />
 		</If>
 
@@ -101,15 +101,15 @@
 			<CustomBehavior File="UseItemOn" QuestId="8536" MobId="15307" ItemId="21165" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21165)">
+		<If Condition="HasItem(21165)">
 			<PickUp QuestName="Hive'Zora Scout Report" QuestId="8534" GiverName="Tactical Task Briefing VI" GiverId="21165" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21166)">
+		<If Condition="HasItem(21166)">
 			<PickUp QuestName="Hive'Regal Scout Report" QuestId="8738" GiverName="Tactical Task Briefing VII" GiverId="21166" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20944)">
+		<If Condition="HasItem(20944)">
 			<PickUp QuestName="Twilight Marauders" QuestId="8740" GiverName="Tactical Task Briefing IX" GiverId="20944" GiverType="Item" />
 		</If>
 
@@ -164,7 +164,7 @@
 			<AbandonQuest QuestId="8740" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20945)">
+		<If Condition="HasItem(20945)">
 			<PickUp QuestName="Crimson Templar" QuestId="8537" GiverName="Tactical Task Briefing II" GiverId="20945" GiverType="Item" />
 		</If>
 
@@ -172,7 +172,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8537" MobId="15209" ItemId="20947" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20947)">
+		<If Condition="HasItem(20947)">
 			<PickUp QuestName="Hoary Templar" QuestId="8535" GiverName="Tactical Task Briefing IV" GiverId="20947" GiverType="Item" />
 		</If>
 
@@ -180,7 +180,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8535" MobId="15212" ItemId="20948" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20948)">
+		<If Condition="HasItem(20948)">
 			<PickUp QuestName="The Four Dukes" QuestId="8538" GiverName="Tactical Task Briefing V" GiverId="20948" GiverType="Item" />
 		</If>
 
@@ -188,11 +188,11 @@
 			<CustomBehavior File="UseItemOn" QuestId="8538" MobId="15206" ItemId="21167" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21167)">
+		<If Condition="HasItem(21167)">
 			<PickUp QuestName="Hive'Ashi Scout Report" QuestId="8739" GiverName="Tactical Task Briefing VIII" GiverId="21167" GiverType="Item" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20943)">
+		<If Condition="HasItem(20943)">
 			<PickUp QuestName="Twilight Battle Orders" QuestId="8498" GiverName="Tactical Task Briefing X" GiverId="20943" GiverType="Item" />
 		</If>
 

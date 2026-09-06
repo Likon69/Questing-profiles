@@ -324,7 +324,7 @@
 		<TurnIn QuestName="Alliance Relations" QuestId="1431" TurnInName="Keldran" TurnInId="5640" X="1781.55" Y="-3997.07" Z="53.3907" />
 		<PickUp QuestName="Alliance Relations" QuestId="1432" GiverName="Keldran" GiverId="5640" X="1781.55" Y="-3997.07" Z="53.3907" />
 		<PickUp QuestName="Destroy the Legion" QuestId="9534" GiverName="Valusha" GiverId="17355" X="2351.69" Y="-2523.1" Z="104.845" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16305)">
+		<If Condition="!HasItem(16305)">
 			<CustomBehavior File="CollectThings" CollectItemId="16305" CollectItemCount="1" HuntingGroundRadius="120" MobId="12676" X="1979.8" Y="-2624.07" Z="92.8362">
 				<Hotspot X="1979.8" Y="-2624.07" Z="92.84" />
 			</CustomBehavior>
@@ -334,11 +334,11 @@
 			<CustomBehavior File="UseItemOn" QuestId="9534" MobId="11697" ItemId="16305" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1784.69" Y="-3181.21" Z="91.61" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16305)">
+		<If Condition="HasItem(16305)">
 			<PickUp QuestName="Sharptalon's Claw" QuestId="2" GiverName="Sharptalon's Claw" GiverId="16305" GiverType="Item" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23797)">
+		<If Condition="!HasItem(23797)">
 			<CustomBehavior File="CollectThings" CollectItemId="23797" CollectItemCount="1" HuntingGroundRadius="120" MobId="6073" MobId2="6115" MobId3="11697" X="1784.69" Y="-3181.21" Z="91.61">
 				<Hotspot X="1784.69" Y="-3181.21" Z="91.61" />
 				<Hotspot X="1853.34" Y="-3169.58" Z="94.57" />
@@ -349,7 +349,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23797)">
+		<If Condition="HasItem(23797)">
 			<PickUp QuestName="Diabolical Plans" QuestId="9535" GiverName="Diabolical Plans" GiverId="23797" GiverType="Item" />
 		</If>
 
@@ -418,7 +418,7 @@
 		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
 		<Objective QuestName="The Burning of Spirits" QuestId="1435" Type="CollectItem" ItemId="6435" CollectCount="15" />
 		<Objective QuestName="Sceptre of Light" QuestId="5741" Type="CollectItem" ItemId="15750" CollectCount="1" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6766)">
+		<If Condition="HasItem(6766)">
 			<PickUp QuestName="The Corrupter" QuestId="1480" GiverName="Flayed Demon Skin (old2)" GiverId="6766" GiverType="Item" />
 		</If>
 

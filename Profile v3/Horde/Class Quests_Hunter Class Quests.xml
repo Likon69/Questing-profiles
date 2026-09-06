@@ -206,10 +206,10 @@
 			<PickUp QuestName="The Green Drake" QuestId="8232" GiverName="Ogtinc" GiverId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
 			<Objective QuestName="The Green Drake" QuestId="8232" Type="CollectItem" ItemId="20019" CollectCount="1" />
 			<TurnIn QuestName="The Green Drake" QuestId="8232" TurnInName="Ogtinc" TurnInId="8405" X="3900.59" Y="-5427.08" Z="154.49" />
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 18703)">
+			<If Condition="!HasItem(18703)">
 				<CustomBehavior File="InteractWith" MobId="179703" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="756.897" Y="-1180.7" Z="-118.596" />
 			</If>
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 18703)">
+			<If Condition="HasItem(18703)">
 				<PickUp QuestName="The Ancient Leaf" QuestId="7632" GiverName="Ancient Petrified Leaf" GiverId="18703" GiverType="Item" />
 			</If>
 			<TurnIn QuestName="The Ancient Leaf" QuestId="7632" TurnInName="Vartrus the Ancient" TurnInId="14524" />

@@ -210,13 +210,13 @@
 		</If>
 
 		<Objective QuestName="A Date with Dorgok" QuestId="10795" Type="KillMob" MobId="20753" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31363)">
+		<If Condition="!HasItem(31363)">
 			<CustomBehavior File="CollectThings" CollectItemId="31363" CollectItemCount="1" HuntingGroundRadius="120" MobId="20753" X="3538.87" Y="5854.35" Z="25.9781">
 				<Hotspot X="3538.87" Y="5854.35" Z="25.98" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31363)">
+		<If Condition="HasItem(31363)">
 			<PickUp QuestName="Favor of the Gronn" QuestId="10797" GiverId="31363" GiverName="Gorgrom's Favor" GiverType="Item" />
 		</If>
 
@@ -267,13 +267,13 @@
 			<AbandonQuest QuestId="10806" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="!HasItem(31384)">
 			<CustomBehavior File="CollectThings" CollectItemId="31384" CollectItemCount="1" HuntingGroundRadius="120" MobId="21300" X="3113.37" Y="5087.61" Z="267.159">
 				<Hotspot X="3113.37" Y="5087.61" Z="267.16" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="HasItem(31384)">
 			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
 		</If>
 

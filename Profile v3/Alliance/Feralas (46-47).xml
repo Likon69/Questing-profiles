@@ -229,7 +229,7 @@
 		<TurnIn QuestName="Against the Hatecrest" QuestId="2869" TurnInName="Latronicus Moonspear" TurnInId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
 		<PickUp QuestName="Against Lord Shalzaru" QuestId="2870" GiverName="Latronicus Moonspear" GiverId="7877" X="-4505.91" Y="3330.33" Z="14.1252" />
 		<Objective QuestName="Against Lord Shalzaru" QuestId="2870" Type="CollectItem" ItemId="9248" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 8705)">
+		<If Condition="!HasItem(8705)">
 			<CustomBehavior File="CollectThings" CollectItemId="8705" CollectItemCount="1" HuntingGroundRadius="120" MobId="5229" MobId2="5232" MobId3="5234" MobId4="5236" MobId5="5237" MobId6="5238" X="-5025.715" Y="1305.03" Z="90.9341">
 				<Hotspot X="-5025.72" Y="1305.03" Z="90.93" />
 				<Hotspot X="-4988.33" Y="1295.74" Z="94.85" />
@@ -240,7 +240,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 8705)">
+		<If Condition="HasItem(8705)">
 			<PickUp QuestName="Find OOX-22/FE!" QuestId="2766" GiverName="OOX-22/FE Distress Beacon" GiverId="8705" GiverType="Item" />
 		</If>
 
@@ -277,7 +277,7 @@
 		<PickUp QuestName="Doling Justice" QuestId="2972" GiverName="Jer'kai Moonweaver" GiverId="7957" X="-4479.81" Y="858.481" Z="74.6105" />
 		<!-- Quest 4131 (The Woodpaw Gnolls) — TurnIn Object not in 3.3.5a -->
 		<PickUp QuestName="The Writhing Deep" QuestId="4135" GiverName="Large Leather Backpacks" GiverId="164953" GiverType="Object" X="-4975.6" Y="346.066" Z="23.0333" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11463)">
+		<If Condition="HasItem(11463)">
 			<PickUp QuestName="Thalanaar Delivery" QuestId="4281" GiverName="Undelivered Parcel" GiverId="11463" GiverType="Item" />
 		</If>
 

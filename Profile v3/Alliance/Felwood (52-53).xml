@@ -306,13 +306,13 @@
 		<Objective QuestName="Verifying the Corruption" QuestId="5156" Type="KillMob" MobId="9878" KillCount="2" />
 		<Objective QuestName="Verifying the Corruption" QuestId="5156" Type="KillMob" MobId="9879" KillCount="2" />
 		<Objective QuestName="Further Corruption" QuestId="4906" Type="KillMob" MobId="10648" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 11668)">
+		<If Condition="!HasItem(11668)">
 			<CustomBehavior File="CollectThings" CollectItemId="11668" CollectItemCount="1" HuntingGroundRadius="120" MobId="10648" X="6279.09" Y="-603.692" Z="467.84">
 				<Hotspot X="6279.09" Y="-603.69" Z="467.84" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11668)">
+		<If Condition="HasItem(11668)">
 			<PickUp QuestName="Flute of Xavaric" QuestId="939" GiverName="Flute of Xavaric" GiverId="11668" GiverType="Item" />
 		</If>
 

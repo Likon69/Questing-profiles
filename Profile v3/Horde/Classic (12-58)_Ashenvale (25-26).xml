@@ -177,24 +177,24 @@
 		<PickUp QuestName="Ashenvale Outrunners" QuestId="6503" GiverName="Kuray'bin" GiverId="12867" X="2054.63" Y="-2400.39" Z="87.825" />
 		<Objective QuestName="Ashenvale Outrunners" QuestId="6503" Type="KillMob" MobId="12856" KillCount="9" />
 		<PickUp QuestName="Torek's Assault" QuestId="6544" GiverName="Torek" GiverId="12858" X="1778.68" Y="-2241.09" Z="107.942" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16408)">
+		<If Condition="!HasItem(16408)">
 			<CustomBehavior File="CollectThings" CollectItemId="16408" CollectItemCount="1" HuntingGroundRadius="120" MobId="12759" X="1958.41" Y="-945.92" Z="70.11">
 				<Hotspot X="1958.41" Y="-945.92" Z="70.11" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16408)">
+		<If Condition="HasItem(16408)">
 			<PickUp QuestName="The Befouled Element" QuestId="1918" GiverName="Befouled Water Globe" GiverId="16408" GiverType="Item" />
 		</If>
 
 		<Objective QuestName="Stonetalon Standstill" QuestId="25" Type="KillMob" MobId="3917" KillCount="12" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16303)">
+		<If Condition="!HasItem(16303)">
 			<CustomBehavior File="CollectThings" CollectItemId="16303" CollectItemCount="1" HuntingGroundRadius="120" MobId="12678" X="2030.69" Y="-726.054" Z="102.369">
 				<Hotspot X="2030.69" Y="-726.05" Z="102.37" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16303)">
+		<If Condition="HasItem(16303)">
 			<PickUp QuestName="Ursangous's Paw" QuestId="23" GiverName="Ursangous's Paw" GiverId="16303" GiverType="Item" />
 		</If>
 
@@ -222,13 +222,13 @@
 		</If>
 
 		<Objective QuestName="The Sacred Flame" QuestId="1195" Type="CollectItem" ItemId="5868" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 16304)">
+		<If Condition="!HasItem(16304)">
 			<CustomBehavior File="CollectThings" CollectItemId="16304" CollectItemCount="1" HuntingGroundRadius="120" MobId="12677" X="2518.44" Y="-1615.66" Z="144.605">
 				<Hotspot X="2518.44" Y="-1615.66" Z="144.6" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 16304)">
+		<If Condition="HasItem(16304)">
 			<PickUp QuestName="Shadumbra's Head" QuestId="24" GiverName="Shadumbra's Head" GiverId="16304" GiverType="Item" />
 		</If>
 

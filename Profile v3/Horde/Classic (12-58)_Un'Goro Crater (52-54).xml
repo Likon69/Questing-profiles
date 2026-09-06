@@ -466,7 +466,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="974" MobId="10541" ItemId="11116" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-7092.4" Y="-1305.86" Z="-186.075" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 11116)">
+		<If Condition="HasItem(11116)">
 			<PickUp QuestName="Williden's Journal" QuestId="3884" GiverName="A Mangled Journal" GiverId="11116" GiverType="Item" />
 		</If>
 

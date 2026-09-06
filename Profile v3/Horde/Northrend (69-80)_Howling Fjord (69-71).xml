@@ -1170,7 +1170,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11259" MobId="24087" ItemId="33344" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1910.92" Y="-4038.31" Z="271.226" />
 		</While>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33345)">
+		<If Condition="!HasItem(33345)">
 			<CustomBehavior File="CollectThings" CollectItemId="33345" CollectItemCount="1" HuntingGroundRadius="120" MobId="23661" MobId2="23662" MobId3="23663" MobId4="23664" MobId5="23665" MobId6="23666" X="1928.345" Y="-4039.94" Z="215.7715">
 				<Hotspot X="1928.34" Y="-4039.94" Z="215.77" />
 				<Hotspot X="1889.88" Y="-4073.83" Z="213.13" />
@@ -1185,7 +1185,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11259" MobId="24087" ItemId="33345" NumOfTimes="1" Range="5" CollectionDistance="1000" X="1910.92" Y="-4038.31" Z="271.226" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33345)">
+		<If Condition="HasItem(33345)">
 			<PickUp QuestName="Stop the Ascension!" QuestId="11260" GiverName="Vrykul Scroll of Ascension" GiverId="33345" GiverType="Item" />
 		</If>
 
@@ -1291,7 +1291,7 @@
 		<Objective QuestName="Dealing With Gjalerbron" QuestId="11263" Type="KillMob" MobId="23991" KillCount="15" />
 		<Objective QuestName="Dealing With Gjalerbron" QuestId="11263" Type="KillMob" MobId="23990" KillCount="8" />
 		<Objective QuestName="Dealing With Gjalerbron" QuestId="11263" Type="KillMob" MobId="23989" KillCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33347)">
+		<If Condition="!HasItem(33347)">
 			<CustomBehavior File="CollectThings" CollectItemId="33347" CollectItemCount="1" HuntingGroundRadius="120" MobId="23989" MobId2="23990" MobId3="23991" X="2589.63" Y="-3294.62" Z="160.321">
 				<Hotspot X="2589.63" Y="-3294.62" Z="160.32" />
 				<Hotspot X="2490.73" Y="-3397.37" Z="159.25" />
@@ -1306,7 +1306,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11415" MobId="24516" ItemId="33347" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2245.9" Y="-3021.81" Z="135.131" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33347)">
+		<If Condition="HasItem(33347)">
 			<PickUp QuestName="Gjalerbron Attack Plans" QuestId="11266" GiverName="Gjalerbron Attack Plans" GiverId="33347" GiverType="Item" />
 		</If>
 
@@ -1320,7 +1320,7 @@
 		<Objective QuestName="Eyes of the Eagle" QuestId="11417" Type="CollectItem" ItemId="34027" CollectCount="1" />
 		<Objective QuestName="What's in That Brew?" QuestId="11298" Type="CollectItem" ItemId="33541" CollectCount="5" />
 		<Objective QuestName="Brains! Brains! Brains!" QuestId="11301" Type="CollectItem" ItemId="33558" CollectCount="12" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 33962)">
+		<If Condition="!HasItem(33962)">
 			<CustomBehavior File="CollectThings" CollectItemId="33962" CollectItemCount="1" HuntingGroundRadius="120" MobId="23643" MobId2="23644" MobId3="23645" MobId4="24485" MobId5="24540" X="2443.95" Y="-2762.9233" Z="7.2459">
 				<Hotspot X="2443.95" Y="-2762.92" Z="7.25" />
 				<Hotspot X="2406.61" Y="-2766.95" Z="4.73" />
@@ -1331,7 +1331,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 33962)">
+		<If Condition="HasItem(33962)">
 			<PickUp QuestName="It's a Scourge Device" QuestId="11398" GiverName="Scourge Device" GiverId="33962" GiverType="Item" />
 		</If>
 
@@ -1369,7 +1369,7 @@
 		<PickUp QuestName="Alpha Worg" QuestId="11324" GiverName="Ulfang" GiverId="24261" X="2888.16" Y="-3192.99" Z="122.953" />
 		<Objective QuestName="Alpha Worg" QuestId="11324" Type="KillMob" MobId="24277" KillCount="1" />
 		<Objective QuestName="Necro Overlord Mezhen" QuestId="11264" Type="KillMob" MobId="24018" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 34091)">
+		<If Condition="!HasItem(34091)">
 			<CustomBehavior File="CollectThings" CollectItemId="34091" CollectItemCount="1" HuntingGroundRadius="120" MobId="24018" MobId2="25363" MobId3="25367" MobId4="25368" MobId5="25369" MobId6="25370" X="2589.42" Y="-3742.93" Z="247.053">
 				<Hotspot X="2589.42" Y="-3742.93" Z="247.05" />
 			</CustomBehavior>
@@ -1379,7 +1379,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11324" MobId="24277" ItemId="34091" NumOfTimes="1" Range="5" CollectionDistance="1000" X="2578.05" Y="-3028.56" Z="115.341" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 34091)">
+		<If Condition="HasItem(34091)">
 			<PickUp QuestName="The Slumbering King" QuestId="11453" GiverName="Mezhen's Writings" GiverId="34091" GiverType="Item" />
 		</If>
 

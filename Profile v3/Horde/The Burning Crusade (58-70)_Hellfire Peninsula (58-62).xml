@@ -794,13 +794,13 @@
 			<CustomBehavior File="UseItemOn" QuestId="10864" MobId="16867" ItemId="29590" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-212.662" Y="2889.64" Z="-48.2852" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29590)">
+		<If Condition="HasItem(29590)">
 			<PickUp QuestName="Vile Plans" QuestId="10393" GiverName="Burning Legion Missive" GiverId="29590" GiverType="Item" />
 		</If>
 
 		<!-- Q10393 Vile Plans: objective nodes transplanted from HonorBuddy C-Cava reference Scripts\[N-Quest](60-62)HellfirePeninsula[Cava].xml. Turn-in stays guarded and the quest is abandoned if still incomplete, so the profile continues. -->
 		<If Condition="Me.IsHorde">
-			<If Condition="!HasQuest(10393) &amp;&amp; !IsQuestCompleted(10390) &amp;&amp; !Me.CarriedItems.Any(i =&gt; i.Entry == 29590)">
+			<If Condition="!HasQuest(10393) &amp;&amp; !IsQuestCompleted(10390) &amp;&amp; !HasItem(29590)">
 				<CustomBehavior File="CollectThings" MobState="Alive" MobId="20798" CollectItemCount="1" CollectItemId="29590" HuntingGroundRadius="55">
 					<Hotspot X="365.064" Y="2224.538" Z="118.9637" />
 					<Hotspot X="375.504" Y="2185.645" Z="118.724" />
@@ -831,7 +831,7 @@
 		<Objective QuestName="Doorway to the Abyss" QuestId="10392" Type="UseObject" ObjectId="182935" UseCount="1" />
 		<TurnIn QuestName="Doorway to the Abyss" QuestId="10392" TurnInName="Nazgrel" TurnInId="3230" X="242.997" Y="2698.2" Z="89.8427" />
 		<PickUp QuestName="Outland Sucks!" QuestId="10236" GiverName="Foreman Razelcraz" GiverId="16915" X="430.101" Y="2886.58" Z="52.3558" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23338)">
+		<If Condition="!HasItem(23338)">
 			<CustomBehavior File="CollectThings" CollectItemId="23338" CollectItemCount="1" HuntingGroundRadius="120" MobId="16857" MobId2="16968" X="200.578" Y="3032.255" Z="-1.0795">
 				<Hotspot X="200.58" Y="3032.26" Z="-1.08" />
 				<Hotspot X="167.5" Y="3001.86" Z="-1.1" />
@@ -842,7 +842,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23338)">
+		<If Condition="HasItem(23338)">
 			<PickUp QuestName="Missing Missive" QuestId="9373" GiverName="Eroded Leather Case" GiverId="23338" GiverType="Item" />
 		</If>
 
@@ -883,7 +883,7 @@
 
 		<PickUp QuestName="The Agony and the Darkness" QuestId="10389" GiverName="Magister Bloodhawk" GiverId="21175" X="240.444" Y="2692.6" Z="89.8273" />
 		<PickUp QuestName="The Assassin" QuestId="9400" GiverName="Nazgrel" GiverId="3230" X="242.997" Y="2698.2" Z="89.8427" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 28552)">
+		<If Condition="!HasItem(28552)">
 			<CustomBehavior File="CollectThings" CollectItemId="28552" CollectItemCount="1" HuntingGroundRadius="120" MobId="16906" X="-1078.71" Y="2658.08" Z="9.1771">
 				<Hotspot X="-1078.71" Y="2658.08" Z="9.18" />
 				<Hotspot X="-1135.11" Y="2786.33" Z="-29.13" />
@@ -894,7 +894,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 28552)">
+		<If Condition="HasItem(28552)">
 			<PickUp QuestName="Decipher the Tome" QuestId="10229" GiverName="A Mysterious Tome" GiverId="28552" GiverType="Item" />
 		</If>
 
@@ -992,7 +992,7 @@
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
 			<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-				<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31347)">
+				<If Condition="HasItem(31347)">
 					<CustomBehavior File="Misc\RunLua" Lua="UseItemByName(31347)" WaitTime="1000" />
 				</If>
 			</If>
@@ -1000,56 +1000,56 @@
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
 			<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-				<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31347)">
+				<If Condition="HasItem(31347)">
 					<CustomBehavior File="WaitTimer" WaitTime="2000" />
 				</If>
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(2, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(2, 10792) &amp;&amp; HasItem(31346)">
 				<UseItem QuestId="10792" ItemId="31346" X="-951.2886" Y="1948.964" Z="67.21449" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(2, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(2, 10792) &amp;&amp; HasItem(31346)">
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(4, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(4, 10792) &amp;&amp; HasItem(31346)">
 				<UseItem QuestId="10792" ItemId="31346" X="-1067.911" Y="2011.35" Z="67.4959" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(4, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(4, 10792) &amp;&amp; HasItem(31346)">
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(3, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(3, 10792) &amp;&amp; HasItem(31346)">
 				<UseItem QuestId="10792" ItemId="31346" X="-1152.374" Y="2034.378" Z="67.42765" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(3, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(3, 10792) &amp;&amp; HasItem(31346)">
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(1, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(1, 10792) &amp;&amp; HasItem(31346)">
 				<UseItem QuestId="10792" ItemId="31346" X="-1147.868" Y="1978.471" Z="73.59405" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10792) &amp;&amp; !IsQuestCompleted(10792)">
-			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(1, 10792) &amp;&amp; Me.CarriedItems.Any(i =&gt; i.Entry == 31346)">
+			<If Condition="HasQuest(10792) &amp;&amp; !IsObjectiveComplete(1, 10792) &amp;&amp; HasItem(31346)">
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 		</If>
@@ -1145,13 +1145,13 @@
 		<TurnIn QuestName="Envoy to the Mag'har" QuestId="9441" TurnInName="Gorkan Bloodfist" TurnInId="16845" X="524.269" Y="3887.2" Z="189.957" />
 		<PickUp QuestName="A Debilitating Sickness" QuestId="9442" GiverName="Earthcaller Ryga" GiverId="17123" X="504.592" Y="3882.13" Z="192.156" />
 		<Objective QuestName="A Debilitating Sickness" QuestId="9442" Type="CollectItem" ItemId="23753" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23580)">
+		<If Condition="!HasItem(23580)">
 			<CustomBehavior File="CollectThings" CollectItemId="23580" CollectItemCount="1" HuntingGroundRadius="120" MobId="17084" X="-1144.66" Y="4221.21" Z="53.5334">
 				<Hotspot X="-1144.66" Y="4221.21" Z="53.53" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23580)">
+		<If Condition="HasItem(23580)">
 			<PickUp QuestName="Avruu's Orb" QuestId="9418" GiverName="Avruu's Orb" GiverId="23580" GiverType="Item" />
 		</If>
 

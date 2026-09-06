@@ -1534,7 +1534,7 @@
 		</While>
 
 		<Objective QuestName="Words of Power" QuestId="11640" Type="CollectItem" ItemId="35354" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 34815)">
+		<If Condition="!HasItem(34815)">
 			<CustomBehavior File="CollectThings" CollectItemId="34815" CollectItemCount="1" HuntingGroundRadius="120" MobId="26115" X="3928.11" Y="3577.56" Z="70.7685">
 				<Hotspot X="3928.11" Y="3577.56" Z="70.77" />
 			</CustomBehavior>
@@ -1544,7 +1544,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="11647" MobId="25490" ItemId="34815" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3747.49" Y="3516.68" Z="69.5826" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 34815)">
+		<If Condition="HasItem(34815)">
 			<PickUp QuestName="The Spire of Blood" QuestId="11654" GiverName="Vial of Fresh Blood" GiverId="34815" GiverType="Item" />
 		</If>
 
@@ -1943,7 +1943,7 @@
 		<PickUp QuestName="Secrets of the Ancients" QuestId="11910" GiverName="Archmage Berinand" GiverId="25314" X="3575.61" Y="6671.72" Z="195.267" />
 		<PickUp QuestName="Basic Training" QuestId="11918" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<PickUp QuestName="Nuts for Berries" QuestId="11912" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 35648)">
+		<If Condition="!HasItem(35648)">
 			<CustomBehavior File="CollectThings" CollectItemId="35648" CollectItemCount="1" HuntingGroundRadius="120" MobId="25719" X="3768.155" Y="6520.25" Z="178.9285">
 				<Hotspot X="3768.15" Y="6520.25" Z="178.93" />
 				<Hotspot X="3782.34" Y="6661.58" Z="151.57" />
@@ -1954,7 +1954,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 35648)">
+		<If Condition="HasItem(35648)">
 			<PickUp QuestName="Puzzling..." QuestId="11941" GiverName="Scintillating Fragment" GiverId="35648" GiverType="Item" />
 		</If>
 

@@ -219,13 +219,13 @@
 			<AbandonQuest QuestId="10742" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="!HasItem(31384)">
 			<CustomBehavior File="CollectThings" CollectItemId="31384" CollectItemCount="1" HuntingGroundRadius="120" MobId="21300" X="3113.37" Y="5087.61" Z="267.159">
 				<Hotspot X="3113.37" Y="5087.61" Z="267.16" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="HasItem(31384)">
 			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
 		</If>
 

@@ -195,7 +195,7 @@
 		<PickUp QuestName="Field Duty Papers" QuestId="8732" GiverName="Krug Skullsplit" GiverId="15612" X="-7547.94" Y="718.819" Z="-16.2931" />
 		<Objective QuestName="Field Duty" QuestId="8507" Type="CollectItem" ItemId="20810" CollectCount="1" />
 		<TurnIn QuestName="Field Duty" QuestId="8507" TurnInName="Windcaller Kaldon" TurnInId="15540" X="-6802.81" Y="796.45" Z="51.3594" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21749)">
+		<If Condition="HasItem(21749)">
 			<PickUp QuestName="Target: Hive'Ashi Defenders" QuestId="8770" GiverName="Combat Task Briefing I" GiverId="21749" GiverType="Item" />
 		</If>
 
@@ -203,7 +203,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8770" MobId="11722" ItemId="21750" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-6580.25" Y="794.558" Z="4.6454" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21750)">
+		<If Condition="HasItem(21750)">
 			<PickUp QuestName="Target: Hive'Ashi Sandstalkers" QuestId="8771" GiverName="Combat Task Briefing II" GiverId="21750" GiverType="Item" />
 		</If>
 
@@ -211,7 +211,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8771" MobId="11723" ItemId="20942" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-6476.06" Y="1085.83" Z="-2.5638" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20942)">
+		<If Condition="HasItem(20942)">
 			<PickUp QuestName="Target: Hive'Ashi Workers" QuestId="8502" GiverName="Combat Task Briefing III" GiverId="20942" GiverType="Item" />
 		</If>
 
@@ -219,7 +219,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8502" MobId="11721" ItemId="21248" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-6310.92" Y="1130.01" Z="-20.5836" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21248)">
+		<If Condition="HasItem(21248)">
 			<PickUp QuestName="Target: Hive'Zora Reavers" QuestId="8773" GiverName="Combat Task Briefing IV" GiverId="21248" GiverType="Item" />
 		</If>
 
@@ -227,7 +227,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8773" MobId="11728" ItemId="21249" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-7402.15" Y="1309.72" Z="-86.9086" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21249)">
+		<If Condition="HasItem(21249)">
 			<PickUp QuestName="Target: Hive'Zora Hive Sisters" QuestId="8539" GiverName="Combat Task Briefing V" GiverId="21249" GiverType="Item" />
 		</If>
 
@@ -235,7 +235,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8539" MobId="11729" ItemId="21250" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-7157.14" Y="1693.8" Z="-7.3739" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21250)">
+		<If Condition="HasItem(21250)">
 			<PickUp QuestName="Target: Hive'Zora Waywatchers" QuestId="8772" GiverName="Combat Task Briefing VI" GiverId="21250" GiverType="Item" />
 		</If>
 
@@ -243,7 +243,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8772" MobId="11725" ItemId="21251" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-7087.77" Y="1764.94" Z="-4.6182" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21251)">
+		<If Condition="HasItem(21251)">
 			<PickUp QuestName="Target: Hive'Zora Tunnelers" QuestId="8687" GiverName="Combat Task Briefing VII" GiverId="21251" GiverType="Item" />
 		</If>
 
@@ -251,7 +251,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8687" MobId="11726" ItemId="21252" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-7448.43" Y="1404.37" Z="-90.2715" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21252)">
+		<If Condition="HasItem(21252)">
 			<PickUp QuestName="Target: Hive'Regal Ambushers" QuestId="8774" GiverName="Combat Task Briefing VIII" GiverId="21252" GiverType="Item" />
 		</If>
 
@@ -259,7 +259,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8774" MobId="11730" ItemId="21253" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-8120.49" Y="386.97" Z="-68.6953" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21253)">
+		<If Condition="HasItem(21253)">
 			<PickUp QuestName="Target: Hive'Regal Spitfires" QuestId="8775" GiverName="Combat Task Briefing IX" GiverId="21253" GiverType="Item" />
 		</If>
 
@@ -267,7 +267,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8775" MobId="11732" ItemId="21255" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-8269.72" Y="484.756" Z="-76.3614" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21255)">
+		<If Condition="HasItem(21255)">
 			<PickUp QuestName="Target: Hive'Regal Slavemakers" QuestId="8776" GiverName="Combat Task Briefing X" GiverId="21255" GiverType="Item" />
 		</If>
 
@@ -275,7 +275,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8776" MobId="11733" ItemId="21256" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-8273.11" Y="541.472" Z="-84.9831" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 21256)">
+		<If Condition="HasItem(21256)">
 			<PickUp QuestName="Target: Hive'Regal Burrowers" QuestId="8777" GiverName="Combat Task Briefing XI" GiverId="21256" GiverType="Item" />
 		</If>
 
@@ -283,7 +283,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="8777" MobId="11731" ItemId="20941" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-8296.38" Y="480.803" Z="-74.695" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20941)">
+		<If Condition="HasItem(20941)">
 			<PickUp QuestName="Target: Hive'Ashi Stingers" QuestId="8501" GiverName="Combat Task Briefing XII" GiverId="20941" GiverType="Item" />
 		</If>
 

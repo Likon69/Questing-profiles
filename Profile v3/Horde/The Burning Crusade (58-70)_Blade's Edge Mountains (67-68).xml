@@ -487,7 +487,7 @@
 		<Objective QuestName="The Encroaching Wilderness" QuestId="10486" Type="KillMob" MobId="21033" KillCount="12" />
 		<TurnIn QuestName="The Encroaching Wilderness" QuestId="10486" TurnInName="Gor'drek" TurnInId="21117" X="2313.01" Y="6004.88" Z="142.826" />
 		<PickUp QuestName="Dust from the Drakes" QuestId="10487" GiverName="Gor'drek" GiverId="21117" X="2313.01" Y="6004.88" Z="142.826" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30431)">
+		<If Condition="!HasItem(30431)">
 			<CustomBehavior File="CollectThings" CollectItemId="30431" CollectItemCount="1" HuntingGroundRadius="120" MobId="19995" MobId2="19998" MobId3="20334" MobId4="20728" MobId5="21296" X="2580.565" Y="6171.085" Z="17.2983">
 				<Hotspot X="2580.56" Y="6171.09" Z="17.3" />
 				<Hotspot X="2558.35" Y="6225.34" Z="13.15" />
@@ -498,7 +498,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 30431)">
+		<If Condition="HasItem(30431)">
 			<PickUp QuestName="Thunderlord Clan Artifacts" QuestId="10524" GiverName="Thunderlord Clan Artifact" GiverId="30431" GiverType="Item" />
 		</If>
 
@@ -586,7 +586,7 @@
 		<PickUp QuestName="From the Ashes" QuestId="10771" GiverName="Mosswood the Ancient" GiverId="22053" X="3017.66" Y="5523.29" Z="148.27" />
 		<PickUp QuestName="Creating the Pendant" QuestId="10567" GiverName="Timeon" GiverId="21782" X="2993.94" Y="5473.5" Z="145.197" />
 		<PickUp QuestName="Culling the Wild" QuestId="10753" GiverName="Faradrella" GiverId="22133" X="3024.71" Y="5452.03" Z="147.35" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="!HasItem(31384)">
 			<CustomBehavior File="CollectThings" CollectItemId="31384" CollectItemCount="1" HuntingGroundRadius="120" MobId="21300" X="3113.37" Y="5087.61" Z="267.159">
 				<Hotspot X="3113.37" Y="5087.61" Z="267.16" />
 			</CustomBehavior>
@@ -596,7 +596,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="10753" MobId="21123" ItemId="31384" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3014.69" Y="5098.9" Z="262.165" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31384)">
+		<If Condition="HasItem(31384)">
 			<PickUp QuestName="Damaged Mask" QuestId="10810" GiverName="Damaged Mask" GiverId="31384" GiverType="Item" />
 		</If>
 
@@ -620,7 +620,7 @@
 		<TurnIn QuestName="A Time for Negotiation..." QuestId="10682" TurnInName="Tree Warden Chawn" TurnInId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		<PickUp QuestName="...and a Time for Action" QuestId="10713" GiverName="Tree Warden Chawn" GiverId="22007" X="2980.58" Y="5483.43" Z="143.841" />
 		<PickUp QuestName="Poaching from Poachers" QuestId="10717" GiverName="Samia Inkling" GiverId="21983" X="2981.4" Y="5485.77" Z="143.858" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31120)">
+		<If Condition="!HasItem(31120)">
 			<CustomBehavior File="CollectThings" CollectItemId="31120" CollectItemCount="1" HuntingGroundRadius="120" MobId="21809" MobId2="21810" X="2888.595" Y="5470.6925" Z="149.2308">
 				<Hotspot X="2888.6" Y="5470.69" Z="149.23" />
 				<Hotspot X="2867.6" Y="5410.1" Z="147.65" />
@@ -631,7 +631,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31120)">
+		<If Condition="HasItem(31120)">
 			<PickUp QuestName="Did You Get The Note?" QuestId="10719" GiverName="Meeting Note" GiverId="31120" GiverType="Item" />
 		</If>
 
@@ -705,7 +705,7 @@
 		<Objective QuestName="Longtail is the Lynchpin" QuestId="10893" Type="KillMob" MobId="22396" KillCount="1" />
 		<TurnIn QuestName="Longtail is the Lynchpin" QuestId="10893" TurnInName="Watcher Moonshade" TurnInId="22386" X="3108.07" Y="6131.54" Z="136.358" />
 		<PickUp QuestName="Meeting at the Blackwing Coven" QuestId="10722" GiverName="Watcher Moonshade" GiverId="22386" X="3108.07" Y="6131.54" Z="136.358" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 31489)">
+		<If Condition="!HasItem(31489)">
 			<CustomBehavior File="CollectThings" CollectItemId="31489" CollectItemCount="1" HuntingGroundRadius="120" MobId="19988" MobId2="19989" MobId3="19990" MobId4="20329" X="3510.97" Y="6552.26" Z="131.945">
 				<Hotspot X="3510.97" Y="6552.26" Z="131.94" />
 				<Hotspot X="3542.88" Y="6576.96" Z="133.04" />
@@ -716,7 +716,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31489)">
+		<If Condition="HasItem(31489)">
 			<PickUp QuestName="The Truth Unorbed" QuestId="10825" GiverName="Orb of the Grishna" GiverId="31489" GiverType="Item" />
 		</If>
 

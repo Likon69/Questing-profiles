@@ -821,7 +821,7 @@
 		</If>
 
 		<TurnIn QuestName="Light Won't Grant Me Vengeance" QuestId="12904" TurnInName="Gerk" TurnInId="29455" X="5753.12" Y="-1481.07" Z="236.346" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 38673)">
+		<If Condition="!HasItem(38673)">
 			<CustomBehavior File="CollectThings" CollectItemId="38673" CollectItemCount="1" HuntingGroundRadius="120" MobId="28519" X="5361.16" Y="-1254.3" Z="244.3338">
 				<Hotspot X="5361.16" Y="-1254.3" Z="244.33" />
 				<Hotspot X="5320.04" Y="-1259.31" Z="240.14" />
@@ -832,11 +832,11 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 38673)">
+		<If Condition="HasItem(38673)">
 			<PickUp QuestName="Darkness Calling" QuestId="12633" GiverName="Writhing Choker" GiverId="38673" GiverType="Item" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 38660)">
+		<If Condition="!HasItem(38660)">
 			<CustomBehavior File="CollectThings" CollectItemId="38660" CollectItemCount="1" HuntingGroundRadius="120" MobId="28519" X="5361.16" Y="-1254.3" Z="244.3338">
 				<Hotspot X="5361.16" Y="-1254.3" Z="244.33" />
 				<Hotspot X="5320.04" Y="-1259.31" Z="240.14" />
@@ -847,7 +847,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 38660)">
+		<If Condition="HasItem(38660)">
 			<PickUp QuestName="An Invitation, of Sorts..." QuestId="12631" GiverName="Unliving Choker" GiverId="38660" GiverType="Item" />
 		</If>
 
@@ -1274,7 +1274,7 @@
 		<TurnIn QuestName="New Orders for Sergeant Stackhammer" QuestId="12505" TurnInName="Sergeant Stackhammer" TurnInId="28056" X="6064.47" Y="-2617.68" Z="302.959" />
 		<PickUp QuestName="Argent Crusade, We Are Leaving!" QuestId="12504" GiverName="Sergeant Stackhammer" GiverId="28056" X="6064.47" Y="-2617.68" Z="302.959" />
 		<PickUp QuestName="Mopping Up" QuestId="12508" GiverName="Corporal Maga" GiverId="28099" X="6063.87" Y="-2615.71" Z="302.847" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 38321)">
+		<If Condition="!HasItem(38321)">
 			<CustomBehavior File="CollectThings" CollectItemId="38321" CollectItemCount="1" HuntingGroundRadius="120" MobId="28034" MobId2="28035" MobId3="28036" X="6248.42" Y="-2692.9467" Z="302.8713">
 				<Hotspot X="6248.42" Y="-2692.95" Z="302.87" />
 				<Hotspot X="6292.61" Y="-2699.69" Z="308.98" />
@@ -1289,7 +1289,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12508" MobId="28034" ItemId="38321" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6251.26" Y="-2682.33" Z="302.871" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 38321)">
+		<If Condition="HasItem(38321)">
 			<PickUp QuestName="Strange Mojo" QuestId="12507" GiverName="Strange Mojo" GiverId="38321" GiverType="Item" />
 		</If>
 

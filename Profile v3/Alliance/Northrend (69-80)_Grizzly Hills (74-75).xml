@@ -955,7 +955,7 @@
 		</If>
 
 		<PickUp QuestName="A Swift Response" QuestId="12310" GiverName="Lieutenant Dumont" GiverId="26875" X="3410.84" Y="-2781.71" Z="202.283" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36940)">
+		<If Condition="!HasItem(36940)">
 			<CustomBehavior File="CollectThings" CollectItemId="36940" CollectItemCount="1" HuntingGroundRadius="120" MobId="27546" MobId2="27547" X="3115.425" Y="-3076.29" Z="124.8505">
 				<Hotspot X="3115.43" Y="-3076.29" Z="124.85" />
 				<Hotspot X="3151.98" Y="-3057.84" Z="130.99" />
@@ -970,7 +970,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12310" MobId="27546" ItemId="36940" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3110.83" Y="-3091.04" Z="128.052" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36940)">
+		<If Condition="HasItem(36940)">
 			<PickUp QuestName="Descent into Darkness" QuestId="12105" GiverName="Mikhail's Journal" GiverId="36940" GiverType="Item" />
 		</If>
 

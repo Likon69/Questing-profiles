@@ -667,19 +667,19 @@
 		<PickUp QuestName="Mac'Aree Mushroom Menagerie" QuestId="9648" GiverName="Jessera of Mac'Aree" GiverId="17663" X="-1994.23" Y="-11915.8" Z="51.5202" />
 		<Objective QuestName="Mac'Aree Mushroom Menagerie" QuestId="9648" Type="CollectItem" ItemId="24040" CollectCount="1" />
 		<Objective QuestName="Know Thine Enemy" QuestId="9567" Type="CollectItem" ItemId="23859" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23900)">
+		<If Condition="!HasItem(23900)">
 			<CustomBehavior File="CollectThings" CollectItemId="23900" CollectItemCount="1" HuntingGroundRadius="120" MobId="17528" X="-2542.23" Y="-11328.8" Z="22.8675">
 				<Hotspot X="-2542.23" Y="-11328.8" Z="22.87" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23900)">
+		<If Condition="HasItem(23900)">
 			<PickUp QuestName="Signs of the Legion" QuestId="9594" GiverName="Tzerak's Armor Plate" GiverId="23900" GiverType="Item" />
 		</If>
 
 		<Objective QuestName="Mac'Aree Mushroom Menagerie" QuestId="9648" Type="CollectItem" ItemId="24043" CollectCount="1" />
 		<Objective QuestName="Irradiated Crystal Shards" QuestId="9641" Type="CollectItem" ItemId="23984" CollectCount="10" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23870)">
+		<If Condition="!HasItem(23870)">
 			<CustomBehavior File="CollectThings" CollectItemId="23870" CollectItemCount="1" HuntingGroundRadius="120" MobId="17496" X="-2810.29" Y="-11631.5" Z="2.0498">
 				<Hotspot X="-2810.29" Y="-11631.5" Z="2.05" />
 			</CustomBehavior>
@@ -689,7 +689,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9594" MobId="17337" ItemId="23870" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-2482.83" Y="-11379.5" Z="37.352" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23870)">
+		<If Condition="HasItem(23870)">
 			<PickUp QuestName="Cruelfin's Necklace" QuestId="9576" GiverName="Red Crystal Pendant" GiverId="23870" GiverType="Item" />
 		</If>
 
@@ -763,7 +763,7 @@
 		<Objective QuestName="Artifacts of the Blacksilt" QuestId="9549" Type="CollectItem" ItemId="23833" CollectCount="6" />
 		<TurnIn QuestName="Pilfered Equipment" QuestId="9548" TurnInName="Clopper Wizbang" TurnInId="17421" X="-1219.88" Y="-11450" Z="1.0814" />
 		<TurnIn QuestName="Artifacts of the Blacksilt" QuestId="9549" TurnInName="Clopper Wizbang" TurnInId="17421" X="-1219.88" Y="-11450" Z="1.0814" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23837)">
+		<If Condition="HasItem(23837)">
 			<PickUp QuestName="A Map to Where?" QuestId="9550" GiverName="Weathered Treasure Map" GiverId="23837" GiverType="Item" />
 		</If>
 

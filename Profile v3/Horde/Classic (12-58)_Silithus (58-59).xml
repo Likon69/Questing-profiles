@@ -368,7 +368,7 @@
 		<TurnIn QuestName="The Spirits of Southwind" QuestId="1125" TurnInName="Layo Starstrike" TurnInId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		<PickUp QuestName="Hive in the Tower" QuestId="1126" GiverName="Layo Starstrike" GiverId="13220" X="-6398.14" Y="-314.356" Z="-1.4176" />
 		<Objective QuestName="Hive in the Tower" QuestId="1126" Type="CollectItem" ItemId="17346" CollectCount="1" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 20461)">
+		<If Condition="HasItem(20461)">
 			<PickUp QuestName="Brann Bronzebeard's Lost Letter" QuestId="8308" GiverName="Brann Bronzebeard's Lost Letter" GiverId="20461" GiverType="Item" />
 		</If>
 

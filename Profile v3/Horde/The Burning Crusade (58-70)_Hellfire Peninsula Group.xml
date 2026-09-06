@@ -243,7 +243,7 @@
 
 		<PickUp QuestName="Colossal Menace" QuestId="10132" GiverName="Tola'thion" GiverId="19293" X="-310.951" Y="4732.8" Z="17.0877" />
 		<Objective QuestName="Colossal Menace" QuestId="10132" Type="KillMob" MobId="19188" KillCount="5" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 29476)">
+		<If Condition="!HasItem(29476)">
 			<CustomBehavior File="CollectThings" CollectItemId="29476" CollectItemCount="1" HuntingGroundRadius="120" MobId="19188" X="-114.469" Y="4818.41" Z="39.5818">
 				<Hotspot X="-114.47" Y="4818.41" Z="39.58" />
 				<Hotspot X="-63.31" Y="4868.44" Z="55.97" />
@@ -258,7 +258,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="10132" MobId="19188" ItemId="29476" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-114.469" Y="4818.41" Z="39.5818" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 29476)">
+		<If Condition="HasItem(29476)">
 			<PickUp QuestName="Crimson Crystal Clue" QuestId="10134" GiverName="Crimson Crystal Shard" GiverId="29476" GiverType="Item" />
 		</If>
 

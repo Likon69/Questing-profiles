@@ -123,7 +123,7 @@
 		<PickUp QuestName="Nothing But The Truth" QuestId="1372" GiverName="Deathstalker Zraedus" GiverId="5418" X="-10358" Y="-1537.57" Z="92.3121" />
 		<TurnIn QuestName="Nothing But The Truth" QuestId="1372" TurnInName="Apothecary Faustin" TurnInId="5414" X="-10351.1" Y="-1527.88" Z="92.7248" />
 		<Objective QuestName="Dream Dust in the Swamp" QuestId="1116" Type="CollectItem" ItemId="5803" CollectCount="10" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6196)">
+		<If Condition="HasItem(6196)">
 			<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Noboru's Cudgel" GiverId="6196" GiverType="Item" />
 		</If>
 

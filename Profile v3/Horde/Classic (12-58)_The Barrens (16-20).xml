@@ -497,13 +497,13 @@
 		<TurnIn QuestName="Jorn Skyseer" QuestId="3261" TurnInName="Jorn Skyseer" TurnInId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />
 		<PickUp QuestName="Ishamuhale" QuestId="882" GiverName="Jorn Skyseer" GiverId="3387" X="-2382.81" Y="-1922.69" Z="95.8663" />
 		<Objective QuestName="Chen's Empty Keg" QuestId="821" Type="CollectItem" ItemId="4895" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5099)">
+		<If Condition="!HasItem(5099)">
 			<CustomBehavior File="CollectThings" CollectItemId="5099" CollectItemCount="1" HuntingGroundRadius="120" MobId="3474" X="-1837.25" Y="-2188.44" Z="94.937">
 				<Hotspot X="-1837.25" Y="-2188.44" Z="94.94" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5099)">
+		<If Condition="HasItem(5099)">
 			<PickUp QuestName="Lakota'mani" QuestId="883" GiverName="Hoof of Lakota'mani" GiverId="5099" GiverType="Item" />
 		</If>
 

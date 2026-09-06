@@ -164,11 +164,11 @@
 			<CustomBehavior File="WaitTimer" WaitTime="2000" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 5791)">
+		<If Condition="!HasItem(5791)">
 			<CustomBehavior File="InteractWith" MobId="19861" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-4680.84" Y="-1785.27" Z="-41.0243" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 5791)">
+		<If Condition="HasItem(5791)">
 			<PickUp QuestName="Lonebrow's Journal" QuestId="1100" GiverId="5791" GiverName="Henrig Lonebrow's Journal" GiverType="Item" />
 		</If>
 

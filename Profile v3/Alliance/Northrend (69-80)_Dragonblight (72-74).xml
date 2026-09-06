@@ -798,7 +798,7 @@
 
 		<TurnIn QuestName="The Liquid Fire of Elune" QuestId="12166" TurnInName="Warden Jodi Moonsong" TurnInId="26973" X="3493.89" Y="1990.52" Z="64.9457" />
 		<PickUp QuestName="Kill the Cultists" QuestId="12167" GiverName="Warden Jodi Moonsong" GiverId="26973" X="3493.89" Y="1990.52" Z="64.9457" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36958)">
+		<If Condition="!HasItem(36958)">
 			<CustomBehavior File="CollectThings" CollectItemId="36958" CollectItemCount="1" HuntingGroundRadius="120" MobId="26319" X="3860.78" Y="2151.99" Z="123.307">
 				<Hotspot X="3860.78" Y="2151.99" Z="123.31" />
 				<Hotspot X="3935.66" Y="2160.03" Z="156.09" />
@@ -809,7 +809,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36958)">
+		<If Condition="HasItem(36958)">
 			<PickUp QuestName="The Favor of Zangus" QuestId="12168" GiverName="The Favor of Zangus" GiverId="36958" GiverType="Item" />
 		</If>
 
@@ -820,7 +820,7 @@
 		<Objective QuestName="The High Cultist" QuestId="12169" Type="KillMob" MobId="26655" KillCount="1" />
 		<Objective QuestName="Prevent the Accord" QuestId="12004" Type="CollectItem" ItemId="35800" CollectCount="1" />
 		<Objective QuestName="Prevent the Accord" QuestId="12004" Type="CollectItem" ItemId="35801" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36742)">
+		<If Condition="!HasItem(36742)">
 			<CustomBehavior File="CollectThings" CollectItemId="36742" CollectItemCount="1" HuntingGroundRadius="120" MobId="26349" X="3401.72" Y="2532.42" Z="59.4827">
 				<Hotspot X="3401.72" Y="2532.42" Z="59.48" />
 			</CustomBehavior>
@@ -830,7 +830,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12169" MobId="26655" ItemId="36742" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3715.42" Y="2007.22" Z="22.382" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36742)">
+		<If Condition="HasItem(36742)">
 			<PickUp QuestName="A Strange Device" QuestId="12055" GiverName="Goramosh's Strange Device" GiverId="36742" GiverType="Item" />
 		</If>
 
@@ -914,20 +914,20 @@
 
 		<TurnIn QuestName="Projections and Plans" QuestId="12060" TurnInName="Image of Archmage Modera" TurnInId="26673" X="3501.18" Y="2000.58" Z="65.654" />
 		<PickUp QuestName="The Focus on the Beach" QuestId="12065" GiverName="Image of Archmage Modera" GiverId="26673" X="3501.18" Y="2000.58" Z="65.654" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36756)">
+		<If Condition="!HasItem(36756)">
 			<CustomBehavior File="CollectThings" CollectItemId="36756" CollectItemCount="1" HuntingGroundRadius="120" MobId="26762" X="3149.37" Y="2151.22" Z="24.6377">
 				<Hotspot X="3149.37" Y="2151.22" Z="24.64" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36756)">
+		<If Condition="HasItem(36756)">
 			<PickUp QuestName="A Letter for Home" QuestId="12067" GiverName="Captain Malin's Letter" GiverId="36756" GiverType="Item" />
 		</If>
 
 		<!-- Q12065 The Focus on the Beach: objective nodes transplanted from HonorBuddy C-Cava reference Scripts\[N-Quest](72-75)Dragonblight[Cava].xml. Turn-in stays guarded and the quest is abandoned if still incomplete, so the profile continues. -->
 		<If Condition="Me.IsAlliance">
 			<If Condition="HasQuest(12065) &amp;&amp; !IsQuestCompleted(12065)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
 					<RunTo X="3149.258" Y="2148.766" Z="24.33495" />
 				</If>
 			</If>
@@ -935,7 +935,7 @@
 
 		<If Condition="Me.IsAlliance">
 			<If Condition="HasQuest(12065) &amp;&amp; !IsQuestCompleted(12065)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
 					<CustomBehavior File="ForcedDismount" />
 				</If>
 			</If>
@@ -943,8 +943,8 @@
 
 		<If Condition="Me.IsAlliance">
 			<If Condition="HasQuest(12065) &amp;&amp; !IsQuestCompleted(12065)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
-					<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
+					<If Condition="!HasItem(36751)">
 						<RunTo X="3149.258" Y="2148.766" Z="24.33495" />
 					</If>
 				</If>
@@ -953,8 +953,8 @@
 
 		<If Condition="Me.IsAlliance">
 			<If Condition="HasQuest(12065) &amp;&amp; !IsQuestCompleted(12065)">
-				<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
-					<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36751)">
+				<If Condition="!HasItem(36751)">
+					<If Condition="!HasItem(36751)">
 						<CustomBehavior File="WaitTimer" QuestId="12065" WaitTime="4000" />
 					</If>
 				</If>
@@ -1391,7 +1391,7 @@
 		<TurnIn QuestName="Pest Control" QuestId="12142" TurnInName="Duane" TurnInId="26978" X="4567.68" Y="14.114" Z="78.136" />
 		<PickUp QuestName="Canyon Chase" QuestId="12143" GiverName="Duane" GiverId="26978" X="4567.68" Y="14.114" Z="78.136" />
 		<Objective QuestName="Canyon Chase" QuestId="12143" Type="KillMob" MobId="27005" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 36855)">
+		<If Condition="!HasItem(36855)">
 			<CustomBehavior File="CollectThings" CollectItemId="36855" CollectItemCount="1" HuntingGroundRadius="120" MobId="27004" MobId2="27005" X="4481.23" Y="-438.29" Z="78.8053">
 				<Hotspot X="4481.23" Y="-438.29" Z="78.81" />
 				<Hotspot X="4092.9" Y="1248.45" Z="57.14" />
@@ -1402,7 +1402,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12143" MobId="27005" ItemId="36855" NumOfTimes="1" Range="5" CollectionDistance="1000" X="4481.23" Y="-438.29" Z="78.8053" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 36855)">
+		<If Condition="HasItem(36855)">
 			<PickUp QuestName="Disturbing Implications" QuestId="12146" GiverName="Emblazoned Battle Horn" GiverId="36855" GiverType="Item" />
 		</If>
 
@@ -1475,7 +1475,7 @@
 		<TurnIn QuestName="Return to the Earth" QuestId="12417" TurnInName="Ceristrasz" TurnInId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		<PickUp QuestName="Through Fields of Flame" QuestId="12418" GiverName="Ceristrasz" GiverId="27506" X="3703.88" Y="699.021" Z="89.2857" />
 		<Objective QuestName="Through Fields of Flame" QuestId="12418" Type="KillMob" MobId="27680" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 37833)">
+		<If Condition="!HasItem(37833)">
 			<CustomBehavior File="CollectThings" CollectItemId="37833" CollectItemCount="1" HuntingGroundRadius="120" MobId="27680" X="3743.79" Y="955.309" Z="53.8455">
 				<Hotspot X="3743.79" Y="955.31" Z="53.85" />
 			</CustomBehavior>
@@ -1485,7 +1485,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="12418" MobId="27539" ItemId="37833" NumOfTimes="1" Range="5" CollectionDistance="1000" X="3669.36" Y="1089.64" Z="67.9123" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 37833)">
+		<If Condition="HasItem(37833)">
 			<PickUp QuestName="The Fate of the Ruby Dragonshrine" QuestId="12419" GiverName="Ruby Brooch" GiverId="37833" GiverType="Item" />
 		</If>
 

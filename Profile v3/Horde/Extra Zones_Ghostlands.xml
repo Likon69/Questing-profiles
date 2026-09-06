@@ -760,7 +760,7 @@
 		<Objective QuestName="Curbing the Plague" QuestId="9159" Type="KillMob" MobId="16354" KillCount="10" />
 		<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22566" CollectCount="6" />
 		<Objective QuestName="Windrunner Village" QuestId="9140" Type="CollectItem" ItemId="22567" CollectCount="4" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 22597)">
+		<If Condition="!HasItem(22597)">
 			<CustomBehavior File="CollectThings" CollectItemId="22597" CollectItemCount="1" HuntingGroundRadius="120" MobId="16314" MobId2="16315" X="6980.6" Y="-5898.02" Z="28.7638">
 				<Hotspot X="6980.6" Y="-5898.02" Z="28.76" />
 				<Hotspot X="7017.61" Y="-5831.33" Z="57.99" />
@@ -771,7 +771,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 22597)">
+		<If Condition="HasItem(22597)">
 			<PickUp QuestName="The Lady's Necklace" QuestId="9175" GiverName="The Lady's Necklace" GiverId="22597" GiverType="Item" />
 		</If>
 

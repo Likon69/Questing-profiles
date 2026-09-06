@@ -160,13 +160,13 @@
 		<Objective QuestName="Wind Rider" QuestId="4767" Type="CollectItem" ItemId="12356" CollectCount="10" />
 		<PickUp QuestName="Homeward Bound" QuestId="4770" GiverName="Pao'ka Swiftmountain" GiverId="10427" X="-5156.69" Y="-1220.49" Z="48.7887" />
 		<Objective QuestName="Steelsnap" QuestId="1131" Type="CollectItem" ItemId="5837" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12564)">
+		<If Condition="!HasItem(12564)">
 			<CustomBehavior File="CollectThings" CollectItemId="12564" CollectItemCount="1" HuntingGroundRadius="120" MobId="10617" X="-5128.15" Y="-2080.7" Z="-37.4284">
 				<Hotspot X="-5128.15" Y="-2080.7" Z="-37.43" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12564)">
+		<If Condition="HasItem(12564)">
 			<PickUp QuestName="Assassination Plot" QuestId="4881" GiverName="Assassination Note" GiverId="12564" GiverType="Item" />
 		</If>
 

@@ -258,7 +258,7 @@
 		<Objective QuestName="The Bloodsail Buccaneers" QuestId="604" Type="KillMob" MobId="1563" KillCount="10" />
 		<TurnIn QuestName="The Bloodsail Buccaneers" QuestId="604" TurnInName="Fleet Master Seahorn" TurnInId="2487" X="-14444.8" Y="486.81" Z="28.809" />
 		<PickUp QuestName="The Bloodsail Buccaneers" QuestId="608" GiverName="Fleet Master Seahorn" GiverId="2487" X="-14444.8" Y="486.81" Z="28.809" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4098)">
+		<If Condition="!HasItem(4098)">
 			<CustomBehavior File="InteractWith" MobId="2560" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14616.5" Y="-88.2083" Z="0.5871" />
 		</If>
 
@@ -266,7 +266,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="608" MobId="2550" ItemId="4098" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-14921.0" Y="123.1" Z="7.5177" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4098)">
+		<If Condition="HasItem(4098)">
 			<PickUp QuestName="Message in a Bottle" QuestId="594" GiverName="Carefully Folded Note" GiverId="4098" GiverType="Item" />
 		</If>
 
@@ -274,11 +274,11 @@
 		<PickUp QuestName="Message in a Bottle" QuestId="630" GiverName="Princess Poobah" GiverId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		<Objective QuestName="Message in a Bottle" QuestId="630" Type="CollectItem" ItemId="4103" CollectCount="1" />
 		<TurnIn QuestName="Message in a Bottle" QuestId="630" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 4056)">
+		<If Condition="!HasItem(4056)">
 			<CustomBehavior File="InteractWith" MobId="2554" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14928.2" Y="74.125" Z="7.5218" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 4056)">
+		<If Condition="HasItem(4056)">
 			<PickUp QuestName="Cortello's Riddle" QuestId="624" GiverName="Cortello's Riddle" GiverId="4056" GiverType="Item" />
 		</If>
 

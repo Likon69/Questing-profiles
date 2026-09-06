@@ -1442,7 +1442,7 @@
 		<PickUp QuestName="Secrets of the Ancients" QuestId="11910" GiverName="Archmage Berinand" GiverId="25314" X="3575.61" Y="6671.72" Z="195.267" />
 		<PickUp QuestName="Basic Training" QuestId="11918" GiverName="Raelorasz" GiverId="26117" X="3570.4" Y="6650.4" Z="195.263" />
 		<PickUp QuestName="Nuts for Berries" QuestId="11912" GiverName="Librarian Serrah" GiverId="26110" X="3576.48" Y="6640.39" Z="195.176" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 35648)">
+		<If Condition="!HasItem(35648)">
 			<CustomBehavior File="CollectThings" CollectItemId="35648" CollectItemCount="1" HuntingGroundRadius="120" MobId="25719" X="3768.155" Y="6520.25" Z="178.9285">
 				<Hotspot X="3768.15" Y="6520.25" Z="178.93" />
 				<Hotspot X="3782.34" Y="6661.58" Z="151.57" />
@@ -1453,7 +1453,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 35648)">
+		<If Condition="HasItem(35648)">
 			<PickUp QuestName="Puzzling..." QuestId="11941" GiverName="Scintillating Fragment" GiverId="35648" GiverType="Item" />
 		</If>
 
@@ -1539,7 +1539,7 @@
 		<TurnIn QuestName="Get Me Outa Here!" QuestId="11673" TurnInName="Fizzcrank Fullthrottle" TurnInId="25590" X="4178.77" Y="5286.27" Z="39.6921" />
 		<TurnIn QuestName="Dirty, Stinkin' Snobolds!" QuestId="11645" TurnInName="Crafty Wobblesprocket" TurnInId="25477" X="4172.79" Y="5254.92" Z="26.1285" />
 		<Objective QuestName="What's the Matter with the Transmatter?" QuestId="11710" Type="CollectItem" ItemId="34972" CollectCount="15" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 34984)">
+		<If Condition="!HasItem(34984)">
 			<CustomBehavior File="CollectThings" CollectItemId="34984" CollectItemCount="1" HuntingGroundRadius="120" MobId="25752" MobId2="25753" MobId3="25758" MobId4="25792" MobId5="25793" X="4171.5333" Y="5178.1967" Z="13.3993">
 				<Hotspot X="4171.53" Y="5178.2" Z="13.4" />
 				<Hotspot X="4228.6" Y="5184.84" Z="13.45" />
@@ -1550,7 +1550,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 34984)">
+		<If Condition="HasItem(34984)">
 			<PickUp QuestName="The Ultrasonic Screwdriver" QuestId="11729" GiverName="The Ultrasonic Screwdriver" GiverId="34984" GiverType="Item" />
 		</If>
 

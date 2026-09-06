@@ -359,7 +359,7 @@
 		<Objective QuestName="Southsea Shakedown" QuestId="8366" Type="KillMob" MobId="7856" KillCount="10" />
 		<Objective QuestName="Southsea Shakedown" QuestId="8366" Type="KillMob" MobId="7857" KillCount="10" />
 		<Objective QuestName="Southsea Shakedown" QuestId="8366" Type="KillMob" MobId="7858" KillCount="10" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 9250)">
+		<If Condition="HasItem(9250)">
 			<PickUp QuestName="Ship Schedules" QuestId="2876" GiverName="Ship Schedule" GiverId="9250" GiverType="Item" />
 		</If>
 
@@ -404,7 +404,7 @@
 		<PickUp QuestName="The Scrimshank Redemption" QuestId="10" GiverName="Senior Surveyor Fizzledowser" GiverId="7724" X="-7139.19" Y="-3683.27" Z="21.0269" />
 		<TurnIn QuestName="Thistleshrub Valley" QuestId="3362" TurnInName="Tran'rek" TurnInId="7876" X="-7105.84" Y="-3776.83" Z="8.7922" />
 		<TurnIn QuestName="The Dunemaul Compound" QuestId="5863" TurnInName="Andi Lynn" TurnInId="11758" X="-7135.48" Y="-3863.11" Z="9.5147" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 8623)">
+		<If Condition="!HasItem(8623)">
 			<CustomBehavior File="CollectThings" CollectItemId="8623" CollectItemCount="1" HuntingGroundRadius="120" MobId="5419" MobId2="5420" MobId3="5421" MobId4="5422" MobId5="5423" MobId6="5424" X="-8511.85" Y="-4285.53" Z="11.2078">
 				<Hotspot X="-8511.85" Y="-4285.53" Z="11.21" />
 				<Hotspot X="-8518.27" Y="-4346.54" Z="9.42" />
@@ -415,7 +415,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 8623)">
+		<If Condition="HasItem(8623)">
 			<PickUp QuestName="Find OOX-17/TN!" QuestId="351" GiverName="OOX-17/TN Distress Beacon" GiverId="8623" GiverType="Item" />
 		</If>
 

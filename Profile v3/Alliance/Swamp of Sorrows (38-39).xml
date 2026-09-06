@@ -119,7 +119,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="1396" MobId="1084" ItemId="6196" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-10216.3" Y="-2921.17" Z="17.7429" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6196)">
+		<If Condition="HasItem(6196)">
 			<PickUp QuestName="Noboru the Cudgel" QuestId="1392" GiverName="Noboru's Cudgel" GiverId="6196" GiverType="Item" />
 		</If>
 

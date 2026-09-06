@@ -250,7 +250,7 @@
 			<TurnIn QuestName="Tome of Divinity" QuestId="2998" TurnInName="Duthorian Rall" TurnInId="6171" X="-8546" Y="845.796" Z="106.601" />
 			<PickUp QuestName="The Tome of Divinity" QuestId="1641" GiverName="Duthorian Rall" GiverId="6171" X="-8546" Y="845.796" Z="106.601" />
 			<TurnIn QuestName="The Tome of Divinity" QuestId="1641" TurnInName="Duthorian Rall" TurnInId="6171" X="-8546" Y="845.796" Z="106.601" />
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6775)">
+			<If Condition="HasItem(6775)">
 				<PickUp QuestName="The Tome of Divinity" QuestId="1642" GiverName="Tome of Divinity" GiverId="6775" GiverType="Item" />
 			</If>
 			<!-- REVIEW Q1642 The Tome of Divinity: start item 6775 Tome of Divinity has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -282,7 +282,7 @@
 			<PickUp QuestName="Tome of Divinity" QuestId="2997" GiverName="Azar Stronghammer" GiverId="1232" X="-5586.76" Y="-542.163" Z="403.624" />
 			<TurnIn QuestName="Tome of Divinity" QuestId="2997" TurnInName="Tiza Battleforge" TurnInId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
 			<PickUp QuestName="The Tome of Divinity" QuestId="1645" GiverName="Tiza Battleforge" GiverId="6179" X="-4633.52" Y="-932.023" Z="524.778" />
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6916)">
+			<If Condition="HasItem(6916)">
 				<PickUp QuestName="The Tome of Divinity" QuestId="1646" GiverName="Tome of Divinity" GiverId="6916" GiverType="Item" />
 			</If>
 			<!-- REVIEW Q1646 The Tome of Divinity: start item 6916 Tome of Divinity has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
@@ -322,7 +322,7 @@
 		<If Condition="(Me.Class == WoWClass.Paladin)">
 			<PickUp QuestName="The Tome of Valor" QuestId="1794" GiverName="Brandur Ironhammer" GiverId="5149" X="-4601.65" Y="-896.468" Z="502.85" />
 			<PickUp QuestName="The Tome of Valor" QuestId="1793" GiverName="Duthorian Rall" GiverId="6171" X="-8546" Y="845.796" Z="106.601" />
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 6776)">
+			<If Condition="HasItem(6776)">
 				<PickUp QuestName="The Tome of Valor" QuestId="1649" GiverName="Tome of Valor" GiverId="6776" GiverType="Item" />
 			</If>
 			<!-- REVIEW Q1649 The Tome of Valor: start item 6776 Tome of Valor has no loot source in DB (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->

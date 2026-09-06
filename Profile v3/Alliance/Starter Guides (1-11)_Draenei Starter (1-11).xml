@@ -689,7 +689,7 @@
 		<TurnIn QuestName="The Blood Elves" QuestId="10303" TurnInName="Tolaan" TurnInId="16546" X="-4445.66" Y="-13430.9" Z="51.337" />
 		<PickUp QuestName="Blood Elf Spy" QuestId="9311" GiverName="Tolaan" GiverId="16546" X="-4445.66" Y="-13430.9" Z="51.337" />
 		<Objective QuestName="Blood Elf Spy" QuestId="9311" Type="KillMob" MobId="16522" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 24414)">
+		<If Condition="!HasItem(24414)">
 			<CustomBehavior File="CollectThings" CollectItemId="24414" CollectItemCount="1" HuntingGroundRadius="120" MobId="16522" X="-4579.39" Y="-13319.9" Z="88.0798">
 				<Hotspot X="-4579.39" Y="-13319.9" Z="88.08" />
 			</CustomBehavior>
@@ -699,7 +699,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9311" MobId="16522" ItemId="24414" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-4579.39" Y="-13319.9" Z="88.0798" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24414)">
+		<If Condition="HasItem(24414)">
 			<PickUp QuestName="Blood Elf Plans" QuestId="9798" GiverName="Blood Elf Plans" GiverId="24414" GiverType="Item" />
 		</If>
 
@@ -721,7 +721,7 @@
 		</If>
 		<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23678)">
+		<If Condition="!HasItem(23678)">
 			<CustomBehavior File="CollectThings" CollectItemId="23678" CollectItemCount="1" HuntingGroundRadius="120" MobId="17202" X="-3814.88" Y="-12796.6" Z="7.9013">
 				<Hotspot X="-3814.88" Y="-12796.6" Z="7.9" />
 				<Hotspot X="-3916.08" Y="-12583.7" Z="54.19" />
@@ -732,7 +732,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23678)">
+		<If Condition="HasItem(23678)">
 			<PickUp QuestName="Strange Findings" QuestId="9455" GiverName="Faintly Glowing Crystal" GiverId="23678" GiverType="Item" />
 		</If>
 
@@ -802,7 +802,7 @@
 		<Objective QuestName="Reclaiming the Ruins" QuestId="9513" Type="KillMob" MobId="17194" KillCount="5" />
 		<Objective QuestName="Reclaiming the Ruins" QuestId="9513" Type="KillMob" MobId="17193" KillCount="5" />
 		<Objective QuestName="Reclaiming the Ruins" QuestId="9513" Type="KillMob" MobId="17195" KillCount="5" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23759)">
+		<If Condition="!HasItem(23759)">
 			<CustomBehavior File="CollectThings" CollectItemId="23759" CollectItemCount="1" HuntingGroundRadius="120" MobId="17193" MobId2="17194" MobId3="17195" X="-4709.34" Y="-11544.3" Z="-24.4085">
 				<Hotspot X="-4709.34" Y="-11544.3" Z="-24.41" />
 				<Hotspot X="-4750.56" Y="-11582.48" Z="-17.67" />
@@ -817,7 +817,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9544" MobId="17375" ItemId="23759" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-4503.61" Y="-11593.9" Z="12.8586" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23759)">
+		<If Condition="HasItem(23759)">
 			<PickUp QuestName="Rune Covered Tablet" QuestId="9514" GiverName="Rune Covered Tablet" GiverId="23759" GiverType="Item" />
 		</If>
 
@@ -896,19 +896,19 @@
 		</If>
 
 		<Objective QuestName="Call of Fire" QuestId="9465" Type="CollectItem" ItemId="23733" CollectCount="1" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23910)">
+		<If Condition="HasItem(23910)">
 			<PickUp QuestName="Bandits!" QuestId="9616" GiverName="Blood Elf Communication" GiverId="23910" GiverType="Item" />
 		</If>
 
 		<TurnIn QuestName="Beasts of the Apocalypse!" QuestId="9560" TurnInName="Moordo" TurnInId="17442" X="-3442.68" Y="-12322.2" Z="14.1547" />
 		<Objective QuestName="Murlocs... Why Here? Why Now?" QuestId="9562" Type="CollectItem" ItemId="23849" CollectCount="5" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 23850)">
+		<If Condition="!HasItem(23850)">
 			<CustomBehavior File="CollectThings" CollectItemId="23850" CollectItemCount="1" HuntingGroundRadius="120" MobId="17475" X="-3390.28" Y="-11925" Z="4.1367">
 				<Hotspot X="-3390.28" Y="-11925" Z="4.14" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 23850)">
+		<If Condition="HasItem(23850)">
 			<PickUp QuestName="Gurf's Dignity" QuestId="9564" GiverName="Gurf's Dignity" GiverId="23850" GiverType="Item" />
 		</If>
 

@@ -211,7 +211,7 @@
 		<Objective QuestName="Wild Guardians" QuestId="4521" Type="KillMob" MobId="7450" KillCount="15" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7441" KillCount="8" />
 		<Objective QuestName="Threat of the Winterfall" QuestId="5082" Type="KillMob" MobId="7442" KillCount="8" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+		<If Condition="!HasItem(12771)">
 			<CustomBehavior File="CollectThings" CollectItemId="12771" CollectItemCount="1" HuntingGroundRadius="120" MobId="7438" MobId2="7439" MobId3="7440" MobId4="7441" MobId5="7442" MobId6="10916" X="6747.72" Y="-2685.25" Z="543.371">
 				<Hotspot X="6747.72" Y="-2685.25" Z="543.37" />
 				<Hotspot X="6765.27" Y="-2615.89" Z="551.71" />
@@ -219,7 +219,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 12771)">
+		<If Condition="HasItem(12771)">
 			<PickUp QuestName="Winterfall Firewater" QuestId="5083" GiverName="Empty Firewater Flask" GiverId="12771" GiverType="Item" />
 		</If>
 

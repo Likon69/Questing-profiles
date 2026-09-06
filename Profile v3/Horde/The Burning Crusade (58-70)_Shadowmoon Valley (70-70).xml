@@ -746,60 +746,60 @@
 		</If>
 
 		<Objective QuestName="The Summoning Chamber" QuestId="10602" Type="CollectItem" ItemId="30672" CollectCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 			<CustomBehavior File="UserSettings" PullDistance="30" />
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3413.286" Y="2287.548" Z="33.72421" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3422.931" Y="2253.919" Z="33.67115" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3433.433" Y="2240.662" Z="33.73878" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3466.885" Y="2224.792" Z="33.52837" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3466.95" Y="2194.641" Z="33.51812" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3463.443" Y="2174.543" Z="33.52786" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3449.72" Y="2149.083" Z="31.9331" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3411.184" Y="2088.111" Z="33.88213" />
 			</If>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
-			<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30672) &amp;&amp; !IsQuestCompleted(10602)">
+		<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
+			<If Condition="!HasItem(30672) &amp;&amp; !IsQuestCompleted(10602)">
 				<RunTo X="-3363.17" Y="2073.716" Z="34.4014" />
 			</If>
 		</If>
@@ -869,13 +869,13 @@
 		<Objective QuestName="Bring Down the Warbringer!" QuestId="10603" Type="KillMob" MobId="21287" KillCount="1" />
 		<TurnIn QuestName="Bring Down the Warbringer!" QuestId="10603" TurnInName="Blood Guard Gulmok" TurnInId="21359" X="-3136" Y="2550" Z="62.2" />
 		<PickUp QuestName="Gaining Access" QuestId="10604" GiverName="Blood Guard Gulmok" GiverId="21359" X="-3136" Y="2550" Z="62.2" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 30579)">
+		<If Condition="!HasItem(30579)">
 			<CustomBehavior File="CollectThings" CollectItemId="30579" CollectItemCount="1" HuntingGroundRadius="120" MobId="21499" X="-3227.25" Y="2925.98" Z="127.161">
 				<Hotspot X="-3227.25" Y="2925.98" Z="127.16" />
 			</CustomBehavior>
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 30579)">
+		<If Condition="HasItem(30579)">
 			<PickUp QuestName="Illidari-Bane Shard" QuestId="10623" GiverName="Illidari-Bane Shard" GiverId="30579" GiverType="Item" />
 		</If>
 
@@ -1000,25 +1000,25 @@
 		</If>
 
 		<If Condition="HasQuest(10804) &amp;&amp; !IsQuestCompleted(10804)">
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31373)">
+			<If Condition="HasItem(31373)">
 				<CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(31373)" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10804) &amp;&amp; !IsQuestCompleted(10804)">
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31373)">
+			<If Condition="HasItem(31373)">
 				<CustomBehavior File="WaitTimer" WaitTime="3000" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10804) &amp;&amp; !IsQuestCompleted(10804)">
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31372)">
+			<If Condition="HasItem(31372)">
 				<CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(31372)" />
 			</If>
 		</If>
 
 		<If Condition="HasQuest(10804) &amp;&amp; !IsQuestCompleted(10804)">
-			<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 31372)">
+			<If Condition="HasItem(31372)">
 				<CustomBehavior File="WaitTimer" WaitTime="30000" />
 			</If>
 		</If>

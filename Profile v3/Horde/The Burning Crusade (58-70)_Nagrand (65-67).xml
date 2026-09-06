@@ -560,7 +560,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="9857" MobId="17130" ItemId="24504" NumOfTimes="1" Range="5" CollectionDistance="1000" X="-1379.51" Y="6271.72" Z="50.393" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24504)">
+		<If Condition="HasItem(24504)">
 			<PickUp QuestName="The Howling Wind" QuestId="9861" GiverName="Howling Wind" GiverId="24504" GiverType="Item" />
 		</If>
 
@@ -609,16 +609,16 @@
 		<Objective QuestName="Talbuk Mastery" QuestId="9858" Type="KillMob" MobId="17131" KillCount="12" />
 		<Objective QuestName="Clefthoof Mastery" QuestId="9850" Type="KillMob" MobId="17132" KillCount="12" />
 		<Objective QuestName="Eating Damnation" QuestId="9821" Type="CollectItem" ItemId="24473" CollectCount="10" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 24558)">
+		<If Condition="HasItem(24558)">
 			<PickUp QuestName="Murkblood Invaders" QuestId="9872" GiverName="Murkblood Invasion Plans" GiverId="24558" GiverType="Item" />
 		</If>
 
 		<!-- Q9872 Murkblood Invaders: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\BC\[Fly][H - Quest] BC 58-70 [Kick].xml -->
-		<If Condition="((!HasQuest(9872)) &amp;&amp; (!IsQuestCompleted(9872)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 24558)))">
+		<If Condition="((!HasQuest(9872)) &amp;&amp; (!IsQuestCompleted(9872)) &amp;&amp; (!HasItem(24558)))">
 			<CustomBehavior File="FlyTo" X="-2066.492" Y="8108.036" Z="2.547558" />
 		</If>
 
-		<If Condition="((!HasQuest(9872)) &amp;&amp; (!IsQuestCompleted(9872)) &amp;&amp; (!Me.CarriedItems.Any(i =&gt; i.Entry == 24558)))">
+		<If Condition="((!HasQuest(9872)) &amp;&amp; (!IsQuestCompleted(9872)) &amp;&amp; (!HasItem(24558)))">
 			<CustomBehavior File="ForcedDismount" />
 		</If>
 

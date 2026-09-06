@@ -1485,7 +1485,7 @@
 		</While>
 
 		<Objective QuestName="Deep in the Bowels of The Underhalls" QuestId="13042" Type="KillMob" MobId="30409" KillCount="1" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 42772)">
+		<If Condition="!HasItem(42772)">
 			<CustomBehavior File="CollectThings" CollectItemId="42772" CollectItemCount="1" HuntingGroundRadius="120" MobId="30409" X="7907.65" Y="3311.53" Z="632.693">
 				<Hotspot X="7907.65" Y="3311.53" Z="632.69" />
 			</CustomBehavior>
@@ -1495,7 +1495,7 @@
 			<CustomBehavior File="UseItemOn" QuestId="13059" MobId="32821" ItemId="42772" NumOfTimes="1" Range="5" CollectionDistance="1000" />
 		</While>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 42772)">
+		<If Condition="HasItem(42772)">
 			<PickUp QuestName="The Sum is Greater than the Parts" QuestId="13043" GiverName="Dr. Terrible's &quot;Building a Better Flesh Giant&quot;" GiverId="42772" GiverType="Item" />
 		</If>
 
@@ -1558,11 +1558,11 @@
 		<PickUp QuestName="From Their Corpses, Rise!" QuestId="12813" GiverName="Setaal Darkmender" GiverId="29396" X="7403.79" Y="4210.33" Z="316.383" />
 		<PickUp QuestName="Intelligence Gathering" QuestId="12838" GiverName="Aurochs Grimbane" GiverId="29456" X="7435.78" Y="4200.42" Z="314.32" />
 		<Objective QuestName="Intelligence Gathering" QuestId="12838" Type="CollectItem" ItemId="40640" CollectCount="5" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 40666)">
+		<If Condition="!HasItem(40666)">
 			<CustomBehavior File="InteractWith" MobId="191543" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="7584.19" Y="4662.59" Z="0.2415" />
 		</If>
 
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 40666)">
+		<If Condition="HasItem(40666)">
 			<PickUp QuestName="The Grand (Admiral's) Plan" QuestId="12839" GiverName="Note from the Grand Admiral" GiverId="40666" GiverType="Item" />
 		</If>
 
@@ -1648,7 +1648,7 @@
 		<TurnIn QuestName="Death's Gaze" QuestId="13120" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		<PickUp QuestName="Spill Their Blood" QuestId="13134" GiverName="Darkrider Arly" GiverId="30631" X="6654.15" Y="3224.66" Z="810.501" />
 		<PickUp QuestName="I'm Not Dead Yet!" QuestId="13229" GiverName="Father Kamaros" GiverId="31279" X="6717.81" Y="3451.98" Z="683.747" />
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 43242)">
+		<If Condition="!HasItem(43242)">
 			<CustomBehavior File="CollectThings" CollectItemId="43242" CollectItemCount="1" HuntingGroundRadius="120" MobId="30597" X="6714.43" Y="3427.27" Z="682.242">
 				<Hotspot X="6714.43" Y="3427.27" Z="682.24" />
 				<Hotspot X="6750.01" Y="3484.88" Z="668.27" />
@@ -1659,7 +1659,7 @@
 			</CustomBehavior>
 		</If>
 
-		<If Condition="!Me.CarriedItems.Any(i =&gt; i.Entry == 43242)">
+		<If Condition="!HasItem(43242)">
 			<CustomBehavior File="CollectThings" CollectItemId="43242" CollectItemCount="1" HuntingGroundRadius="120" MobId="30597" X="6663.98" Y="3267.58" Z="668.826">
 				<Hotspot X="6663.98" Y="3267.58" Z="668.83" />
 				<Hotspot X="6488.66" Y="3207.02" Z="651.09" />
@@ -1673,7 +1673,7 @@
 		<Objective QuestName="Spill Their Blood" QuestId="13134" Type="UseObject" ObjectId="192933" UseCount="5" />
 		<Objective QuestName="Spill Their Blood" QuestId="13134" Type="UseObject" ObjectId="192932" UseCount="5" />
 		<TurnIn QuestName="Spill Their Blood" QuestId="13134" TurnInName="Darkrider Arly" TurnInId="30631" X="6654.15" Y="3224.66" Z="810.501" />
-		<If Condition="Me.CarriedItems.Any(i =&gt; i.Entry == 43242)">
+		<If Condition="HasItem(43242)">
 			<PickUp QuestName="Jagged Shards" QuestId="13136" GiverName="Jagged Shard" GiverId="43242" GiverType="Item" />
 		</If>
 
