@@ -666,9 +666,9 @@
 		<TurnIn QuestName="Healing the Lake" QuestId="9294" TurnInName="Botanist Taerix" TurnInId="16514" X="-4057.03" Y="-13721.6" Z="72.9162" />
 		<TurnIn QuestName="Spare Parts" QuestId="9305" TurnInName="Technician Zhanaa" TurnInId="17071" X="-4184.55" Y="-13733.1" Z="74.1389" />
 		<!-- Q9303 Inoculation: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\Classic\[A - Quest] 1-58 [Kick]\[A - Quest] 1-12 [Kick]\[A - Quest] Draenei 1-5 [Kick].xml -->
-		<If Condition="((HasQuest(9303)) &amp;&amp; (!IsQuestCompleted(9303)))">
-			<CustomBehavior File="UseItemOn" QuestId="9303" MobId="16518" ItemId="22962" NumOfTimes="100" WaitTime="5000" Range="8" CollectionDistance="1000" X="-4412.28" Y="-13715.37" Z="52.34776" />
-		</If>
+		<While Condition="((HasQuest(9303)) &amp;&amp; (!IsQuestCompleted(9303)))">
+			<CustomBehavior File="UseItemOn" QuestId="9303" MobId="16518" ItemId="22962" NumOfTimes="6" WaitTime="5000" Range="8" CollectionDistance="1000" X="-4412.28" Y="-13715.37" Z="52.34776" />
+		</While>
 
 		<TurnIn QuestName="Inoculation" QuestId="9303" TurnInName="Vindicator Aldar" TurnInId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
 		<PickUp QuestName="The Missing Scout" QuestId="9309" GiverName="Vindicator Aldar" GiverId="16535" X="-4195.09" Y="-13735.8" Z="73.8058" />
