@@ -1,0 +1,419 @@
+<HBProfile>
+	<Name>Auto-Loader</Name>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>81</MaxLevel>
+	<QuestOrder>
+		<!-- Entry point for the pack. It only picks where to start: every zone profile of Profile v3 already chains to the next one with LoadProfile, so this file is read once and then hands over to that chain. -->
+		<!-- Checkpoint block: the settings line used by 198 of the pack's profiles. -->
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="Message" Text="Auto-Loader: choosing the entry profile" LogColor="CornflowerBlue" />
+		<If Condition="Me.IsAlliance">
+			<If Condition="(Me.Class == WoWClass.DeathKnight) &amp;&amp; (Me.Level &lt; 58)">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Starter Guides (1-12) &amp; Death Knight (55-58)_Death Knight Starter (55-58)" />
+			</If>
+			<If Condition="Me.Level &lt;= 11">
+				<If Condition="Me.Race == WoWRace.Draenei">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Starter Guides (1-11)_Draenei Starter (1-11)" />
+				</If>
+				<If Condition="(Me.Race == WoWRace.Dwarf) || (Me.Race == WoWRace.Gnome)">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Starter Guides (1-11)_Dwarf &amp; Gnome Starter (1-11)" />
+				</If>
+				<If Condition="Me.Race == WoWRace.Human">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Starter Guides (1-11)_Human Starter (1-11)" />
+				</If>
+				<If Condition="Me.Race == WoWRace.NightElf">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Starter Guides (1-11)_Night Elf Starter (1-11)" />
+				</If>
+			</If>
+			<If Condition="Me.Level &lt;= 14">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Darkshore (11-14)" />
+			</If>
+			<If Condition="Me.Level &lt;= 20">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Bloodmyst Isle (14-20)" />
+			</If>
+			<If Condition="Me.Level &lt;= 22">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Darkshore (20-22)" />
+			</If>
+			<If Condition="Me.Level &lt;= 24">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Ashenvale (22-24)" />
+			</If>
+			<If Condition="Me.Level &lt;= 25">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Wetlands (24-25)" />
+			</If>
+			<If Condition="Me.Level &lt;= 25">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Redridge Mountains (25-25)" />
+			</If>
+			<If Condition="Me.Level &lt;= 27">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Duskwood (25-27)" />
+			</If>
+			<If Condition="Me.Level &lt;= 28">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Redridge Mountains (27-28)" />
+			</If>
+			<If Condition="Me.Level &lt;= 30">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Wetlands (28-30)" />
+			</If>
+			<If Condition="Me.Level &lt;= 31">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Duskwood (30-31)" />
+			</If>
+			<If Condition="Me.Level &lt;= 32">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Stranglethorn Vale (31-32)" />
+			</If>
+			<If Condition="Me.Level &lt;= 33">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Hillsbrad Foothills (32-33)" />
+			</If>
+			<If Condition="Me.Level &lt;= 33">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Arathi Highlands (33-33)" />
+			</If>
+			<If Condition="Me.Level &lt;= 33">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Dustwallow Marsh (33-33)" />
+			</If>
+			<If Condition="Me.Level &lt;= 34">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Thousand Needles (33-34)" />
+			</If>
+			<If Condition="Me.Level &lt;= 34">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Dustwallow Marsh (34-34)" />
+			</If>
+			<If Condition="Me.Level &lt;= 35">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Stranglethorn Vale (34-35)" />
+			</If>
+			<If Condition="Me.Level &lt;= 37">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Desolace (35-37)" />
+			</If>
+			<If Condition="Me.Level &lt;= 38">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Stranglethorn Vale (37-38)" />
+			</If>
+			<If Condition="Me.Level &lt;= 39">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Swamp of Sorrows (38-39)" />
+			</If>
+			<If Condition="Me.Level &lt;= 39">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Alterac Mountains (39-39)" />
+			</If>
+			<If Condition="Me.Level &lt;= 41">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Arathi Highlands (39-41)" />
+			</If>
+			<If Condition="Me.Level &lt;= 42">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Dustwallow Marsh (41-42)" />
+			</If>
+			<If Condition="Me.Level &lt;= 43">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Badlands (42-43)" />
+			</If>
+			<If Condition="Me.Level &lt;= 44">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Stranglethorn Vale (43-44)" />
+			</If>
+			<If Condition="Me.Level &lt;= 44">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Tanaris (44-44)" />
+			</If>
+			<If Condition="Me.Level &lt;= 45">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Dustwallow Marsh (44-45)" />
+			</If>
+			<If Condition="Me.Level &lt;= 46">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Stranglethorn Vale (45-46)" />
+			</If>
+			<If Condition="Me.Level &lt;= 46">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Swamp of Sorrows (46-46)" />
+			</If>
+			<If Condition="Me.Level &lt;= 47">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Feralas (46-47)" />
+			</If>
+			<If Condition="Me.Level &lt;= 49">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Tanaris (47-49)" />
+			</If>
+			<If Condition="Me.Level &lt;= 50">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Hinterlands (49-50)" />
+			</If>
+			<If Condition="Me.Level &lt;= 51">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Searing Gorge (50-51)" />
+			</If>
+			<If Condition="Me.Level &lt;= 52">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Un'Goro Crater (51-52)" />
+			</If>
+			<If Condition="Me.Level &lt;= 52">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Western Plaguelands (52-52)" />
+			</If>
+			<If Condition="Me.Level &lt;= 53">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Felwood (52-53)" />
+			</If>
+			<If Condition="Me.Level &lt;= 53">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Winterspring (53-53)" />
+			</If>
+			<If Condition="Me.Level &lt;= 54">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Burning Steppes (53-54)" />
+			</If>
+			<If Condition="Me.Level &lt;= 55">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Un'Goro Crater (54-55)" />
+			</If>
+			<If Condition="Me.Level &lt;= 55">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Winterspring (55-55)" />
+			</If>
+			<If Condition="Me.Level &lt;= 56">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Felwood (55-56)" />
+			</If>
+			<If Condition="Me.Level &lt;= 56">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Winterspring (56-56)" />
+			</If>
+			<If Condition="Me.Level &lt;= 57">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Western Plaguelands (56-57)" />
+			</If>
+			<If Condition="Me.Level &lt;= 58">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Eastern Plaguelands (57-58)" />
+			</If>
+			<If Condition="Me.Level &lt;= 59">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Western Plaguelands (58-59)" />
+			</If>
+			<If Condition="Me.Level &lt;= 60">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Silithus (59-60)" />
+			</If>
+			<If Condition="Me.Level &lt;= 62">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Hellfire Peninsula (58-62)" />
+			</If>
+			<If Condition="Me.Level &lt;= 63">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Zangarmarsh (62-63)" />
+			</If>
+			<If Condition="Me.Level &lt;= 65">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Terokkar Forest (63-65)" />
+			</If>
+			<If Condition="Me.Level &lt;= 67">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Nagrand (65-67)" />
+			</If>
+			<If Condition="Me.Level &lt;= 68">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Blade's Edge Mountains (67-68)" />
+			</If>
+			<If Condition="Me.Level &lt;= 70">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Netherstorm (68-70)" />
+			</If>
+			<If Condition="Me.Level &lt;= 70">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\The Burning Crusade (58-70)_Shadowmoon Valley (70-70)" />
+			</If>
+			<If Condition="Me.Level &lt;= 71">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Howling Fjord (69-71)" />
+			</If>
+			<If Condition="Me.Level &lt;= 72">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Borean Tundra (70-72)" />
+			</If>
+			<If Condition="Me.Level &lt;= 74">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Dragonblight (72-74)" />
+			</If>
+			<If Condition="Me.Level &lt;= 75">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Grizzly Hills (74-75)" />
+			</If>
+			<If Condition="Me.Level &lt;= 77">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Zul'Drak (75-77)" />
+			</If>
+			<If Condition="Me.Level &lt;= 78">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Sholazar Basin (77-78)" />
+			</If>
+			<If Condition="Me.Level &lt;= 79">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_The Storm Peaks (78-79)" />
+			</If>
+			<If Condition="Me.Level &lt;= 80">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Alliance\Northrend (69-80)_Icecrown (79-80)" />
+			</If>
+		</If>
+		<If Condition="Me.IsHorde">
+			<If Condition="(Me.Class == WoWClass.DeathKnight) &amp;&amp; (Me.Level &lt; 58)">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Starter Guides (1-12) &amp; Death Knight (55-58)_Death Knight Starter (55-58)" />
+			</If>
+			<If Condition="Me.Level &lt;= 12">
+				<If Condition="(Me.Race == WoWRace.Orc) || (Me.Race == WoWRace.Troll)">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Starter Guides (1-12)_Durotar (1-12) [Orc &amp; Troll Starter]" />
+				</If>
+				<If Condition="Me.Race == WoWRace.BloodElf">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Starter Guides (1-12)_Eversong Woods (1-13) [Blood Elf Starter]" />
+				</If>
+				<If Condition="Me.Race == WoWRace.Tauren">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Starter Guides (1-12)_Mulgore (1-12) [Tauren Starter]" />
+				</If>
+				<If Condition="Me.Race == WoWRace.Undead">
+					<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Starter Guides (1-12)_Tirisfal Glades (1-12) [Undead Starter]" />
+				</If>
+			</If>
+			<If Condition="Me.Level &lt;= 15">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_The Barrens (12-15)" />
+			</If>
+			<If Condition="Me.Level &lt;= 16">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stonetalon Mountains (15-16)" />
+			</If>
+			<If Condition="Me.Level &lt;= 20">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_The Barrens (16-20)" />
+			</If>
+			<If Condition="Me.Level &lt;= 21">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stonetalon Mountains (20-21)" />
+			</If>
+			<If Condition="Me.Level &lt;= 21">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Ashenvale (21-21)" />
+			</If>
+			<If Condition="Me.Level &lt;= 23">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_The Barrens (21-23)" />
+			</If>
+			<If Condition="Me.Level &lt;= 24">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stonetalon Mountains (23-24)" />
+			</If>
+			<If Condition="Me.Level &lt;= 25">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_The Barrens (24-25)" />
+			</If>
+			<If Condition="Me.Level &lt;= 25">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Thousand Needles (24-25)" />
+			</If>
+			<If Condition="Me.Level &lt;= 26">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Ashenvale (25-26)" />
+			</If>
+			<If Condition="Me.Level &lt;= 27">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stonetalon Mountains (26-27)" />
+			</If>
+			<If Condition="Me.Level &lt;= 29">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Thousand Needles (27-29)" />
+			</If>
+			<If Condition="Me.Level &lt;= 30">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Hillsbrad Foothills (29-30)" />
+			</If>
+			<If Condition="Me.Level &lt;= 30">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Arathi Highlands (30-30)" />
+			</If>
+			<If Condition="Me.Level &lt;= 31">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stranglethorn Vale (30-31)" />
+			</If>
+			<If Condition="Me.Level &lt;= 32">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Thousand Needles (31-32)" />
+			</If>
+			<If Condition="Me.Level &lt;= 34">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Desolace (32-34)" />
+			</If>
+			<If Condition="Me.Level &lt;= 35">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Dustwallow Marsh (34-35)" />
+			</If>
+			<If Condition="Me.Level &lt;= 36">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stranglethorn Vale (35-36)" />
+			</If>
+			<If Condition="Me.Level &lt;= 37">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Arathi Highlands (36-37)" />
+			</If>
+			<If Condition="Me.Level &lt;= 38">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Alterac Mountains (37-38)" />
+			</If>
+			<If Condition="Me.Level &lt;= 38">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Thousand Needles (38-38)" />
+			</If>
+			<If Condition="Me.Level &lt;= 39">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Dustwallow Marsh (38-39)" />
+			</If>
+			<If Condition="Me.Level &lt;= 39">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stranglethorn Vale (39-39)" />
+			</If>
+			<If Condition="Me.Level &lt;= 40">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Swamp of Sorrows (39-40)" />
+			</If>
+			<If Condition="Me.Level &lt;= 42">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Badlands (41-42)" />
+			</If>
+			<If Condition="Me.Level &lt;= 43">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stranglethorn Vale (42-43)" />
+			</If>
+			<If Condition="Me.Level &lt;= 44">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Dustwallow Marsh (43-44)" />
+			</If>
+			<If Condition="Me.Level &lt;= 45">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Tanaris (44-45)" />
+			</If>
+			<If Condition="Me.Level &lt;= 46">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Feralas (45-46)" />
+			</If>
+			<If Condition="Me.Level &lt;= 47">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Azshara (46-47)" />
+			</If>
+			<If Condition="Me.Level &lt;= 47">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Stranglethorn Vale (47-47)" />
+			</If>
+			<If Condition="Me.Level &lt;= 48">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Searing Gorge (47-48)" />
+			</If>
+			<If Condition="Me.Level &lt;= 48">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Swamp of Sorrows (48-48)" />
+			</If>
+			<If Condition="Me.Level &lt;= 49">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Dustwallow Marsh (48-49)" />
+			</If>
+			<If Condition="Me.Level &lt;= 49">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Feralas (49-49)" />
+			</If>
+			<If Condition="Me.Level &lt;= 50">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Tanaris (49-50)" />
+			</If>
+			<If Condition="Me.Level &lt;= 50">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Azshara (50-50)" />
+			</If>
+			<If Condition="Me.Level &lt;= 51">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_The Hinterlands (50-51)" />
+			</If>
+			<If Condition="Me.Level &lt;= 52">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Blasted Lands (51-52)" />
+			</If>
+			<If Condition="Me.Level &lt;= 54">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Un'Goro Crater (52-54)" />
+			</If>
+			<If Condition="Me.Level &lt;= 54">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Burning Steppes (54-54)" />
+			</If>
+			<If Condition="Me.Level &lt;= 55">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Azshara (54-55)" />
+			</If>
+			<If Condition="Me.Level &lt;= 55">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Felwood (55-55)" />
+			</If>
+			<If Condition="Me.Level &lt;= 56">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Winterspring (55-56)" />
+			</If>
+			<If Condition="Me.Level &lt;= 56">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Felwood (56-56)" />
+			</If>
+			<If Condition="Me.Level &lt;= 58">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Classic (12-58)_Western Plaguelands (56-58)" />
+			</If>
+			<If Condition="Me.Level &lt;= 62">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Hellfire Peninsula (58-62)" />
+			</If>
+			<If Condition="Me.Level &lt;= 63">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Zangarmarsh (62-63)" />
+			</If>
+			<If Condition="Me.Level &lt;= 65">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Terokkar Forest (63-65)" />
+			</If>
+			<If Condition="Me.Level &lt;= 67">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Nagrand (65-67)" />
+			</If>
+			<If Condition="Me.Level &lt;= 68">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Blade's Edge Mountains (67-68)" />
+			</If>
+			<If Condition="Me.Level &lt;= 70">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Netherstorm (68-70)" />
+			</If>
+			<If Condition="Me.Level &lt;= 70">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\The Burning Crusade (58-70)_Shadowmoon Valley (70-70)" />
+			</If>
+			<If Condition="Me.Level &lt;= 71">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Howling Fjord (69-71)" />
+			</If>
+			<If Condition="Me.Level &lt;= 72">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Borean Tundra (70-72)" />
+			</If>
+			<If Condition="Me.Level &lt;= 74">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Dragonblight (72-74)" />
+			</If>
+			<If Condition="Me.Level &lt;= 75">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Grizzly Hills (74-75)" />
+			</If>
+			<If Condition="Me.Level &lt;= 77">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Zul'Drak (75-77)" />
+			</If>
+			<If Condition="Me.Level &lt;= 78">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Sholazar Basin (77-78)" />
+			</If>
+			<If Condition="Me.Level &lt;= 79">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_The Storm Peaks (78-79)" />
+			</If>
+			<If Condition="Me.Level &lt;= 80">
+				<CustomBehavior File="LoadProfile" ProfileName="Profile v3\Horde\Northrend (69-80)_Icecrown (79-80)" />
+			</If>
+		</If>
+		<CustomBehavior File="UserDialog" AllowBotStop="True" StopOnContinue="True" SoundCue="Exclamation" SoundCueInterval="1" Text="Auto-Loader: no profile matches this character. The pack covers level 1 to 80." />
+	</QuestOrder>
+</HBProfile>
