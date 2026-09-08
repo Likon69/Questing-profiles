@@ -700,13 +700,11 @@
 		<PickUp QuestName="Word from Azure Watch" QuestId="9314" GiverName="Aeun" GiverId="16554" X="-4260.66" Y="-13125.4" Z="37.1331" />
 		<PickUp QuestName="Red Snapper - Very Tasty!" QuestId="9452" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		<If Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))" >
-		<CustomBehavior File="UserSettings" LootMobs="True" />
 		<While Condition="((HasQuest(9452)) &amp;&amp; (!IsQuestCompleted(9452)))" >
 			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-4192.753" Y="-13018.9" Z="-2.431108" />
 			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-4030.711" Y="-12994.22" Z="-2.277808" />
 			<CustomBehavior File="UseItemOn" QuestId="9452" MobId="181616" MobType="Gameobject" ItemId="23654" NumOfTimes="1" WaitTime="500" Range="5" CollectionDistance="500" X="-3985.261" Y="-13025.76" Z="-2.515064" />
 		</While>
-		<CustomBehavior File="UserSettings" LootMobs="False" />
 		</If>
 		<TurnIn QuestName="Red Snapper - Very Tasty!" QuestId="9452" TurnInName="Diktynna" TurnInId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
 		<PickUp QuestName="Find Acteon!" QuestId="9453" GiverName="Diktynna" GiverId="17101" X="-4266.38" Y="-12985.1" Z="2.2903" />
