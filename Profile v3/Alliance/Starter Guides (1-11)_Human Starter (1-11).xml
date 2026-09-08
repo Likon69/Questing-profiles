@@ -158,14 +158,10 @@
 				<Mob Name="Kobold Geomancer" Id="476" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-9744.65" Y="117.42" Z="22.1" />
-				<Hotspot X="-9783" Y="95.17" Z="21.42" />
-				<Hotspot X="-9776.4" Y="147.94" Z="24.43" />
-				<Hotspot X="-9758.04" Y="191.69" Z="51.03" />
-				<Hotspot X="-9811.55" Y="115.23" Z="15.65" />
-				<Hotspot X="-9814.74" Y="174.7" Z="21.77" />
-				<Hotspot X="-9782.81" Y="240.05" Z="44.13" />
-				<Hotspot X="-9770.83" Y="279.17" Z="43.12" />
+				<Hotspot X="-9796.332" Y="158.5646" Z="25.42431" />
+				<Hotspot X="-9796.447" Y="126.2667" Z="24.82968" />
+				<Hotspot X="-9749.913" Y="133.3687" Z="19.31796" />
+				<Hotspot X="-9830.828" Y="182.1673" Z="22.35401" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -178,14 +174,10 @@
 				<Mob Name="Kobold Geomancer" Id="476" />
 			</CollectFrom>
 			<Hotspots>
-				<Hotspot X="-9744.65" Y="117.42" Z="22.1" />
-				<Hotspot X="-9783" Y="95.17" Z="21.42" />
-				<Hotspot X="-9776.4" Y="147.94" Z="24.43" />
-				<Hotspot X="-9758.04" Y="191.69" Z="51.03" />
-				<Hotspot X="-9811.55" Y="115.23" Z="15.65" />
-				<Hotspot X="-9782.81" Y="240.05" Z="44.13" />
-				<Hotspot X="-9814.74" Y="174.7" Z="21.77" />
-				<Hotspot X="-9770.83" Y="279.17" Z="43.12" />
+				<Hotspot X="-9796.332" Y="158.5646" Z="25.42431" />
+				<Hotspot X="-9796.447" Y="126.2667" Z="24.82968" />
+				<Hotspot X="-9749.913" Y="133.3687" Z="19.31796" />
+				<Hotspot X="-9830.828" Y="182.1673" Z="22.35401" />
 			</Hotspots>
 		</Objective>
 	</Quest>
@@ -449,13 +441,13 @@
 		<PickUp QuestName="Note to William" QuestId="107" GiverName="Gramma Stonefield" GiverId="248" X="-9880.63" Y="322.619" Z="37.8244" />
 		<TurnIn QuestName="Back to Billy" QuestId="84" TurnInName="Billy Maclure" TurnInId="247" X="-9923.68" Y="38.3872" Z="32.5951" />
 		<PickUp QuestName="Goldtooth" QuestId="87" GiverName="Billy Maclure" GiverId="247" X="-9923.68" Y="38.3872" Z="32.5951" />
-		<Objective QuestName="Goldtooth" QuestId="87" Type="CollectItem" ItemId="981" CollectCount="1" />
 		<If Condition="(HasQuest(62))">
 			<RunTo X="-9842.022" Y="129.2825" Z="4.8419213" QuestId="62" />
 		</If>
 
 		<Objective QuestName="Gold Dust Exchange" QuestId="47" Type="CollectItem" ItemId="773" CollectCount="10" />
 		<Objective QuestName="Kobold Candles" QuestId="60" Type="CollectItem" ItemId="772" CollectCount="8" />
+		<Objective QuestName="Goldtooth" QuestId="87" Type="CollectItem" ItemId="981" CollectCount="1" />
 		<TurnIn QuestName="Goldtooth" QuestId="87" TurnInName="&quot;Auntie&quot; Bernice Stonefield" TurnInId="246" X="-9889.68" Y="338.467" Z="36.6486" />
 		<TurnIn QuestName="Gold Dust Exchange" QuestId="47" TurnInName="Remy &quot;Two Times&quot;" TurnInId="241" X="-9496.32" Y="72.8264" Z="56.598" />
 		<PickUp QuestName="A Fishy Peril" QuestId="40" GiverName="Remy &quot;Two Times&quot;" GiverId="241" X="-9496.32" Y="72.8264" Z="56.598" />
