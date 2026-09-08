@@ -292,7 +292,7 @@
 		<PickUp QuestName="The Mark of Quality" QuestId="2822" GiverName="Jangdor Swiftstrider" GiverId="7854" X="-4354.65" Y="268.764" Z="26.4007" />
 		<PickUp QuestName="A Strange Request" QuestId="3121" GiverName="Witch Doctor Uzer'i" GiverId="8115" X="-4375.68" Y="269.717" Z="25.4947" />
 		<If Condition="!HasItem(9370)">
-			<CustomBehavior File="InteractWith" MobId="143980" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-3955.37" Y="-156.741" Z="140.736" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="143980" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-3955.37" Y="-156.741" Z="140.736" />
 		</If>
 
 		<If Condition="HasItem(9370)">

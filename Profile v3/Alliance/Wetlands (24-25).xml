@@ -249,7 +249,7 @@
 		<PickUp QuestName="Fire Taboo" QuestId="277" GiverName="Rethiel the Greenwarden" GiverId="1244" X="-3261.47" Y="-2720.74" Z="9.5371" />
 		<Objective QuestName="Fire Taboo" QuestId="277" Type="CollectItem" ItemId="2611" CollectCount="9" />
 		<If Condition="!HasItem(4433)">
-			<CustomBehavior File="InteractWith" MobId="2656" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-2362.47" Y="-2461.07" Z="-20.8913" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="2656" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-2362.47" Y="-2461.07" Z="-20.8913" />
 		</If>
 
 		<TurnIn QuestName="Digging Through the Ooze" QuestId="470" TurnInName="Sida" TurnInId="2111" X="-3746.29" Y="-877.423" Z="10.1325" />

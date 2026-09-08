@@ -1259,7 +1259,7 @@
 		<PickUp QuestName="Siphoning the Spirits" QuestId="12799" GiverName="Captain Arnath" GiverId="28045" X="5929.84" Y="-2378.66" Z="293.924" />
 		<PickUp QuestName="Lab Work" QuestId="12557" GiverName="Alchemist Finklestein" GiverId="28205" X="5934.02" Y="-2348.9" Z="293.924" />
 		<If Condition="((HasQuest(12557)) &amp;&amp; (!IsQuestCompleted(12557)))">
-			<CustomBehavior File="InteractWith" QuestId="12557" MobId="190459" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="5950.66" Y="-2345.98" Z="296.226" />
+			<CustomBehavior File="InteractWith" Loot="True" QuestId="12557" MobId="190459" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="5950.66" Y="-2345.98" Z="296.226" />
 		</If>
 
 		<TurnIn QuestName="Lab Work" QuestId="12557" TurnInName="Alchemist Finklestein" TurnInId="28205" X="5934.02" Y="-2348.9" Z="293.924" />

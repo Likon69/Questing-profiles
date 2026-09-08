@@ -1314,7 +1314,7 @@
 		<!-- Q12152 Jin'arrak's End: objective nodes transplanted from HonorBuddy HB434 reference 1-85 Questing Profile Pack\LK\[Fly][A - Quest] LK 68-80 [Kick] R.xml -->
 		<If Condition="(!IsQuestCompleted(12138))">
 			<If Condition="((HasQuest(12152)) &amp;&amp; (!IsQuestCompleted(12152)))">
-				<CustomBehavior File="InteractWith" QuestId="12152" MobId="188530" ObjectType="Gameobject" X="4825.526" Y="-4848.297" Z="25.47479" />
+				<CustomBehavior File="InteractWith" Loot="True" QuestId="12152" MobId="188530" ObjectType="Gameobject" X="4825.526" Y="-4848.297" Z="25.47479" />
 			</If>
 		</If>
 

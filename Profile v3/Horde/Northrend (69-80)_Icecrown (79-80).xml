@@ -1559,7 +1559,7 @@
 		<PickUp QuestName="Intelligence Gathering" QuestId="12838" GiverName="Aurochs Grimbane" GiverId="29456" X="7435.78" Y="4200.42" Z="314.32" />
 		<Objective QuestName="Intelligence Gathering" QuestId="12838" Type="CollectItem" ItemId="40640" CollectCount="5" />
 		<If Condition="!HasItem(40666)">
-			<CustomBehavior File="InteractWith" MobId="191543" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="7584.19" Y="4662.59" Z="0.2415" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="191543" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="7584.19" Y="4662.59" Z="0.2415" />
 		</If>
 
 		<If Condition="HasItem(40666)">

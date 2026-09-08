@@ -95,7 +95,7 @@
 		<TurnIn QuestName="Back to Booty Bay" QuestId="1118" TurnInName="Crank Fizzlebub" TurnInId="2498" X="-14453.4" Y="490.262" Z="15.2131" />
 		<TurnIn QuestName="Deliver to MacKinley" QuestId="2874" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<If Condition="!HasItem(4098)">
-			<CustomBehavior File="InteractWith" MobId="2560" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14616.5" Y="-88.2083" Z="0.5871" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="2560" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14616.5" Y="-88.2083" Z="0.5871" />
 		</If>
 
 		<While Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))">
@@ -111,7 +111,7 @@
 		<Objective QuestName="Message in a Bottle" QuestId="630" Type="CollectItem" ItemId="4103" CollectCount="1" />
 		<TurnIn QuestName="Message in a Bottle" QuestId="630" TurnInName="Princess Poobah" TurnInId="2634" X="-14596.7" Y="-237.967" Z="24.8758" />
 		<If Condition="!HasItem(4056)">
-			<CustomBehavior File="InteractWith" MobId="2554" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14928.2" Y="74.125" Z="7.5218" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="2554" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-14928.2" Y="74.125" Z="7.5218" />
 		</If>
 
 		<While Condition="((HasQuest(608)) &amp;&amp; (!IsQuestCompleted(608)))">

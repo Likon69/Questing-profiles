@@ -538,7 +538,7 @@
 		</If>
 
 		<If Condition="!HasItem(4926)">
-			<CustomBehavior File="InteractWith" MobId="3238" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-232.192" Y="-3021.31" Z="91.6885" />
+			<CustomBehavior File="InteractWith" Loot="True" MobId="3238" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-232.192" Y="-3021.31" Z="91.6885" />
 		</If>
 
 		<If Condition="HasItem(4926)">

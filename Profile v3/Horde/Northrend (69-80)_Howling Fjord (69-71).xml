@@ -1435,7 +1435,7 @@
 		<Objective QuestName="The Dead Rise!" QuestId="11504" Type="CollectItem" ItemId="34223" CollectCount="1" />
 		<Objective QuestName="The Dead Rise!" QuestId="11504" Type="CollectItem" ItemId="34224" CollectCount="1" />
 		<If Condition="((HasQuest(11504)) &amp;&amp; (!IsQuestCompleted(11504)))">
-			<CustomBehavior File="InteractWith" QuestId="11504" MobId="187027" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="-110.109" Y="-5145.22" Z="324.104" />
+			<CustomBehavior File="InteractWith" Loot="True" QuestId="11504" MobId="187027" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="-110.109" Y="-5145.22" Z="324.104" />
 		</If>
 
 		<Objective QuestName="The Dead Rise!" QuestId="11504" Type="CollectItem" ItemId="34225" CollectCount="1" />

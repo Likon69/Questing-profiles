@@ -439,7 +439,7 @@
 
 		<PickUp QuestName="The Witch's Bane" QuestId="11181" GiverName="Mordant Grimsby" GiverId="23843" X="-2948.36" Y="-3893.17" Z="35.0324" />
 		<If Condition="((HasQuest(11181)) &amp;&amp; (!IsQuestCompleted(11181)))">
-			<CustomBehavior File="InteractWith" QuestId="11181" MobId="186423" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="-3316.37" Y="-4067.83" Z="23.4565" />
+			<CustomBehavior File="InteractWith" Loot="True" QuestId="11181" MobId="186423" NumOfTimes="1" CollectionDistance="1000" WaitTime="3000" ObjectType="GameObject" X="-3316.37" Y="-4067.83" Z="23.4565" />
 		</If>
 
 		<Objective QuestName="The Witch's Bane" QuestId="11181" Type="CollectItem" ItemId="33112" CollectCount="9" />
