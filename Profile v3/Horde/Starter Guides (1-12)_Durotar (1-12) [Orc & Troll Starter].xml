@@ -26,6 +26,8 @@
 		<Vendor Name="Rwag" Entry="3155" Type="Train" TrainClass="Rogue" X="-590.4197" Y="-4146.493" Z="41.259594" />
 		<Vendor Name="Frang" Entry="3153" Type="Train" TrainClass="Warrior" X="-640.1024" Y="-4229.821" Z="38.13398" />
 		<Vendor Name="Nartok" Entry="3156" Type="Train" TrainClass="Warlock" X="-606.874" Y="-4111.87" Z="43.028" />
+		<Vendor Name="Thotar" Entry="3171" Type="Train" TrainClass="Hunter" X="275.341" Y="-4704" Z="11.7122" />
+		<Vendor Name="Tai'jin" Entry="3706" Type="Train" TrainClass="Priest" X="294.884" Y="-4831.49" Z="10.6136" />
 		<!--Sen'jin Village Trainers-->
 		<Vendor Name="Grimtak" Entry="3881" Type="Food" X="305.722" Y="-4665.87" Z="16.527" />
 		<Vendor Name="Wuark" Entry="3167" Type="Repair" X="358.128" Y="-4706.73" Z="14.4772" />
@@ -874,7 +876,7 @@
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3129" KillCount="8" />
 		<Objective QuestName="Vanquish the Betrayers" QuestId="784" Type="KillMob" MobId="3192" KillCount="1" />
 		<If Condition="!HasItem(4881)">
-			<CustomBehavior File="InteractWith" MobId="3239" ObjectType="GameObject" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-223.825" Y="-5095.61" Z="49.3529" />
+			<CustomBehavior File="InteractWith" MobId="3239" ObjectType="GameObject" Loot="True" NumOfTimes="1" WaitTime="3000" CollectionDistance="1000" X="-223.825" Y="-5095.61" Z="49.3529" />
 		</If>
 
 		<If Condition="HasItem(4881)">
@@ -883,8 +885,14 @@
 
 		<TurnIn QuestName="Vanquish the Betrayers" QuestId="784" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		<PickUp QuestName="From The Wreckage...." QuestId="825" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
-		<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
-		<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		<If Condition="(HasQuest(830))">
+			<TurnIn QuestName="The Admiral's Orders" QuestId="830" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		</If>
+
+		<If Condition="(IsQuestCompleted(830))">
+			<PickUp QuestName="The Admiral's Orders" QuestId="831" GiverName="Gar'Thok" GiverId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
+		</If>
+
 		<Objective QuestName="From The Wreckage...." QuestId="825" Type="CollectItem" ItemId="4863" CollectCount="3" />
 		<If Condition="Me.Level &lt; 8">
 			<SetGrindArea>
@@ -1056,7 +1064,9 @@
 
 		<TurnIn QuestName="Securing the Lines" QuestId="835" TurnInName="Rezlak" TurnInId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
 		<PickUp QuestName="Need for a Cure" QuestId="812" GiverName="Rhinag" GiverId="3190" X="1279.03" Y="-4188.68" Z="28.0245" />
-		<TurnIn QuestName="The Admiral's Orders" QuestId="831" TurnInName="Vol'jin" TurnInId="10540" X="1934.06" Y="-4162.26" Z="41.2219" />
+		<If Condition="(HasQuest(831))">
+			<TurnIn QuestName="The Admiral's Orders" QuestId="831" TurnInName="Vol'jin" TurnInId="10540" X="1934.06" Y="-4162.26" Z="41.2219" />
+		</If>
 		<PickUp QuestName="Hidden Enemies" QuestId="5726" GiverName="Thrall" GiverId="4949" X="1920.01" Y="-4123.95" Z="43.6002" />
 		<PickUp QuestName="Finding the Antidote" QuestId="813" GiverName="Kor'ghan" GiverId="3189" X="1772.72" Y="-4343.18" Z="-7.5888" />
 		<Objective QuestName="Finding the Antidote" QuestId="813" Type="CollectItem" ItemId="4886" CollectCount="4" />
