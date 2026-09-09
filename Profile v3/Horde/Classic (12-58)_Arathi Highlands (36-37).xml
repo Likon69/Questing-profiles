@@ -160,12 +160,12 @@
 	</Quest>
 
 	<QuestOrder>
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<!-- Travel to Classic (12-58)_Arathi Highlands (36-37) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(1164))">
 			<If Condition="Me.MapId == 1">
-				<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
-				<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+				<RunTo X="1325.077" Y="-4651.817" Z="53.7962" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="1325.077" WaitAtY="-4651.817" WaitAtZ="53.7962" TransportStartX="1318.1" TransportStartY="-4658" TransportStartZ="71.9" StandOnX="1318.1" StandOnY="-4658" StandOnZ="53.8" TransportEndX="2062.4" TransportEndY="293" TransportEndZ="115" GetOffX="2066.773" GetOffY="288.873" GetOffZ="97.0316" />
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 			<If Condition="Me.MapId == 530">

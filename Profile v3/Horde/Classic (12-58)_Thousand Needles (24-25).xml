@@ -115,7 +115,7 @@
 	</Quest>
 
 	<QuestOrder>
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<!-- Travel to Classic (12-58)_Thousand Needles (24-25) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(4542))">
 			<If Condition="Me.MapId == 0">

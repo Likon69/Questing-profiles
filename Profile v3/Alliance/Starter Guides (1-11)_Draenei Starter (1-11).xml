@@ -483,7 +483,7 @@
 	<QuestOrder>
 
 
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<!-- Travel to Starter Guides (1-11)_Draenei Starter (1-11) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(9279))">
 			<If Condition="Me.MapId == 0">

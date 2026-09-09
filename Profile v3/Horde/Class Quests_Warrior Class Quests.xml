@@ -186,7 +186,7 @@
 	</Quest>
 
 	<QuestOrder>
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<!-- Travel to Class Quests_Warrior Class Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 1) &amp;&amp; (!IsQuestCompleted(1505))">
 			<If Condition="Me.MapId == 0">
@@ -235,8 +235,8 @@
 		<If Condition="(Me.Class == WoWClass.Warrior) &amp;&amp; (Me.Race == WoWRace.Undead)">
 			<If Condition="Me.MapId != 0">
 				<If Condition="Me.MapId == 1">
-					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
-					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<RunTo X="1325.077" Y="-4651.817" Z="53.7962" />
+					<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="1325.077" WaitAtY="-4651.817" WaitAtZ="53.7962" TransportStartX="1318.1" TransportStartY="-4658" TransportStartZ="71.9" StandOnX="1318.1" StandOnY="-4658" StandOnZ="53.8" TransportEndX="2062.4" TransportEndY="293" TransportEndZ="115" GetOffX="2066.773" GetOffY="288.873" GetOffZ="97.0316" />
 					<CustomBehavior File="WaitTimer" WaitTime="5000" />
 				</If>
 			</If>
@@ -273,8 +273,8 @@
 			<PickUp QuestName="The Windwatcher" QuestId="1791" GiverName="Klannoc Macleod" GiverId="6236" X="-1709.14" Y="-4330.07" Z="4.3339" />
 			<If Condition="Me.MapId != 0">
 				<If Condition="Me.MapId == 1">
-					<RunTo X="1912.07" Y="-4151.78" Z="40.64" />
-					<CustomBehavior File="GoThruPortal" X="1912.07" Y="-4151.78" Z="40.64" Timeout="60000" />
+					<RunTo X="1325.077" Y="-4651.817" Z="53.7962" />
+					<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="1325.077" WaitAtY="-4651.817" WaitAtZ="53.7962" TransportStartX="1318.1" TransportStartY="-4658" TransportStartZ="71.9" StandOnX="1318.1" StandOnY="-4658" StandOnZ="53.8" TransportEndX="2062.4" TransportEndY="293" TransportEndZ="115" GetOffX="2066.773" GetOffY="288.873" GetOffZ="97.0316" />
 					<CustomBehavior File="WaitTimer" WaitTime="5000" />
 				</If>
 			</If>
@@ -298,8 +298,8 @@
 			<PickUp QuestName="A Troubled Spirit" QuestId="8417" GiverName="Sorek" GiverId="3354" X="1970.95" Y="-4808.17" Z="57.0749" />
 			<If Condition="Me.MapId != 0">
 				<If Condition="Me.MapId == 1">
-					<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
-					<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+					<RunTo X="1354" Y="-4642.6" Z="53.6" />
+					<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
 					<CustomBehavior File="WaitTimer" WaitTime="5000" />
 				</If>
 			</If>

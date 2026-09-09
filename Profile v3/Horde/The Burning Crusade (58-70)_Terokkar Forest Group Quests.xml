@@ -135,7 +135,7 @@
 	</Quest>
 
 	<QuestOrder>
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<!-- Travel to The Burning Crusade (58-70)_Terokkar Forest Group Quests from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 530) &amp;&amp; (!IsQuestCompleted(10052))">
 			<If Condition="Me.MapId == 0">
@@ -144,8 +144,8 @@
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 			<If Condition="Me.MapId == 1">
-				<RunTo X="1472.55" Y="-4215.7" Z="59.22" />
-				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
+				<RunTo X="1354" Y="-4642.6" Z="53.6" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 				<RunTo X="-11908.9" Y="-3209.1" Z="-14.79" />
 				<RunTo X="-11895.44" Y="-3206.936" Z="-14.64" />

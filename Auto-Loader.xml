@@ -5,7 +5,7 @@
 	<QuestOrder>
 		<!-- Entry point for the pack. It only picks where to start: every zone profile of Profile v3 already chains to the next one with LoadProfile, so this file is read once and then hands over to that chain. -->
 		<!-- Checkpoint block: the settings line used by 198 of the pack's profiles. -->
-		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="False" PullDistance="25" />
+		<CustomBehavior File="UserSettings" LootMobs="True" TrainNewSkills="True" LearnFlightPaths="True" UseFlightPaths="True" PullDistance="25" />
 		<CustomBehavior File="Message" Text="Auto-Loader: choosing the entry profile" LogColor="CornflowerBlue" />
 		<If Condition="Me.IsAlliance">
 			<If Condition="(Me.Class == WoWClass.DeathKnight) &amp;&amp; (Me.Level &lt; 58)">
