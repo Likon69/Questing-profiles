@@ -199,8 +199,8 @@
 		<!-- Travel to Classic (12-58)_Badlands (41-42) from other continents (transports: TaxiPathNode.dbc + transports table; portals: gameobject + spell_target_position) -->
 		<If Condition="(Me.MapId != 0) &amp;&amp; (!IsQuestCompleted(705))">
 			<If Condition="Me.MapId == 1">
-				<RunTo X="1354" Y="-4642.6" Z="53.6" />
-				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1361.61" WaitAtY="-4637.2334" WaitAtZ="53.862606" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1365.992" StandOnY="-4633.632" StandOnZ="54.10305" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12449.435" GetOffY="217.54703" GetOffZ="31.591944" />
+				<RunTo X="1325.077" Y="-4651.817" Z="53.7962" />
+				<CustomBehavior File="UseTransport" TransportId="164871" DestName="The Thundercaller" WaitAtX="1325.077" WaitAtY="-4651.817" WaitAtZ="53.7962" TransportStartX="1318.1" TransportStartY="-4658" TransportStartZ="71.9" StandOnX="1318.1" StandOnY="-4658" StandOnZ="53.8" TransportEndX="2062.4" TransportEndY="293" TransportEndZ="115" GetOffX="2066.773" GetOffY="288.873" GetOffZ="97.0316" />
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
 			<If Condition="Me.MapId == 530">
