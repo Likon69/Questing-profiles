@@ -589,7 +589,7 @@
 		<If Condition="Me.MapId != 1">
 			<If Condition="Me.MapId == 0">
 				<RunTo X="-12450.2" Y="219.2643" Z="31.6239" />
-				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12450.2" WaitAtY="219.2643" WaitAtZ="31.6239" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1354" GetOffY="-4642.6" GetOffZ="53.6" />
+				<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="-12449.435" WaitAtY="217.54703" WaitAtZ="31.591944" TransportStartX="-12464" TransportStartY="231.6" TransportStartZ="49.5" StandOnX="-12464" StandOnY="231.6" StandOnZ="31.3" TransportEndX="1360.9" TransportEndY="-4631.3" TransportEndZ="71.9" GetOffX="1361.61" GetOffY="-4637.2334" GetOffZ="53.862606" />
 				<CustomBehavior File="WaitTimer" WaitTime="2000" />
 			</If>
 		</If>

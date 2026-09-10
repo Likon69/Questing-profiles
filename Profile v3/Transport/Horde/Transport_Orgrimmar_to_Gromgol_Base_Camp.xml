@@ -20,7 +20,7 @@
 		<!-- Run to departure dock -->
 		<!-- Take transport -->
 		<RunTo X="1354" Y="-4642.6" Z="53.6" />
-		<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1354" WaitAtY="-4642.6" WaitAtZ="53.6" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1360.9" StandOnY="-4631.3" StandOnZ="53.6" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12450.2" GetOffY="219.2643" GetOffZ="31.6239" />
+		<CustomBehavior File="UseTransport" TransportId="175080" DestName="The Iron Eagle" WaitAtX="1361.61" WaitAtY="-4637.2334" WaitAtZ="53.862606" TransportStartX="1360.9" TransportStartY="-4631.3" TransportStartZ="71.9" StandOnX="1365.992" StandOnY="-4633.632" StandOnZ="54.10305" TransportEndX="-12464" TransportEndY="231.6" TransportEndZ="49.5" GetOffX="-12449.435" GetOffY="217.54703" GetOffZ="31.591944" />
 		<CustomBehavior File="WaitTimer" WaitTime="2000" />
 		<!-- Move away from dock -->
 	</QuestOrder>
