@@ -23,6 +23,23 @@
 
 	<Mailboxes />
 
+	<Quest Id="606" Name="Scaring Shaky">
+		<Objective Type="CollectItem" ItemId="3919" CollectCount="5">
+			<CollectFrom>
+				<Mob Name="Elder Mistvale Gorilla" Id="1557" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-14058.4" Y="232.91" Z="13.45" />
+				<Hotspot X="-14007.4" Y="250.06" Z="17.37" />
+				<Hotspot X="-14043.3" Y="185.23" Z="13.1" />
+				<Hotspot X="-14079.9" Y="157.47" Z="14.89" />
+				<Hotspot X="-13949.6" Y="215.25" Z="22.63" />
+				<Hotspot X="-13993" Y="157.25" Z="14.84" />
+				<Hotspot X="-14031.7" Y="96.33" Z="10.59" />
+				<Hotspot X="-13954" Y="121.96" Z="14.32" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="609" Name="Voodoo Dues">
 		<Objective Type="CollectItem" ItemId="3924" CollectCount="1">
 			<CollectFrom>
@@ -240,6 +257,13 @@
 			</If>
 		</If>
 
+		<If Condition="!IsQuestCompleted(607)">
+			<PickUp QuestName="Scaring Shaky" QuestId="606" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+			<Objective QuestName="Scaring Shaky" QuestId="606" Type="CollectItem" ItemId="3919" CollectCount="5" />
+			<TurnIn QuestName="Scaring Shaky" QuestId="606" TurnInName="&quot;Shaky&quot; Phillipe" TurnInId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
+			<PickUp QuestName="Return to MacKinley" QuestId="607" GiverName="&quot;Shaky&quot; Phillipe" GiverId="2502" X="-14299.4" Y="504.577" Z="9.1211" />
+			<TurnIn QuestName="Return to MacKinley" QuestId="607" TurnInName="&quot;Sea Wolf&quot; MacKinley" TurnInId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
+		</If>
 		<PickUp QuestName="Voodoo Dues" QuestId="609" GiverName="&quot;Sea Wolf&quot; MacKinley" GiverId="2501" X="-14447.4" Y="448.001" Z="15.8283" />
 		<PickUp QuestName="Whiskey Slim's Lost Grog" QuestId="580" GiverName="Whiskey Slim" GiverId="2491" X="-14463.6" Y="489.274" Z="15.205" />
 		<Objective QuestName="Whiskey Slim's Lost Grog" QuestId="580" Type="CollectItem" ItemId="3900" CollectCount="12" />
