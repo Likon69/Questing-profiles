@@ -968,13 +968,13 @@
 		<TurnIn QuestName="Farstrider Retreat" QuestId="9359" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
 			<PickUp QuestName="Taming the Beast" QuestId="9484" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<CustomBehavior File="UseItemOn" QuestId="9484" MobId="15650" ItemId="23697" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9123.59" Y="-6335.13" Z="16.2121" />
 			<TurnIn QuestName="Taming the Beast" QuestId="9484" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 			<PickUp QuestName="Taming the Beast" QuestId="9486" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.BloodElf)">
+			<CustomBehavior File="UseItemOn" QuestId="9486" MobId="15652" ItemId="23702" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9079.72" Y="-7716.5" Z="134.764" />
 			<TurnIn QuestName="Taming the Beast" QuestId="9486" TurnInName="Lieutenant Dawnrunner" TurnInId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
 			<PickUp QuestName="Taming the Beast" QuestId="9485" GiverName="Lieutenant Dawnrunner" GiverId="15399" X="8980.84" Y="-7458.36" Z="86.7743" />
+			<CustomBehavior File="UseItemOn" QuestId="9485" MobId="16353" ItemId="23703" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="7895.56" Y="-6910.62" Z="68.527" />
 		</If>
 
 		<TurnIn QuestName="Missing in the Ghostlands" QuestId="9144" TurnInName="Courier Dawnstrider" TurnInId="16183" X="8119.71" Y="-6899.62" Z="70.8429" />

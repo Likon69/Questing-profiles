@@ -955,10 +955,14 @@
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Tauren)">
 			<PickUp QuestName="Taming the Beast" QuestId="6061" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6061" MobId="2956" ItemId="15914" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-1352.53" Y="-340.73" Z="-37.9218" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6061" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Taming the Beast" QuestId="6087" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6087" MobId="2959" ItemId="15915" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-2096.33" Y="-1188.19" Z="40.2061" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6087" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Taming the Beast" QuestId="6088" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6088" MobId="2970" ItemId="15916" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-1553.5" Y="-766.81" Z="-25.1156" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6088" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Training the Beast" QuestId="6089" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<TurnIn QuestName="Training the Beast" QuestId="6089" TurnInName="Holt Thunderhorn" TurnInId="3039" X="-1474.76" Y="-81.3723" Z="161.185" />
 		</If>

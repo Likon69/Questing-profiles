@@ -851,10 +851,13 @@
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Draenei)">
 			<TurnIn QuestName="Seek Huntress Kella Nightbow" QuestId="9757" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			<PickUp QuestName="Taming the Beast" QuestId="9591" GiverName="Huntress Kella Nightbow" GiverId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
+			<CustomBehavior File="UseItemOn" QuestId="9591" MobId="17217" ItemId="23896" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-4552.35" Y="-11309.5" Z="-24.2519" />
 			<TurnIn QuestName="Taming the Beast" QuestId="9591" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			<PickUp QuestName="Taming the Beast" QuestId="9592" GiverName="Huntress Kella Nightbow" GiverId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
+			<CustomBehavior File="UseItemOn" QuestId="9592" MobId="17374" ItemId="23897" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-3620.23" Y="-11916.1" Z="9.0796" />
 			<TurnIn QuestName="Taming the Beast" QuestId="9592" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			<PickUp QuestName="Taming the Beast" QuestId="9593" GiverName="Huntress Kella Nightbow" GiverId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
+			<CustomBehavior File="UseItemOn" QuestId="9593" MobId="17203" ItemId="23898" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-3065.14" Y="-12298.1" Z="19.9738" />
 			<TurnIn QuestName="Taming the Beast" QuestId="9593" TurnInName="Huntress Kella Nightbow" TurnInId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			<PickUp QuestName="Beast Training" QuestId="9675" GiverName="Huntress Kella Nightbow" GiverId="17614" X="-4269.01" Y="-11484.5" Z="8.9095" />
 			<TurnIn QuestName="Beast Training" QuestId="9675" TurnInName="Ganaar" TurnInId="16712" X="-4229.28" Y="-11549.6" Z="-126.047" />

@@ -181,14 +181,14 @@
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
 			<PickUp QuestName="Taming the Beast" QuestId="6063" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<CustomBehavior File="UseItemOn" QuestId="6063" MobId="1998" ItemId="15921" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9656.88" Y="350.249" Z="1327.9" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6063" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Taming the Beast" QuestId="6101" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<CustomBehavior File="UseItemOn" QuestId="6101" MobId="2043" ItemId="15922" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9858.1" Y="1834.19" Z="1316.38" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6101" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Taming the Beast" QuestId="6102" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
-		</If>
-
-		<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
+			<CustomBehavior File="UseItemOn" QuestId="6102" MobId="1996" ItemId="15923" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9245.02" Y="858.225" Z="1321.64" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Training the Beast" QuestId="6103" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<TurnIn QuestName="Training the Beast" QuestId="6103" TurnInName="Jocaste" TurnInId="4146" X="10178" Y="2511.01" Z="1343.24" />
 		</If>
@@ -202,10 +202,13 @@
 				</If>
 			</If>
 			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6064" MobId="1126" ItemId="15911" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5245.93" Y="-431.736" Z="386.977" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6084" MobId="1201" ItemId="15913" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5818.51" Y="-587.567" Z="398.42" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6085" MobId="1196" ItemId="15908" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5957.03" Y="-480.463" Z="408.535" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" X="-5022.09" Y="-1273.85" Z="507.839" />

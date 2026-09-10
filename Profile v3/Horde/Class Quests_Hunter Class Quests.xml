@@ -167,15 +167,15 @@
 			</If>
 		</If>
 
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Troll)">
+		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; ((Me.Race == WoWRace.Orc) || (Me.Race == WoWRace.Troll))">
 			<PickUp QuestName="Taming the Beast" QuestId="6062" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<CustomBehavior File="UseItemOn" QuestId="6062" MobId="3099" ItemId="15917" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="343.559" Y="-5048.52" Z="19.1048" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6062" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<PickUp QuestName="Taming the Beast" QuestId="6083" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
-		</If>
-
-		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Troll)">
+			<CustomBehavior File="UseItemOn" QuestId="6083" MobId="3107" ItemId="15919" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-990.279" Y="-5455.54" Z="2.89134" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6083" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<PickUp QuestName="Taming the Beast" QuestId="6082" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<CustomBehavior File="UseItemOn" QuestId="6082" MobId="3126" ItemId="15920" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="665.084" Y="-4255.48" Z="15.8818" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<PickUp QuestName="Training the Beast" QuestId="6081" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<TurnIn QuestName="Training the Beast" QuestId="6081" TurnInName="Ormak Grimshot" TurnInId="3352" X="2100.58" Y="-4606.96" Z="59.0132" />
@@ -183,10 +183,14 @@
 
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Tauren)">
 			<PickUp QuestName="Taming the Beast" QuestId="6061" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6061" MobId="2956" ItemId="15914" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-1352.53" Y="-340.73" Z="-37.9218" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6061" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Taming the Beast" QuestId="6087" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6087" MobId="2959" ItemId="15915" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-2096.33" Y="-1188.19" Z="40.2061" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6087" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Taming the Beast" QuestId="6088" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
+			<CustomBehavior File="UseItemOn" QuestId="6088" MobId="2970" ItemId="15916" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-1553.5" Y="-766.81" Z="-25.1156" />
+			<TurnIn QuestName="Taming the Beast" QuestId="6088" TurnInName="Yaw Sharpmane" TurnInId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<PickUp QuestName="Training the Beast" QuestId="6089" GiverName="Yaw Sharpmane" GiverId="3065" X="-2180.22" Y="-408.816" Z="-4.5183" />
 			<TurnIn QuestName="Training the Beast" QuestId="6089" TurnInName="Holt Thunderhorn" TurnInId="3039" X="-1474.76" Y="-81.3723" Z="161.185" />
 		</If>

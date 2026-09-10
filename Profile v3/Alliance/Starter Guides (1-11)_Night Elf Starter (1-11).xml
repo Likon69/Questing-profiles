@@ -623,10 +623,13 @@
 		<TurnIn QuestName="The Shimmering Frond" QuestId="931" TurnInName="Denalan" TurnInId="2080" X="9506.92" Y="713.766" Z="1255.89" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.NightElf)">
 			<PickUp QuestName="Taming the Beast" QuestId="6063" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<CustomBehavior File="UseItemOn" QuestId="6063" MobId="1998" ItemId="15921" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9656.88" Y="350.249" Z="1327.9" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6063" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Taming the Beast" QuestId="6101" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<CustomBehavior File="UseItemOn" QuestId="6101" MobId="2043" ItemId="15922" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9858.1" Y="1834.19" Z="1316.38" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6101" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Taming the Beast" QuestId="6102" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
+			<CustomBehavior File="UseItemOn" QuestId="6102" MobId="1996" ItemId="15923" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="9245.02" Y="858.225" Z="1321.64" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6102" TurnInName="Dazalar" TurnInId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 			<PickUp QuestName="Training the Beast" QuestId="6103" GiverName="Dazalar" GiverId="3601" X="9812.33" Y="928.806" Z="1308.19" />
 		</If>

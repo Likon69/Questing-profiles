@@ -578,10 +578,13 @@
 		<PickUp QuestName="The Reports" QuestId="291" GiverName="Senir Whitebeard" GiverId="1252" X="-5644.37" Y="-499.163" Z="396.752" />
 		<If Condition="(Me.Class == WoWClass.Hunter) &amp;&amp; (Me.Race == WoWRace.Dwarf)">
 			<PickUp QuestName="Taming the Beast" QuestId="6064" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6064" MobId="1126" ItemId="15911" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5245.93" Y="-431.736" Z="386.977" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6064" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Taming the Beast" QuestId="6084" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6084" MobId="1201" ItemId="15913" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5818.51" Y="-587.567" Z="398.42" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6084" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Taming the Beast" QuestId="6085" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
+			<CustomBehavior File="UseItemOn" QuestId="6085" MobId="1196" ItemId="15908" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-5957.03" Y="-480.463" Z="408.535" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6085" TurnInName="Grif Wildheart" TurnInId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<PickUp QuestName="Training the Beast" QuestId="6086" GiverName="Grif Wildheart" GiverId="1231" X="-5618.54" Y="-454.071" Z="407.842" />
 			<TurnIn QuestName="Training the Beast" QuestId="6086" TurnInName="Belia Thundergranite" TurnInId="10090" X="-5022.09" Y="-1273.85" Z="507.839" />
