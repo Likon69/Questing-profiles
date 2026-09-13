@@ -1028,17 +1028,27 @@
 			<CustomBehavior File="UseItemOn" QuestId="6062" MobId="3099" ItemId="15917" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="343.559" Y="-5048.52" Z="19.1048" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6062" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<PickUp QuestName="Taming the Beast" QuestId="6083" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<CustomBehavior File="Misc\RunLua" Lua="if UnitExists('pet') then CastSpellByName('Dismiss Pet') end" NumOfTimes="1" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
 			<CustomBehavior File="UseItemOn" QuestId="6083" MobId="3107" ItemId="15919" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="-990.279" Y="-5455.54" Z="2.89134" />
 			<TurnIn QuestName="Taming the Beast" QuestId="6083" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<PickUp QuestName="Taming the Beast" QuestId="6082" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<CustomBehavior File="Misc\RunLua" Lua="if UnitExists('pet') then CastSpellByName('Dismiss Pet') end" NumOfTimes="1" />
+			<CustomBehavior File="WaitTimer" WaitTime="2000" />
 			<CustomBehavior File="UseItemOn" QuestId="6082" MobId="3126" ItemId="15920" NumOfTimes="1" WaitTime="25000" Range="30" CollectionDistance="1000" X="665.084" Y="-4255.48" Z="15.8818" />
-			<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			<If Condition="((HasQuest(6082)) &amp;&amp; (IsQuestCompleted(6082)))">
+				<TurnIn QuestName="Taming the Beast" QuestId="6082" TurnInName="Thotar" TurnInId="3171" X="275.341" Y="-4704" Z="11.7122" />
+			</If>
+			<If Condition="((HasQuest(6082)) &amp;&amp; (!IsQuestCompleted(6082)))">
+				<AbandonQuest QuestId="6082" />
+			</If>
 			<PickUp QuestName="Training the Beast" QuestId="6081" GiverName="Thotar" GiverId="3171" X="275.341" Y="-4704" Z="11.7122" />
 			<TurnIn QuestName="Training the Beast" QuestId="6081" TurnInName="Ormak Grimshot" TurnInId="3352" X="2100.58" Y="-4606.96" Z="59.0132" />
 		</If>
 
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3113" KillCount="4" />
 		<Objective QuestName="Encroachment" QuestId="837" Type="KillMob" MobId="3114" KillCount="4" />
+		<RunTo X="731" Y="-4237" Z="18.5" />
 		<PickUp QuestName="Lost But Not Forgotten" QuestId="816" GiverName="Misha Tor'kren" GiverId="3193" X="742.385" Y="-4241.65" Z="18.762" />
 		<TurnIn QuestName="Encroachment" QuestId="837" TurnInName="Gar'Thok" TurnInId="3139" X="274.988" Y="-4709.3" Z="17.5719" />
 		<PickUp QuestName="Winds in the Desert" QuestId="834" GiverName="Rezlak" GiverId="3293" X="999.763" Y="-4414.4" Z="14.4718" />
@@ -1081,6 +1091,7 @@
 		</If>
 
 		<Objective QuestName="Lost But Not Forgotten" QuestId="816" Type="CollectItem" ItemId="4891" CollectCount="1" />
+		<RunTo X="731" Y="-4237" Z="18.5" />
 		<TurnIn QuestName="Lost But Not Forgotten" QuestId="816" TurnInName="Misha Tor'kren" TurnInId="3193" X="742.385" Y="-4241.65" Z="18.762" />
 		<Objective QuestName="Dark Storms" QuestId="806" Type="CollectItem" ItemId="4869" CollectCount="1" />
 		<TurnIn QuestName="Dark Storms" QuestId="806" TurnInName="Orgnil Soulscar" TurnInId="3142" X="287.265" Y="-4724.88" Z="13.2142" />
