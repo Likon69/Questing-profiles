@@ -223,8 +223,8 @@
 		<PickUp QuestName="How Big a Threat?" QuestId="984" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
 		<Objective QuestName="Washed Ashore" QuestId="3524" Type="CollectItem" ItemId="12242" CollectCount="1" />
 		<Objective QuestName="Buzzbox 827" QuestId="983" Type="CollectItem" ItemId="5385" CollectCount="6" />
-		<While Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)))">
-			<CustomBehavior File="UseItemOn" QuestId="2118" MobId="2164" ItemId="7586" NumOfTimes="1" Range="5" CollectionDistance="1000" X="6036.95" Y="439.119" Z="14.8222" />
+		<While Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)) &amp;&amp; (GetItemCount(7586) &gt;= 1))">
+			<CustomBehavior File="UseItemOn" QuestId="2118" MobId="2164" ItemId="7586" NumOfTimes="1" Range="15" MobState="Alive" CollectionDistance="1000" X="6036.95" Y="439.119" Z="14.8222" />
 		</While>
 
 		<TurnIn QuestName="Buzzbox 827" QuestId="983" TurnInName="Buzzbox 827" TurnInType="Object" TurnInId="17182" X="6313.35" Y="541.665" Z="13.2845" />
@@ -233,11 +233,9 @@
 		<Objective QuestName="Washed Ashore" QuestId="4681" Type="CollectItem" ItemId="12289" CollectCount="1" />
 		<TurnIn QuestName="Washed Ashore" QuestId="4681" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
 		<PickUp QuestName="The Red Crystal" QuestId="4811" GiverName="Sentinel Glynda Nal'Shea" GiverId="2930" X="6438.62" Y="471.896" Z="8.1251" />
-		<!-- REVIEW Q2118 Plagued Lands: REVIEW: UseItemOn target 11836 Captured Rabid Thistle Bear replaced by 2164 Rabid Thistle Bear (no HB reference for this quest). Turn-in guarded, quest abandoned if still incomplete so the profile can continue. -->
 		<If Condition="((HasQuest(2118)) &amp;&amp; (IsQuestCompleted(2118)))">
 			<TurnIn QuestName="Plagued Lands" QuestId="2118" TurnInName="Tharnariun Treetender" TurnInId="3701" X="6437.48" Y="397.48" Z="11.7883" />
 		</If>
-
 		<If Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)))">
 			<AbandonQuest QuestId="2118" />
 		</If>
