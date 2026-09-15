@@ -216,6 +216,10 @@
 				<CustomBehavior File="GoThruPortal" X="1472.55" Y="-4215.7" Z="59.22" Timeout="60000" />
 				<CustomBehavior File="WaitTimer" WaitTime="5000" />
 			</If>
+			<!-- Guide the bot from Tirisfal through Silverpine into Hillsbrad so it does not run off the map -->
+			<RunTo X="-611.302" Y="401.456" Z="83.1437" Nav="Fly" />
+			<RunTo X="-186" Y="-67" Z="56" Nav="Fly" />
+			<RunTo X="-6.6023" Y="-899.436" Z="57.6278" Nav="Fly" />
 		</If>
 
 		<Objective QuestName="Coolant Heads Prevail" QuestId="713" Type="CollectItem" ItemId="3829" CollectCount="1" />
@@ -223,9 +227,9 @@
 		<Objective QuestName="Liquid Stone" QuestId="715" Type="CollectItem" ItemId="929" CollectCount="1" />
 		<Objective QuestName="Liquid Stone" QuestId="715" Type="CollectItem" ItemId="3823" CollectCount="1" />
 		<Objective QuestName="Stone Is Better than Cloth" QuestId="716" Type="CollectItem" ItemId="2868" CollectCount="1" />
-		<Objective QuestName="Pearl Diving" QuestId="705" Type="CollectItem" ItemId="4611" CollectCount="9" />
 		<PickUp QuestName="Pearl Diving" QuestId="705" GiverName="Rigglefuzz" GiverId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
 		<PickUp QuestName="Barbecued Buzzard Wings" QuestId="703" GiverName="Rigglefuzz" GiverId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
+		<Objective QuestName="Pearl Diving" QuestId="705" Type="CollectItem" ItemId="4611" CollectCount="9" />
 		<TurnIn QuestName="Pearl Diving" QuestId="705" TurnInName="Rigglefuzz" TurnInId="2817" X="-6767.33" Y="-3133.6" Z="240.675" />
 		<TurnIn QuestName="Martek the Exiled" QuestId="1106" TurnInName="Martek the Exiled" TurnInId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
 		<PickUp QuestName="Indurium" QuestId="1108" GiverName="Martek the Exiled" GiverId="4618" X="-6763.39" Y="-3129.3" Z="241.384" />
