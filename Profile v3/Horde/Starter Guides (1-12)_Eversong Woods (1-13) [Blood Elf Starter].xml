@@ -30,6 +30,7 @@
 		<Vendor Name="Noellene" Entry="16275" Type="Train" TrainClass="Paladin" X="9516.0498" Y="-6870.96" Z="18.8333" />
 		<Vendor Name="Hannovia" Entry="16270" Type="Train" TrainClass="Hunter" X="9529.21" Y="-6864.5801" Z="18.8327" />
 		<Vendor Name="Tannaria" Entry="16279" Type="Train" TrainClass="Rogue" X="9534.1504" Y="-6876" Z="26.2321" />
+		<Vendor Name="Raelis Dawnstar" Entry="15289" Type="Repair" X="10407.7" Y="-6351.81" Z="37.0533" />
 		<Vendor Name="Sleyin" Entry="18926" Type="Repair" X="9482.34" Y="-6805.51" Z="16.5757" />
 		<Vendor Name="Vara" Entry="16186" Type="Repair" X="9473.87" Y="-6845.84" Z="28.4612" />
 		<Vendor Name="Innkeeper Delaniel" Entry="15433" Type="Food" X="9476.91" Y="-6859.21" Z="17.4246" />
@@ -689,13 +690,8 @@
 			</If>
 		</If>
 
-		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
-			<If Condition="Me.Class == WoWClass.Monk">
-				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="129597" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
-			</If>
-		</If>
 
-		<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
+<If Condition="HasQuest(8346) &amp;&amp; !IsQuestCompleted(8346)">
 			<If Condition="Me.Class == WoWClass.Rogue">
 				<CustomBehavior File="CastSpellOn" QuestId="8346" MobHpPercentLeft="100" SpellId="25046" MobId="15274" Range="2" MinRange="1" X="10382.54" Y="-6300.068" Z="29.83106" />
 			</If>
