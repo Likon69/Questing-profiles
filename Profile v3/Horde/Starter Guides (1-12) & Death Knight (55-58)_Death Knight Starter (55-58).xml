@@ -298,10 +298,19 @@
 		<PickUp QuestName="In Service Of The Lich King" QuestId="12593" GiverName="The Lich King" GiverId="25462" X="2345.3" Y="-5671.68" Z="426.114" />
 		<TurnIn QuestName="In Service Of The Lich King" QuestId="12593" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<PickUp QuestName="The Emblazoned Runeblade" QuestId="12619" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
-		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38631" CollectCount="1" />
-		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38631" CollectCount="1" />
+		<Objective QuestName="The Emblazoned Runeblade" QuestId="12619" Type="CollectItem" ItemId="38607" CollectCount="1" />
+		<UseItem QuestName="The Emblazoned Runeblade" QuestId="12619" ItemId="38607" X="2504.884" Y="-5562.919" Z="420.6457" />
+		<If Condition="HasQuest(12619)">
+			<CustomBehavior File="WaitTimer" WaitTime="12000" />
+		</If>
 		<TurnIn QuestName="The Emblazoned Runeblade" QuestId="12619" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<PickUp QuestName="Runeforging: Preparation For Battle" QuestId="12842" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
+		<If Condition="HasQuest(12842)">
+			<MoveTo QuestId="12842" X="2505.115" Y="-5563.931" Z="420.6445" />
+			<CustomBehavior File="WaitTimer" WaitTime="1000" />
+			<CustomBehavior File="PerformTradeskillOn" QuestId="12842" TradeSkillId="776" TradeSkillItemId="53341" CastOnItemId="38707" />
+			<CustomBehavior File="Misc\RunLua" Lua="CloseTradeSkill()" />
+		</If>
 		<TurnIn QuestName="Runeforging: Preparation For Battle" QuestId="12842" TurnInName="Instructor Razuvious" TurnInId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<PickUp QuestName="The Endless Hunger" QuestId="12848" GiverName="Instructor Razuvious" GiverId="28357" X="2498.07" Y="-5593.25" Z="420.48" />
 		<Objective QuestName="The Endless Hunger" QuestId="12848" Type="KillMob" MobId="29565" KillCount="1" />
