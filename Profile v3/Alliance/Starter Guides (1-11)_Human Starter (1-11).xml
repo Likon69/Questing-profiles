@@ -149,6 +149,19 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="86" Name="Pie for Billy">
+		<Objective Type="CollectItem" ItemId="769" CollectCount="4">
+			<CollectFrom>
+				<Mob Name="Stonetusk Boar" Id="113" />
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="-9944" Y="53" Z="33" />
+				<Hotspot X="-9900" Y="80" Z="34" />
+				<Hotspot X="-9860" Y="115" Z="32" />
+				<Hotspot X="-9930" Y="130" Z="30" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 	<Quest Id="60" Name="Kobold Candles">
 		<Objective Type="CollectItem" ItemId="772" CollectCount="8">
 			<CollectFrom>
@@ -441,6 +454,9 @@
 		<PickUp QuestName="Note to William" QuestId="107" GiverName="Gramma Stonefield" GiverId="248" X="-9880.63" Y="322.619" Z="37.8244" />
 		<TurnIn QuestName="Back to Billy" QuestId="84" TurnInName="Billy Maclure" TurnInId="247" X="-9923.68" Y="38.3872" Z="32.5951" />
 		<PickUp QuestName="Goldtooth" QuestId="87" GiverName="Billy Maclure" GiverId="247" X="-9923.68" Y="38.3872" Z="32.5951" />
+		<TurnIn QuestName="Note to William" QuestId="107" TurnInName="William Pestle" TurnInId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
+		<PickUp QuestName="Collecting Kelp" QuestId="112" GiverName="William Pestle" GiverId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
+		<Objective QuestName="Collecting Kelp" QuestId="112" Type="CollectItem" ItemId="1256" CollectCount="4" />
 		<If Condition="(HasQuest(62))">
 			<RunTo X="-9842.022" Y="129.2825" Z="4.8419213" QuestId="62" />
 		</If>
@@ -457,9 +473,6 @@
 		<PickUp QuestName="The Jasperlode Mine" QuestId="76" GiverName="Marshal Dughan" GiverId="240" X="-9465.52" Y="74.0069" Z="56.7785" />
 		<TurnIn QuestName="Kobold Candles" QuestId="60" TurnInName="William Pestle" TurnInId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
 		<PickUp QuestName="Shipment to Stormwind" QuestId="61" GiverName="William Pestle" GiverId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
-		<TurnIn QuestName="Note to William" QuestId="107" TurnInName="William Pestle" TurnInId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
-		<PickUp QuestName="Collecting Kelp" QuestId="112" GiverName="William Pestle" GiverId="253" X="-9460.3" Y="31.9389" Z="57.0494" />
-		<Objective QuestName="Collecting Kelp" QuestId="112" Type="CollectItem" ItemId="1256" CollectCount="4" />
 		<TurnIn QuestName="Further Concerns" QuestId="35" TurnInName="Guard Thomas" TurnInId="261" X="-9610.23" Y="-1032.05" Z="41.3058" />
 		<PickUp QuestName="Find the Lost Guards" QuestId="37" GiverName="Guard Thomas" GiverId="261" X="-9610.23" Y="-1032.05" Z="41.3058" />
 		<PickUp QuestName="Protect the Frontier" QuestId="52" GiverName="Guard Thomas" GiverId="261" X="-9610.23" Y="-1032.05" Z="41.3058" />
