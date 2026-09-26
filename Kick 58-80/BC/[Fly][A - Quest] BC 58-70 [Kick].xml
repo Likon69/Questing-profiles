@@ -2665,10 +2665,19 @@
 			<If Condition="(!IsQuestCompleted(9787))" >
 		<!--<PickUp QuestName="Plants of Zangarmarsh" QuestId="9802" GiverName="Lauranna Thar'well" GiverId="17909" X="-215.5434" Y="5437.267" Z="21.4277" />-->
 		<PickUp QuestName="The Umbrafen Tribe" QuestId="9747" GiverName="Ikeyen" GiverId="17956" X="-215.1667" Y="5433.431" Z="21.9556" />
-		<PickUp QuestName="A Warm Welcome" QuestId="9728" GiverName="Warden Hamoot" GiverId="17858" X="-252.3594" Y="5499.21" Z="66.59926" />
 		<PickUp QuestName="The Dying Balance" QuestId="9895" GiverName="Lethyn Moonfire" GiverId="17834" X="-181.3797" Y="5527.087" Z="29.40768" />
 		<TurnIn QuestName="The Cenarion Expedition" QuestId="9912" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.4519" Y="5533.816" Z="31.06601" />
 		<PickUp QuestName="Disturbance at Umbrafen Lake" QuestId="9716" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.4519" Y="5533.816" Z="31.06601" />
+			<!-- A Warm Welcome needs the Warden Hamoot breadcrumb turned in first (server PrevQuestID 9778) -->
+			<If Condition="((!HasQuest(9728)) &amp;&amp; (!IsQuestCompleted(9728)))" >
+				<If Condition="((!HasQuest(9778)) &amp;&amp; (!IsQuestCompleted(9778)))" >
+		<PickUp QuestName="Warden Hamoot" QuestId="9778" GiverName="Ysiel Windsinger" GiverId="17841" X="-143.4519" Y="5533.816" Z="31.06601" />
+				</If>
+				<If Condition="(HasQuest(9778))" >
+		<TurnIn QuestName="Warden Hamoot" QuestId="9778" TurnInName="Warden Hamoot" TurnInId="17858" X="-252.3594" Y="5499.21" Z="66.59926" />
+				</If>
+		<PickUp QuestName="A Warm Welcome" QuestId="9728" GiverName="Warden Hamoot" GiverId="17858" X="-252.3594" Y="5499.21" Z="66.59926" />
+			</If>
 			<If Condition="((HasQuest(9716)) &amp;&amp; (!IsQuestCompleted(9716)))" >
 				<CustomBehavior File="FlyTo" X="-762.8222" Y="5914.644" Z="70" />
 			</If>
@@ -3350,11 +3359,10 @@
 		<PickUp QuestName="Olemba Seeds" QuestId="9992" GiverName="Ros'eleth" GiverId="18390" X="-2995.949" Y="3983.486" Z="3.105195" />
 		<PickUp QuestName="Speak with Private Weeks" QuestId="10038" GiverName="Lieutenant Gravelhammer" GiverId="18713" X="-3010.061" Y="3994.337" Z="4.465378" />
 		<PickUp QuestName="Thin the Flock" QuestId="10869" GiverName="Lieutenant Gravelhammer" GiverId="18713" X="-3010.061" Y="3994.337" Z="4.465378" />
-			<!--
-			<If Condition="(!IsQuestCompleted(10908))" >
+			<!-- Breadcrumb: server only offers The Eyes of Skettis (10847) after 10863, 10908 or 10862 is rewarded -->
+			<If Condition="((!HasQuest(10847)) &amp;&amp; (!IsQuestCompleted(10847)) &amp;&amp; (!IsQuestCompleted(10908)))" >
 		<PickUp QuestName="Secrets of the Arakkoa" QuestId="10863" GiverName="Lady Dena Kennedy" GiverId="15991" X="-3016.63" Y="3963.4" Z="3.1886" />
 			</If>
-			-->
 		<PickUp QuestName="Stymying the Arakkoa" QuestId="9986" GiverName="Thander" GiverId="18389" X="-2953.12" Y="3960.911" Z="0.9782878" />
 		<PickUp QuestName="Unruly Neighbors" QuestId="9998" GiverName="Bertelm" GiverId="18387" X="-2971.174" Y="3935.178" Z="3.807743" />
 		<PickUp QuestName="Timber Worg Tails" QuestId="10016" GiverName="Bertelm" GiverId="18387" X="-2971.174" Y="3935.178" Z="3.807743" />
@@ -4434,9 +4442,6 @@
 				<CustomBehavior File="ForcedDismount" />
 				<Objective QuestName="A Date with Dorgok" QuestId="10795" Type="KillMob" KillCount="1" Name="Dorgok" MobId="20753" />
 			</If>
-			<If Condition="(HasItem(31363))" >
-		<PickUp QuestName="Favor of the Gronn" QuestId="10797" GiverType="Item" GiverId="31363" />
-			</If>
 			<Objective QuestName="Crush the Bloodmaul Camp!" QuestId="10796" Type="KillMob" KillCount="10" Name="Bloodmaul Mauler" MobId="19993" />
 			<Objective QuestName="Crush the Bloodmaul Camp!" QuestId="10796" Type="KillMob" KillCount="5" Name="Bloodmaul Warlock" MobId="19994" />
 			<If Condition="((HasQuest(10504)) &amp;&amp; (!IsQuestCompleted(10504)))" >
@@ -4498,6 +4503,10 @@
 			</If>
 			<If Condition="((HasQuest(10795)) &amp;&amp; (IsQuestCompleted(10795)))" >
 		<TurnIn QuestName="A Date with Dorgok" QuestId="10795" TurnInName="Commander Haephus Stonewall" TurnInId="22149" X="3034.587" Y="5483.083" Z="147.1199" />
+			</If>
+			<!-- Gorgrom's Favor only starts its quest once A Date with Dorgok is turned in (server PrevQuestID 10795) -->
+			<If Condition="(HasItem(31363))" >
+		<PickUp QuestName="Favor of the Gronn" QuestId="10797" GiverType="Item" GiverId="31363" />
 			</If>
 			<If Condition="(HasQuest(10797))" >
 				<CustomBehavior File="FlyTo" X="2967.362" Y="5455.161" Z="144.6366" Distance="100" />
@@ -4779,6 +4788,18 @@
 		<TurnIn QuestName="Off To Area 52" QuestId="10183" TurnInName="Rocket-Chief Fuselage" TurnInId="19570" X="3062.385" Y="3661.388" Z="142.9643" />
 			</If>
 			<If Condition="(!IsQuestCompleted(10273))" >
+			<!-- Consortium Crystal Collection needs an Assisting the Consortium breadcrumb turned in first (server NextQuestID of 10263/10264) -->
+			<If Condition="((!HasQuest(10265)) &amp;&amp; (!IsQuestCompleted(10265)))" >
+				<If Condition="((!HasQuest(10263)) &amp;&amp; (!IsQuestCompleted(10263)) &amp;&amp; (!HasQuest(10264)) &amp;&amp; (!IsQuestCompleted(10264)))" >
+		<PickUp QuestName="Assisting the Consortium" QuestId="10263" GiverName="Anchorite Karja" GiverId="19467" X="3071.05" Y="3697.33" Z="142.528" />
+				</If>
+				<If Condition="(HasQuest(10263))" >
+		<TurnIn QuestName="Assisting the Consortium" QuestId="10263" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.964" Y="3674.858" Z="142.3462" />
+				</If>
+				<If Condition="(HasQuest(10264))" >
+		<TurnIn QuestName="Assisting the Consortium" QuestId="10264" TurnInName="Nether-Stalker Khay'ji" TurnInId="19880" X="3069.964" Y="3674.858" Z="142.3462" />
+				</If>
+			</If>
 		<PickUp QuestName="Consortium Crystal Collection" QuestId="10265" GiverName="Nether-Stalker Khay'ji" GiverId="19880" X="3069.964" Y="3674.858" Z="142.3462" />
 		<PickUp QuestName="Securing the Shaleskin Shale" QuestId="10342" GiverName="Boots" GiverId="19617" X="3080.512" Y="3684.403" Z="142.4499" /> <!-- If NPC is dead - Blizz fault -->
 		<PickUp QuestName="You're Hired!" QuestId="10186" GiverName="Rocket-Chief Fuselage" GiverId="19570" X="3062.385" Y="3661.388" Z="142.9643" />
