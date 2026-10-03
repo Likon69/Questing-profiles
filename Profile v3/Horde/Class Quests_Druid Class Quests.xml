@@ -20,7 +20,6 @@
 		<Vendor Name="Vrang Wildgore" Entry="3682" Type="Repair" X="787.375" Y="-1815.08" Z="91.75" />
 		<Vendor Name="Burkrum" Entry="6028" Type="Repair" X="2354.76" Y="-2540.69" Z="102.896" />
 		<Vendor Name="Innkeeper Kaylisk" Entry="12196" Type="Food" X="2341.86" Y="-2566.99" Z="102.857" />
-		<Vendor Name="Larhka" Entry="5871" Type="Food" X="-393.28" Y="-2641.5" Z="96.3063" />
 		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3934" Type="Food" X="-407.123" Y="-2645.22" Z="96.3063" />
 	</Vendors>
 

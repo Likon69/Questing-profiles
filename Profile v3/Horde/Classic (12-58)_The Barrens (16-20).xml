@@ -20,7 +20,6 @@
 		<Vendor Name="Hraq" Entry="3477" Type="Repair" X="-343.921" Y="-2558.13" Z="97.9411" />
 		<Vendor Name="Uthrok" Entry="3488" Type="Repair" X="-351.184" Y="-2556.51" Z="95.8708" />
 		<Vendor Name="Jahan Hawkwing" Entry="3483" Type="Repair" X="-350.079" Y="-2566.59" Z="97.4414" />
-		<Vendor Name="Larhka" Entry="5871" Type="Food" X="-393.28" Y="-2641.5" Z="96.3063" />
 		<Vendor Name="Innkeeper Boorand Plainswind" Entry="3934" Type="Food" X="-407.123" Y="-2645.22" Z="96.3063" />
 		<Vendor Name="Zargh" Entry="3489" Type="Food" X="-403.68" Y="-2709.34" Z="97.7294" />
 	</Vendors>
