@@ -226,6 +226,9 @@
 		<While Condition="((HasQuest(2118)) &amp;&amp; (!IsQuestCompleted(2118)) &amp;&amp; (GetItemCount(7586) &gt;= 1))">
 			<CustomBehavior File="UseItemOn" QuestId="2118" MobId="2164" ItemId="7586" NumOfTimes="1" Range="15" MobState="Alive" CollectionDistance="1000" X="6036.95" Y="439.119" Z="14.8222" />
 		</While>
+		<If Condition="((HasQuest(984)) &amp;&amp; (!IsQuestCompleted(984)))">
+			<RunTo X="5996.56" Y="365.21" Z="21.8661" />
+		</If>
 
 		<TurnIn QuestName="Buzzbox 827" QuestId="983" TurnInName="Buzzbox 827" TurnInType="Object" TurnInId="17182" X="6313.35" Y="541.665" Z="13.2845" />
 		<TurnIn QuestName="Washed Ashore" QuestId="3524" TurnInName="Gwennyth Bly'Leggonde" TurnInId="10219" X="6342.4" Y="543.005" Z="16.073" />
@@ -244,10 +247,15 @@
 		<TurnIn QuestName="How Big a Threat?" QuestId="984" TurnInName="Terenthis" TurnInId="3693" X="6434.59" Y="362.807" Z="14.0243" />
 		<PickUp QuestName="How Big a Threat?" QuestId="985" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
 		<PickUp QuestName="Thundris Windweaver" QuestId="4761" GiverName="Terenthis" GiverId="3693" X="6434.59" Y="362.807" Z="14.0243" />
+		<If Condition="((HasQuest(4811)) &amp;&amp; (!IsQuestCompleted(4811)))">
+			<RunTo X="6207.5" Y="-152.833" Z="79.8185" />
+		</If>
 		<TurnIn QuestName="The Red Crystal" QuestId="4811" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
 		<PickUp QuestName="As Water Cascades" QuestId="4812" GiverName="Sentinel Glynda Nal'Shea" GiverId="2930" X="6438.62" Y="471.896" Z="8.1251" />
-		<Objective QuestName="As Water Cascades" QuestId="4812" Type="CollectItem" ItemId="14339" CollectCount="1" />
-		<!-- Quest 4812 (As Water Cascades) — TurnIn Object not in 3.3.5a -->
+		<If Condition="((HasQuest(4812)) &amp;&amp; (!IsQuestCompleted(4812)) &amp;&amp; (GetItemCount(14338) &gt;= 1))">
+			<CustomBehavior File="UseItem" QuestId="4812" ItemId="14338" NumOfTimes="1" WaitTime="3000" X="6410.85" Y="467.36" Z="8.01106" />
+		</If>
+		<TurnIn QuestName="As Water Cascades" QuestId="4812" TurnInName="Mysterious Red Crystal" TurnInType="Object" TurnInId="175524" X="6207.82" Y="-157.763" Z="80.9614" />
 		<PickUp QuestName="The Fragments Within" QuestId="4813" GiverName="Mysterious Red Crystal" GiverId="175524" GiverType="Object" X="6207.82" Y="-157.763" Z="80.9614" />
 		<TurnIn QuestName="The Fragments Within" QuestId="4813" TurnInName="Sentinel Glynda Nal'Shea" TurnInId="2930" X="6438.62" Y="471.896" Z="8.1251" />
 		<TurnIn QuestName="Thundris Windweaver" QuestId="4761" TurnInName="Thundris Windweaver" TurnInId="3649" X="6580.97" Y="492.292" Z="8.3174" />
